@@ -1,0 +1,340 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "rooms": "Habitaciones",
+    "map": "Mapa",
+    "parking": "Parking",
+    "faq": "FAQ",
+    "checkin": "Check-in",
+    "reserve": "Reservar",
+    "contact": "Contacto",
+    "search": "Buscar",
+    "searchPlaceholder": "Buscar habitaciones, servicios, FAQ..."
+  },
+  "hero": {
+    "tag": "Centro histórico · Zamora",
+    "title": "Tu hogar\nen Zamora",
+    "sub": "Hostal boutique con estilo nórdico en el corazón de la ciudad",
+    "cta": "Reservar ahora",
+    "ctaRooms": "Ver habitaciones",
+    "discount": "Reserva directa con 15% de descuento",
+    "features": [
+      { "icon": "map-pin",        "label": "Ubicación céntrica",    "link": null },
+      { "icon": "wifi",           "label": "WiFi disponible",       "link": null },
+      { "icon": "paw-print",      "label": "Pet friendly",          "link": "https://www.srperro.com/hostal-sol/" },
+      { "icon": "shower-head",    "label": "Baño privado",          "link": null },
+      { "icon": "piggy-bank",     "label": "Precios bajos",         "link": null },
+      { "icon": "wind",           "label": "Aire acondicionado",    "link": null }
+    ]
+  },
+  "about": {
+    "title": "Más de 50 años de historia hotelera en Zamora",
+    "body": "Nuestro hostal boutique está en la tercera planta de un edificio con ascensor, en pleno casco histórico de Zamora. Cuidamos cada detalle para que te sientas como en casa: habitaciones nórdicas, baño privado, WiFi, calefacción central... y mucho cariño.",
+    "since": "Más de 50 años juntos · Pensión Padornelo y Hostal Sol",
+    "historyTitle": "Nuestra historia",
+    "history1": "Nuestra historia comienza en 1975, cuando la familia abrió la Pensión Padornelo en la Calle Aire de Zamora. Durante muchos años, aquella pensión familiar fue punto de referencia para viajeros que llegaban a la ciudad, ganándose una reputación de trato cercano y habitaciones bien cuidadas.",
+    "history2": "Con el tiempo, y gracias a las experiencias vividas y a la confianza de tantos huéspedes, la familia evolucionó su negocio: nació el Hostal Sol en Calle Benavente, y junto a él el Restaurante Padornelo, como homenaje a los orígenes. Más de 50 años de historia hotelera respaldan cada estancia.",
+    "history3": "Hoy, con las instalaciones renovadas en estilo nórdico y minimalista, seguimos manteniendo lo que siempre nos ha definido: un trato familiar, habitaciones impecables y el amor por Zamora que nos caracteriza. Estamos en el corazón del casco histórico, a pasos de la Catedral, las iglesias románicas y los mejores rincones gastronómicos.",
+    "showMore": "Ver más historia",
+    "showLess": "Ver menos",
+    "chips": {
+      "location": "Centro histórico",
+      "floor": "3ª planta · C.P. 49014",
+      "bathroom": "Baño privado",
+      "pets": "Pet friendly",
+      "rating": "7.7 / 10"
+    }
+  },
+  "rooms": {
+    "title": "Nuestras habitaciones",
+    "sub": "Tres tipos de habitación, toda la comodidad",
+    "types": [
+      { "label": "Doble de matrimonio", "icon": "bed-double", "photoId": 3, "extras": [] },
+      { "label": "Matrimonio con balcón", "icon": "building", "photoId": 8, "extras": ["Balcón privado"] },
+      { "label": "Dos camas individuales", "icon": "bed-single", "photoId": 22, "extras": [] }
+    ],
+    "amenities": ["TV", "WiFi", "Baño privado", "Escritorio", "Calefacción central", "Amenities", "Toallas y ropa de cama"],
+    "filterAll": "Todas",
+    "entrance": "Entrada",
+    "mediaAll": "Todo",
+    "mediaPhotos": "Fotos",
+    "mediaVideos": "Vídeos",
+    "allPhotos": "Ver todas",
+    "videoLabel": "Vídeo hab.",
+    "reserveBtn": "Reservar ahora →",
+    "ytChannel": "Ver canal de YouTube"
+  },
+  "videos": {
+    "title": "Vídeos de las habitaciones",
+    "sub": "Grabados en Marzo 2026 · Tour virtual de cada habitación",
+    "watch": "Ver en YouTube",
+    "channel": "Canal YouTube"
+  },
+  "map": {
+    "title": "Cómo llegar",
+    "sub": "En el corazón del centro histórico",
+    "address": "Calle Benavente, 2 — 3ª planta",
+    "addressFull": "Calle Benavente, 2 - 3ª planta\n49014 Zamora, España",
+    "city": "C.P. 49014 Zamora, España",
+    "floorNote": "3ª planta · 2 ascensores · Acceso sin escalones",
+    "walkOld": "5 min. casco antiguo",
+    "walkStation": "15 min. estación",
+    "parkingNear": "Parking cercano disponible",
+    "howToArrive": "Guía de llegada",
+    "openIn": "Abrir en",
+    "guideNote": "Calle Benavente 2, si la puerta no está abierta, llame al 3º y suba por escaleras o ascensor al tercero.",
+    "guideLinkText": "→ Guía completa de llegada"
+  },
+  "parking": {
+    "title": "Guía de aparcamiento",
+    "sub": "Opciones de aparcamiento cerca del hostal",
+    "fullGuide": "Ver guía completa →",
+    "nav": "Navegar",
+    "options": [
+      {
+        "name": "Parking Centro (Viriato)",
+        "dist": "3 min. a pie",
+        "price": "~1€/h",
+        "link": "https://maps.google.com/?q=Parking+Viriato+Zamora",
+        "tip": "El más cercano al hostal. Cubierto 24h."
+      },
+      {
+        "name": "Parking Plaza Mayor",
+        "dist": "5 min. a pie",
+        "price": "~0.8€/h",
+        "link": "https://maps.google.com/?q=Parking+Plaza+Mayor+Zamora",
+        "tip": "Amplio y económico. Ideal para estancias largas."
+      },
+      {
+        "name": "Zona ORA Calle Benavente",
+        "dist": "En la puerta",
+        "price": "~0.5€/h",
+        "link": "https://maps.google.com/?q=Calle+Benavente+Zamora",
+        "tip": "Zona azul en la calle. Límite 2h en horario diurno."
+      },
+      {
+        "name": "Zona libre nocturna",
+        "dist": "2 min. a pie",
+        "price": "Gratis (noche)",
+        "link": "https://maps.google.com/?q=Zamora+centro",
+        "tip": "A partir de las 20h y los domingos, aparcamiento gratuito en muchas calles del centro."
+      }
+    ]
+  },
+  "reviews": {
+    "title": "Lo que dicen nuestros huéspedes",
+    "heading": "Lo que dicen sobre nosotros",
+    "sub": "Opiniones reales · Booking, Google y más",
+    "ctaBand": "Reserva directamente en nuestra web y obtén el mejor precio garantizado",
+    "ctaBandBtn": "Reservar con descuento →",
+    "items": [
+      { "name": "Gemma", "text": "Me ha encantado la localización, el estilo del hostal es muy moderno y el chico super majo. La ducha era genial, ¡me dio pena marcharme!", "stars": 5 },
+      { "name": "Iker Zulueta", "text": "En pleno centro histórico, habitaciones amplias, limpias y equipadas. Trato del personal inmejorable. ¡Volveré a repetir!", "stars": 5 },
+      { "name": "José Manuel Serrano", "text": "Ubicación muy céntrica, te evitas el coche. El chico que nos atendió se ofreció para cualquier cosa. Excelente.", "stars": 5 },
+      { "name": "Annayara", "text": "Fui con un brazo lesionado y enseguida me ofrecieron cambiar la habitación por una más amplia. Esos detalles son los que cuentan.", "stars": 5 },
+      { "name": "Javier Fidalgo", "text": "El sitio es perfecto. Muy limpio, todo lo necesario, ubicación increíble y el recepcionista muy majo. Sin duda volveremos.", "stars": 5 },
+      { "name": "Carla Aguilar", "text": "Hostal estupendo en pleno centro. Nos explicaron qué ver y los mejores lugares a visitar. Sin duda, cuando volvamos repetiremos.", "stars": 5 },
+      { "name": "L. Elisabeth", "text": "Limpio, cómodo y práctico. Personal atento y preocupado de atender bien. Un acierto escoger este hostal.", "stars": 5 },
+      { "name": "Juan Manuel", "text": "El WiFi funcionó perfectamente y pude trabajar sin problemas. Creo que volveré pronto.", "stars": 5 },
+      { "name": "Thomas K. (DE)", "text": "Sehr zentral gelegen, saubere Zimmer und freundliches Personal. Kann ich nur empfehlen!", "stars": 5 },
+      { "name": "Marie L. (FR)", "text": "Excellent rapport qualité-prix. Chambre propre, bien équipée et idéalement située dans le centre historique.", "stars": 5 },
+      { "name": "James H. (UK)", "text": "Great location right in the historic centre. Clean rooms, helpful staff. Would definitely stay again.", "stars": 5 },
+      { "name": "Valentina R. (IT)", "text": "Ottima posizione nel centro storico, stanza pulita e personale cordiale. Consigliato!", "stars": 5 },
+      { "name": "Pedro A. (PT)", "text": "Localização perfeita no centro histórico. Quartos limpos e pessoal simpático. Recomendo!", "stars": 5 }
+    ]
+  },
+  "restaurant": {
+    "tag": "Recomendación Local",
+    "title": "Restaurante Padornelo",
+    "rating": "4,7 / 5",
+    "ratingLabel": "Valoración Google",
+    "body1": "A escasos metros del hostal encontrarás el Restaurante Padornelo, el restaurante que nació junto a nuestro hostal y lleva el nombre de la pensión familiar original. Cocina tradicional zamorana con productos de la tierra, ambiente acogedor y una relación calidad-precio inmejorable.",
+    "body2": "Tapas, raciones, platos de cuchara y los vinos de la D.O. Toro. Un imprescindible durante tu estancia en Zamora.",
+    "mapsBtn": "Ver en Google Maps",
+    "distance": "A 2 minutos del hostal",
+    "photosLabel": "Fotos Google Maps"
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "viewAll": "Ver todas las preguntas →",
+    "viewAllBtn": "Ver todas las preguntas frecuentes →",
+    "items": [
+      { "q": "¿Cuál es el horario del hostal?", "a": "Atención telefónica: 10h–21h. Check-in: 14h–21h. Pasadas las 21h no se recibirán reservas no acordadas." },
+      { "q": "¿Se admiten mascotas?", "a": "Sí, somos pet friendly. Consúltalo con antelación ya que en ciertas fechas depende de la disponibilidad. Puede aplicarse tarifa adicional." },
+      { "q": "¿Puedo hacer el check-in fuera de horario?", "a": "El horario es 14h–21h. Si llegáis antes, podemos guardar las maletas. No podemos dar las llaves antes de las 13h." },
+      { "q": "¿Hasta qué hora puedo estar en la habitación?", "a": "El check-out es a las 11:00h. Podemos guardar equipaje en recepción si lo necesitáis." },
+      { "q": "¿Tenéis ascensor?", "a": "Sí, el hostal está en la 3ª planta con 2 ascensores. No hay escalones para entrar al portal ni a las habitaciones." },
+      { "q": "¿Qué documentación debo presentar?", "a": "El DNI o pasaporte de todos los huéspedes mayores de 14 años, según el Real Decreto 933/2021." },
+      { "q": "¿Cómo puedo cancelar una reserva?", "a": "Cancelación gratuita hasta 48h antes. Fuera de ese plazo se cobra la primera noche. Algunas tarifas no permiten cancelación." },
+      { "q": "¿Dónde puedo guardar la bici?", "a": "En la propia habitación si está limpia. Avisad con antelación para habitación más amplia. El ascensor es pequeño." },
+      { "q": "¿Se puede fumar?", "a": "Prohibido en todo el hostal incluyendo ventanas y terrazas. En caso de incumplimiento se aplica multa de 100–1.000€." },
+      { "q": "¿Qué métodos de pago se aceptan?", "a": "Efectivo, tarjeta (no AmEx) y transferencia bancaria con más de una semana de antelación." },
+      { "q": "¿Y si no recibo el email de confirmación de reserva?", "a": "Puedes ponerte en contacto con nosotros por teléfono, email o WhatsApp y comprobaremos que todo está correcto. Es probable que haya un problema y la reserva no se haya guardado, por lo que te recomendamos contactar cuanto antes." },
+      { "q": "¿Puedo realizar una reserva por teléfono?", "a": "Actualmente no admitimos reservas que no estén pagadas, por lo que te recomendamos que lo intentes a través de nuestra web. Si tienes algún problema llámanos al +34 980 533 152 o al +34 639 980 253 y te atenderemos encantados." },
+      { "q": "¿Y si quiero una habitación en concreto?", "a": "Puedes hacérnoslo saber por mensaje, WhatsApp o teléfono e intentaremos guardártela." },
+      { "q": "¿Qué datos necesitáis para hacer la reserva?", "a": "Necesitamos nombre, teléfono, email y una dirección, además de los datos de pago. Al llegar, es necesario presentar un documento de identidad (DNI o Pasaporte) de todas las personas que vayan a dormir con 14 años o más, según el Real Decreto 933/2021." },
+      { "q": "¿Tenéis acceso adaptado para personas con movilidad reducida?", "a": "Nuestro hostal se encuentra en la 3ª planta de un edificio con 2 ascensores. No hay escalones para entrar a las habitaciones ni al portal. Ponte en contacto con nosotros para evaluar tu caso." }
+    ]
+  },
+  "reserve": {
+    "title": "Reservar",
+    "sub": "Mejor precio garantizado reservando en nuestra web",
+    "discountNum": "−15%",
+    "discountLabel": "Descuento",
+    "discountNote": "Solo en nuestra web",
+    "note": "Precio directo — siempre más barato que Booking, Expedia u otros portales",
+    "features": [
+      "Mejor precio garantizado",
+      "Cancelación gratuita 48h",
+      "Pago seguro",
+      "Confirmación inmediata"
+    ],
+    "bookBtn": "Ir al motor de reservas",
+    "helpText": "¿Problemas con el motor de reservas?",
+    "helpLink": "Accede a la página de reservas completa →"
+  },
+  "contact": {
+    "title": "Contacto",
+    "heading": "Escríbenos o llámanos",
+    "address": "Calle Benavente, 2 — 3ª planta · C.P. 49014 Zamora",
+    "phone1": "+34 980 533 152",
+    "phone2": "+34 639 980 253",
+    "email": "hostalsol{'@'}outlook.com",
+    "hours": "Lun–Sáb · 10:00–21:00",
+    "stayInfo": "Información de estancia",
+    "checkin": "Check-in",
+    "checkinVal": "14:00 – 21:00",
+    "checkout": "Check-out",
+    "checkoutVal": "Hasta 11:00",
+    "attention": "Atención",
+    "attentionVal": "Lun–Sáb 10–21h",
+    "sunday": "Domingo",
+    "sundayVal": "Cerrado",
+    "pets": "Mascotas",
+    "petsVal": "Pet friendly",
+    "petNote": "Consultar disponibilidad y tarifa",
+    "floor": "Planta",
+    "floorVal": "3ª · CP 49014"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados",
+    "terms": "Términos y condiciones",
+    "cookies": "Política de cookies",
+    "family": "Familia hotelera desde 1975",
+    "reserveCta": "Reservar con −15% →"
+  },
+  "pages": {
+    "faq": {
+      "title": "Preguntas Frecuentes — Hostal Sol Zamora",
+      "description": "Resuelve todas tus dudas antes de llegar al Hostal Sol Zamora.",
+      "heading": "Todo lo que necesitas saber antes de llegar",
+      "lead": "Hemos reunido las preguntas más habituales de nuestros huéspedes. Si no encuentras lo que buscas, contáctanos:",
+      "searchPlaceholder": "Buscar pregunta...",
+      "noResults": "No se encontraron preguntas para tu búsqueda.",
+      "backHome": "← Volver al inicio"
+    },
+    "parking": {
+      "title": "Guía de Aparcamiento — Hostal Sol Zamora",
+      "description": "Todas las opciones de aparcamiento cerca del Hostal Sol Zamora, Calle Benavente 2, Zamora.",
+      "heading": "Cómo aparcar cerca del Hostal Sol Zamora",
+      "lead": "El hostal no dispone de parking propio, pero estamos en el centro histórico con varias opciones muy cercanas.",
+      "addressCard": {
+        "title": "Dirección del hostal",
+        "address": "Calle Benavente, 2 – 3ª planta (2 ascensores) · 49014 Zamora",
+        "tip": "Aunque es zona peatonal, el Ayuntamiento de Zamora permite el acceso en vehículo a los huéspedes del hostal desde la Calle San Miguel para dejar el equipaje."
+      },
+      "carAccess": "Acceso en coche o moto",
+      "carAccessDesc": "Puedes acceder al hostal en coche o moto desde la Calle San Miguel. Aunque es zona peatonal, el Ayuntamiento permite el acceso a huéspedes para dejar equipaje. Una vez descargado, aparca en alguna de las opciones indicadas.",
+      "streetParking": "Aparcamiento en la calle",
+      "undergroundParking": "Aparcamiento subterráneo",
+      "constitParking": "Parking Plaza Constitución — 24h 14,70€ · 1,45€/h · Tel. 980 53 72 08",
+      "marinaParking": "Parking La Marina — Reserva online en empark.com",
+      "backHome": "← Volver al inicio",
+      "checkinLink": "Ver guía de check-in →"
+    },
+    "reserva": {
+      "title": "Reservar — Hostal Sol Zamora",
+      "description": "Reserva tu estancia en el Hostal Sol Zamora con un 15% de descuento directo.",
+      "heading": "Reserva tu estancia",
+      "discountLabel": "15% de descuento reservando en nuestra web",
+      "discountSub": "Precio directo — siempre más barato que Booking, Expedia o cualquier otro portal",
+      "features": [
+        "Mejor precio garantizado",
+        "Cancelación gratuita hasta 48h antes",
+        "Pago seguro",
+        "Confirmación inmediata"
+      ],
+      "iframeTitle": "Motor de reservas Hostal Sol Zamora",
+      "troubleText": "¿Tienes problemas con el motor de reservas? Llámanos al",
+      "backHome": "← Volver al inicio"
+    },
+    "checkin": {
+      "title": "Cómo Llegar y Check-in — Hostal Sol Zamora",
+      "description": "Guía completa para llegar al Hostal Sol Zamora y documentación necesaria para el check-in.",
+      "heading": "Cómo llegar y hacer el check-in",
+      "lead": "Guía paso a paso para llegar al hostal y preparar la documentación requerida por ley.",
+      "beforeTitle": "Antes de llegar",
+      "beforeHours": "Asegúrate de poder llegar al hostal antes de las 20:50h. El hostal cierra después de esa hora.",
+      "beforeCheckin": "Regístrate con Chekin: recibirás un enlace para registrarte en Chekin, donde podrás hacer una foto de tu documento de identidad (DNI, Pasaporte, etc.) y enviar todos los datos necesarios. Necesitamos la información de todos los huéspedes según el Real Decreto 933/2021.",
+      "beforeLuggage": "Tu habitación estará lista a las 14:00. Si llegas antes, podemos guardar tu equipaje hasta esa hora.",
+      "arrivalTitle": "Llegada al hostal",
+      "steps": [
+        {
+          "title": "Ve a Calle Benavente 2",
+          "desc": "Puedes llegar a pie, en taxi o en coche. Si vienes en coche ten en cuenta el parking: puedes acceder desde Calle San Miguel para dejar el equipaje.",
+          "link": "/parking",
+          "linkText": "Ver opciones de parking"
+        },
+        {
+          "title": "Entra al edificio",
+          "desc": "La puerta suele estar abierta, empuja. Si está bloqueada, llama al tercer piso desde el panel de la derecha, o llámanos directamente por teléfono.",
+          "link": null,
+          "linkText": null
+        },
+        {
+          "title": "Sube al tercer piso",
+          "desc": "Puedes subir con cualquiera de los 2 ascensores o por las escaleras.",
+          "link": null,
+          "linkText": null
+        },
+        {
+          "title": "Encuéntranos",
+          "desc": "Estamos aquí. Pulsa el timbre y te atenderemos. Si nadie aparece después de dos minutos, llama a nuestro número. Nota: usa llamadas estándar; las llamadas de WhatsApp o VoIP son ignoradas.",
+          "link": null,
+          "linkText": null
+        }
+      ],
+      "arrivalInfoTitle": "Al llegar a recepción",
+      "arrivalInfo": "El personal revisará tu reserva. Podrás pagar si falta algo (camas extra, cunas, días adicionales, etc.). Se comprobarán los documentos de identidad de todos los huéspedes. Si realizaste el check-in online con Chekin, el proceso será mucho más rápido. También se te explicará cómo usar las llaves para acceder al hostal en cualquier momento. Si necesitas secador o plancha, es el momento de solicitarlo.",
+      "roomTitle": "En la habitación",
+      "roomInfo": "Encontrarás instrucciones sobre cómo conectarte al WiFi, el horario de salida y las normas del hostal: está prohibido fumar (pueden aplicarse multas de hasta 1.000€ para la limpieza), hacer fuego y hacer ruido por la noche.",
+      "checkoutTitle": "Check-out",
+      "checkoutInfo": "Deja las llaves en el buzón que encontrarás en el pasillo antes de los ascensores. Por favor, abandona la habitación antes de las 11:00 para que el equipo de limpieza tenga tiempo suficiente. También podemos guardar tu equipaje durante el día de salida (excepto domingos), contáctanos y lo organizamos.",
+      "docsTitle": "Documentación requerida (R.D. 933/2021)",
+      "docsIntro": "Según el Real Decreto 933/2021, debemos registrar los datos de todos los huéspedes mayores de 14 años y enviarlos a los Cuerpos y Fuerzas de Seguridad del Estado y al INE (Instituto Nacional de Estadística).",
+      "docsBoe": "Consultar el BOE",
+      "ctaTitle": "Check-in online con Chekin — más rápido",
+      "ctaDesc": "Realizando el check-in online antes de llegar, el proceso en recepción es mucho más rápido. ¡Lo agradecemos!",
+      "ctaBtn": "Hacer check-in online",
+      "docTypes": [
+        {
+          "name": "DNI / IDESP",
+          "fields": ["Número de documento", "Número de soporte", "Fecha de caducidad", "Fecha de nacimiento", "Sexo", "Nombre y apellidos", "Nacionalidad"]
+        },
+        {
+          "name": "Pasaporte",
+          "fields": ["Número de pasaporte", "Línea MRZ completa", "Fecha de expedición", "Fecha de caducidad", "Nacionalidad", "Nombre y apellidos"]
+        },
+        {
+          "name": "NIE / TIE",
+          "fields": ["Número NIE/TIE", "Número de soporte", "Fecha de caducidad"]
+        },
+        {
+          "name": "Permiso de conducir (UE)",
+          "fields": ["Número de permiso", "Apellidos y nombre"]
+        }
+      ],
+      "backHome": "← Volver al inicio"
+    }
+  }
+}

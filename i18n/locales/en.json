@@ -1,0 +1,340 @@
+{
+  "nav": {
+    "home": "Home",
+    "rooms": "Rooms",
+    "map": "Map",
+    "parking": "Parking",
+    "faq": "FAQ",
+    "checkin": "Check-in",
+    "reserve": "Book now",
+    "contact": "Contact",
+    "search": "Search",
+    "searchPlaceholder": "Search rooms, services, FAQ..."
+  },
+  "hero": {
+    "tag": "Historic centre · Zamora",
+    "title": "Your home\nin Zamora",
+    "sub": "Boutique hostel with nordic style in the heart of the city",
+    "cta": "Book now",
+    "ctaRooms": "View rooms",
+    "discount": "Book direct — 15% discount on our website",
+    "features": [
+      { "icon": "map-pin",     "label": "Central location",  "link": null },
+      { "icon": "wifi",        "label": "WiFi available",    "link": null },
+      { "icon": "paw-print",   "label": "Pet friendly",      "link": "https://www.srperro.com/hostal-sol/" },
+      { "icon": "shower-head", "label": "Private bathroom",  "link": null },
+      { "icon": "piggy-bank",  "label": "Low prices",        "link": null },
+      { "icon": "wind",        "label": "Air conditioning",  "link": null }
+    ]
+  },
+  "about": {
+    "title": "Over 50 years of hospitality in Zamora",
+    "body": "Our boutique hostel sits on the third floor of a lift-equipped building in the heart of Zamora's historic centre. Every detail is designed for your comfort: nordic-style rooms, private bathroom, WiFi, central heating, and plenty of warmth.",
+    "since": "Family-run since 1975 · Pensión Padornelo, Calle Aire · Now Hostal Sol",
+    "historyTitle": "Our history",
+    "history1": "Our story begins in 1975, when the family opened the Pensión Padornelo on Calle Aire in Zamora. For many years, that family guesthouse was a reference point for travellers arriving in the city, earning a reputation for personal service and well-kept rooms.",
+    "history2": "Over time, thanks to the experiences shared and the trust of so many guests, the family evolved their business: Hostal Sol was born on Calle Benavente, alongside it the Restaurante Padornelo, a tribute to the original name. Over 50 years of hospitality back every stay.",
+    "history3": "Today, with facilities renovated in a nordic-minimal style, we maintain what has always defined us: a family welcome, impeccable rooms, and the love for Zamora that sets us apart. We are at the heart of the historic old town, steps from the Cathedral, Romanesque churches, and the best gastronomy.",
+    "showMore": "Read more history",
+    "showLess": "Show less",
+    "chips": {
+      "location": "Historic centre",
+      "floor": "3rd floor · C.P. 49014",
+      "bathroom": "Private bathroom",
+      "pets": "Pet friendly",
+      "rating": "7.7 / 10"
+    }
+  },
+  "rooms": {
+    "title": "Our rooms",
+    "sub": "Three room types, total comfort",
+    "types": [
+      { "label": "Double (queen bed)", "icon": "bed-double", "photoId": 3, "extras": [] },
+      { "label": "Double with balcony", "icon": "building", "photoId": 8, "extras": ["Private balcony"] },
+      { "label": "Twin (separate beds)", "icon": "bed-single", "photoId": 22, "extras": [] }
+    ],
+    "amenities": ["TV", "WiFi", "Private bathroom", "Desk", "Central heating", "Toiletries", "Towels & linen"],
+    "filterAll": "All",
+    "entrance": "Entrance",
+    "mediaAll": "All",
+    "mediaPhotos": "Photos",
+    "mediaVideos": "Videos",
+    "allPhotos": "View all",
+    "videoLabel": "Room video",
+    "reserveBtn": "Book now →",
+    "ytChannel": "View YouTube channel"
+  },
+  "videos": {
+    "title": "Room videos",
+    "sub": "Recorded March 2026 · Virtual tour of every room",
+    "watch": "Watch on YouTube",
+    "channel": "YouTube Channel"
+  },
+  "map": {
+    "title": "How to get here",
+    "sub": "In the heart of the historic centre",
+    "address": "Calle Benavente, 2 — 3rd floor",
+    "addressFull": "Calle Benavente, 2 - 3rd floor\n49014 Zamora, Spain",
+    "city": "C.P. 49014 Zamora, Spain",
+    "floorNote": "3rd floor · 2 lifts · Step-free access",
+    "walkOld": "5 min. old town",
+    "walkStation": "15 min. train station",
+    "parkingNear": "Nearby parking available",
+    "howToArrive": "Arrival guide",
+    "openIn": "Open in",
+    "guideNote": "Calle Benavente 2, if the door is not open, ring the 3rd floor bell and go up by stairs or lift to the third floor.",
+    "guideLinkText": "→ Full arrival guide"
+  },
+  "parking": {
+    "title": "Parking guide",
+    "sub": "Parking options near the hostel",
+    "fullGuide": "Full parking guide →",
+    "nav": "Navigate",
+    "options": [
+      {
+        "name": "Parking Centro (Viriato)",
+        "dist": "3 min. walk",
+        "price": "~€1/h",
+        "link": "https://maps.google.com/?q=Parking+Viriato+Zamora",
+        "tip": "Closest to the hostel. Covered, open 24h."
+      },
+      {
+        "name": "Parking Plaza Mayor",
+        "dist": "5 min. walk",
+        "price": "~€0.8/h",
+        "link": "https://maps.google.com/?q=Parking+Plaza+Mayor+Zamora",
+        "tip": "Large and affordable. Great for longer stays."
+      },
+      {
+        "name": "ORA Zone – Calle Benavente",
+        "dist": "At the door",
+        "price": "~€0.5/h",
+        "link": "https://maps.google.com/?q=Calle+Benavente+Zamora",
+        "tip": "Blue zone on the street. 2h limit during daytime hours."
+      },
+      {
+        "name": "Free overnight parking",
+        "dist": "2 min. walk",
+        "price": "Free (nights)",
+        "link": "https://maps.google.com/?q=Zamora+centro",
+        "tip": "From 8pm and on Sundays, many central streets offer free parking."
+      }
+    ]
+  },
+  "reviews": {
+    "title": "What our guests say",
+    "heading": "What people say about us",
+    "sub": "Real reviews · Booking, Google & more",
+    "ctaBand": "Book directly on our website and get the best price guaranteed",
+    "ctaBandBtn": "Book with discount →",
+    "items": [
+      { "name": "Gemma", "text": "Loved the location, the hostel style is very modern and the guy is super friendly. The shower was great — I didn't want to leave!", "stars": 5 },
+      { "name": "Iker Zulueta", "text": "In the heart of the old town, spacious clean rooms with everything you need. Unbeatable staff. Already planning to come back!", "stars": 5 },
+      { "name": "José Manuel Serrano", "text": "Very central location, no need for a car. The guy who welcomed us offered to help with anything. Excellent.", "stars": 5 },
+      { "name": "Annayara", "text": "I arrived with an injured arm and they immediately offered to change my room to a larger one. Those little details make all the difference.", "stars": 5 },
+      { "name": "Javier Fidalgo", "text": "The place is perfect. Very clean, has everything, incredible location and a very friendly receptionist. We will definitely be back.", "stars": 5 },
+      { "name": "Carla Aguilar", "text": "Great hostel right in the centre. They explained what to see and the best places to visit. We'll definitely repeat when we return.", "stars": 5 },
+      { "name": "L. Elisabeth", "text": "Clean, comfortable and practical. Attentive staff who really care. A great choice.", "stars": 5 },
+      { "name": "Juan Manuel", "text": "The WiFi worked perfectly and I could work with no issues. I'll be coming back soon.", "stars": 5 },
+      { "name": "Thomas K. (DE)", "text": "Sehr zentral gelegen, saubere Zimmer und freundliches Personal. Kann ich nur empfehlen!", "stars": 5 },
+      { "name": "Marie L. (FR)", "text": "Excellent rapport qualité-prix. Chambre propre, bien équipée et idéalement située dans le centre historique.", "stars": 5 },
+      { "name": "James H. (UK)", "text": "Great location right in the historic centre. Clean rooms, helpful staff. Would definitely stay again.", "stars": 5 },
+      { "name": "Valentina R. (IT)", "text": "Ottima posizione nel centro storico, stanza pulita e personale cordiale. Consigliato!", "stars": 5 },
+      { "name": "Pedro A. (PT)", "text": "Localização perfeita no centro histórico. Quartos limpos e pessoal simpático. Recomendo!", "stars": 5 }
+    ]
+  },
+  "restaurant": {
+    "tag": "Local Recommendation",
+    "title": "Restaurante Padornelo",
+    "rating": "4.7 / 5",
+    "ratingLabel": "Google rating",
+    "body1": "Just steps from the hostel you'll find Restaurante Padornelo, born alongside our hostel and named after the original family guesthouse. Traditional Zamorana cuisine with local produce, a cosy atmosphere and unbeatable value for money.",
+    "body2": "Tapas, sharing plates, hearty stews and wines from the D.O. Toro. A must-visit during your stay in Zamora.",
+    "mapsBtn": "View on Google Maps",
+    "distance": "2 minutes from the hostel",
+    "photosLabel": "Google Maps photos"
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "viewAll": "View all questions →",
+    "viewAllBtn": "View all frequently asked questions →",
+    "items": [
+      { "q": "What are the hostel's hours?", "a": "Phone: 10:00–21:00. Check-in: 14:00–21:00. Arrivals after 21:00 without prior agreement will not be accepted." },
+      { "q": "Are pets allowed?", "a": "Yes, we are pet friendly! Please check in advance as availability may vary. A surcharge may apply." },
+      { "q": "Can I check in outside of hours?", "a": "Hours are 14:00–21:00. If you arrive early, we can store your luggage. Keys cannot be given before 13:00." },
+      { "q": "What time is check-out?", "a": "Check-out is at 11:00. We can store your luggage at reception if needed." },
+      { "q": "Is there a lift?", "a": "Yes, the hostel is on the 3rd floor with 2 lifts. There are no steps at the entrance or to the rooms." },
+      { "q": "What ID do I need?", "a": "All guests aged 14+ must present a national ID card or passport upon arrival, as required by Royal Decree 933/2021." },
+      { "q": "How can I cancel a booking?", "a": "Free cancellation up to 48h before arrival. After that, the first night is charged. Some rates are non-refundable." },
+      { "q": "Can I store my bike?", "a": "Yes, in your room if it's clean. Let us know in advance so we can assign a larger room. The lift is small." },
+      { "q": "Is smoking allowed?", "a": "Smoking is strictly prohibited throughout the hostel including windows and terraces. Fines of €100–1,000 apply." },
+      { "q": "What payment methods do you accept?", "a": "Cash, card (no AmEx) and bank transfer with more than one week's notice." },
+      { "q": "What if I don't receive a booking confirmation email?", "a": "Contact us by phone, email or WhatsApp and we'll check everything is correct. It's likely the booking wasn't saved, so we recommend contacting us as soon as possible." },
+      { "q": "Can I book by phone?", "a": "We currently only accept pre-paid bookings, so we recommend booking through our website. If you have trouble, call us on +34 980 533 152 or +34 639 980 253." },
+      { "q": "Can I request a specific room?", "a": "Yes — let us know by message, WhatsApp or phone and we'll do our best to reserve it for you." },
+      { "q": "What information do you need to make a booking?", "a": "We need your name, phone number, email address, a postal address, and payment details. On arrival, all guests aged 14+ must present a valid ID document as required by Royal Decree 933/2021." },
+      { "q": "Is the hostel accessible for reduced mobility?", "a": "The hostel is on the 3rd floor of a building with 2 lifts and no steps at the entrance or to the rooms. Contact us to assess your specific needs." }
+    ]
+  },
+  "reserve": {
+    "title": "Book your stay",
+    "sub": "Best price guaranteed when booking on our website",
+    "discountNum": "−15%",
+    "discountLabel": "Discount",
+    "discountNote": "Only on our website",
+    "note": "Direct price — always cheaper than Booking, Expedia or other portals",
+    "features": [
+      "Best price guaranteed",
+      "Free cancellation 48h",
+      "Secure payment",
+      "Instant confirmation"
+    ],
+    "bookBtn": "Go to booking engine",
+    "helpText": "Having trouble with the booking engine?",
+    "helpLink": "Access the full booking page →"
+  },
+  "contact": {
+    "title": "Contact",
+    "heading": "Write to us or call us",
+    "address": "Calle Benavente, 2 — 3rd floor · C.P. 49014 Zamora",
+    "phone1": "+34 980 533 152",
+    "phone2": "+34 639 980 253",
+    "email": "hostalsol{'@'}outlook.com",
+    "hours": "Mon–Sat · 10:00–21:00",
+    "stayInfo": "Stay information",
+    "checkin": "Check-in",
+    "checkinVal": "14:00 – 21:00",
+    "checkout": "Check-out",
+    "checkoutVal": "Until 11:00",
+    "attention": "Reception",
+    "attentionVal": "Mon–Sat 10–21h",
+    "sunday": "Sunday",
+    "sundayVal": "Closed",
+    "pets": "Pets",
+    "petsVal": "Pet friendly",
+    "petNote": "Check availability and surcharge",
+    "floor": "Floor",
+    "floorVal": "3rd · CP 49014"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "terms": "Terms & conditions",
+    "cookies": "Cookie policy",
+    "family": "Family-run since 1975",
+    "reserveCta": "Book with −15% →"
+  },
+  "pages": {
+    "faq": {
+      "title": "Frequently Asked Questions — Hostal Sol Zamora",
+      "description": "Find answers to the most common questions about Hostal Sol Zamora.",
+      "heading": "Everything you need to know before you arrive",
+      "lead": "We've collected the most common questions from our guests. If you can't find what you're looking for, contact us:",
+      "searchPlaceholder": "Search a question...",
+      "noResults": "No questions found for your search.",
+      "backHome": "← Back to home"
+    },
+    "parking": {
+      "title": "Parking Guide — Hostal Sol Zamora",
+      "description": "All parking options near Hostal Sol Zamora, Calle Benavente 2, Zamora.",
+      "heading": "How to park near Hostal Sol Zamora",
+      "lead": "The hostel has no private parking, but we are in the historic centre with several very close options.",
+      "addressCard": {
+        "title": "Hostel address",
+        "address": "Calle Benavente, 2 – 3rd floor (2 lifts) · 49014 Zamora",
+        "tip": "Although it is a pedestrian zone, the Zamora City Council allows vehicle access for hostel guests via Calle San Miguel to drop off luggage."
+      },
+      "carAccess": "Car / motorbike access",
+      "carAccessDesc": "You can access the hostel by car or motorbike from Calle San Miguel. Although it is a pedestrian zone, the City Council allows guest access for luggage drop-off. Once unloaded, park in one of the options below.",
+      "streetParking": "Street parking",
+      "undergroundParking": "Underground car parks",
+      "constitParking": "Parking Plaza Constitución — 24h €14.70 · €1.45/h · Tel. 980 53 72 08",
+      "marinaParking": "Parking La Marina — Book online at empark.com",
+      "backHome": "← Back to home",
+      "checkinLink": "View check-in guide →"
+    },
+    "reserva": {
+      "title": "Book — Hostal Sol Zamora",
+      "description": "Book your stay at Hostal Sol Zamora with a 15% direct discount.",
+      "heading": "Book your stay",
+      "discountLabel": "15% discount booking on our website",
+      "discountSub": "Direct price — always cheaper than Booking, Expedia or any other portal",
+      "features": [
+        "Best price guaranteed",
+        "Free cancellation up to 48h before",
+        "Secure payment",
+        "Instant confirmation"
+      ],
+      "iframeTitle": "Hostal Sol Zamora booking engine",
+      "troubleText": "Having trouble with the booking engine? Call us on",
+      "backHome": "← Back to home"
+    },
+    "checkin": {
+      "title": "How to Arrive & Check-in — Hostal Sol Zamora",
+      "description": "Step-by-step guide to arriving at Hostal Sol Zamora and the documents required for check-in.",
+      "heading": "How to arrive and check in",
+      "lead": "A step-by-step guide for getting to the hostel and preparing the documents required by law.",
+      "beforeTitle": "Before you arrive",
+      "beforeHours": "Make sure you can arrive at the hostel before 20:50. The hostel closes after that time.",
+      "beforeCheckin": "Register with Chekin: you will receive a link to register on Chekin, where you can take a photo of your identity document (ID card, passport, etc.) and send all the details we need. We require information for all guests under Royal Decree 933/2021.",
+      "beforeLuggage": "Your room will be ready at 14:00. If you arrive earlier, we can store your luggage until then.",
+      "arrivalTitle": "Arriving at the hostel",
+      "steps": [
+        {
+          "title": "Go to Calle Benavente 2",
+          "desc": "You can arrive on foot, by taxi or by car. If you come by car, check the parking options — you can access from Calle San Miguel to drop luggage.",
+          "link": "/parking",
+          "linkText": "View parking options"
+        },
+        {
+          "title": "Enter the building",
+          "desc": "The door is usually open — push it. If it's locked, ring the third floor on the right-hand panel, or call us directly.",
+          "link": null,
+          "linkText": null
+        },
+        {
+          "title": "Go to the third floor",
+          "desc": "You can use either of the 2 lifts or take the stairs.",
+          "link": null,
+          "linkText": null
+        },
+        {
+          "title": "Find us",
+          "desc": "We're right here. Press the doorbell and we'll attend you. If no one appears after two minutes, call our phone number. Note: use standard calls — WhatsApp or VoIP calls are not monitored.",
+          "link": null,
+          "linkText": null
+        }
+      ],
+      "arrivalInfoTitle": "At reception",
+      "arrivalInfo": "Staff will check your reservation. You can pay for any extras (extra beds, cots, additional days, etc.). All guest IDs will be checked — if you completed online check-in via Chekin, this will be much faster. Staff will also explain how to use the keys to access the hostel at any time. If you need a hair dryer or iron, this is the time to request it.",
+      "roomTitle": "In your room",
+      "roomInfo": "You will find instructions on how to connect to WiFi, the departure time, and house rules: smoking is strictly forbidden (fines of up to €1,000 for cleaning may be applied), as is making fire or noise at night.",
+      "checkoutTitle": "Check-out",
+      "checkoutInfo": "Leave your keys in the mailbox you will find in the corridor before the lifts. Please leave the room by 11:00 so the cleaning team has enough time to prepare the rooms for the next guests. We can also store your luggage during the day of departure (except Sundays) — contact us and we'll arrange it.",
+      "docsTitle": "Required documentation (R.D. 933/2021)",
+      "docsIntro": "Under Royal Decree 933/2021, we must register the details of all guests aged 14 and over and share this data with the Security Forces and the INE (National Statistics Institute).",
+      "docsBoe": "View the BOE regulation",
+      "ctaTitle": "Online check-in with Chekin — faster arrival",
+      "ctaDesc": "Completing online check-in before you arrive makes the reception process much quicker. We really appreciate it!",
+      "ctaBtn": "Complete online check-in",
+      "docTypes": [
+        {
+          "name": "National ID (DNI / IDESP)",
+          "fields": ["Document number", "Support number", "Expiry date", "Date of birth", "Sex", "Full name", "Nationality"]
+        },
+        {
+          "name": "Passport",
+          "fields": ["Passport number", "Full MRZ line", "Issue date", "Expiry date", "Nationality", "Full name"]
+        },
+        {
+          "name": "NIE / TIE (Foreigner ID)",
+          "fields": ["NIE/TIE number", "Support number", "Expiry date"]
+        },
+        {
+          "name": "EU Driving Licence",
+          "fields": ["Licence number", "Surname and name"]
+        }
+      ],
+      "backHome": "← Back to home"
+    }
+  }
+}

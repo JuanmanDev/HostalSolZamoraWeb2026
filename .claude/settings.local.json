@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:api.anthropic.com)",
+      "Bash(curl -sL https://hostalsolzamora.com/wp-content/uploads/2022/03/Logotipo-header_Mesa-de-trabajo-1-copia.svg -o c:/code/HostalSol2026/public/images/logo.svg)",
+      "Bash(curl -sL https://hostalsolzamora.com/wp-content/uploads/2022/03/isotipo-1024x1024.png -o c:/code/HostalSol2026/public/images/logo-icon.png)",
+      "Bash(curl -sL https://hostalsolzamora.com/wp-content/uploads/2022/03/imagen-qs-1024x1024.webp -o c:/code/HostalSol2026/public/images/about.webp)",
+      "Bash(node -e ' *)",
+      "Bash(Get-ChildItem -Path \"c:\\\\code\\\\HostalSol2026\" -Directory)",
+      "Bash(Select-Object Name)"
+    ]
+  }
+}

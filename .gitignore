@@ -1,0 +1,25 @@
+# Nuxt dev/build outputs
+.output
+.nuxt
+dist
+node_modules
+.cache
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Optional: Pictures folder if it contains raw assets not meant for the repo
+# pictures/
