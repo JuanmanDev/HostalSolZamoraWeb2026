@@ -42,9 +42,9 @@
       <div class="hero__features-wrap">
         <ClientOnly>
           <Carousel
-            :items-to-show="featItemsToShow"
+            :items-to-show="'auto'"
             :wrap-around="true"
-            :autoplay="3000"
+            :autoplay="6000"
             :transition="700"
             :pause-autoplay-on-hover="true"
             :mouse-drag="true"
@@ -86,8 +86,10 @@
 </template>
 
 <script setup lang="ts">
-import { HERO_PHOTOS, LOGO_SVG, LOGO_ICON } from '~/composables/useRooms'
+import { SHUFFLED_HERO_PHOTOS, LOGO_SVG, LOGO_ICON } from '~/composables/useRooms'
 import { Carousel, Slide } from 'vue3-carousel'
+
+const HERO_PHOTOS = SHUFFLED_HERO_PHOTOS;
 
 const { t, tm, rt } = useI18n()
 const { scrollTo } = useScrollTo()
@@ -147,6 +149,7 @@ onMounted(() => {
   display: flex;
   justify-content: center;
   z-index: 5;
+  height: auto;
 }
 
 .hero__banner {
@@ -244,8 +247,12 @@ onMounted(() => {
 .hero__feat-card {
   display: flex;
   flex-direction: column;
+  
   align-items: center;
   width: 100%;
+  max-width: 12rem;
+  min-width: 10rem;
+  height: 100%;
   gap: 8px;
   background: rgba(255,255,255,0.12);
   backdrop-filter: blur(10px);
@@ -258,6 +265,12 @@ onMounted(() => {
   font-weight: 600;
   text-decoration: none;
   transition: background 0.2s;
+    overflow: hidden;
+
+  & span {
+    text-align: center;
+    overflow: hidden;
+  }
 }
 .hero__feat-card:hover { background: rgba(255,255,255,0.2); }
 

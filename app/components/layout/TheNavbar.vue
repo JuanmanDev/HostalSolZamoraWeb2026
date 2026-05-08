@@ -32,10 +32,14 @@
         <UiGlobalSearch :solid="scrolled" />
         <LayoutLangSwitcher />
       </div>
-
+      
       <div class="navbar__mobile">
+        <NuxtLink v-if="!scrolled" to="/reserva" class="navbar__cta-button">
+          {{ t('nav.reserve') }}
+        </NuxtLink> 
+
         <UiGlobalSearch :solid="scrolled" />
-        <LayoutLangSwitcher />
+        
         <button class="navbar__hamburger" @click="menuOpen = !menuOpen">
           <LucideIcon :name="menuOpen ? 'x' : 'menu'" :size="22" :color="scrolled ? 'var(--dark)' : '#fff'" />
         </button>
@@ -44,6 +48,9 @@
 
     <Transition name="slide-down">
       <div v-if="menuOpen" class="navbar__dropdown">
+        <div class="navbar__dropdown-link navbar__dropdown-link--accent">
+          <LayoutLangSwitcher />
+        </div>
         <template v-for="link in navLinks" :key="link.key">
           <button
             v-if="link.section"
@@ -245,4 +252,27 @@ onMounted(() => {
 
 .slide-down-enter-active, .slide-down-leave-active { transition: opacity 0.2s, transform 0.2s; }
 .slide-down-enter-from, .slide-down-leave-to { opacity: 0; transform: translateY(-8px); }
+
+.navbar__cta-button {
+  background: var(--green);
+  color: #fff !important;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13.5px;
+  transition: opacity 0.2s, color 0.2s;
+}
+
+</style>
+
+<style>
+
+.navbar--solid .lang__trigger,
+.navbar__dropdown .lang__trigger{
+  color: var(--dark) ;
+  border: 1px solid var(--border) ;
+}
 </style>

@@ -3,7 +3,7 @@
     <LayoutTheNavbar :solid-from-start="true" />
 
     <main class="page-content">
-      <UiSectionTag>{{ t('nav.reserve') }}</UiSectionTag>
+      <UiSectionTag class="page-sub-heading">{{ t('nav.reserve') }}</UiSectionTag>
       <h1 class="page-heading">{{ t('pages.reserva.heading') }}</h1>
 
       <!-- Discount banner -->
@@ -28,7 +28,7 @@
       <div class="iframe-wrap">
         <iframe
           ref="iframeEl"
-          src="https://direct-book.com/properties/hostalsoldirect?locale=es&promocode=WEB"
+          src="https://direct-book.com/properties/hostalsoldirect?locale=es&promocode=WEB&currency=EUR&trackPage=no"
           :title="t('pages.reserva.iframeTitle')"
           class="booking-iframe"
           allow="payment"
@@ -40,6 +40,13 @@
         {{ t('pages.reserva.troubleText') }}
         <a href="tel:+34980533152" class="trouble-link">{{ t('contact.phone1') }}</a>
       </p>
+
+      <a 
+        class="link-to-reservation"
+        href="https://direct-book.com/properties/hostalsoldirect?locale=es&promocode=WEB&currency=EUR&trackPage=no" target="_blank" rel="noopener noreferrer"
+      >
+        Si no ves cómo reserva encima de este texto, haz clic aquí para ir directamente al motor de reservas.
+      </a>
     </main>
 
     <LayoutTheFooter />
@@ -84,9 +91,13 @@ onMounted(() => {
 .page-content {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 92px max(24px, 5vw) 80px;
+  padding: 92px 0 80px;
+  /* padding: 92px max(24px, 5vw) 80px; */
 }
 
+.page-sub-heading, .page-heading, .discount-banner {
+  margin: 0 max(24px, 5vw);
+}
 .page-heading {
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 500;
@@ -119,14 +130,21 @@ onMounted(() => {
 
 .features {
   display: flex;
+  flex-direction: row;
+  align-items: baseline;
   gap: 12px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
   margin-bottom: 28px;
+  overflow-y: auto;
+  padding: 0 10px;
+  scrollbar-width: none;
 }
 
 .feature-chip {
   background: #fff;
   border-radius: 10px;
+  flex-shrink: 0;
   padding: 12px 16px;
   display: flex;
   align-items: center;
@@ -149,10 +167,28 @@ onMounted(() => {
 }
 
 .trouble-text {
+  display: none;
   color: var(--dark-muted);
   font-size: 13px;
   margin-top: 14px;
   text-align: center;
 }
 .trouble-link { color: var(--green); font-weight: 700; margin-left: 4px; }
+
+.link-to-reservation {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  
+  margin-top: 18px;
+  text-align: center;
+
+
+  background: var(--green);
+  color: white;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 8px;
+}
 </style>

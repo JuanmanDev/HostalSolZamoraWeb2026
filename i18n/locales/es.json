@@ -21,10 +21,12 @@
     "features": [
       { "icon": "map-pin",        "label": "Ubicación céntrica",    "link": null },
       { "icon": "wifi",           "label": "WiFi disponible",       "link": null },
-      { "icon": "paw-print",      "label": "Pet friendly",          "link": "https://www.srperro.com/hostal-sol/" },
+      { "icon": "paw-print",      "label": "Pet friendly",          "link": null },
       { "icon": "shower-head",    "label": "Baño privado",          "link": null },
-      { "icon": "piggy-bank",     "label": "Precios bajos",         "link": null },
-      { "icon": "wind",           "label": "Aire acondicionado",    "link": null }
+      { "icon": "banknote-arrow-down",     "label": "Precios bajos",         "link": null },
+      { "icon": "wind",           "label": "Aire acondicionado",    "link": null },
+      { "icon": "tv",             "label": "TV",                    "link": null },
+      { "icon": "laptop",             "label": "Escritorio y silla",                    "link": null }
     ]
   },
   "about": {
@@ -49,11 +51,13 @@
     "title": "Nuestras habitaciones",
     "sub": "Tres tipos de habitación, toda la comodidad",
     "types": [
-      { "label": "Doble de matrimonio", "icon": "bed-double", "photoId": 3, "extras": [] },
-      { "label": "Matrimonio con balcón", "icon": "building", "photoId": 8, "extras": ["Balcón privado"] },
-      { "label": "Dos camas individuales", "icon": "bed-single", "photoId": 22, "extras": [] }
+      { "label": "Dos camas individuales", "icon": "bed-single", "photoId": "images/rooms/301/003.jpg", "extras": ["2 camas de 90cm de ancho"] },
+      { "label": "Doble de matrimonio", "icon": "bed-double", "photoId": "images/rooms/323/002.jpg", "extras": ["1 Cama de 135cm de ancho"] },
+      { "label": "Matrimonio con balcón", "icon": "building", "photoId": "images/rooms/321/021.jpg", "extras": ["1 Cama de 135cm de ancho", "Balcón privado"] }
     ],
-    "amenities": ["TV", "WiFi", "Baño privado", "Escritorio", "Calefacción central", "Amenities", "Toallas y ropa de cama"],
+    "amenities": ["TV", "WiFi", "Baño privado", "Escritorio", "Calefacción central", "Amenities", "Toallas y ropa de cama",
+      "Aire acondicionado", "Secador de pelo (bajo petición)", "Armario", "Limpieza diaria", "Silla", "Cámaras de seguridad en zonas comunes", "Ascensor"
+    ],
     "filterAll": "Todas",
     "entrance": "Entrada",
     "mediaAll": "Todo",
@@ -62,7 +66,8 @@
     "allPhotos": "Ver todas",
     "videoLabel": "Vídeo hab.",
     "reserveBtn": "Reservar ahora →",
-    "ytChannel": "Ver canal de YouTube"
+    "ytChannel": "Ver canal de YouTube",
+    "emptyMedia": "No hay elementos para mostrar"
   },
   "videos": {
     "title": "Vídeos de las habitaciones",
@@ -182,12 +187,12 @@
     "discountNum": "−15%",
     "discountLabel": "Descuento",
     "discountNote": "Solo en nuestra web",
-    "note": "Precio directo — siempre más barato que Booking, Expedia u otros portales",
+    "note": "Nuestra web siempre tiene un descuento, aprovéchalo.",
     "features": [
-      "Mejor precio garantizado",
-      "Cancelación gratuita 48h",
       "Pago seguro",
-      "Confirmación inmediata"
+      "Confirmación inmediata",
+      "Mejor precio garantizado",
+      "Cancelación gratuita 48h"
     ],
     "bookBtn": "Ir al motor de reservas",
     "helpText": "¿Problemas con el motor de reservas?",
@@ -256,13 +261,13 @@
       "title": "Reservar — Hostal Sol Zamora",
       "description": "Reserva tu estancia en el Hostal Sol Zamora con un 15% de descuento directo.",
       "heading": "Reserva tu estancia",
-      "discountLabel": "15% de descuento reservando en nuestra web",
-      "discountSub": "Precio directo — siempre más barato que Booking, Expedia o cualquier otro portal",
+      "discountLabel": "Descuento exclusivo",
+      "discountSub": "Precio único al utilziar nuestra página web",
       "features": [
-        "Mejor precio garantizado",
-        "Cancelación gratuita hasta 48h antes",
+        "Confirmación inmediata",
         "Pago seguro",
-        "Confirmación inmediata"
+        "Mejor precio garantizado",
+        "Cancelación gratuita hasta 48h antes*"
       ],
       "iframeTitle": "Motor de reservas Hostal Sol Zamora",
       "troubleText": "¿Tienes problemas con el motor de reservas? Llámanos al",

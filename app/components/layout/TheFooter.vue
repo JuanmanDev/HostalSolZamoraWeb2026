@@ -78,6 +78,7 @@ const year = new Date().getFullYear()
 .footer__schedule {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   gap: 10px;
   flex-wrap: wrap;
   padding-bottom: 14px;

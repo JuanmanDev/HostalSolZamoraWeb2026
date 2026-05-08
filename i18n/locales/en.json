@@ -62,7 +62,8 @@
     "allPhotos": "View all",
     "videoLabel": "Room video",
     "reserveBtn": "Book now →",
-    "ytChannel": "View YouTube channel"
+    "ytChannel": "View YouTube channel",
+    "emptyMedia": "No items to show"
   },
   "videos": {
     "title": "Room videos",

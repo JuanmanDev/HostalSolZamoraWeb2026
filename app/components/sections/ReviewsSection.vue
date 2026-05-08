@@ -251,6 +251,7 @@ const itemsToShow = computed(() => {
   color: #fff !important;
   border-radius: 8px;
   padding: 10px 22px;
+  margin: auto;
   font-size: 14px;
   font-weight: 700;
   white-space: nowrap;

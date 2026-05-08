@@ -37,9 +37,10 @@
         <LucideIcon name="car" :size="15" color="#fff" />
         {{ t('map.howToArrive') }}
       </NuxtLink>
+      
       <span class="map-section__nav-label">
-        <LucideIcon name="navigation" :size="14" color="var(--green)" />
-        {{ t('map.openIn') }}
+        <!-- <LucideIcon name="navigation" :size="14" color="var(--green)" />
+        {{ t('map.openIn') }} -->
       </span>
       <a
         v-for="app in navApps"
@@ -148,13 +149,14 @@ const chips = [
 
 .map-section__nav-label {
   display: inline-flex;
-  align-items: center;
+  align-items: left;
   gap: 6px;
   font-size: 13px;
   font-weight: 600;
   color: var(--dark-muted);
   text-transform: uppercase;
   letter-spacing: 0.06em;
+  flex-grow: 10;;
 }
 
 .map-section__nav-btn {
