@@ -66,6 +66,7 @@ export default defineNuxtConfig({
   },
 
   app: {
+    baseURL: '/HostalSolZamoraWeb2026/',
     head: {
       htmlAttrs: { lang: 'es' },
       link: [

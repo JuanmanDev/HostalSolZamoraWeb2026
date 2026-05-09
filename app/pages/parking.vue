@@ -46,7 +46,7 @@
       <!-- Street parking -->
       <section class="page-section">
         <h2 class="section-heading">{{ t('pages.parking.streetParking') }}</h2>
-        <p class="section-body">Zonas de aparcamiento en calle gratuito o de zona azul cercanas al hostal.</p>
+        <p class="section-body">Aparcamiento en superficie: zona azul regulada (ORA) y áreas gratuitas. Consulta horarios y tarifas.</p>
         <div class="parking-grid">
           <div v-for="spot in streetSpots" :key="spot.name" class="parking-card">
             <div class="parking-card__top">
@@ -96,7 +96,7 @@
       <section class="page-section">
         <h2 class="section-heading">{{ t('map.title') }}</h2>
         <iframe
-          src="https://maps.google.com/maps?q=Calle+Benavente,+2,+49014+Zamora&output=embed&z=16"
+          src="https://maps.google.com/maps?q=Hostal+Sol,+Calle+Benavente,+2,+49014+Zamora+Espa%C3%B1a&output=embed&z=16"
           title="Hostal Sol Zamora"
           class="page-map"
           loading="lazy"
@@ -135,68 +135,67 @@ interface ParkingSpot {
 
 const streetSpots: ParkingSpot[] = [
   {
-    name: 'Plaza Cuartel Viejo',
+    name: 'Zona ORA (estacionamiento regulado)',
+    price: '0,35€/30min',
+    walk: '1 min. a pie',
+    note: 'L-V 9-14h y 16-20h, S 9-14h. Gratis sábados tarde, domingos y festivos. Máx. 3h consecutivas. 30 min: 0,35€ | 1h: 0,70€ | 2h: 1,40€ | 3h: 2,10€.',
+    mapsUrl: 'https://www.google.com/maps/dir//Calle+Benavente+Zamora',
+  },
+  {
+    name: 'Estación de Ferrocarril (gratuito)',
     price: 'Gratis',
-    walk: '8 min. a pie',
-    note: 'Amplia zona de aparcamiento gratuito en el exterior del casco histórico.',
-    mapsUrl: 'https://www.google.com/maps/dir//Plaza+Cuartel+Viejo,+Zamora',
+    walk: '2 km (bus L3)',
+    note: 'Aparcamiento gratuito 24h. La Línea 3 de autobús conecta con parada "Mercado" (5 min. a pie del hostal).',
+    mapsUrl: 'https://www.google.com/maps/dir//Estacion+de+Ferrocarril+Zamora',
     free: true,
   },
   {
-    name: 'Plaza San Esteban',
+    name: 'Plaza de Cristo Rey / Villalpando',
     price: 'Gratis',
-    walk: '5 min. a pie',
-    note: 'Zona libre junto a la iglesia de San Esteban, en el corazón del casco histórico.',
-    mapsUrl: 'https://www.google.com/maps/dir//Plaza+San+Esteban,+Zamora',
+    walk: '10 min. a pie',
+    note: 'Aparcamiento gratuito próximo al centro, pero con alta ocupación residencial crónica.',
+    mapsUrl: 'https://www.google.com/maps/dir//Plaza+de+Cristo+Rey+Zamora',
     free: true,
   },
   {
-    name: 'Plaza San Sebastián',
+    name: 'Calle los Pelambres',
     price: 'Gratis',
-    walk: '6 min. a pie',
-    note: 'Aparcamiento libre en plaza abierta, a pocos minutos del hostal.',
-    mapsUrl: 'https://www.google.com/maps/dir//Plaza+San+Sebastian,+Zamora',
-    free: true,
-  },
-  {
-    name: 'Zona Puerta Nueva',
-    price: 'Zona azul',
-    walk: '4 min. a pie',
-    note: 'Zona de estacionamiento regulado. Gratis por la noche y festivos.',
-    mapsUrl: 'https://www.google.com/maps/dir//Puerta+Nueva,+Zamora',
-  },
-  {
-    name: 'Ciudad Deportiva',
-    price: 'Gratis',
-    walk: '12 min. a pie',
-    note: 'Gran aparcamiento gratuito junto a las instalaciones deportivas municipales.',
-    mapsUrl: 'https://www.google.com/maps/dir//Ciudad+Deportiva+Zamora',
+    walk: '20 min. a pie',
+    note: 'Explanada de arena junto al río Duero con vistas panorámicas. No recomendado con equipaje.',
+    mapsUrl: 'https://www.google.com/maps/dir//Calle+los+Pelambres+Zamora',
     free: true,
   },
 ]
 
 const undergroundSpots: ParkingSpot[] = [
   {
-    name: 'Parking Plaza Constitución',
+    name: 'Parking Plaza de la Constitución',
     price: '14,70€/24h',
     walk: '3 min. a pie',
-    details: '1,45€/h · Abierto 24h · Tel. 980 53 72 08',
-    mapsUrl: 'https://www.google.com/maps/dir//Parking+Plaza+Constitucion+Zamora',
+    details: '1,45€/h · 24h · Iberpark · Tel. 980 53 72 08 · info@iberpark.es',
+    mapsUrl: 'https://www.google.com/maps/dir//Plaza+de+la+Constitucion+Zamora',
   },
   {
-    name: 'Parking La Marina (Empark)',
-    price: 'Consultar tarifa',
+    name: 'Parking Plaza de la Marina Española',
+    price: '19,45€/día',
     walk: '5 min. a pie',
-    details: 'Gestionado por Empark. Reserva online disponible en empark.com.',
-    mapsUrl: 'https://www.google.com/maps/dir//Parking+La+Marina+Zamora',
+    details: 'Desde 2,35€/fracción. Empark/Telpark. Carga VE, cajeros y CCTV. Sin ascensor.',
+    mapsUrl: 'https://www.google.com/maps/dir//Plaza+de+la+Marina+Española+Zamora',
     webUrl: 'https://www.empark.com',
+  },
+  {
+    name: 'Parking Parque de San Martín',
+    price: 'Tarifa reducida',
+    walk: '8 min. a pie',
+    details: 'Gestionado por Iberpark. Tarifas reducidas recientemente en 0,55€ sobre el histórico.',
+    mapsUrl: 'https://www.google.com/maps/dir//Parque+San+Martin+Zamora',
   },
 ]
 </script>
 
 <style scoped>
 .page-content {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 100px max(24px, 5vw) 80px;
 }

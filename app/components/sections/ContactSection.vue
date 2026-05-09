@@ -75,7 +75,7 @@
 
         <div class="contact__mini-map">
           <iframe
-            src="https://maps.google.com/maps?q=Calle+Benavente,+2,+49014+Zamora&output=embed&z=17"
+            src="https://maps.google.com/maps?q=Hostal+Sol,+Calle+Benavente,+2,+49014+Zamora+Espa%C3%B1a&output=embed&z=17"
             title="Mapa Hostal Sol Zamora"
             class="contact__map-frame"
             loading="lazy"
@@ -92,7 +92,7 @@ import { LOGO_SVG, LOGO_ICON } from '~/composables/useRooms'
 const { t } = useI18n()
 
 const infoItems = computed(() => [
-  { icon: 'map-pin',    text: t('contact.address'), href: 'https://www.google.com/maps/dir//Calle+Benavente,+2,+49014+Zamora', external: true },
+  { icon: 'map-pin',    text: t('contact.address'), href: 'https://www.google.com/maps/dir//Hostal+Sol,+Calle+Benavente,+2,+3%C2%BA,+49014+Zamora,+Espa%C3%B1a/@41.5062474,-5.7435342,18z/', external: true },
   { icon: 'phone',      text: t('contact.phone1'),  href: 'tel:+34980533152', external: false },
   { icon: 'smartphone', text: `${t('contact.phone2')}`, href: 'https://wa.me/34639980253', external: true },
   { icon: 'mail',       text: t('contact.email'),   href: `mailto:${t('contact.email')}`, external: false },

@@ -30,9 +30,9 @@
       />
       <p class="hero__sub">{{ t('hero.sub') }}</p>
       <div class="hero__ctas">
-        <button class="hero__cta-primary" @click="scrollTo('reserve')">
+        <NuxtLink class="hero__cta-primary" href="/reserva">
           {{ t('hero.cta') }}
-        </button>
+        </NuxtLink>
         <button class="hero__cta-secondary" @click="scrollTo('rooms')">
           {{ t('hero.ctaRooms') }}
         </button>

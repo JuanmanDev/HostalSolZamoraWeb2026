@@ -101,32 +101,32 @@
     "nav": "Navegar",
     "options": [
       {
-        "name": "Parking Centro (Viriato)",
+        "name": "Parking Plaza Constitución",
         "dist": "3 min. a pie",
-        "price": "~1€/h",
-        "link": "https://maps.google.com/?q=Parking+Viriato+Zamora",
-        "tip": "El más cercano al hostal. Cubierto 24h."
+        "price": "1,45€/h (14,70€/día)",
+        "link": "https://www.google.com/maps/dir//Plaza+de+la+Constitucion+Zamora",
+        "tip": "El más cercano al hostal. Abierto 24h. Gestionado por Iberpark. Tel. 980 53 72 08."
       },
       {
-        "name": "Parking Plaza Mayor",
+        "name": "Parking Plaza de la Marina Española",
         "dist": "5 min. a pie",
-        "price": "~0.8€/h",
-        "link": "https://maps.google.com/?q=Parking+Plaza+Mayor+Zamora",
-        "tip": "Amplio y económico. Ideal para estancias largas."
+        "price": "Desde 2,35€",
+        "link": "https://www.google.com/maps/dir//Plaza+de+la+Marina+Española+Zamora",
+        "tip": "Gestión digital Empark/Telpark. Carga VE, cajeros y CCTV."
       },
       {
-        "name": "Zona ORA Calle Benavente",
+        "name": "Estación de Ferrocarril (gratuito)",
+        "dist": "2 km (bus L3)",
+        "price": "Gratis",
+        "link": "https://www.google.com/maps/dir//Estacion+de+Ferrocarril+Zamora",
+        "tip": "Aparcamiento gratuito 24h. Línea 3 de autobús hasta parada 'Mercado' (5 min. del hostal)."
+      },
+      {
+        "name": "Zona ORA (estacionamiento regulado)",
         "dist": "En la puerta",
-        "price": "~0.5€/h",
-        "link": "https://maps.google.com/?q=Calle+Benavente+Zamora",
-        "tip": "Zona azul en la calle. Límite 2h en horario diurno."
-      },
-      {
-        "name": "Zona libre nocturna",
-        "dist": "2 min. a pie",
-        "price": "Gratis (noche)",
-        "link": "https://maps.google.com/?q=Zamora+centro",
-        "tip": "A partir de las 20h y los domingos, aparcamiento gratuito en muchas calles del centro."
+        "price": "0,35€/30min",
+        "link": "https://www.google.com/maps/dir//Calle+Benavente+Zamora",
+        "tip": "Zona azul. L-V 9-14h y 16-20h, S 9-14h. Gratis sábados tarde, domingos y festivos. Máx. 3h."
       }
     ]
   },

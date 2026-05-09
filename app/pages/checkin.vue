@@ -91,7 +91,7 @@
       <!-- Map embed -->
       <section class="ci-section">
         <iframe
-          src="https://maps.google.com/maps?q=Calle+Benavente,+2,+49014+Zamora&output=embed&z=17"
+          src="https://maps.google.com/maps?q=Hostal+Sol,+Calle+Benavente,+2,+49014+Zamora+Espa%C3%B1a&output=embed&z=17"
           title="Hostal Sol Zamora"
           class="ci-map"
           loading="lazy"
@@ -240,9 +240,9 @@ const steps = computed(() =>
 )
 
 const navApps = [
-  { name: 'Google Maps', color: '#4285f4', href: 'https://www.google.com/maps/dir//Calle+Benavente,+2,+49014+Zamora' },
-  { name: 'Apple Maps',  color: '#1c1c1e', href: 'https://maps.apple.com/?address=Calle+Benavente,2,49014+Zamora,Espa%C3%B1a&ll=41.5065,-5.7450&q=Hostal+Sol+Zamora' },
-  { name: 'Waze',        color: '#33ccff', href: 'https://waze.com/ul?ll=41.5065,-5.7450&navigate=yes&q=Hostal+Sol+Zamora' },
+  { name: 'Google Maps', color: '#4285f4', href: 'https://www.google.com/maps/dir//Hostal+Sol,+Calle+Benavente,+2,+3%C2%BA,+49014+Zamora,+Espa%C3%B1a/@41.5062474,-5.7435342,18z/' },
+  { name: 'Apple Maps',  color: '#1c1c1e', href: 'https://maps.apple/p/5NVDS6BJpi3Ihy' },
+  { name: 'Waze',        color: '#33ccff', href: 'https://www.waze.com/es/live-map/directions/es/cl/zamora/hostal-sol?navigate=yes&to=place.ChIJ72vc5TAeOQ0RRra7dNoyQyc' },
   { name: 'Bing Maps',   color: '#008373', href: 'https://www.bing.com/maps?q=Calle+Benavente+2+49014+Zamora&lvl=17' },
 ]
 </script>

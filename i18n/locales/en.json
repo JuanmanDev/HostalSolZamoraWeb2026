@@ -96,32 +96,32 @@
     "nav": "Navigate",
     "options": [
       {
-        "name": "Parking Centro (Viriato)",
+        "name": "Parking Plaza Constitución",
         "dist": "3 min. walk",
-        "price": "~€1/h",
-        "link": "https://maps.google.com/?q=Parking+Viriato+Zamora",
-        "tip": "Closest to the hostel. Covered, open 24h."
+        "price": "€1.45/h (€14.70/day)",
+        "link": "https://www.google.com/maps/dir//Plaza+de+la+Constitucion+Zamora",
+        "tip": "Closest to the hostel. Open 24h. Managed by Iberpark. Tel. 980 53 72 08."
       },
       {
-        "name": "Parking Plaza Mayor",
+        "name": "Parking Plaza de la Marina Española",
         "dist": "5 min. walk",
-        "price": "~€0.8/h",
-        "link": "https://maps.google.com/?q=Parking+Plaza+Mayor+Zamora",
-        "tip": "Large and affordable. Great for longer stays."
+        "price": "From €2.35",
+        "link": "https://www.google.com/maps/dir//Plaza+de+la+Marina+Española+Zamora",
+        "tip": "Digital management via Empark/Telpark. EV charging, ATMs and CCTV."
       },
       {
-        "name": "ORA Zone – Calle Benavente",
+        "name": "Train Station (free)",
+        "dist": "2 km (bus L3)",
+        "price": "Free",
+        "link": "https://www.google.com/maps/dir//Zamora+Train+Station",
+        "tip": "Free 24h parking. Bus line 3 to 'Mercado' stop (5 min. from the hostel)."
+      },
+      {
+        "name": "ORA Zone (regulated parking)",
         "dist": "At the door",
-        "price": "~€0.5/h",
-        "link": "https://maps.google.com/?q=Calle+Benavente+Zamora",
-        "tip": "Blue zone on the street. 2h limit during daytime hours."
-      },
-      {
-        "name": "Free overnight parking",
-        "dist": "2 min. walk",
-        "price": "Free (nights)",
-        "link": "https://maps.google.com/?q=Zamora+centro",
-        "tip": "From 8pm and on Sundays, many central streets offer free parking."
+        "price": "€0.35/30min",
+        "link": "https://www.google.com/maps/dir//Calle+Benavente+Zamora",
+        "tip": "Blue zone. Mon-Fri 9am-2pm & 4pm-8pm, Sat 9am-2pm. Free Sat PM, Sun & holidays. Max 3h."
       }
     ]
   },
