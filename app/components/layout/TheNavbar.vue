@@ -2,10 +2,14 @@
   <nav class="navbar" :class="{ 'navbar--solid': scrolled }">
     <div class="navbar__inner">
       <NuxtLink to="/" class="navbar__logo-btn" @click.prevent="handleLogoClick">
+        <span class="navbar__logo-desktop">
+          <img :src="LOGO_ICON_SVG" alt="" class="navbar__logo-icon" />
+          <img :src="LOGO_TEXT_SVG" alt="Hostal Sol Zamora" class="navbar__logo-type" />
+        </span>
         <img
           :src="LOGO_SVG"
           alt="Hostal Sol Zamora"
-          class="navbar__logo"
+          class="navbar__logo-mobile"
           @error="(e) => { (e.target as HTMLImageElement).src = LOGO_ICON }"
         />
       </NuxtLink>
@@ -74,7 +78,7 @@
 </template>
 
 <script setup lang="ts">
-import { LOGO_SVG, LOGO_ICON } from '~/composables/useRooms'
+import { LOGO_SVG, LOGO_ICON, LOGO_ICON_SVG, LOGO_TEXT_SVG } from '~/composables/useRooms'
 
 const { t } = useI18n()
 const { scrollTo } = useScrollTo()
@@ -166,13 +170,41 @@ onMounted(() => {
   display: flex;
   align-items: center;
 }
-.navbar__logo {
+.navbar__logo-desktop {
+  display: none;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar__logo-mobile {
   height: 36px;
   display: block;
   filter: brightness(10);
   transition: filter 0.35s;
 }
-.navbar--solid .navbar__logo { filter: none; }
+.navbar--solid .navbar__logo-mobile { filter: none; }
+
+.navbar__logo-icon {
+  height: 4rem;
+  display: block;
+  filter: brightness(10);
+  transition: filter 0.35s;
+}
+.navbar--solid .navbar__logo-icon { filter: none; }
+
+.navbar__logo-type {
+  margin-top: 8px;
+  height: 3rem;
+  display: block;
+  filter: brightness(10);
+  transition: filter 0.35s;
+}
+.navbar--solid .navbar__logo-type { filter: none; }
+@media (max-width: 1000px) {
+  .navbar__logo-type {
+    height: 2rem;
+  }
+}
 
 .navbar__spacer { flex: 1; }
 
@@ -245,9 +277,14 @@ onMounted(() => {
 .navbar__dropdown-link:hover { background: var(--green-light); }
 .navbar__dropdown-link--accent { color: var(--green); font-weight: 700; }
 
-@media (max-width: 768px) {
-  .navbar__desktop { display: none; }
-  .navbar__mobile  { display: flex; }
+@media (max-width: 850px) {
+  .navbar__desktop  { display: none; }
+  .navbar__mobile   { display: flex; }
+}
+
+@media (min-width: 850px) {
+  .navbar__logo-desktop { display: flex; }
+  .navbar__logo-mobile  { display: none; }
 }
 
 .slide-down-enter-active, .slide-down-leave-active { transition: opacity 0.2s, transform 0.2s; }

@@ -46,8 +46,10 @@ function shuffleArray(array: any[]) {
 export const SHUFFLED_HERO_PHOTOS = [...HERO_PHOTOS]
 shuffleArray(SHUFFLED_HERO_PHOTOS)
 
-export const LOGO_SVG  = 'images/logo.svg'
-export const LOGO_ICON = 'images/logo-icon.png'
+export const LOGO_SVG      = 'images/logo.svg'
+export const LOGO_ICON     = 'images/logo-icon.png'
+export const LOGO_ICON_SVG = 'images/logo-icon.svg'
+export const LOGO_TEXT_SVG = 'images/logo-text.svg'
 export const ABOUT_IMG = 'images/about.webp'
 
 export const RESTAURANT_PHOTOS = [
