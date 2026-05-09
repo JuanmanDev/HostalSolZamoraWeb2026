@@ -231,8 +231,6 @@ function handleSlideClick(i: number, item: MediaItem) {
             class="gallery-image"
             @click="handleSlideClick(i, image)"
             sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw xxl:100vw 2xl:100vw 3xl:100vw 4k:100vw"
-            width="1920"
-            height="1280"
             :modifiers="{ rotate: 0 }"
         />
         <div v-else class="video-placeholder">
@@ -379,8 +377,6 @@ function handleSlideClick(i: number, item: MediaItem) {
                 style: { transform: `scale(${zoom}) translate(${panX / zoom}px, ${panY / zoom}px)` }
               }"
               sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw xxl:100vw 2xl:100vw 3xl:100vw 4k:100vw"
-              width="3840"
-              height="2560"
               :modifiers="{ rotate: 0 }"
             />
             <div v-else
