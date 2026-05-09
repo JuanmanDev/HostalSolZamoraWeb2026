@@ -364,10 +364,20 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .gallery-image {
   border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.gallery-image :deep(img) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #thumbnails {

@@ -10,12 +10,13 @@
     >
       <NuxtPicture
         :src="src"
-        width="1920"
-        height="1080"
         format="webp"
         class="hero__slide-img"
-        :img-attrs="{ style: 'width: 100%; height: 100%; object-fit: cover;' }"
-        loading="lazy"
+        :img-attrs="{ 
+          style: 'width: 100%; height: 100%; object-fit: cover;',
+          alt: 'Hero Image'
+        }"
+        loading="eager"
       />
     </div>
 
