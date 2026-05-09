@@ -31,7 +31,20 @@
             <LucideIcon :name="open === i ? 'minus' : 'plus'" :size="18" color="var(--green)" />
           </button>
           <Transition name="expand">
-            <div v-if="open === i" class="faq-item__a">{{ item.a }}</div>
+            <div v-if="open === i" class="faq-item__a">
+              <p class="faq-item__a-text">{{ item.a }}</p>
+              <div v-if="item.links?.length" class="faq-item__links">
+                <NuxtLink
+                  v-for="(link, li) in item.links"
+                  :key="li"
+                  :to="link.url"
+                  class="faq-item__link"
+                >
+                  <LucideIcon v-if="link.icon" :name="link.icon" :size="14" />
+                  {{ link.label }}
+                </NuxtLink>
+              </div>
+            </div>
           </Transition>
         </div>
       </div>
@@ -89,6 +102,11 @@ const allItems = computed(() =>
   (tm('faq.items') as any[]).map((item: any) => ({
     q: rt(item.q),
     a: rt(item.a),
+    links: item.links?.map((l: any) => ({
+      label: rt(l.label),
+      url: rt(l.url),
+      icon: l.icon,
+    })),
   })) as FaqItem[]
 )
 const query = ref((route.query.q as string) || '')
@@ -236,6 +254,30 @@ const infoTiles = [
   color: var(--dark-muted);
   font-size: 14.5px;
   line-height: 1.75;
+}
+.faq-item__a-text { margin: 0 0 12px; }
+
+.faq-item__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.faq-item__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--green-light);
+  color: var(--green);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+.faq-item__link:hover {
+  background: var(--green);
+  color: #fff;
 }
 
 :global(.hl) {

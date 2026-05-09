@@ -15,6 +15,7 @@ export interface Review {
 export interface FaqItem {
   q: string
   a: string
+  links?: { label: string; url: string; icon?: string }[]
 }
 
 export interface RoomType {
