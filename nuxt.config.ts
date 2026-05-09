@@ -40,12 +40,16 @@ export default defineNuxtConfig({
     compatibilityVersion: 4,
   },
 
-  modules: ['@nuxtjs/i18n', '@nuxt/scripts'],
+  modules: ['@nuxtjs/i18n', '@nuxt/scripts', '@nuxt/image'],
 
   css: ['~/assets/css/main.css', 'vue3-carousel/dist/carousel.css'],
 
   appConfig: {
     roomImages,
+  },
+
+  image: {
+    dir: 'public'
   },
 
   i18n: {
@@ -74,12 +78,6 @@ export default defineNuxtConfig({
         {
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap',
-        },
-      ],
-    },
-  },
-})
-0&display=swap',
         },
       ],
     },
