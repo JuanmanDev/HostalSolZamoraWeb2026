@@ -13,11 +13,12 @@
         format="webp"
         class="hero__slide-img"
         :img-attrs="{ 
-          style: 'width: 100%; height: 100%; object-fit: cover;',
+          style: 'width: 100%; height: 100%; object-fit: cover; image-orientation: from-image;',
           alt: 'Hero Image'
         }"
         loading="eager"
         sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw xxl:100vw 2xl:100vw 3xl:100vw 4k:100vw"
+        :modifiers="{ rotate: 0 }"
       />
     </div>
 
