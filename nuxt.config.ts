@@ -43,7 +43,24 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/i18n', '@nuxt/scripts', '@nuxt/image'],
 
   image: {
-    dir: join(process.cwd(), 'public')
+    dir: join(process.cwd(), 'public'),
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536,
+      '2xl': 1536,
+      '3xl': 2560,
+      '4k': 3840
+    },
+    densities: [1, 2],
+    quality: 90,
+    format: ['webp', 'avif', 'jpg'],
+    sharp: {
+      rotate: true
+    }
   },
 
   css: ['~/assets/css/main.css', 'vue3-carousel/dist/carousel.css'],

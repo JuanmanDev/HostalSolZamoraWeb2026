@@ -108,6 +108,7 @@ const infoItems = computed(() => [
   filter: brightness(10);
   /* make the svg to contain */
   object-fit: contain;
+  display: inline-block;
 }
 
 .contact__heading {
