@@ -51,9 +51,9 @@
     "title": "Nuestras habitaciones",
     "sub": "Tres tipos de habitación, toda la comodidad",
     "types": [
-      { "label": "Dos camas individuales", "icon": "bed-single", "photoPath": "/images/rooms/301/003.jpg", "extras": ["2 camas de 90cm de ancho"], "rateId": "578650" },
-      { "label": "Doble de matrimonio", "icon": "bed-double", "photoPath": "/images/rooms/323/002.jpg", "extras": ["1 Cama de 135cm de ancho"], "rateId": "578649" },
-      { "label": "Matrimonio con balcón", "icon": "building", "photoPath": "/images/rooms/321/021.jpg", "extras": ["1 Cama de 135cm de ancho", "Balcón privado", "TV Superior"], "rateId": "752069" }
+      { "label": "Dos camas individuales", "icon": "bed-single", "photoPath": "images/rooms/301/003.jpg", "extras": ["2 camas de 90cm de ancho"], "rateId": "578650" },
+      { "label": "Doble de matrimonio", "icon": "bed-double", "photoPath": "images/rooms/323/002.jpg", "extras": ["1 Cama de 135cm de ancho"], "rateId": "578649" },
+      { "label": "Matrimonio con balcón", "icon": "building", "photoPath": "images/rooms/321/021.jpg", "extras": ["1 Cama de 135cm de ancho", "Balcón privado", "TV Superior"], "rateId": "752069" }
     ],
     "amenities": ["TV", "WiFi", "Baño privado", "Escritorio", "Calefacción central", "Amenities", "Toallas y ropa de cama",
       "Aire acondicionado", "Secador de pelo (bajo petición)", "Armario", "Limpieza diaria", "Silla", "Cámaras de seguridad en zonas comunes", "Ascensor"

@@ -13,7 +13,7 @@ if (existsSync(roomsDir)) {
       const files = readdirSync(fullPath)
         .filter(f => /\.(jpg|jpeg|png|webp)$/i.test(f))
         .sort()
-        .map(f => `/images/rooms/${entry}/${f}`)
+        .map(f => `images/rooms/${entry}/${f}`)
       
       if (files.length > 0) {
         roomImages[entry] = files
@@ -23,7 +23,7 @@ if (existsSync(roomsDir)) {
   
   const rootFiles = readdirSync(roomsDir)
     .filter(f => /\.(jpg|jpeg|png|webp)$/i.test(f))
-    .map(f => `/images/rooms/${f}`)
+    .map(f => `images/rooms/${f}`)
   
   if (rootFiles.length > 0) {
     roomImages['General'] = rootFiles
@@ -74,6 +74,12 @@ export default defineNuxtConfig({
         {
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap',
+        },
+      ],
+    },
+  },
+})
+0&display=swap',
         },
       ],
     },

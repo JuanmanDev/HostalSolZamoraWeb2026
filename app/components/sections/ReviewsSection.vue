@@ -40,15 +40,15 @@
     <!-- Platform badges -->
     <div class="reviews__platforms">
       <a href="https://www.booking.com/hotel/es/hostal-sol-zamora.es.html" target="_blank" rel="noopener noreferrer" class="reviews__platform-badge reviews__platform-badge--booking" aria-label="Booking.com">
-        <img src="/images/icon/booking.svg" alt="Booking.com logo" class="reviews__platform-logo" />
+        <NuxtPicture src="images/icon/booking.svg" alt="Booking.com logo" class="reviews__platform-logo" width="80" height="80" />
         <span class="reviews__platform-name">Booking.com</span>
       </a>
       <a href="https://www.expedia.es/Zamora-Hoteles-Hostal-Sol.h101083476.Informacion-Hotel" target="_blank" rel="noopener noreferrer" class="reviews__platform-badge reviews__platform-badge--expedia" aria-label="Expedia">
-        <img src="/images/icon/expedia.png" alt="Expedia logo" class="reviews__platform-logo" />
+        <NuxtPicture src="images/icon/expedia.png" alt="Expedia logo" class="reviews__platform-logo" width="80" height="80" />
         <span class="reviews__platform-name">Expedia</span>
       </a>
       <a href="https://www.spanish.hostelworld.com/pwa/hosteldetails.php/Hostal-Sol/Zamora/330134" target="_blank" rel="noopener noreferrer" class="reviews__platform-badge reviews__platform-badge--hostelworld" aria-label="HostelWorld">
-        <img src="/images/icon/hostelworld.png" alt="HostelWorld logo" class="reviews__platform-logo" />
+        <NuxtPicture src="images/icon/hostelworld.png" alt="HostelWorld logo" class="reviews__platform-logo" width="80" height="80" />
         <span class="reviews__platform-name">HostelWorld</span>
       </a>
     </div>

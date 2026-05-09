@@ -19,21 +19,21 @@ export const ROOM_YT: Record<string, string> = {
 }
 
 export const HERO_PHOTOS = [
-  '/images/hero/hero-1.jpg',
-  '/images/hero/hero-2.jpg',
-  '/images/hero/hero-3.jpg',
-  '/images/hero/hero-4.jpg',
-  '/images/hero/hero-5.jpg',
-  '/images/hero/hero-6.jpg',
-  '/images/hero/hero-7.jpg',
-  '/images/hero/hero-8.jpg',
-  '/images/hero/hero-9.jpg',
-  '/images/hero/hero-10.jpg',
-  '/images/hero/hero-11.jpg',
-  '/images/hero/hero-12.jpg',
-  '/images/hero/hero-13.jpg',
-  '/images/hero/hero-14.jpg',
-  '/images/hero/hero-15.webp',
+  'images/hero/hero-1.jpg',
+  'images/hero/hero-2.jpg',
+  'images/hero/hero-3.jpg',
+  'images/hero/hero-4.jpg',
+  'images/hero/hero-5.jpg',
+  'images/hero/hero-6.jpg',
+  'images/hero/hero-7.jpg',
+  'images/hero/hero-8.jpg',
+  'images/hero/hero-9.jpg',
+  'images/hero/hero-10.jpg',
+  'images/hero/hero-11.jpg',
+  'images/hero/hero-12.jpg',
+  'images/hero/hero-13.jpg',
+  'images/hero/hero-14.jpg',
+  'images/hero/hero-15.webp',
 ]
 
 function shuffleArray(array: any[]) {
@@ -46,15 +46,15 @@ function shuffleArray(array: any[]) {
 export const SHUFFLED_HERO_PHOTOS = [...HERO_PHOTOS]
 shuffleArray(SHUFFLED_HERO_PHOTOS)
 
-export const LOGO_SVG  = '/images/logo.svg'
-export const LOGO_ICON = '/images/logo-icon.png'
-export const ABOUT_IMG = '/images/about.webp'
+export const LOGO_SVG  = 'images/logo.svg'
+export const LOGO_ICON = 'images/logo-icon.png'
+export const ABOUT_IMG = 'images/about.webp'
 
 export const RESTAURANT_PHOTOS = [
-  '/images/restaurant/padornelo-1.jpg',
-  '/images/restaurant/padornelo-2.png',
-  '/images/restaurant/padornelo-3.png',
-  '/images/restaurant/padornelo-4.png',
+  'images/restaurant/padornelo-1.jpg',
+  'images/restaurant/padornelo-2.png',
+  'images/restaurant/padornelo-3.png',
+  'images/restaurant/padornelo-4.png',
 ]
 
 export const YT_CHANNEL_ID = 'UCMzo7LwahJEbzbt1A5rtC5g'

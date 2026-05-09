@@ -5,9 +5,19 @@
       v-for="(src, i) in HERO_PHOTOS"
       :key="i"
       class="hero__slide"
-      :style="{ backgroundImage: `url(${src})`, opacity: i === currentIdx ? 1 : 0 }"
+      :style="{ opacity: i === currentIdx ? 1 : 0 }"
       aria-hidden="true"
-    />
+    >
+      <NuxtPicture
+        :src="src"
+        width="1920"
+        height="1080"
+        format="webp"
+        class="hero__slide-img"
+        :img-attrs="{ style: 'width: 100%; height: 100%; object-fit: cover;' }"
+        loading="lazy"
+      />
+    </div>
 
     <!-- Overlay -->
     <div class="hero__overlay" />
@@ -22,11 +32,12 @@
 
     <!-- Content -->
     <div class="hero__content">
-      <img
+      <NuxtPicture
         :src="LOGO_SVG"
         alt="Hostal Sol Zamora"
+        width="480"
+        height="110"
         class="hero__logo"
-        @error="(e) => { (e.target as HTMLImageElement).src = LOGO_ICON }"
       />
       <p class="hero__sub">{{ t('hero.sub') }}</p>
       <div class="hero__ctas">
@@ -86,7 +97,7 @@
 </template>
 
 <script setup lang="ts">
-import { SHUFFLED_HERO_PHOTOS, LOGO_SVG, LOGO_ICON } from '~/composables/useRooms'
+import { SHUFFLED_HERO_PHOTOS, LOGO_SVG } from '~/composables/useRooms'
 import { Carousel, Slide } from 'vue3-carousel'
 
 const HERO_PHOTOS = SHUFFLED_HERO_PHOTOS;
@@ -130,9 +141,18 @@ onMounted(() => {
 .hero__slide {
   position: absolute;
   inset: 0;
-  background-size: cover;
-  background-position: center;
   transition: opacity 1.2s ease;
+}
+
+.hero__slide-img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero__slide-img :deep(img) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hero__overlay {

@@ -224,8 +224,10 @@ function handleSlideClick(i: number, item: MediaItem) {
 
     <Carousel id="gallery" v-bind="galleryConfig" v-model="currentSlide">
       <Slide v-for="(image, i) in mediaItems" :key="`${image.type}-${i}`">
-        <img v-if="image.type === 'photo'" :src="image.path" alt="Gallery Image" class="gallery-image"
+        <NuxtPicture v-if="image.type === 'photo'" :src="image.path" alt="Gallery Image" class="gallery-image"
             @click="handleSlideClick(i, image)"
+            width="1200"
+            height="800"
         />
         <div v-else class="video-placeholder">
           <iframe v-if="currentSlide === i" width="100%" height="100%" :src="`https://www.youtube.com/embed/${ROOM_YT[image.room!]}?rel=0&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=${ROOM_YT[image.room!]}`" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -240,7 +242,7 @@ function handleSlideClick(i: number, item: MediaItem) {
             :class="['thumbnail', { 'is-active': isActive }]"
             @click="slideTo(currentIndex)"
           >
-            <img v-if="image.type === 'photo'" :src="image.path" alt="Thumbnail Image" class="thumbnail-image" />
+            <NuxtPicture v-if="image.type === 'photo'" :src="image.path" alt="Thumbnail Image" class="thumbnail-image" width="120" height="80" />
             <div v-else class="video-placeholder thumbnail-video">
               <LucideIcon class="thumbnail-video__play" name="play-circle" :size="48" color="#fff" />
               <img :src="`https://i.ytimg.com/vi/${ROOM_YT[image.room!]}/default.jpg`" alt="Video Thumbnail" class="thumbnail-image" />
@@ -265,7 +267,7 @@ function handleSlideClick(i: number, item: MediaItem) {
         class="room-gallery__thumbnail"
         @click="slideTo(i); handleSlideClick(mediaItems.findIndex(m => (m.type === 'photo' ? m.path === image.path : m.room === image.room)), image)"
       >
-        <img v-if="image.type === 'photo'" :src="image.path" alt="Thumbnail Image" class="thumbnail-image" />
+        <NuxtPicture v-if="image.type === 'photo'" :src="image.path" alt="Thumbnail Image" class="thumbnail-image" width="120" height="90" />
         <div v-else class="video-placeholder thumbnail-video">
           <LucideIcon class="thumbnail-video__play" name="play-circle" :size="48" color="#fff" />
         </div>
@@ -287,7 +289,7 @@ function handleSlideClick(i: number, item: MediaItem) {
             class="room-gallery__group-item"
             @click="handleSlideClick(mediaItems.findIndex(m => (m.type === 'photo' ? m.path === item.path : m.room === item.room)), item)"
           >
-            <img v-if="item.type === 'photo'" :src="item.path" alt="Media Image" class="gallery-image" />
+            <NuxtPicture v-if="item.type === 'photo'" :src="item.path" alt="Media Image" class="gallery-image" width="200" height="150" />
             <div v-else class="video-placeholder thumbnail-video">
               <LucideIcon class="thumbnail-video__play" name="play-circle" :size="48" color="#fff" />
               <img :src="`https://i.ytimg.com/vi/${ROOM_YT[item.room!]}/default.jpg`" alt="Video Thumbnail" class="thumbnail-image" />
@@ -323,13 +325,15 @@ function handleSlideClick(i: number, item: MediaItem) {
             class="lb__stage"
             :style="{ cursor: zoom > 1 ? (dragging ? 'grabbing' : 'grab') : 'zoom-in' }"
           >
-            <img
+            <NuxtPicture
               v-if="lbPhotoItems[lbIdx] && lbPhotoItems[lbIdx]!.path"
               :src="lbPhotoItems[lbIdx]!.path"
               alt=""
               class="lb__img"
               draggable="false"
               :style="{ transform: `scale(${zoom}) translate(${panX / zoom}px, ${panY / zoom}px)` }"
+              width="1600"
+              height="1000"
             />
             <div v-else
               class="lb__video-placeholder">
