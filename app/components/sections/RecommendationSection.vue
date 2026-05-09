@@ -5,8 +5,18 @@
       v-for="(photo, i) in RESTAURANT_PHOTOS"
       :key="i"
       class="rec__bg-slide"
-      :style="{ backgroundImage: `url(${photo})`, opacity: i === slideIdx ? 1 : 0 }"
-    />
+      :style="{ opacity: i === slideIdx ? 1 : 0 }"
+    >
+      <NuxtPicture
+        :src="photo"
+        width="1920"
+        height="1080"
+        format="webp"
+        class="rec__bg-img"
+        :img-attrs="{ style: 'width: 100%; height: 100%; object-fit: cover;' }"
+        loading="lazy"
+      />
+    </div>
 
     <!-- Gradient overlay -->
     <div class="rec__overlay" />
@@ -83,9 +93,17 @@ onMounted(() => {
 .rec__bg-slide {
   position: absolute;
   inset: 0;
-  background-size: cover;
-  background-position: center;
   transition: opacity 1.4s ease;
+}
+
+.rec__bg-img {
+  width: 100%;
+  height: 100%;
+}
+.rec__bg-img :deep(img) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .rec__overlay {

@@ -13,7 +13,7 @@ if (existsSync(roomsDir)) {
       const files = readdirSync(fullPath)
         .filter(f => /\.(jpg|jpeg|png|webp)$/i.test(f))
         .sort()
-        .map(f => `images/rooms/${entry}/${f}`)
+        .map(f => `/images/rooms/${entry}/${f}`)
       
       if (files.length > 0) {
         roomImages[entry] = files
@@ -23,7 +23,7 @@ if (existsSync(roomsDir)) {
   
   const rootFiles = readdirSync(roomsDir)
     .filter(f => /\.(jpg|jpeg|png|webp)$/i.test(f))
-    .map(f => `images/rooms/${f}`)
+    .map(f => `/images/rooms/${f}`)
   
   if (rootFiles.length > 0) {
     roomImages['General'] = rootFiles
@@ -46,10 +46,6 @@ export default defineNuxtConfig({
 
   appConfig: {
     roomImages,
-  },
-
-  image: {
-    dir: 'public'
   },
 
   i18n: {

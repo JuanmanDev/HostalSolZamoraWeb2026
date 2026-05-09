@@ -3,14 +3,15 @@
     <div class="navbar__inner">
       <NuxtLink to="/" class="navbar__logo-btn" @click.prevent="handleLogoClick">
         <span class="navbar__logo-desktop">
-          <img :src="LOGO_ICON_SVG" alt="" class="navbar__logo-icon" />
-          <img :src="LOGO_TEXT_SVG" alt="Hostal Sol Zamora" class="navbar__logo-type" />
+          <NuxtPicture :src="LOGO_ICON_SVG" alt="" class="navbar__logo-icon" width="64" height="64" />
+          <NuxtPicture :src="LOGO_TEXT_SVG" alt="Hostal Sol Zamora" class="navbar__logo-type" width="200" height="48" />
         </span>
-        <img
+        <NuxtPicture
           :src="LOGO_SVG"
           alt="Hostal Sol Zamora"
           class="navbar__logo-mobile"
-          @error="(e) => { (e.target as HTMLImageElement).src = LOGO_ICON }"
+          width="160"
+          height="36"
         />
       </NuxtLink>
 

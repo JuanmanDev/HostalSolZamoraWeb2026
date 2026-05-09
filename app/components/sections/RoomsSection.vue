@@ -10,7 +10,7 @@
       <div class="rooms__types">
         <div v-for="type in roomTypes" :key="type.label" class="rooms__type-card">
           <div class="rooms__type-img-wrap">
-            <img :src="type.photoPath" :alt="type.label" loading="lazy" class="rooms__type-img" />
+            <NuxtPicture :src="type.photoPath" :alt="type.label" class="rooms__type-img" width="600" height="400" />
           </div>
           <div class="rooms__type-body">
             <div class="rooms__type-name">

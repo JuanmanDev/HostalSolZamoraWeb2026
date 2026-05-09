@@ -32,7 +32,7 @@
           </div>
         </div>
         <div class="about__img-wrap">
-          <img :src="ABOUT_IMG" alt="Hostal Sol Zamora" class="about__img" loading="lazy" />
+          <NuxtPicture :src="ABOUT_IMG" alt="Hostal Sol Zamora" class="about__img" width="800" height="450" />
         </div>
       </div>
     </div>
