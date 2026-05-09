@@ -26,6 +26,8 @@ jobs:
 
       - name: Generate Static Site
         run: npm run generate
+        env:
+          NUXT_APP_BASE_URL: /HostalSolZamoraWeb2026/
 
       - name: Upload Static Files Artifact
         uses: actions/upload-artifact@v4
