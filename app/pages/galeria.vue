@@ -110,7 +110,7 @@ function onRoomChange(key: string) {
 
 /* ── Gallery carousel ───────────────────────────────────────────────────── */
 .galeria__gallery {
-  margin: 0;
+  margin: 2rem 0;
   padding: 0;
 }
 

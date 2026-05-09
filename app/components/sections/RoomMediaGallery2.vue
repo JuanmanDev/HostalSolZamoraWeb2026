@@ -73,14 +73,16 @@ const mediaItems = computed((): MediaItem[] => {
       .filter(room => ROOM_YT[room])
       .map(room => ({ type: 'video', room }))
     
+      console.log('Video items for', activeRoom.value, videoItems)
+
+    if (mediaFilter.value === 'all') {
+      items.push(...videoItems)
+    }
+
     if (mediaFilter.value === 'videos') {
       return videoItems
     }
     
-    if (mediaFilter.value === 'all') {
-      // Add a few videos at the start
-      items.splice(2, 0, ...videoItems.slice(0, 3))
-    }
   } else {
     const hasVideo = ROOM_YT[activeRoom.value]
     if (hasVideo && mediaFilter.value !== 'photos') {
