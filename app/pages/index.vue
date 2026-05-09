@@ -11,7 +11,6 @@
       <SectionsRecommendationSection />
       <SectionsFaqSection />
       <SectionsReservationSection />
-      <SectionsContactSection />
     </main>
     <LayoutTheFooter />
   </div>

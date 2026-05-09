@@ -1,3 +1,38 @@
+import { readdirSync, statSync, existsSync } from 'node:fs'
+import { join } from 'node:path'
+
+// Build-time discovery of room images
+const roomsDir = join(process.cwd(), 'public/images/rooms')
+const roomImages: Record<string, string[]> = {}
+
+if (existsSync(roomsDir)) {
+  const entries = readdirSync(roomsDir)
+  for (const entry of entries) {
+    const fullPath = join(roomsDir, entry)
+    if (statSync(fullPath).isDirectory()) {
+      const files = readdirSync(fullPath)
+        .filter(f => /\.(jpg|jpeg|png|webp)$/i.test(f))
+        .sort()
+        .map(f => `/images/rooms/${entry}/${f}`)
+      
+      if (files.length > 0) {
+        roomImages[entry] = files
+      }
+    }
+  }
+  
+  const rootFiles = readdirSync(roomsDir)
+    .filter(f => /\.(jpg|jpeg|png|webp)$/i.test(f))
+    .map(f => `/images/rooms/${f}`)
+  
+  if (rootFiles.length > 0) {
+    roomImages['General'] = rootFiles
+    if (!roomImages['Entrada']) {
+      roomImages['Entrada'] = rootFiles
+    }
+  }
+}
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-01',
 
@@ -5,9 +40,13 @@ export default defineNuxtConfig({
     compatibilityVersion: 4,
   },
 
-  modules: ['@nuxtjs/i18n'],
+  modules: ['@nuxtjs/i18n', '@nuxt/scripts'],
 
   css: ['~/assets/css/main.css', 'vue3-carousel/dist/carousel.css'],
+
+  appConfig: {
+    roomImages,
+  },
 
   i18n: {
     bundle: { optimizeTranslationDirective: false },

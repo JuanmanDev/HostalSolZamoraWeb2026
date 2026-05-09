@@ -34,7 +34,7 @@
       </div>
       
       <div class="navbar__mobile">
-        <NuxtLink v-if="!scrolled" to="/reserva" class="navbar__cta-button">
+        <NuxtLink to="/reserva" class="navbar__cta-button">
           {{ t('nav.reserve') }}
         </NuxtLink> 
 

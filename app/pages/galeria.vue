@@ -10,13 +10,27 @@
 
       <!-- Room Media Gallery -->
       <section class="galeria__gallery">
-        <SectionsRoomMediaGallery
+        <SectionsRoomMediaGallery2
           :initial-room="activeRoom"
           :initial-media="mediaFilter"
           @update:room="onRoomChange"
           @update:media="onMediaChange"
         />
       </section>
+
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+<!--       
+        <SectionsRoomMediaGallery
+          :initial-room="activeRoom"
+          :initial-media="mediaFilter"
+          @update:room="onRoomChange"
+          @update:media="onMediaChange"
+        /> -->
     </main>
 
     <LayoutTheFooter />

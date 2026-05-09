@@ -75,7 +75,7 @@ onMounted(() => {
 <style scoped>
 .rec {
   position: relative;
-  height: 560px;
+  min-height: 600px;
   overflow: hidden;
   background: var(--dark);
 }
@@ -107,7 +107,7 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 48px max(24px, 6vw);
+  
   max-width: 640px;
   z-index: 2;
 }
@@ -189,8 +189,4 @@ onMounted(() => {
 }
 .rec__dot--active { width: 24px; background: #fff; border-color: #fff; }
 
-@media (max-width: 640px) {
-  .rec { height: 480px; }
-  .rec__title { font-size: 1.8rem; }
-}
 </style>

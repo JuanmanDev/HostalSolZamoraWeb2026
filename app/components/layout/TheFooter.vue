@@ -1,50 +1,13 @@
 <template>
+  
+      <SectionsContactSection />
   <footer class="footer">
     <div class="footer__container">
-      <!-- Schedule strip -->
-      <div class="footer__schedule">
-        <div class="footer__schedule-item">
-          <LucideIcon name="key" :size="13" color="rgba(255,255,255,0.5)" />
-          <span>{{ t('contact.checkin') }} <strong>{{ t('contact.checkinVal') }}</strong></span>
-        </div>
-        <div class="footer__schedule-sep">·</div>
-        <div class="footer__schedule-item">
-          <LucideIcon name="log-out" :size="13" color="rgba(255,255,255,0.5)" />
-          <span>{{ t('contact.checkout') }} <strong>{{ t('contact.checkoutVal') }}</strong></span>
-        </div>
-        <div class="footer__schedule-sep">·</div>
-        <div class="footer__schedule-item">
-          <LucideIcon name="clock" :size="13" color="rgba(255,255,255,0.5)" />
-          <span>{{ t('contact.attention') }} <strong>{{ t('contact.attentionVal') }}</strong></span>
-        </div>
-        <div class="footer__schedule-sep">·</div>
-        <div class="footer__schedule-item">
-          <LucideIcon name="moon" :size="13" color="rgba(255,255,255,0.5)" />
-          <span>{{ t('contact.sunday') }}: <strong>{{ t('contact.sundayVal') }}</strong></span>
-        </div>
-      </div>
-
-      <!-- Quick-contact row -->
-      <div class="footer__actions">
-        <a href="tel:+34980533152" class="footer__action-btn">
-          <LucideIcon name="phone" :size="14" color="#fff" /> +34 980 533 152
-        </a>
-        <a href="https://wa.me/34639980253" target="_blank" rel="noopener noreferrer" class="footer__action-btn footer__action-btn--wa">
-          <LucideIcon name="message-circle" :size="14" color="#fff" /> WhatsApp +34 639 980 253
-        </a>
-        <a href="mailto:hostalsol@outlook.com" class="footer__action-btn">
-          <LucideIcon name="mail" :size="14" color="#fff" /> Email
-        </a>
-        <NuxtLink to="/reserva" class="footer__action-btn footer__action-btn--reserve">
-          <LucideIcon name="tag" :size="14" color="#fff" />
-          {{ t('footer.reserveCta') }}
-        </NuxtLink>
-      </div>
 
       <!-- Bottom row -->
       <div class="footer__bottom">
         <span class="footer__copy">
-          © {{ year }} Hostal Sol Zamora · {{ t('footer.family') }} · {{ t('footer.rights') }}
+          © {{ year }} Hostal Sol Zamora · {{ t('footer.rights') }}
         </span>
         <nav class="footer__links">
           <NuxtLink to="/terminos-y-condiciones">{{ t('footer.terms') }}</NuxtLink>

@@ -20,7 +20,7 @@ export interface FaqItem {
 export interface RoomType {
   label: string
   icon: string
-  photoId: number
+  photoPath: string
   extras: string[]
 }
 

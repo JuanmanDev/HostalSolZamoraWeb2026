@@ -40,24 +40,15 @@
     <!-- Platform badges -->
     <div class="reviews__platforms">
       <a href="https://www.booking.com/hotel/es/hostal-sol-zamora.es.html" target="_blank" rel="noopener noreferrer" class="reviews__platform-badge reviews__platform-badge--booking" aria-label="Booking.com">
-        <svg class="reviews__platform-logo" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
-          <rect width="56" height="56" rx="10" fill="#003580"/>
-          <text x="28" y="41" text-anchor="middle" font-size="36" font-weight="900" font-family="Georgia,serif" fill="#fff">B</text>
-        </svg>
+        <img src="/images/icon/booking.svg" alt="Booking.com logo" class="reviews__platform-logo" />
         <span class="reviews__platform-name">Booking.com</span>
       </a>
       <a href="https://www.expedia.es/Zamora-Hoteles-Hostal-Sol.h101083476.Informacion-Hotel" target="_blank" rel="noopener noreferrer" class="reviews__platform-badge reviews__platform-badge--expedia" aria-label="Expedia">
-        <svg class="reviews__platform-logo" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
-          <rect width="56" height="56" rx="10" fill="#1c6faf"/>
-          <text x="28" y="41" text-anchor="middle" font-size="36" font-weight="900" font-family="Georgia,serif" fill="#fff">e</text>
-        </svg>
+        <img src="/images/icon/expedia.png" alt="Expedia logo" class="reviews__platform-logo" />
         <span class="reviews__platform-name">Expedia</span>
       </a>
       <a href="https://www.spanish.hostelworld.com/pwa/hosteldetails.php/Hostal-Sol/Zamora/330134" target="_blank" rel="noopener noreferrer" class="reviews__platform-badge reviews__platform-badge--hostelworld" aria-label="HostelWorld">
-        <svg class="reviews__platform-logo" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
-          <rect width="56" height="56" rx="10" fill="#f26500"/>
-          <text x="28" y="39" text-anchor="middle" font-size="22" font-weight="900" font-family="Arial,sans-serif" fill="#fff">HW</text>
-        </svg>
+        <img src="/images/icon/hostelworld.png" alt="HostelWorld logo" class="reviews__platform-logo" />
         <span class="reviews__platform-name">HostelWorld</span>
       </a>
     </div>
@@ -122,6 +113,7 @@ const itemsToShow = computed(() => {
   justify-content: center;
   margin: 32px 0 0;
   padding: 0 max(24px, 6vw);
+  gap: 32px;
 }
 
 .reviews__platform-badge {

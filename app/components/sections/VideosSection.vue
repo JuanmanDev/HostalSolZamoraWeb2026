@@ -35,7 +35,7 @@
         >
           <div class="videos__card-thumb">
             <img
-              :src="photoUrl(roomPhotoIds(room)[0] ?? 1)"
+              :src="roomPhotoPaths(room)[0] ?? '/images/rooms/1.jpg'"
               :alt="room"
               loading="lazy"
               class="videos__card-img"
@@ -72,7 +72,7 @@
 import { YT_CHANNEL_ID, YT_SHORTS_URL } from '~/composables/useRooms'
 
 const { t } = useI18n()
-const { photoUrl, roomPhotoIds, roomKeys } = useRooms()
+const { photoUrl, roomPhotoPaths, roomKeys } = useRooms()
 
 const track = ref<HTMLElement | null>(null)
 

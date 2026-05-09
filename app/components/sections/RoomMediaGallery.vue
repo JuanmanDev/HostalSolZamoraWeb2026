@@ -1,5 +1,66 @@
 <template>
   <div class="room-gallery">
+
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+
+
+    {{ roomPhotoPaths }}
+    -----
+    {{ roomKeys }}
+
+
+
+
+
+    
+    <br />
+
+    {{ mediaItems }}
+    {{ activeRoom }}
+    {{ mediaFilter }}
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
     <!-- Filter bar -->
     <div class="room-gallery__filters">
       <div class="room-gallery__media-toggle">
@@ -45,7 +106,7 @@
     </div>
 
     <!-- Full-width carousel -->
-    <ClientOnly>
+    <!-- <ClientOnly> -->
       <div v-if="mediaItems.length > 0" class="room-gallery__carousel-wrap">
         <Carousel
           ref="mainCarouselRef"
@@ -53,31 +114,25 @@
           :wrap-around="true"
           :autoplay="4500"
           :transition="600"
-          :items-to-show="1.06"
           snap-align="center"
           :pause-autoplay-on-hover="true"
           :mouse-drag="true"
           :touch-drag="true"
+          itemsToShow="auto"
           @slide-end="onSlideEnd"
         >
-          <Slide v-for="(item, i) in mediaItems" :key="`${item.type}-${i}`">
-            <div class="room-gallery__slide" @click="handleSlideClick(i, item)">
+          <Slide v-for="(item, i) in mediaItems" :key="`${item.type}-${item.type === 'photo' ? item.path : item.room}-${i}`">
+            <div class="room-gallery__slide">
               <img
                 v-if="item.type === 'photo'"
-                :src="photoUrl(item.id!)"
+                :src="item.path"
                 :alt="`Habitación ${activeRoom}`"
                 :loading="i === 0 ? 'eager' : 'lazy'"
                 class="room-gallery__slide-img"
+                @click="handleSlideClick(i, item)"
               />
-              <div
-                v-else
-                class="room-gallery__slide-video"
-                :style="{ backgroundImage: `url(${photoUrl(roomPhotoIds(item.room!)[0] ?? 301)})` }"
-              >
-                <div class="room-gallery__play-btn">
-                  <LucideIcon name="play" :size="36" color="#fff" />
-                </div>
-                <span class="room-gallery__video-lbl">{{ t('rooms.videoLabel') }} {{ item.room }}</span>
+              <div v-else class="room-gallery__slide-video-wrap">
+                <iframe width="100%" height="100%" :src="`https://www.youtube.com/embed/${ROOM_YT[item.room!]}?rel=0&amp;autoplay=1&amp;loop=1&amp;playlist=${ROOM_YT[item.room!]}`" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
             </div>
           </Slide>
@@ -107,7 +162,7 @@
               @click="goToSlide(i)"
             >
               <img
-                :src="photoUrl(item.type === 'photo' ? item.id! : (roomPhotoIds(item.room!)[0] ?? 301))"
+                :src="item.type === 'photo' ? item.path : (roomPhotoPaths(item.room!)[0] ?? '/images/rooms/1.jpg')"
                 :alt="`slide ${i + 1}`"
                 loading="lazy"
               />
@@ -126,7 +181,7 @@
         <LucideIcon name="image-off" :size="32" color="var(--dark-muted)" />
         <span>{{ t('rooms.emptyMedia') }}</span>
       </div>
-    </ClientOnly>
+    <!-- </ClientOnly> -->
 
     <!-- YouTube channel link -->
     <div class="room-gallery__yt-row">
@@ -164,7 +219,7 @@
           >
             <img
               v-if="lbPhotoItems[lbIdx]"
-              :src="photoUrl(lbPhotoItems[lbIdx]!.id)"
+              :src="lbPhotoItems[lbIdx]!.path"
               alt=""
               class="lb__img"
               draggable="false"
@@ -196,7 +251,7 @@ const emit = defineEmits<{
 }>()
 
 const { t } = useI18n()
-const { photoUrl, roomPhotoIds, roomKeys } = useRooms()
+const { photoUrl, roomPhotoPaths, roomKeys } = useRooms()
 
 const activeRoom  = ref(props.initialRoom || 'All')
 const mediaFilter = ref<'all' | 'photos' | 'videos'>(props.initialMedia || 'all')
@@ -220,16 +275,31 @@ function onRoomChange(key: string) {
 }
 
 type MediaItem =
-  | { type: 'photo'; id: number }
+  | { type: 'photo'; path: string }
   | { type: 'video'; room: string }
 
 const mediaItems = computed((): MediaItem[] => {
-  const ids = roomPhotoIds(activeRoom.value)
-  const items: MediaItem[] = ids.map(id => ({ type: 'photo', id }))
+  const paths = roomPhotoPaths(activeRoom.value)
+  const items: MediaItem[] = paths.map(path => ({ type: 'photo', path }))
 
-  const hasVideo = activeRoom.value !== 'All' && ROOM_YT[activeRoom.value]
-  if (hasVideo && mediaFilter.value !== 'photos') {
-    items.splice(2, 0, { type: 'video', room: activeRoom.value })
+  if (activeRoom.value === 'All') {
+    const videoItems: MediaItem[] = Object.keys(ROOM_YT).map(room => ({ type: 'video', room }))
+    
+    if (mediaFilter.value === 'videos') {
+      return videoItems
+    }
+    
+    // For "all" media filter, mix in some videos at intervals or at the end
+    // Let's prepend them for visibility or mix them
+    if (mediaFilter.value === 'all') {
+      // Add a few videos at the start or end
+      items.splice(2, 0, ...videoItems.slice(0, 3))
+    }
+  } else {
+    const hasVideo = ROOM_YT[activeRoom.value]
+    if (hasVideo && mediaFilter.value !== 'photos') {
+      items.splice(2, 0, { type: 'video', room: activeRoom.value })
+    }
   }
 
   if (mediaFilter.value === 'photos') return items.filter(m => m.type === 'photo')
@@ -237,8 +307,8 @@ const mediaItems = computed((): MediaItem[] => {
   return items
 })
 
-const lbPhotoItems = computed((): Array<{ id: number }> =>
-  mediaItems.value.filter(m => m.type === 'photo') as Array<{ type: 'photo'; id: number }>
+const lbPhotoItems = computed((): Array<{ path: string }> =>
+  mediaItems.value.filter(m => m.type === 'photo') as Array<{ type: 'photo'; path: string }>
 )
 
 const currentSlide    = ref(0)
@@ -267,11 +337,9 @@ function scrollThumbs(dir: 1 | -1) {
 }
 
 function handleSlideClick(i: number, item: MediaItem) {
-  if (item.type === 'video') {
-    window.open(`https://www.youtube.com/shorts/${ROOM_YT[item.room!]}`, '_blank')
-    return
-  }
-  const photoIdx = lbPhotoItems.value.findIndex(p => p.id === (item as { id: number }).id)
+  if (item.type === 'video') return
+  
+  const photoIdx = lbPhotoItems.value.findIndex(p => p.path === (item as { path: string }).path)
   openLb(photoIdx >= 0 ? photoIdx : 0)
 }
 
@@ -342,13 +410,18 @@ onMounted(() => {
 </script>
 
 <style scoped>
+.room-gallery {
+  margin: 32px 0;
+}
 .room-gallery__filters {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
   gap: 12px;
-  margin-bottom: 20px;
+  padding: 8px 16px 20px;
+  margin: 0 auto;
+  max-width: 1500px;
 }
 .room-gallery__media-toggle { display: flex; background: var(--green-light); border-radius: 22px; padding: 4px; }
 .room-gallery__media-btn {
@@ -394,9 +467,11 @@ onMounted(() => {
   cursor: pointer;
   outline: none;
   appearance: auto;
+
+  max-width: 250px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1500px) {
   .room-gallery__room-tabs--desktop { display: none; }
   .room-gallery__room-tabs--mobile  { display: block; }
 }
@@ -406,52 +481,39 @@ onMounted(() => {
 
 .room-gallery__slide {
   padding: 0 4px;
-  cursor: pointer;
   width: 100%;
+  max-width: 90vw;
 }
 
 .room-gallery__slide-img {
-  width: 100%;
+  /* width: 100%; */
+  width: 90vw;
   height: 500px;
   object-fit: cover;
   border-radius: 10px;
   display: block;
   transition: transform 0.3s;
+  cursor: pointer;
 }
 .room-gallery__slide:hover .room-gallery__slide-img { transform: scale(1.01); }
 
-.room-gallery__slide-video {
+.room-gallery__slide-video-wrap {
   width: auto;
   max-width: calc(500px * 9 / 16);
   height: 500px;
   margin: 0 auto;
   border-radius: 10px;
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
+  background: #000;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 12px;
-  position: relative;
 }
-.room-gallery__slide-video::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: 10px;
-  background: rgba(0,0,0,0.45);
+
+.room-gallery__script-player {
+  width: 100% !important;
+  height: 100% !important;
 }
-.room-gallery__play-btn {
-  width: 72px; height: 72px; border-radius: 50%;
-  background: rgba(220,30,30,0.9);
-  display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 6px 24px rgba(0,0,0,0.5);
-  position: relative; z-index: 1;
-  transition: transform 0.2s;
-}
-.room-gallery__slide-video:hover .room-gallery__play-btn { transform: scale(1.1); }
-.room-gallery__video-lbl { color: #fff; font-size: 13px; font-weight: 700; text-shadow: 0 2px 6px rgba(0,0,0,0.8); position: relative; z-index: 1; }
 
 /* vue3-carousel arrow overrides */
 :deep(.carousel__prev),
@@ -604,6 +666,6 @@ onMounted(() => {
 
 @media (max-width: 640px) {
   .room-gallery__slide-img,
-  .room-gallery__slide-video { height: 300px; }
+  .room-gallery__slide-video-wrap { height: 300px; }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <section id="rooms" class="rooms section-padding">
+  <section id="rooms" class="rooms section-padding pt-0">
     <div class="container">
       <UiSectionTag>{{ t('rooms.title') }}</UiSectionTag>
       <h2 class="rooms__heading">{{ t('rooms.sub') }}</h2>
@@ -16,7 +16,7 @@
       <div class="rooms__types">
         <div v-for="type in roomTypes" :key="type.label" class="rooms__type-card">
           <div class="rooms__type-img-wrap">
-            <img :src="type.photoId.loc.source" :alt="type.label" loading="lazy" class="rooms__type-img" />
+            <img :src="type.photoPath" :alt="type.label" loading="lazy" class="rooms__type-img" />
           </div>
           <div class="rooms__type-body">
             <div class="rooms__type-name">
@@ -42,9 +42,11 @@
       </div>
     </div>
 
-    <!-- Room Media Gallery -->
-    <SectionsRoomMediaGallery />
   </section>
+    <!-- Room Media Gallery -->
+    <SectionsRoomMediaGallery2
+      hideThumbailsAll="false"
+    />
 </template>
 
 <script setup lang="ts">
@@ -54,10 +56,10 @@ const { t, tm, rt } = useI18n()
 
 const roomTypes = computed(() =>
   (tm('rooms.types') as any[]).map((type: any) => ({
-    label:   rt(type.label),
-    icon:    rt(type.icon),
-    photoId: type.photoId as number,
-    extras:  (type.extras as any[]).map((e: any) => rt(e)),
+    label:     rt(type.label),
+    icon:      rt(type.icon),
+    photoPath: rt(type.photoPath),
+    extras:    (type.extras as any[]).map((e: any) => rt(e)),
   })) as RoomType[]
 )
 
@@ -127,4 +129,9 @@ function amenityIcon(name: string): string {
   margin-bottom: 32px;
 }
 .rooms__reserve-btn { padding: 12px 36px; font-size: 15px; }
+
+
+.rooms.section-padding {
+  padding-bottom: 8px;
+}
 </style>
