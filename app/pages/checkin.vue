@@ -22,7 +22,7 @@
             <LucideIcon name="user-check" :size="18" color="var(--green)" style="flex-shrink:0;margin-top:2px" />
             <span>
               {{ t('pages.checkin.beforeCheckin') }}
-              <a href="https://direct-book.com/properties/hostalsoldirect" target="_blank" rel="noopener noreferrer" class="ci-link">Chekin →</a>
+              
             </span>
           </div>
           <div class="ci-before-item">
@@ -42,7 +42,7 @@
             </h2>
             <p class="ci-cta__desc">{{ t('pages.checkin.ctaDesc') }}</p>
           </div>
-          <a href="https://direct-book.com/properties/hostalsoldirect" target="_blank" rel="noopener noreferrer" class="ci-cta__btn">
+          <a href="https://guest.chekin.com/NpW1pWVoQ3CWVMB1augWwA-housing" target="_blank" class="ci-cta__btn">
             <LucideIcon name="calendar-check" :size="16" color="var(--green)" />
             {{ t('pages.checkin.ctaBtn') }}
           </a>
@@ -79,7 +79,8 @@
             <div class="ci-step__body">
               <div class="ci-step__title">{{ step.title }}</div>
               <div class="ci-step__desc">{{ step.desc }}</div>
-              <NuxtLink v-if="step.link" :to="step.link" class="ci-step__link">
+              
+              <NuxtLink v-if="step.link" :to="step.link?.body?.static" class="ci-step__link">
                 {{ step.linkText }} →
               </NuxtLink>
             </div>
@@ -274,11 +275,11 @@ const navApps = [
   color: var(--dark);
   margin-bottom: 20px;
 }
-.ci-section-intro { color: var(--dark-muted); font-size: 15px; line-height: 1.75; margin-bottom: 16px; max-width: 680px; }
-.ci-section-body  { color: var(--dark-muted); font-size: 15px; line-height: 1.8; max-width: 680px; }
+.ci-section-intro { color: var(--dark-muted); font-size: 15px; line-height: 1.75; margin-bottom: 16px; }
+.ci-section-body  { color: var(--dark-muted); font-size: 15px; line-height: 1.8; }
 
 /* Before section */
-.ci-before-list { display: flex; flex-direction: column; gap: 14px; max-width: 700px; }
+.ci-before-list { display: flex; flex-direction: column; gap: 14px;  }
 .ci-before-item {
   display: flex;
   gap: 12px;

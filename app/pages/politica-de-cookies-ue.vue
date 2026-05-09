@@ -15,7 +15,7 @@
 
         <section class="legal-section">
           <h2>2. ¿Para qué utilizamos cookies?</h2>
-          <p>El sitio web <strong>hostalsol.es</strong> utiliza cookies con los siguientes fines:</p>
+          <p>El sitio web <strong>hostalsolzamora.com</strong> utiliza cookies con los siguientes fines:</p>
           <ul>
             <li><strong>Funcionamiento técnico:</strong> cookies estrictamente necesarias para que el sitio web funcione correctamente.</li>
             <li><strong>Preferencias del usuario:</strong> recordar el idioma seleccionado y otras configuraciones personalizadas.</li>

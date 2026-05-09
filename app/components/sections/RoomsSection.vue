@@ -4,13 +4,7 @@
       <UiSectionTag>{{ t('rooms.title') }}</UiSectionTag>
       <h2 class="rooms__heading">{{ t('rooms.sub') }}</h2>
 
-      
-      <div class="rooms__amenities">
-        <span v-for="a in [...amenities]" :key="a" class="rooms__chip">
-          <LucideIcon :name="amenityIcon(a)" :size="12" color="var(--green)" />
-          {{ a }}
-        </span>
-      </div>
+      <SectionsRoomAmenityChips :items="amenities" />
 
       <!-- Room type cards -->
       <div class="rooms__types">
@@ -23,23 +17,25 @@
               <LucideIcon :name="type.icon" :size="18" color="var(--green)" />
               {{ type.label }}
             </div>
-            <div class="rooms__amenities">
-              <span v-for="a in [ ...type.extras]" :key="a" class="rooms__chip">
-                <LucideIcon :name="amenityIcon(a)" :size="12" color="var(--green)" />
-                {{ a }}
-              </span>
-            </div>
+            <SectionsRoomAmenityChips :items="type.extras" />
+            <NuxtLink
+              :to="`/reserva?rateId=${type.rateId}`"
+              class="btn btn-primary rooms__reserve-card-btn"
+            >
+              <LucideIcon name="calendar-check" :size="14" color="#fff" />
+              {{ t('rooms.reserveBtn') }}
+            </NuxtLink>
           </div>
         </div>
       </div>
 
       <!-- Reserve CTA after room cards -->
-      <div class="rooms__reserve-row">
+      <!-- <div class="rooms__reserve-row">
         <NuxtLink to="/reserva" class="btn btn-primary rooms__reserve-btn">
           <LucideIcon name="calendar-check" :size="16" color="#fff" />
           {{ t('rooms.reserveBtn') }}
         </NuxtLink>
-      </div>
+      </div> -->
     </div>
 
   </section>
@@ -47,6 +43,14 @@
     <SectionsRoomMediaGallery2
       hideThumbailsAll="false"
     />
+
+  <!--  Button to go the the gallery -->
+  <div class="container" style="text-align:center; margin-top: 20px;">
+    <NuxtLink to="/galeria" class="btn btn-secondary">
+      {{ t('rooms.galleryBtn') }}
+      <LucideIcon name="image" :size="14" color="var(--dark)" style="margin-left:6px" />
+    </NuxtLink>
+   </div>
 </template>
 
 <script setup lang="ts">
@@ -60,6 +64,7 @@ const roomTypes = computed(() =>
     icon:      rt(type.icon),
     photoPath: rt(type.photoPath),
     extras:    (type.extras as any[]).map((e: any) => rt(e)),
+    rateId:    rt(type.rateId),
   })) as RoomType[]
 )
 
@@ -67,28 +72,6 @@ const amenities = computed(() =>
   (tm('rooms.amenities') as any[]).map((a: any) => rt(a)) as string[]
 )
 
-const AMENITY_ICONS: Record<string, string> = {
-  'TV': 'tv',
-  'WiFi': 'wifi',
-  'Wifi': 'wifi',
-  'Baño privado': 'shower-head',
-  'Private bathroom': 'shower-head',
-  'Escritorio': 'armchair',
-  'Desk': 'armchair',
-  'Calefacción central': 'thermometer',
-  'Central heating': 'thermometer',
-  'Aire acondicionado': 'wind',
-  'Air conditioning': 'wind',
-  'Amenities': 'package',
-  'Toallas y ropa de cama': 'bed',
-  'Towels & bed linen': 'bed',
-  'Balcón privado': 'trees',
-  'Private balcony': 'trees',
-}
-
-function amenityIcon(name: string): string {
-  return AMENITY_ICONS[name] ?? 'check'
-}
 </script>
 
 <style scoped>
@@ -110,18 +93,21 @@ function amenityIcon(name: string): string {
 }
 @media (max-width: 860px) { .rooms__types { grid-template-columns: 1fr; } }
 
-.rooms__type-card { border-radius: 14px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.07); }
+.rooms__type-card { border-radius: 14px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+}
 .rooms__type-img-wrap { height: 200px; overflow: hidden; }
 .rooms__type-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
 .rooms__type-img:hover { transform: scale(1.05); }
-.rooms__type-body { padding: 18px 20px; background: var(--cream); }
+.rooms__type-body { padding: 18px 20px; background: var(--cream); flex-grow: 1; 
+  display: flex; flex-direction: column;
+  justify-content: space-between;
+}
 .rooms__type-name {
   font-weight: 700; font-size: 16px; color: var(--dark);
   margin-bottom: 12px; display: flex; align-items: center; gap: 8px;
 }
-.rooms__amenities { display: flex; flex-wrap: wrap; gap: 6px; }
-.rooms__chip { background: var(--green-light); border-radius: 20px; padding: 4px 11px; font-size: 12.5px; color: var(--dark-muted); }
-
 /* Reserve row */
 .rooms__reserve-row {
   display: flex;
@@ -130,8 +116,29 @@ function amenityIcon(name: string): string {
 }
 .rooms__reserve-btn { padding: 12px 36px; font-size: 15px; }
 
+.rooms__reserve-card-btn {
+  margin-top: 14px;
+  padding: 8px 20px;
+  font-size: 13px;
+  width: 100%;
+  justify-content: center;
+}
 
 .rooms.section-padding {
   padding-bottom: 8px;
+}
+
+.btn.btn-secondary {
+  background: rgba(0,0,0,0.05);
+  color: var(--dark);
+  border: none;
+  border-radius: 10px;
+  padding: 12px 36px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.2s;
+  margin-bottom: 8px;
 }
 </style>

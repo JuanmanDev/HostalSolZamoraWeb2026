@@ -89,7 +89,7 @@ const menuOpen  = ref(false)
 
 const navLinks = [
   { key: 'home',    section: 'hero',  route: null,      cta: false },
-  { key: 'rooms',   section: 'rooms', route: null,      cta: false },
+  { key: 'rooms',   section: null, route: '/galeria',      cta: false },
   { key: 'parking', section: null,    route: '/parking', cta: false },
   { key: 'faq',     section: null,    route: '/faq',     cta: false },
   { key: 'checkin', section: null,    route: '/checkin', cta: false },

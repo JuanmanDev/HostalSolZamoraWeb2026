@@ -4,14 +4,11 @@
       <UiSectionTag>{{ t('reserve.title') }}</UiSectionTag>
       <h2 class="reserve__heading">{{ t('reserve.sub') }}</h2>
 
-      <!-- 3D spinning discount card -->
-      <div class="reserve__discount-scene" ref="cardScene">
-        <div class="reserve__discount-card" ref="card">
-          <div class="reserve__discount-num">{{ t('reserve.discountNum') }}</div>
-          <div class="reserve__discount-label">{{ t('reserve.discountLabel') }}</div>
-          <div class="reserve__discount-note">{{ t('reserve.discountNote') }}</div>
-        </div>
-      </div>
+      <SectionsDiscountCard3d>
+        <template #num><div class="reserve__discount-num">{{ t('reserve.discountNum') }}</div></template>
+        <template #label><div class="reserve__discount-label">{{ t('reserve.discountLabel') }}</div></template>
+        <template #note><div class="reserve__discount-note">{{ t('reserve.discountNote') }}</div></template>
+      </SectionsDiscountCard3d>
 
       <!-- Feature chips -->
       <div class="reserve__features">
@@ -21,8 +18,15 @@
         </div>
       </div>
 
+      <!-- Big button to start reservation -->
+      <div class="reserve__cta-main">
+        <NuxtLink to="/reserva" class="btn btn--primary">
+          {{ t('nav.reserve') }}
+        </NuxtLink>
+      </div>
+
       <!-- Booking engine iframe -->
-      <div class="reserve__iframe-wrap">
+      <!-- <div class="reserve__iframe-wrap">
         <iframe
           ref="iframeEl"
           src="https://direct-book.com/properties/hostalsoldirect?locale=es&promocode=WEB"
@@ -33,7 +37,7 @@
           allow="payment"
           @load="onIframeLoad"
         />
-      </div>
+      </div> -->
 
       <p class="reserve__help">
         {{ t('reserve.helpText') }}
@@ -52,22 +56,6 @@ const features = computed(() =>
 
 const featIcons = ['shield-check', 'x-circle', 'lock', 'zap']
 
-const cardScene = ref<HTMLElement | null>(null)
-const card = ref<HTMLElement | null>(null)
-
-function onMouseMove(e: MouseEvent) {
-  if (!card.value || !cardScene.value) return
-  const rect = cardScene.value.getBoundingClientRect()
-  const x = (e.clientX - rect.left) / rect.width - 0.5
-  const y = (e.clientY - rect.top) / rect.height - 0.5
-  card.value.style.transform = `rotateY(${x * 20}deg) rotateX(${-y * 20}deg)`
-}
-
-function onMouseLeave() {
-  if (!card.value) return
-  card.value.style.transform = ''
-}
-
 const iframeEl = ref<HTMLIFrameElement | null>(null)
 
 function onIframeLoad() {
@@ -84,13 +72,6 @@ function onIframeLoad() {
 }
 
 onMounted(() => {
-  cardScene.value?.addEventListener('mousemove', onMouseMove)
-  cardScene.value?.addEventListener('mouseleave', onMouseLeave)
-  onUnmounted(() => {
-    cardScene.value?.removeEventListener('mousemove', onMouseMove)
-    cardScene.value?.removeEventListener('mouseleave', onMouseLeave)
-  })
-
   window.addEventListener('message', (e) => {
     if (typeof e.data === 'object' && e.data?.type === 'resize' && iframeEl.value) {
       iframeEl.value.style.height = e.data.height + 'px'
@@ -110,53 +91,6 @@ onMounted(() => {
   color: var(--dark);
   margin: 0 0 32px;
   text-align: center;
-}
-
-/* 3D discount card */
-.reserve__discount-scene {
-  perspective: 800px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 28px;
-  user-select: none;
-}
-
-.reserve__discount-card {
-  background: var(--green);
-  color: #fff;
-  border-radius: 18px;
-  padding: 28px 48px;
-  text-align: center;
-  box-shadow: 0 8px 32px rgba(104,126,86,0.35);
-  animation: cardFloat 6s ease-in-out infinite;
-  transition: transform 0.15s ease-out;
-  transform-style: preserve-3d;
-  will-change: transform;
-}
-
-@keyframes cardFloat {
-  0%, 100% { transform: rotateY(-8deg) rotateX(3deg) translateY(0px); }
-  33%       { transform: rotateY(6deg) rotateX(-2deg) translateY(-6px); }
-  66%       { transform: rotateY(-3deg) rotateX(4deg) translateY(3px); }
-}
-
-.reserve__discount-num {
-  font-size: clamp(2.5rem, 6vw, 4rem);
-  font-weight: 900;
-  letter-spacing: -0.02em;
-  line-height: 1;
-}
-.reserve__discount-label {
-  font-size: 18px;
-  font-weight: 700;
-  margin-top: 4px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-.reserve__discount-note {
-  font-size: 13px;
-  color: rgba(255,255,255,0.78);
-  margin-top: 6px;
 }
 
 /* Features */
@@ -198,4 +132,17 @@ onMounted(() => {
   font-weight: 600;
   margin-left: 4px;
 }
+
+.reserve__cta-main {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.reserve__cta-main a {
+  background-color: var(--green);
+  border-radius: 1rem;
+  font-size: 20px;
+  color: #fff;
+}
+
 </style>

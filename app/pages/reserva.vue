@@ -3,18 +3,31 @@
     <LayoutTheNavbar :solid-from-start="true" />
 
     <main class="page-content">
-      <UiSectionTag class="page-sub-heading">{{ t('nav.reserve') }}</UiSectionTag>
-      <h1 class="page-heading">{{ t('pages.reserva.heading') }}</h1>
+      <div class="title__block">
+        <div class="title__text">
+          <UiSectionTag class="page-sub-heading">{{ t('nav.reserve') }}</UiSectionTag>
+          <h1 class="page-heading">{{ t('pages.reserva.heading') }}</h1>
+        </div>
+        <div class="title__discount">
+          <SectionsDiscountCard3d>
+            <template #num><div class="reserve__discount-num">{{ t('reserve.discountNum') }}</div></template>
+            <template #label><div class="reserve__discount-label">{{ t('reserve.discountLabel') }}</div></template>
+            <template #note><div class="reserve__discount-note">{{ t('reserve.discountNote') }}</div></template>
+          </SectionsDiscountCard3d>
+        </div>
+      </div>
 
       <!-- Discount banner -->
-      <div class="discount-banner">
+      <!-- <div class="discount-banner">
         <LucideIcon name="tag" :size="22" color="#fff" />
         <div class="discount-banner__text">
           <div class="discount-banner__label">{{ t('pages.reserva.discountLabel') }}</div>
           <div class="discount-banner__sub">{{ t('pages.reserva.discountSub') }}</div>
         </div>
         <div class="discount-banner__badge">−15%</div>
-      </div>
+      </div> -->
+
+      
 
       <!-- Feature chips -->
       <div class="features">
@@ -28,7 +41,7 @@
       <div class="iframe-wrap">
         <iframe
           ref="iframeEl"
-          src="https://direct-book.com/properties/hostalsoldirect?locale=es&promocode=WEB&currency=EUR&trackPage=no"
+          :src="bookingUrl"
           :title="t('pages.reserva.iframeTitle')"
           class="booking-iframe"
           allow="payment"
@@ -43,7 +56,7 @@
 
       <a 
         class="link-to-reservation"
-        href="https://direct-book.com/properties/hostalsoldirect?locale=es&promocode=WEB&currency=EUR&trackPage=no" target="_blank" rel="noopener noreferrer"
+        :href="bookingUrl" target="_blank" rel="noopener noreferrer"
       >
         Si no ves cómo reserva encima de este texto, haz clic aquí para ir directamente al motor de reservas.
       </a>
@@ -55,6 +68,19 @@
 
 <script setup lang="ts">
 const { t, tm, rt } = useI18n()
+const route = useRoute()
+const { locale } = useI18n()
+
+const computedLocale = computed(() => locale.value )
+
+const bookingUrl = computed(() => {
+  const base = 'https://direct-book.com/properties/hostalsoldirect?locale=' + computedLocale.value + '&promocode=WEB&currency=EUR&trackPage=no'
+  const rateId = route.query.rateId as string | undefined
+  if (!rateId) return base
+  return `${base}&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&items[0][rateId]=${rateId}`
+})
+
+const rateId = computed(() => route.query.rateId as string | undefined)
 
 useHead({
   title: computed(() => t('pages.reserva.title')),
@@ -64,7 +90,7 @@ useHead({
 const features  = computed(() =>
   (tm('pages.reserva.features') as any[]).map((f: any) => rt(f)) as string[]
 )
-const featIcons = ['shield-check', 'x-circle', 'lock', 'zap']
+const featIcons = ['zap', 'shield-check', 'lock', 'x-circle']
 
 const iframeEl = ref<HTMLIFrameElement | null>(null)
 
@@ -93,6 +119,15 @@ onMounted(() => {
   margin: 0 auto;
   padding: 92px 0 80px;
   /* padding: 92px max(24px, 5vw) 80px; */
+}
+
+.title__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
 }
 
 .page-sub-heading, .page-heading, .discount-banner {

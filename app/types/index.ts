@@ -22,6 +22,7 @@ export interface RoomType {
   icon: string
   photoPath: string
   extras: string[]
+  rateId: string
 }
 
 export interface NavApp {

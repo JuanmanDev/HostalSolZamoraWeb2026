@@ -15,7 +15,7 @@
 
         <section class="legal-section">
           <h2>2. Objeto y ámbito de aplicación</h2>
-          <p>Estos Términos y Condiciones regulan el acceso y uso del sitio web <strong>hostalsol.es</strong>, así como la contratación de servicios de alojamiento ofrecidos a través del mismo. El acceso al sitio web implica la aceptación plena de las presentes condiciones.</p>
+          <p>Estos Términos y Condiciones regulan el acceso y uso del sitio web <strong>hostalsolzamora.com</strong>, así como la contratación de servicios de alojamiento ofrecidos a través del mismo. El acceso al sitio web implica la aceptación plena de las presentes condiciones.</p>
         </section>
 
         <section class="legal-section">
@@ -35,7 +35,7 @@
 
         <section class="legal-section">
           <h2>6. Check-in y check-out</h2>
-          <p>El horario de check-in es a partir de las <strong>14:00 h</strong>. El check-out debe realizarse antes de las <strong>12:00 h</strong>. Fuera de este horario, la recepción no está atendida de manera permanente; los huéspedes que lleguen fuera del horario de atención deberán completar el proceso de entrada en línea previamente disponible en <NuxtLink to="/checkin">hostalsol.es/checkin</NuxtLink>.</p>
+          <p>El horario de check-in es a partir de las <strong>14:00 h</strong>. El check-out debe realizarse antes de las <strong>12:00 h</strong>. Fuera de este horario, la recepción no está atendida de manera permanente; los huéspedes que lleguen fuera del horario de atención deberán completar el proceso de entrada en línea previamente disponible en <NuxtLink to="/checkin">hostalsolzamora.com/checkin</NuxtLink>.</p>
         </section>
 
         <section class="legal-section">

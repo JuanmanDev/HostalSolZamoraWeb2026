@@ -49,9 +49,9 @@
     "title": "Our rooms",
     "sub": "Three room types, total comfort",
     "types": [
-      { "label": "Twin (separate beds)", "icon": "bed-single", "photoPath": "/images/rooms/301/003.jpg", "extras": ["2 beds (90cm wide)"] },
-      { "label": "Double (queen bed)", "icon": "bed-double", "photoPath": "/images/rooms/323/002.jpg", "extras": ["1 bed (135cm wide)"] },
-      { "label": "Double with balcony", "icon": "building", "photoPath": "/images/rooms/321/021.jpg", "extras": ["1 bed (135cm wide)", "Private balcony"] }
+      { "label": "Twin (separate beds)", "icon": "bed-single", "photoPath": "/images/rooms/301/003.jpg", "extras": ["2 beds (90cm wide)"], "rateId": "578650" },
+      { "label": "Double (queen bed)", "icon": "bed-double", "photoPath": "/images/rooms/323/002.jpg", "extras": ["1 bed (135cm wide)"], "rateId": "578649" },
+      { "label": "Double with balcony", "icon": "building", "photoPath": "/images/rooms/321/021.jpg", "extras": ["1 bed (135cm wide)", "Private balcony"], "rateId": "752069" }
     ],
     "amenities": ["TV", "WiFi", "Private bathroom", "Desk", "Central heating", "Toiletries", "Towels & linen"],
     "filterAll": "All",

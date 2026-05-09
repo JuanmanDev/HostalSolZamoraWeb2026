@@ -10,7 +10,7 @@
           @error="(e) => { (e.target as HTMLImageElement).src = LOGO_ICON }"
         />
         <UiSectionTag light>{{ t('contact.title') }}</UiSectionTag>
-        <h2 class="contact__heading">{{ t('contact.heading') }}</h2>
+        <!-- <h2 class="contact__heading">{{ t('contact.heading') }}</h2> -->
 
         <div class="contact__info-list">
           <div v-for="item in infoItems" :key="item.icon" class="contact__info-row">
@@ -40,20 +40,20 @@
         </div>
 
         <!-- Pets note -->
-        <div class="contact__pets-note">
+        <!-- <div class="contact__pets-note">
           <LucideIcon name="paw-print" :size="16" color="var(--green)" />
           <span>{{ t('contact.pets') }}: <strong>{{ t('contact.petsVal') }}</strong> · {{ t('contact.petNote') }}</span>
-        </div>
+        </div> -->
       </div>
 
       <!-- Right: key times + mini map -->
       <div>
         <div class="contact__times-row">
           <div class="contact__time-chip">
-            <LucideIcon name="calendar-clock" :size="18" color="var(--green)" />
+            <!-- <LucideIcon name="calendar-clock" :size="18" color="var(--green)" /> -->
             <div class="contact__time-both">
               <div class="contact__time-row">
-                <LucideIcon name="key" :size="12" color="var(--green)" />
+                <LucideIcon name="log-in" :size="12" color="var(--green)" />
                 <span class="contact__time-label">{{ t('contact.checkin') }}</span>
                 <span class="contact__time-val">{{ t('contact.checkinVal') }}</span>
               </div>
@@ -66,7 +66,7 @@
           </div>
           <div class="contact__time-chip">
             <LucideIcon name="clock" :size="16" color="var(--green)" />
-            <div>
+            <div class="contact__time-both">
               <div class="contact__time-label">{{ t('contact.attention') }}</div>
               <div class="contact__time-val">{{ t('contact.attentionVal') }}</div>
             </div>
@@ -94,9 +94,9 @@ const { t } = useI18n()
 const infoItems = computed(() => [
   { icon: 'map-pin',    text: t('contact.address'), href: 'https://www.google.com/maps/dir//Calle+Benavente,+2,+49014+Zamora', external: true },
   { icon: 'phone',      text: t('contact.phone1'),  href: 'tel:+34980533152', external: false },
-  { icon: 'smartphone', text: `${t('contact.phone2')} · WhatsApp`, href: 'https://wa.me/34639980253', external: true },
+  { icon: 'smartphone', text: `${t('contact.phone2')}`, href: 'https://wa.me/34639980253', external: true },
   { icon: 'mail',       text: t('contact.email'),   href: `mailto:${t('contact.email')}`, external: false },
-  { icon: 'clock',      text: t('contact.hours'),   href: null, external: false },
+  // { icon: 'clock',      text: t('contact.hours'),   href: null, external: false },
 ])
 </script>
 
@@ -104,9 +104,11 @@ const infoItems = computed(() => [
 .contact { background: var(--dark); }
 
 .contact__logo {
-  height: 46px;
+  height: 7rem;
   margin-bottom: 28px;
   filter: brightness(10);
+  /* make the svg to contain */
+  object-fit: contain;
 }
 
 .contact__heading {
@@ -183,6 +185,7 @@ const infoItems = computed(() => [
 
 .contact__time-chip {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 12px;
   background: rgba(104,126,86,0.18);
@@ -191,7 +194,7 @@ const infoItems = computed(() => [
   border: 1px solid rgba(104,126,86,0.25);
 }
 
-.contact__time-both { display: flex; flex-direction: column; gap: 6px; }
+.contact__time-both { display: flex; flex-direction: row; gap: 6px; justify-content: space-between; width: 100%;}
 
 .contact__time-row {
   display: flex;

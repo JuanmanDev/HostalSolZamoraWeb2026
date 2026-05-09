@@ -9,7 +9,7 @@ import {
   BedDouble, Building, BedSingle, LayoutGrid, Image, PlayCircle, Play,
   Tv, Tv2, ParkingSquare, Car, Info, Navigation, Landmark, Train,
   Plus, Minus, ShieldCheck, XCircle, Lock, Zap, CalendarCheck, CalendarClock,
-  Phone, Smartphone, Mail, Clock, Key, LogOut, Moon, MessageCircle,
+  Phone, Smartphone, Mail, Clock, Key, LogOut, LogIn, Moon, MessageCircle,
   Copy, Check, Footprints, UtensilsCrossed, ZoomIn,
   ShowerHead, Wifi, Armchair, Thermometer, Wind, Package, Bed, Trees,
   Warehouse, ImageOff, Youtube, ExternalLink,
@@ -56,7 +56,7 @@ const ICON_MAP: Record<string, LucideIcon> = {
   'zap': Zap, 'tag-icon': Tag,
 
   // User actions
-  'key': Key, 'log-out': LogOut, 'user-check': UserCheck,
+  'key': Key, 'log-out': LogOut, 'log-in': LogIn, 'user-check': UserCheck,
   'door-open': DoorOpen,
 
   // Status & UI

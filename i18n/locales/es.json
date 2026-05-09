@@ -51,9 +51,9 @@
     "title": "Nuestras habitaciones",
     "sub": "Tres tipos de habitación, toda la comodidad",
     "types": [
-      { "label": "Dos camas individuales", "icon": "bed-single", "photoPath": "/images/rooms/301/003.jpg", "extras": ["2 camas de 90cm de ancho"] },
-      { "label": "Doble de matrimonio", "icon": "bed-double", "photoPath": "/images/rooms/323/002.jpg", "extras": ["1 Cama de 135cm de ancho"] },
-      { "label": "Matrimonio con balcón", "icon": "building", "photoPath": "/images/rooms/321/021.jpg", "extras": ["1 Cama de 135cm de ancho", "Balcón privado"] }
+      { "label": "Dos camas individuales", "icon": "bed-single", "photoPath": "/images/rooms/301/003.jpg", "extras": ["2 camas de 90cm de ancho"], "rateId": "578650" },
+      { "label": "Doble de matrimonio", "icon": "bed-double", "photoPath": "/images/rooms/323/002.jpg", "extras": ["1 Cama de 135cm de ancho"], "rateId": "578649" },
+      { "label": "Matrimonio con balcón", "icon": "building", "photoPath": "/images/rooms/321/021.jpg", "extras": ["1 Cama de 135cm de ancho", "Balcón privado", "TV Superior"], "rateId": "752069" }
     ],
     "amenities": ["TV", "WiFi", "Baño privado", "Escritorio", "Calefacción central", "Amenities", "Toallas y ropa de cama",
       "Aire acondicionado", "Secador de pelo (bajo petición)", "Armario", "Limpieza diaria", "Silla", "Cámaras de seguridad en zonas comunes", "Ascensor"
@@ -70,7 +70,8 @@
     "videoLabel": "Vídeo hab.",
     "reserveBtn": "Reservar ahora →",
     "ytChannel": "Ver canal de YouTube",
-    "emptyMedia": "No hay elementos para mostrar"
+    "emptyMedia": "No hay elementos para mostrar",
+    "galleryBtn": "Ver galería completa"
   },
   "videos": {
     "title": "Vídeos de las habitaciones",
@@ -214,7 +215,7 @@
     "checkinVal": "14:00 – 21:00",
     "checkout": "Check-out",
     "checkoutVal": "Hasta 11:00",
-    "attention": "Atención",
+    "attention": "Horario de atención",
     "attentionVal": "Lun–Sáb 10–21h",
     "sunday": "Domingo",
     "sundayVal": "Cerrado",
@@ -313,7 +314,7 @@
         }
       ],
       "arrivalInfoTitle": "Al llegar a recepción",
-      "arrivalInfo": "El personal revisará tu reserva. Podrás pagar si falta algo (camas extra, cunas, días adicionales, etc.). Se comprobarán los documentos de identidad de todos los huéspedes. Si realizaste el check-in online con Chekin, el proceso será mucho más rápido. También se te explicará cómo usar las llaves para acceder al hostal en cualquier momento. Si necesitas secador o plancha, es el momento de solicitarlo.",
+      "arrivalInfo": "El personal revisará tu reserva. Podrás pagar si falta algo (camas extra, cunas, días adicionales, etc.). Se comprobarán los documentos de identidad de todos los huéspedes. Si realizaste el check-in online con Chekin, el proceso será mucho más rápido. También se te explicará cómo usar las llaves para acceder al hostal en cualquier momento. Si necesitas secador o plancha, es el momento de solicitarlo. Se te entregarán las 3 llaves y te explicarán cómo usarlas para entrar al edificio, al hostal y a tu habitación.",
       "roomTitle": "En la habitación",
       "roomInfo": "Encontrarás instrucciones sobre cómo conectarte al WiFi, el horario de salida y las normas del hostal: está prohibido fumar (pueden aplicarse multas de hasta 1.000€ para la limpieza), hacer fuego y hacer ruido por la noche.",
       "checkoutTitle": "Check-out",
