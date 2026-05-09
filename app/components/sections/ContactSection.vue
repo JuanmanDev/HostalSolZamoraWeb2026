@@ -3,11 +3,10 @@
     <div class="container grid-2">
       <!-- Left: info -->
       <div>
-        <img
+        <NuxtPicture
           :src="LOGO_SVG"
           alt="Hostal Sol"
           class="contact__logo"
-          @error="(e) => { (e.target as HTMLImageElement).src = LOGO_ICON }"
         />
         <UiSectionTag light>{{ t('contact.title') }}</UiSectionTag>
         <!-- <h2 class="contact__heading">{{ t('contact.heading') }}</h2> -->

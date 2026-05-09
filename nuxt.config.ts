@@ -42,6 +42,10 @@ export default defineNuxtConfig({
 
   modules: ['@nuxtjs/i18n', '@nuxt/scripts', '@nuxt/image'],
 
+  image: {
+    dir: join(process.cwd(), 'public')
+  },
+
   css: ['~/assets/css/main.css', 'vue3-carousel/dist/carousel.css'],
 
   appConfig: {

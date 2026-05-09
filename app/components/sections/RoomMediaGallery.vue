@@ -1,66 +1,5 @@
 <template>
   <div class="room-gallery">
-
-
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-
-
-
-    {{ roomPhotoPaths }}
-    -----
-    {{ roomKeys }}
-
-
-
-
-
-    
-    <br />
-
-    {{ mediaItems }}
-    {{ activeRoom }}
-    {{ mediaFilter }}
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-
     <!-- Filter bar -->
     <div class="room-gallery__filters">
       <div class="room-gallery__media-toggle">
@@ -123,7 +62,7 @@
         >
           <Slide v-for="(item, i) in mediaItems" :key="`${item.type}-${item.type === 'photo' ? item.path : item.room}-${i}`">
             <div class="room-gallery__slide">
-              <img
+              <NuxtPicture
                 v-if="item.type === 'photo'"
                 :src="item.path"
                 :alt="`Habitación ${activeRoom}`"
@@ -161,7 +100,7 @@
               :class="['room-gallery__thumb', { 'room-gallery__thumb--active': i === currentSlide }]"
               @click="goToSlide(i)"
             >
-              <img
+              <NuxtPicture
                 :src="item.type === 'photo' ? item.path : (roomPhotoPaths(item.room!)[0] ?? '/images/rooms/1.jpg')"
                 :alt="`slide ${i + 1}`"
                 loading="lazy"
@@ -217,13 +156,15 @@
             class="lb__stage"
             :style="{ cursor: zoom > 1 ? (dragging ? 'grabbing' : 'grab') : 'zoom-in' }"
           >
-            <img
+            <NuxtPicture
               v-if="lbPhotoItems[lbIdx]"
               :src="lbPhotoItems[lbIdx]!.path"
               alt=""
               class="lb__img"
-              draggable="false"
-              :style="{ transform: `scale(${zoom}) translate(${panX / zoom}px, ${panY / zoom}px)` }"
+              :img-attrs="{
+                draggable: 'false',
+                style: { transform: `scale(${zoom}) translate(${panX / zoom}px, ${panY / zoom}px)` }
+              }"
             />
           </div>
           <div class="lb__counter">{{ lbIdx + 1 }} / {{ lbPhotoItems.length }}</div>

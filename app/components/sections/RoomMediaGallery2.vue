@@ -330,8 +330,10 @@ function handleSlideClick(i: number, item: MediaItem) {
               :src="lbPhotoItems[lbIdx]!.path"
               alt=""
               class="lb__img"
-              draggable="false"
-              :style="{ transform: `scale(${zoom}) translate(${panX / zoom}px, ${panY / zoom}px)` }"
+              :img-attrs="{
+                draggable: 'false',
+                style: { transform: `scale(${zoom}) translate(${panX / zoom}px, ${panY / zoom}px)` }
+              }"
               width="1600"
               height="1000"
             />
