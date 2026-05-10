@@ -271,18 +271,22 @@ function handleSlideClick(i: number, item: MediaItem) {
 
     <Carousel id="gallery" v-bind="galleryConfig" v-model="currentSlide">
       <Slide v-for="(image, i) in mediaItems" :key="`${image.type}-${i}`">
-        <NuxtPicture
-            v-if="image.type === 'photo'"
-            :src="image.path"
-            alt="Gallery Image"
-            class="gallery-image"
-            @click="handleSlideClick(i, image)"
-            sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw xxl:100vw 2xl:100vw 3xl:100vw 4k:100vw"
-            :modifiers="{ rotate: 0 }"
-        />
-        <div v-else class="video-placeholder">
-          <iframe v-if="currentSlide === i" width="100%" height="100%" :src="`https://www.youtube.com/embed/${ROOM_YT[image.room!]}?rel=0&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=${ROOM_YT[image.room!]}`" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+        <template v-if="Math.abs(currentSlide - i) <= 2 || i === 0 || i === mediaItems.length - 1">
+          <NuxtPicture
+              v-if="image.type === 'photo'"
+              :src="image.path"
+              alt="Gallery Image"
+              class="gallery-image"
+              @click="handleSlideClick(i, image)"
+              sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw xxl:100vw 2xl:100vw 3xl:100vw 4k:100vw"
+              :modifiers="{ rotate: 0 }"
+              :loading="i === 0 ? 'eager' : 'lazy'"
+          />
+          <div v-else class="video-placeholder">
+            <iframe v-if="currentSlide === i" width="100%" height="100%" :src="`https://www.youtube.com/embed/${ROOM_YT[image.room!]}?rel=0&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=${ROOM_YT[image.room!]}`" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </template>
+        <div v-else class="gallery-image-placeholder" style="height: 75vh; width: 100%; background: #eee;"></div>
       </Slide>
     </Carousel>
 
@@ -777,6 +781,16 @@ img {
   opacity: 0.65;
 }
 
+.gallery-image-placeholder {
+  height: 75vh;
+  width: 100%;
+  background: #f5f5f5;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Lightbox */
 .lb {
   position: fixed; inset: 0;
@@ -790,7 +804,7 @@ img {
   background: rgba(255,255,255,0.12); border: none;
   border-radius: 50%; width: 44px; height: 44px;
   display: flex; align-items: center; justify-content: center;
-  cursor: pointer; z-index: 3; transition: background 0.2s;
+  cursor: pointer; z-index: 10; transition: background 0.2s;
 }
 .lb__close:hover { background: rgba(255,255,255,0.22); }
 .lb__nav {
@@ -798,11 +812,11 @@ img {
   background: rgba(255,255,255,0.12); border: none;
   border-radius: 50%; width: 52px; height: 52px;
   display: flex; align-items: center; justify-content: center;
-  cursor: pointer; z-index: 2; transition: background 0.2s;
+  cursor: pointer; z-index: 10; transition: background 0.2s;
 }
 .lb__nav:hover { background: rgba(255,255,255,0.22); }
-.lb__nav--prev { left: 16px; z-index: 3;}
-.lb__nav--next { right: 16px; z-index: 3;}
+.lb__nav--prev { left: 16px; }
+.lb__nav--next { right: 16px; }
 .lb__stage {
   display: flex; align-items: center; justify-content: center;
   width: 100%; height: 100%;
