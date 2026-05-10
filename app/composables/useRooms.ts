@@ -30,8 +30,8 @@ export const HERO_PHOTOS = [
   '/images/hero/hero-9.jpg',
   '/images/hero/hero-10.jpg',
   '/images/hero/hero-11.jpg',
-  '/images/hero/hero-12.jpg',
-  '/images/hero/hero-13.jpg',
+  '/images/hero/hero-12.png',
+  '/images/hero/hero-13.png',
   '/images/hero/hero-14.jpg',
   '/images/hero/hero-15.webp',
 ]

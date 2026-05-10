@@ -113,28 +113,75 @@ const zoom     = ref(1)
 const panX     = ref(0)
 const panY     = ref(0)
 const dragging = ref(false)
+const lbLoading = ref(false)
 let dX = 0, dY = 0
+let startX = 0, startY = 0
 
-function openLb(i: number) { lbIdx.value = i; lbOpen.value = true; resetZoom() }
+function openLb(i: number) { lbIdx.value = i; lbOpen.value = true; resetZoom(); lbLoading.value = true }
 function closeLb() { lbOpen.value = false }
-function lbPrev() { lbIdx.value = (lbIdx.value - 1 + lbPhotoItems.value.length) % lbPhotoItems.value.length; resetZoom() }
-function lbNext() { lbIdx.value = (lbIdx.value + 1) % lbPhotoItems.value.length; resetZoom() }
+function lbPrev() { lbIdx.value = (lbIdx.value - 1 + lbPhotoItems.value.length) % lbPhotoItems.value.length; resetZoom(); lbLoading.value = true }
+function lbNext() { lbIdx.value = (lbIdx.value + 1) % lbPhotoItems.value.length; resetZoom(); lbLoading.value = true }
 function resetZoom() { zoom.value = 1; panX.value = 0; panY.value = 0 }
+
+function toggleZoom() {
+  if (zoom.value > 1) {
+    resetZoom()
+  } else {
+    zoom.value = 3
+  }
+}
 
 function onLbWheel(e: WheelEvent) {
   const f = e.deltaY < 0 ? 1.15 : 1 / 1.15
   zoom.value = Math.max(1, Math.min(5, zoom.value * f))
   if (zoom.value === 1) { panX.value = 0; panY.value = 0 }
 }
-function onLbDown(e: MouseEvent) {
-  if (zoom.value <= 1) return
-  dragging.value = true; dX = e.clientX - panX.value; dY = e.clientY - panY.value
+
+function getCoords(e: MouseEvent | TouchEvent) {
+  if ('touches' in e && e.touches.length > 0) {
+    return { x: e.touches[0].clientX, y: e.touches[0].clientY }
+  }
+  if ('changedTouches' in e && e.changedTouches.length > 0) {
+    return { x: e.changedTouches[0].clientX, y: e.changedTouches[0].clientY }
+  }
+  return { x: (e as MouseEvent).clientX, y: (e as MouseEvent).clientY }
 }
-function onLbMove(e: MouseEvent) {
+
+function onLbDown(e: MouseEvent | TouchEvent) {
+  const { x, y } = getCoords(e)
+  startX = x; startY = y
+  dragging.value = true
+  if (zoom.value > 1) {
+    dX = x - panX.value; dY = y - panY.value
+  }
+}
+
+function onLbMove(e: MouseEvent | TouchEvent) {
   if (!dragging.value) return
-  panX.value = e.clientX - dX; panY.value = e.clientY - dY
+  const { x, y } = getCoords(e)
+  if (zoom.value > 1) {
+    panX.value = x - dX; panY.value = y - dY
+  }
 }
-function onLbUp() { dragging.value = false }
+
+function onLbUp(e: MouseEvent | TouchEvent) {
+  if (!dragging.value) return
+  const { x, y } = getCoords(e)
+  
+  const diffX = x - startX
+  const diffY = y - startY
+  const dist = Math.hypot(diffX, diffY)
+
+  if (dist < 5) {
+    toggleZoom()
+  } else if (zoom.value === 1) {
+    if (Math.abs(diffX) > 40 && Math.abs(diffX) > Math.abs(diffY)) {
+      if (diffX > 0) lbPrev()
+      else lbNext()
+    }
+  }
+  dragging.value = false
+}
 
 onMounted(() => {
   const handler = (e: KeyboardEvent) => {
@@ -353,6 +400,9 @@ function handleSlideClick(i: number, item: MediaItem) {
           @mousemove="onLbMove"
           @mouseup="onLbUp"
           @mouseleave="onLbUp"
+          @touchstart="onLbDown"
+          @touchmove="onLbMove"
+          @touchend="onLbUp"
         >
           <button class="lb__close" @click="closeLb">
             <LucideIcon name="x" :size="22" color="#fff" />
@@ -367,21 +417,31 @@ function handleSlideClick(i: number, item: MediaItem) {
             class="lb__stage"
             :style="{ cursor: zoom > 1 ? (dragging ? 'grabbing' : 'grab') : 'zoom-in' }"
           >
+            <!-- Loader -->
+            <div v-if="lbLoading" class="lb__loader">
+              <div class="lb__spinner"></div>
+              <img src="/images/logo-icon.svg" class="lb__loader-logo" alt="Loading..." />
+            </div>
+
             <NuxtPicture
-              v-if="lbPhotoItems[lbIdx] && lbPhotoItems[lbIdx]!.path"
-              :src="lbPhotoItems[lbIdx]!.path"
+              v-if="lbPhotoItems[lbIdx] && lbPhotoItems[lbIdx].type === 'photo'"
+              :src="lbPhotoItems[lbIdx].path"
               alt=""
               class="lb__img"
+              @load="lbLoading = false"
               :img-attrs="{
                 draggable: 'false',
-                style: { transform: `scale(${zoom}) translate(${panX / zoom}px, ${panY / zoom}px)` }
+                style: { 
+                  transform: `scale(${zoom}) translate(${panX / zoom}px, ${panY / zoom}px)`,
+                  transition: dragging ? 'none' : 'transform 0.3s ease-out'
+                }
               }"
               sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw xxl:100vw 2xl:100vw 3xl:100vw 4k:100vw"
               :modifiers="{ rotate: 0 }"
             />
             <div v-else
               class="lb__video-placeholder">
-              <iframe width="100%" height="100%" :src="`https://www.youtube.com/embed/${ROOM_YT[mediaItems[lbIdx].room!]}?rel=0&amp;autoplay=1&amp;loop=1&amp;playlist=${ROOM_YT[mediaItems[lbIdx].room!]}`" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe width="100%" height="100%" :src="`https://www.youtube.com/embed/${ROOM_YT[mediaItems[lbIdx].room!]}?rel=0&amp;autoplay=1&amp;loop=1&amp;playlist=${ROOM_YT[mediaItems[lbIdx].room!]}`" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen @load="lbLoading = false"></iframe>
             </div>
           </div>
           <div class="lb__counter">{{ lbIdx + 1 }} / {{ lbPhotoItems.length }}</div>
@@ -730,7 +790,7 @@ img {
   background: rgba(255,255,255,0.12); border: none;
   border-radius: 50%; width: 44px; height: 44px;
   display: flex; align-items: center; justify-content: center;
-  cursor: pointer; z-index: 2; transition: background 0.2s;
+  cursor: pointer; z-index: 3; transition: background 0.2s;
 }
 .lb__close:hover { background: rgba(255,255,255,0.22); }
 .lb__nav {
@@ -741,18 +801,50 @@ img {
   cursor: pointer; z-index: 2; transition: background 0.2s;
 }
 .lb__nav:hover { background: rgba(255,255,255,0.22); }
-.lb__nav--prev { left: 16px; }
-.lb__nav--next { right: 16px; }
+.lb__nav--prev { left: 16px; z-index: 3;}
+.lb__nav--next { right: 16px; z-index: 3;}
 .lb__stage {
   display: flex; align-items: center; justify-content: center;
   width: 100%; height: 100%;
 }
 .lb__img {
-  max-width: 90vw; max-height: 90vh;
-  object-fit: contain; border-radius: 8px;
-  user-select: none; pointer-events: none;
-  transition: transform 0.12s ease-out;
+  max-width: 98vw; max-height: 98vh;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 8px;
+  user-select: none;
+  flex-grow: 1;
+  flex-shrink: 1;
+  z-index: 2;
 }
+.lb__img :deep(img) {
+  max-width: 98vw;
+  max-height: 98vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.lb__loader {
+  position: absolute;
+  top: 50%; left: 50%; transform: translate(-50%, -50%);
+  z-index: 1;
+  display: flex; align-items: center; justify-content: center;
+}
+.lb__spinner {
+  width: 80px; height: 80px;
+  border: 3px solid rgba(255,255,255,0.1);
+  border-top-color: var(--green);
+  border-radius: 50%;
+  animation: lb-spin 1s linear infinite;
+}
+.lb__loader-logo {
+  position: absolute;
+  width: 40px; height: 40px;
+  object-fit: contain;
+  border-radius: 0;
+}
+@keyframes lb-spin { to { transform: rotate(360deg); } }
 .lb__video-placeholder {
   width: 90vw; height: 80vh;
   display: flex; align-items: center; justify-content: center;
