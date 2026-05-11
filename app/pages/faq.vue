@@ -63,21 +63,21 @@
         <a href="tel:+34980533152" class="faq-contact-btn">
           <LucideIcon name="phone" :size="18" color="#fff" />
           <div>
-            <div class="faq-contact-btn__label">Llamar</div>
+            <div class="faq-contact-btn__label">{{ t('faq.callLabel') }}</div>
             <div class="faq-contact-btn__val">+34 980 533 152</div>
           </div>
         </a>
         <a href="https://wa.me/34639980253" target="_blank" rel="noopener noreferrer" class="faq-contact-btn faq-contact-btn--wa">
           <LucideIcon name="message-circle" :size="18" color="#fff" />
           <div>
-            <div class="faq-contact-btn__label">WhatsApp</div>
+            <div class="faq-contact-btn__label">{{ t('faq.waLabel') }}</div>
             <div class="faq-contact-btn__val">+34 639 980 253</div>
           </div>
         </a>
         <a href="mailto:hostalsol@outlook.com" class="faq-contact-btn faq-contact-btn--email">
           <LucideIcon name="mail" :size="18" color="#fff" />
           <div>
-            <div class="faq-contact-btn__label">Email</div>
+            <div class="faq-contact-btn__label">{{ t('faq.emailLabel') }}</div>
             <div class="faq-contact-btn__val">hostalsol@outlook.com</div>
           </div>
         </a>

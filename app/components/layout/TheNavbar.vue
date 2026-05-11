@@ -113,7 +113,7 @@ function handleSectionNav(id: string) {
   if (route.path === '/') {
     scrollTo(id)
   } else {
-    router.push(`/#${id}`)
+    router.push('/')
   }
 }
 
@@ -122,7 +122,7 @@ function handleMobileSectionNav(id: string) {
   if (route.path === '/') {
     scrollTo(id)
   } else {
-    router.push(`/#${id}`)
+    router.push('/')
   }
 }
 

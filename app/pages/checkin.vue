@@ -38,7 +38,7 @@
           <div class="ci-cta__text">
             <h2 class="ci-cta__title">
               <LucideIcon name="laptop" :size="20" color="var(--green)" />
-              Check-in online
+              {{ t('pages.checkin.ctaTitle') }}
             </h2>
             <p class="ci-cta__desc">{{ t('pages.checkin.ctaDesc') }}</p>
           </div>
@@ -80,7 +80,7 @@
               <div class="ci-step__title">{{ step.title }}</div>
               <div class="ci-step__desc">{{ step.desc }}</div>
               
-              <NuxtLink v-if="step.link" :to="step.link?.body?.static" class="ci-step__link">
+              <NuxtLink v-if="step.link" :to="step.link" class="ci-step__link">
                 {{ step.linkText }} →
               </NuxtLink>
             </div>
@@ -129,81 +129,22 @@
       <section class="ci-section">
         <h2 class="ci-section-title">
           <LucideIcon name="file-badge" :size="22" color="var(--green)" />
-          Documentación requerida (R.D. 933/2021)
+          {{ t('pages.checkin.docsTitle') }}
         </h2>
-        <p class="ci-section-intro">
-          Al registrarte, facilitarás los siguientes datos a la recepción. Esta información se transmite de forma segura al
-          <strong>Ministerio del Interior</strong> (Registro de Viajeros) en cumplimiento del Real Decreto 933/2021.
-        </p>
+        <p class="ci-section-intro">{{ t('pages.checkin.docsIntro') }}</p>
 
         <div class="ci-doc-unified">
-          <div class="ci-doc-unified__item">
+          <div
+            v-for="field in docFields"
+            :key="field"
+            class="ci-doc-unified__item"
+          >
             <LucideIcon name="check" :size="13" color="var(--green)" />
-            <span>Nombre completo</span>
-          </div>
-          <div class="ci-doc-unified__item">
-            <LucideIcon name="check" :size="13" color="var(--green)" />
-            <span>Apellidos</span>
-          </div>
-          <div class="ci-doc-unified__item">
-            <LucideIcon name="check" :size="13" color="var(--green)" />
-            <span>Tipo de documento (DNI / Pasaporte / NIE / Tarjeta de residencia)</span>
-          </div>
-          <div class="ci-doc-unified__item">
-            <LucideIcon name="check" :size="13" color="var(--green)" />
-            <span>Número de documento</span>
-          </div>
-          <div class="ci-doc-unified__item">
-            <LucideIcon name="check" :size="13" color="var(--green)" />
-            <span>Número de soporte / número de serie (si aplica)</span>
-          </div>
-          <div class="ci-doc-unified__item">
-            <LucideIcon name="check" :size="13" color="var(--green)" />
-            <span>Fecha de expedición</span>
-          </div>
-          <div class="ci-doc-unified__item">
-            <LucideIcon name="check" :size="13" color="var(--green)" />
-            <span>Fecha de caducidad</span>
-          </div>
-          <div class="ci-doc-unified__item">
-            <LucideIcon name="check" :size="13" color="var(--green)" />
-            <span>Fecha de nacimiento</span>
-          </div>
-          <div class="ci-doc-unified__item">
-            <LucideIcon name="check" :size="13" color="var(--green)" />
-            <span>País de nacimiento</span>
-          </div>
-          <div class="ci-doc-unified__item">
-            <LucideIcon name="check" :size="13" color="var(--green)" />
-            <span>País de residencia</span>
-          </div>
-          <div class="ci-doc-unified__item">
-            <LucideIcon name="check" :size="13" color="var(--green)" />
-            <span>Comunidad Autónoma de residencia (si es España)</span>
-          </div>
-          <div class="ci-doc-unified__item">
-            <LucideIcon name="check" :size="13" color="var(--green)" />
-            <span>Nacionalidad</span>
-          </div>
-          <div class="ci-doc-unified__item">
-            <LucideIcon name="check" :size="13" color="var(--green)" />
-            <span>Sexo</span>
-          </div>
-          <div class="ci-doc-unified__item">
-            <LucideIcon name="check" :size="13" color="var(--green)" />
-            <span>Email de contacto</span>
-          </div>
-          <div class="ci-doc-unified__item">
-            <LucideIcon name="check" :size="13" color="var(--green)" />
-            <span>Teléfono de contacto</span>
+            <span>{{ field }}</span>
           </div>
         </div>
 
-        <div class="ci-ine-note">
-          <strong>INE — Estadísticas de turismo:</strong> Conforme a la Ley de la Función Estadística Pública, el Instituto
-          Nacional de Estadística (INE) requiere el país de origen o comunidad autónoma de cada viajero para elaborar
-          estadísticas turísticas nacionales. Estos datos se transmiten de forma anónima y agregada.
-        </div>
+        <div class="ci-ine-note">{{ t('pages.checkin.ineNote') }}</div>
 
         <a
           href="https://www.boe.es/boe/dias/2021/11/01/pdfs/BOE-A-2021-17808.pdf"
@@ -212,7 +153,7 @@
           class="ci-boe-link"
         >
           <LucideIcon name="external-link" :size="14" color="var(--green)" />
-          Ver R.D. 933/2021 en el BOE
+          {{ t('pages.checkin.docsBoe') }}
         </a>
       </section>
     </main>
@@ -229,6 +170,10 @@ useHead({
   title: computed(() => t('pages.checkin.title')),
   meta: [{ name: 'description', content: computed(() => t('pages.checkin.description')) as any }],
 })
+
+const docFields = computed(() =>
+  (tm('pages.checkin.docFields') as any[]).map((f: any) => rt(f)) as string[]
+)
 
 const steps = computed(() =>
   (tm('pages.checkin.steps') as any[]).map((s: any) => ({

@@ -24,7 +24,9 @@
       { "icon": "paw-print",   "label": "Pet friendly",      "link": "https://www.srperro.com/hostal-sol/" },
       { "icon": "shower-head", "label": "Private bathroom",  "link": null },
       { "icon": "piggy-bank",  "label": "Low prices",        "link": null },
-      { "icon": "wind",        "label": "Air conditioning",  "link": null }
+      { "icon": "wind",        "label": "Air conditioning",  "link": null },
+      { "icon": "tv",          "label": "TV",                "link": null },
+      { "icon": "laptop",      "label": "Desk & chair",      "link": null }
     ]
   },
   "about": {
@@ -66,7 +68,8 @@
     "videoLabel": "Room video",
     "reserveBtn": "Book now →",
     "ytChannel": "View YouTube channel",
-    "emptyMedia": "No items to show"
+    "emptyMedia": "No items to show",
+    "galleryBtn": "View full gallery"
   },
   "videos": {
     "title": "Room videos",
@@ -162,6 +165,9 @@
     "title": "Frequently asked questions",
     "viewAll": "View all questions →",
     "viewAllBtn": "View all frequently asked questions →",
+    "callLabel": "Call",
+    "waLabel": "WhatsApp",
+    "emailLabel": "Email",
     "items": [
       { "q": "What are the hostel's hours?", "a": "Phone support: 10:00–21:00. Check-in: 14:00–21:00. The hostel closes at 21:00 with no exceptions — arrivals after 21:00 without prior agreement will not be accepted. Once you've checked in, you'll receive keys to come and go as you please. Most Sundays we're closed, but if you arrive Saturday you can stay through Sunday without issue. We're open most holidays except Aug 14–16, Dec 15 and Jan 1.", "links": [{ "label": "Full check-in guide", "url": "/checkin", "icon": "log-in" }] },
       { "q": "What are the check-in and check-out times?", "a": "Check-in is from 14:00 to 21:00. If you arrive before 14:00 we can store your luggage at reception. During low occupancy we may offer early access to the room, but it's not guaranteed. Check-out is at 11:00. After check-out we can also store your luggage for the day (except Sundays) — just let us know. If you arrive after 21:00 we cannot receive you under any circumstances.", "links": [{ "label": "Full check-in guide", "url": "/checkin", "icon": "log-in" }] },
@@ -279,7 +285,69 @@
       "constitParking": "Parking Plaza Constitución — 24h €14.70 · €1.45/h · Tel. 980 53 72 08",
       "marinaParking": "Parking La Marina — Book online at empark.com",
       "backHome": "← Back to home",
-      "checkinLink": "View check-in guide →"
+      "checkinLink": "View check-in guide →",
+      "streetParkingDesc": "On-street parking: regulated blue zone (ORA) and free areas. Check times and rates below.",
+      "undergroundParkingDesc": "Covered underground car parks with 24-hour access.",
+      "navigate": "Navigate",
+      "web": "Website",
+      "streetSpots": [
+        {
+          "name": "ORA Zone (regulated street parking)",
+          "price": "€0.35/30min",
+          "walk": "1 min. walk",
+          "note": "Mon–Fri 9–14h & 16–20h, Sat 9–14h. Free Sat PM, Sun & holidays. Max 3h. 30min: €0.35 | 1h: €0.70 | 2h: €1.40 | 3h: €2.10.",
+          "mapsUrl": "https://www.google.com/maps/dir//Calle+Benavente+Zamora",
+          "free": false
+        },
+        {
+          "name": "Train Station (free)",
+          "price": "Free",
+          "walk": "2 km (bus L3)",
+          "note": "Free 24h parking. Bus line 3 to 'Mercado' stop (5 min. walk from the hostel).",
+          "mapsUrl": "https://www.google.com/maps/dir//Estacion+de+Ferrocarril+Zamora",
+          "free": true
+        },
+        {
+          "name": "Plaza de Cristo Rey / Villalpando",
+          "price": "Free",
+          "walk": "10 min. walk",
+          "note": "Free parking near the centre, but chronically busy with residents' cars.",
+          "mapsUrl": "https://www.google.com/maps/dir//Plaza+de+Cristo+Rey+Zamora",
+          "free": true
+        },
+        {
+          "name": "Calle los Pelambres",
+          "price": "Free",
+          "walk": "20 min. walk",
+          "note": "Sandy esplanade by the River Duero with panoramic views. Not recommended if you have luggage.",
+          "mapsUrl": "https://www.google.com/maps/dir//Calle+los+Pelambres+Zamora",
+          "free": true
+        }
+      ],
+      "undergroundSpots": [
+        {
+          "name": "Parking Plaza de la Constitución",
+          "price": "€14.70/24h",
+          "walk": "3 min. walk",
+          "details": "€1.45/h · 24h · Iberpark · Tel. 980 53 72 08 · info{'@'}iberpark.es",
+          "mapsUrl": "https://www.google.com/maps/dir//Plaza+de+la+Constitucion+Zamora"
+        },
+        {
+          "name": "Parking Plaza de la Marina Española",
+          "price": "€19.45/day",
+          "walk": "5 min. walk",
+          "details": "From €2.35/fraction. Empark/Telpark. EV charging, ATMs and CCTV. No lift.",
+          "mapsUrl": "https://www.google.com/maps/dir//Plaza+de+la+Marina+Española+Zamora",
+          "webUrl": "https://www.empark.com"
+        },
+        {
+          "name": "Parking Parque de San Martín",
+          "price": "Reduced rate",
+          "walk": "8 min. walk",
+          "details": "Managed by Iberpark. Recently reduced rates.",
+          "mapsUrl": "https://www.google.com/maps/dir//Parque+San+Martin+Zamora"
+        }
+      ]
     },
     "reserva": {
       "title": "Book — Hostal Sol Zamora",
@@ -295,7 +363,8 @@
       ],
       "iframeTitle": "Hostal Sol Zamora booking engine",
       "troubleText": "Having trouble with the booking engine? Call us on",
-      "backHome": "← Back to home"
+      "backHome": "← Back to home",
+      "iframeFallback": "If the booking engine isn't showing above, click here to open it directly."
     },
     "checkin": {
       "title": "How to Arrive & Check-in — Hostal Sol Zamora",
@@ -363,7 +432,34 @@
           "fields": ["Licence number", "Surname and name"]
         }
       ],
-      "backHome": "← Back to home"
+      "backHome": "← Back to home",
+      "docFields": [
+        "Full name",
+        "Surnames",
+        "Document type (National ID / Passport / NIE / Residence card)",
+        "Document number",
+        "Support number / serial number (if applicable)",
+        "Issue date",
+        "Expiry date",
+        "Date of birth",
+        "Country of birth",
+        "Country of residence",
+        "Autonomous Community (if Spain)",
+        "Nationality",
+        "Sex",
+        "Contact email",
+        "Contact phone number"
+      ],
+      "ineNote": "INE — Tourism statistics: Under the Public Statistical Function Act, the National Statistics Institute (INE) requires the country of origin or autonomous community of each guest to compile national tourism statistics. This data is transmitted anonymously and in aggregate form."
+    },
+    "galeria": {
+      "tag": "Gallery",
+      "title": "Room Gallery — Hostal Sol Zamora",
+      "heading": "Room gallery",
+      "p1": "At Hostal Sol Zamora we believe honesty is the best introduction. Here you'll find real photos and videos of our rooms — no staging, no surprises — so you can book with complete confidence.",
+      "p2": "Browse each room type: bed size, layout, furniture, views and included amenities. The videos let you walk through the space as if you were already here.",
+      "p3": "Questions about a specific room? Write or call us — we're happy to help you choose the best option for your stay.",
+      "p4": "Photos taken in 2024 · Videos recorded in 2026. We've made improvements since, but the style and layout remain the same."
     }
   }
 }

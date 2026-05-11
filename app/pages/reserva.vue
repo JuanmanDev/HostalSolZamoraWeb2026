@@ -54,11 +54,11 @@
         <a href="tel:+34980533152" class="trouble-link">{{ t('contact.phone1') }}</a>
       </p>
 
-      <a 
+      <a
         class="link-to-reservation"
         :href="bookingUrl" target="_blank" rel="noopener noreferrer"
       >
-        Si no ves cómo reserva encima de este texto, haz clic aquí para ir directamente al motor de reservas.
+        {{ t('pages.reserva.iframeFallback') }}
       </a>
     </main>
 
@@ -79,8 +79,6 @@ const bookingUrl = computed(() => {
   if (!rateId) return base
   return `${base}&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&items[0][rateId]=${rateId}`
 })
-
-const rateId = computed(() => route.query.rateId as string | undefined)
 
 useHead({
   title: computed(() => t('pages.reserva.title')),

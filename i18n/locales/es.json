@@ -167,6 +167,9 @@
     "title": "Preguntas frecuentes",
     "viewAll": "Ver todas las preguntas →",
     "viewAllBtn": "Ver todas las preguntas frecuentes →",
+    "callLabel": "Llamar",
+    "waLabel": "WhatsApp",
+    "emailLabel": "Email",
     "items": [
       { "q": "¿Cuál es el horario del hostal?", "a": "La atención telefónica es de 10:00 a 21:00. El check-in es de 14:00 a 21:00. El hostal cierra a las 21:00 sin excepciones: pasadas las 21:00 no se recibirán reservas no acordadas. Una vez hecho el check-in, recibirás llaves para entrar y salir cuando quieras. La mayoría de domingos cerramos, pero si llegas el sábado puedes quedarte todo el domingo. Los días festivos solemos abrir excepto 14–16 agosto, 15 diciembre y 1 enero.", "links": [{ "label": "Guía completa de check-in", "url": "/checkin", "icon": "log-in" }] },
       { "q": "¿A qué hora son el check-in y el check-out?", "a": "El check-in es de 14:00 a 21:00. Si llegas antes de las 14:00 podemos guardar tu equipaje en recepción sin problema. En periodos de baja ocupación a veces podemos ofrecer la habitación antes, pero no está garantizado. El check-out es a las 11:00. Después del check-out también podemos guardarte el equipaje durante el día de salida (excepto domingos), solo tienes que avisarnos. Si llegas después de las 21:00 no podremos recibirte, el horario no es flexible bajo ninguna circunstancia.", "links": [{ "label": "Guía completa de check-in", "url": "/checkin", "icon": "log-in" }] },
@@ -216,7 +219,7 @@
     "discountNum": "−15%",
     "discountLabel": "Descuento",
     "discountNote": "Solo en nuestra web",
-    "note": "Nuestra web siempre tiene un descuento, aprovéchalo.",
+    "note": "Precio directo — siempre más barato que Booking, Expedia u otros portales.",
     "features": [
       "Pago seguro",
       "Confirmación inmediata",
@@ -284,14 +287,76 @@
       "constitParking": "Parking Plaza Constitución — 24h 14,70€ · 1,45€/h · Tel. 980 53 72 08",
       "marinaParking": "Parking La Marina — Reserva online en empark.com",
       "backHome": "← Volver al inicio",
-      "checkinLink": "Ver guía de check-in →"
+      "checkinLink": "Ver guía de check-in →",
+      "streetParkingDesc": "Aparcamiento en superficie: zona azul regulada (ORA) y zonas gratuitas. Consulta horarios y tarifas.",
+      "undergroundParkingDesc": "Aparcamientos subterráneos cubiertos con acceso 24 horas.",
+      "navigate": "Navegar",
+      "web": "Web",
+      "streetSpots": [
+        {
+          "name": "Zona ORA (estacionamiento regulado)",
+          "price": "0,35€/30min",
+          "walk": "1 min. a pie",
+          "note": "L-V 9-14h y 16-20h, S 9-14h. Gratis sábados tarde, domingos y festivos. Máx. 3h consecutivas. 30 min: 0,35€ | 1h: 0,70€ | 2h: 1,40€ | 3h: 2,10€.",
+          "mapsUrl": "https://www.google.com/maps/dir//Calle+Benavente+Zamora",
+          "free": false
+        },
+        {
+          "name": "Estación de Ferrocarril (gratuito)",
+          "price": "Gratis",
+          "walk": "2 km (bus L3)",
+          "note": "Aparcamiento gratuito 24h. La Línea 3 de autobús conecta con parada \"Mercado\" (5 min. a pie del hostal).",
+          "mapsUrl": "https://www.google.com/maps/dir//Estacion+de+Ferrocarril+Zamora",
+          "free": true
+        },
+        {
+          "name": "Plaza de Cristo Rey / Villalpando",
+          "price": "Gratis",
+          "walk": "10 min. a pie",
+          "note": "Aparcamiento gratuito próximo al centro, pero con alta ocupación residencial crónica.",
+          "mapsUrl": "https://www.google.com/maps/dir//Plaza+de+Cristo+Rey+Zamora",
+          "free": true
+        },
+        {
+          "name": "Calle los Pelambres",
+          "price": "Gratis",
+          "walk": "20 min. a pie",
+          "note": "Explanada de arena junto al río Duero con vistas panorámicas. No recomendado con equipaje.",
+          "mapsUrl": "https://www.google.com/maps/dir//Calle+los+Pelambres+Zamora",
+          "free": true
+        }
+      ],
+      "undergroundSpots": [
+        {
+          "name": "Parking Plaza de la Constitución",
+          "price": "14,70€/24h",
+          "walk": "3 min. a pie",
+          "details": "1,45€/h · 24h · Iberpark · Tel. 980 53 72 08 · info{'@'}iberpark.es",
+          "mapsUrl": "https://www.google.com/maps/dir//Plaza+de+la+Constitucion+Zamora"
+        },
+        {
+          "name": "Parking Plaza de la Marina Española",
+          "price": "19,45€/día",
+          "walk": "5 min. a pie",
+          "details": "Desde 2,35€/fracción. Empark/Telpark. Carga VE, cajeros y CCTV. Sin ascensor.",
+          "mapsUrl": "https://www.google.com/maps/dir//Plaza+de+la+Marina+Española+Zamora",
+          "webUrl": "https://www.empark.com"
+        },
+        {
+          "name": "Parking Parque de San Martín",
+          "price": "Tarifa reducida",
+          "walk": "8 min. a pie",
+          "details": "Gestionado por Iberpark. Tarifas reducidas recientemente.",
+          "mapsUrl": "https://www.google.com/maps/dir//Parque+San+Martin+Zamora"
+        }
+      ]
     },
     "reserva": {
       "title": "Reservar — Hostal Sol Zamora",
       "description": "Reserva tu estancia en el Hostal Sol Zamora con un 15% de descuento directo.",
       "heading": "Reserva tu estancia",
-      "discountLabel": "Descuento exclusivo",
-      "discountSub": "Precio único al utilziar nuestra página web",
+      "discountLabel": "15% de descuento al reservar en nuestra web",
+      "discountSub": "Precio directo — siempre más barato que Booking, Expedia u otros portales",
       "features": [
         "Confirmación inmediata",
         "Pago seguro",
@@ -300,7 +365,8 @@
       ],
       "iframeTitle": "Motor de reservas Hostal Sol Zamora",
       "troubleText": "¿Tienes problemas con el motor de reservas? Llámanos al",
-      "backHome": "← Volver al inicio"
+      "backHome": "← Volver al inicio",
+      "iframeFallback": "Si el motor de reservas no aparece arriba, haz clic aquí para abrirlo directamente."
     },
     "checkin": {
       "title": "Cómo Llegar y Check-in — Hostal Sol Zamora",
@@ -368,7 +434,34 @@
           "fields": ["Número de permiso", "Apellidos y nombre"]
         }
       ],
-      "backHome": "← Volver al inicio"
+      "backHome": "← Volver al inicio",
+      "docFields": [
+        "Nombre completo",
+        "Apellidos",
+        "Tipo de documento (DNI / Pasaporte / NIE / Tarjeta de residencia)",
+        "Número de documento",
+        "Número de soporte / número de serie (si aplica)",
+        "Fecha de expedición",
+        "Fecha de caducidad",
+        "Fecha de nacimiento",
+        "País de nacimiento",
+        "País de residencia",
+        "Comunidad Autónoma (si es España)",
+        "Nacionalidad",
+        "Sexo",
+        "Email de contacto",
+        "Teléfono de contacto"
+      ],
+      "ineNote": "INE — Estadísticas de turismo: Conforme a la Ley de la Función Estadística Pública, el Instituto Nacional de Estadística (INE) requiere el país de origen o comunidad autónoma de cada viajero para elaborar estadísticas turísticas nacionales. Estos datos se transmiten de forma anónima y agregada."
+    },
+    "galeria": {
+      "tag": "Galería",
+      "title": "Galería de Habitaciones — Hostal Sol Zamora",
+      "heading": "Galería de habitaciones",
+      "p1": "En Hostal Sol Zamora creemos que la honestidad es la mejor presentación. Aquí encontrarás fotos y vídeos reales de nuestras habitaciones — sin retoques ni escenificaciones — para que puedas reservar con total confianza.",
+      "p2": "Explora cada tipo de habitación: tipo de cama, distribución, mobiliario, vistas y servicios incluidos. Los vídeos te permiten recorrer el espacio como si ya estuvieras aquí.",
+      "p3": "¿Tienes alguna pregunta sobre una habitación concreta? Escríbenos o llámanos — con mucho gusto te ayudamos a elegir la mejor opción para tu estancia.",
+      "p4": "Fotos tomadas en 2024 · Vídeos grabados en 2026. Hemos realizado mejoras desde entonces, pero el estilo y la distribución son los mismos."
     }
   }
 }

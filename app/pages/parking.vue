@@ -46,7 +46,7 @@
       <!-- Street parking -->
       <section class="page-section">
         <h2 class="section-heading">{{ t('pages.parking.streetParking') }}</h2>
-        <p class="section-body">Aparcamiento en superficie: zona azul regulada (ORA) y áreas gratuitas. Consulta horarios y tarifas.</p>
+        <p class="section-body">{{ t('pages.parking.streetParkingDesc') }}</p>
         <div class="parking-grid">
           <div v-for="spot in streetSpots" :key="spot.name" class="parking-card">
             <div class="parking-card__top">
@@ -59,7 +59,7 @@
             </div>
             <p v-if="spot.note" class="parking-card__tip">{{ spot.note }}</p>
             <a :href="spot.mapsUrl" target="_blank" rel="noopener noreferrer" class="parking-card__nav">
-              <LucideIcon name="navigation" :size="13" color="var(--green)" /> Navegar
+              <LucideIcon name="navigation" :size="13" color="var(--green)" /> {{ t('pages.parking.navigate') }}
             </a>
           </div>
         </div>
@@ -68,7 +68,7 @@
       <!-- Underground parking -->
       <section class="page-section">
         <h2 class="section-heading">{{ t('pages.parking.undergroundParking') }}</h2>
-        <p class="section-body">Aparcamientos subterráneos cubiertos con acceso 24h.</p>
+        <p class="section-body">{{ t('pages.parking.undergroundParkingDesc') }}</p>
         <div class="parking-grid">
           <div v-for="spot in undergroundSpots" :key="spot.name" class="parking-card parking-card--underground">
             <div class="parking-card__top">
@@ -82,10 +82,10 @@
             <p class="parking-card__tip">{{ spot.details }}</p>
             <div class="parking-card__actions">
               <a :href="spot.mapsUrl" target="_blank" rel="noopener noreferrer" class="parking-card__nav">
-                <LucideIcon name="navigation" :size="13" color="var(--green)" /> Navegar
+                <LucideIcon name="navigation" :size="13" color="var(--green)" /> {{ t('pages.parking.navigate') }}
               </a>
               <a v-if="spot.webUrl" :href="spot.webUrl" target="_blank" rel="noopener noreferrer" class="parking-card__nav">
-                <LucideIcon name="external-link" :size="13" color="var(--green)" /> Web
+                <LucideIcon name="external-link" :size="13" color="var(--green)" /> {{ t('pages.parking.web') }}
               </a>
             </div>
           </div>
@@ -109,7 +109,7 @@
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n()
+const { t, tm, rt } = useI18n()
 
 useHead({
   title: computed(() => t('pages.parking.title')),
@@ -122,75 +122,27 @@ const hostalNavApps = [
   { name: 'Waze',        color: '#33ccff', href: 'https://waze.com/ul?ll=41.5065,-5.7450&navigate=yes&q=Calle+San+Miguel+Zamora' },
 ]
 
-interface ParkingSpot {
-  name: string
-  price: string
-  walk: string
-  note?: string
-  details?: string
-  mapsUrl: string
-  webUrl?: string
-  free?: boolean
-}
+const streetSpots = computed(() =>
+  (tm('pages.parking.streetSpots') as any[]).map((s: any) => ({
+    name:    rt(s.name),
+    price:   rt(s.price),
+    walk:    rt(s.walk),
+    note:    s.note ? rt(s.note) : undefined,
+    mapsUrl: rt(s.mapsUrl),
+    free:    s.free ?? false,
+  }))
+)
 
-const streetSpots: ParkingSpot[] = [
-  {
-    name: 'Zona ORA (estacionamiento regulado)',
-    price: '0,35€/30min',
-    walk: '1 min. a pie',
-    note: 'L-V 9-14h y 16-20h, S 9-14h. Gratis sábados tarde, domingos y festivos. Máx. 3h consecutivas. 30 min: 0,35€ | 1h: 0,70€ | 2h: 1,40€ | 3h: 2,10€.',
-    mapsUrl: 'https://www.google.com/maps/dir//Calle+Benavente+Zamora',
-  },
-  {
-    name: 'Estación de Ferrocarril (gratuito)',
-    price: 'Gratis',
-    walk: '2 km (bus L3)',
-    note: 'Aparcamiento gratuito 24h. La Línea 3 de autobús conecta con parada "Mercado" (5 min. a pie del hostal).',
-    mapsUrl: 'https://www.google.com/maps/dir//Estacion+de+Ferrocarril+Zamora',
-    free: true,
-  },
-  {
-    name: 'Plaza de Cristo Rey / Villalpando',
-    price: 'Gratis',
-    walk: '10 min. a pie',
-    note: 'Aparcamiento gratuito próximo al centro, pero con alta ocupación residencial crónica.',
-    mapsUrl: 'https://www.google.com/maps/dir//Plaza+de+Cristo+Rey+Zamora',
-    free: true,
-  },
-  {
-    name: 'Calle los Pelambres',
-    price: 'Gratis',
-    walk: '20 min. a pie',
-    note: 'Explanada de arena junto al río Duero con vistas panorámicas. No recomendado con equipaje.',
-    mapsUrl: 'https://www.google.com/maps/dir//Calle+los+Pelambres+Zamora',
-    free: true,
-  },
-]
-
-const undergroundSpots: ParkingSpot[] = [
-  {
-    name: 'Parking Plaza de la Constitución',
-    price: '14,70€/24h',
-    walk: '3 min. a pie',
-    details: '1,45€/h · 24h · Iberpark · Tel. 980 53 72 08 · info@iberpark.es',
-    mapsUrl: 'https://www.google.com/maps/dir//Plaza+de+la+Constitucion+Zamora',
-  },
-  {
-    name: 'Parking Plaza de la Marina Española',
-    price: '19,45€/día',
-    walk: '5 min. a pie',
-    details: 'Desde 2,35€/fracción. Empark/Telpark. Carga VE, cajeros y CCTV. Sin ascensor.',
-    mapsUrl: 'https://www.google.com/maps/dir//Plaza+de+la+Marina+Española+Zamora',
-    webUrl: 'https://www.empark.com',
-  },
-  {
-    name: 'Parking Parque de San Martín',
-    price: 'Tarifa reducida',
-    walk: '8 min. a pie',
-    details: 'Gestionado por Iberpark. Tarifas reducidas recientemente en 0,55€ sobre el histórico.',
-    mapsUrl: 'https://www.google.com/maps/dir//Parque+San+Martin+Zamora',
-  },
-]
+const undergroundSpots = computed(() =>
+  (tm('pages.parking.undergroundSpots') as any[]).map((s: any) => ({
+    name:    rt(s.name),
+    price:   rt(s.price),
+    walk:    rt(s.walk),
+    details: s.details ? rt(s.details) : undefined,
+    mapsUrl: rt(s.mapsUrl),
+    webUrl:  s.webUrl ? rt(s.webUrl) : undefined,
+  }))
+)
 </script>
 
 <style scoped>
