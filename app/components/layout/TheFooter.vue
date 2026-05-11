@@ -10,13 +10,13 @@
           © {{ year }} Hostal Sol Zamora · {{ t('footer.rights') }}
         </span>
         <nav class="footer__links">
-          <NuxtLink to="/terminos-y-condiciones">{{ t('footer.terms') }}</NuxtLink>
-          <NuxtLink to="/politica-de-cookies-ue">{{ t('footer.cookies') }}</NuxtLink>
-          <NuxtLink to="/galeria">Galería</NuxtLink>
-          <NuxtLink to="/parking">Parking</NuxtLink>
-          <NuxtLink to="/faq">FAQ</NuxtLink>
-          <NuxtLink to="/checkin">Check-in</NuxtLink>
-          <NuxtLink to="/reserva">{{ t('nav.reserve') }}</NuxtLink>
+          <NuxtLink :to="localePath('terminos-y-condiciones')">{{ t('footer.terms') }}</NuxtLink>
+          <NuxtLink :to="localePath('politica-de-cookies-ue')">{{ t('footer.cookies') }}</NuxtLink>
+          <NuxtLink :to="localePath('galeria')">{{ t('nav.rooms') }}</NuxtLink>
+          <NuxtLink :to="localePath('parking')">Parking</NuxtLink>
+          <NuxtLink :to="localePath('faq')">FAQ</NuxtLink>
+          <NuxtLink :to="localePath('checkin')">Check-in</NuxtLink>
+          <NuxtLink :to="localePath('reserva')">{{ t('nav.reserve') }}</NuxtLink>
         </nav>
       </div>
     </div>
@@ -25,6 +25,7 @@
 
 <script setup lang="ts">
 const { t } = useI18n()
+const localePath = useLocalePath()
 const year = new Date().getFullYear()
 </script>
 

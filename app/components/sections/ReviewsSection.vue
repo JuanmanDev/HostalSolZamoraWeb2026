@@ -54,7 +54,7 @@
     </div>
 
     <!-- CTA band -->
-    <NuxtLink to="/reserva" class="reviews__cta-band">
+    <NuxtLink :to="localePath('reserva')" class="reviews__cta-band">
       <div class="reviews__cta-band-content">
         <LucideIcon name="tag" :size="18" color="#fff" />
         <span>{{ t('reviews.ctaBand') }}</span>
@@ -69,6 +69,7 @@ import { Carousel, Slide, Navigation, Pagination } from 'vue3-carousel'
 import type { Review } from '~/types'
 
 const { t, tm, rt } = useI18n()
+const localePath = useLocalePath()
 
 const items = computed(() =>
   (tm('reviews.items') as any[]).map((rev: any) => ({

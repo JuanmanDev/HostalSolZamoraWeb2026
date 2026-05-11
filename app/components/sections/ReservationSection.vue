@@ -20,7 +20,7 @@
 
       <!-- Big button to start reservation -->
       <div class="reserve__cta-main">
-        <NuxtLink to="/reserva" class="btn btn--primary">
+        <NuxtLink :to="localePath('reserva')" class="btn btn--primary">
           {{ t('nav.reserve') }}
         </NuxtLink>
       </div>
@@ -41,7 +41,7 @@
 
       <p class="reserve__help">
         {{ t('reserve.helpText') }}
-        <NuxtLink to="/reserva" class="reserve__help-link">{{ t('reserve.helpLink') }}</NuxtLink>
+        <NuxtLink :to="localePath('reserva')" class="reserve__help-link">{{ t('reserve.helpLink') }}</NuxtLink>
       </p>
     </div>
   </section>
@@ -49,6 +49,7 @@
 
 <script setup lang="ts">
 const { t, tm, rt } = useI18n()
+const localePath = useLocalePath()
 
 const features = computed(() =>
   (tm('reserve.features') as any[]).map((f: any) => rt(f)) as string[]

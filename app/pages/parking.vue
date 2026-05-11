@@ -17,7 +17,7 @@
             <p class="addr-card__tip">{{ t('pages.parking.addressCard.tip') }}</p>
           </div>
         </div>
-        <NuxtLink to="/checkin" class="checkin-link">
+        <NuxtLink :to="localePath('checkin')" class="checkin-link">
           <LucideIcon name="key" :size="15" color="var(--green)" />
           {{ t('pages.parking.checkinLink') }}
         </NuxtLink>
@@ -110,6 +110,7 @@
 
 <script setup lang="ts">
 const { t, tm, rt } = useI18n()
+const localePath = useLocalePath()
 
 useHead({
   title: computed(() => t('pages.parking.title')),

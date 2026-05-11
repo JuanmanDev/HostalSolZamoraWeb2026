@@ -35,7 +35,7 @@
 
         <section class="legal-section">
           <h2>6. Check-in y check-out</h2>
-          <p>El horario de check-in es a partir de las <strong>14:00 h</strong>. El check-out debe realizarse antes de las <strong>12:00 h</strong>. Fuera de este horario, la recepción no está atendida de manera permanente; los huéspedes que lleguen fuera del horario de atención deberán completar el proceso de entrada en línea previamente disponible en <NuxtLink to="/checkin">hostalsolzamora.com/checkin</NuxtLink>.</p>
+          <p>El horario de check-in es a partir de las <strong>14:00 h</strong>. El check-out debe realizarse antes de las <strong>12:00 h</strong>. Fuera de este horario, la recepción no está atendida de manera permanente; los huéspedes que lleguen fuera del horario de atención deberán completar el proceso de entrada en línea previamente disponible en <NuxtLink :to="localePath('checkin')">hostalsolzamora.com/checkin</NuxtLink>.</p>
         </section>
 
         <section class="legal-section">
@@ -70,7 +70,7 @@
 
         <section class="legal-section">
           <h2>13. Cookies</h2>
-          <p>Este sitio web utiliza cookies propias y de terceros con fines técnicos y analíticos. Puede obtener más información y gestionar sus preferencias en nuestra <NuxtLink to="/politica-de-cookies-ue">Política de Cookies</NuxtLink>.</p>
+          <p>Este sitio web utiliza cookies propias y de terceros con fines técnicos y analíticos. Puede obtener más información y gestionar sus preferencias en nuestra <NuxtLink :to="localePath('politica-de-cookies-ue')">Política de Cookies</NuxtLink>.</p>
         </section>
 
         <section class="legal-section">
@@ -119,6 +119,7 @@
 </template>
 
 <script setup lang="ts">
+const localePath = useLocalePath()
 useHead({
   title: 'Términos y Condiciones — Hostal Sol Zamora',
   meta: [{ name: 'description', content: 'Términos y Condiciones de uso del sitio web y de los servicios de alojamiento del Hostal Sol Zamora, Zamora.' }],

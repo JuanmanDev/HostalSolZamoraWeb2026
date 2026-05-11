@@ -33,7 +33,7 @@
 
     <!-- Nav app buttons — below the map -->
     <div class="map-section__nav-apps container-md">
-      <NuxtLink to="/checkin" class="btn btn-primary map-section__arrive-btn">
+      <NuxtLink :to="localePath('checkin')" class="btn btn-primary map-section__arrive-btn">
         <LucideIcon name="car" :size="15" color="#fff" />
         {{ t('map.howToArrive') }}
       </NuxtLink>
@@ -69,6 +69,7 @@ interface MapNavApp {
 }
 
 const { t } = useI18n()
+const localePath = useLocalePath()
 
 const navApps: MapNavApp[] = [
   {

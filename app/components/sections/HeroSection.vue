@@ -27,7 +27,7 @@
 
     <!-- Discount banner -->
     <div class="hero__banner-wrap">
-      <NuxtLink to="/reserva" class="hero__banner">
+      <NuxtLink :to="localePath('reserva')" class="hero__banner">
         <LucideIcon name="tag" :size="13" color="#fff" />
         {{ t('hero.discount') }}
       </NuxtLink>
@@ -44,7 +44,7 @@
       />
       <p class="hero__sub">{{ t('hero.sub') }}</p>
       <div class="hero__ctas">
-        <NuxtLink class="hero__cta-primary" href="/reserva">
+        <NuxtLink class="hero__cta-primary" :to="localePath('reserva')">
           {{ t('hero.cta') }}
         </NuxtLink>
         <button class="hero__cta-secondary" @click="scrollTo('rooms')">
@@ -106,6 +106,7 @@ import { Carousel, Slide } from 'vue3-carousel'
 const HERO_PHOTOS = SHUFFLED_HERO_PHOTOS;
 
 const { t, tm, rt } = useI18n()
+const localePath = useLocalePath()
 const { scrollTo } = useScrollTo()
 
 const currentIdx = ref(0)

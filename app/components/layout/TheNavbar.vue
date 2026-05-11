@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar" :class="{ 'navbar--solid': scrolled }">
     <div class="navbar__inner">
-      <NuxtLink to="/" class="navbar__logo-btn" @click.prevent="handleLogoClick">
+      <NuxtLink :to="localePath('index')" class="navbar__logo-btn" @click.prevent="handleLogoClick">
         <span class="navbar__logo-desktop">
           <NuxtPicture :src="LOGO_ICON_SVG" alt="" class="navbar__logo-icon" width="64" height="64" />
           <NuxtPicture :src="LOGO_TEXT_SVG" alt="Hostal Sol Zamora" class="navbar__logo-type" width="200" height="48" />
@@ -39,7 +39,7 @@
       </div>
       
       <div class="navbar__mobile">
-        <NuxtLink to="/reserva" class="navbar__cta-button">
+        <NuxtLink :to="localePath('reserva')" class="navbar__cta-button">
           {{ t('nav.reserve') }}
         </NuxtLink> 
 
@@ -82,6 +82,7 @@
 import { LOGO_SVG, LOGO_ICON, LOGO_ICON_SVG, LOGO_TEXT_SVG } from '~/composables/useRooms'
 
 const { t } = useI18n()
+const localePath = useLocalePath()
 const { scrollTo } = useScrollTo()
 const route = useRoute()
 const router = useRouter()
@@ -92,37 +93,39 @@ const _scrolled = ref(false)
 const scrolled  = computed(() => props.solidFromStart || _scrolled.value)
 const menuOpen  = ref(false)
 
-const navLinks = [
-  { key: 'home',    section: 'hero',  route: null,      cta: false },
-  { key: 'rooms',   section: null, route: '/galeria',      cta: false },
-  { key: 'parking', section: null,    route: '/parking', cta: false },
-  { key: 'faq',     section: null,    route: '/faq',     cta: false },
-  { key: 'checkin', section: null,    route: '/checkin', cta: false },
-  { key: 'reserve', section: null,    route: '/reserva', cta: true  },
-]
+const navLinks = computed(() => [
+  { key: 'home',    section: 'hero', route: null,                    cta: false },
+  { key: 'rooms',   section: null,   route: localePath('galeria'),   cta: false },
+  { key: 'parking', section: null,   route: localePath('parking'),   cta: false },
+  { key: 'faq',     section: null,   route: localePath('faq'),       cta: false },
+  { key: 'checkin', section: null,   route: localePath('checkin'),   cta: false },
+  { key: 'reserve', section: null,   route: localePath('reserva'),   cta: true  },
+])
+
+const homePath = computed(() => localePath('index'))
 
 function handleLogoClick() {
-  if (route.path === '/') {
+  if (route.path === homePath.value) {
     scrollTo('hero')
   } else {
-    router.push('/')
+    router.push(homePath.value)
   }
 }
 
 function handleSectionNav(id: string) {
-  if (route.path === '/') {
+  if (route.path === homePath.value) {
     scrollTo(id)
   } else {
-    router.push('/')
+    router.push(homePath.value)
   }
 }
 
 function handleMobileSectionNav(id: string) {
   menuOpen.value = false
-  if (route.path === '/') {
+  if (route.path === homePath.value) {
     scrollTo(id)
   } else {
-    router.push('/')
+    router.push(homePath.value)
   }
 }
 

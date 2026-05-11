@@ -4,7 +4,7 @@
       <UiSectionTag>{{ t('parking.sub') }}</UiSectionTag>
       <div class="parking__header">
         <h2 class="parking__heading">{{ t('parking.title') }}</h2>
-        <NuxtLink to="/parking" class="btn btn-primary">{{ t('parking.fullGuide') }}</NuxtLink>
+        <NuxtLink :to="localePath('parking')" class="btn btn-primary">{{ t('parking.fullGuide') }}</NuxtLink>
       </div>
 
       <div class="parking__grid">
@@ -33,6 +33,7 @@
 import type { ParkingOption } from '~/types'
 
 const { t, tm, rt } = useI18n()
+const localePath = useLocalePath()
 const options = computed(() =>
   (tm('parking.options') as any[]).map((opt: any) => ({
     name:  rt(opt.name),

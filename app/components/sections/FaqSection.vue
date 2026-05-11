@@ -4,7 +4,7 @@
       <UiSectionTag>{{ t('faq.title') }}</UiSectionTag>
       <div class="faq__header">
         <h2 class="faq__heading">{{ t('faq.title') }}</h2>
-        <NuxtLink to="/faq" class="faq__view-all">{{ t('faq.viewAll') }}</NuxtLink>
+        <NuxtLink :to="localePath('faq')" class="faq__view-all">{{ t('faq.viewAll') }}</NuxtLink>
       </div>
 
       <div class="faq__list">
@@ -20,7 +20,7 @@
       </div>
 
       <div class="faq__cta">
-        <NuxtLink to="/faq" class="btn btn-primary">
+        <NuxtLink :to="localePath('faq')" class="btn btn-primary">
           {{ t('faq.viewAllBtn') }}
         </NuxtLink>
       </div>
@@ -32,6 +32,7 @@
 import type { FaqItem } from '~/types'
 
 const { t, tm, rt } = useI18n()
+const localePath = useLocalePath()
 const allItems = computed(() =>
   (tm('faq.items') as any[]).map((item: any) => ({
     q: rt(item.q),

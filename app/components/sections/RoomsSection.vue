@@ -19,7 +19,7 @@
             </div>
             <SectionsRoomAmenityChips :items="type.extras" />
             <NuxtLink
-              :to="`/reserva?rateId=${type.rateId}`"
+              :to="localePath({ name: 'reserva', query: { rateId: type.rateId } })"
               class="btn btn-primary rooms__reserve-card-btn"
             >
               <LucideIcon name="calendar-check" :size="14" color="#fff" />
@@ -46,7 +46,7 @@
 
   <!--  Button to go the the gallery -->
   <div class="container" style="text-align:center; margin-top: 20px;">
-    <NuxtLink to="/galeria" class="btn btn-secondary">
+    <NuxtLink :to="localePath('galeria')" class="btn btn-secondary">
       {{ t('rooms.galleryBtn') }}
       <LucideIcon name="image" :size="14" color="var(--dark)" style="margin-left:6px" />
     </NuxtLink>
@@ -57,6 +57,7 @@
 import type { RoomType } from '~/types'
 
 const { t, tm, rt } = useI18n()
+const localePath = useLocalePath()
 
 const roomTypes = computed(() =>
   (tm('rooms.types') as any[]).map((type: any) => ({
