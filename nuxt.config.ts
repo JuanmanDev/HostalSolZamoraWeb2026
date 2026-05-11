@@ -77,12 +77,22 @@ export default defineNuxtConfig({
       { code: 'en', file: 'en.json', name: 'English' },
     ],
     defaultLocale: 'es',
-    strategy: 'no_prefix',
+    strategy: 'prefix_except_default',
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'hsz_lang',
       redirectOn: 'root',
       fallbackLocale: 'es',
+    },
+    pages: {
+      'index': { en: '/', es: '/' },
+      'galeria': { en: '/gallery', es: '/galeria' },
+      'reserva': { en: '/booking', es: '/reserva' },
+      'checkin': { en: '/check-in', es: '/checkin' },
+      'faq': { en: '/faq', es: '/faq' },
+      'parking': { en: '/parking', es: '/parking' },
+      'politica-de-cookies-ue': { en: '/cookie-policy', es: '/politica-de-cookies-ue' },
+      'terminos-y-condiciones': { en: '/terms-and-conditions', es: '/terminos-y-condiciones' },
     },
   },
 
