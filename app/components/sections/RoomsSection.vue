@@ -37,12 +37,12 @@
         </NuxtLink>
       </div> -->
     </div>
-
-  </section>
     <!-- Room Media Gallery -->
     <SectionsRoomMediaGallery2
       hideThumbailsAll="false"
     />
+
+  </section>
 
   <!--  Button to go the the gallery -->
   <div class="container" style="text-align:center; margin-top: 20px;">

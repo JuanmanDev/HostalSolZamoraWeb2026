@@ -14,7 +14,7 @@
           <NuxtLink :to="localePath('politica-de-cookies-ue')">{{ t('footer.cookies') }}</NuxtLink>
           <NuxtLink :to="localePath('galeria')">{{ t('nav.rooms') }}</NuxtLink>
           <NuxtLink :to="localePath('parking')">Parking</NuxtLink>
-          <NuxtLink :to="localePath('faq')">FAQ</NuxtLink>
+          <NuxtLink :to="localePath('faq')">{{ t('nav.faq') }}</NuxtLink>
           <NuxtLink :to="localePath('checkin')">Check-in</NuxtLink>
           <NuxtLink :to="localePath('reserva')">{{ t('nav.reserve') }}</NuxtLink>
         </nav>

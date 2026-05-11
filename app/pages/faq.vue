@@ -4,7 +4,7 @@
     <LayoutTheNavbar :solid-from-start="true" />
 
     <main class="page-content">
-      <UiSectionTag>FAQ</UiSectionTag>
+      <UiSectionTag>{{ t('nav.faq') }}</UiSectionTag>
       <h1 class="page-heading">{{ t('pages.faq.heading') }}</h1>
       <p class="page-lead">{{ t('pages.faq.lead') }}</p>
 
@@ -102,21 +102,28 @@ const allItems = computed(() =>
   (tm('faq.items') as any[]).map((item: any) => ({
     q: rt(item.q),
     a: rt(item.a),
+    tags: item.tags?.map((t: any) => rt(t)) as string[] | undefined,
     links: item.links?.map((l: any) => ({
       label: rt(l.label),
       url: rt(l.url),
-      icon: l.icon,
+      icon: rt(l.icon),
     })),
   })) as FaqItem[]
 )
 const query = ref((route.query.q as string) || '')
 const open  = ref<number | null>(null)
 
+function normalize(text: string): string {
+  return text.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
+}
+
 const filteredItems = computed(() => {
   if (!query.value.trim()) return allItems.value
-  const q = query.value.toLowerCase()
+  const q = normalize(query.value)
   return allItems.value.filter(item =>
-    item.q.toLowerCase().includes(q) || item.a.toLowerCase().includes(q)
+    normalize(item.q).includes(q) ||
+    normalize(item.a).includes(q) ||
+    (item.tags?.some(tag => normalize(tag).includes(q)) ?? false)
   )
 })
 

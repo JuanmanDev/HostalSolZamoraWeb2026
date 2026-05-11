@@ -44,7 +44,7 @@
         </div>
 
         <div v-else class="gsearch__hint">
-          Busca habitaciones, servicios, FAQ...
+          Busca habitaciones, servicios, dudas...
         </div>
       </div>
     </Transition>

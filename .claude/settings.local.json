@@ -7,7 +7,15 @@
       "Bash(curl -sL https://hostalsolzamora.com/wp-content/uploads/2022/03/imagen-qs-1024x1024.webp -o c:/code/HostalSol2026/public/images/about.webp)",
       "Bash(node -e ' *)",
       "Bash(Get-ChildItem -Path \"c:\\\\code\\\\HostalSol2026\" -Directory)",
-      "Bash(Select-Object Name)"
+      "Bash(Select-Object Name)",
+      "Bash(node -e \"console.log\\('test'.normalize\\('NFD'\\).replace\\(/[̀-ͯ]/g, ''\\).toLowerCase\\(\\)\\); console.log\\('café'.normalize\\('NFD'\\).replace\\(/[̀-ͯ]/g, ''\\).toLowerCase\\(\\)\\)\")",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('c:/code/HostalSol2026/i18n/locales/en.json','utf8'\\)\\); console.log\\('en.json OK'\\)\")",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('c:/code/HostalSol2026/i18n/locales/es.json','utf8'\\)\\); console.log\\('es.json OK'\\)\")",
+      "Bash(cat)",
+      "Read(//tmp/**)",
+      "Bash(node -e \"const l = require\\('c:/code/HostalSol2026/node_modules/lucide-vue-next'\\); ['Calendar','CreditCard','PiggyBank','User','BanknoteArrowDown'].forEach\\(n => console.log\\(n, !!l[n]\\)\\)\")",
+      "Bash(node -e \"const l = require\\('c:/code/HostalSol2026/node_modules/lucide-vue-next'\\); const icons = ['Globe','Menu','Tag','MapPin','Building2','PawPrint','Star','ChevronDown','ChevronUp','ChevronLeft','ChevronRight','BedDouble','Building','BedSingle','LayoutGrid','Image','PlayCircle','Play','Tv','Tv2','ParkingSquare','Car','Info','Navigation','Landmark','Train','Plus','Minus','ShieldCheck','XCircle','Lock','Zap','CalendarCheck','CalendarClock','Phone','Smartphone','Mail','Clock','Key','LogOut','LogIn','Moon','MessageCircle','Copy','Check','Footprints','UtensilsCrossed','ZoomIn','ShowerHead','Wifi','Armchair','Thermometer','Wind','Package','Bed','Trees','Warehouse','ImageOff','Youtube','ExternalLink','Luggage','UserCheck','AlertCircle','DoorOpen','IdCard','FileText','Laptop','FileBadge2','Search','FileCheck','BanknoteArrowDown','Calendar','CreditCard','PiggyBank','User']; icons.forEach\\(n => { if \\(!l[n]\\) console.log\\('MISSING:', n\\); }\\); console.log\\('done'\\)\")",
+      "Bash(node -e \"const l = require\\('c:/code/HostalSol2026/node_modules/lucide-vue-next'\\); const candidates = ['WashingMachine','Shirt','Wardrobe','Sofa','Armchair','MonitorSmartphone','Monitor','Laptop2','Briefcase','ClipboardCheck','SprayCan','Droplets','Scissors','Sparkles','Elevator','ArrowUpDown','Cctv','ShieldAlert','Lock','DoorClosed','Wind','Zap','Star','Dumbbell','Coffee','Utensils','Package2','Gift']; candidates.forEach\\(n => { if \\(l[n]\\) console.log\\('✓', n\\); else console.log\\('✗', n\\); }\\)\")"
     ]
   }
 }

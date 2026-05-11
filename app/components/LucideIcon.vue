@@ -15,7 +15,8 @@ import {
   Warehouse, ImageOff, Youtube, ExternalLink,
   Luggage, UserCheck, AlertCircle, DoorOpen, IdCard, FileText,
   Laptop, FileBadge2, Search, FileCheck,
-  BanknoteArrowDown,
+  BanknoteArrowDown, Calendar, CreditCard, PiggyBank, User,
+  Shirt, SprayCan, Cctv, ArrowUpDown, Droplets,
   type LucideIcon,
 } from 'lucide-vue-next'
 
@@ -72,6 +73,10 @@ const ICON_MAP: Record<string, LucideIcon> = {
   'paw-print': PawPrint, 'star': Star, 'moon': Moon,
   'laptop': Laptop, 'utensils-crossed': UtensilsCrossed,
   'banknote-arrow-down': BanknoteArrowDown,
+  'calendar': Calendar, 'credit-card': CreditCard,
+  'piggy-bank': PiggyBank, 'user': User,
+  'shirt': Shirt, 'spray-can': SprayCan, 'cctv': Cctv,
+  'arrow-up-down': ArrowUpDown, 'droplets': Droplets,
 }
 
 const props = defineProps<{
