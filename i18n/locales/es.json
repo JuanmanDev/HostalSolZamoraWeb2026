@@ -1,4 +1,32 @@
 {
+  "ogImage": {
+    "tagline": "Tu hogar en Zamora",
+    "home": {
+      "title": "Hostal Sol Zamora"
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes"
+    },
+    "parking": {
+      "title": "Aparcamiento en Zamora"
+    },
+    "checkin": {
+      "title": "Cómo llegar y Check-in"
+    },
+    "galeria": {
+      "title": "Galería de Habitaciones"
+    },
+    "reserva": {
+      "title": "Reserva tu Estancia"
+    },
+    "sobreNosotros": {
+      "title": "Sobre Nosotros"
+    },
+    "contacto": {
+      "title": "Contacto"
+    },
+    "location": "ZAMORA, ESPAÑA"
+  },
   "nav": {
     "home": "Inicio",
     "rooms": "Habitaciones",
@@ -8,6 +36,7 @@
     "checkin": "Check-in",
     "reserve": "Reservar",
     "contact": "Contacto",
+    "about": "Sobre nosotros",
     "search": "Buscar",
     "searchPlaceholder": "Buscar habitaciones, servicios, dudas..."
   },
@@ -19,14 +48,46 @@
     "ctaRooms": "Ver habitaciones",
     "discount": "Reserva directa con 15% de descuento",
     "features": [
-      { "icon": "map-pin",        "label": "Ubicación céntrica",    "link": null },
-      { "icon": "wifi",           "label": "WiFi disponible",       "link": null },
-      { "icon": "paw-print",      "label": "Pet friendly",          "link": null },
-      { "icon": "shower-head",    "label": "Baño privado",          "link": null },
-      { "icon": "banknote-arrow-down",     "label": "Precios bajos",         "link": null },
-      { "icon": "wind",           "label": "Aire acondicionado",    "link": null },
-      { "icon": "tv",             "label": "TV",                    "link": null },
-      { "icon": "laptop",             "label": "Escritorio y silla",                    "link": null }
+      {
+        "icon": "map-pin",
+        "label": "Ubicación céntrica",
+        "link": null
+      },
+      {
+        "icon": "wifi",
+        "label": "WiFi disponible",
+        "link": null
+      },
+      {
+        "icon": "paw-print",
+        "label": "Pet friendly",
+        "link": null
+      },
+      {
+        "icon": "shower-head",
+        "label": "Baño privado",
+        "link": null
+      },
+      {
+        "icon": "banknote-arrow-down",
+        "label": "Precios bajos",
+        "link": null
+      },
+      {
+        "icon": "wind",
+        "label": "Aire acondicionado",
+        "link": null
+      },
+      {
+        "icon": "tv",
+        "label": "TV",
+        "link": null
+      },
+      {
+        "icon": "laptop",
+        "label": "Escritorio y silla",
+        "link": null
+      }
     ]
   },
   "about": {
@@ -51,12 +112,51 @@
     "title": "Nuestras habitaciones",
     "sub": "Tres tipos de habitación, toda la comodidad",
     "types": [
-      { "label": "Dos camas individuales", "icon": "bed-single", "photoPath": "/images/rooms/301/003.jpg", "extras": ["2 camas de 90cm de ancho"], "rateId": "578650" },
-      { "label": "Doble de matrimonio", "icon": "bed-double", "photoPath": "/images/rooms/323/002.jpg", "extras": ["1 Cama de 135cm de ancho"], "rateId": "578649" },
-      { "label": "Matrimonio con balcón", "icon": "building", "photoPath": "/images/rooms/321/021.jpg", "extras": ["1 Cama de 135cm de ancho", "Balcón privado", "TV Superior"], "rateId": "752069" }
+      {
+        "label": "Dos camas individuales",
+        "icon": "bed-single",
+        "photoPath": "/images/rooms/301/003.jpg",
+        "extras": [
+          "2 camas de 90cm de ancho"
+        ],
+        "rateId": "578650"
+      },
+      {
+        "label": "Doble de matrimonio",
+        "icon": "bed-double",
+        "photoPath": "/images/rooms/323/002.jpg",
+        "extras": [
+          "1 Cama de 135cm de ancho"
+        ],
+        "rateId": "578649"
+      },
+      {
+        "label": "Matrimonio con balcón",
+        "icon": "building",
+        "photoPath": "/images/rooms/321/021.jpg",
+        "extras": [
+          "1 Cama de 135cm de ancho",
+          "Balcón privado",
+          "TV Superior"
+        ],
+        "rateId": "752069"
+      }
     ],
-    "amenities": ["TV", "WiFi", "Baño privado", "Escritorio", "Calefacción central", "Amenities", "Toallas y ropa de cama",
-      "Aire acondicionado", "Secador de pelo (bajo petición)", "Armario", "Limpieza diaria", "Silla", "Cámaras de seguridad en zonas comunes", "Ascensor"
+    "amenities": [
+      "TV",
+      "WiFi",
+      "Baño privado",
+      "Escritorio",
+      "Calefacción central",
+      "Amenities",
+      "Toallas y ropa de cama",
+      "Aire acondicionado",
+      "Secador de pelo (bajo petición)",
+      "Armario",
+      "Limpieza diaria",
+      "Silla",
+      "Cámaras de seguridad en zonas comunes",
+      "Ascensor"
     ],
     "filterAll": "Todas",
     "filterBalcon": "Balcón",
@@ -137,19 +237,71 @@
     "ctaBand": "Reserva directamente en nuestra web y obtén el mejor precio garantizado",
     "ctaBandBtn": "Reservar con descuento →",
     "items": [
-      { "name": "Gemma", "text": "Me ha encantado la localización, el estilo del hostal es muy moderno y el chico super majo. La ducha era genial, ¡me dio pena marcharme!", "stars": 5 },
-      { "name": "Iker Zulueta", "text": "En pleno centro histórico, habitaciones amplias, limpias y equipadas. Trato del personal inmejorable. ¡Volveré a repetir!", "stars": 5 },
-      { "name": "José Manuel Serrano", "text": "Ubicación muy céntrica, te evitas el coche. El chico que nos atendió se ofreció para cualquier cosa. Excelente.", "stars": 5 },
-      { "name": "Annayara", "text": "Fui con un brazo lesionado y enseguida me ofrecieron cambiar la habitación por una más amplia. Esos detalles son los que cuentan.", "stars": 5 },
-      { "name": "Javier Fidalgo", "text": "El sitio es perfecto. Muy limpio, todo lo necesario, ubicación increíble y el recepcionista muy majo. Sin duda volveremos.", "stars": 5 },
-      { "name": "Carla Aguilar", "text": "Hostal estupendo en pleno centro. Nos explicaron qué ver y los mejores lugares a visitar. Sin duda, cuando volvamos repetiremos.", "stars": 5 },
-      { "name": "L. Elisabeth", "text": "Limpio, cómodo y práctico. Personal atento y preocupado de atender bien. Un acierto escoger este hostal.", "stars": 5 },
-      { "name": "Juan Manuel", "text": "El WiFi funcionó perfectamente y pude trabajar sin problemas. Creo que volveré pronto.", "stars": 5 },
-      { "name": "Thomas K. (DE)", "text": "Sehr zentral gelegen, saubere Zimmer und freundliches Personal. Kann ich nur empfehlen!", "stars": 5 },
-      { "name": "Marie L. (FR)", "text": "Excellent rapport qualité-prix. Chambre propre, bien équipée et idéalement située dans le centre historique.", "stars": 5 },
-      { "name": "James H. (UK)", "text": "Great location right in the historic centre. Clean rooms, helpful staff. Would definitely stay again.", "stars": 5 },
-      { "name": "Valentina R. (IT)", "text": "Ottima posizione nel centro storico, stanza pulita e personale cordiale. Consigliato!", "stars": 5 },
-      { "name": "Pedro A. (PT)", "text": "Localização perfeita no centro histórico. Quartos limpos e pessoal simpático. Recomendo!", "stars": 5 }
+      {
+        "name": "Gemma",
+        "text": "Me ha encantado la localización, el estilo del hostal es muy moderno y el chico super majo. La ducha era genial, ¡me dio pena marcharme!",
+        "stars": 5
+      },
+      {
+        "name": "Iker Zulueta",
+        "text": "En pleno centro histórico, habitaciones amplias, limpias y equipadas. Trato del personal inmejorable. ¡Volveré a repetir!",
+        "stars": 5
+      },
+      {
+        "name": "José Manuel Serrano",
+        "text": "Ubicación muy céntrica, te evitas el coche. El chico que nos atendió se ofreció para cualquier cosa. Excelente.",
+        "stars": 5
+      },
+      {
+        "name": "Annayara",
+        "text": "Fui con un brazo lesionado y enseguida me ofrecieron cambiar la habitación por una más amplia. Esos detalles son los que cuentan.",
+        "stars": 5
+      },
+      {
+        "name": "Javier Fidalgo",
+        "text": "El sitio es perfecto. Muy limpio, todo lo necesario, ubicación increíble y el recepcionista muy majo. Sin duda volveremos.",
+        "stars": 5
+      },
+      {
+        "name": "Carla Aguilar",
+        "text": "Hostal estupendo en pleno centro. Nos explicaron qué ver y los mejores lugares a visitar. Sin duda, cuando volvamos repetiremos.",
+        "stars": 5
+      },
+      {
+        "name": "L. Elisabeth",
+        "text": "Limpio, cómodo y práctico. Personal atento y preocupado de atender bien. Un acierto escoger este hostal.",
+        "stars": 5
+      },
+      {
+        "name": "Juan Manuel",
+        "text": "El WiFi funcionó perfectamente y pude trabajar sin problemas. Creo que volveré pronto.",
+        "stars": 5
+      },
+      {
+        "name": "Thomas K. (DE)",
+        "text": "Sehr zentral gelegen, saubere Zimmer und freundliches Personal. Kann ich nur empfehlen!",
+        "stars": 5
+      },
+      {
+        "name": "Marie L. (FR)",
+        "text": "Excellent rapport qualité-prix. Chambre propre, bien équipée et idéalement située dans le centre historique.",
+        "stars": 5
+      },
+      {
+        "name": "James H. (UK)",
+        "text": "Great location right in the historic centre. Clean rooms, helpful staff. Would definitely stay again.",
+        "stars": 5
+      },
+      {
+        "name": "Valentina R. (IT)",
+        "text": "Ottima posizione nel centro storico, stanza pulita e personale cordiale. Consigliato!",
+        "stars": 5
+      },
+      {
+        "name": "Pedro A. (PT)",
+        "text": "Localização perfeita no centro histórico. Quartos limpos e pessoal simpático. Recomendo!",
+        "stars": 5
+      }
     ]
   },
   "restaurant": {
@@ -171,47 +323,757 @@
     "waLabel": "WhatsApp",
     "emailLabel": "Email",
     "items": [
-      { "q": "¿Cuál es el horario del hostal?", "a": "La atención telefónica es de 10:00 a 21:00. El check-in es de 14:00 a 21:00. El hostal cierra a las 21:00 sin excepciones: pasadas las 21:00 no se recibirán reservas no acordadas. Una vez hecho el check-in, recibirás llaves para entrar y salir cuando quieras. La mayoría de domingos cerramos, pero si llegas el sábado puedes quedarte todo el domingo. Los días festivos solemos abrir excepto 14–16 agosto, 15 diciembre y 1 enero.", "links": [{ "label": "Guía completa de check-in", "url": "/checkin", "icon": "log-in" }] },
-      { "q": "¿A qué hora son el check-in y el check-out?", "a": "El check-in es de 14:00 a 21:00. Si llegas antes de las 14:00 podemos guardar tu equipaje en recepción sin problema. En periodos de baja ocupación a veces podemos ofrecer la habitación antes, pero no está garantizado. El check-out es a las 11:00. Después del check-out también podemos guardarte el equipaje durante el día de salida (excepto domingos), solo tienes que avisarnos. Si llegas después de las 21:00 no podremos recibirte, el horario no es flexible bajo ninguna circunstancia.", "tags": ["llegar", "llegada", "check-in anticipado", "guardar equipaje", "maleta", "check-out tardío", "equipaje"], "links": [{ "label": "Guía completa de check-in", "url": "/checkin", "icon": "log-in" }] },
-      { "q": "¿Qué documentación necesito para el check-in?", "a": "Según el Real Decreto 933/2021, todos los huéspedes mayores de 14 años deben presentar un documento de identidad oficial con fotografía en vigor: DNI, pasaporte, NIE, TIE o permiso de conducir de la UE. No se aceptan documentos caducados, dañados, ilegibles ni enviados por email o WhatsApp. Cada huésped debe presentar su propio documento; no vale solo con el del titular de la reserva. Para agilizar el proceso, te recomendamos usar Chekin online antes de llegar: recibirás un enlace para hacer una foto de tu documento y enviar todos los datos. Si haces Chekin online, al llegar solo necesitas mostrar al menos un documento registrado en el sistema. En caso contrario, todos los huéspedes deben presentar el documento físico en recepción.", "tags": ["pasaporte", "carné", "DNI", "documentación", "check-in online", "chekin", "registro previo", "NIE", "TIE"], "links": [{ "label": "Hacer check-in online", "url": "/checkin", "icon": "file-text" }, { "label": "Ver tipos de documento", "url": "/checkin", "icon": "id-card" }] },
-      { "q": "¿El hostal es accesible para movilidad reducida?", "a": "El hostal está en la 3ª planta de un edificio con 2 ascensores. No hay escalones para entrar al portal ni para acceder a las habitaciones. Puedes consultar fotos y vídeos de las habitaciones en nuestra galería para comprobar si el espacio y las dimensiones se adaptan a tus necesidades. Si tienes dudas, contáctanos y valoramos tu caso concreto; podemos recomendarte la habitación más adecuada.", "tags": ["silla de ruedas", "discapacidad", "movilidad reducida", "ascensor", "escaleras", "accesible", "minusválido"], "links": [{ "label": "Ver galería de habitaciones", "url": "/galeria", "icon": "image" }] },
-      { "q": "¿Dónde puedo aparcar?", "a": "El hostal no dispone de parking privado, pero hay varias opciones muy cerca. El Parking Plaza Constitución (a 3 min., 1,45€/h, 14,70€/día, abierto 24h) es el más cercano. También está el Parking Plaza de la Marina Española (a 5 min., reserva online en Empark). Si prefieres gratis, la Estación de Ferrocarril (a 2 km, bus L3) tiene aparcamiento gratuito 24h. En la misma puerta hay zona ORA (azul, 0,35€/30min, máxima 3h). Aunque es zona peatonal, el Ayuntamiento permite el acceso en coche a huéspedes desde la Calle San Miguel para dejar el equipaje.", "tags": ["garaje", "aparcamiento", "moto", "motocicleta", "vehículo", "aparcar cerca", "coche"], "links": [{ "label": "Guía completa de aparcamiento", "url": "/parking", "icon": "car" }, { "label": "Abrir en Google Maps", "url": "https://www.google.com/maps/dir//Calle+Benavente,+2+Zamora", "icon": "map-pin" }] },
-      { "q": "¿Hay desayuno en el hostal?", "a": "No ofrecemos desayunos, pero hay varias cafeterías y panaderías muy cerca del hostal. Nuestra recomendación es el Bar Restaurante Padornelo, a menos de 2 minutos andando desde la puerta del hostal. Abre de lunes a viernes a las 10:00 y sirve desayunos de calidad a buen precio. También hay otras opciones en la zona si prefieres variedad.", "tags": ["comida", "desayunar", "comer", "café", "cafetería", "bar", "panadería", "desayuno cerca"], "links": [{ "label": "Restaurante Padornelo", "url": "/#restaurant", "icon": "utensils-crossed" }, { "label": "Ver en Google Maps", "url": "https://www.google.com/maps/dir//Calle+Benavente,+2+Zamora", "icon": "map-pin" }] },
-      { "q": "¿Se admiten mascotas?", "a": "Sí, somos pet friendly. Las mascotas son bienvenidas con un suplemento de 7€/noche por cada animal. Puedes pagar el suplemento directamente en nuestra web como un servicio extra durante el proceso de reserva. Es importante saber que los animales deben estar siempre acompañados por un humano: no pueden quedarse solos en la habitación, ni en el hostal, ni en el coche, ni en ningún otro lugar. Si no se respeta esta norma, no se podrá alojar al animal y se ofrecerá cancelar la reserva con penalización.", "tags": ["perro", "gato", "animal", "cachorro", "conejo", "animales permitidos", "pet friendly"], "links": [{ "label": "Reservar con descuento", "url": "/reserva", "icon": "paw-print" }] },
-      { "q": "¿Puedo dejar a mi mascota sola en la habitación?", "a": "No, no es un hotel de mascotas. Los animales deben estar siempre acompañados por un humano en todo momento. No pueden quedarse solos en la habitación, ni en el hostal, ni en el coche, ni en ningún otro lugar. Si no se respeta esta norma, no se podrá alojar al animal en el hostal y se le ofrecerá al huésped la opción de cancelar la reserva con penalización por no respetar las normas del alojamiento." },
-      { "q": "¿Hay WiFi en las habitaciones?", "a": "Sí, hay WiFi gratuito en todo el hostal, incluyendo todas las habitaciones. La contraseña se proporciona al momento del check-in y también está disponible en recepción. La velocidad supera los 50mbps en la mayoría de habitaciones, más que suficiente para navegar, revisar correos, ver vídeos en streaming y realizar videollamadas. Hemos probado la conexión con varias personas trabajando simultáneamente y no hemos tenido problemas de velocidad o estabilidad. Si necesitas teletrabajar, es una gran opción. La calidad puede variar según la ubicación dentro del hostal y la cantidad de dispositivos conectados, pero en general el rendimiento es excelente.", "tags": ["internet", "contraseña wifi", "contraseña", "conexión", "red", "velocidad", "fibra", "teletrabajo", "trabajar remoto"] },
-      { "q": "¿Las habitaciones tienen aire acondicionado?", "a": "Sí, todas las habitaciones tienen aire acondicionado y también calefacción. Es un sistema moderno y eficiente diseñado para proporcionar un ambiente confortable durante todo el año, independientemente de las condiciones climáticas externas. Puedes ajustar la temperatura según tus preferencias. Si tienes alguna duda sobre cómo usarlo, el personal de recepción te ayudará encantado.", "tags": ["aire acondicionado", "calefacción", "temperatura", "calor", "frío", "termostato", "ventilador", "climatización"] },
-      { "q": "¿Qué tipo de TV tienen las habitaciones?", "a": "Las habitaciones con balcón tienen una televisión de pantalla plana de 32 pulgadas, y algunas son Smart TV por si prefieres iniciar sesión en tus plataformas. Las habitaciones sin balcón tienen una TV de 18 pulgadas (no Smart TV), pero puedes conectar dispositivos externos a través del puerto HDMI para ver contenido desde un portátil o móvil.", "tags": ["televisión", "Netflix", "streaming", "HBO", "Prime", "HDMI", "canales", "smart tv"] },
-      { "q": "¿Qué medidas de seguridad tiene el hostal?", "a": "El hostal se encuentra en una 3ª planta, por lo que son necesarias 2 llaves para acceder al pasillo de las habitaciones (una para el edificio y otra para la puerta del hostal). Dentro de los pasillos hay cámaras de seguridad. Cada habitación tiene su propia cerradura, y recomendamos a los huéspedes que comprueben siempre que su puerta está cerrada tanto al entrar como al salir.", "tags": ["caja fuerte", "objetos de valor", "cerradura", "taquilla", "robo", "cámara", "seguridad", "CCTV"] },
-      { "q": "¿Las habitaciones tienen nevera, cafetera o microondas?", "a": "No, las habitaciones no disponen de frigorífico, cafetera ni microondas. Sin embargo, hay varios supermercados muy cerca del hostal donde puedes comprar lo que necesites. La recepción también puede ayudarte con recomendaciones si necesitas algo concreto.", "tags": ["nevera", "frigorífico", "cocina", "microondas", "cocinar", "cafetera", "hervidor", "minibar"] },
-      { "q": "¿Hay servicio de lavandería?", "a": "El hostal no dispone de servicio de lavandería propio, pero hay varias lavanderías autoservicio en las cercanías. La más cercana se encuentra en la Calle San Torcuato, a menos de 5 minutos a pie, con máquinas de lavado y secado de alta capacidad y detergentes disponibles para compra. La limpieza de toallas, sábanas y demás ropa de cama está incluida en el precio de la habitación y se realiza de manera regular. Si necesitas un cambio adicional de ropa de cama o toallas durante tu estancia, solo tienes que solicitarlo en recepción.", "tags": ["lavar", "ropa", "lavadora", "secadora", "lavandería", "lavadero", "limpiar ropa"] },
-      { "q": "¿Hay servicio de limpieza diario?", "a": "Sí, ofrecemos servicio de limpieza diario para mantener tu habitación limpia y confortable. Los domingos no hay servicio de limpieza. Si te alojas el sábado, puedes disfrutar de la habitación durante todo el domingo sin problema, ya que el check-out es a las 11:00 del lunes. Si necesitas cualquier cosa adicional durante tu estancia, no dudes en pedírnoslo." },
-      { "q": "¿Tenéis secador o plancha de pelo?", "a": "Sí, tenemos secadores y planchas de pelo disponibles bajo petición en recepción, sin coste adicional. Puedes pedirlos en cualquier momento que estemos en recepción. Cuando termines, simplemente déjalos en la habitación y los recogeremos nosotros al hacer la limpieza. Es un servicio gratuito para todos los huéspedes.", "tags": ["pelo", "secar pelo", "planchar ropa", "plancha", "rizador", "secador"] },
-      { "q": "¿Qué incluye la habitación?", "a": "Todas las habitaciones incluyen: ropa de cama completa (sábanas, mantas, almohadas, edredones), toallas (1 o 2 por huésped según tipo de habitación y duración), mobiliario básico (cama, mesitas de noche, armario o perchero con perchas, escritorio o mesa de trabajo, silla), y baño privado completo con vaso, jabón de manos, gel de ducha y papel higiénico. Además, bajo petición gratuita, puedes solicitar secador de pelo y plancha. No hay frigorífico, cafetera ni microondas en las habitaciones.", "links": [{ "label": "Ver galería de habitaciones", "url": "/galeria", "icon": "image" }] },
-      { "q": "¿Hay agua caliente?", "a": "Sí, hay agua caliente durante todo el día. En algunas habitaciones el agua caliente puede tardar un poco en llegar, pero no debería tardar más de 5 minutos en tener agua caliente disponible. Si tienes algún problema con el agua caliente durante tu estancia, no dudes en contactarnos y lo resolveremos lo antes posible." },
-      { "q": "¿Qué precios tenéis?", "a": "Somos un hostal económico con los precios más bajos de Zamora centro. Las tarifas varían según la temporada y el tipo de habitación (individual, doble, con balcón). Los fines de semana y días festivos los precios pueden ser ligeramente más altos debido a la mayor demanda. Ofrecemos descuentos especiales para estancias prolongadas (a partir de 11 noches, 10% de descuento automático) y para grupos. Nuestra recomendación es usar siempre nuestra web, donde ofrecemos un precio mucho más barato que en Booking, Expedia u otros portales. Puedes ver los precios actualizados para tus fechas concretas en nuestra página de reservas.", "links": [{ "label": "Ver precios y reservar", "url": "/reserva", "icon": "tag" }, { "label": "Contactar por WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }] },
-      { "q": "Hay descuento por larga estancia?", "a": "Sí, a partir de 11 noches hay un descuento automático del 10% en el precio total de la estancia. El descuento se aplica a tarifas no reembolsables. Si no funciona correctamente en la web al hacer la reserva, contacta con nosotros y te lo aplicaremos manualmente. También ofrecemos descuentos para grupos; si viajas con amigos o familiares, consúltanos.", "links": [{ "label": "Reservar con descuento", "url": "/reserva", "icon": "calendar-check" }] },
-      { "q": "¿Puedo pagar con tarjeta?", "a": "Sí, aceptamos las principales tarjetas de crédito y débito: Visa, MasterCard, American Express, entre otras. También aceptamos pago en efectivo y transferencia bancaria si se avisa con más de una semana de antelación. No aceptamos cheques.", "tags": ["efectivo", "visa", "mastercard", "tarjeta crédito", "tarjeta débito", "método de pago", "transferencia", "Bizum", "pago"] },
-      { "q": "¿Hay camas adicionales?", "a": "Sí, están disponibles bajo petición por 25€/noche. Puedes añadir una cama adicional durante la reserva en nuestra web seleccionando 3 adultos en el proceso, o contactando con nosotros para añadirla a una reserva ya existente. Disponemos de un total de 3 camas plegables, por lo que la disponibilidad es limitada y se asignan por orden de solicitud. Solo se puede añadir 1 cama plegable por habitación. Si viajas en grupo grande, te recomendamos reservar varias habitaciones.", "tags": ["cuna", "cama plegable", "tercera persona", "persona extra", "bebé", "sofá cama", "colchoneta"], "links": [{ "label": "Reservar con cama extra", "url": "/reserva", "icon": "bed-double" }] },
-      { "q": "¿Abren los domingos y festivos?", "a": "Abrimos la mayoría de los días festivos, con las siguientes excepciones: 14, 15 y 16 de agosto, 15 de diciembre y 1 de enero. La mayoría de domingos cerramos, pero si llegas el sábado puedes quedarte durante todo el domingo y días sucesivos sin problema, ya que el check-out es a las 11:00 de la mañana del día de salida. Si tienes dudas sobre una fecha concreta, contáctanos.", "links": [{ "label": "Guía de check-in", "url": "/checkin", "icon": "calendar" }] },
-      { "q": "¿Puedo acceder después de las 21:00?", "a": "El horario de check-in es de 14:00 a 21:00, y el hostal cierra a las 21:00 sin excepciones. No es posible hacer el check-in después de las 21:00 bajo ninguna circunstancia. Sin embargo, una vez que hayas llegado y hecho el check-in dentro del horario, recibirás un juego de llaves (edificio, hostal y habitación) para poder entrar y salir cuando quieras, las 24 horas del día.", "tags": ["llegada tarde", "llegar tarde", "acceso nocturno", "check-in nocturno", "llaves 24h"] },
-      { "q": "¿El hostal es silencioso?", "a": "El hostal tiene ventanas y persianas nuevas instaladas en 2026 que mejoran significativamente el aislamiento acústico con el exterior. Sin embargo, el nivel de aislamiento entre habitaciones es sencillo, por lo que algunas habitaciones pueden ser más ruidosas que otras dependiendo de la ubicación. Si tienes preferencia por una habitación tranquila, indícanoslo al hacer la reserva o durante el check-in, y haremos todo lo posible por asignarte la más adecuada. Si durante tu estancia el ruido es un problema, podemos cambiarte de habitación si hay disponibilidad o proporcionarte tapones para los oídos.", "tags": ["ruido", "ruidoso", "tapones", "dormir", "aislamiento", "acústico", "vecinos"], "links": [{ "label": "Ver habitaciones disponibles", "url": "/galeria", "icon": "building" }] },
-      { "q": "He llegado a recepción y no hay nadie. ¿Qué hago?", "a": "Lo primero, llama por teléfono al número del hostal: +34 980 533 152. A veces tenemos compromisos fuera de recepción o estamos atendiendo otras llamadas u otros huéspedes en ese momento. Es importante que hagas una llamada telefónica tradicional, no aceptamos llamadas a través de WhatsApp. Si después de llamar sigues sin contacto, espera unos minutos e inténtalo de nuevo. Nuestro horario de atención es de 10:00 a 21:00.", "links": [{ "label": "Llamar ahora", "url": "tel:+34980533152", "icon": "phone" }, { "label": "Enviar WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }] },
-      { "q": "He intentado llamar pero no contestáis.", "a": "Comprueba que has marcado el número correcto: +34 980 533 152. A veces tenemos muchas llamadas simultáneas y no podemos contestar todas. Te recomendamos que intentes de nuevo en unos 10 minutos. También puedes contactarnos por email a hostalsol{'@'}outlook.com o por WhatsApp al +34 639 980 253. Importante: no aceptamos llamadas por WhatsApp, las llamadas deben ser telefónicas tradicionales.", "links": [{ "label": "Enviar email", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }, { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }, { "label": "Volver a llamar", "url": "tel:+34980533152", "icon": "phone" }] },
-      { "q": "He tenido una emergencia fuera del horario. ¿Qué hago?", "a": "Si ya has entrado al hostal (tienes las llaves y estás dentro) y tienes una emergencia grave como una fuga de agua, un problema eléctrico o cualquier situación que requiera atención inmediata, contacta con nuestro equipo de emergencia a través del número de teléfono que se te proporcionó al momento del check-in. Es necesario que realices la llamada 4 veces de manera seguida para que el personal pueda escucharla. Lamentamos las molestias y recomendamos notificar cualquier problema durante nuestro horario de atención (10:00–21:00). Si el problema es muy urgente y no puedes esperar, busca asistencia en un lugar seguro cercano como una tienda o café y vuelve a intentarlo pasados unos minutos." },
-      { "q": "Quiero reservar pero no veo disponibilidad. ¿Podéis ayudar?", "a": "Si la fecha que buscas está en los próximos 2-3 meses, es probable que esté ocupado. Te recomendamos consultar la web de vez en cuando por si hay cancelaciones. Actualmente no tenemos lista de espera general. Si es un domingo, puedes intentar llamarnos, algunos domingos podemos hacer alguna excepción y recibir a algunas personas a las 21:00 (aunque el horario no es flexible). Para fechas más lejanas, es posible que aún no hayamos abierto la disponibilidad; consulta la web o contáctanos para preguntar. En ocasiones creamos lista de espera para fechas muy demandadas como Semana Santa o los conciertos Zetta.", "links": [{ "label": "Comprobar disponibilidad", "url": "/reserva", "icon": "search" }, { "label": "Contactar por WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }] },
-      { "q": "¿Podéis hacer una reserva por teléfono?", "a": "Actualmente solo aceptamos reservas prepagadas a través de nuestra web. No podemos hacer reservas solo por teléfono sin pago. Te recomendamos reservar directamente desde nuestra web, donde además obtendrás el mejor precio garantizado. Si tienes problemas con el motor de reservas online, llámanos al +34 980 533 152 o al +34 639 980 253 y te guiamos en el proceso.", "links": [{ "label": "Reservar online", "url": "/reserva", "icon": "credit-card" }, { "label": "Llamar para ayuda", "url": "tel:+34980533152", "icon": "phone" }] },
-      { "q": "¿Qué datos necesitáis para hacer una reserva?", "a": "Necesitamos los siguientes datos: nombre completo, número de teléfono, dirección de email, una dirección postal y los datos de pago. A la llegada, todos los huéspedes mayores de 14 años deben presentar un documento de identidad válido (DNI, pasaporte, NIE, TIE o permiso de conducir UE) según lo establecido en el Real Decreto 933/2021. Cada huésped debe presentar su propio documento, no solo el titular de la reserva.", "links": [{ "label": "Ver requisitos de documentación", "url": "/checkin", "icon": "file-text" }, { "label": "Reservar ahora", "url": "/reserva", "icon": "calendar-check" }] },
-      { "q": "¿Y si no recibo el email de confirmación de la reserva?", "a": "Si has hecho la reserva y no recibes el email de confirmación, contacta con nosotros por teléfono, email o WhatsApp para que comprobemos que todo está correcto. Es posible que haya habido un problema técnico y la reserva no se haya guardado correctamente. Te recomendamos contactarnos cuanto antes para evitar problemas de disponibilidad. Revisa también tu carpeta de spam o correo no deseado por si el email hubiera llegado allí.", "links": [{ "label": "Contactar por WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }, { "label": "Enviar email", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }] },
-      { "q": "¿Puedo solicitar una habitación concreta?", "a": "Sí, puedes hacérnoslo saber por mensaje, WhatsApp o teléfono e intentaremos reservártela. Ten en cuenta que no siempre es posible garantizar una habitación específica, pero haremos todo lo posible por asignarte la que prefieras según disponibilidad. Cuanto antes nos avises, más probabilidades tendremos de cumplir tu petición. También puedes indicar preferencias como planta baja/alta, habitación tranquila, etc.", "links": [{ "label": "Ver tipos de habitación", "url": "/galeria", "icon": "building" }] },
-      { "q": "¿Cómo puedo cancelar mi reserva?", "a": "Puedes cancelar de manera gratuita hasta 48 horas antes de la llegada, siempre que tu tarifa lo permita (algunas tarifas no reembolsables no admiten cancelación). Para cancelar, puedes usar el enlace que has recibido en el correo de confirmación de la reserva, o acceder a tu cuenta en nuestra web y gestionar la cancelación desde allí. El reembolso se realizará a través del mismo método de pago utilizado para la reserva, y el tiempo estimado para que se refleje en tu cuenta varía según el método de pago y la entidad financiera, pero generalmente se procesa en un plazo de 5 a 15 días hábiles. Si has utilizado otra web para hacer la reserva (Booking, Expedia, etc.), debes gestionar la cancelación a través de esa plataforma siguiendo sus políticas.", "tags": ["reembolso", "devolver dinero", "modificar reserva", "cambiar reserva", "política cancelación", "cancelar gratis"], "links": [{ "label": "Ir a tu cuenta", "url": "/reserva", "icon": "user" }] },
-      { "q": "¿Cómo solicito una factura?", "a": "Puedes solicitar la factura desde el último día de tu estancia hasta 30 días después del check-out. En el momento de hacer la reserva, asegúrate de indicar todos los campos necesarios para la factura (nombre o razón social, NIF/CIF, dirección fiscal). Si algún campo específico no está disponible en el formulario, utiliza el campo de comentarios para indicarlo. La factura se enviará por correo electrónico en formato PDF. No podemos emitir facturas fuera del plazo de 30 días después del check-out.", "tags": ["recibo", "comprobante", "facturación", "IVA", "CIF", "NIF", "empresa", "autónomo", "freelance"], "links": [{ "label": "Contactar para factura", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }] },
-      { "q": "¿Qué hago si me he olvidado algo en el hostal?", "a": "Si crees que te has dejado algo en el hostal, contáctanos cuanto antes. Guardamos los objetos encontrados durante 30 días desde que se encontraron. Pasados los 30 días, los objetos no reclamados se tiran o se reciclan adecuadamente. Si quieres que te enviemos el objeto a otra dirección, contáctanos y lo prepararemos para que pueda ser recogido. Ten en cuenta que el hostal está en la 3ª planta y alguien deberá subir a buscarlo. Nosotros no gestionamos ni pagamos el envío; debes contratar tú mismo un servicio de mensajería.", "tags": ["olvidado", "olvidar", "dejado", "objeto perdido", "pertenencias", "objetos encontrados", "objetos perdidos", "envío", "mensajería", "courier", "recoger", "recuperar", "móvil olvidado", "cartera", "llaves olvidadas", "ropa olvidada"], "links": [{ "label": "Contactar por WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }, { "label": "Enviar email", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }] },
-      { "q": "Me parece caro. ¿Tenéis algún descuento?", "a": "Nuestros precios suelen ser los más bajos de Zamora centro. Si crees que hay un error en el precio, envíanos un email y lo revisamos. También entendemos que nuestras calidades son ajustadas y haya clientes que busquen algo más de calidad pagando más; si no estás satisfecho, puedes buscar otro alojamiento en Zamora. Para estancias largas (11+ noches) ofrecemos un 10% de descuento automático. Nuestra recomendación es reservar siempre desde nuestra web, donde ofrecemos el precio más barato, mucho más económico que en Booking, Expedia u otros portales.", "links": [{ "label": "Ver mejores precios", "url": "/reserva", "icon": "tag" }] },
-      { "q": "Estoy interesado en reservar pero tengo preguntas adicionales. ¿Cómo contacto?", "a": "Puedes contactarnos por teléfono en el +34 980 533 152, por WhatsApp en el +34 639 980 253, o por email a hostalsol{'@'}outlook.com. Si nos escribes y no hemos respondido en 3 días, contacta de nuevo con nosotros por si el mensaje se hubiera perdido. Nuestro horario de atención telefónica es de 10:00 a 21:00. No aceptamos llamadas por WhatsApp, solo llamadas telefónicas tradicionales.", "links": [{ "label": "Llamar ahora", "url": "tel:+34980533152", "icon": "phone" }, { "label": "Enviar WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }, { "label": "Enviar email", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }] },
-      { "q": "¿Se puede fumar?", "a": "Fumar está estrictamente prohibido en todo el hostal, incluyendo las habitaciones, ventanas, terrazas y zonas comunes. En caso de incumplimiento se aplica una multa de 100€ a 1.000€ destinada a la limpieza y desodorización de la habitación. Tampoco está permitido hacer fuego ni usar velas o incienso en las instalaciones.", "tags": ["cigarrillo", "fumar", "vaper", "vapear", "tabaco", "vela", "incienso", "fuego", "mechero"] },
-      { "q": "¿Puedo guardar mi bicicleta?", "a": "Sí, puedes guardar tu bicicleta en tu propia habitación siempre que esté limpia (sin barro ni suciedad que pueda manchar). Te recomendamos avisarnos con antelación para asignarte una habitación más amplia si es posible. El ascensor es pequeño, por lo que puede ser necesario subirla por las escaleras si la bici es grande.", "tags": ["bicicleta", "ciclismo", "ciclista", "bici eléctrica", "MTB", "mountain bike", "guardar bici"] },
-      { "q": "Estoy interesado en una estancia larga. ¿Tenéis condiciones especiales?", "a": "Sí, a partir de 11 noches ofrecemos un descuento automático del 10% en el precio total. El descuento se aplica sobre tarifas no reembolsables. También podemos estudiar condiciones especiales para grupos o estancias muy prolongadas; contáctanos y lo valoramos. Si el descuento no se aplica automáticamente en la web, escríbenos y te ayudamos.", "links": [{ "label": "Reservar larga estancia", "url": "/reserva", "icon": "calendar-check" }] }
+      {
+        "q": "¿Cuál es el horario del hostal?",
+        "a": "La atención telefónica es de 10:00 a 21:00. El check-in es de 14:00 a 21:00. El hostal cierra a las 21:00 sin excepciones: pasadas las 21:00 no se recibirán reservas no acordadas. Una vez hecho el check-in, recibirás llaves para entrar y salir cuando quieras. La mayoría de domingos cerramos, pero si llegas el sábado puedes quedarte todo el domingo. Los días festivos solemos abrir excepto 14–16 agosto, 15 diciembre y 1 enero.",
+        "links": [
+          {
+            "label": "Guía completa de check-in",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
+      },
+      {
+        "q": "¿A qué hora son el check-in y el check-out?",
+        "a": "El check-in es de 14:00 a 21:00. Si llegas antes de las 14:00 podemos guardar tu equipaje en recepción sin problema. En periodos de baja ocupación a veces podemos ofrecer la habitación antes, pero no está garantizado. El check-out es a las 11:00. Después del check-out también podemos guardarte el equipaje durante el día de salida (excepto domingos), solo tienes que avisarnos. Si llegas después de las 21:00 no podremos recibirte, el horario no es flexible bajo ninguna circunstancia.",
+        "tags": [
+          "llegar",
+          "llegada",
+          "check-in anticipado",
+          "guardar equipaje",
+          "maleta",
+          "check-out tardío",
+          "equipaje"
+        ],
+        "links": [
+          {
+            "label": "Guía completa de check-in",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
+      },
+      {
+        "q": "¿Qué documentación necesito para el check-in?",
+        "a": "Según el Real Decreto 933/2021, todos los huéspedes mayores de 14 años deben presentar un documento de identidad oficial con fotografía en vigor: DNI, pasaporte, NIE, TIE o permiso de conducir de la UE. No se aceptan documentos caducados, dañados, ilegibles ni enviados por email o WhatsApp. Cada huésped debe presentar su propio documento; no vale solo con el del titular de la reserva. Para agilizar el proceso, te recomendamos usar Chekin online antes de llegar: recibirás un enlace para hacer una foto de tu documento y enviar todos los datos. Si haces Chekin online, al llegar solo necesitas mostrar al menos un documento registrado en el sistema. En caso contrario, todos los huéspedes deben presentar el documento físico en recepción.",
+        "tags": [
+          "pasaporte",
+          "carné",
+          "DNI",
+          "documentación",
+          "check-in online",
+          "chekin",
+          "registro previo",
+          "NIE",
+          "TIE"
+        ],
+        "links": [
+          {
+            "label": "Hacer check-in online",
+            "url": "/checkin",
+            "icon": "file-text"
+          },
+          {
+            "label": "Ver tipos de documento",
+            "url": "/checkin",
+            "icon": "id-card"
+          }
+        ]
+      },
+      {
+        "q": "¿El hostal es accesible para movilidad reducida?",
+        "a": "El hostal está en la 3ª planta de un edificio con 2 ascensores. No hay escalones para entrar al portal ni para acceder a las habitaciones. Puedes consultar fotos y vídeos de las habitaciones en nuestra galería para comprobar si el espacio y las dimensiones se adaptan a tus necesidades. Si tienes dudas, contáctanos y valoramos tu caso concreto; podemos recomendarte la habitación más adecuada.",
+        "tags": [
+          "silla de ruedas",
+          "discapacidad",
+          "movilidad reducida",
+          "ascensor",
+          "escaleras",
+          "accesible",
+          "minusválido"
+        ],
+        "links": [
+          {
+            "label": "Ver galería de habitaciones",
+            "url": "/galeria",
+            "icon": "image"
+          }
+        ]
+      },
+      {
+        "q": "¿Dónde puedo aparcar?",
+        "a": "El hostal no dispone de parking privado, pero hay varias opciones muy cerca. El Parking Plaza Constitución (a 3 min., 1,45€/h, 14,70€/día, abierto 24h) es el más cercano. También está el Parking Plaza de la Marina Española (a 5 min., reserva online en Empark). Si prefieres gratis, la Estación de Ferrocarril (a 2 km, bus L3) tiene aparcamiento gratuito 24h. En la misma puerta hay zona ORA (azul, 0,35€/30min, máxima 3h). Aunque es zona peatonal, el Ayuntamiento permite el acceso en coche a huéspedes desde la Calle San Miguel para dejar el equipaje.",
+        "tags": [
+          "garaje",
+          "aparcamiento",
+          "moto",
+          "motocicleta",
+          "vehículo",
+          "aparcar cerca",
+          "coche"
+        ],
+        "links": [
+          {
+            "label": "Guía completa de aparcamiento",
+            "url": "/parking",
+            "icon": "car"
+          },
+          {
+            "label": "Abrir en Google Maps",
+            "url": "https://www.google.com/maps/dir//Calle+Benavente,+2+Zamora",
+            "icon": "map-pin"
+          }
+        ]
+      },
+      {
+        "q": "¿Cómo llego al hostal desde la estación de tren o de autobuses?",
+        "a": "La estación de tren y la de autobuses están juntas en la Avenida de las Tres Cruces, a unos 2 km del hostal. Opciones para llegar: en taxi (5-7 min, aprox. 6-8€), en autobús urbano Línea 3 (El Acercame, 0,95€) bajando en la parada \"Mercado\" (5 min andando del hostal), o andando en unos 25-30 min. La estación de tren dispone de aparcamiento gratuito 24h y consigna de equipaje.",
+        "tags": [
+          "tren",
+          "renfe",
+          "cercanías",
+          "autobús interurbano",
+          "ALSA",
+          "estación",
+          "llegada",
+          "transporte",
+          "cómo llegar"
+        ],
+        "links": [
+          {
+            "label": "Estación de Zamora — Renfe",
+            "url": "https://www.renfe.com/es/es/inspirate/estaciones/estacion-zamora",
+            "icon": "external-link"
+          },
+          {
+            "label": "Estación de tren — Google Maps",
+            "url": "https://www.google.com/maps/dir//Estaci%C3%B3n+de+Ferrocarril+Zamora",
+            "icon": "map-pin"
+          },
+          {
+            "label": "Estación de autobuses — Google Maps",
+            "url": "https://www.google.com/maps/dir//Estaci%C3%B3n+de+Autobuses+de+Zamora",
+            "icon": "map-pin"
+          },
+          {
+            "label": "Autobuses urbanos El Acercame",
+            "url": "https://www.acercame.es",
+            "icon": "bus"
+          }
+        ]
+      },
+      {
+        "q": "¿Cómo pido un taxi en Zamora?",
+        "a": "La principal cooperativa es Radio Taxi Zamora (tel. 980 531 515). También puedes esperar en la parada de taxis junto a la estación de tren o en las principales plazas del centro. El trayecto desde la estación al hostal cuesta aproximadamente 6-8€ y tarda unos 5-7 minutos. Es la opción más cómoda si llegas de noche o con mucho equipaje.",
+        "tags": [
+          "taxi",
+          "radio taxi",
+          "transporte",
+          "coche",
+          "cab",
+          "taxi zamora"
+        ],
+        "links": [
+          {
+            "label": "Radio Taxi Zamora — 980 531 515",
+            "url": "tel:+34980531515",
+            "icon": "phone"
+          },
+          {
+            "label": "Buscar taxis en Google Maps",
+            "url": "https://www.google.com/maps/search/taxi+zamora",
+            "icon": "car"
+          }
+        ]
+      },
+      {
+        "q": "¿Cómo puedo ir a IFEZA desde el hostal?",
+        "a": "IFEZA (Instituto Ferial de Zamora) está a unos 4-5 km del hostal. Puedes llegar en autobús urbano Línea 5 (El Acercame, 0,95€) desde las paradas del centro histórico; consulta el recorrido oficial en la web de El Acercame para ver la parada más cercana. En taxi son unos 10 minutos y cuesta aproximadamente 8-10€. Consejo importante: durante los grandes eventos y conciertos, los propios organizadores suelen habilitar autobuses gratuitos (lanzaderas) desde el centro de Zamora hasta IFEZA, tanto de ida como de vuelta. Consulta siempre la web del evento o la de IFEZA antes de ir para no perderte el servicio gratuito. Algunos eventos populares en IFEZA: Fromago (Feria Internacional del Queso, cada primavera), Conciertos Zeta (conciertos multitudinarios de rock y pop), SIFER (Salón Internacional Ferroviario, años alternos), ferias de empleo, ferias agroalimentarias y muchos más a lo largo del año.",
+        "tags": [
+          "IFEZA",
+          "feria",
+          "concierto",
+          "Zeta",
+          "Fromago",
+          "SIFER",
+          "evento",
+          "recinto ferial",
+          "bus línea 5",
+          "autobús gratuito",
+          "lanzadera",
+          "feria zamora"
+        ],
+        "links": [
+          {
+            "label": "IFEZA — Web oficial",
+            "url": "https://www.ifeza.es/",
+            "icon": "building-2"
+          },
+          {
+            "label": "Línea 5 — El Acercame",
+            "url": "https://www.acercame.es/index.php/linea/linea5",
+            "icon": "bus"
+          },
+          {
+            "label": "IFEZA — Google Maps",
+            "url": "https://www.google.com/maps/dir//IFEZA+Zamora",
+            "icon": "map-pin"
+          }
+        ]
+      },
+      {
+        "q": "¿Hay desayuno en el hostal?",
+        "a": "No ofrecemos desayunos, pero hay varias cafeterías y panaderías muy cerca del hostal. Nuestra recomendación es el Bar Restaurante Padornelo, a menos de 2 minutos andando desde la puerta del hostal. Abre de lunes a viernes a las 10:00 y sirve desayunos de calidad a buen precio. También hay otras opciones en la zona si prefieres variedad.",
+        "tags": [
+          "comida",
+          "desayunar",
+          "comer",
+          "café",
+          "cafetería",
+          "bar",
+          "panadería",
+          "desayuno cerca"
+        ],
+        "links": [
+          {
+            "label": "Restaurante Padornelo",
+            "url": "/#restaurant",
+            "icon": "utensils-crossed"
+          },
+          {
+            "label": "Ver en Google Maps",
+            "url": "https://www.google.com/maps/dir//Calle+Benavente,+2+Zamora",
+            "icon": "map-pin"
+          }
+        ]
+      },
+      {
+        "q": "¿Se admiten mascotas?",
+        "a": "Sí, somos pet friendly. Las mascotas son bienvenidas con un suplemento de 7€/noche por cada animal. Puedes pagar el suplemento directamente en nuestra web como un servicio extra durante el proceso de reserva. Es importante saber que los animales deben estar siempre acompañados por un humano: no pueden quedarse solos en la habitación, ni en el hostal, ni en el coche, ni en ningún otro lugar. Si no se respeta esta norma, no se podrá alojar al animal y se ofrecerá cancelar la reserva con penalización.",
+        "tags": [
+          "perro",
+          "gato",
+          "animal",
+          "cachorro",
+          "conejo",
+          "animales permitidos",
+          "pet friendly"
+        ],
+        "links": [
+          {
+            "label": "Reservar con descuento",
+            "url": "/reserva",
+            "icon": "paw-print"
+          }
+        ]
+      },
+      {
+        "q": "¿Puedo dejar a mi mascota sola en la habitación?",
+        "a": "No, no es un hotel de mascotas. Los animales deben estar siempre acompañados por un humano en todo momento. No pueden quedarse solos en la habitación, ni en el hostal, ni en el coche, ni en ningún otro lugar. Si no se respeta esta norma, no se podrá alojar al animal en el hostal y se le ofrecerá al huésped la opción de cancelar la reserva con penalización por no respetar las normas del alojamiento."
+      },
+      {
+        "q": "¿Hay WiFi en las habitaciones?",
+        "a": "Sí, hay WiFi gratuito en todo el hostal, incluyendo todas las habitaciones. La contraseña se proporciona al momento del check-in y también está disponible en recepción. La velocidad supera los 50mbps en la mayoría de habitaciones, más que suficiente para navegar, revisar correos, ver vídeos en streaming y realizar videollamadas. Hemos probado la conexión con varias personas trabajando simultáneamente y no hemos tenido problemas de velocidad o estabilidad. Si necesitas teletrabajar, es una gran opción. La calidad puede variar según la ubicación dentro del hostal y la cantidad de dispositivos conectados, pero en general el rendimiento es excelente.",
+        "tags": [
+          "internet",
+          "contraseña wifi",
+          "contraseña",
+          "conexión",
+          "red",
+          "velocidad",
+          "fibra",
+          "teletrabajo",
+          "trabajar remoto"
+        ]
+      },
+      {
+        "q": "¿Las habitaciones tienen aire acondicionado?",
+        "a": "Sí, todas las habitaciones tienen aire acondicionado y también calefacción. Es un sistema moderno y eficiente diseñado para proporcionar un ambiente confortable durante todo el año, independientemente de las condiciones climáticas externas. Puedes ajustar la temperatura según tus preferencias. Si tienes alguna duda sobre cómo usarlo, el personal de recepción te ayudará encantado.",
+        "tags": [
+          "aire acondicionado",
+          "calefacción",
+          "temperatura",
+          "calor",
+          "frío",
+          "termostato",
+          "ventilador",
+          "climatización"
+        ]
+      },
+      {
+        "q": "¿Qué tipo de TV tienen las habitaciones?",
+        "a": "Las habitaciones con balcón tienen una televisión de pantalla plana de 32 pulgadas, y algunas son Smart TV por si prefieres iniciar sesión en tus plataformas. Las habitaciones sin balcón tienen una TV de 18 pulgadas (no Smart TV), pero puedes conectar dispositivos externos a través del puerto HDMI para ver contenido desde un portátil o móvil.",
+        "tags": [
+          "televisión",
+          "Netflix",
+          "streaming",
+          "HBO",
+          "Prime",
+          "HDMI",
+          "canales",
+          "smart tv"
+        ]
+      },
+      {
+        "q": "¿Qué medidas de seguridad tiene el hostal?",
+        "a": "El hostal se encuentra en una 3ª planta, por lo que son necesarias 2 llaves para acceder al pasillo de las habitaciones (una para el edificio y otra para la puerta del hostal). Dentro de los pasillos hay cámaras de seguridad. Cada habitación tiene su propia cerradura, y recomendamos a los huéspedes que comprueben siempre que su puerta está cerrada tanto al entrar como al salir.",
+        "tags": [
+          "caja fuerte",
+          "objetos de valor",
+          "cerradura",
+          "taquilla",
+          "robo",
+          "cámara",
+          "seguridad",
+          "CCTV"
+        ]
+      },
+      {
+        "q": "¿Las habitaciones tienen nevera, cafetera o microondas?",
+        "a": "No, las habitaciones no disponen de frigorífico, cafetera ni microondas. Sin embargo, hay varios supermercados muy cerca del hostal donde puedes comprar lo que necesites. La recepción también puede ayudarte con recomendaciones si necesitas algo concreto.",
+        "tags": [
+          "nevera",
+          "frigorífico",
+          "cocina",
+          "microondas",
+          "cocinar",
+          "cafetera",
+          "hervidor",
+          "minibar"
+        ]
+      },
+      {
+        "q": "¿Hay servicio de lavandería?",
+        "a": "El hostal no dispone de servicio de lavandería propio, pero hay varias lavanderías autoservicio en las cercanías. La más cercana se encuentra en la Calle San Torcuato, a menos de 5 minutos a pie, con máquinas de lavado y secado de alta capacidad y detergentes disponibles para compra. La limpieza de toallas, sábanas y demás ropa de cama está incluida en el precio de la habitación y se realiza de manera regular. Si necesitas un cambio adicional de ropa de cama o toallas durante tu estancia, solo tienes que solicitarlo en recepción.",
+        "tags": [
+          "lavar",
+          "ropa",
+          "lavadora",
+          "secadora",
+          "lavandería",
+          "lavadero",
+          "limpiar ropa"
+        ]
+      },
+      {
+        "q": "¿Hay servicio de limpieza diario?",
+        "a": "Sí, ofrecemos servicio de limpieza diario para mantener tu habitación limpia y confortable. Los domingos no hay servicio de limpieza. Si te alojas el sábado, puedes disfrutar de la habitación durante todo el domingo sin problema, ya que el check-out es a las 11:00 del lunes. Si necesitas cualquier cosa adicional durante tu estancia, no dudes en pedírnoslo."
+      },
+      {
+        "q": "¿Tenéis secador o plancha de pelo?",
+        "a": "Sí, tenemos secadores y planchas de pelo disponibles bajo petición en recepción, sin coste adicional. Puedes pedirlos en cualquier momento que estemos en recepción. Cuando termines, simplemente déjalos en la habitación y los recogeremos nosotros al hacer la limpieza. Es un servicio gratuito para todos los huéspedes.",
+        "tags": [
+          "pelo",
+          "secar pelo",
+          "planchar ropa",
+          "plancha",
+          "rizador",
+          "secador"
+        ]
+      },
+      {
+        "q": "¿Qué incluye la habitación?",
+        "a": "Todas las habitaciones incluyen: ropa de cama completa (sábanas, mantas, almohadas, edredones), toallas (1 o 2 por huésped según tipo de habitación y duración), mobiliario básico (cama, mesitas de noche, armario o perchero con perchas, escritorio o mesa de trabajo, silla), y baño privado completo con vaso, jabón de manos, gel de ducha y papel higiénico. Además, bajo petición gratuita, puedes solicitar secador de pelo y plancha. No hay frigorífico, cafetera ni microondas en las habitaciones.",
+        "links": [
+          {
+            "label": "Ver galería de habitaciones",
+            "url": "/galeria",
+            "icon": "image"
+          }
+        ]
+      },
+      {
+        "q": "¿Hay agua caliente?",
+        "a": "Sí, hay agua caliente durante todo el día. En algunas habitaciones el agua caliente puede tardar un poco en llegar, pero no debería tardar más de 5 minutos en tener agua caliente disponible. Si tienes algún problema con el agua caliente durante tu estancia, no dudes en contactarnos y lo resolveremos lo antes posible."
+      },
+      {
+        "q": "¿Qué precios tenéis?",
+        "a": "Somos un hostal económico con los precios más bajos de Zamora centro. Las tarifas varían según la temporada y el tipo de habitación (individual, doble, con balcón). Los fines de semana y días festivos los precios pueden ser ligeramente más altos debido a la mayor demanda. Ofrecemos descuentos especiales para estancias prolongadas (a partir de 11 noches, 10% de descuento automático) y para grupos. Nuestra recomendación es usar siempre nuestra web, donde ofrecemos un precio mucho más barato que en Booking, Expedia u otros portales. Puedes ver los precios actualizados para tus fechas concretas en nuestra página de reservas.",
+        "links": [
+          {
+            "label": "Ver precios y reservar",
+            "url": "/reserva",
+            "icon": "tag"
+          },
+          {
+            "label": "Contactar por WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
+        ]
+      },
+      {
+        "q": "Hay descuento por larga estancia?",
+        "a": "Sí, a partir de 11 noches hay un descuento automático del 10% en el precio total de la estancia. El descuento se aplica a tarifas no reembolsables. Si no funciona correctamente en la web al hacer la reserva, contacta con nosotros y te lo aplicaremos manualmente. También ofrecemos descuentos para grupos; si viajas con amigos o familiares, consúltanos.",
+        "links": [
+          {
+            "label": "Reservar con descuento",
+            "url": "/reserva",
+            "icon": "calendar-check"
+          }
+        ]
+      },
+      {
+        "q": "¿Puedo pagar con tarjeta?",
+        "a": "Sí, aceptamos las principales tarjetas de crédito y débito: Visa, MasterCard, American Express, entre otras. También aceptamos pago en efectivo y transferencia bancaria si se avisa con más de una semana de antelación. No aceptamos cheques.",
+        "tags": [
+          "efectivo",
+          "visa",
+          "mastercard",
+          "tarjeta crédito",
+          "tarjeta débito",
+          "método de pago",
+          "transferencia",
+          "Bizum",
+          "pago"
+        ]
+      },
+      {
+        "q": "¿Hay camas adicionales?",
+        "a": "Sí, están disponibles bajo petición por 25€/noche. Puedes añadir una cama adicional durante la reserva en nuestra web seleccionando 3 adultos en el proceso, o contactando con nosotros para añadirla a una reserva ya existente. Disponemos de un total de 3 camas plegables, por lo que la disponibilidad es limitada y se asignan por orden de solicitud. Solo se puede añadir 1 cama plegable por habitación. Si viajas en grupo grande, te recomendamos reservar varias habitaciones.",
+        "tags": [
+          "cuna",
+          "cama plegable",
+          "tercera persona",
+          "persona extra",
+          "bebé",
+          "sofá cama",
+          "colchoneta"
+        ],
+        "links": [
+          {
+            "label": "Reservar con cama extra",
+            "url": "/reserva",
+            "icon": "bed-double"
+          }
+        ]
+      },
+      {
+        "q": "¿Abren los domingos y festivos?",
+        "a": "Abrimos la mayoría de los días festivos, con las siguientes excepciones: 14, 15 y 16 de agosto, 15 de diciembre y 1 de enero. La mayoría de domingos cerramos, pero si llegas el sábado puedes quedarte durante todo el domingo y días sucesivos sin problema, ya que el check-out es a las 11:00 de la mañana del día de salida. Si tienes dudas sobre una fecha concreta, contáctanos.",
+        "links": [
+          {
+            "label": "Guía de check-in",
+            "url": "/checkin",
+            "icon": "calendar"
+          }
+        ]
+      },
+      {
+        "q": "¿Puedo acceder después de las 21:00?",
+        "a": "El horario de check-in es de 14:00 a 21:00, y el hostal cierra a las 21:00 sin excepciones. No es posible hacer el check-in después de las 21:00 bajo ninguna circunstancia. Sin embargo, una vez que hayas llegado y hecho el check-in dentro del horario, recibirás un juego de llaves (edificio, hostal y habitación) para poder entrar y salir cuando quieras, las 24 horas del día.",
+        "tags": [
+          "llegada tarde",
+          "llegar tarde",
+          "acceso nocturno",
+          "check-in nocturno",
+          "llaves 24h"
+        ]
+      },
+      {
+        "q": "¿El hostal es silencioso?",
+        "a": "El hostal tiene ventanas y persianas nuevas instaladas en 2026 que mejoran significativamente el aislamiento acústico con el exterior. Sin embargo, el nivel de aislamiento entre habitaciones es sencillo, por lo que algunas habitaciones pueden ser más ruidosas que otras dependiendo de la ubicación. Si tienes preferencia por una habitación tranquila, indícanoslo al hacer la reserva o durante el check-in, y haremos todo lo posible por asignarte la más adecuada. Si durante tu estancia el ruido es un problema, podemos cambiarte de habitación si hay disponibilidad o proporcionarte tapones para los oídos.",
+        "tags": [
+          "ruido",
+          "ruidoso",
+          "tapones",
+          "dormir",
+          "aislamiento",
+          "acústico",
+          "vecinos"
+        ],
+        "links": [
+          {
+            "label": "Ver habitaciones disponibles",
+            "url": "/galeria",
+            "icon": "building"
+          }
+        ]
+      },
+      {
+        "q": "He llegado a recepción y no hay nadie. ¿Qué hago?",
+        "a": "Lo primero, llama por teléfono al número del hostal: +34 980 533 152. A veces tenemos compromisos fuera de recepción o estamos atendiendo otras llamadas u otros huéspedes en ese momento. Es importante que hagas una llamada telefónica tradicional, no aceptamos llamadas a través de WhatsApp. Si después de llamar sigues sin contacto, espera unos minutos e inténtalo de nuevo. Nuestro horario de atención es de 10:00 a 21:00.",
+        "links": [
+          {
+            "label": "Llamar ahora",
+            "url": "tel:+34980533152",
+            "icon": "phone"
+          },
+          {
+            "label": "Enviar WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
+        ]
+      },
+      {
+        "q": "He intentado llamar pero no contestáis.",
+        "a": "Comprueba que has marcado el número correcto: +34 980 533 152. A veces tenemos muchas llamadas simultáneas y no podemos contestar todas. Te recomendamos que intentes de nuevo en unos 10 minutos. También puedes contactarnos por email a hostalsol{'@'}outlook.com o por WhatsApp al +34 639 980 253. Importante: no aceptamos llamadas por WhatsApp, las llamadas deben ser telefónicas tradicionales.",
+        "links": [
+          {
+            "label": "Enviar email",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          },
+          {
+            "label": "WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "Volver a llamar",
+            "url": "tel:+34980533152",
+            "icon": "phone"
+          }
+        ]
+      },
+      {
+        "q": "He tenido una emergencia fuera del horario. ¿Qué hago?",
+        "a": "Si ya has entrado al hostal (tienes las llaves y estás dentro) y tienes una emergencia grave como una fuga de agua, un problema eléctrico o cualquier situación que requiera atención inmediata, contacta con nuestro equipo de emergencia a través del número de teléfono que se te proporcionó al momento del check-in. Es necesario que realices la llamada 4 veces de manera seguida para que el personal pueda escucharla. Lamentamos las molestias y recomendamos notificar cualquier problema durante nuestro horario de atención (10:00–21:00). Si el problema es muy urgente y no puedes esperar, busca asistencia en un lugar seguro cercano como una tienda o café y vuelve a intentarlo pasados unos minutos."
+      },
+      {
+        "q": "Quiero reservar pero no veo disponibilidad. ¿Podéis ayudar?",
+        "a": "Si la fecha que buscas está en los próximos 2-3 meses, es probable que esté ocupado. Te recomendamos consultar la web de vez en cuando por si hay cancelaciones. Actualmente no tenemos lista de espera general. Si es un domingo, puedes intentar llamarnos, algunos domingos podemos hacer alguna excepción y recibir a algunas personas a las 21:00 (aunque el horario no es flexible). Para fechas más lejanas, es posible que aún no hayamos abierto la disponibilidad; consulta la web o contáctanos para preguntar. En ocasiones creamos lista de espera para fechas muy demandadas como Semana Santa o los conciertos Zetta.",
+        "links": [
+          {
+            "label": "Comprobar disponibilidad",
+            "url": "/reserva",
+            "icon": "search"
+          },
+          {
+            "label": "Contactar por WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
+        ]
+      },
+      {
+        "q": "¿Podéis hacer una reserva por teléfono?",
+        "a": "Actualmente solo aceptamos reservas prepagadas a través de nuestra web. No podemos hacer reservas solo por teléfono sin pago. Te recomendamos reservar directamente desde nuestra web, donde además obtendrás el mejor precio garantizado. Si tienes problemas con el motor de reservas online, llámanos al +34 980 533 152 o al +34 639 980 253 y te guiamos en el proceso.",
+        "links": [
+          {
+            "label": "Reservar online",
+            "url": "/reserva",
+            "icon": "credit-card"
+          },
+          {
+            "label": "Llamar para ayuda",
+            "url": "tel:+34980533152",
+            "icon": "phone"
+          }
+        ]
+      },
+      {
+        "q": "¿Qué datos necesitáis para hacer una reserva?",
+        "a": "Necesitamos los siguientes datos: nombre completo, número de teléfono, dirección de email, una dirección postal y los datos de pago. A la llegada, todos los huéspedes mayores de 14 años deben presentar un documento de identidad válido (DNI, pasaporte, NIE, TIE o permiso de conducir UE) según lo establecido en el Real Decreto 933/2021. Cada huésped debe presentar su propio documento, no solo el titular de la reserva.",
+        "links": [
+          {
+            "label": "Ver requisitos de documentación",
+            "url": "/checkin",
+            "icon": "file-text"
+          },
+          {
+            "label": "Reservar ahora",
+            "url": "/reserva",
+            "icon": "calendar-check"
+          }
+        ]
+      },
+      {
+        "q": "¿Y si no recibo el email de confirmación de la reserva?",
+        "a": "Si has hecho la reserva y no recibes el email de confirmación, contacta con nosotros por teléfono, email o WhatsApp para que comprobemos que todo está correcto. Es posible que haya habido un problema técnico y la reserva no se haya guardado correctamente. Te recomendamos contactarnos cuanto antes para evitar problemas de disponibilidad. Revisa también tu carpeta de spam o correo no deseado por si el email hubiera llegado allí.",
+        "links": [
+          {
+            "label": "Contactar por WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "Enviar email",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
+        ]
+      },
+      {
+        "q": "¿Puedo solicitar una habitación concreta?",
+        "a": "Sí, puedes hacérnoslo saber por mensaje, WhatsApp o teléfono e intentaremos reservártela. Ten en cuenta que no siempre es posible garantizar una habitación específica, pero haremos todo lo posible por asignarte la que prefieras según disponibilidad. Cuanto antes nos avises, más probabilidades tendremos de cumplir tu petición. También puedes indicar preferencias como planta baja/alta, habitación tranquila, etc.",
+        "links": [
+          {
+            "label": "Ver tipos de habitación",
+            "url": "/galeria",
+            "icon": "building"
+          }
+        ]
+      },
+      {
+        "q": "¿Cómo puedo cancelar mi reserva?",
+        "a": "Puedes cancelar de manera gratuita hasta 48 horas antes de la llegada, siempre que tu tarifa lo permita (algunas tarifas no reembolsables no admiten cancelación). Para cancelar, puedes usar el enlace que has recibido en el correo de confirmación de la reserva, o acceder a tu cuenta en nuestra web y gestionar la cancelación desde allí. El reembolso se realizará a través del mismo método de pago utilizado para la reserva, y el tiempo estimado para que se refleje en tu cuenta varía según el método de pago y la entidad financiera, pero generalmente se procesa en un plazo de 5 a 15 días hábiles. Si has utilizado otra web para hacer la reserva (Booking, Expedia, etc.), debes gestionar la cancelación a través de esa plataforma siguiendo sus políticas.",
+        "tags": [
+          "reembolso",
+          "devolver dinero",
+          "modificar reserva",
+          "cambiar reserva",
+          "política cancelación",
+          "cancelar gratis"
+        ],
+        "links": [
+          {
+            "label": "Ir a tu cuenta",
+            "url": "/reserva",
+            "icon": "user"
+          }
+        ]
+      },
+      {
+        "q": "¿Cómo solicito una factura?",
+        "a": "Puedes solicitar la factura desde el último día de tu estancia hasta 30 días después del check-out. En el momento de hacer la reserva, asegúrate de indicar todos los campos necesarios para la factura (nombre o razón social, NIF/CIF, dirección fiscal). Si algún campo específico no está disponible en el formulario, utiliza el campo de comentarios para indicarlo. La factura se enviará por correo electrónico en formato PDF. No podemos emitir facturas fuera del plazo de 30 días después del check-out.",
+        "tags": [
+          "recibo",
+          "comprobante",
+          "facturación",
+          "IVA",
+          "CIF",
+          "NIF",
+          "empresa",
+          "autónomo",
+          "freelance"
+        ],
+        "links": [
+          {
+            "label": "Contactar para factura",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
+        ]
+      },
+      {
+        "q": "¿Qué hago si me he olvidado algo en el hostal?",
+        "a": "Si crees que te has dejado algo en el hostal, contáctanos cuanto antes. Guardamos los objetos encontrados durante 30 días desde que se encontraron. Pasados los 30 días, los objetos no reclamados se tiran o se reciclan adecuadamente. Si quieres que te enviemos el objeto a otra dirección, contáctanos y lo prepararemos para que pueda ser recogido. Ten en cuenta que el hostal está en la 3ª planta y alguien deberá subir a buscarlo. Nosotros no gestionamos ni pagamos el envío; debes contratar tú mismo un servicio de mensajería.",
+        "tags": [
+          "olvidado",
+          "olvidar",
+          "dejado",
+          "objeto perdido",
+          "pertenencias",
+          "objetos encontrados",
+          "objetos perdidos",
+          "envío",
+          "mensajería",
+          "courier",
+          "recoger",
+          "recuperar",
+          "móvil olvidado",
+          "cartera",
+          "llaves olvidadas",
+          "ropa olvidada"
+        ],
+        "links": [
+          {
+            "label": "Contactar por WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "Enviar email",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
+        ]
+      },
+      {
+        "q": "Me parece caro. ¿Tenéis algún descuento?",
+        "a": "Nuestros precios suelen ser los más bajos de Zamora centro. Si crees que hay un error en el precio, envíanos un email y lo revisamos. También entendemos que nuestras calidades son ajustadas y haya clientes que busquen algo más de calidad pagando más; si no estás satisfecho, puedes buscar otro alojamiento en Zamora. Para estancias largas (11+ noches) ofrecemos un 10% de descuento automático. Nuestra recomendación es reservar siempre desde nuestra web, donde ofrecemos el precio más barato, mucho más económico que en Booking, Expedia u otros portales.",
+        "links": [
+          {
+            "label": "Ver mejores precios",
+            "url": "/reserva",
+            "icon": "tag"
+          }
+        ]
+      },
+      {
+        "q": "Estoy interesado en reservar pero tengo preguntas adicionales. ¿Cómo contacto?",
+        "a": "Puedes contactarnos por teléfono en el +34 980 533 152, por WhatsApp en el +34 639 980 253, o por email a hostalsol{'@'}outlook.com. Si nos escribes y no hemos respondido en 3 días, contacta de nuevo con nosotros por si el mensaje se hubiera perdido. Nuestro horario de atención telefónica es de 10:00 a 21:00. No aceptamos llamadas por WhatsApp, solo llamadas telefónicas tradicionales.",
+        "links": [
+          {
+            "label": "Llamar ahora",
+            "url": "tel:+34980533152",
+            "icon": "phone"
+          },
+          {
+            "label": "Enviar WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "Enviar email",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
+        ]
+      },
+      {
+        "q": "¿Se puede fumar?",
+        "a": "Fumar está estrictamente prohibido en todo el hostal, incluyendo las habitaciones, ventanas, terrazas y zonas comunes. En caso de incumplimiento se aplica una multa de 100€ a 1.000€ destinada a la limpieza y desodorización de la habitación. Tampoco está permitido hacer fuego ni usar velas o incienso en las instalaciones.",
+        "tags": [
+          "cigarrillo",
+          "fumar",
+          "vaper",
+          "vapear",
+          "tabaco",
+          "vela",
+          "incienso",
+          "fuego",
+          "mechero"
+        ]
+      },
+      {
+        "q": "¿Puedo guardar mi bicicleta?",
+        "a": "Sí, puedes guardar tu bicicleta en tu propia habitación siempre que esté limpia (sin barro ni suciedad que pueda manchar). Te recomendamos avisarnos con antelación para asignarte una habitación más amplia si es posible. El ascensor es pequeño, por lo que puede ser necesario subirla por las escaleras si la bici es grande.",
+        "tags": [
+          "bicicleta",
+          "ciclismo",
+          "ciclista",
+          "bici eléctrica",
+          "MTB",
+          "mountain bike",
+          "guardar bici"
+        ]
+      },
+      {
+        "q": "Estoy interesado en una estancia larga. ¿Tenéis condiciones especiales?",
+        "a": "Sí, a partir de 11 noches ofrecemos un descuento automático del 10% en el precio total. El descuento se aplica sobre tarifas no reembolsables. También podemos estudiar condiciones especiales para grupos o estancias muy prolongadas; contáctanos y lo valoramos. Si el descuento no se aplica automáticamente en la web, escríbenos y te ayudamos.",
+        "links": [
+          {
+            "label": "Reservar larga estancia",
+            "url": "/reserva",
+            "icon": "calendar-check"
+          }
+        ]
+      },
+      {
+        "q": "¿Qué idiomas habláis en el hostal?",
+        "a": "El personal del hostal habla exclusivamente español. Si necesitas comunicarte en otro idioma, escríbenos por WhatsApp o email y nos apoyamos en traductores online para entendernos. Al llegar, conéctate al WiFi gratuito del hostal y usa desde tu móvil cualquier traductor online como Google Translate, DeepL o Bing Translator.",
+        "tags": ["idioma", "inglés", "francés", "alemán", "chino", "árabe", "ruso", "italiano", "portugués", "language", "english", "speak", "hablar", "comunicación"],
+        "links": [
+          { "label": "Google Translate", "url": "https://translate.google.com/", "icon": "languages" },
+          { "label": "DeepL Traductor", "url": "https://www.deepl.com/translator", "icon": "languages" },
+          { "label": "Bing Translator", "url": "https://www.bing.com/translator", "icon": "languages" },
+          { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" },
+          { "label": "Email", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }
+        ]
+      },
+      {
+        "q": "¿Puedo hacer una reserva a nombre de otra persona?",
+        "a": "No lo recomendamos. Lo más seguro es que cada huésped reserve bajo su propio nombre, para que todos los datos (nombre completo y teléfono) queden correctamente registrados. Si reservas para otra persona, deja un comentario en la reserva con su nombre completo y teléfono, y asegúrate de que esa persona complete el proceso de check-in online con sus propios datos. El código de reserva solo no es suficiente: necesitamos verificar que la persona que llega tiene derecho a utilizarla. Las capturas de pantalla no se aceptan como prueba de reserva, ya que no podemos comprobar su autenticidad. Si tenemos dudas, llamaremos al titular de la reserva para confirmar. Nos tomamos muy en serio la seguridad de todos nuestros huéspedes y sus pertenencias.",
+        "tags": ["reserva para otro", "terceros", "nombre titular", "seguridad", "verificación", "captura de pantalla", "screenshot", "reservar para alguien", "DNI verificación"],
+        "links": [
+          { "label": "Guía de check-in", "url": "/checkin", "icon": "file-text" },
+          { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }
+        ]
+      }
     ]
   },
   "reserve": {
@@ -261,10 +1123,29 @@
     "family": "Familia hotelera desde 1975",
     "reserveCta": "Reservar con −15% →"
   },
+  "search": {
+    "noResults": "Sin resultados para",
+    "searchInFaq": "Buscar en todas las preguntas",
+    "catPage": "Página",
+    "catRoom": "Habitación",
+    "catFaq": "Dudas",
+    "catParking": "Parking",
+    "catContact": "Contacto",
+    "catCheckin": "Llegada",
+    "catAbout": "Hostal",
+    "catBooking": "Reservas",
+    "room": "Habitación",
+    "roomDesc": "Baño privado · 3ª planta",
+    "entrance": "Entrada / Recepción"
+  },
   "pages": {
+    "home": {
+      "title": "Hostal Sol Zamora — Tu hogar en Zamora",
+      "description": "Hostal sencillo y céntrico en Zamora, tu hogar cuando lo necesitas."
+    },
     "faq": {
       "title": "Preguntas Frecuentes — Hostal Sol Zamora",
-      "description": "Resuelve todas tus dudas antes de llegar al Hostal Sol Zamora.",
+      "description": "Todo lo que necesitas saber antes de llegar: horarios, check-in y normas.",
       "heading": "Todo lo que necesitas saber antes de llegar",
       "lead": "Hemos reunido las preguntas más habituales de nuestros huéspedes. Si no encuentras lo que buscas, contáctanos:",
       "searchPlaceholder": "Buscar pregunta...",
@@ -273,7 +1154,7 @@
     },
     "parking": {
       "title": "Guía de Aparcamiento — Hostal Sol Zamora",
-      "description": "Todas las opciones de aparcamiento cerca del Hostal Sol Zamora, Calle Benavente 2, Zamora.",
+      "description": "El hostal no tiene aparcamiento, pero aquí te explicamos cómo llegar y dónde aparcar.",
       "heading": "Cómo aparcar cerca del Hostal Sol Zamora",
       "lead": "El hostal no dispone de parking propio, pero estamos en el centro histórico con varias opciones muy cercanas.",
       "addressCard": {
@@ -354,7 +1235,7 @@
     },
     "reserva": {
       "title": "Reservar — Hostal Sol Zamora",
-      "description": "Reserva tu estancia en el Hostal Sol Zamora con un 15% de descuento directo.",
+      "description": "Reserva directamente con un 15% de descuento sobre cualquier canal externo.",
       "heading": "Reserva tu estancia",
       "discountLabel": "15% de descuento al reservar en nuestra web",
       "discountSub": "Precio directo — siempre más barato que Booking, Expedia u otros portales",
@@ -371,7 +1252,7 @@
     },
     "checkin": {
       "title": "Cómo Llegar y Check-in — Hostal Sol Zamora",
-      "description": "Guía completa para llegar al Hostal Sol Zamora y documentación necesaria para el check-in.",
+      "description": "Guía de llegada paso a paso: ubicación, documentación necesaria y proceso de check-in.",
       "heading": "Cómo llegar y hacer el check-in",
       "lead": "Guía paso a paso para llegar al hostal y preparar la documentación requerida por ley.",
       "beforeTitle": "Antes de llegar",
@@ -420,19 +1301,41 @@
       "docTypes": [
         {
           "name": "DNI / IDESP",
-          "fields": ["Número de documento", "Número de soporte", "Fecha de caducidad", "Fecha de nacimiento", "Sexo", "Nombre y apellidos", "Nacionalidad"]
+          "fields": [
+            "Número de documento",
+            "Número de soporte",
+            "Fecha de caducidad",
+            "Fecha de nacimiento",
+            "Sexo",
+            "Nombre y apellidos",
+            "Nacionalidad"
+          ]
         },
         {
           "name": "Pasaporte",
-          "fields": ["Número de pasaporte", "Línea MRZ completa", "Fecha de expedición", "Fecha de caducidad", "Nacionalidad", "Nombre y apellidos"]
+          "fields": [
+            "Número de pasaporte",
+            "Línea MRZ completa",
+            "Fecha de expedición",
+            "Fecha de caducidad",
+            "Nacionalidad",
+            "Nombre y apellidos"
+          ]
         },
         {
           "name": "NIE / TIE",
-          "fields": ["Número NIE/TIE", "Número de soporte", "Fecha de caducidad"]
+          "fields": [
+            "Número NIE/TIE",
+            "Número de soporte",
+            "Fecha de caducidad"
+          ]
         },
         {
           "name": "Permiso de conducir (UE)",
-          "fields": ["Número de permiso", "Apellidos y nombre"]
+          "fields": [
+            "Número de permiso",
+            "Apellidos y nombre"
+          ]
         }
       ],
       "backHome": "← Volver al inicio",
@@ -459,10 +1362,99 @@
       "tag": "Galería",
       "title": "Galería de Habitaciones — Hostal Sol Zamora",
       "heading": "Galería de habitaciones",
+      "description": "Fotos y vídeos reales de las habitaciones, sin retoques ni puesta en escena.",
       "p1": "En Hostal Sol Zamora creemos que la honestidad es la mejor presentación. Aquí encontrarás fotos y vídeos reales de nuestras habitaciones — sin retoques ni escenificaciones — para que puedas reservar con total confianza.",
       "p2": "Explora cada tipo de habitación: tipo de cama, distribución, mobiliario, vistas y servicios incluidos. Los vídeos te permiten recorrer el espacio como si ya estuvieras aquí.",
       "p3": "¿Tienes alguna pregunta sobre una habitación concreta? Escríbenos o llámanos — con mucho gusto te ayudamos a elegir la mejor opción para tu estancia.",
       "p4": "Fotos tomadas en 2024 · Vídeos grabados en 2026. Hemos realizado mejoras desde entonces, pero el estilo y la distribución son los mismos."
+    },
+    "sobreNosotros": {
+      "tag": "Sobre nosotros",
+      "title": "Sobre Nosotros · Cercanía, tranquilidad y familiaridad — Hostal Sol Zamora",
+      "description": "Más de 50 años en hostelería zamorana, desde la Pensión Padornelo al Hostal Sol.",
+      "heading": "Un alojamiento lleno de ganas e ilusión que te ofrece el mejor trato",
+      "intro1": "Bienvenidos a nuestra casa, una casa diferente, actual y con un aire fresco que quiere acogerte para darte ese descanso en un ambiente de cercanía y tranquilidad. Por sus puertas han entrado diferentes dueños, viajeros de varias partes del mundo y personas con caminos distintos que han coincidido bajo nuestro techo.",
+      "intro2": "Desde 2023 el Hostal Sol es gestionado por una familia con más de 50 años de experiencia en el sector del hospedaje. Hemos pasado por momentos de cambio, de inexperiencia y de miedo. Tras mucho esfuerzo y trabajo —y con una pandemia que nos frenó en seco— hemos sacado el hostal adelante, dándole a nuestra casa todo lo que merecía y aprendiendo de cada persona que ha pasado por aquí.",
+      "intro3": "En el tiempo sin clientela nos pusimos manos a la obra para darle un lavado de cara: pintamos y arreglamos las habitaciones y las llevamos a un estilo nórdico, moderno y minimalista, donde el descanso, la cercanía y la comodidad son los pilares principales.",
+      "philosophyTag": "Filosofía de la marca",
+      "philosophyTitle": "Cercanía, tranquilidad y familiaridad",
+      "philosophyBody": "Nuestra filosofía tiene tres pilares fundamentales: cercanía, tranquilidad y familiaridad. Trasladamos esta filosofía a cada detalle desde que entras al hostal hasta que reanudas tu viaje. Nuestro trato es cercano, respetuoso con tu espacio y tus gustos, y siempre prioriza tu descanso. Cada viajero está creando su propio camino y queremos ayudarte a encontrar en nuestra casa un rincón de paz en el centro de una ciudad tan preciosa como Zamora.",
+      "homeTag": "Un lugar para sentirte como en casa",
+      "homeTitle": "Confortable, asequible y sin complicaciones",
+      "homeBody1": "Nuestro hostal es el lugar perfecto para los viajeros que buscan una estancia cómoda y sin complicaciones. Habitaciones sencillas y acogedoras con todo lo que necesitas: ropa de cama de calidad, toallas suaves, baño privado con ducha y Wi-Fi gratuito en todo el alojamiento.",
+      "homeBody2": "En recepción te ayudamos con información sobre los lugares de interés cercanos, los mejores restaurantes y bares de la zona, y cualquier duda que puedas tener durante tu estancia.",
+      "locationTag": "Ubicación inmejorable",
+      "locationTitle": "En el corazón de Zamora",
+      "locationBody": "Tenemos la suerte de estar en una ubicación increíble: pleno centro de Zamora, entre las dos calles principales y a 3 minutos andando de la Plaza Mayor y el casco antiguo. Podrás disfrutar de la historia de la ciudad, conocer su cultura y hacer turismo sin coger el coche. Estamos cerca de bares, restaurantes y parkings, sin renunciar a la tranquilidad de una calle pequeña.",
+      "historyTag": "Más de 50 años de historia",
+      "historyTitle": "Pensión Padornelo · Hostal Sol",
+      "historyBody1": "Nuestra historia comienza en 1975, cuando la familia abrió la Pensión Padornelo en la Calle Aire de Zamora. Durante muchos años aquella pensión familiar fue punto de referencia para los viajeros que llegaban a la ciudad.",
+      "historyBody2": "Con el tiempo nació el Hostal Sol en Calle Benavente, y junto a él el Restaurante Padornelo, como homenaje a los orígenes. Más de 50 años de historia hotelera respaldan cada estancia.",
+      "ctaReserve": "Reservar ahora",
+      "ctaContact": "Contacta con nosotros"
+    },
+    "contacto": {
+      "tag": "Contacto",
+      "title": "Contacto — Hostal Sol Zamora",
+      "description": "Llámanos, escríbenos por WhatsApp o email. Estamos para ayudarte.",
+      "heading": "Hablemos",
+      "lead": "Estamos encantados de resolver cualquier duda o consulta. Llámanos, escríbenos por WhatsApp, mándanos un email o usa el formulario y te responderemos lo antes posible.",
+      "infoTitle": "Datos de contacto",
+      "addressLabel": "Dirección",
+      "addressVal": "Calle Benavente, 2 — 3ª planta · 49014 Zamora",
+      "phoneLabel": "Teléfonos",
+      "emailLabel": "Email",
+      "whatsappLabel": "WhatsApp",
+      "hoursLabel": "Horario",
+      "hoursReceptionLabel": "Recepción",
+      "hoursReceptionVal": "14:00 – 21:00",
+      "hoursPhoneLabel": "Atención telefónica",
+      "hoursPhoneVal": "10:00 – 21:00",
+      "mapBtn": "Encuéntranos en el mapa",
+      "distancesTitle": "Distancias desde el hostal",
+      "distances": [
+        {
+          "name": "Estación de tren",
+          "value": "1,2 km · 15 min andando"
+        },
+        {
+          "name": "Estación de autobús",
+          "value": "1 km · 13 min andando"
+        },
+        {
+          "name": "Plaza Mayor / Casco antiguo",
+          "value": "450 m · 5 min andando"
+        },
+        {
+          "name": "Parking La Marina",
+          "value": "400 m · 4 min andando"
+        },
+        {
+          "name": "Parking de la Constitución",
+          "value": "260 m · 2 min andando"
+        },
+        {
+          "name": "Salamanca",
+          "value": "67 km · 48 min en coche"
+        },
+        {
+          "name": "Valladolid",
+          "value": "101 km · 1h 11 min en coche"
+        }
+      ],
+      "formTitle": "Envíanos un mensaje",
+      "formIntro": "Rellena el formulario y te contestaremos por email. Si necesitas respuesta rápida, mejor llámanos o escríbenos por WhatsApp.",
+      "fName": "Nombre",
+      "fEmail": "Correo electrónico",
+      "fSubject": "Asunto",
+      "fMessage": "Mensaje",
+      "fAccept": "Acepto la",
+      "fAcceptLink": "política de privacidad",
+      "fSend": "Enviar mensaje",
+      "fOpenMail": "Abrir en mi cliente de correo",
+      "fSent": "¡Gracias! Tu mensaje se ha preparado en tu cliente de correo. Si no se abre, escríbenos directamente a hostalsol{'@'}outlook.com.",
+      "parkingNote": "Si tu duda es sobre el aparcamiento, hemos preparado una guía completa con todas las opciones cercanas:",
+      "parkingLink": "Ver guía de parking →"
     }
   }
 }

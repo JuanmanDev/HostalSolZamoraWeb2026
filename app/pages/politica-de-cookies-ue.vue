@@ -82,9 +82,16 @@
 </template>
 
 <script setup lang="ts">
-useHead({
-  title: 'Política de Cookies — Hostal Sol Zamora',
-  meta: [{ name: 'description', content: 'Política de cookies del sitio web del Hostal Sol Zamora. Conoce qué cookies utilizamos y cómo gestionarlas.' }],
+useSeo({
+  title:       'Política de Cookies — Hostal Sol Zamora',
+  description: 'Política de cookies del sitio web del Hostal Sol Zamora. Conoce qué cookies utilizamos y cómo gestionarlas.',
+  type:        'article',
+  noIndex:     true,
+})
+
+defineOgImage('HostalSol', {
+  title:    'Política de Cookies',
+  subtitle: 'Hostal Sol Zamora',
 })
 </script>
 

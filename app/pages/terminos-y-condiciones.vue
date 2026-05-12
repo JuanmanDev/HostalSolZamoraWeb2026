@@ -120,9 +120,16 @@
 
 <script setup lang="ts">
 const localePath = useLocalePath()
-useHead({
-  title: 'Términos y Condiciones — Hostal Sol Zamora',
-  meta: [{ name: 'description', content: 'Términos y Condiciones de uso del sitio web y de los servicios de alojamiento del Hostal Sol Zamora, Zamora.' }],
+useSeo({
+  title:       'Términos y Condiciones — Hostal Sol Zamora',
+  description: 'Términos y Condiciones de uso del sitio web y de los servicios de alojamiento del Hostal Sol Zamora, Zamora.',
+  type:        'article',
+  noIndex:     true,
+})
+
+defineOgImage('HostalSol', {
+  title:    'Términos y Condiciones',
+  subtitle: 'Hostal Sol Zamora',
 })
 </script>
 

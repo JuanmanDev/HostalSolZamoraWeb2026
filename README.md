@@ -15,7 +15,8 @@ Hostal Sol is a family-run business with a hospitality legacy dating back to **1
 - **Multilingual Support**: Full i18n integration (Spanish & English) with browser detection and persistent preferences.
 - **Interactive Room Discovery**: Build-time discovery of room media with a rich gallery supporting both photos and YouTube Shorts.
 - **3D Discount Card**: An interactive 3D CSS effect to highlight direct booking benefits.
-- **CI/CD Driven**: Automated deployment to GitHub Pages via GitHub Actions, including Docker-based build verification.
+- **Dockerized & Multi-arch**: Multi-platform Docker images (`amd64` and `arm64`) automatically built and pushed to GitHub Container Registry (GHCR).
+- **CI/CD Driven**: Automated deployment to GitHub Pages and GHCR via GitHub Actions.
 
 ## 🛠 Tech Stack
 
@@ -24,12 +25,13 @@ Hostal Sol is a family-run business with a hospitality legacy dating back to **1
 - **Icons**: [Lucide Vue Next](https://lucide.dev/)
 - **Carousel**: [Vue3-Carousel](https://ismail9k.github.io/vue3-carousel/)
 - **Translations**: [@nuxtjs/i18n](https://i18n.nuxtjs.org/)
-- **Deployment**: GitHub Pages
+- **Deployment**: GitHub Pages & Docker (GHCR)
 
 ## 📦 Getting Started
 
 ### Prerequisites
 - Node.js 22.x or higher
+- Docker (optional, for containerized execution)
 - npm or pnpm
 
 ### Installation
@@ -54,6 +56,26 @@ Hostal Sol is a family-run business with a hospitality legacy dating back to **1
    ```bash
    npm run generate
    ```
+
+### 🐳 Docker Usage
+
+The project is automatically published as a multi-arch Docker image to GHCR.
+
+#### Pulling the image
+```bash
+docker pull ghcr.io/juanmandev/hostalsolzamoraweb2026:main
+```
+
+#### Running locally
+```bash
+docker run -d -p 8080:80 ghcr.io/juanmandev/hostalsolzamoraweb2026:main
+```
+Then visit `http://localhost:8080`.
+
+#### Building locally (multi-platform)
+```bash
+docker buildx build --platform linux/amd64,linux/arm64 -t hostal-sol:latest .
+```
 
 ## 📂 Project Structure
 

@@ -1,22 +1,58 @@
 <template>
-  
-      <SectionsContactSection />
+
+  <SectionsContactSection />
   <footer class="footer">
     <div class="footer__container">
+
+      <!-- Social row -->
+      <!-- <div class="footer__social">
+        <a
+          href="https://www.instagram.com/hostalsolzamora/"
+          target="_blank"
+          rel="noopener noreferrer me"
+          class="footer__social-btn"
+          aria-label="Instagram"
+        >
+          <LucideIcon name="instagram" :size="16" color="rgba(255,255,255,0.65)" />
+          <span>@hostalsolzamora</span>
+        </a>
+        <a
+          href="https://www.facebook.com/hostalsolzam"
+          target="_blank"
+          rel="noopener noreferrer me"
+          class="footer__social-btn"
+          aria-label="Facebook"
+        >
+          <LucideIcon name="facebook" :size="16" color="rgba(255,255,255,0.65)" />
+          <span>Hostal Sol</span>
+        </a>
+        <a
+          href="https://wa.me/34639980253"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer__social-btn footer__social-btn--wa"
+          aria-label="WhatsApp"
+        >
+          <LucideIcon name="message-circle" :size="16" color="rgba(255,255,255,0.85)" />
+          <span>WhatsApp</span>
+        </a>
+      </div> -->
 
       <!-- Bottom row -->
       <div class="footer__bottom">
         <span class="footer__copy">
           © {{ year }} Hostal Sol Zamora · {{ t('footer.rights') }}
         </span>
-        <nav class="footer__links">
+        <nav class="footer__links" aria-label="Footer">
+          <NuxtLink :to="localePath('sobre-nosotros')">{{ t('nav.about') }}</NuxtLink>
+          <NuxtLink :to="localePath('galeria')">{{ t('nav.rooms') }}</NuxtLink>
+          <NuxtLink :to="localePath('parking')">{{ t('nav.parking') }}</NuxtLink>
+          <NuxtLink :to="localePath('checkin')">{{ t('nav.checkin') }}</NuxtLink>
+          <NuxtLink :to="localePath('faq')">{{ t('nav.faq') }}</NuxtLink>
+          <NuxtLink :to="localePath('contacto')">{{ t('nav.contact') }}</NuxtLink>
+          <NuxtLink :to="localePath('reserva')">{{ t('nav.reserve') }}</NuxtLink>
           <NuxtLink :to="localePath('terminos-y-condiciones')">{{ t('footer.terms') }}</NuxtLink>
           <NuxtLink :to="localePath('politica-de-cookies-ue')">{{ t('footer.cookies') }}</NuxtLink>
-          <NuxtLink :to="localePath('galeria')">{{ t('nav.rooms') }}</NuxtLink>
-          <NuxtLink :to="localePath('parking')">Parking</NuxtLink>
-          <NuxtLink :to="localePath('faq')">{{ t('nav.faq') }}</NuxtLink>
-          <NuxtLink :to="localePath('checkin')">Check-in</NuxtLink>
-          <NuxtLink :to="localePath('reserva')">{{ t('nav.reserve') }}</NuxtLink>
         </nav>
       </div>
     </div>
@@ -38,59 +74,33 @@ const year = new Date().getFullYear()
 
 .footer__container { max-width: 1500px; margin: 0 auto; }
 
-/* Schedule strip */
-.footer__schedule {
+/* Social row */
+.footer__social {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 10px;
-  flex-wrap: wrap;
-  padding-bottom: 14px;
-  margin-bottom: 14px;
-  border-bottom: 1px solid rgba(255,255,255,0.07);
-}
-.footer__schedule-item {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  color: rgba(255,255,255,0.45);
-  font-size: 12px;
-}
-.footer__schedule-item strong { color: rgba(255,255,255,0.7); }
-.footer__schedule-sep { color: rgba(255,255,255,0.2); font-size: 12px; }
-
-.footer__actions {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
   padding-bottom: 16px;
   margin-bottom: 16px;
   border-bottom: 1px solid rgba(255,255,255,0.07);
 }
-
-.footer__action-btn {
+.footer__social-btn {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  background: rgba(255,255,255,0.08);
-  color: #fff;
+  background: rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.65);
+  border: 1px solid rgba(255,255,255,0.10);
   border-radius: 8px;
-  padding: 9px 18px;
-  font-size: 13px;
+  padding: 7px 14px;
+  font-size: 12.5px;
   font-weight: 600;
   text-decoration: none;
-  border: 1px solid rgba(255,255,255,0.12);
-  transition: background 0.2s;
+  transition: background 0.2s, color 0.2s;
 }
-.footer__action-btn:hover { background: rgba(255,255,255,0.14); }
-.footer__action-btn--wa { background: var(--whatsapp); border-color: var(--whatsapp); }
-.footer__action-btn--wa:hover { background: #1fb954; }
-.footer__action-btn--reserve {
-  background: var(--green);
-  border-color: var(--green);
-}
-.footer__action-btn--reserve:hover { background: #5a8f4a; }
+.footer__social-btn:hover { background: rgba(255,255,255,0.12); color: #fff; }
+.footer__social-btn--wa { background: var(--whatsapp); border-color: var(--whatsapp); color: #fff; }
+.footer__social-btn--wa:hover { background: #1fb954; }
 
 .footer__bottom {
   display: flex;

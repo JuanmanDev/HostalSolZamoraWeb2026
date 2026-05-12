@@ -217,7 +217,9 @@ function handleSlideClick(i: number, item: MediaItem) {
           @click="onMediaChange(m.key)"
         >
           <LucideIcon :name="m.icon" :size="13" />
-          {{ t(`rooms.${m.labelKey}`) }}
+          <span>
+            {{ t(`rooms.${m.labelKey}`) }}
+          </span>
         </button>
       </div>
 
@@ -539,7 +541,7 @@ img {
   align-items: center;
   flex-wrap: nowrap;
   gap: 12px;
-  padding: 8px 16px 20px;
+  padding: 8px 0 20px;
   margin: 0 auto;
   max-width: 1800px;
 }
@@ -552,6 +554,10 @@ img {
   transition: all 0.2s;
 }
 .room-gallery__media-btn--active { background: var(--green); color: #fff; }
+
+@media (max-width: 600px) {
+  .room-gallery__media-btn span { display: none; }
+}
 
 /* Desktop tabs */
 .room-gallery__room-tabs--desktop {

@@ -52,9 +52,39 @@ const { t } = useI18n()
 const route  = useRoute()
 const router = useRouter()
 
-useHead({
-  title: computed(() => t('pages.galeria.title')),
+useSeo({
+  title:       computed(() => t('pages.galeria.title')),
+  description: computed(() => t('pages.galeria.description')),
+  type:        'website',
+  image:       '/images/about.webp',
 })
+
+defineOgImage('HostalSol', {
+  title:    t('ogImage.galeria.title'),
+  subtitle: t('pages.galeria.description'),
+})
+
+const cfg     = useRuntimeConfig()
+const siteUrl = (cfg.public.siteUrl as string).replace(/\/$/, '')
+
+useJsonLd([
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: t('pages.galeria.title'),
+    description: t('pages.galeria.description'),
+    url: `${siteUrl}${route.path}`,
+    isPartOf: { '@type': 'LodgingBusiness', '@id': `${siteUrl}/#lodging` },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: t('nav.home'), item: `${siteUrl}/` },
+      { '@type': 'ListItem', position: 2, name: t('pages.galeria.heading'), item: `${siteUrl}${route.path}` },
+    ],
+  },
+])
 
 // ── Filter state ──────────────────────────────────────────────────────────────
 const activeRoom  = ref<string>((route.query.room as string) || 'All')
@@ -105,9 +135,9 @@ function onRoomChange(key: string) {
   padding: 0;
 }
 
-/* ── Text blocks ───────────────────────────────────────────────────────── */
+/* ── Text blocks ───────────────────────────────────────────────────── */
 .galeria__text {
-  
+
   color: var(--dark-muted);
   margin: 0 0 20px;
   line-height: 1.6;

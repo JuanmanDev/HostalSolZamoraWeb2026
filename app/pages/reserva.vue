@@ -80,9 +80,35 @@ const bookingUrl = computed(() => {
   return `${base}&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&items[0][rateId]=${rateId}`
 })
 
-useHead({
-  title: computed(() => t('pages.reserva.title')),
-  meta: [{ name: 'description', content: computed(() => t('pages.reserva.description')) as any }],
+useSeo({
+  title:       computed(() => t('pages.reserva.title')),
+  description: computed(() => t('pages.reserva.description')),
+  type:        'website',
+  image:       '/images/hero/hero-1.jpg',
+})
+
+defineOgImage('HostalSol', {
+  title:    t('ogImage.reserva.title'),
+  subtitle: t('pages.reserva.description'),
+})
+
+const cfg     = useRuntimeConfig()
+const siteUrl = (cfg.public.siteUrl as string).replace(/\/$/, '')
+useJsonLd({
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: t('pages.reserva.title'),
+  url: `${siteUrl}${route.path}`,
+  potentialAction: {
+    '@type': 'ReserveAction',
+    target: {
+      '@type': 'EntryPoint',
+      urlTemplate: 'https://direct-book.com/properties/hostalsoldirect?promocode=WEB',
+      inLanguage: 'es-ES',
+      actionPlatform: ['http://schema.org/DesktopWebPlatform','http://schema.org/MobileWebPlatform'],
+    },
+    result: { '@type': 'LodgingReservation', name: 'Reserva en Hostal Sol Zamora' },
+  },
 })
 
 const features  = computed(() =>

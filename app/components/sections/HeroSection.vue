@@ -12,11 +12,14 @@
         :src="src"
         format="webp"
         class="hero__slide-img"
-        :img-attrs="{ 
+        :img-attrs="{
           style: 'width: 100%; height: 100%; object-fit: cover; image-orientation: from-image;',
-          alt: 'Hero Image'
+          alt: i === 0 ? 'Hostal Sol Zamora — centro histórico de Zamora' : '',
+          fetchpriority: i === 0 ? 'high' : 'low',
+          decoding: i === 0 ? 'sync' : 'async',
         }"
-        loading="eager"
+        :loading="i === 0 ? 'eager' : 'lazy'"
+        :preload="i === 0"
         sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw xxl:100vw 2xl:100vw 3xl:100vw 4k:100vw"
         :modifiers="{ rotate: 0 }"
       />

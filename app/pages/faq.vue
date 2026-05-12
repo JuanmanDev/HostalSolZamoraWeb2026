@@ -93,9 +93,15 @@ import type { FaqItem } from '~/types'
 const { t, tm, rt } = useI18n()
 const route = useRoute()
 
-useHead({
-  title: computed(() => t('pages.faq.title')),
-  meta: [{ name: 'description', content: computed(() => t('pages.faq.description')) as any }],
+useSeo({
+  title:       computed(() => t('pages.faq.title')),
+  description: computed(() => t('pages.faq.description')),
+  type:        'website',
+})
+
+defineOgImage('HostalSol', {
+  title:    t('ogImage.faq.title'),
+  subtitle: t('pages.faq.description'),
 })
 
 const allItems = computed(() =>
@@ -141,6 +147,29 @@ const infoTiles = [
   { icon: 'paw-print',  labelKey: 'pets',      valKey: 'petsVal' },
   { icon: 'building-2', labelKey: 'floor',     valKey: 'floorVal' },
 ]
+
+// JSON-LD FAQPage — eligible for Google's FAQ rich result. Strip
+// HTML/markdown from answers so the schema is plain text.
+function plain(text: string): string {
+  return text
+    .replace(/<[^>]+>/g, '')
+    .replace(/\{'@'\}/g, '@')
+    .replace(/\s+/g, ' ')
+    .trim()
+}
+
+useJsonLd({
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: allItems.value.map(item => ({
+    '@type': 'Question',
+    name: plain(item.q),
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: plain(item.a),
+    },
+  })),
+})
 </script>
 
 <style scoped>
@@ -316,8 +345,8 @@ const infoTiles = [
 
 /* Expand transition */
 .expand-enter-active, .expand-leave-active {
-  transition: opacity 0.2s, max-height 0.3s ease;
-  max-height: 300px;
+  transition: opacity 0.2s, max-height 0.4s ease;
+  max-height: 600px;
   overflow: hidden;
 }
 .expand-enter-from, .expand-leave-to { opacity: 0; max-height: 0; }

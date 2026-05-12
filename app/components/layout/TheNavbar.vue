@@ -18,7 +18,7 @@
       <div class="navbar__spacer" />
 
       <div class="navbar__desktop">
-        <template v-for="link in navLinks" :key="link.key">
+        <template v-for="link in desktopLinks" :key="link.key">
           <button
             v-if="link.section"
             :class="['navbar__link', { 'navbar__link--cta': link.cta }]"
@@ -93,14 +93,20 @@ const _scrolled = ref(false)
 const scrolled  = computed(() => props.solidFromStart || _scrolled.value)
 const menuOpen  = ref(false)
 
+// Note: 'about' and 'contact' show up only inside the mobile drawer
+// to keep the desktop bar visually balanced. Both have dedicated pages
+// (/sobre-nosotros, /contacto) and footer links.
 const navLinks = computed(() => [
-  { key: 'home',    section: 'hero', route: null,                    cta: false },
-  { key: 'rooms',   section: null,   route: localePath('galeria'),   cta: false },
-  { key: 'parking', section: null,   route: localePath('parking'),   cta: false },
-  { key: 'faq',     section: null,   route: localePath('faq'),       cta: false },
-  { key: 'checkin', section: null,   route: localePath('checkin'),   cta: false },
-  { key: 'reserve', section: null,   route: localePath('reserva'),   cta: true  },
+  { key: 'home',    section: 'hero', route: null,                          cta: false, mobileOnly: false },
+  { key: 'rooms',   section: null,   route: localePath('galeria'),         cta: false, mobileOnly: false },
+  { key: 'parking', section: null,   route: localePath('parking'),         cta: false, mobileOnly: false },
+  { key: 'faq',     section: null,   route: localePath('faq'),             cta: false, mobileOnly: false },
+  { key: 'checkin', section: null,   route: localePath('checkin'),         cta: false, mobileOnly: false },
+  { key: 'about',   section: null,   route: localePath('sobre-nosotros'),  cta: false, mobileOnly: true  },
+  { key: 'contact', section: null,   route: localePath('contacto'),        cta: false, mobileOnly: true  },
+  { key: 'reserve', section: null,   route: localePath('reserva'),         cta: true,  mobileOnly: false },
 ])
+const desktopLinks = computed(() => navLinks.value.filter(l => !l.mobileOnly))
 
 const homePath = computed(() => localePath('index'))
 

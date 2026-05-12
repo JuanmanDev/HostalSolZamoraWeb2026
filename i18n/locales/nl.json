@@ -1,0 +1,1425 @@
+{
+  "ogImage": {
+    "tagline": "Jouw thuis in Zamora",
+    "home": {
+      "title": "Hostal Sol Zamora"
+    },
+    "faq": {
+      "title": "Veelgestelde Vragen"
+    },
+    "parking": {
+      "title": "Parkeren in Zamora"
+    },
+    "checkin": {
+      "title": "Hoe Aanreizen & Inchecken"
+    },
+    "galeria": {
+      "title": "Kamergalerij"
+    },
+    "reserva": {
+      "title": "Boek Jouw Verblijf"
+    },
+    "sobreNosotros": {
+      "title": "Over Ons"
+    },
+    "contacto": {
+      "title": "Contact"
+    },
+    "location": "ZAMORA, SPANJE"
+  },
+  "nav": {
+    "home": "Home",
+    "rooms": "Kamers",
+    "map": "Kaart",
+    "parking": "Parkeren",
+    "faq": "FAQ",
+    "checkin": "Inchecken",
+    "reserve": "Boeken",
+    "contact": "Contact",
+    "about": "Over ons",
+    "search": "Zoeken",
+    "searchPlaceholder": "Zoek kamers, diensten, vragen..."
+  },
+  "hero": {
+    "tag": "Historisch centrum · Zamora",
+    "title": "Jouw thuis\nin Zamora",
+    "sub": "Boutique hostal met Scandinavische stijl in het hart van de stad",
+    "cta": "Nu boeken",
+    "ctaRooms": "Bekijk kamers",
+    "discount": "Direct boeken met 15% korting",
+    "features": [
+      {
+        "icon": "map-pin",
+        "label": "Centrale ligging",
+        "link": null
+      },
+      {
+        "icon": "wifi",
+        "label": "WiFi beschikbaar",
+        "link": null
+      },
+      {
+        "icon": "paw-print",
+        "label": "Huisdieren welkom",
+        "link": null
+      },
+      {
+        "icon": "shower-head",
+        "label": "Privébadkamer",
+        "link": null
+      },
+      {
+        "icon": "banknote-arrow-down",
+        "label": "Lage prijzen",
+        "link": null
+      },
+      {
+        "icon": "wind",
+        "label": "Airconditioning",
+        "link": null
+      },
+      {
+        "icon": "tv",
+        "label": "TV",
+        "link": null
+      },
+      {
+        "icon": "laptop",
+        "label": "Bureau en stoel",
+        "link": null
+      }
+    ]
+  },
+  "about": {
+    "title": "Meer dan 50 jaar gastvrijheid in Zamora",
+    "body": "Ons boutique hostal bevindt zich op de derde verdieping van een gebouw met lift, midden in het historische centrum van Zamora. We zorgen voor elk detail zodat je je thuis voelt: kamers in Scandinavische stijl, privébadkamer, WiFi, centrale verwarming en veel warmte.",
+    "since": "Meer dan 50 jaar samen · Pensión Padornelo en Hostal Sol",
+    "historyTitle": "Onze geschiedenis",
+    "history1": "Onze geschiedenis begint in 1975, toen de familie de Pensión Padornelo opende in de Calle Aire in Zamora. Jarenlang was dat familiepension een referentiepunt voor reizigers die in de stad aankwamen, met een reputatie van persoonlijke service en goed onderhouden kamers.",
+    "history2": "In de loop der tijd, dankzij gedeelde ervaringen en het vertrouwen van zoveel gasten, evolueerde de familie haar bedrijf: de Hostal Sol werd geboren in Calle Benavente, samen met het Restaurante Padornelo, als eerbetoon aan de oorspronkelijke naam. Meer dan 50 jaar hotelgeschiedenis staat achter elk verblijf.",
+    "history3": "Vandaag, met gerenoveerde faciliteiten in een Scandinavisch-minimalistische stijl, bewaren we wat ons altijd heeft gedefinieerd: een familiale ontvangst, onberispelijke kamers en de liefde voor Zamora die ons kenmerkt. We bevinden ons in het hart van het historische stadscentrum, op loopafstand van de kathedraal, Romaanse kerken en de beste gastronomie.",
+    "showMore": "Lees meer geschiedenis",
+    "showLess": "Minder tonen",
+    "chips": {
+      "location": "Historisch centrum",
+      "floor": "3e verdieping · C.P. 49014",
+      "bathroom": "Privébadkamer",
+      "pets": "Huisdieren welkom",
+      "rating": "7,7 / 10"
+    }
+  },
+  "rooms": {
+    "title": "Onze kamers",
+    "sub": "Drie kamertypen, maximaal comfort",
+    "types": [
+      {
+        "label": "Tweepersoonskamer (aparte bedden)",
+        "icon": "bed-single",
+        "photoPath": "/images/rooms/301/003.jpg",
+        "extras": [
+          "2 bedden van 90cm breed"
+        ],
+        "rateId": "578650"
+      },
+      {
+        "label": "Tweepersoonskamer (tweepersoonsbed)",
+        "icon": "bed-double",
+        "photoPath": "/images/rooms/323/002.jpg",
+        "extras": [
+          "1 bed van 135cm breed"
+        ],
+        "rateId": "578649"
+      },
+      {
+        "label": "Tweepersoonskamer met balkon",
+        "icon": "building",
+        "photoPath": "/images/rooms/321/021.jpg",
+        "extras": [
+          "1 bed van 135cm breed",
+          "Privébalkon",
+          "TV Superior"
+        ],
+        "rateId": "752069"
+      }
+    ],
+    "amenities": [
+      "TV",
+      "WiFi",
+      "Privébadkamer",
+      "Bureau",
+      "Centrale verwarming",
+      "Toiletartikelen",
+      "Handdoeken en beddengoed",
+      "Airconditioning",
+      "Föhn (op aanvraag)",
+      "Kledingkast",
+      "Dagelijkse schoonmaak",
+      "Stoel",
+      "Beveiligingscamera's in gemeenschappelijke ruimtes",
+      "Lift"
+    ],
+    "filterAll": "Alle",
+    "filterBalcon": "Balkon",
+    "filterMatrimonio": "Tweepersoonsbed",
+    "filter2Camas": "2 Aparte bedden",
+    "entrance": "Ingang",
+    "mediaAll": "Alles",
+    "mediaPhotos": "Foto's",
+    "mediaVideos": "Video's",
+    "allPhotos": "Alles bekijken",
+    "videoLabel": "Kamervideo",
+    "reserveBtn": "Nu boeken →",
+    "ytChannel": "Bekijk YouTube-kanaal",
+    "emptyMedia": "Geen items om te tonen",
+    "galleryBtn": "Volledige galerij bekijken"
+  },
+  "videos": {
+    "title": "Kamervideo's",
+    "sub": "Opgenomen in maart 2026 · Virtuele tour van elke kamer",
+    "watch": "Bekijk op YouTube",
+    "channel": "YouTube-kanaal"
+  },
+  "map": {
+    "title": "Hoe kom ik er?",
+    "sub": "In het hart van het historische centrum",
+    "address": "Calle Benavente, 2 — 3e verdieping",
+    "addressFull": "Calle Benavente, 2 - 3e verdieping\n49014 Zamora, Spanje",
+    "city": "C.P. 49014 Zamora, Spanje",
+    "floorNote": "3e verdieping · 2 liften · Drempelvrije toegang",
+    "walkOld": "5 min. oude stad",
+    "walkStation": "15 min. station",
+    "parkingNear": "Nabijgelegen parkeren beschikbaar",
+    "howToArrive": "Aanrijgids",
+    "openIn": "Openen in",
+    "guideNote": "Calle Benavente 2; als de deur niet open is, bel dan aan op de 3e verdieping via het paneel rechts en ga met de trap of lift naar de derde verdieping.",
+    "guideLinkText": "→ Volledige aanrijgids"
+  },
+  "parking": {
+    "title": "Parkeergids",
+    "sub": "Parkeeropties nabij het hostal",
+    "fullGuide": "Volledige parkeergids →",
+    "nav": "Navigeren",
+    "options": [
+      {
+        "name": "Parkeergarage Plaza Constitución",
+        "dist": "3 min. lopen",
+        "price": "1,45€/u (14,70€/dag)",
+        "link": "https://www.google.com/maps/dir//Plaza+de+la+Constitucion+Zamora",
+        "tip": "Dichtstbijzijnde parkeergarage. 24 uur open. Beheerd door Iberpark. Tel. 980 53 72 08."
+      },
+      {
+        "name": "Parkeergarage Plaza de la Marina Española",
+        "dist": "5 min. lopen",
+        "price": "Vanaf 2,35€",
+        "link": "https://www.google.com/maps/dir//Plaza+de+la+Marina+Española+Zamora",
+        "tip": "Digitaal beheer via Empark/Telpark. EV-opladen, geldautomaten en CCTV."
+      },
+      {
+        "name": "Treinstation (gratis)",
+        "dist": "2 km (bus L3)",
+        "price": "Gratis",
+        "link": "https://www.google.com/maps/dir//Estacion+de+Ferrocarril+Zamora",
+        "tip": "Gratis parkeren 24u. Buslijn 3 naar halte 'Mercado' (5 min. van het hostal)."
+      },
+      {
+        "name": "ORA-zone (gereguleerd parkeren)",
+        "dist": "Bij de deur",
+        "price": "0,35€/30min",
+        "link": "https://www.google.com/maps/dir//Calle+Benavente+Zamora",
+        "tip": "Blauwe zone. Ma-Vr 9-14u en 16-20u, Za 9-14u. Gratis za-middag, zo en feestdagen. Max. 3u."
+      }
+    ]
+  },
+  "reviews": {
+    "title": "Wat onze gasten zeggen",
+    "heading": "Wat mensen over ons zeggen",
+    "sub": "Echte beoordelingen · Booking, Google en meer",
+    "ctaBand": "Boek direct op onze website en ontvang de beste prijs gegarandeerd",
+    "ctaBandBtn": "Boek met korting →",
+    "items": [
+      {
+        "name": "Gemma",
+        "text": "Me ha encantado la localización, el estilo del hostal es muy moderno y el chico super majo. La ducha era genial, ¡me dio pena marcharme!",
+        "stars": 5
+      },
+      {
+        "name": "Iker Zulueta",
+        "text": "En pleno centro histórico, habitaciones amplias, limpias y equipadas. Trato del personal inmejorable. ¡Volveré a repetir!",
+        "stars": 5
+      },
+      {
+        "name": "José Manuel Serrano",
+        "text": "Ubicación muy céntrica, te evitas el coche. El chico que nos atendió se ofreció para cualquier cosa. Excelente.",
+        "stars": 5
+      },
+      {
+        "name": "Annayara",
+        "text": "Fui con un brazo lesionado y enseguida me ofrecieron cambiar la habitación por una más amplia. Esos detalles son los que cuentan.",
+        "stars": 5
+      },
+      {
+        "name": "Javier Fidalgo",
+        "text": "El sitio es perfecto. Muy limpio, todo lo necesario, ubicación increíble y el recepcionista muy majo. Sin duda volveremos.",
+        "stars": 5
+      },
+      {
+        "name": "Carla Aguilar",
+        "text": "Hostal estupendo en pleno centro. Nos explicaron qué ver y los mejores lugares a visitar. Sin duda, cuando volvamos repetiremos.",
+        "stars": 5
+      },
+      {
+        "name": "L. Elisabeth",
+        "text": "Limpio, cómodo y práctico. Personal atento y preocupado de atender bien. Un acierto escoger este hostal.",
+        "stars": 5
+      },
+      {
+        "name": "Juan Manuel",
+        "text": "El WiFi funcionó perfectamente y pude trabajar sin problemas. Creo que volveré pronto.",
+        "stars": 5
+      },
+      {
+        "name": "Thomas K. (DE)",
+        "text": "Sehr zentral gelegen, saubere Zimmer und freundliches Personal. Kann ich nur empfehlen!",
+        "stars": 5
+      },
+      {
+        "name": "Marie L. (FR)",
+        "text": "Excellent rapport qualité-prix. Chambre propre, bien équipée et idéalement située dans le centre historique.",
+        "stars": 5
+      },
+      {
+        "name": "James H. (UK)",
+        "text": "Great location right in the historic centre. Clean rooms, helpful staff. Would definitely stay again.",
+        "stars": 5
+      },
+      {
+        "name": "Valentina R. (IT)",
+        "text": "Ottima posizione nel centro storico, stanza pulita e personale cordiale. Consigliato!",
+        "stars": 5
+      },
+      {
+        "name": "Pedro A. (PT)",
+        "text": "Localização perfeita no centro histórico. Quartos limpos e pessoal simpático. Recomendo!",
+        "stars": 5
+      }
+    ]
+  },
+  "restaurant": {
+    "tag": "Lokale aanbeveling",
+    "title": "Restaurante Padornelo",
+    "rating": "4,7 / 5",
+    "ratingLabel": "Google-beoordeling",
+    "body1": "Op slechts enkele stappen van het hostal vind je het Restaurante Padornelo, dat naast ons hostal is ontstaan en de naam draagt van het oorspronkelijke familiepension. Traditionele Zamorana keuken met lokale producten, een gezellige sfeer en een onverslaanbare prijs-kwaliteitverhouding.",
+    "body2": "Tapas, gerechten om te delen, stevige stoofpotten en wijnen van de D.O. Toro. Een must tijdens je verblijf in Zamora.",
+    "mapsBtn": "Bekijk op Google Maps",
+    "distance": "2 minuten van het hostal",
+    "photosLabel": "Google Maps foto's"
+  },
+  "faq": {
+    "title": "Veelgestelde vragen",
+    "viewAll": "Alle vragen bekijken →",
+    "viewAllBtn": "Alle veelgestelde vragen bekijken →",
+    "callLabel": "Bellen",
+    "waLabel": "WhatsApp",
+    "emailLabel": "E-mail",
+    "items": [
+      {
+        "q": "Wat zijn de openingstijden van het hostal?",
+        "a": "Telefonische ondersteuning: 10:00–21:00. Inchecken: 14:00–21:00. Het hostal sluit om 21:00 zonder uitzonderingen — aankomsten na 21:00 zonder voorafgaand overleg worden niet geaccepteerd. Na het inchecken ontvang je sleutels om te komen en gaan wanneer je wilt. De meeste zondagen zijn we gesloten, maar als je zaterdag aankomt kun je de zondag blijven. We zijn open op de meeste feestdagen, behalve 14–16 augustus, 15 december en 1 januari.",
+        "links": [
+          {
+            "label": "Volledige incheckgids",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
+      },
+      {
+        "q": "Wat zijn de in- en uitchecktijden?",
+        "a": "Inchecken is van 14:00 tot 21:00. Als je voor 14:00 aankomt, kunnen we je bagage bij de receptie bewaren. In periodes van lage bezetting kunnen we soms eerder toegang bieden, maar dit is niet gegarandeerd. Uitchecken is om 11:00. Na het uitchecken kunnen we je bagage ook bewaren gedurende de dag van vertrek (behalve op zondag) — laat het ons gewoon weten. Als je na 21:00 aankomt, kunnen we je onder geen enkele omstandigheid ontvangen.",
+        "tags": [
+          "aankomst",
+          "vroeg inchecken",
+          "bagage bewaren",
+          "koffer",
+          "laat uitchecken"
+        ],
+        "links": [
+          {
+            "label": "Volledige incheckgids",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
+      },
+      {
+        "q": "Welke documenten heb ik nodig voor het inchecken?",
+        "a": "Op grond van het Koninklijk Besluit 933/2021 moeten alle gasten van 14 jaar en ouder een geldig officieel identiteitsbewijs met foto overleggen: identiteitskaart, paspoort, NIE, TIE of EU-rijbewijs. Verlopen, beschadigde, onleesbare documenten of documenten die per e-mail of WhatsApp worden verzonden, worden niet geaccepteerd. Elke gast moet zijn eigen document overleggen — alleen het document van de boekinghouder is niet voldoende. Om het proces te versnellen, raden we aan om Chekin online te gebruiken voor aankomst: je ontvangt een link om je document te fotograferen en de benodigde gegevens in te sturen.",
+        "tags": [
+          "paspoort",
+          "rijbewijs",
+          "identiteitskaart",
+          "documentatie",
+          "online inchecken",
+          "chekin",
+          "pre-registratie",
+          "NIE"
+        ],
+        "links": [
+          {
+            "label": "Online inchecken",
+            "url": "/checkin",
+            "icon": "file-text"
+          },
+          {
+            "label": "Geaccepteerde documenttypen",
+            "url": "/checkin",
+            "icon": "id-card"
+          }
+        ]
+      },
+      {
+        "q": "Is het hostal toegankelijk voor mensen met beperkte mobiliteit?",
+        "a": "Het hostal bevindt zich op de 3e verdieping van een gebouw met 2 liften. Er zijn geen treden bij de ingang of voor toegang tot de kamers. Je kunt foto's en video's van de kamers bekijken in onze galerij om te controleren of de ruimte en afmetingen geschikt zijn voor jouw behoeften. Als je vragen hebt, neem dan contact op en we beoordelen jouw specifieke situatie.",
+        "tags": [
+          "rolstoel",
+          "handicap",
+          "beperkte mobiliteit",
+          "lift",
+          "trap",
+          "toegankelijk"
+        ],
+        "links": [
+          {
+            "label": "Bekijk kamergalerij",
+            "url": "/galerij",
+            "icon": "image"
+          }
+        ]
+      },
+      {
+        "q": "Waar kan ik parkeren?",
+        "a": "Het hostal heeft geen eigen parkeerplaats, maar er zijn verschillende opties vlakbij. Parkeergarage Plaza Constitución (3 min. lopen, 1,45€/u, 14,70€/dag, 24u open) is de dichtstbijzijnde. Parkeergarage Plaza de la Marina Española (5 min., online boeken via Empark) is een andere optie. Voor gratis parkeren biedt het Treinstation (2 km, bus L3) 24u gratis parkeren. Direct voor het hostal is er een ORA (blauwe) zone à 0,35€/30min, max. 3u. Hoewel het een voetgangerszone is, staat de gemeente voertuigtoegang voor gasten via Calle San Miguel toe om bagage af te zetten.",
+        "tags": [
+          "garage",
+          "auto",
+          "motor",
+          "voertuig",
+          "parkeren vlakbij"
+        ],
+        "links": [
+          {
+            "label": "Volledige parkeergids",
+            "url": "/parkeren",
+            "icon": "car"
+          },
+          {
+            "label": "Openen in Google Maps",
+            "url": "https://www.google.com/maps/dir//Calle+Benavente,+2+Zamora",
+            "icon": "map-pin"
+          }
+        ]
+      },
+      {
+        "q": "Hoe kom ik van het trein- of busstation naar het hostal?",
+        "a": "Het treinstation en busstation liggen naast elkaar aan de Avenida de las Tres Cruces, ongeveer 2 km van het hostal. Opties: taxi (5–7 min., ca. 6–8€), stadbus lijn 3 (El Acercame, 0,95€) — stap uit bij halte \"Mercado\" (5 min. lopen van het hostal) — of te voet in ca. 25–30 min. Het treinstation heeft gratis parkeren 24u en bagageopslag.",
+        "tags": [
+          "trein",
+          "renfe",
+          "bus",
+          "station",
+          "aankomst",
+          "transport",
+          "hoe kom ik er"
+        ],
+        "links": [
+          {
+            "label": "Station Zamora — Renfe",
+            "url": "https://www.renfe.com/es/es/inspirate/estaciones/estacion-zamora",
+            "icon": "external-link"
+          },
+          {
+            "label": "Treinstation — Google Maps",
+            "url": "https://www.google.com/maps/dir//Estaci%C3%B3n+de+Ferrocarril+Zamora",
+            "icon": "map-pin"
+          },
+          {
+            "label": "Busstation — Google Maps",
+            "url": "https://www.google.com/maps/dir//Estaci%C3%B3n+de+Autobuses+de+Zamora",
+            "icon": "map-pin"
+          },
+          {
+            "label": "El Acercame stadsbussen",
+            "url": "https://www.acercame.es",
+            "icon": "bus"
+          }
+        ]
+      },
+      {
+        "q": "Hoe roep ik een taxi in Zamora?",
+        "a": "De belangrijkste taxicoöperatie is Radio Taxi Zamora (tel. 980 531 515). Je kunt ook taxi's vinden bij de taxistandplaats buiten het treinstation of op de grote pleinen in het centrum. De rit van het station naar het hostal kost ca. 6–8€ en duurt ca. 5–7 minuten. Taxi is de meest comfortabele optie als je 's avonds aankomt of veel bagage hebt.",
+        "tags": [
+          "taxi",
+          "radio taxi",
+          "transport",
+          "taxi zamora"
+        ],
+        "links": [
+          {
+            "label": "Radio Taxi Zamora — 980 531 515",
+            "url": "tel:+34980531515",
+            "icon": "phone"
+          },
+          {
+            "label": "Vind taxi's op Google Maps",
+            "url": "https://www.google.com/maps/search/taxi+zamora",
+            "icon": "car"
+          }
+        ]
+      },
+      {
+        "q": "Hoe kom ik van het hostal naar IFEZA?",
+        "a": "IFEZA (Instituto Ferial de Zamora) ligt ca. 4–5 km van het hostal. Je kunt er komen met stadbus lijn 5 (El Acercame, 0,95€) van haltes in het historische centrum, met de taxi (ca. 10 min., 8–10€) of met de auto. Belangrijke tip: tijdens grote evenementen en concerten rijden organisatoren vaak gratis shuttlebussen (pendelbussen) van het centrum van Zamora naar IFEZA en terug. Controleer altijd de website van het evenement of van IFEZA voordat je vertrekt om de gratis service niet te missen.",
+        "tags": [
+          "IFEZA",
+          "beurs",
+          "concert",
+          "Zeta",
+          "Fromago",
+          "SIFER",
+          "evenement",
+          "lijn 5",
+          "gratis pendel",
+          "beurs zamora"
+        ],
+        "links": [
+          {
+            "label": "IFEZA — Officiële website",
+            "url": "https://www.ifeza.es/",
+            "icon": "building-2"
+          },
+          {
+            "label": "Lijn 5 — El Acercame",
+            "url": "https://www.acercame.es/index.php/linea/linea5",
+            "icon": "bus"
+          },
+          {
+            "label": "IFEZA — Google Maps",
+            "url": "https://www.google.com/maps/dir//IFEZA+Zamora",
+            "icon": "map-pin"
+          }
+        ]
+      },
+      {
+        "q": "Is er ontbijt in het hostal?",
+        "a": "We serveren geen ontbijt, maar er zijn verschillende cafés en bakkerijen vlakbij. Onze aanbeveling is Bar Restaurante Padornelo, minder dan 2 minuten lopen van de ingang van het hostal. Het opent maandag t/m vrijdag om 10:00 en serveert kwalitatief ontbijt voor goede prijzen. Er zijn ook andere opties in de buurt als je liever wat afwisseling hebt.",
+        "tags": [
+          "eten",
+          "café",
+          "bar",
+          "bakkerij",
+          "ontbijt vlakbij"
+        ],
+        "links": [
+          {
+            "label": "Restaurante Padornelo",
+            "url": "/#restaurant",
+            "icon": "utensils-crossed"
+          },
+          {
+            "label": "Bekijk op Google Maps",
+            "url": "https://www.google.com/maps/dir//Calle+Benavente,+2+Zamora",
+            "icon": "map-pin"
+          }
+        ]
+      },
+      {
+        "q": "Zijn huisdieren toegestaan?",
+        "a": "Ja, wij zijn huisdiervriendelijk! Huisdieren zijn welkom met een toeslag van 7€/nacht per dier. Je kunt de toeslag direct op onze website betalen als extra service tijdens het boekingsproces. Huisdieren moeten altijd door een mens vergezeld zijn — ze mogen niet alleen achtergelaten worden in de kamer, het hostal, de auto of waar dan ook. Als deze regel niet wordt nageleefd, kan het huisdier niet blijven en kan de boeking met een boete worden geannuleerd.",
+        "tags": [
+          "hond",
+          "kat",
+          "dier",
+          "puppy",
+          "huisdieren toegestaan",
+          "huisdiervriendelijk"
+        ],
+        "links": [
+          {
+            "label": "Boek met korting",
+            "url": "/reserveren",
+            "icon": "paw-print"
+          }
+        ]
+      },
+      {
+        "q": "Kan ik mijn huisdier alleen in de kamer laten?",
+        "a": "Nee, dit is geen huisdierenhotel. Dieren moeten altijd door een mens vergezeld zijn. Ze mogen niet alleen achtergelaten worden in de kamer, het hostal, de auto of waar dan ook. Als deze regel niet wordt nageleefd, kan het huisdier niet verblijven en wordt de gast aangeboden de boeking te annuleren met een boete voor het niet naleven van de huisregels."
+      },
+      {
+        "q": "Is er WiFi op de kamers?",
+        "a": "Ja, gratis WiFi is beschikbaar in het hele hostal, inclusief alle kamers. Het wachtwoord wordt verstrekt bij het inchecken en is ook beschikbaar bij de receptie. De snelheid is meer dan 50 Mbps in de meeste kamers, meer dan genoeg voor surfen, e-mail, videostreaming en videobellen. We hebben de verbinding getest met meerdere mensen die tegelijkertijd werkten zonder problemen met snelheid of stabiliteit. Als je op afstand wilt werken, is dit een uitstekende optie.",
+        "tags": [
+          "internet",
+          "wifi wachtwoord",
+          "verbinding",
+          "netwerk",
+          "snelheid",
+          "thuiswerken",
+          "telewerken"
+        ]
+      },
+      {
+        "q": "Hebben de kamers airconditioning?",
+        "a": "Ja, alle kamers hebben airconditioning én verwarming. Het is een modern, efficiënt systeem dat het hele jaar door een comfortabele omgeving biedt, ongeacht het weer buiten. Je kunt de temperatuur aanpassen naar jouw voorkeur. Als je vragen hebt over het gebruik, helpt het receptiepersoneel je graag.",
+        "tags": [
+          "airconditioning",
+          "verwarming",
+          "temperatuur",
+          "warm",
+          "koud",
+          "thermostaat",
+          "ventilator",
+          "klimaatbeheersing"
+        ]
+      },
+      {
+        "q": "Wat voor TV hebben de kamers?",
+        "a": "Balkankamers hebben een 32-inch flatscreen-TV, sommige zijn Smart TV's als je liever inlogt op je streamingplatforms. Kamers zonder balkon hebben een 18-inch TV (geen Smart TV), maar je kunt externe apparaten aansluiten via de HDMI-poort om inhoud van een laptop of mobiel apparaat te bekijken.",
+        "tags": [
+          "televisie",
+          "Netflix",
+          "streaming",
+          "HBO",
+          "Prime",
+          "HDMI",
+          "zenders",
+          "smart tv"
+        ]
+      },
+      {
+        "q": "Welke beveiligingsmaatregelen zijn er?",
+        "a": "Het hostal bevindt zich op de 3e verdieping, dus zijn er 2 sleutels nodig om toegang te krijgen tot de kamergang (één voor het gebouw en één voor de hostal-deur). De gangen hebben beveiligingscamera's. Elke kamer heeft zijn eigen slot, en we raden gasten aan altijd te controleren of hun deur gesloten is, zowel bij binnenkomst als bij vertrek.",
+        "tags": [
+          "kluis",
+          "waardevolle spullen",
+          "slot",
+          "diefstal",
+          "camera",
+          "beveiliging",
+          "CCTV"
+        ]
+      },
+      {
+        "q": "Hebben de kamers een koelkast, koffiezetapparaat of magnetron?",
+        "a": "Nee, de kamers hebben geen koelkast, koffiezetapparaat of magnetron. Er zijn echter verschillende supermarkten vlakbij het hostal waar je kunt kopen wat je nodig hebt. De receptie kan je ook aanbevelingen geven als je iets specifieks nodig hebt.",
+        "tags": [
+          "koelkast",
+          "keuken",
+          "magnetron",
+          "koken",
+          "koffiezetapparaat",
+          "waterkoker",
+          "minibar"
+        ]
+      },
+      {
+        "q": "Is er een wasservice?",
+        "a": "Het hostal heeft geen eigen wasservice, maar er zijn verschillende self-service wasserettes in de buurt. De dichtstbijzijnde bevindt zich in de Calle San Torcuato, minder dan 5 minuten lopen, met wasmachines en drogers met hoge capaciteit en wasmiddelen te koop. Het wassen van handdoeken, lakens en beddengoed is inbegrepen in de kamerpijs en wordt regelmatig gedaan. Als je tijdens je verblijf extra beddengoed of handdoeken nodig hebt, vraag het gewoon bij de receptie.",
+        "tags": [
+          "wassen",
+          "kleren",
+          "wasmachine",
+          "droger",
+          "wasserette",
+          "kleren schoonmaken"
+        ]
+      },
+      {
+        "q": "Is er dagelijkse schoonmaakservice?",
+        "a": "Ja, we bieden dagelijkse schoonmaakservice om je kamer schoon en comfortabel te houden. Op zondag is er geen schoonmaakservice. Als je zaterdag verblijft, kun je de kamer de hele zondag zonder problemen gebruiken, aangezien het uitchecken op maandag om 11:00 is. Als je tijdens je verblijf iets extra's nodig hebt, laat het ons gerust weten."
+      },
+      {
+        "q": "Hebben jullie een föhn of strijkijzer?",
+        "a": "Ja, we hebben föhns en strijkijzers beschikbaar op aanvraag bij de receptie, zonder extra kosten. Je kunt ze altijd vragen wanneer we bij de receptie zijn. Als je klaar bent, laat ze dan gewoon in de kamer achter en we halen ze op tijdens de schoonmaak. Het is een gratis service voor alle gasten.",
+        "tags": [
+          "haar",
+          "haar drogen",
+          "strijken",
+          "strijkijzer",
+          "föhn"
+        ]
+      },
+      {
+        "q": "Wat is inbegrepen in de kamer?",
+        "a": "Alle kamers bevatten: volledig beddengoed (lakens, dekens, kussens, dekbed), handdoeken (1 of 2 per gast afhankelijk van kamertype en verblijfsduur), basismeubels (bed, nachtkastjes, kledingkast of kledingrek met hangers, bureau of werktafel, stoel) en een privébadkamer met beker, handzeep, douchegel en toiletpapier. Föhn en strijkijzer zijn op aanvraag beschikbaar zonder extra kosten. Er is geen koelkast, koffiezetapparaat of magnetron in de kamers.",
+        "links": [
+          {
+            "label": "Bekijk kamergalerij",
+            "url": "/galerij",
+            "icon": "image"
+          }
+        ]
+      },
+      {
+        "q": "Is er warm water?",
+        "a": "Ja, er is de hele dag warm water. In sommige kamers kan het even duren voordat het warm water aankomt, maar het zou niet meer dan 5 minuten moeten duren. Als je problemen hebt met warm water tijdens je verblijf, neem dan contact met ons op en we lossen het zo snel mogelijk op."
+      },
+      {
+        "q": "Wat zijn jullie prijzen?",
+        "a": "We zijn een budgethostal met de laagste prijzen in het centrum van Zamora. Tarieven variëren per seizoen en kamertype (eenpersoons, tweepersoons, met balkon). Weekenden en feestdagen kunnen iets duurder zijn door hogere vraag. We bieden korting voor lange verblijven (vanaf 11 nachten, automatisch 10% korting) en voor groepen. We raden altijd aan om via onze website te boeken, waar prijzen veel goedkoper zijn dan op Booking, Expedia of andere portalen.",
+        "links": [
+          {
+            "label": "Controleer prijzen en boek",
+            "url": "/reserveren",
+            "icon": "tag"
+          },
+          {
+            "label": "Contact via WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
+        ]
+      },
+      {
+        "q": "Is er korting voor een lang verblijf?",
+        "a": "Ja, vanaf 11 nachten ontvang je automatisch 10% korting op de totaalprijs. De korting geldt voor niet-restitueerbare tarieven. Als het niet correct werkt op de website, neem dan contact met ons op en we passen het handmatig toe. We bieden ook groepskortingen — als je reist met vrienden of familie, vraag ons.",
+        "links": [
+          {
+            "label": "Boek met korting",
+            "url": "/reserveren",
+            "icon": "calendar-check"
+          }
+        ]
+      },
+      {
+        "q": "Kan ik met een kaart betalen?",
+        "a": "Ja, we accepteren de belangrijkste creditcards en betaalkaarten: Visa, MasterCard, American Express en anderen. We accepteren ook contante betalingen en bankoverschrijvingen als dit meer dan een week van tevoren wordt geregeld. We accepteren geen cheques.",
+        "tags": [
+          "contant",
+          "visa",
+          "mastercard",
+          "creditcard",
+          "betaalkaart",
+          "betaalmethode",
+          "bankoverschrijving",
+          "betaling"
+        ]
+      },
+      {
+        "q": "Zijn extra bedden beschikbaar?",
+        "a": "Ja, beschikbaar op aanvraag voor 25€/nacht. Je kunt een extra bed toevoegen tijdens het boekingsproces op onze website door 3 volwassenen te selecteren, of neem contact met ons op om er een toe te voegen aan een bestaande reservering. We hebben in totaal 3 opklapbedden, dus de beschikbaarheid is beperkt en wordt op volgorde van aanvraag toegewezen. Maximum 1 opklapbed per kamer. Voor grote groepen raden we aan meerdere kamers te boeken.",
+        "tags": [
+          "wiegje",
+          "opklapbed",
+          "derde persoon",
+          "extra persoon",
+          "baby",
+          "slaapbank"
+        ],
+        "links": [
+          {
+            "label": "Boek met extra bed",
+            "url": "/reserveren",
+            "icon": "bed-double"
+          }
+        ]
+      },
+      {
+        "q": "Zijn jullie open op zondag en feestdagen?",
+        "a": "We zijn open op de meeste feestdagen, behalve 14–16 augustus, 15 december en 1 januari. De meeste zondagen zijn we gesloten, maar als je zaterdag aankomt kun je door de zondag en volgende dagen blijven zonder problemen, aangezien het uitchecken om 11:00 op de dag van vertrek is. Als je vragen hebt over een specifieke datum, neem dan contact met ons op.",
+        "links": [
+          {
+            "label": "Incheckgids",
+            "url": "/aankomst",
+            "icon": "calendar"
+          }
+        ]
+      },
+      {
+        "q": "Kan ik na 21:00 toegang krijgen?",
+        "a": "De incheckuren zijn 14:00–21:00 en het hostal sluit om 21:00 zonder uitzonderingen. Het is niet mogelijk om na 21:00 in te checken onder welke omstandigheid dan ook. Na het inchecken ontvang je echter een set sleutels (gebouw, hostal en kamer) zodat je 24 uur per dag kunt komen en gaan.",
+        "tags": [
+          "late aankomst",
+          "laat aankomen",
+          "nachttoegang",
+          "nacht inchecken",
+          "sleutels 24u"
+        ]
+      },
+      {
+        "q": "Is het hostal rustig?",
+        "a": "Het hostal heeft nieuwe ramen en jaloezieën geïnstalleerd in 2026 die de geluidsdemping van buitenaf aanzienlijk verbeteren. De isolatie tussen kamers is echter eenvoudig, dus sommige kamers kunnen luider zijn dan andere afhankelijk van de locatie. Als je een rustige kamer prefereert, laat het ons weten bij het boeken of tijdens het inchecken en we doen ons best om een geschikte kamer toe te wijzen. Als lawaai tijdens je verblijf een probleem wordt, kunnen we je verplaatsen naar een andere kamer indien beschikbaar, of oordopjes verstrekken.",
+        "tags": [
+          "lawaai",
+          "luidruchtig",
+          "oordopjes",
+          "slapen",
+          "geluidsdemping",
+          "buren"
+        ],
+        "links": [
+          {
+            "label": "Bekijk beschikbare kamers",
+            "url": "/galerij",
+            "icon": "building"
+          }
+        ]
+      },
+      {
+        "q": "Ik ben bij de receptie aangekomen en er is niemand. Wat doe ik?",
+        "a": "Bel eerst naar het telefoonnummer van het hostal: +34 980 533 152. Soms hebben we verplichtingen buiten de receptie of beantwoorden we andere telefoontjes of gasten. Belangrijk: bel gewoon — we accepteren geen WhatsApp-gesprekken. Als je na het bellen nog steeds niemand kunt bereiken, wacht dan een paar minuten en probeer het opnieuw. Onze openingstijden zijn 10:00–21:00.",
+        "links": [
+          {
+            "label": "Nu bellen",
+            "url": "tel:+34980533152",
+            "icon": "phone"
+          },
+          {
+            "label": "WhatsApp sturen",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
+        ]
+      },
+      {
+        "q": "Ik heb geprobeerd te bellen maar niemand neemt op.",
+        "a": "Controleer of je het juiste nummer hebt gebeld: +34 980 533 152. Soms hebben we veel gelijktijdige gesprekken en kunnen we niet allemaal beantwoorden. Probeer het over ca. 10 minuten opnieuw. Je kunt ons ook bereiken per e-mail op hostalsol{'@'}outlook.com of via WhatsApp op +34 639 980 253. Belangrijk: we accepteren geen WhatsApp-gesprekken — gebruik een gewoon telefoongesprek.",
+        "links": [
+          {
+            "label": "E-mail sturen",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          },
+          {
+            "label": "WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "Opnieuw bellen",
+            "url": "tel:+34980533152",
+            "icon": "phone"
+          }
+        ]
+      },
+      {
+        "q": "Ik had een noodgeval buiten openingstijden. Wat doe ik?",
+        "a": "Als je al in het hostal bent (je hebt de sleutels en bent binnen) en een ernstig noodgeval hebt zoals een waterlekkage, een elektrisch probleem of een situatie die onmiddellijke aandacht vereist, neem dan contact op met ons noodteam via het telefoonnummer dat bij het inchecken is verstrekt. Je moet 4 keer achter elkaar bellen zodat het personeel het kan horen. We verontschuldigen ons voor het ongemak en raden aan problemen te melden tijdens onze openingstijden (10:00–21:00). Als het probleem erg urgent is en je niet kunt wachten, zoek hulp op een veilige nabijgelegen locatie (winkel of café) en probeer het na een paar minuten opnieuw."
+      },
+      {
+        "q": "Ik wil boeken maar zie geen beschikbaarheid. Kunnen jullie helpen?",
+        "a": "Als de datum die je zoekt binnen de komende 2-3 maanden valt, is het waarschijnlijk volgeboekt. Controleer de website van tijd tot tijd voor eventuele annuleringen. We hebben momenteel geen algemene wachtlijst. Als het een zondag is, kun je proberen te bellen — sommige zondagen kunnen we uitzonderingen maken. Voor latere data is de beschikbaarheid mogelijk nog niet geopend; controleer de website of neem contact op. Soms maken we een wachtlijst voor veel gevraagde data zoals Pasen of de Zetta-concerten.",
+        "links": [
+          {
+            "label": "Controleer beschikbaarheid",
+            "url": "/reserveren",
+            "icon": "search"
+          },
+          {
+            "label": "Contact via WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
+        ]
+      },
+      {
+        "q": "Kan ik telefonisch boeken?",
+        "a": "We accepteren momenteel alleen vooruitbetaalde boekingen via onze website. We kunnen geen telefonische boekingen zonder betaling aannemen. We raden aan direct via onze website te boeken, waar je ook de beste gegarandeerde prijs krijgt. Als je problemen hebt met de online boekingsmotor, bel ons op +34 980 533 152 of +34 639 980 253 en we begeleiden je door het proces.",
+        "links": [
+          {
+            "label": "Online boeken",
+            "url": "/reserveren",
+            "icon": "credit-card"
+          },
+          {
+            "label": "Bel voor hulp",
+            "url": "tel:+34980533152",
+            "icon": "phone"
+          }
+        ]
+      },
+      {
+        "q": "Welke gegevens hebben jullie nodig voor een boeking?",
+        "a": "We hebben het volgende nodig: volledige naam, telefoonnummer, e-mailadres, een postadres en betalingsgegevens. Bij aankomst moeten alle gasten van 14 jaar en ouder een geldig identiteitsdocument overleggen (identiteitskaart, paspoort, NIE, TIE of EU-rijbewijs) conform Koninklijk Besluit 933/2021. Elke gast moet zijn eigen document tonen — niet alleen de boekinghouder.",
+        "links": [
+          {
+            "label": "Documentatievereisten",
+            "url": "/aankomst",
+            "icon": "file-text"
+          },
+          {
+            "label": "Nu boeken",
+            "url": "/reserveren",
+            "icon": "calendar-check"
+          }
+        ]
+      },
+      {
+        "q": "Wat als ik geen bevestigingsmail ontvang?",
+        "a": "Als je een boeking hebt gemaakt en geen bevestigingsmail ontvangt, neem dan contact met ons op per telefoon, e-mail of WhatsApp zodat we kunnen controleren of alles correct is. Er kan een technisch probleem zijn geweest en de boeking is mogelijk niet correct opgeslagen. We raden aan zo snel mogelijk contact op te nemen om beschikbaarheidsproblemen te vermijden. Controleer ook je spammap voor het geval de e-mail daar terecht is gekomen.",
+        "links": [
+          {
+            "label": "Contact via WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "E-mail sturen",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
+        ]
+      },
+      {
+        "q": "Kan ik een specifieke kamer aanvragen?",
+        "a": "Ja — laat het ons weten via bericht, WhatsApp of telefoon en we doen ons best om hem voor je te reserveren. We kunnen niet altijd een specifieke kamer garanderen, maar we proberen ons best op basis van beschikbaarheid. Hoe eerder je het ons laat weten, hoe groter de kans dat we aan je verzoek kunnen voldoen. Je kunt ook voorkeuren aangeven zoals verdieping, rustige kamer, enz.",
+        "links": [
+          {
+            "label": "Bekijk kamertypen",
+            "url": "/galerij",
+            "icon": "building"
+          }
+        ]
+      },
+      {
+        "q": "Hoe kan ik mijn boeking annuleren?",
+        "a": "Gratis annulering is mogelijk tot 48 uur voor aankomst, mits je tarief dit toestaat (sommige niet-restitueerbare tarieven staan geen annulering toe). Om te annuleren, gebruik de link in je boekingsbevestigingsmail of log in op je account op onze website. Terugbetalingen worden verwerkt via dezelfde betaalmethode als de boeking en duren doorgaans 5–15 werkdagen afhankelijk van je betaalmethode en financiële instelling. Als je via een andere website hebt geboekt (Booking, Expedia, enz.), moet je de annulering via dat platform regelen conform hun beleid.",
+        "tags": [
+          "terugbetaling",
+          "geld terug",
+          "boeking wijzigen",
+          "boeking veranderen",
+          "annuleringsbeleid",
+          "gratis annulering"
+        ],
+        "links": [
+          {
+            "label": "Ga naar je account",
+            "url": "/reserveren",
+            "icon": "user"
+          }
+        ]
+      },
+      {
+        "q": "Hoe vraag ik een factuur aan?",
+        "a": "Je kunt een factuur aanvragen vanaf de laatste dag van je verblijf tot 30 dagen na het uitchecken. Zorg er bij het boeken voor dat je alle benodigde facturatievelden invult (naam of bedrijfsnaam, btw-nummer, fiscaal adres). Als een specifiek veld niet beschikbaar is in het formulier, gebruik dan het opmerkingenveld. De factuur wordt per e-mail als PDF verzonden. We kunnen geen facturen uitstellen na de 30-dagenperiode na uitchecken.",
+        "tags": [
+          "bon",
+          "facturering",
+          "belasting",
+          "BTW",
+          "bedrijf",
+          "factuur",
+          "freelance"
+        ],
+        "links": [
+          {
+            "label": "Contact voor factuur",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
+        ]
+      },
+      {
+        "q": "Wat als ik iets vergeten ben in het hostal?",
+        "a": "Als je denkt iets in het hostal te hebben achtergelaten, neem dan zo snel mogelijk contact met ons op. We bewaren gevonden voorwerpen gedurende 30 dagen. Daarna worden niet-opgeëiste voorwerpen weggegooid of gerecycled. Als je het voorwerp naar een ander adres wilt laten sturen, neem contact op en we bereiden het voor op ophaling — houd er rekening mee dat het hostal op de 3e verdieping ligt en iemand omhoog moet komen om het op te halen. Wij regelen of betalen de verzending niet; je moet zelf contact opnemen met een koeriersdienst.",
+        "tags": [
+          "vergeten",
+          "achtergelaten",
+          "verloren voorwerp",
+          "gevonden voorwerpen",
+          "verzending",
+          "koerier",
+          "ophalen",
+          "vergeten telefoon",
+          "portemonnee",
+          "vergeten sleutels"
+        ],
+        "links": [
+          {
+            "label": "Contact via WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "E-mail sturen",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
+        ]
+      },
+      {
+        "q": "Het lijkt me duur. Hebben jullie kortingen?",
+        "a": "Onze prijzen zijn meestal de laagste in het centrum van Zamora. Als je denkt dat er een fout in de prijs zit, stuur ons een e-mail en we controleren het. We begrijpen ook dat onze faciliteiten eenvoudig zijn en sommige gasten meer kwaliteit willen door meer te betalen; als je niet tevreden bent, kun je andere accommodatie in Zamora zoeken. Voor lange verblijven (11+ nachten) bieden we automatisch 10% korting. We raden altijd aan om via onze website te boeken, waar we de goedkoopste prijzen bieden — veel goedkoper dan op Booking, Expedia of andere portalen.",
+        "links": [
+          {
+            "label": "Bekijk beste prijzen",
+            "url": "/reserveren",
+            "icon": "tag"
+          }
+        ]
+      },
+      {
+        "q": "Ik ben geïnteresseerd in boeken maar heb extra vragen. Hoe kan ik contact opnemen?",
+        "a": "Je kunt contact met ons opnemen per telefoon op +34 980 533 152, via WhatsApp op +34 639 980 253, of per e-mail op hostalsol{'@'}outlook.com. Als je ons schrijft en binnen 3 dagen geen reactie hebt ontvangen, neem dan opnieuw contact met ons op voor het geval het bericht verloren is gegaan. Onze telefonische openingstijden zijn 10:00–21:00. We accepteren geen WhatsApp-gesprekken — gebruik alleen gewone telefoongesprekken.",
+        "links": [
+          {
+            "label": "Nu bellen",
+            "url": "tel:+34980533152",
+            "icon": "phone"
+          },
+          {
+            "label": "WhatsApp sturen",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "E-mail sturen",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
+        ]
+      },
+      {
+        "q": "Is roken toegestaan?",
+        "a": "Roken is ten strengste verboden in het hele hostal, inclusief kamers, ramen, terrassen en gemeenschappelijke ruimtes. Overtredingen resulteren in een boete van 100€–1.000€ voor reiniging en deodorisering van de kamer. Het aansteken van vuur en het gebruik van kaarsen of wierook is ook niet toegestaan in het hostal.",
+        "tags": [
+          "sigaret",
+          "roken",
+          "vapen",
+          "tabak",
+          "kaars",
+          "wierook",
+          "vuur"
+        ]
+      },
+      {
+        "q": "Kan ik mijn fiets bewaren?",
+        "a": "Ja, je kunt je fiets in je eigen kamer bewaren zolang hij schoon is (geen modder of vuil dat kan bevlekken). We raden aan ons van tevoren te laten weten zodat we je indien mogelijk een grotere kamer kunnen toewijzen. De lift is klein, dus je moet de fiets mogelijk de trap op dragen als de fiets groot is.",
+        "tags": [
+          "fiets",
+          "fietsen",
+          "fietser",
+          "e-bike",
+          "mountainbike",
+          "elektrische fiets",
+          "fiets bewaren"
+        ]
+      },
+      {
+        "q": "Ik ben geïnteresseerd in een lang verblijf. Hebben jullie speciale voorwaarden?",
+        "a": "Ja, vanaf 11 nachten bieden we automatisch 10% korting op de totaalprijs. De korting geldt voor niet-restitueerbare tarieven. We kunnen ook speciale voorwaarden bespreken voor groepen of zeer lange verblijven — neem contact met ons op en we beoordelen het. Als de korting niet automatisch op de website wordt toegepast, schrijf ons dan en we helpen je.",
+        "links": [
+          {
+            "label": "Boek lang verblijf",
+            "url": "/reserveren",
+            "icon": "calendar-check"
+          }
+        ]
+      },
+      {
+        "q": "Welke talen spreken jullie in het hostal?",
+        "a": "Het personeel van het hostal spreekt uitsluitend Spaans. Als je in een andere taal wilt communiceren, stuur ons een bericht via WhatsApp of e-mail en we gebruiken online vertalers om je te helpen. Wanneer je aankomt, verbind je met de gratis WiFi van het hostal en gebruik je een online vertaler op je telefoon — Google Translate, DeepL en Bing Translator werken allemaal goed.",
+        "tags": ["taal", "spaans", "engels", "frans", "duits", "chinees", "arabisch", "russisch", "italiaans", "speak", "communicatie", "vertalen"],
+        "links": [
+          { "label": "Google Translate", "url": "https://translate.google.com/", "icon": "languages" },
+          { "label": "DeepL Vertaler", "url": "https://www.deepl.com/translator", "icon": "languages" },
+          { "label": "Bing Translator", "url": "https://www.bing.com/translator", "icon": "languages" },
+          { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" },
+          { "label": "E-mail", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }
+        ]
+      },
+      {
+        "q": "Kan ik een reservering maken voor iemand anders?",
+        "a": "We raden het niet aan. De veiligste aanpak is dat elke gast boekt op zijn eigen naam, zodat alle vereiste gegevens (volledige naam en telefoonnummer) correct worden geregistreerd. Als je voor een andere persoon boekt, laat dan een opmerking achter in de reservering met diens volledige naam en telefoonnummer, en zorg ervoor dat die persoon het online inchecken voltooit met zijn eigen gegevens. De reserveringsscode alleen is niet voldoende — we moeten verifiëren dat de aankomende persoon bevoegd is om de reservering te gebruiken. Screenshots worden niet geaccepteerd als bewijs van reservering, omdat we de authenticiteit ervan niet kunnen verifiëren.",
+        "tags": ["reservering voor iemand anders", "derde partij", "boekingsnaam", "beveiliging", "verificatie", "screenshot", "boeken voor iemand"],
+        "links": [
+          { "label": "Incheckgids", "url": "/aankomst", "icon": "file-text" },
+          { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }
+        ]
+      }
+    ]
+  },
+  "reserve": {
+    "title": "Boek je verblijf",
+    "sub": "Beste prijs gegarandeerd bij boeking op onze website",
+    "discountNum": "−15%",
+    "discountLabel": "Korting",
+    "discountNote": "Alleen op onze website",
+    "note": "Directe prijs — altijd goedkoper dan Booking, Expedia of andere portalen.",
+    "features": [
+      "Veilige betaling",
+      "Directe bevestiging",
+      "Beste prijs gegarandeerd",
+      "Gratis annulering 48u"
+    ],
+    "bookBtn": "Ga naar boekingsmotor",
+    "helpText": "Problemen met de boekingsmotor?",
+    "helpLink": "Ga naar de volledige boekingspagina →"
+  },
+  "contact": {
+    "title": "Contact",
+    "heading": "Schrijf ons of bel ons",
+    "address": "Calle Benavente, 2 — 3e verdieping · C.P. 49014 Zamora",
+    "phone1": "+34 980 533 152",
+    "phone2": "+34 639 980 253",
+    "email": "hostalsol{'@'}outlook.com",
+    "hours": "Ma–Za · 10:00–21:00",
+    "stayInfo": "Verblijfinformatie",
+    "checkin": "Inchecken",
+    "checkinVal": "14:00 – 21:00",
+    "checkout": "Uitchecken",
+    "checkoutVal": "Tot 11:00",
+    "attention": "Openingstijden",
+    "attentionVal": "Ma–Za 10–21u",
+    "sunday": "Zondag",
+    "sundayVal": "Gesloten",
+    "pets": "Huisdieren",
+    "petsVal": "Huisdieren welkom",
+    "petNote": "Beschikbaarheid en toeslag controleren",
+    "floor": "Verdieping",
+    "floorVal": "3e · CP 49014"
+  },
+  "footer": {
+    "rights": "Alle rechten voorbehouden",
+    "terms": "Algemene voorwaarden",
+    "cookies": "Cookiebeleid",
+    "family": "Familiebedrijf sinds 1975",
+    "reserveCta": "Boek met −15% →"
+  },
+  "search": {
+    "noResults": "Geen resultaten voor",
+    "searchInFaq": "Zoek in alle FAQ-vragen",
+    "catPage": "Pagina",
+    "catRoom": "Kamer",
+    "catFaq": "FAQ",
+    "catParking": "Parkeren",
+    "catContact": "Contact",
+    "catCheckin": "Aankomst",
+    "catAbout": "Hostal",
+    "catBooking": "Boekingen",
+    "room": "Kamer",
+    "roomDesc": "Privébadkamer · 3e verdieping",
+    "entrance": "Ingang / Receptie"
+  },
+  "pages": {
+    "home": {
+      "title": "Hostal Sol Zamora — Jouw thuis in Zamora",
+      "description": "Eenvoudig, centraal gelegen hostal in Zamora — jouw thuis wanneer je het nodig hebt."
+    },
+    "faq": {
+      "title": "Veelgestelde Vragen — Hostal Sol Zamora",
+      "description": "Alles wat je moet weten voor aankomst: openingstijden, inchecken en huisregels.",
+      "heading": "Alles wat je moet weten voor aankomst",
+      "lead": "We hebben de meest gestelde vragen van onze gasten verzameld. Als je niet kunt vinden wat je zoekt, neem dan contact met ons op:",
+      "searchPlaceholder": "Zoek een vraag...",
+      "noResults": "Geen vragen gevonden voor je zoekopdracht.",
+      "backHome": "← Terug naar home"
+    },
+    "parking": {
+      "title": "Parkeergids — Hostal Sol Zamora",
+      "description": "Het hostal heeft geen eigen parkeerplaats, maar we laten je zien hoe je er komt en waar je kunt parkeren.",
+      "heading": "Parkeren bij Hostal Sol Zamora",
+      "lead": "Het hostal heeft geen eigen parkeerplaats, maar we bevinden ons in het historische centrum met verschillende opties vlakbij.",
+      "addressCard": {
+        "title": "Adres van het hostal",
+        "address": "Calle Benavente, 2 – 3e verdieping (2 liften) · 49014 Zamora",
+        "tip": "Hoewel het een voetgangerszone is, staat de gemeente Zamora voertuigtoegang toe voor hostal-gasten via Calle San Miguel om bagage af te zetten."
+      },
+      "carAccess": "Toegang per auto of motor",
+      "carAccessDesc": "Je kunt het hostal per auto of motor bereiken via Calle San Miguel. Hoewel het een voetgangerszone is, staat de gemeente gasttoegang toe voor het afzetten van bagage. Zodra je gelost hebt, parkeer dan bij een van de onderstaande opties.",
+      "streetParking": "Parkeren op straat",
+      "undergroundParking": "Ondergrondse parkeergarages",
+      "constitParking": "Parkeergarage Plaza Constitución — 24u 14,70€ · 1,45€/u · Tel. 980 53 72 08",
+      "marinaParking": "Parkeergarage La Marina — Online boeken op empark.com",
+      "backHome": "← Terug naar home",
+      "checkinLink": "Bekijk incheckgids →",
+      "streetParkingDesc": "Parkeren op straat: gereguleerde blauwe zone (ORA) en gratis zones. Controleer tijden en tarieven.",
+      "undergroundParkingDesc": "Overdekte ondergrondse parkeergarages met 24-uurs toegang.",
+      "navigate": "Navigeren",
+      "web": "Website",
+      "streetSpots": [
+        {
+          "name": "ORA-zone (gereguleerd straatparkeren)",
+          "price": "0,35€/30min",
+          "walk": "1 min. lopen",
+          "note": "Ma-Vr 9-14u en 16-20u, Za 9-14u. Gratis za-middag, zo en feestdagen. Max. 3u aaneengesloten. 30 min: 0,35€ | 1u: 0,70€ | 2u: 1,40€ | 3u: 2,10€.",
+          "mapsUrl": "https://www.google.com/maps/dir//Calle+Benavente+Zamora",
+          "free": false
+        },
+        {
+          "name": "Treinstation (gratis)",
+          "price": "Gratis",
+          "walk": "2 km (bus L3)",
+          "note": "Gratis parkeren 24u. Buslijn 3 naar halte \"Mercado\" (5 min. lopen van het hostal).",
+          "mapsUrl": "https://www.google.com/maps/dir//Estacion+de+Ferrocarril+Zamora",
+          "free": true
+        },
+        {
+          "name": "Plaza de Cristo Rey / Villalpando",
+          "price": "Gratis",
+          "walk": "10 min. lopen",
+          "note": "Gratis parkeren nabij het centrum, maar chronisch vol met bewonersauto's.",
+          "mapsUrl": "https://www.google.com/maps/dir//Plaza+de+Cristo+Rey+Zamora",
+          "free": true
+        },
+        {
+          "name": "Calle los Pelambres",
+          "price": "Gratis",
+          "walk": "20 min. lopen",
+          "note": "Zandige esplanade langs de rivier de Duero met panoramisch uitzicht. Niet aanbevolen met bagage.",
+          "mapsUrl": "https://www.google.com/maps/dir//Calle+los+Pelambres+Zamora",
+          "free": true
+        }
+      ],
+      "undergroundSpots": [
+        {
+          "name": "Parkeergarage Plaza de la Constitución",
+          "price": "14,70€/24u",
+          "walk": "3 min. lopen",
+          "details": "1,45€/u · 24u · Iberpark · Tel. 980 53 72 08 · info{'@'}iberpark.es",
+          "mapsUrl": "https://www.google.com/maps/dir//Plaza+de+la+Constitucion+Zamora"
+        },
+        {
+          "name": "Parkeergarage Plaza de la Marina Española",
+          "price": "19,45€/dag",
+          "walk": "5 min. lopen",
+          "details": "Vanaf 2,35€/fractie. Empark/Telpark. EV-opladen, geldautomaten en CCTV. Geen lift.",
+          "mapsUrl": "https://www.google.com/maps/dir//Plaza+de+la+Marina+Española+Zamora",
+          "webUrl": "https://www.empark.com"
+        },
+        {
+          "name": "Parkeergarage Parque de San Martín",
+          "price": "Gereduceerd tarief",
+          "walk": "8 min. lopen",
+          "details": "Beheerd door Iberpark. Onlangs verlaagde tarieven.",
+          "mapsUrl": "https://www.google.com/maps/dir//Parque+San+Martin+Zamora"
+        }
+      ]
+    },
+    "reserva": {
+      "title": "Boeken — Hostal Sol Zamora",
+      "description": "Boek direct met 15% korting ten opzichte van elk extern kanaal.",
+      "heading": "Boek je verblijf",
+      "discountLabel": "15% korting bij boeking op onze website",
+      "discountSub": "Directe prijs — altijd goedkoper dan Booking, Expedia of andere portalen",
+      "features": [
+        "Directe bevestiging",
+        "Veilige betaling",
+        "Beste prijs gegarandeerd",
+        "Gratis annulering tot 48u van tevoren*"
+      ],
+      "iframeTitle": "Boekingsmotor Hostal Sol Zamora",
+      "troubleText": "Problemen met de boekingsmotor? Bel ons op",
+      "backHome": "← Terug naar home",
+      "iframeFallback": "Als de boekingsmotor hierboven niet verschijnt, klik dan hier om het direct te openen."
+    },
+    "checkin": {
+      "title": "Hoe Aanreizen & Inchecken — Hostal Sol Zamora",
+      "description": "Stap-voor-stap aanrijgids: locatie, vereiste documenten en het incheckproces.",
+      "heading": "Hoe aanreizen en inchecken",
+      "lead": "Een stap-voor-stap gids voor het bereiken van het hostal en het voorbereiden van de wettelijk vereiste documenten.",
+      "beforeTitle": "Voor aankomst",
+      "beforeHours": "Zorg ervoor dat je voor 20:50 bij het hostal kunt aankomen. Het hostal sluit na dat tijdstip.",
+      "beforeCheckin": "Registreer je met Chekin: je ontvangt een link om je te registreren op Chekin, waar je je identiteitsdocument (identiteitskaart, paspoort, enz.) kunt fotograferen en alle benodigde gegevens kunt insturen. We hebben informatie nodig van alle gasten conform Koninklijk Besluit 933/2021.",
+      "beforeLuggage": "Je kamer is klaar om 14:00. Als je eerder aankomt, kunnen we je bagage tot die tijd bewaren.",
+      "arrivalTitle": "Aankomst bij het hostal",
+      "steps": [
+        {
+          "title": "Ga naar Calle Benavente 2",
+          "desc": "Je kunt te voet, per taxi of per auto aankomen. Als je per auto komt, houd dan rekening met de parkeeroptie — je kunt via Calle San Miguel toegang krijgen om bagage af te zetten.",
+          "link": "/parkeren",
+          "linkText": "Bekijk parkeeropties"
+        },
+        {
+          "title": "Ga het gebouw in",
+          "desc": "De deur staat meestal open — duw hem open. Als hij op slot zit, bel dan aan op de derde verdieping via het paneel rechts, of bel ons direct.",
+          "link": null,
+          "linkText": null
+        },
+        {
+          "title": "Ga naar de derde verdieping",
+          "desc": "Je kunt een van de 2 liften nemen of de trap.",
+          "link": null,
+          "linkText": null
+        },
+        {
+          "title": "Vind ons",
+          "desc": "We zijn hier. Druk op de bel en we helpen je. Als na twee minuten niemand verschijnt, bel ons telefoonnummer. Let op: gebruik gewone gesprekken — WhatsApp- of VoIP-gesprekken worden niet gemonitord.",
+          "link": null,
+          "linkText": null
+        }
+      ],
+      "arrivalInfoTitle": "Bij de receptie",
+      "arrivalInfo": "Het personeel controleert je reservering. Je kunt voor eventuele extra's betalen (extra bedden, wiegjes, extra dagen, enz.). De identiteitsbewijzen van alle gasten worden gecontroleerd — als je online hebt ingecheckt via Chekin, verloopt dit veel sneller. Het personeel legt ook uit hoe je de sleutels gebruikt om op elk gewenst moment toegang te krijgen tot het hostal. Als je een föhn of strijkijzer nodig hebt, is dit het moment om dit aan te vragen. Je ontvangt 3 sleutels met uitleg over het gebruik ervan voor toegang tot het gebouw, het hostal en je kamer.",
+      "roomTitle": "In je kamer",
+      "roomInfo": "Je vindt instructies over het verbinden met WiFi, de vertrektijd en de huisregels: roken is ten strengste verboden (boetes tot 1.000€ voor reiniging kunnen worden opgelegd), evenals het aansteken van vuur of het maken van lawaai 's nachts.",
+      "checkoutTitle": "Uitchecken",
+      "checkoutInfo": "Laat je sleutels achter in de brievenbus in de gang voor de liften. Verlaat de kamer alsjeblieft voor 11:00 zodat het schoonmaakteam genoeg tijd heeft. We kunnen ook je bagage bewaren gedurende de dag van vertrek (behalve zondag) — neem contact met ons op en we regelen het.",
+      "docsTitle": "Vereiste documentatie (K.B. 933/2021)",
+      "docsIntro": "Op grond van Koninklijk Besluit 933/2021 moeten we de gegevens van alle gasten van 14 jaar en ouder registreren en deze doorgeven aan de Veiligheidsdiensten en het INE (Instituto Nacional de Estadística).",
+      "docsBoe": "Bekijk de BOE-regelgeving",
+      "ctaTitle": "Online inchecken met Chekin — snellere aankomst",
+      "ctaDesc": "Door online in te checken voor aankomst verloopt het receptieproces veel sneller. We waarderen dit enorm!",
+      "ctaBtn": "Online inchecken",
+      "docTypes": [
+        {
+          "name": "Identiteitskaart (DNI / IDESP)",
+          "fields": [
+            "Documentnummer",
+            "Ondersteuningsnummer",
+            "Vervaldatum",
+            "Geboortedatum",
+            "Geslacht",
+            "Volledige naam",
+            "Nationaliteit"
+          ]
+        },
+        {
+          "name": "Paspoort",
+          "fields": [
+            "Paspoortnummer",
+            "Volledige MRZ-regel",
+            "Uitgiftedatum",
+            "Vervaldatum",
+            "Nationaliteit",
+            "Volledige naam"
+          ]
+        },
+        {
+          "name": "NIE / TIE",
+          "fields": [
+            "NIE/TIE-nummer",
+            "Ondersteuningsnummer",
+            "Vervaldatum"
+          ]
+        },
+        {
+          "name": "EU-rijbewijs",
+          "fields": [
+            "Rijbewijsnummer",
+            "Achternaam en naam"
+          ]
+        }
+      ],
+      "backHome": "← Terug naar home",
+      "docFields": [
+        "Volledige naam",
+        "Achternamen",
+        "Documenttype (Identiteitskaart / Paspoort / NIE / Verblijfsvergunning)",
+        "Documentnummer",
+        "Ondersteuningsnummer / serienummer (indien van toepassing)",
+        "Uitgiftedatum",
+        "Vervaldatum",
+        "Geboortedatum",
+        "Geboorteland",
+        "Land van verblijf",
+        "Autonome Gemeenschap (indien Spanje)",
+        "Nationaliteit",
+        "Geslacht",
+        "Contact-e-mail",
+        "Contacttelefoonnummer"
+      ],
+      "ineNote": "INE — Toerismestatieken: Op grond van de Wet op de Openbare Statistische Functie vereist het Nationaal Statistisch Instituut (INE) het herkomstland of de autonome gemeenschap van elke gast voor het samenstellen van nationale toerismestatieken. Deze gegevens worden anoniem en geaggregeerd doorgegeven."
+    },
+    "galeria": {
+      "tag": "Galerij",
+      "title": "Kamergalerij — Hostal Sol Zamora",
+      "heading": "Kamergalerij",
+      "description": "Echte foto's en video's van elke kamer — geen filters, geen enscenering.",
+      "p1": "Bij Hostal Sol Zamora geloven we dat eerlijkheid de beste introductie is. Hier vind je echte foto's en video's van onze kamers — geen enscenering, geen verrassingen — zodat je met vol vertrouwen kunt boeken.",
+      "p2": "Verken elk kamertype: bedmaat, indeling, meubels, uitzicht en inbegrepen voorzieningen. De video's laten je de ruimte doorlopen alsof je er al bent.",
+      "p3": "Vragen over een specifieke kamer? Schrijf of bel ons — we helpen je graag de beste optie voor je verblijf te kiezen.",
+      "p4": "Foto's gemaakt in 2024 · Video's opgenomen in 2026. We hebben sindsdien verbeteringen aangebracht, maar de stijl en indeling zijn hetzelfde gebleven."
+    },
+    "sobreNosotros": {
+      "tag": "Over ons",
+      "title": "Over Ons · Warmte, rust en familiegevoel — Hostal Sol Zamora",
+      "description": "Meer dan 50 jaar gastvrijheid in Zamora, van Pensión Padornelo tot Hostal Sol.",
+      "heading": "Een gastvrij hostal gerund door mensen die houden van wat ze doen",
+      "intro1": "Welkom in ons huis — een ander, modern, fris huis dat je de rust wil geven die je verdient in een warme en stille sfeer. Reizigers van over de hele wereld zijn door onze deuren gekomen, en iedereen heeft zijn spoor achtergelaten.",
+      "intro2": "Sinds 2023 wordt Hostal Sol gerund door een familie met meer dan 50 jaar ervaring in de horeca. We hebben verandering, onervaring en angst meegemaakt. Na veel moeite en werk — en een pandemie die alles tot stilstand bracht — hebben we het hostal vooruitgebracht en alles gegeven wat het verdiende, lerend van elke gast die bij ons heeft verbleven.",
+      "intro3": "Toen de kamers leeg waren, gingen we aan de slag met renoveren. We schilderden en herontwierpen elke kamer in een Scandinavisch-minimalistische stijl, waarbij rust, nabijheid en comfort de kernwaarden zijn.",
+      "philosophyTag": "Merkfilosofie",
+      "philosophyTitle": "Warmte, rust en familiegevoel",
+      "philosophyBody": "Onze filosofie rust op drie pijlers: nabijheid, rust en familiegevoel. We brengen die filosofie door in elk detail, vanaf het moment dat je aankomt totdat je weer vertrekt. Onze zorg is persoonlijk, respectvol voor jouw ruimte en smaak, en altijd gericht op jouw rust. Elke reiziger is op zijn eigen pad — we willen jouw rustige hoek zijn in het hart van een prachtige stad als Zamora.",
+      "homeTag": "Een plek om je thuis te voelen",
+      "homeTitle": "Comfortabel, betaalbaar en zorgeloos",
+      "homeBody1": "Ons hostal is de perfecte plek voor reizigers die op zoek zijn naar een comfortabel, zorgeloos verblijf. Eenvoudige, uitnodigende kamers met alles wat je nodig hebt: kwaliteitsbeddengoed, zachte handdoeken, privébadkamer met douche en gratis Wi-Fi in het hele hostal.",
+      "homeBody2": "Bij de receptie helpen we je graag met informatie over bezienswaardigheden in de buurt, de beste restaurants en bars in de omgeving, en eventuele vragen tijdens je verblijf.",
+      "locationTag": "Onverslaanbare locatie",
+      "locationTitle": "In het hart van Zamora",
+      "locationBody": "We hebben het geluk op een ongelooflijke locatie te zijn: midden in het centrum van Zamora, tussen de twee hoofdstraten en op 3 minuten lopen van de Plaza Mayor en de historische binnenstad. Je kunt te voet genieten van de geschiedenis en cultuur van de stad zonder de auto te nemen. Bars, restaurants en parkeerplaatsen zijn vlakbij — zonder de rust van een kleine straat te verliezen.",
+      "historyTag": "Meer dan 50 jaar geschiedenis",
+      "historyTitle": "Pensión Padornelo · Hostal Sol",
+      "historyBody1": "Onze geschiedenis begint in 1975, toen de familie Pensión Padornelo opende in de Calle Aire in Zamora. Jarenlang was dat familiepension een referentiepunt voor reizigers die in de stad aankwamen.",
+      "historyBody2": "In de loop der tijd werd Hostal Sol geboren in Calle Benavente, samen met Restaurante Padornelo, een eerbetoon aan de oorspronkelijke naam. Meer dan 50 jaar gastvrijheidsgeschiedenis staat achter elk verblijf.",
+      "ctaReserve": "Nu boeken",
+      "ctaContact": "Neem contact op"
+    },
+    "contacto": {
+      "tag": "Contact",
+      "title": "Contact — Hostal Sol Zamora",
+      "description": "Bel ons, stuur een WhatsApp of e-mail — we zijn er om je te helpen.",
+      "heading": "Laten we praten",
+      "lead": "We beantwoorden graag vragen. Bel ons, stuur een WhatsApp-bericht, een e-mail of gebruik het formulier hieronder — we reageren zo snel mogelijk.",
+      "infoTitle": "Contactgegevens",
+      "addressLabel": "Adres",
+      "addressVal": "Calle Benavente, 2 — 3e verdieping · 49014 Zamora",
+      "phoneLabel": "Telefoons",
+      "emailLabel": "E-mail",
+      "whatsappLabel": "WhatsApp",
+      "hoursLabel": "Openingstijden",
+      "hoursReceptionLabel": "Receptie",
+      "hoursReceptionVal": "14:00 – 21:00",
+      "hoursPhoneLabel": "Telefonische openingstijden",
+      "hoursPhoneVal": "10:00 – 21:00",
+      "mapBtn": "Vind ons op de kaart",
+      "distancesTitle": "Afstanden van het hostal",
+      "distances": [
+        {
+          "name": "Treinstation",
+          "value": "1,2 km · 15 min lopen"
+        },
+        {
+          "name": "Busstation",
+          "value": "1 km · 13 min lopen"
+        },
+        {
+          "name": "Plaza Mayor / Historische stad",
+          "value": "450 m · 5 min lopen"
+        },
+        {
+          "name": "Parkeergarage La Marina",
+          "value": "400 m · 4 min lopen"
+        },
+        {
+          "name": "Parkeergarage Constitución",
+          "value": "260 m · 2 min lopen"
+        },
+        {
+          "name": "Salamanca",
+          "value": "67 km · 48 min per auto"
+        },
+        {
+          "name": "Valladolid",
+          "value": "101 km · 1u 11 min per auto"
+        }
+      ],
+      "formTitle": "Stuur ons een bericht",
+      "formIntro": "Vul het formulier in en we reageren per e-mail. Voor een snelle reactie is bellen of WhatsApp het beste.",
+      "fName": "Naam",
+      "fEmail": "E-mail",
+      "fSubject": "Onderwerp",
+      "fMessage": "Bericht",
+      "fAccept": "Ik accepteer het",
+      "fAcceptLink": "privacybeleid",
+      "fSend": "Bericht verzenden",
+      "fOpenMail": "Openen in mijn e-mailclient",
+      "fSent": "Bedankt! Je bericht is klaargemaakt in je e-mailclient. Als het niet opent, schrijf ons direct op hostalsol{'@'}outlook.com.",
+      "parkingNote": "Als je vraag over parkeren gaat, hebben we een volledige gids met alle nabijgelegen opties:",
+      "parkingLink": "Bekijk parkeergids →"
+    }
+  }
+}

@@ -112,9 +112,26 @@
 const { t, tm, rt } = useI18n()
 const localePath = useLocalePath()
 
-useHead({
-  title: computed(() => t('pages.parking.title')),
-  meta: [{ name: 'description', content: computed(() => t('pages.parking.description')) as any }],
+useSeo({
+  title:       computed(() => t('pages.parking.title')),
+  description: computed(() => t('pages.parking.description')),
+  type:        'article',
+})
+
+defineOgImage('HostalSol', {
+  title:    t('ogImage.parking.title'),
+  subtitle: t('pages.parking.description'),
+})
+
+const cfg     = useRuntimeConfig()
+const siteUrl = (cfg.public.siteUrl as string).replace(/\/$/, '')
+useJsonLd({
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: t('nav.home'),    item: `${siteUrl}/` },
+    { '@type': 'ListItem', position: 2, name: t('nav.parking'), item: `${siteUrl}${localePath('parking')}` },
+  ],
 })
 
 const hostalNavApps = [

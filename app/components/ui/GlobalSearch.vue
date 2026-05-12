@@ -1,11 +1,17 @@
 <template>
   <div class="gsearch" ref="container">
-    <button class="gsearch__trigger" :class="{ 'gsearch__trigger--dark': solid }" @click="open = !open" :aria-label="t('nav.search')">
+    <button
+      class="gsearch__trigger"
+      :class="{ 'gsearch__trigger--dark': solid }"
+      @click="open = !open"
+      :aria-label="t('nav.search')"
+      :title="`${t('nav.search')} (Ctrl+K)`"
+    >
       <LucideIcon name="search" :size="17" :color="solid ? 'var(--dark)' : 'rgba(255,255,255,0.9)'" />
     </button>
 
     <Transition name="gsearch-drop">
-      <div v-if="open" class="gsearch__panel">
+      <div v-if="open" class="gsearch__panel" role="dialog" :aria-label="t('nav.search')">
         <div class="gsearch__input-wrap">
           <LucideIcon name="search" :size="15" color="var(--dark-muted)" class="gsearch__icon" />
           <input
@@ -14,11 +20,13 @@
             type="search"
             :placeholder="t('nav.searchPlaceholder')"
             class="gsearch__input"
+            autocomplete="off"
             @keydown.escape="close"
             @keydown.down.prevent="moveDown"
             @keydown.up.prevent="moveUp"
             @keydown.enter.prevent="selectActive"
           />
+          <kbd class="gsearch__esc">ESC</kbd>
           <button class="gsearch__close" @click="close">
             <LucideIcon name="x" :size="14" color="var(--dark-muted)" />
           </button>
@@ -40,11 +48,17 @@
         </div>
 
         <div v-else-if="query.length >= 2" class="gsearch__empty">
-          Sin resultados para "<strong>{{ query }}</strong>"
+          {{ t('search.noResults') }} "<strong>{{ query }}</strong>"
         </div>
 
         <div v-else class="gsearch__hint">
-          Busca habitaciones, servicios, dudas...
+          {{ t('nav.searchPlaceholder') }}
+        </div>
+
+        <div v-if="query.length >= 2" class="gsearch__footer">
+          <NuxtLink :to="`/faq?q=${encodeURIComponent(query)}`" class="gsearch__allfaq" @click="close">
+            {{ t('search.searchInFaq') }} →
+          </NuxtLink>
         </div>
       </div>
     </Transition>
@@ -58,8 +72,8 @@ const props = defineProps<{ solid?: boolean }>()
 const { t } = useI18n()
 const { search } = useSearch()
 
-const open     = ref(false)
-const query    = ref('')
+const open      = ref(false)
+const query     = ref('')
 const activeIdx = ref(0)
 const container = ref<HTMLElement | null>(null)
 const inputEl   = ref<HTMLInputElement | null>(null)
@@ -71,13 +85,13 @@ watch(query, () => { activeIdx.value = 0 })
 watch(open, (v) => {
   if (v) {
     nextTick(() => inputEl.value?.focus())
-    query.value = ''
+    query.value  = ''
     activeIdx.value = 0
   }
 })
 
 function close() {
-  open.value = false
+  open.value  = false
   query.value = ''
 }
 
@@ -97,11 +111,21 @@ function selectActive() {
 }
 
 onMounted(() => {
-  const handler = (e: MouseEvent) => {
+  const onClickOutside = (e: MouseEvent) => {
     if (container.value && !container.value.contains(e.target as Node)) close()
   }
-  document.addEventListener('mousedown', handler)
-  onUnmounted(() => document.removeEventListener('mousedown', handler))
+  const onGlobalKey = (e: KeyboardEvent) => {
+    if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+      e.preventDefault()
+      open.value = !open.value
+    }
+  }
+  document.addEventListener('mousedown', onClickOutside)
+  document.addEventListener('keydown', onGlobalKey)
+  onUnmounted(() => {
+    document.removeEventListener('mousedown', onClickOutside)
+    document.removeEventListener('keydown', onGlobalKey)
+  })
 })
 </script>
 
@@ -127,7 +151,7 @@ onMounted(() => {
   position: absolute;
   top: calc(100% + 10px);
   right: 0;
-  width: 380px;
+  width: 420px;
   background: #fff;
   border-radius: 14px;
   box-shadow: 0 8px 40px rgba(0,0,0,0.14);
@@ -165,8 +189,21 @@ onMounted(() => {
   font-size: 14px;
   color: var(--dark);
   background: none;
+  min-width: 0;
 }
 .gsearch__input::placeholder { color: var(--dark-muted); }
+
+.gsearch__esc {
+  font-size: 10px;
+  color: var(--dark-muted);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 2px 5px;
+  font-family: inherit;
+  flex-shrink: 0;
+  cursor: default;
+  user-select: none;
+}
 
 .gsearch__close {
   background: none;
@@ -178,7 +215,7 @@ onMounted(() => {
 }
 
 .gsearch__results {
-  max-height: 320px;
+  max-height: 380px;
   overflow-y: auto;
 }
 
@@ -224,6 +261,10 @@ onMounted(() => {
   font-size: 12px;
   color: var(--dark-muted);
   line-height: 1.4;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .gsearch__empty,
@@ -232,6 +273,19 @@ onMounted(() => {
   font-size: 13.5px;
   color: var(--dark-muted);
 }
+
+.gsearch__footer {
+  border-top: 1px solid var(--border);
+  padding: 10px 14px;
+}
+
+.gsearch__allfaq {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--green);
+  text-decoration: none;
+}
+.gsearch__allfaq:hover { text-decoration: underline; }
 
 /* Transition */
 .gsearch-drop-enter-active,

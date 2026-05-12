@@ -1,5 +1,5 @@
 # Stage 1: Build
-FROM node:20-slim AS build-stage
+FROM --platform=$BUILDPLATFORM node:20-slim AS build-stage
 
 WORKDIR /app
 
@@ -15,6 +15,9 @@ RUN npm run generate
 
 # Stage 2: Serve
 FROM nginx:stable-alpine AS production-stage
+
+# Copy custom nginx configuration
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Copy static files from build stage
 # Nuxt generate output is in .output/public

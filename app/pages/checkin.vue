@@ -166,10 +166,45 @@
 import type { CheckinStep } from '~/types'
 const { t, tm, rt } = useI18n()
 
-useHead({
-  title: computed(() => t('pages.checkin.title')),
-  meta: [{ name: 'description', content: computed(() => t('pages.checkin.description')) as any }],
+useSeo({
+  title:       computed(() => t('pages.checkin.title')),
+  description: computed(() => t('pages.checkin.description')),
+  type:        'article',
 })
+
+defineOgImage('HostalSol', {
+  title:    t('ogImage.checkin.title'),
+  subtitle: t('pages.checkin.description'),
+})
+
+const cfg      = useRuntimeConfig()
+const siteUrl  = (cfg.public.siteUrl as string).replace(/\/$/, '')
+const localePath = useLocalePath()
+
+const howToSteps = (tm('pages.checkin.steps') as any[]).map((s: any, i: number) => ({
+  '@type': 'HowToStep',
+  position: i + 1,
+  name: rt(s.title),
+  text: rt(s.desc),
+}))
+
+useJsonLd([
+  {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: t('pages.checkin.title'),
+    description: t('pages.checkin.description'),
+    step: howToSteps,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: t('nav.home'),    item: `${siteUrl}/` },
+      { '@type': 'ListItem', position: 2, name: t('nav.checkin'), item: `${siteUrl}${localePath('checkin')}` },
+    ],
+  },
+])
 
 const docFields = computed(() =>
   (tm('pages.checkin.docFields') as any[]).map((f: any) => rt(f)) as string[]
