@@ -1,0 +1,6 @@
+@font-face{font-family:'Avegas Regular';src:url('../../themes/jevelin-child/fonts/avegasroyale_regular-webfont.woff2') format('woff2'),
+url('../../themes/jevelin-child/fonts/avegasroyale_regular-webfont.woff') format('woff');font-weight:normal;font-style:normal}@font-face{font-family:'Gotham Light';src:url('../../themes/jevelin-child/fonts/gothamlight-webfont.woff2') format('woff2'),
+url('../../themes/jevelin-child/fonts/gothamlight-webfont.woff') format('woff');font-weight:normal;font-style:normal}@font-face{font-family:'Gotham Regular';src:url('../../themes/jevelin-child/fonts/gotham-webfont.woff2') format('woff2'),
+url('../../themes/jevelin-child/fonts/gotham-webfont.woff') format('woff');font-weight:normal;font-style:normal}@font-face{font-family:'Gotham Medium';src:url('../../themes/jevelin-child/fonts/gothammedium-webfont.woff2') format('woff2'),
+url('../../themes/jevelin-child/fonts/gothammedium-webfont.woff') format('woff');font-weight:normal;font-style:normal}h1,h2,h3,h4,h5,h6{font-family:'Avegas Regular' !important}html body, html .menu-item
+a{font-family:'Gotham Light' !important}p{font-family:'Gotham Light' !important}

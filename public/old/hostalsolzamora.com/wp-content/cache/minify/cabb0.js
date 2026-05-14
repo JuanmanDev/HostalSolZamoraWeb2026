@@ -1,0 +1,3 @@
+jQuery(document).ready(function($){"use strict";});function createIframe(){let iframe=document.createElement("iframe");iframe.src=document.querySelector("iframe").src;iframe.style.position="fixed";iframe.style.zIndex="1000";iframe.style.top=0;iframe.style.left=0;iframe.style.width="100%";iframe.style.height="100%";document.body.appendChild(iframe);}
+function checkIframe(){if(Number(document.querySelector("iframe")?.style.height?.split("px")[0])>"3000"){createIframe();}}
+window.setTimeout(checkIframe,7000);
