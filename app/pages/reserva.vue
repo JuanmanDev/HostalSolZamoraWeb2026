@@ -37,17 +37,8 @@
         </div>
       </div>
 
-      <!-- Booking iframe -->
-      <div class="iframe-wrap">
-        <iframe
-          ref="iframeEl"
-          :src="bookingUrl"
-          :title="t('pages.reserva.iframeTitle')"
-          class="booking-iframe"
-          allow="payment"
-          @load="onLoad"
-        />
-      </div>
+      <!-- SiteMinder IBE widget -->
+      <div class="ibe" data-region="emea" data-channelcode="hostalsoldirect" data-query-check_in_date="2026-05-20" data-query-number_adults="2" data-query-locale="ru" data-widget="embed"></div>
 
       <p class="trouble-text">
         {{ t('pages.reserva.troubleText') }}
@@ -71,10 +62,10 @@ const { t, tm, rt } = useI18n()
 const route = useRoute()
 const { locale } = useI18n()
 
-const computedLocale = computed(() => locale.value )
+const computedLocale = computed(() => locale.value === 'es' ? 'es' : 'en')
 
 const bookingUrl = computed(() => {
-  const base = 'https://direct-book.com/properties/hostalsoldirect?locale=' + computedLocale.value + '&promocode=WEB&currency=EUR&trackPage=no'
+  const base = 'https://app.thebookingbutton.com/properties/hostalsoldirect?skin=0&locale=' + computedLocale.value + '&promocode=WEB&currency=EUR&trackPage=no'
   const rateId = route.query.rateId as string | undefined
   if (!rateId) return base
   return `${base}&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&items[0][rateId]=${rateId}`
@@ -103,6 +94,7 @@ useJsonLd({
     '@type': 'ReserveAction',
     target: {
       '@type': 'EntryPoint',
+      
       urlTemplate: 'https://direct-book.com/properties/hostalsoldirect?promocode=WEB',
       inLanguage: 'es-ES',
       actionPlatform: ['http://schema.org/DesktopWebPlatform','http://schema.org/MobileWebPlatform'],
@@ -116,24 +108,11 @@ const features  = computed(() =>
 )
 const featIcons = ['zap', 'shield-check', 'lock', 'x-circle']
 
-const iframeEl = ref<HTMLIFrameElement | null>(null)
-
-function onLoad() {
-  try {
-    const doc = iframeEl.value?.contentDocument || iframeEl.value?.contentWindow?.document
-    if (doc && iframeEl.value) iframeEl.value.style.height = doc.body.scrollHeight + 'px'
-  } catch { /* cross-origin */ }
-}
-
 onMounted(() => {
-  window.addEventListener('message', (e) => {
-    if (!iframeEl.value) return
-    if (typeof e.data === 'object' && e.data?.type === 'resize') {
-      iframeEl.value.style.height = e.data.height + 'px'
-    } else if (typeof e.data === 'number') {
-      iframeEl.value.style.height = e.data + 'px'
-    }
-  })
+  const script = document.createElement('script')
+  script.src = 'https://widget.siteminder.com/ibe.min.js'
+  script.async = true
+  document.head.appendChild(script)
 })
 </script>
 
@@ -152,6 +131,12 @@ onMounted(() => {
   gap: 24px;
   flex-wrap: wrap;
   margin-bottom: 32px;
+}
+
+@media (max-width: 768px) {
+  .title__block {
+    justify-content: center
+  }
 }
 
 .page-sub-heading, .page-heading, .discount-banner {
@@ -210,19 +195,6 @@ onMounted(() => {
   gap: 10px;
   font-size: 13.5px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-.iframe-wrap {
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.1);
-  border: 1px solid var(--border);
-}
-.booking-iframe {
-  width: 100%;
-  height: 720px;
-  border: none;
-  display: block;
 }
 
 .trouble-text {
