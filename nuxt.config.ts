@@ -98,6 +98,12 @@ export default defineNuxtConfig({
     },
   },
 
+  vite: {
+    server: {
+      allowedHosts: ['89a4-79-116-52-42.ngrok-free.app'],
+    },
+  },
+
   image: {
     dir: join(process.cwd(), 'public'),
     screens: {
@@ -211,6 +217,7 @@ export default defineNuxtConfig({
   },
 
   app: {
+    pageTransition: { name: 'page', mode: 'out-in' },
     head: {
       link: [
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
