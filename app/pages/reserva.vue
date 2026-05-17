@@ -29,7 +29,7 @@
       </div>
 
       <!-- SiteMinder IBE widget -->
-      <div class="ibe" data-region="emea" data-channelcode="hostalsoldirect" :data-query-check_in_date="checkInDate" data-query-number_adults="2" :data-query-locale="siteMinderLocale" data-widget="embed"></div>
+      <div class="ibe" data-region="emea" data-channelcode="hostalsoldirect" :data-query-check_in_date="checkInDate" data-query-number_adults="2" :data-query-locale="siteMinderLocale" data-widget="embed" style="min-height: 480px"></div>
 
       <p class="trouble-text">
         {{ t('pages.reserva.troubleText') }}
@@ -204,15 +204,31 @@ onMounted(() => {
 }
 .trouble-link { color: var(--green); font-weight: 700; margin-left: 4px; }
 
+.ibe {
+  width: 100%;
+  max-width: 2240px;
+  margin: 0 auto;
+}
+
+.ibe :deep(iframe) {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .ibe {
+    max-width: 100vw;
+    width: 100vw;
+    margin: 0 -16px;
+    border-radius: 0;
+  }
+}
+
 .link-to-reservation {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: fit-content;
-  
-  margin-top: 18px;
+  max-width: calc(100% - 2rem);
+  margin: 18px auto 0;
   text-align: center;
-
 
   background: var(--green);
   color: white;

@@ -8,6 +8,17 @@
       <h1 class="page-heading">{{ t('pages.faq.heading') }}</h1>
       <p class="page-lead">{{ t('pages.faq.lead') }}</p>
 
+      
+      <!-- Info grid -->
+      <div class="faq-info-grid">
+        <div v-for="tile in infoTiles" :key="tile.labelKey" class="faq-info-card">
+          <LucideIcon :name="tile.icon" :size="22" color="var(--green)" />
+          <div class="faq-info-card__label">{{ t(`contact.${tile.labelKey}`) }}</div>
+          <div class="faq-info-card__val">{{ t(`contact.${tile.valKey}`) }}</div>
+        </div>
+      </div>
+
+
       <!-- Search -->
       <div class="faq-search">
         <LucideIcon name="zoom-in" :size="17" color="var(--dark-muted)" class="faq-search__icon" />
@@ -46,15 +57,6 @@
               </div>
             </div>
           </Transition>
-        </div>
-      </div>
-
-      <!-- Info grid -->
-      <div class="faq-info-grid">
-        <div v-for="tile in infoTiles" :key="tile.labelKey" class="faq-info-card">
-          <LucideIcon :name="tile.icon" :size="22" color="var(--green)" />
-          <div class="faq-info-card__label">{{ t(`contact.${tile.labelKey}`) }}</div>
-          <div class="faq-info-card__val">{{ t(`contact.${tile.valKey}`) }}</div>
         </div>
       </div>
 
@@ -174,7 +176,7 @@ useJsonLd({
 
 <style scoped>
 .page-content {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 100px max(24px, 5vw) 80px;
 }
@@ -184,6 +186,7 @@ useJsonLd({
   font-weight: 500;
   line-height: 1.1;
   margin-bottom: 14px;
+  max-width: 1000px;
 }
 
 .page-lead {
@@ -200,6 +203,7 @@ useJsonLd({
   flex-wrap: wrap;
   margin-top: 48px;
   margin-bottom: 40px;
+  max-width: 1000px;
 }
 
 .faq-contact-btn {
@@ -259,7 +263,13 @@ useJsonLd({
 
 .faq-empty { color: var(--dark-muted); font-size: 15px; margin-bottom: 40px; }
 
-.faq-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 48px; }
+.faq-list { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 8px; 
+  margin-bottom: 48px; 
+  max-width: 1000px;
+}
 
 .faq-item {
   background: #fff;
@@ -324,10 +334,21 @@ useJsonLd({
 
 .faq-info-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 14px;
-  margin-top: 48px;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 16px;
+  margin: 48px 0 64px;
+  width: 100%;
 }
+
+@media (min-width: 1200px) {
+  .faq-info-grid {
+    width: min(1400px, 100vw - 2 * max(24px, 5vw));
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 .faq-info-card {
   background: var(--green-light);
   border-radius: 12px;
