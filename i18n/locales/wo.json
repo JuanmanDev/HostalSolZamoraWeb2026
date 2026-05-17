@@ -567,6 +567,16 @@
           { "label": "Guide check-in", "url": "/checkin", "icon": "file-text" },
           { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }
         ]
+      },
+      {
+        "q": "Lan la néeg yi am?",
+        "a": "Salle de bain bu privé, wifi (mot de passe bi ak yeneen bataaxal ci kayit bi gannaaw bunt bi), bureau ak chaise, radiateur (ak contrôle automatique), climatisation ak télécommande, télé ak télécommande, sèche-cheveux ak fer à repasser (soo ko laajee), fauteuil, palanteer, lal ak draps. Ci salle de bain bi dinga fa fekk sabu bu ndaw, shampooing ak sabun loxo, ak serviettes. Soo soxlaa leneen, wax nu ko.",
+        "tags": ["jumtukaay", "néeg", "amenities", "sërviss", "salle de bain", "wifi", "climatisation", "télé", "sèche-cheveux", "fer", "lal", "serviettes"]
+      },
+      {
+        "q": "Kan moo defar site web bi?",
+        "a": "Site web bii Juan Manuel Béc (https://juanman.tech/) moo ko defar. Code source bi ubbiku na te nekk na ci GitHub: https://github.com/JuanmanDev/HostalSolZamoraWeb2026",
+        "tags": ["web", "développeur", "auteur", "code", "github", "juanman", "technologie"]
       }
     ]
   },

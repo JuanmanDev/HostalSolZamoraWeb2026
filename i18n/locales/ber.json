@@ -567,6 +567,16 @@
           { "label": "Asgid Check-in", "url": "/checkin", "icon": "file-text" },
           { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }
         ]
+      },
+      {
+        "q": "D acu n wallalen i yellan deg tigmmiwin?",
+        "a": "Afssi uzgen, wifi (tsarut d ugar n usali llant deg lkaɣeḍ n deffir n tewwurt), aglim d iẓri, asekniw (s uṣeggem otomatik), afran s tmeẓa, TV s tmeẓa, asexsi n uqercuc d tsnifest s tuɣalin, asendel, tifeḍt, tagelda d inglasen. Deg ufssi ad tafeḍ lkad n umezwaru, acampu d lkad n ufus, d imɣi. Ma tebɣiḍ ayen nniḍen, mudd-aɣ-d awal.",
+        "tags": ["allalen", "taɣimt", "amenities", "ticreḍ", "afssi", "wifi", "afran", "TV", "asexsi n uqercuc", "tasnifest", "tagelda", "imɣi"]
+      },
+      {
+        "q": "Anwa i ixelqen asebter-agi n web?",
+        "a": "Asebter-agi n web ixelq-it Juan Manuel Béc (https://juanman.tech/). Azamul n uẓar d aqbel d yella deg GitHub: https://github.com/JuanmanDev/HostalSolZamoraWeb2026",
+        "tags": ["web", "axelqan", "amassay", "azamul", "github", "juanman", "tamtiknuluat"]
       }
     ]
   },

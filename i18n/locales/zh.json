@@ -505,6 +505,16 @@
           { "label": "到达指引", "url": "/checkin", "icon": "file-text" },
           { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }
         ]
+      },
+      {
+        "q": "客房内有哪些设备？",
+        "a": "私人浴室、wifi（密码和更多说明在门后的纸上）、书桌和椅子、暖气（自动控制）、带遥控器的空调、带遥控器的电视、应要求提供吹风机和熨斗、扶手椅、窗户、配有床单的床。在浴室里您会找到基本香皂、洗发水和洗手液，以及毛巾。如果您还需要什么，请告诉我们。",
+        "tags": ["设备", "客房", "设施", "服务", "浴室", "wifi", "空调", "电视", "吹风机", "熨斗", "床", "毛巾"]
+      },
+      {
+        "q": "谁制作了这个网站？",
+        "a": "此网站由 Juan Manuel Béc (https://juanman.tech/) 开发。源代码是开源的，可在 GitHub 上获取：https://github.com/JuanmanDev/HostalSolZamoraWeb2026",
+        "tags": ["网络", "开发者", "作者", "代码", "github", "juanman", "技术"]
       }
     ]
   },

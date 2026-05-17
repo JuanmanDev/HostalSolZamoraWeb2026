@@ -1042,6 +1042,16 @@
           { "label": "Guida al check-in", "url": "/arrivo", "icon": "file-text" },
           { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }
         ]
+      },
+      {
+        "q": "Quali dotazioni hanno le camere?",
+        "a": "Bagno privato, wifi (la password e ulteriori istruzioni sono sul foglio dietro la porta), scrivania e sedia, termosifone (con controlli automatici), aria condizionata con telecomando, TV con telecomando, asciugacapelli e ferro da stiro su richiesta, poltrona, finestra, letto con lenzuola incluse. Nel bagno troverai sapone di base, shampoo e sapone per le mani, oltre agli asciugamani. Se hai bisogno di altro, faccelo sapere.",
+        "tags": ["dotazioni", "camera", "amenities", "servizi", "bagno", "wifi", "aria condizionata", "TV", "asciugacapelli", "ferro da stiro", "letto", "asciugamani"]
+      },
+      {
+        "q": "Chi ha realizzato questo sito web?",
+        "a": "Questo sito web è stato sviluppato da Juan Manuel Béc (https://juanman.tech/). Il codice sorgente è aperto e disponibile su GitHub: https://github.com/JuanmanDev/HostalSolZamoraWeb2026",
+        "tags": ["web", "sviluppatore", "autore", "codice", "github", "juanman", "tecnologia"]
       }
     ]
   },

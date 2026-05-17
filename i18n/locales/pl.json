@@ -1026,6 +1026,16 @@
           { "label": "Przewodnik zameldowania", "url": "/checkin", "icon": "file-text" },
           { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }
         ]
+      },
+      {
+        "q": "W co wyposażone są pokoje?",
+        "a": "Prywatna łazienka, wifi (hasło i więcej instrukcji na kartce za drzwiami), biurko i krzesło, grzejnik (z automatycznym sterowaniem), klimatyzacja z pilotem, telewizor z pilotem, suszarka do włosów i żelazko na życzenie, fotel, okno, łóżko z pościelą. W łazience znajdziesz podstawowe mydło, szampon i mydło do rąk, a także ręczniki. Jeśli potrzebujesz czegoś jeszcze, daj nam znać.",
+        "tags": ["wyposażenie", "pokój", "udogodnienia", "usługi", "łazienka", "wifi", "klimatyzacja", "TV", "suszarka", "żelazko", "łóżko", "ręczniki"]
+      },
+      {
+        "q": "Kto stworzył tę stronę internetową?",
+        "a": "Ta strona została stworzona przez Juana Manuela Béc (https://juanman.tech/). Kod źródłowy jest otwarty i dostępny na GitHub: https://github.com/JuanmanDev/HostalSolZamoraWeb2026",
+        "tags": ["web", "programista", "autor", "kod", "github", "juanman", "technologia"]
       }
     ]
   },

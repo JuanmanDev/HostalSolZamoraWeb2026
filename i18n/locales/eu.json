@@ -505,6 +505,16 @@
           { "label": "Iristeko gida", "url": "/checkin", "icon": "file-text" },
           { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }
         ]
+      },
+      {
+        "q": "Zer ekipamendu daukate logelek?",
+        "a": "Bainugela pribatua, wifi (pasahitza eta argibide gehiago atearen atzealdeko paperrean daude), idazmahaia eta aulkia, erradiadorea (kontrol automatikoekin), aire girotua agintearekin, telebista agintearekin, ile-lehorgailua eta lisatua eskaeraren arabera, besaulki, leihoa, ohea izarak barne. Bainugelan oinarrizko xaboia, xanpua eta eskuetarako xaboia aurkituko dituzu, baita eskuoihalak ere. Beste zerbait behar baduzu, esan iezaguzu.",
+        "tags": ["ekipamendua", "logela", "amenities", "zerbitzuak", "bainugela", "wifi", "aire girotua", "telebista", "ile-lehorgailua", "lisatua", "ohea", "eskuoihalak"]
+      },
+      {
+        "q": "Nork egin du webgune hau?",
+        "a": "Webgune hau Juan Manuel Béc-ek garatu du (https://juanman.tech/). Iturburu-kodea irekia da eta GitHub-en dago eskuragarri: https://github.com/JuanmanDev/HostalSolZamoraWeb2026",
+        "tags": ["web", "garatzailea", "egilea", "kodea", "github", "juanman", "teknologia"]
       }
     ]
   },

@@ -458,6 +458,16 @@
           { "label": "Guide de check-in", "url": "/checkin", "icon": "file-text" },
           { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }
         ]
+      },
+      {
+        "q": "Quel équipement y a-t-il dans les chambres ?",
+        "a": "Salle de bain privée, wifi (le mot de passe et d'autres instructions se trouvent sur le papier derrière la porte), bureau et chaise, radiateur (avec commandes automatiques), climatisation avec télécommande, TV avec télécommande, sèche-cheveux et fer à repasser sur demande, fauteuil, fenêtre, lit avec draps inclus. Dans la salle de bain, vous trouverez du savon de base, du shampoing et du savon pour les mains, ainsi que des serviettes. Si vous avez besoin d'autre chose, n'hésitez pas à nous le demander.",
+        "tags": ["équipement", "chambre", "amenities", "services", "salle de bain", "wifi", "climatisation", "TV", "sèche-cheveux", "fer à repasser", "lit", "serviettes"]
+      },
+      {
+        "q": "Qui a créé ce site web ?",
+        "a": "Ce site a été développé par Juan Manuel Béc (https://juanman.tech/). Le code source est ouvert et disponible sur GitHub : https://github.com/JuanmanDev/HostalSolZamoraWeb2026",
+        "tags": ["web", "développeur", "auteur", "code", "github", "juanman", "technologie"]
       }
     ]
   },

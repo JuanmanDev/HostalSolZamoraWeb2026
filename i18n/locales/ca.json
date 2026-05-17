@@ -505,6 +505,16 @@
           { "label": "Guia d'arribada", "url": "/checkin", "icon": "file-text" },
           { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }
         ]
+      },
+      {
+        "q": "Quin equipament tenen les habitacions?",
+        "a": "Bany privat, wifi (la contrasenya i més instruccions estan al paper darrere de la porta), escriptori i cadira, radiador (amb controls automàtics), aire condicionat amb comandament, TV amb comandament, eixugacabells i planxa sota petició, butaca, finestra, llit amb llençols inclosos. Al bany trobaràs sabó bàsic, xampú i sabó de mans, a més de tovalloles. Si necessites res més, digues-nos-ho.",
+        "tags": ["equipament", "habitació", "amenities", "serveis", "bany", "wifi", "aire condicionat", "TV", "eixugacabells", "planxa", "llit", "tovalloles"]
+      },
+      {
+        "q": "Qui ha fet aquesta pàgina web?",
+        "a": "Aquest web ha estat desenvolupat per Juan Manuel Béc (https://juanman.tech/). El codi font és obert i està disponible a GitHub: https://github.com/JuanmanDev/HostalSolZamoraWeb2026",
+        "tags": ["web", "desenvolupador", "autor", "codi", "github", "juanman", "tecnologia"]
       }
     ]
   },

@@ -1038,6 +1038,16 @@
           { "label": "Ghid de check-in", "url": "/sosire", "icon": "file-text" },
           { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }
         ]
+      },
+      {
+        "q": "Ce dotări au camerele?",
+        "a": "Baie privată, wifi (parola și mai multe instrucțiuni sunt pe foaia din spatele ușii), un birou și un scaun, calorifer (cu comenzi automate), aer condiționat cu telecomandă, TV cu telecomandă, uscător de păr și fier de călcat la cerere, fotoliu, fereastră, pat cu lenjerie inclusă. În baie vei găsi săpun de bază, șampon și săpun de mâini, precum și prosoape. Dacă mai ai nevoie de ceva, anunță-ne.",
+        "tags": ["dotări", "cameră", "amenități", "servicii", "baie", "wifi", "aer condiționat", "TV", "uscător", "fier de călcat", "pat", "prosoape"]
+      },
+      {
+        "q": "Cine a făcut acest site web?",
+        "a": "Acest site web a fost dezvoltat de Juan Manuel Béc (https://juanman.tech/). Codul sursă este deschis și disponibil pe GitHub: https://github.com/JuanmanDev/HostalSolZamoraWeb2026",
+        "tags": ["web", "dezvoltator", "autor", "cod", "github", "juanman", "tehnologie"]
       }
     ]
   },

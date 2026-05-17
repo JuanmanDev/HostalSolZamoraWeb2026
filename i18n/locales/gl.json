@@ -505,6 +505,16 @@
           { "label": "Guía de chegada", "url": "/checkin", "icon": "file-text" },
           { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }
         ]
+      },
+      {
+        "q": "Que equipamento teñen as habitacións?",
+        "a": "Baño privado, wifi (o contrasinal e máis instrucións están no papel detrás da porta), escritorio e cadeira, radiador (con controis automáticos), aire acondicionado con mando, TV con mando, secador de cabelo e prancha baixo petición, butaca, xanela, cama con sabas incluídas. No baño atoparás xabón básico, champú e xabón de mans, ademais de toallas. Se precisas algo máis, dínolo.",
+        "tags": ["equipamento", "habitación", "amenities", "servizos", "baño", "wifi", "aire acondicionado", "TV", "secador", "prancha", "cama", "toallas"]
+      },
+      {
+        "q": "Quen fixo esta páxina web?",
+        "a": "Esta web foi desenvolvida por Juan Manuel Béc (https://juanman.tech/). O código fonte é aberto e está dispoñible en GitHub: https://github.com/JuanmanDev/HostalSolZamoraWeb2026",
+        "tags": ["web", "desenvolvedor", "autor", "código", "github", "juanman", "tecnoloxía"]
       }
     ]
   },

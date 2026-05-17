@@ -1038,6 +1038,16 @@
           { "label": "Incheckgids", "url": "/aankomst", "icon": "file-text" },
           { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }
         ]
+      },
+      {
+        "q": "Welke voorzieningen hebben de kamers?",
+        "a": "Privébadkamer, wifi (het wachtwoord en meer instructies staan op het papier achter de deur), een bureau en een stoel, radiator (met automatische bediening), airconditioning met afstandsbediening, tv met afstandsbediening, föhn en strijkijzer op aanvraag, fauteuil, raam, bed inclusief lakens. In de badkamer vind je basiszeep, shampoo en handzeep, en handdoeken. Laat het ons weten als je nog iets anders nodig hebt.",
+        "tags": ["voorzieningen", "kamer", "amenities", "diensten", "badkamer", "wifi", "airconditioning", "tv", "föhn", "strijkijzer", "bed", "handdoeken"]
+      },
+      {
+        "q": "Wie heeft deze website gemaakt?",
+        "a": "Deze website is ontwikkeld door Juan Manuel Béc (https://juanman.tech/). De broncode is open en beschikbaar op GitHub: https://github.com/JuanmanDev/HostalSolZamoraWeb2026",
+        "tags": ["web", "ontwikkelaar", "auteur", "code", "github", "juanman", "technologie"]
       }
     ]
   },

@@ -1073,6 +1073,26 @@
           { "label": "Guía de check-in", "url": "/checkin", "icon": "file-text" },
           { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }
         ]
+      },
+      {
+        "q": "¿Qué tiene la habitación?",
+        "a": "Baño privado, wifi (la contraseña y más instrucciones están en el papel detrás de la puerta), escritorio y silla, radiador (con controles automáticos), aire acondicionado con mando, TV con mando, secador de pelo y plancha bajo petición, sillón, ventana, cama con sábanas incluidas. En el baño encontrarás jabón básico, champú y jabón de manos, además de toallas. Si necesitas algo más, dínoslo.",
+        "tags": ["equipamiento", "habitación", "amenities", "servicios", "baño", "wifi", "aire acondicionado", "TV", "secador", "plancha", "cama", "toallas"]
+      },
+      {
+        "q": "¿Quién ha hecho esta página web?",
+        "a": "Juan Manuel Béc: https://juanman.tech/. El código fuente de esta web está en https://github.com/JuanmanDev/HostalSolZamoraWeb2026",
+        "tags": ["web", "desarrollador", "autor", "código", "github", "juanman", "tecnología"]
+      },
+      {
+        "q": "¿Qué equipamiento tienen las habitaciones?",
+        "a": "Baño privado, wifi (la contraseña y más instrucciones están en el papel detrás de la puerta), escritorio y silla, radiador (con controles automáticos), aire acondicionado con mando, TV con mando, secador de pelo y plancha bajo petición, sillón, ventana, cama con sábanas incluidas. En el baño encontrarás jabón básico, champú y jabón de manos, además de toallas. Si necesitas algo más, dínoslo.",
+        "tags": ["equipamiento", "habitación", "amenities", "servicios", "baño", "wifi", "aire acondicionado", "TV", "secador", "plancha", "cama", "toallas"]
+      },
+      {
+        "q": "¿Quién ha hecho esta página web?",
+        "a": "Esta web ha sido desarrollada por Juan Manuel Béc (https://juanman.tech/). El código fuente es abierto y está disponible en GitHub: https://github.com/JuanmanDev/HostalSolZamoraWeb2026",
+        "tags": ["web", "desarrollador", "autor", "código", "github", "juanman", "tecnología"]
       }
     ]
   },
