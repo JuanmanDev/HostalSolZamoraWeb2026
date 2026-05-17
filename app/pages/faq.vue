@@ -93,7 +93,7 @@
             <div class="faq-contact-btn__val">hostalsol@outlook.com</div>
           </div>
         </a>
-      </div>
+      </section>
     </main>
 
     <LayoutTheFooter />
