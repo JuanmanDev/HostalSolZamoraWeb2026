@@ -17,17 +17,8 @@
         </div>
       </div>
 
-      <!-- Discount banner -->
-      <!-- <div class="discount-banner">
-        <LucideIcon name="tag" :size="22" color="#fff" />
-        <div class="discount-banner__text">
-          <div class="discount-banner__label">{{ t('pages.reserva.discountLabel') }}</div>
-          <div class="discount-banner__sub">{{ t('pages.reserva.discountSub') }}</div>
-        </div>
-        <div class="discount-banner__badge">−15%</div>
-      </div> -->
 
-      
+
 
       <!-- Feature chips -->
       <div class="features">
@@ -38,7 +29,7 @@
       </div>
 
       <!-- SiteMinder IBE widget -->
-      <div class="ibe" data-region="emea" data-channelcode="hostalsoldirect" data-query-check_in_date="2026-05-20" data-query-number_adults="2" data-query-locale="ru" data-widget="embed"></div>
+      <div class="ibe" data-region="emea" data-channelcode="hostalsoldirect" :data-query-check_in_date="checkInDate" data-query-number_adults="2" :data-query-locale="siteMinderLocale" data-widget="embed"></div>
 
       <p class="trouble-text">
         {{ t('pages.reserva.troubleText') }}
@@ -58,11 +49,18 @@
 </template>
 
 <script setup lang="ts">
-const { t, tm, rt } = useI18n()
+const { t, tm, rt, locale } = useI18n()
 const route = useRoute()
-const { locale } = useI18n()
 
 const computedLocale = computed(() => locale.value === 'es' ? 'es' : 'en')
+
+const checkInDate = computed(() => {
+  const d = new Date()
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
+})
+
+const SITEMINDER_LOCALES = new Set(['en', 'es', 'fr', 'de', 'it', 'nl', 'pt', 'ru', 'zh', 'ko', 'ja', 'pl', 'ro', 'el', 'ar', 'ca'])
+const siteMinderLocale = computed(() => SITEMINDER_LOCALES.has(locale.value) ? locale.value : 'en')
 
 const bookingUrl = computed(() => {
   const base = 'https://app.thebookingbutton.com/properties/hostalsoldirect?skin=0&locale=' + computedLocale.value + '&promocode=WEB&currency=EUR&trackPage=no'

@@ -68,6 +68,7 @@ onMounted(() => {
   display: flex;
   justify-content: center;
   margin-bottom: 28px;
+  margin-left: 10px;
   user-select: none;
 }
 

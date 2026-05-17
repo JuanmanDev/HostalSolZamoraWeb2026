@@ -109,12 +109,11 @@ const itemsToShow = computed(() => {
 /* Platform badges */
 .reviews__platforms {
   display: flex;
-  gap: 12px;
+  gap: 32px;
   flex-wrap: wrap;
   justify-content: center;
   margin: 32px 0 0;
   padding: 0 max(24px, 6vw);
-  gap: 32px;
 }
 
 .reviews__platform-badge {

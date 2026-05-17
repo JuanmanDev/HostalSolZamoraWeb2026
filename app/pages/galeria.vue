@@ -29,18 +29,6 @@
       </section>
 
 
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-<!--       
-        <SectionsRoomMediaGallery
-          :initial-room="activeRoom"
-          :initial-media="mediaFilter"
-          @update:room="onRoomChange"
-          @update:media="onMediaChange"
-        /> -->
     </main>
 
     <LayoutTheFooter />
@@ -131,7 +119,7 @@ function onRoomChange(key: string) {
 
 /* ── Gallery carousel ───────────────────────────────────────────────────── */
 .galeria__gallery {
-  margin: 2rem 0;
+  margin: 2rem 0 4rem;
   padding: 0;
 }
 

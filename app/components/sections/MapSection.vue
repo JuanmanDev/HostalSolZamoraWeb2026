@@ -179,4 +179,9 @@ const chips = [
 @media (max-width: 860px) {
   .map-section__top { flex-direction: column; }
 }
+
+@media (max-width: 640px) {
+  .map-section__arrive-btn { flex: 0 0 100%; text-align: center; justify-content: center; }
+  .map-section__nav-btn { flex: 1 1 calc(50% - 5px); justify-content: center; }
+}
 </style>

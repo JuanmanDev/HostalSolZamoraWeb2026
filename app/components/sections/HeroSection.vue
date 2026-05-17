@@ -114,13 +114,6 @@ const { scrollTo } = useScrollTo()
 
 const currentIdx = ref(0)
 
-const featItemsToShow = computed(() => {
-  if (import.meta.client) {
-    return window.innerWidth >= 1024 ? 4.5 : window.innerWidth >= 640 ? 3 : 2.2
-  }
-  return 3
-})
-
 const features = computed(() =>
   (tm('hero.features') as any[]).map((f: any) => ({
     icon:  rt(f.icon),
