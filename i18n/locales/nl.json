@@ -1021,33 +1021,114 @@
       {
         "q": "Welke talen spreken jullie in het hostal?",
         "a": "Het personeel van het hostal spreekt uitsluitend Spaans. Als je in een andere taal wilt communiceren, stuur ons een bericht via WhatsApp of e-mail en we gebruiken online vertalers om je te helpen. Wanneer je aankomt, verbind je met de gratis WiFi van het hostal en gebruik je een online vertaler op je telefoon — Google Translate, DeepL en Bing Translator werken allemaal goed.",
-        "tags": ["taal", "spaans", "engels", "frans", "duits", "chinees", "arabisch", "russisch", "italiaans", "speak", "communicatie", "vertalen"],
+        "tags": [
+          "taal",
+          "spaans",
+          "engels",
+          "frans",
+          "duits",
+          "chinees",
+          "arabisch",
+          "russisch",
+          "italiaans",
+          "speak",
+          "communicatie",
+          "vertalen"
+        ],
         "links": [
-          { "label": "Google Translate", "url": "https://translate.google.com/", "icon": "languages" },
-          { "label": "DeepL Vertaler", "url": "https://www.deepl.com/translator", "icon": "languages" },
-          { "label": "Bing Translator", "url": "https://www.bing.com/translator", "icon": "languages" },
-          { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" },
-          { "label": "E-mail", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }
+          {
+            "label": "Google Translate",
+            "url": "https://translate.google.com/",
+            "icon": "languages"
+          },
+          {
+            "label": "DeepL Vertaler",
+            "url": "https://www.deepl.com/translator",
+            "icon": "languages"
+          },
+          {
+            "label": "Bing Translator",
+            "url": "https://www.bing.com/translator",
+            "icon": "languages"
+          },
+          {
+            "label": "WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "E-mail",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
         ]
       },
       {
         "q": "Kan ik een reservering maken voor iemand anders?",
         "a": "We raden het niet aan. De veiligste aanpak is dat elke gast boekt op zijn eigen naam, zodat alle vereiste gegevens (volledige naam en telefoonnummer) correct worden geregistreerd. Als je voor een andere persoon boekt, laat dan een opmerking achter in de reservering met diens volledige naam en telefoonnummer, en zorg ervoor dat die persoon het online inchecken voltooit met zijn eigen gegevens. De reserveringsscode alleen is niet voldoende — we moeten verifiëren dat de aankomende persoon bevoegd is om de reservering te gebruiken. Screenshots worden niet geaccepteerd als bewijs van reservering, omdat we de authenticiteit ervan niet kunnen verifiëren.",
-        "tags": ["reservering voor iemand anders", "derde partij", "boekingsnaam", "beveiliging", "verificatie", "screenshot", "boeken voor iemand"],
+        "tags": [
+          "reservering voor iemand anders",
+          "derde partij",
+          "boekingsnaam",
+          "beveiliging",
+          "verificatie",
+          "screenshot",
+          "boeken voor iemand"
+        ],
         "links": [
-          { "label": "Incheckgids", "url": "/aankomst", "icon": "file-text" },
-          { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }
+          {
+            "label": "Incheckgids",
+            "url": "/aankomst",
+            "icon": "file-text"
+          },
+          {
+            "label": "WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
         "q": "Welke voorzieningen hebben de kamers?",
         "a": "Privébadkamer, wifi (het wachtwoord en meer instructies staan op het papier achter de deur), een bureau en een stoel, radiator (met automatische bediening), airconditioning met afstandsbediening, tv met afstandsbediening, föhn en strijkijzer op aanvraag, fauteuil, raam, bed inclusief lakens. In de badkamer vind je basiszeep, shampoo en handzeep, en handdoeken. Laat het ons weten als je nog iets anders nodig hebt.",
-        "tags": ["voorzieningen", "kamer", "amenities", "diensten", "badkamer", "wifi", "airconditioning", "tv", "föhn", "strijkijzer", "bed", "handdoeken"]
+        "tags": [
+          "voorzieningen",
+          "kamer",
+          "amenities",
+          "diensten",
+          "badkamer",
+          "wifi",
+          "airconditioning",
+          "tv",
+          "föhn",
+          "strijkijzer",
+          "bed",
+          "handdoeken"
+        ]
       },
       {
         "q": "Wie heeft deze website gemaakt?",
         "a": "Deze website is ontwikkeld door Juan Manuel Béc (https://juanman.tech/). De broncode is open en beschikbaar op GitHub: https://github.com/JuanmanDev/HostalSolZamoraWeb2026",
-        "tags": ["web", "ontwikkelaar", "auteur", "code", "github", "juanman", "technologie"]
+        "tags": [
+          "web",
+          "ontwikkelaar",
+          "auteur",
+          "code",
+          "github",
+          "juanman",
+          "technologie"
+        ]
+      },
+      {
+        "q": "Kan ik de oude website zien?",
+        "a": "Ja, u kunt het ontwerp en de inhoud van onze vorige website bekijken via de volgende link.",
+        "links": [
+          {
+            "label": "Oude website bekijken",
+            "url": "/old/hostalsolzamora.com/index.html",
+            "icon": "external-link"
+          }
+        ]
       }
     ]
   },

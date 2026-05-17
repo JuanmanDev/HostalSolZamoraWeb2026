@@ -12,23 +12,23 @@
     </div>
 
     <main class="page-content">
-      <UiSectionTag>{{ t('nav.faq') }}</UiSectionTag>
-      <h1 class="page-heading">{{ t('pages.faq.heading') }}</h1>
-      <p class="page-lead">{{ t('pages.faq.lead') }}</p>
+      <section id="faq-intro">
+        <UiSectionTag>{{ t('nav.faq') }}</UiSectionTag>
+        <h1 class="page-heading">{{ t('pages.faq.heading') }}</h1>
+        <p class="page-lead">{{ t('pages.faq.lead') }}</p>
+      </section>
 
-      
       <!-- Info grid -->
-      <div class="faq-info-grid">
+      <section id="faq-info" class="faq-info-grid">
         <div v-for="tile in infoTiles" :key="tile.labelKey" class="faq-info-card">
           <LucideIcon :name="tile.icon" :size="22" color="var(--green)" />
           <div class="faq-info-card__label">{{ t(`contact.${tile.labelKey}`) }}</div>
           <div class="faq-info-card__val">{{ t(`contact.${tile.valKey}`) }}</div>
         </div>
-      </div>
-
+      </section>
 
       <!-- Search -->
-      <div class="faq-search">
+      <section id="faq-search" class="faq-search">
         <LucideIcon name="zoom-in" :size="17" color="var(--dark-muted)" class="faq-search__icon" />
         <input
           v-model="query"
@@ -36,10 +36,10 @@
           :placeholder="t('pages.faq.searchPlaceholder')"
           class="faq-search__input"
         />
-      </div>
+      </section>
 
       <!-- List (always shows all items) -->
-      <div class="faq-list">
+      <section id="faq-list" class="faq-list">
         <div 
           v-for="(item, i) in allItems" 
           :key="i" 
@@ -68,10 +68,10 @@
             </div>
           </Transition>
         </div>
-      </div>
+      </section>
 
       <!-- Contact buttons -->
-      <div class="faq-contact-btns">
+      <section id="faq-contact" class="faq-contact-btns">
         <a href="tel:+34980533152" class="faq-contact-btn">
           <LucideIcon name="phone" :size="18" color="#fff" />
           <div>
@@ -104,6 +104,7 @@
 import type { FaqItem } from '~/types'
 const { t, tm, rt } = useI18n()
 const route = useRoute()
+const router = useRouter()
 
 useSeo({
   title:       computed(() => t('pages.faq.title')),
@@ -132,12 +133,50 @@ const allItems = computed(() =>
 const query = ref((route.query.q as string) || '')
 const openIndices = ref<number[]>([])
 
+function updateUrlQuery() {
+  const newQuery: any = {}
+  if (query.value.trim()) {
+    newQuery.q = query.value
+  }
+  if (openIndices.value.length === 1 && !query.value.trim()) {
+     // Only save the open question index in URL if no search is active
+     newQuery.open = openIndices.value[0].toString()
+  }
+  
+  router.replace({ query: newQuery })
+}
+
+function scrollToItem(index: number) {
+  nextTick(() => {
+    // Wait for the Vue transition to finish before scrolling
+    setTimeout(() => {
+      const el = document.getElementById(`faq-item-${index}`)
+      if (el) {
+         // Check if element fits in viewport
+         const rect = el.getBoundingClientRect()
+         const fitsInViewport = rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+         
+         if (!fitsInViewport) {
+           el.scrollIntoView({ behavior: 'smooth', block: 'center' })
+         }
+      }
+    }, 300) // Match or slightly exceed CSS transition duration
+  })
+}
+
 function toggle(index: number) {
   if (openIndices.value.includes(index)) {
     openIndices.value = openIndices.value.filter(i => i !== index)
   } else {
-    openIndices.value.push(index)
+    // If we are searching, allow multiple. Otherwise, behave like accordion.
+    if (query.value.trim()) {
+       openIndices.value.push(index)
+    } else {
+       openIndices.value = [index]
+       scrollToItem(index)
+    }
   }
+  updateUrlQuery()
 }
 
 function normalize(text: string): string {
@@ -158,6 +197,7 @@ function isMatch(item: FaqItem): boolean {
 watch(query, (newQuery) => {
   if (!newQuery.trim()) {
     openIndices.value = []
+    updateUrlQuery()
     return
   }
 
@@ -166,6 +206,7 @@ watch(query, (newQuery) => {
     .filter(({ item }) => isMatch(item))
   
   openIndices.value = matches.map(m => m.index)
+  updateUrlQuery()
 
   if (matches.length > 0) {
     const firstMatchIndex = matches[0].index
@@ -176,7 +217,18 @@ watch(query, (newQuery) => {
       }
     })
   }
-}, { immediate: true })
+})
+
+// Initialize state from URL on mount
+onMounted(() => {
+  if (route.query.open && !query.value) {
+    const idx = parseInt(route.query.open as string, 10)
+    if (!isNaN(idx) && idx >= 0 && idx < allItems.value.length) {
+      openIndices.value = [idx]
+      scrollToItem(idx)
+    }
+  }
+})
 
 function highlight(text: string): string {
   if (!query.value.trim()) return text

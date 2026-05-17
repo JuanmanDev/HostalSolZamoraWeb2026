@@ -1009,33 +1009,114 @@
       {
         "q": "Jakimi językami mówi personel?",
         "a": "Personel hostalu mówi wyłącznie po hiszpańsku. Aby porozumieć się w innym języku — napisz przez WhatsApp lub email, skorzystamy z tłumaczy online. Po przyjeździe połącz się z bezpłatnym WiFi i korzystaj z tłumacza na telefonie — Google Translate, DeepL lub Bing Translator.",
-        "tags": ["język", "angielski", "francuski", "niemiecki", "chiński", "arabski", "polski", "rosyjski", "włoski", "portugalski", "komunikacja", "tłumaczenie"],
+        "tags": [
+          "język",
+          "angielski",
+          "francuski",
+          "niemiecki",
+          "chiński",
+          "arabski",
+          "polski",
+          "rosyjski",
+          "włoski",
+          "portugalski",
+          "komunikacja",
+          "tłumaczenie"
+        ],
         "links": [
-          { "label": "Google Translate", "url": "https://translate.google.com/", "icon": "languages" },
-          { "label": "DeepL Tłumacz", "url": "https://www.deepl.com/translator", "icon": "languages" },
-          { "label": "Bing Translator", "url": "https://www.bing.com/translator", "icon": "languages" },
-          { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" },
-          { "label": "Email", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }
+          {
+            "label": "Google Translate",
+            "url": "https://translate.google.com/",
+            "icon": "languages"
+          },
+          {
+            "label": "DeepL Tłumacz",
+            "url": "https://www.deepl.com/translator",
+            "icon": "languages"
+          },
+          {
+            "label": "Bing Translator",
+            "url": "https://www.bing.com/translator",
+            "icon": "languages"
+          },
+          {
+            "label": "WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "Email",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
         ]
       },
       {
         "q": "Czy można zrobić rezerwację na inne nazwisko?",
         "a": "Nie zalecamy. Bezpieczniej, aby każdy gość rezerwował na swoje nazwisko. Jeśli rezerwujesz dla innej osoby — zostaw komentarz z jej pełnym imieniem i telefonem i upewnij się, że przejdzie ona online zameldowanie ze swoimi danymi. Sam kod rezerwacji nie wystarczy — musimy potwierdzić, że przyjeżdżająca osoba ma prawo do rezerwacji. Zrzuty ekranu jako potwierdzenie nie są akceptowane.",
-        "tags": ["rezerwacja na inne nazwisko", "osoby trzecie", "właściciel rezerwacji", "bezpieczeństwo", "weryfikacja", "zrzut ekranu", "zarezerwuj dla kogoś"],
+        "tags": [
+          "rezerwacja na inne nazwisko",
+          "osoby trzecie",
+          "właściciel rezerwacji",
+          "bezpieczeństwo",
+          "weryfikacja",
+          "zrzut ekranu",
+          "zarezerwuj dla kogoś"
+        ],
         "links": [
-          { "label": "Przewodnik zameldowania", "url": "/checkin", "icon": "file-text" },
-          { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }
+          {
+            "label": "Przewodnik zameldowania",
+            "url": "/checkin",
+            "icon": "file-text"
+          },
+          {
+            "label": "WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
         "q": "W co wyposażone są pokoje?",
         "a": "Prywatna łazienka, wifi (hasło i więcej instrukcji na kartce za drzwiami), biurko i krzesło, grzejnik (z automatycznym sterowaniem), klimatyzacja z pilotem, telewizor z pilotem, suszarka do włosów i żelazko na życzenie, fotel, okno, łóżko z pościelą. W łazience znajdziesz podstawowe mydło, szampon i mydło do rąk, a także ręczniki. Jeśli potrzebujesz czegoś jeszcze, daj nam znać.",
-        "tags": ["wyposażenie", "pokój", "udogodnienia", "usługi", "łazienka", "wifi", "klimatyzacja", "TV", "suszarka", "żelazko", "łóżko", "ręczniki"]
+        "tags": [
+          "wyposażenie",
+          "pokój",
+          "udogodnienia",
+          "usługi",
+          "łazienka",
+          "wifi",
+          "klimatyzacja",
+          "TV",
+          "suszarka",
+          "żelazko",
+          "łóżko",
+          "ręczniki"
+        ]
       },
       {
         "q": "Kto stworzył tę stronę internetową?",
         "a": "Ta strona została stworzona przez Juana Manuela Béc (https://juanman.tech/). Kod źródłowy jest otwarty i dostępny na GitHub: https://github.com/JuanmanDev/HostalSolZamoraWeb2026",
-        "tags": ["web", "programista", "autor", "kod", "github", "juanman", "technologia"]
+        "tags": [
+          "web",
+          "programista",
+          "autor",
+          "kod",
+          "github",
+          "juanman",
+          "technologia"
+        ]
+      },
+      {
+        "q": "Czy mogę zobaczyć starą stronę internetową?",
+        "a": "Tak, możesz sprawdzić projekt i zawartość naszej poprzedniej strony internetowej pod poniższym linkiem.",
+        "links": [
+          {
+            "label": "Zobacz starą stronę",
+            "url": "/old/hostalsolzamora.com/index.html",
+            "icon": "external-link"
+          }
+        ]
       }
     ]
   },

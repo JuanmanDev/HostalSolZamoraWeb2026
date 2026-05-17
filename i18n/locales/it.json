@@ -1025,33 +1025,114 @@
       {
         "q": "Quali lingue parlate nell'hostal?",
         "a": "Il personale dell'hostal parla esclusivamente spagnolo. Se hai bisogno di comunicare in un'altra lingua, scrivici via WhatsApp o email e ci serviamo di traduttori online per capirci. Quando arrivi, connettiti al WiFi gratuito dell'hostal e usa dal tuo telefono qualsiasi traduttore online come Google Translate, DeepL o Bing Translator.",
-        "tags": ["lingua", "inglese", "francese", "tedesco", "cinese", "arabo", "russo", "italiano", "portoghese", "language", "speak", "comunicazione"],
+        "tags": [
+          "lingua",
+          "inglese",
+          "francese",
+          "tedesco",
+          "cinese",
+          "arabo",
+          "russo",
+          "italiano",
+          "portoghese",
+          "language",
+          "speak",
+          "comunicazione"
+        ],
         "links": [
-          { "label": "Google Translate", "url": "https://translate.google.com/", "icon": "languages" },
-          { "label": "DeepL Traduttore", "url": "https://www.deepl.com/translator", "icon": "languages" },
-          { "label": "Bing Translator", "url": "https://www.bing.com/translator", "icon": "languages" },
-          { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" },
-          { "label": "Email", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }
+          {
+            "label": "Google Translate",
+            "url": "https://translate.google.com/",
+            "icon": "languages"
+          },
+          {
+            "label": "DeepL Traduttore",
+            "url": "https://www.deepl.com/translator",
+            "icon": "languages"
+          },
+          {
+            "label": "Bing Translator",
+            "url": "https://www.bing.com/translator",
+            "icon": "languages"
+          },
+          {
+            "label": "WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "Email",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
         ]
       },
       {
         "q": "Posso fare una prenotazione a nome di un'altra persona?",
         "a": "Non lo consigliamo. La cosa più sicura è che ogni ospite prenoti con il proprio nome, affinché tutti i dati (nome completo e telefono) siano correttamente registrati. Se prenoti per un'altra persona, lascia un commento nella prenotazione con il nome completo e il telefono di quella persona, e assicurati che quella persona completi il processo di check-in online con i propri dati. Il codice di prenotazione da solo non è sufficiente: dobbiamo verificare che la persona che arriva abbia il diritto di usarla. Le screenshot non sono accettate come prova di prenotazione, poiché non possiamo verificarne l'autenticità. In caso di dubbi, chiameremo il titolare della prenotazione per confermare.",
-        "tags": ["prenotazione per altri", "terzi", "nome titolare", "sicurezza", "verifica", "screenshot", "prenotare per qualcuno"],
+        "tags": [
+          "prenotazione per altri",
+          "terzi",
+          "nome titolare",
+          "sicurezza",
+          "verifica",
+          "screenshot",
+          "prenotare per qualcuno"
+        ],
         "links": [
-          { "label": "Guida al check-in", "url": "/arrivo", "icon": "file-text" },
-          { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }
+          {
+            "label": "Guida al check-in",
+            "url": "/arrivo",
+            "icon": "file-text"
+          },
+          {
+            "label": "WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
         "q": "Quali dotazioni hanno le camere?",
         "a": "Bagno privato, wifi (la password e ulteriori istruzioni sono sul foglio dietro la porta), scrivania e sedia, termosifone (con controlli automatici), aria condizionata con telecomando, TV con telecomando, asciugacapelli e ferro da stiro su richiesta, poltrona, finestra, letto con lenzuola incluse. Nel bagno troverai sapone di base, shampoo e sapone per le mani, oltre agli asciugamani. Se hai bisogno di altro, faccelo sapere.",
-        "tags": ["dotazioni", "camera", "amenities", "servizi", "bagno", "wifi", "aria condizionata", "TV", "asciugacapelli", "ferro da stiro", "letto", "asciugamani"]
+        "tags": [
+          "dotazioni",
+          "camera",
+          "amenities",
+          "servizi",
+          "bagno",
+          "wifi",
+          "aria condizionata",
+          "TV",
+          "asciugacapelli",
+          "ferro da stiro",
+          "letto",
+          "asciugamani"
+        ]
       },
       {
         "q": "Chi ha realizzato questo sito web?",
         "a": "Questo sito web è stato sviluppato da Juan Manuel Béc (https://juanman.tech/). Il codice sorgente è aperto e disponibile su GitHub: https://github.com/JuanmanDev/HostalSolZamoraWeb2026",
-        "tags": ["web", "sviluppatore", "autore", "codice", "github", "juanman", "tecnologia"]
+        "tags": [
+          "web",
+          "sviluppatore",
+          "autore",
+          "codice",
+          "github",
+          "juanman",
+          "tecnologia"
+        ]
+      },
+      {
+        "q": "Posso vedere il vecchio sito?",
+        "a": "Sì, puoi consultare il design e i contenuti del nostro sito precedente al seguente link.",
+        "links": [
+          {
+            "label": "Vedi il vecchio sito",
+            "url": "/old/hostalsolzamora.com/index.html",
+            "icon": "external-link"
+          }
+        ]
       }
     ]
   },

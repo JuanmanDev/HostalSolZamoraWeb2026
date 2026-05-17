@@ -1021,33 +1021,114 @@
       {
         "q": "Ce limbi vorbiți la hostal?",
         "a": "Personalul hostalului vorbește exclusiv spaniolă. Dacă ai nevoie să comunici în altă limbă, scrie-ne prin WhatsApp sau email și ne vom baza pe traducători online pentru a ne înțelege. La sosire, conectează-te la WiFi-ul gratuit al hostalului și folosește de pe telefonul tău orice traducător online precum Google Translate, DeepL sau Bing Translator.",
-        "tags": ["limbă", "engleză", "franceză", "germană", "chineză", "arabă", "rusă", "italiană", "portugheză", "language", "speak", "comunicare"],
+        "tags": [
+          "limbă",
+          "engleză",
+          "franceză",
+          "germană",
+          "chineză",
+          "arabă",
+          "rusă",
+          "italiană",
+          "portugheză",
+          "language",
+          "speak",
+          "comunicare"
+        ],
         "links": [
-          { "label": "Google Translate", "url": "https://translate.google.com/", "icon": "languages" },
-          { "label": "DeepL Traducere", "url": "https://www.deepl.com/translator", "icon": "languages" },
-          { "label": "Bing Translator", "url": "https://www.bing.com/translator", "icon": "languages" },
-          { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" },
-          { "label": "Email", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }
+          {
+            "label": "Google Translate",
+            "url": "https://translate.google.com/",
+            "icon": "languages"
+          },
+          {
+            "label": "DeepL Traducere",
+            "url": "https://www.deepl.com/translator",
+            "icon": "languages"
+          },
+          {
+            "label": "Bing Translator",
+            "url": "https://www.bing.com/translator",
+            "icon": "languages"
+          },
+          {
+            "label": "WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "Email",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
         ]
       },
       {
         "q": "Pot face o rezervare pe numele altei persoane?",
         "a": "Nu recomandăm. Cel mai sigur este ca fiecare oaspete să rezerve pe propriul nume, astfel încât toate datele (nume complet și telefon) să fie corect înregistrate. Dacă rezervi pentru altă persoană, lasă un comentariu în rezervare cu numele complet și telefonul acelei persoane, și asigură-te că aceea persoană completează procesul de check-in online cu propriile date. Codul de rezervare singur nu este suficient: trebuie să verificăm că persoana care sosește are dreptul să îl folosească. Capturile de ecran nu sunt acceptate ca dovadă de rezervare, deoarece nu le putem verifica autenticitatea.",
-        "tags": ["rezervare pentru altul", "terți", "numele titularului", "securitate", "verificare", "screenshot", "rezervă pentru cineva"],
+        "tags": [
+          "rezervare pentru altul",
+          "terți",
+          "numele titularului",
+          "securitate",
+          "verificare",
+          "screenshot",
+          "rezervă pentru cineva"
+        ],
         "links": [
-          { "label": "Ghid de check-in", "url": "/sosire", "icon": "file-text" },
-          { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }
+          {
+            "label": "Ghid de check-in",
+            "url": "/sosire",
+            "icon": "file-text"
+          },
+          {
+            "label": "WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
         "q": "Ce dotări au camerele?",
         "a": "Baie privată, wifi (parola și mai multe instrucțiuni sunt pe foaia din spatele ușii), un birou și un scaun, calorifer (cu comenzi automate), aer condiționat cu telecomandă, TV cu telecomandă, uscător de păr și fier de călcat la cerere, fotoliu, fereastră, pat cu lenjerie inclusă. În baie vei găsi săpun de bază, șampon și săpun de mâini, precum și prosoape. Dacă mai ai nevoie de ceva, anunță-ne.",
-        "tags": ["dotări", "cameră", "amenități", "servicii", "baie", "wifi", "aer condiționat", "TV", "uscător", "fier de călcat", "pat", "prosoape"]
+        "tags": [
+          "dotări",
+          "cameră",
+          "amenități",
+          "servicii",
+          "baie",
+          "wifi",
+          "aer condiționat",
+          "TV",
+          "uscător",
+          "fier de călcat",
+          "pat",
+          "prosoape"
+        ]
       },
       {
         "q": "Cine a făcut acest site web?",
         "a": "Acest site web a fost dezvoltat de Juan Manuel Béc (https://juanman.tech/). Codul sursă este deschis și disponibil pe GitHub: https://github.com/JuanmanDev/HostalSolZamoraWeb2026",
-        "tags": ["web", "dezvoltator", "autor", "cod", "github", "juanman", "tehnologie"]
+        "tags": [
+          "web",
+          "dezvoltator",
+          "autor",
+          "cod",
+          "github",
+          "juanman",
+          "tehnologie"
+        ]
+      },
+      {
+        "q": "Pot vedea vechiul site?",
+        "a": "Da, puteți consulta designul și conținutul site-ului nostru anterior la următorul link.",
+        "links": [
+          {
+            "label": "Vezi vechiul site",
+            "url": "/old/hostalsolzamora.com/index.html",
+            "icon": "external-link"
+          }
+        ]
       }
     ]
   },

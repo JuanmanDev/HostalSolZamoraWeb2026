@@ -3,15 +3,17 @@
     <LayoutTheNavbar :solid-from-start="true" />
 
     <main class="page-content">
-      <UiSectionTag>{{ t('pages.contacto.tag') }}</UiSectionTag>
-      <h1 class="page-heading">{{ t('pages.contacto.heading') }}</h1>
-      <p class="page-lead">{{ t('pages.contacto.lead') }}</p>
+      <section id="contact-intro">
+        <UiSectionTag>{{ t('pages.contacto.tag') }}</UiSectionTag>
+        <h1 class="page-heading">{{ t('pages.contacto.heading') }}</h1>
+        <p class="page-lead">{{ t('pages.contacto.lead') }}</p>
+      </section>
 
       <div class="contact-grid">
         <!-- Left: contact info + form -->
         <div>
           <!-- Quick action buttons -->
-          <div class="quick-actions">
+          <section id="contact-quick-actions" class="quick-actions">
             <a href="tel:+34980533152" class="quick-btn">
               <LucideIcon name="phone" :size="18" color="#fff" />
               <div>
@@ -33,10 +35,10 @@
                 <div class="quick-btn__val">hostalsol@outlook.com</div>
               </div>
             </a>
-          </div>
+          </section>
 
           <!-- Info card -->
-          <section class="info-card">
+          <section id="contact-info" class="info-card">
             <h2 class="block-heading">{{ t('pages.contacto.infoTitle') }}</h2>
 
             <div class="info-row">
@@ -70,7 +72,7 @@
           </section>
 
           <!-- Contact form (mailto-based, no backend required for static export) -->
-          <section class="form-card">
+          <section id="contact-form" class="form-card">
             <h2 class="block-heading">{{ t('pages.contacto.formTitle') }}</h2>
             <p class="form-intro">{{ t('pages.contacto.formIntro') }}</p>
 
@@ -111,7 +113,7 @@
 
         <!-- Right: distances + map + parking link -->
         <aside class="side-panel">
-          <section class="distances-card">
+          <section id="contact-distances" class="distances-card">
             <h2 class="block-heading">{{ t('pages.contacto.distancesTitle') }}</h2>
             <ul class="distances-list">
               <li v-for="d in distances" :key="d.name">
@@ -123,19 +125,20 @@
           </section>
 
           <iframe
+            id="contact-map"
             src="https://maps.google.com/maps?q=Hostal+Sol,+Calle+Benavente,+2,+49014+Zamora+Espa%C3%B1a&output=embed&z=17"
             title="Hostal Sol Zamora"
             class="contact-map"
             loading="lazy"
           />
 
-          <div class="parking-note">
+          <section id="contact-parking" class="parking-note">
             <LucideIcon name="car" :size="18" color="var(--green)" />
             <div>
               <p>{{ t('pages.contacto.parkingNote') }}</p>
               <NuxtLink :to="localePath('parking')" class="parking-link">{{ t('pages.contacto.parkingLink') }}</NuxtLink>
             </div>
-          </div>
+          </section>
         </aside>
       </div>
     </main>

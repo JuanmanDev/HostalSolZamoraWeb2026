@@ -117,10 +117,47 @@ const lbLoading = ref(false)
 let dX = 0, dY = 0
 let startX = 0, startY = 0
 
-function openLb(i: number) { lbIdx.value = i; lbOpen.value = true; resetZoom(); lbLoading.value = true }
-function closeLb() { lbOpen.value = false }
-function lbPrev() { lbIdx.value = (lbIdx.value - 1 + lbPhotoItems.value.length) % lbPhotoItems.value.length; resetZoom(); lbLoading.value = true }
-function lbNext() { lbIdx.value = (lbIdx.value + 1) % lbPhotoItems.value.length; resetZoom(); lbLoading.value = true }
+const route = useRoute()
+const router = useRouter()
+
+// Sync LB state with URL
+function updateLbUrl() {
+  if (lbOpen.value) {
+    router.replace({ query: { ...route.query, lb: lbIdx.value.toString() } })
+  } else {
+    const q = { ...route.query }
+    delete q.lb
+    router.replace({ query: q })
+  }
+}
+
+function openLb(i: number) { 
+  lbIdx.value = i; 
+  lbOpen.value = true; 
+  resetZoom(); 
+  lbLoading.value = true;
+  updateLbUrl();
+}
+
+function closeLb() { 
+  lbOpen.value = false;
+  updateLbUrl();
+}
+
+function lbPrev() { 
+  lbIdx.value = (lbIdx.value - 1 + lbPhotoItems.value.length) % lbPhotoItems.value.length; 
+  resetZoom(); 
+  lbLoading.value = true;
+  updateLbUrl();
+}
+
+function lbNext() { 
+  lbIdx.value = (lbIdx.value + 1) % lbPhotoItems.value.length; 
+  resetZoom(); 
+  lbLoading.value = true;
+  updateLbUrl();
+}
+
 function resetZoom() { zoom.value = 1; panX.value = 0; panY.value = 0 }
 
 function toggleZoom() {
@@ -184,6 +221,16 @@ function onLbUp(e: MouseEvent | TouchEvent) {
 }
 
 onMounted(() => {
+  // Check URL for initial lightbox state
+  if (route.query.lb !== undefined) {
+    const initialIdx = parseInt(route.query.lb as string, 10)
+    if (!isNaN(initialIdx) && initialIdx >= 0 && initialIdx < lbPhotoItems.value.length) {
+      lbIdx.value = initialIdx
+      lbOpen.value = true
+      lbLoading.value = true
+    }
+  }
+
   const handler = (e: KeyboardEvent) => {
     if (!lbOpen.value) return
     if (e.key === 'Escape')     closeLb()
@@ -291,6 +338,20 @@ function handleSlideClick(i: number, item: MediaItem) {
         <div v-else class="gallery-image-placeholder" style="height: 75vh; width: 100%; background: #eee;"></div>
       </Slide>
     </Carousel>
+
+    <!-- 
+      Hidden container for crawler discovery. 
+      Nuxt Image needs to see these tags in the HTML to optimize images during 'generate'.
+    -->
+    <div style="display: none;" aria-hidden="true">
+      <NuxtPicture
+        v-for="path in roomPhotoPaths('All')"
+        :key="path"
+        :src="path"
+        sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw xxl:100vw 2xl:100vw 3xl:100vw 4k:100vw"
+        :modifiers="{ rotate: 0 }"
+      />
+    </div>
 
     <Carousel id="thumbnails" v-bind="thumbnailsConfig" v-model="currentSlide">
       <Slide v-for="(image, i) in mediaItems" :key="`thumb-${image.type}-${i}`">

@@ -3,12 +3,12 @@
     <LayoutTheNavbar :solid-from-start="true" />
 
     <main class="galeria-page">
-      <div class="galeria__header">
+      <div id="gallery-header" class="galeria__header">
         <UiSectionTag>{{ t('pages.galeria.tag') }}</UiSectionTag>
         <h1 class="galeria__heading">{{ t('pages.galeria.heading') }}</h1>
       </div>
 
-      <div class="galeria__header">
+      <div id="gallery-intro" class="galeria__header">
         <p class="galeria__text">{{ t('pages.galeria.p1') }}</p>
         <p class="galeria__text">{{ t('pages.galeria.p2') }}</p>
         <p class="galeria__text">{{ t('pages.galeria.p3') }}</p>
@@ -19,7 +19,7 @@
       </div>
 
       <!-- Room Media Gallery -->
-      <section class="galeria__gallery">
+      <section id="gallery-main" class="galeria__gallery">
         <SectionsRoomMediaGallery2
           :initial-room="activeRoom"
           :initial-media="mediaFilter"
@@ -27,8 +27,6 @@
           @update:media="onMediaChange"
         />
       </section>
-
-
     </main>
 
     <LayoutTheFooter />
@@ -81,6 +79,7 @@ const mediaFilter = ref<'all' | 'photos' | 'videos'>((route.query.media as 'all'
 function pushQuery() {
   router.push({
     query: {
+      ...route.query, // preserve other query params like lb open state
       room:  activeRoom.value,
       media: mediaFilter.value,
     },
@@ -96,6 +95,21 @@ function onRoomChange(key: string) {
   activeRoom.value   = key
   pushQuery()
 }
+
+onMounted(() => {
+  // If a specific room is requested via URL, scroll to the gallery section immediately
+  if (route.query.room && route.query.room !== 'All') {
+    nextTick(() => {
+      const galleryEl = document.querySelector('.galeria__gallery')
+      if (galleryEl) {
+        // Use a small timeout to ensure the carousel has rendered
+        setTimeout(() => {
+           galleryEl.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }, 100)
+      }
+    })
+  }
+})
 </script>
 
 <style scoped>

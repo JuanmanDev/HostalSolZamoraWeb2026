@@ -17,6 +17,36 @@ Hostal Sol is a family-run business with a hospitality legacy dating back to **1
 - **3D Discount Card**: An interactive 3D CSS effect to highlight direct booking benefits.
 - **Dockerized & Multi-arch**: Multi-platform Docker images (`amd64` and `arm64`) automatically built and pushed to GitHub Container Registry (GHCR).
 - **CI/CD Driven**: Automated deployment to GitHub Pages and GHCR via GitHub Actions.
+- **Self-hosted Analytics**: Integrated **Umami** for privacy-focused, cookie-less tracking.
+- **Historical Archive**: Access to the previous version of the website for continuity.
+
+## 📊 Analytics (Umami)
+
+The project includes a self-hosted instance of [Umami](https://umami.is/) to track engagement without compromising user privacy.
+
+### Features
+- **Page Views**: Automatically tracked across all routes.
+- **Section Visibility**: Custom tracking for how long users spend on specific sections (e.g., `hero`, `rooms`, `faq`) using `IntersectionObserver`.
+- **Event Tracking**: Global click tracking for all buttons and links, providing insights into user flow.
+
+### Infrastructure
+Umami is included in the `docker-compose.yml` stack:
+- **Service**: `umami` (ghcr.io/umami-software/umami:postgresql-latest)
+- **Database**: `umami-db` (PostgreSQL 15)
+- **URL**: `https://umami.hostalsol.79.72.51.163.nip.io`
+
+### Configuration
+To set up tracking for a new environment:
+1. Log in to Umami (default: `admin` / `umami`).
+2. Add a new Website and copy the **Website ID**.
+3. Update `nuxt.config.ts` or set the environment variable `NUXT_PUBLIC_UMAMI_ID`.
+
+## 📜 History & Old Website
+
+The project honors the family's hotelier history, starting in 1975 on Calle Aire. 
+
+For archival purposes, the original WordPress-based website is preserved and accessible at:
+`https://hostalsolzamora.com/old/hostalsolzamora.com/index.html`
 
 ## 🛠 Tech Stack
 

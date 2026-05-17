@@ -3,12 +3,14 @@
     <LayoutTheNavbar :solid-from-start="true" />
 
     <main class="page-content container">
-      <UiSectionTag>Check-in</UiSectionTag>
-      <h1 class="page-heading">{{ t('pages.checkin.heading') }}</h1>
-      <p class="page-lead">{{ t('pages.checkin.lead') }}</p>
+      <section id="checkin-intro">
+        <UiSectionTag>Check-in</UiSectionTag>
+        <h1 class="page-heading">{{ t('pages.checkin.heading') }}</h1>
+        <p class="page-lead">{{ t('pages.checkin.lead') }}</p>
+      </section>
 
       <!-- Before you arrive -->
-      <section class="ci-section">
+      <section id="checkin-before" class="ci-section">
         <h2 class="ci-section-title">
           <LucideIcon name="clock" :size="22" color="var(--green)" />
           {{ t('pages.checkin.beforeTitle') }}
@@ -33,7 +35,7 @@
       </section>
 
       <!-- Online check-in CTA -->
-      <section class="ci-cta-block">
+      <section id="checkin-online-cta" class="ci-cta-block">
         <div class="ci-cta">
           <div class="ci-cta__text">
             <h2 class="ci-cta__title">
@@ -50,7 +52,7 @@
       </section>
 
       <!-- Navigation apps -->
-      <section class="ci-section">
+      <section id="checkin-navigation" class="ci-section">
         <h2 class="ci-section-title">
           <LucideIcon name="navigation" :size="22" color="var(--green)" />
           {{ t('pages.checkin.arrivalTitle') }}
@@ -72,7 +74,7 @@
       </section>
 
       <!-- Arrival steps -->
-      <section class="ci-section">
+      <section id="checkin-steps" class="ci-section">
         <div class="ci-steps">
           <div v-for="(step, i) in steps" :key="i" class="ci-step">
             <div class="ci-step__num">{{ i + 1 }}</div>
@@ -89,7 +91,7 @@
       </section>
 
       <!-- Map embed -->
-      <section class="ci-section">
+      <section id="checkin-map" class="ci-section">
         <iframe
           src="https://maps.google.com/maps?q=Hostal+Sol,+Calle+Benavente,+2,+49014+Zamora+Espa%C3%B1a&output=embed&z=17"
           title="Hostal Sol Zamora"
@@ -99,7 +101,7 @@
       </section>
 
       <!-- At reception -->
-      <section class="ci-section">
+      <section id="checkin-reception" class="ci-section">
         <h2 class="ci-section-title">
           <LucideIcon name="door-open" :size="22" color="var(--green)" />
           {{ t('pages.checkin.arrivalInfoTitle') }}
@@ -108,7 +110,7 @@
       </section>
 
       <!-- Room rules -->
-      <section class="ci-section">
+      <section id="checkin-room-rules" class="ci-section">
         <h2 class="ci-section-title">
           <LucideIcon name="bed-double" :size="22" color="var(--green)" />
           {{ t('pages.checkin.roomTitle') }}
@@ -117,7 +119,7 @@
       </section>
 
       <!-- Checkout -->
-      <section class="ci-section">
+      <section id="checkin-checkout" class="ci-section">
         <h2 class="ci-section-title">
           <LucideIcon name="log-out" :size="22" color="var(--green)" />
           {{ t('pages.checkin.checkoutTitle') }}
@@ -126,7 +128,7 @@
       </section>
 
       <!-- Legal docs -->
-      <section class="ci-section">
+      <section id="checkin-docs" class="ci-section">
         <h2 class="ci-section-title">
           <LucideIcon name="file-badge" :size="22" color="var(--green)" />
           {{ t('pages.checkin.docsTitle') }}

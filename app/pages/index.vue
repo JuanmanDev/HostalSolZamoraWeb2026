@@ -2,15 +2,15 @@
   <div>
     <LayoutTheNavbar />
     <main>
-      <SectionsHeroSection />
-      <SectionsAboutSection />
-      <SectionsRoomsSection />
-      <SectionsMapSection />
-      <SectionsParkingSection />
-      <SectionsReviewsSection />
-      <SectionsRecommendationSection />
-      <SectionsFaqSection />
-      <SectionsReservationSection />
+      <SectionsHeroSection id="hero" />
+      <SectionsAboutSection id="about" />
+      <SectionsRoomsSection id="rooms" />
+      <SectionsMapSection id="map" />
+      <SectionsParkingSection id="parking" />
+      <SectionsReviewsSection id="reviews" />
+      <SectionsRecommendationSection id="recommendation" />
+      <SectionsFaqSection id="faq" />
+      <SectionsReservationSection id="reservation" />
     </main>
     <LayoutTheFooter />
   </div>

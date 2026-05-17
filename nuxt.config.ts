@@ -51,8 +51,16 @@ export default defineNuxtConfig({
     'nuxt-link-checker',
     'nuxt-schema-org',
     'nuxt-seo-utils',
-    'nuxt-skew-protection'
+    'nuxt-skew-protection',
+    'nuxt-umami'
   ],
+
+  umami: {
+    host: 'https://umami.hostalsol.79.72.51.163.nip.io',
+    id: 'b8b8b8b8-b8b8-b8b8-b8b8-b8b8b8b8b8b8', // Placeholder, user should update after first login
+    ignoreLocalhost: true,
+    autoTrack: true,
+  },
 
   // ── Site identity (sitemap, robots, og-image read this) ───────────────────
   site: {

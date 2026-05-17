@@ -1,14 +1,30 @@
 {
   "ogImage": {
     "tagline": "منزلك في زامورا",
-    "home": { "title": "Hostal Sol Zamora" },
-    "faq": { "title": "الأسئلة الشائعة" },
-    "parking": { "title": "مواقف السيارات في زامورا" },
-    "checkin": { "title": "كيف تصل وتسجيل الدخول" },
-    "galeria": { "title": "معرض الغرف" },
-    "reserva": { "title": "حجز غرفة" },
-    "sobreNosotros": { "title": "عنا" },
-    "contacto": { "title": "اتصل بنا" },
+    "home": {
+      "title": "Hostal Sol Zamora"
+    },
+    "faq": {
+      "title": "الأسئلة الشائعة"
+    },
+    "parking": {
+      "title": "مواقف السيارات في زامورا"
+    },
+    "checkin": {
+      "title": "كيف تصل وتسجيل الدخول"
+    },
+    "galeria": {
+      "title": "معرض الغرف"
+    },
+    "reserva": {
+      "title": "حجز غرفة"
+    },
+    "sobreNosotros": {
+      "title": "عنا"
+    },
+    "contacto": {
+      "title": "اتصل بنا"
+    },
     "location": "زامورا، إسبانيا"
   },
   "nav": {
@@ -32,14 +48,46 @@
     "ctaRooms": "مشاهدة الغرف",
     "discount": "حجز مباشر — خصم 15٪",
     "features": [
-      { "icon": "map-pin", "label": "موقع مركزي", "link": null },
-      { "icon": "wifi", "label": "واي فاي متاح", "link": null },
-      { "icon": "paw-print", "label": "الحيوانات الأليفة مسموحة", "link": null },
-      { "icon": "shower-head", "label": "حمام خاص", "link": null },
-      { "icon": "banknote-arrow-down", "label": "أسعار اقتصادية", "link": null },
-      { "icon": "wind", "label": "تكييف هواء", "link": null },
-      { "icon": "tv", "label": "تلفزيون", "link": null },
-      { "icon": "laptop", "label": "مكتب للعمل", "link": null }
+      {
+        "icon": "map-pin",
+        "label": "موقع مركزي",
+        "link": null
+      },
+      {
+        "icon": "wifi",
+        "label": "واي فاي متاح",
+        "link": null
+      },
+      {
+        "icon": "paw-print",
+        "label": "الحيوانات الأليفة مسموحة",
+        "link": null
+      },
+      {
+        "icon": "shower-head",
+        "label": "حمام خاص",
+        "link": null
+      },
+      {
+        "icon": "banknote-arrow-down",
+        "label": "أسعار اقتصادية",
+        "link": null
+      },
+      {
+        "icon": "wind",
+        "label": "تكييف هواء",
+        "link": null
+      },
+      {
+        "icon": "tv",
+        "label": "تلفزيون",
+        "link": null
+      },
+      {
+        "icon": "laptop",
+        "label": "مكتب للعمل",
+        "link": null
+      }
     ]
   },
   "about": {
@@ -68,29 +116,47 @@
         "label": "مزدوجة (سريران منفصلان)",
         "icon": "bed-single",
         "photoPath": "/images/rooms/301/003.jpg",
-        "extras": ["سريران 90 سم"],
+        "extras": [
+          "سريران 90 سم"
+        ],
         "rateId": "578650"
       },
       {
         "label": "مزدوجة (سرير كبير)",
         "icon": "bed-double",
         "photoPath": "/images/rooms/323/002.jpg",
-        "extras": ["سرير 135 سم"],
+        "extras": [
+          "سرير 135 سم"
+        ],
         "rateId": "578649"
       },
       {
         "label": "مزدوجة مع شرفة",
         "icon": "building",
         "photoPath": "/images/rooms/321/021.jpg",
-        "extras": ["سرير 135 سم", "شرفة خاصة", "TV Superior"],
+        "extras": [
+          "سرير 135 سم",
+          "شرفة خاصة",
+          "TV Superior"
+        ],
         "rateId": "752069"
       }
     ],
     "amenities": [
-      "تلفزيون", "واي فاي", "حمام خاص", "مكتب",
-      "تدفئة مركزية", "مستلزمات الحمام", "مناشف وأغطية",
-      "تكييف هواء", "مجفف شعر (عند الطلب)", "خزانة ملابس",
-      "تنظيف يومي", "كرسي", "كاميرات مراقبة في المناطق المشتركة", "مصعد"
+      "تلفزيون",
+      "واي فاي",
+      "حمام خاص",
+      "مكتب",
+      "تدفئة مركزية",
+      "مستلزمات الحمام",
+      "مناشف وأغطية",
+      "تكييف هواء",
+      "مجفف شعر (عند الطلب)",
+      "خزانة ملابس",
+      "تنظيف يومي",
+      "كرسي",
+      "كاميرات مراقبة في المناطق المشتركة",
+      "مصعد"
     ],
     "filterAll": "الكل",
     "filterBalcon": "شرفة",
@@ -171,19 +237,71 @@
     "ctaBand": "احجز مباشرة على موقعنا واحصل على أفضل سعر مضمون",
     "ctaBandBtn": "احجز بخصم →",
     "items": [
-      { "name": "Gemma", "text": "Me ha encantado la localización, el estilo del hostal es muy moderno y el chico super majo. La ducha era genial, ¡me dio pena marcharme!", "stars": 5 },
-      { "name": "Iker Zulueta", "text": "En pleno centro histórico, habitaciones amplias, limpias y equipadas. Trato del personal inmejorable. ¡Volveré a repetir!", "stars": 5 },
-      { "name": "José Manuel Serrano", "text": "Ubicación muy céntrica, te evitas el coche. El chico que nos atendió se ofreció para cualquier cosa. Excelente.", "stars": 5 },
-      { "name": "Annayara", "text": "Fui con un brazo lesionado y enseguida me ofrecieron cambiar la habitación por una más amplia. Esos detalles son los que cuentan.", "stars": 5 },
-      { "name": "Javier Fidalgo", "text": "El sitio es perfecto. Muy limpio, todo lo necesario, ubicación increíble y el recepcionista muy majo. Sin duda volveremos.", "stars": 5 },
-      { "name": "Carla Aguilar", "text": "Hostal estupendo en pleno centro. Nos explicaron qué ver y los mejores lugares a visitar. Sin duda, cuando volvamos repetiremos.", "stars": 5 },
-      { "name": "L. Elisabeth", "text": "Limpio, cómodo y práctico. Personal atento y preocupado de atender bien. Un acierto escoger este hostal.", "stars": 5 },
-      { "name": "Juan Manuel", "text": "El WiFi funcionó perfectamente y pude trabajar sin problemas. Creo que volveré pronto.", "stars": 5 },
-      { "name": "Thomas K. (DE)", "text": "Sehr zentral gelegen, saubere Zimmer und freundliches Personal. Kann ich nur empfehlen!", "stars": 5 },
-      { "name": "Marie L. (FR)", "text": "Excellent rapport qualité-prix. Chambre propre, bien équipée et idéalement située dans le centre historique.", "stars": 5 },
-      { "name": "James H. (UK)", "text": "Great location right in the historic centre. Clean rooms, helpful staff. Would definitely stay again.", "stars": 5 },
-      { "name": "Valentina R. (IT)", "text": "Ottima posizione nel centro storico, stanza pulita e personale cordiale. Consigliato!", "stars": 5 },
-      { "name": "Pedro A. (PT)", "text": "Localização perfeita no centro histórico. Quartos limpos e pessoal simpático. Recomendo!", "stars": 5 }
+      {
+        "name": "Gemma",
+        "text": "Me ha encantado la localización, el estilo del hostal es muy moderno y el chico super majo. La ducha era genial, ¡me dio pena marcharme!",
+        "stars": 5
+      },
+      {
+        "name": "Iker Zulueta",
+        "text": "En pleno centro histórico, habitaciones amplias, limpias y equipadas. Trato del personal inmejorable. ¡Volveré a repetir!",
+        "stars": 5
+      },
+      {
+        "name": "José Manuel Serrano",
+        "text": "Ubicación muy céntrica, te evitas el coche. El chico que nos atendió se ofreció para cualquier cosa. Excelente.",
+        "stars": 5
+      },
+      {
+        "name": "Annayara",
+        "text": "Fui con un brazo lesionado y enseguida me ofrecieron cambiar la habitación por una más amplia. Esos detalles son los que cuentan.",
+        "stars": 5
+      },
+      {
+        "name": "Javier Fidalgo",
+        "text": "El sitio es perfecto. Muy limpio, todo lo necesario, ubicación increíble y el recepcionista muy majo. Sin duda volveremos.",
+        "stars": 5
+      },
+      {
+        "name": "Carla Aguilar",
+        "text": "Hostal estupendo en pleno centro. Nos explicaron qué ver y los mejores lugares a visitar. Sin duda, cuando volvamos repetiremos.",
+        "stars": 5
+      },
+      {
+        "name": "L. Elisabeth",
+        "text": "Limpio, cómodo y práctico. Personal atento y preocupado de atender bien. Un acierto escoger este hostal.",
+        "stars": 5
+      },
+      {
+        "name": "Juan Manuel",
+        "text": "El WiFi funcionó perfectamente y pude trabajar sin problemas. Creo que volveré pronto.",
+        "stars": 5
+      },
+      {
+        "name": "Thomas K. (DE)",
+        "text": "Sehr zentral gelegen, saubere Zimmer und freundliches Personal. Kann ich nur empfehlen!",
+        "stars": 5
+      },
+      {
+        "name": "Marie L. (FR)",
+        "text": "Excellent rapport qualité-prix. Chambre propre, bien équipée et idéalement située dans le centre historique.",
+        "stars": 5
+      },
+      {
+        "name": "James H. (UK)",
+        "text": "Great location right in the historic centre. Clean rooms, helpful staff. Would definitely stay again.",
+        "stars": 5
+      },
+      {
+        "name": "Valentina R. (IT)",
+        "text": "Ottima posizione nel centro storico, stanza pulita e personale cordiale. Consigliato!",
+        "stars": 5
+      },
+      {
+        "name": "Pedro A. (PT)",
+        "text": "Localização perfeita no centro histórico. Quartos limpos e pessoal simpático. Recomendo!",
+        "stars": 5
+      }
     ]
   },
   "restaurant": {
@@ -208,82 +326,227 @@
       {
         "q": "ما هي ساعات عمل النزل؟",
         "a": "الخدمة الهاتفية: 10:00–21:00. تسجيل الدخول: 14:00–21:00. يُغلق النزل الساعة 21:00 دون استثناء — الوصول بعد الساعة 21:00 دون اتفاق مسبق غير ممكن. بعد الوصول ستستلم المفاتيح وتستطيع الدخول والخروج بحرية. معظم أيام الأحد نكون مغلقين، لكن إذا وصلت السبت يمكنك البقاء طوال الأحد. نعمل معظم الأعياد عدا 14-16 أغسطس و15 ديسمبر و1 يناير.",
-        "links": [{ "label": "دليل الوصول الكامل", "url": "/checkin", "icon": "log-in" }]
+        "links": [
+          {
+            "label": "دليل الوصول الكامل",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
       },
       {
         "q": "ما هو وقت تسجيل الدخول والخروج؟",
         "a": "تسجيل الدخول من 14:00 حتى 21:00. إذا وصلت قبل الساعة 14:00، يمكننا حفظ حقائبك في الاستقبال. في فترات الانخفاض أحياناً يكون تسجيل دخول مبكر ممكناً لكنه غير مضمون. تسجيل الخروج الساعة 11:00. بعد الخروج أيضاً يمكننا الاحتفاظ بالأمتعة خلال يوم المغادرة (عدا الأحد) — أخبرنا فقط. إذا وصلت بعد 21:00، لا يمكننا خدمتك بأي حال.",
-        "tags": ["وصول", "تسجيل دخول مبكر", "حفظ أمتعة", "حقيبة", "تسجيل خروج متأخر"],
-        "links": [{ "label": "دليل الوصول الكامل", "url": "/checkin", "icon": "log-in" }]
+        "tags": [
+          "وصول",
+          "تسجيل دخول مبكر",
+          "حفظ أمتعة",
+          "حقيبة",
+          "تسجيل خروج متأخر"
+        ],
+        "links": [
+          {
+            "label": "دليل الوصول الكامل",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
       },
       {
         "q": "ما الوثائق المطلوبة لتسجيل الدخول؟",
         "a": "وفقاً للمرسوم الملكي 933/2021، يجب على جميع الضيوف من 14 عاماً فما فوق تقديم وثيقة هوية رسمية سارية المفعول بصورة: وثيقة هوية إسبانية DNI، أو جواز سفر، أو NIE، أو TIE، أو رخصة قيادة أوروبية. لا تُقبل الوثائق المنتهية الصلاحية أو التالفة أو غير المقروءة أو المرسلة عبر البريد الإلكتروني أو واتساب. يجب أن يقدم كل ضيف وثيقته الخاصة. لتسريع العملية نوصي باستخدام Chekin إلكترونياً قبل الوصول.",
-        "tags": ["جواز سفر", "رخصة قيادة", "DNI", "وثائق", "تسجيل دخول إلكتروني", "chekin", "NIE"],
+        "tags": [
+          "جواز سفر",
+          "رخصة قيادة",
+          "DNI",
+          "وثائق",
+          "تسجيل دخول إلكتروني",
+          "chekin",
+          "NIE"
+        ],
         "links": [
-          { "label": "تسجيل الدخول إلكترونياً", "url": "/checkin", "icon": "file-text" },
-          { "label": "أنواع الوثائق المقبولة", "url": "/checkin", "icon": "id-card" }
+          {
+            "label": "تسجيل الدخول إلكترونياً",
+            "url": "/checkin",
+            "icon": "file-text"
+          },
+          {
+            "label": "أنواع الوثائق المقبولة",
+            "url": "/checkin",
+            "icon": "id-card"
+          }
         ]
       },
       {
         "q": "هل النزل مناسب لذوي الاحتياجات الخاصة؟",
         "a": "النزل في الطابق الثالث من مبنى به مصعدان. لا توجد درجات في المدخل ولا في الممرات المؤدية إلى الغرف. يمكنك مشاهدة صور وفيديوهات الغرف في معرضنا للتأكد من أن المساحة تناسب احتياجاتك. للاستفسار — تواصل معنا.",
-        "tags": ["كرسي متحرك", "إعاقة حركية", "مصعد", "درج", "إمكانية الوصول"],
-        "links": [{ "label": "معرض الغرف", "url": "/gallery", "icon": "image" }]
+        "tags": [
+          "كرسي متحرك",
+          "إعاقة حركية",
+          "مصعد",
+          "درج",
+          "إمكانية الوصول"
+        ],
+        "links": [
+          {
+            "label": "معرض الغرف",
+            "url": "/gallery",
+            "icon": "image"
+          }
+        ]
       },
       {
         "q": "أين يمكنني إيقاف السيارة؟",
         "a": "النزل لا يمتلك موقفاً خاصاً، لكن هناك خيارات قريبة. موقف Plaza Constitución (3 دقائق سيراً، 1.45€/ساعة، 14.70€/يوم، 24 ساعة) — الأقرب. موقف Plaza de la Marina Española (5 دقائق، حجز إلكتروني على Empark). للإيقاف المجاني — محطة القطار (2 كم، حافلة L3)، مجاني 24 ساعة. عند الباب مباشرة — منطقة ORA (زرقاء) 0.35€/30 دقيقة، حد أقصى 3 ساعات. رغم كونها منطقة مشاة، يسمح البلدية للضيوف بالدخول من Calle San Miguel لتفريغ الأمتعة.",
-        "tags": ["جراج", "سيارة", "دراجة نارية", "مركبة", "موقف قريب"],
+        "tags": [
+          "جراج",
+          "سيارة",
+          "دراجة نارية",
+          "مركبة",
+          "موقف قريب"
+        ],
         "links": [
-          { "label": "دليل مواقف السيارات الكامل", "url": "/parking", "icon": "car" },
-          { "label": "فتح في خرائط جوجل", "url": "https://www.google.com/maps/dir//Calle+Benavente,+2+Zamora", "icon": "map-pin" }
+          {
+            "label": "دليل مواقف السيارات الكامل",
+            "url": "/parking",
+            "icon": "car"
+          },
+          {
+            "label": "فتح في خرائط جوجل",
+            "url": "https://www.google.com/maps/dir//Calle+Benavente,+2+Zamora",
+            "icon": "map-pin"
+          }
         ]
       },
       {
         "q": "كيف أصل إلى النزل من المحطة؟",
         "a": "محطتا القطار والحافلة معاً في Avenida de las Tres Cruces، على بُعد ~2 كم من النزل. الخيارات: تاكسي (5-7 دقائق، ~6-8€)، حافلة المدينة الخط 3 (El Acercame، 0.95€) — انزل في محطة «Mercado» (5 دقائق سيراً من النزل) — أو سيراً على الأقدام ~25-30 دقيقة. في المحطة موقف مجاني 24 ساعة وخزانات أمتعة.",
-        "tags": ["قطار", "renfe", "حافلة", "محطة", "وصول", "مواصلات", "كيف أصل"],
+        "tags": [
+          "قطار",
+          "renfe",
+          "حافلة",
+          "محطة",
+          "وصول",
+          "مواصلات",
+          "كيف أصل"
+        ],
         "links": [
-          { "label": "محطة زامورا — Renfe", "url": "https://www.renfe.com/es/es/inspirate/estaciones/estacion-zamora", "icon": "external-link" },
-          { "label": "محطة القطار — خرائط جوجل", "url": "https://www.google.com/maps/dir//Estaci%C3%B3n+de+Ferrocarril+Zamora", "icon": "map-pin" },
-          { "label": "محطة الحافلات — خرائط جوجل", "url": "https://www.google.com/maps/dir//Estaci%C3%B3n+de+Autobuses+de+Zamora", "icon": "map-pin" },
-          { "label": "حافلات El Acercame", "url": "https://www.acercame.es", "icon": "bus" }
+          {
+            "label": "محطة زامورا — Renfe",
+            "url": "https://www.renfe.com/es/es/inspirate/estaciones/estacion-zamora",
+            "icon": "external-link"
+          },
+          {
+            "label": "محطة القطار — خرائط جوجل",
+            "url": "https://www.google.com/maps/dir//Estaci%C3%B3n+de+Ferrocarril+Zamora",
+            "icon": "map-pin"
+          },
+          {
+            "label": "محطة الحافلات — خرائط جوجل",
+            "url": "https://www.google.com/maps/dir//Estaci%C3%B3n+de+Autobuses+de+Zamora",
+            "icon": "map-pin"
+          },
+          {
+            "label": "حافلات El Acercame",
+            "url": "https://www.acercame.es",
+            "icon": "bus"
+          }
         ]
       },
       {
         "q": "كيف أطلب تاكسي في زامورا؟",
         "a": "التعاونية الرئيسية هي Radio Taxi Zamora (هاتف: 980 531 515). يمكنك أيضاً إيجاد تاكسي عند موقف المحطة أو الساحات المركزية. الرحلة من المحطة إلى النزل تكلف ~6-8€ وتستغرق ~5-7 دقائق. التاكسي هو الخيار الأمثل للوصول المتأخر أو مع أمتعة كثيرة.",
-        "tags": ["تاكسي", "راديو تاكسي", "مواصلات", "تاكسي زامورا"],
+        "tags": [
+          "تاكسي",
+          "راديو تاكسي",
+          "مواصلات",
+          "تاكسي زامورا"
+        ],
         "links": [
-          { "label": "Radio Taxi Zamora — 980 531 515", "url": "tel:+34980531515", "icon": "phone" },
-          { "label": "تاكسي في خرائط جوجل", "url": "https://www.google.com/maps/search/taxi+zamora", "icon": "car" }
+          {
+            "label": "Radio Taxi Zamora — 980 531 515",
+            "url": "tel:+34980531515",
+            "icon": "phone"
+          },
+          {
+            "label": "تاكسي في خرائط جوجل",
+            "url": "https://www.google.com/maps/search/taxi+zamora",
+            "icon": "car"
+          }
         ]
       },
       {
         "q": "كيف أصل إلى IFEZA؟",
         "a": "IFEZA (Instituto Ferial de Zamora) على بُعد ~4-5 كم من النزل. يمكن الوصول بحافلة المدينة الخط 5 (El Acercame، 0.95€) أو تاكسي (~10 دقائق، 8-10€) أو سيارة. مهم: خلال الفعاليات الكبرى والحفلات الموسيقية عادةً ما يوفر المنظمون حافلات مجانية من وسط المدينة إلى IFEZA والعودة. تحقق دائماً من موقع الفعالية أو IFEZA.",
-        "tags": ["IFEZA", "معرض", "حفلة", "Zeta", "Fromago", "SIFER", "فعالية", "خط 5", "حافلة مجانية"],
+        "tags": [
+          "IFEZA",
+          "معرض",
+          "حفلة",
+          "Zeta",
+          "Fromago",
+          "SIFER",
+          "فعالية",
+          "خط 5",
+          "حافلة مجانية"
+        ],
         "links": [
-          { "label": "IFEZA — الموقع الرسمي", "url": "https://www.ifeza.es/", "icon": "building-2" },
-          { "label": "الخط 5 — El Acercame", "url": "https://www.acercame.es/index.php/linea/linea5", "icon": "bus" },
-          { "label": "IFEZA — خرائط جوجل", "url": "https://www.google.com/maps/dir//IFEZA+Zamora", "icon": "map-pin" }
+          {
+            "label": "IFEZA — الموقع الرسمي",
+            "url": "https://www.ifeza.es/",
+            "icon": "building-2"
+          },
+          {
+            "label": "الخط 5 — El Acercame",
+            "url": "https://www.acercame.es/index.php/linea/linea5",
+            "icon": "bus"
+          },
+          {
+            "label": "IFEZA — خرائط جوجل",
+            "url": "https://www.google.com/maps/dir//IFEZA+Zamora",
+            "icon": "map-pin"
+          }
         ]
       },
       {
         "q": "هل يقدم النزل الإفطار؟",
         "a": "لا نقدم وجبة الإفطار، لكن قريباً هناك عدة مقاهٍ ومخابز. نوصي بـ Bar Restaurante Padornelo — على بُعد أقل من دقيقتين سيراً من مدخل النزل. يفتح من الاثنين إلى الجمعة الساعة 10:00 مع وجبات إفطار جيدة بأسعار مناسبة.",
-        "tags": ["طعام", "قهوة", "بار", "مخبزة", "إفطار قريب"],
+        "tags": [
+          "طعام",
+          "قهوة",
+          "بار",
+          "مخبزة",
+          "إفطار قريب"
+        ],
         "links": [
-          { "label": "Restaurante Padornelo", "url": "/#restaurant", "icon": "utensils-crossed" },
-          { "label": "فتح في خرائط جوجل", "url": "https://www.google.com/maps/dir//Calle+Benavente,+2+Zamora", "icon": "map-pin" }
+          {
+            "label": "Restaurante Padornelo",
+            "url": "/#restaurant",
+            "icon": "utensils-crossed"
+          },
+          {
+            "label": "فتح في خرائط جوجل",
+            "url": "https://www.google.com/maps/dir//Calle+Benavente,+2+Zamora",
+            "icon": "map-pin"
+          }
         ]
       },
       {
         "q": "هل الحيوانات الأليفة مسموح بها؟",
         "a": "نعم، الحيوانات الأليفة مرحب بها! تُقبل برسوم إضافية 7€/ليلة لكل حيوان. يمكن دفع الرسوم الإضافية على موقعنا عند الحجز. يجب أن تكون الحيوانات مصحوبة في جميع الأوقات — لا يمكن تركها وحيدة في الغرفة أو النزل أو السيارة أو أي مكان آخر. عدم الامتثال يؤدي إلى رفض استضافة الحيوان والإلغاء المحتمل للحجز مع غرامة.",
-        "tags": ["كلب", "قطة", "حيوان", "جرو", "حيوانات أليفة مسموحة"],
-        "links": [{ "label": "احجز بخصم", "url": "/booking", "icon": "paw-print" }]
+        "tags": [
+          "كلب",
+          "قطة",
+          "حيوان",
+          "جرو",
+          "حيوانات أليفة مسموحة"
+        ],
+        "links": [
+          {
+            "label": "احجز بخصم",
+            "url": "/booking",
+            "icon": "paw-print"
+          }
+        ]
       },
       {
         "q": "هل يمكنني ترك حيواني الأليف وحيداً في الغرفة؟",
@@ -292,32 +555,80 @@
       {
         "q": "هل يوجد واي فاي في الغرف؟",
         "a": "نعم، واي فاي مجاني في جميع أنحاء النزل بما فيها جميع الغرف. كلمة المرور تُعطى عند تسجيل الدخول وهي متاحة في الاستقبال. السرعة تتجاوز 50 ميجابت/ثانية في معظم الغرف — كافية للتصفح والبريد الإلكتروني والبث والمكالمات المرئية. خيار ممتاز للعمل عن بُعد.",
-        "tags": ["إنترنت", "كلمة مرور واي فاي", "اتصال", "شبكة", "سرعة", "ألياف ضوئية", "عمل عن بُعد"]
+        "tags": [
+          "إنترنت",
+          "كلمة مرور واي فاي",
+          "اتصال",
+          "شبكة",
+          "سرعة",
+          "ألياف ضوئية",
+          "عمل عن بُعد"
+        ]
       },
       {
         "q": "هل يوجد تكييف هواء في الغرف؟",
         "a": "نعم، جميع الغرف مزودة بتكييف ومدفأة. النظام حديث وفعال يضمن درجة حرارة مريحة طوال العام. يمكنك ضبط درجة الحرارة حسب تفضيلك.",
-        "tags": ["تكييف", "مدفأة", "درجة حرارة", "حرارة", "برودة", "ترموستات", "مروحة", "مناخ"]
+        "tags": [
+          "تكييف",
+          "مدفأة",
+          "درجة حرارة",
+          "حرارة",
+          "برودة",
+          "ترموستات",
+          "مروحة",
+          "مناخ"
+        ]
       },
       {
         "q": "ما أنواع التلفزيونات في الغرف؟",
         "a": "في الغرف مع الشرفة — شاشات مسطحة 32 بوصة، بعضها Smart TV لمنصات البث. في الغرف بدون شرفة — تلفزيونات 18 بوصة (غير Smart TV)، لكن يمكنك توصيل أجهزة خارجية عبر HDMI.",
-        "tags": ["تلفزيون", "نتفليكس", "بث", "HBO", "Prime", "HDMI", "قنوات", "smart tv"]
+        "tags": [
+          "تلفزيون",
+          "نتفليكس",
+          "بث",
+          "HBO",
+          "Prime",
+          "HDMI",
+          "قنوات",
+          "smart tv"
+        ]
       },
       {
         "q": "ما إجراءات الأمان في النزل؟",
         "a": "النزل في الطابق الثالث، لذا للوصول إلى ممر الغرف تحتاج مفتاحين (أحدهما للمبنى والآخر لباب النزل). في الممرات كاميرات مراقبة. كل غرفة لها قفلها الخاص.",
-        "tags": ["خزنة", "أشياء ثمينة", "قفل", "سرقة", "كاميرا", "أمان", "CCTV"]
+        "tags": [
+          "خزنة",
+          "أشياء ثمينة",
+          "قفل",
+          "سرقة",
+          "كاميرا",
+          "أمان",
+          "CCTV"
+        ]
       },
       {
         "q": "هل يوجد ثلاجة أو ماكينة قهوة أو ميكروويف في الغرف؟",
         "a": "لا، الغرف لا تحتوي على ثلاجة أو ماكينة قهوة أو ميكروويف. لكن قريب من النزل هناك عدة سوبرماركت.",
-        "tags": ["ثلاجة", "مطبخ", "ميكروويف", "ماكينة قهوة", "غلاية", "ميني بار"]
+        "tags": [
+          "ثلاجة",
+          "مطبخ",
+          "ميكروويف",
+          "ماكينة قهوة",
+          "غلاية",
+          "ميني بار"
+        ]
       },
       {
         "q": "هل يوجد خدمة غسيل ملابس؟",
         "a": "النزل لا يملك غسالة خاصة، لكن قريباً هناك عدة مغاسل للخدمة الذاتية. الأقرب في شارع Calle San Torcuato، أقل من 5 دقائق سيراً. تغيير المناشف والأغطية مشمول في سعر الغرفة.",
-        "tags": ["غسيل", "ملابس", "غسالة", "مجفف", "مغسلة", "تنظيف ملابس"]
+        "tags": [
+          "غسيل",
+          "ملابس",
+          "غسالة",
+          "مجفف",
+          "مغسلة",
+          "تنظيف ملابس"
+        ]
       },
       {
         "q": "هل يوجد تنظيف يومي؟",
@@ -326,12 +637,23 @@
       {
         "q": "هل يوجد مجفف شعر أو مكواة ملابس؟",
         "a": "نعم، بالطلب من الاستقبال تتوفر مجففات شعر ومكاوٍ بدون تكلفة إضافية. خدمة مجانية لجميع الضيوف.",
-        "tags": ["شعر", "مجفف شعر", "مكواة", "كي الملابس"]
+        "tags": [
+          "شعر",
+          "مجفف شعر",
+          "مكواة",
+          "كي الملابس"
+        ]
       },
       {
         "q": "ما الذي يشمله سعر الغرفة؟",
         "a": "جميع الغرف تشمل: أغطية السرير الكاملة (ملاءات، بطانيات، وسائد، لحاف)، مناشف (1 أو 2 لكل ضيف حسب النوع والمدة)، أثاث أساسي (سرير، طاولات جانبية، خزانة أو علاقة مع شماعات، مكتب، كرسي) وحمام خاص بفرشاة أسنان وصابون يدين وجل استحمام وورق مرحاض. مجفف الشعر والمكواة — بالطلب مجاناً.",
-        "links": [{ "label": "معرض الغرف", "url": "/gallery", "icon": "image" }]
+        "links": [
+          {
+            "label": "معرض الغرف",
+            "url": "/gallery",
+            "icon": "image"
+          }
+        ]
       },
       {
         "q": "هل يوجد ماء ساخن؟",
@@ -341,57 +663,137 @@
         "q": "ما هي أسعاركم؟",
         "a": "نحن نزل اقتصادي بأدنى الأسعار في وسط زامورا. الأسعار تتفاوت حسب الموسم ونوع الغرفة. من 11 ليلة — خصم 10٪ تلقائياً. نوصي دائماً بالحجز على موقعنا — هنا الأسعار أقل بكثير من Booking وExpedia وغيرها.",
         "links": [
-          { "label": "اعرض الأسعار واحجز", "url": "/booking", "icon": "tag" },
-          { "label": "راسل عبر واتساب", "url": "https://wa.me/34639980253", "icon": "message-circle" }
+          {
+            "label": "اعرض الأسعار واحجز",
+            "url": "/booking",
+            "icon": "tag"
+          },
+          {
+            "label": "راسل عبر واتساب",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
         "q": "هل يوجد خصم للإقامة الطويلة؟",
         "a": "نعم، من 11 ليلة — خصم 10٪ تلقائياً على المجموع. الخصم يُطبق على الأسعار غير القابلة للاسترداد. يوجد أيضاً خصومات للمجموعات.",
-        "links": [{ "label": "احجز بخصم", "url": "/booking", "icon": "calendar-check" }]
+        "links": [
+          {
+            "label": "احجز بخصم",
+            "url": "/booking",
+            "icon": "calendar-check"
+          }
+        ]
       },
       {
         "q": "هل يمكن الدفع ببطاقة؟",
         "a": "نعم، نقبل بطاقات الائتمان والخصم الرئيسية: Visa وMasterCard وAmerican Express وغيرها. نقبل أيضاً النقد والتحويل البنكي مع إشعار أسبوع مسبق. الشيكات لا تُقبل.",
-        "tags": ["نقد", "فيزا", "ماستركارد", "بطاقة ائتمان", "بطاقة خصم", "طريقة دفع", "تحويل بنكي", "دفع"]
+        "tags": [
+          "نقد",
+          "فيزا",
+          "ماستركارد",
+          "بطاقة ائتمان",
+          "بطاقة خصم",
+          "طريقة دفع",
+          "تحويل بنكي",
+          "دفع"
+        ]
       },
       {
         "q": "هل يوجد أسرة إضافية؟",
         "a": "نعم، بالطلب بـ 25€/ليلة. يمكنك إضافة سرير إضافي عند الحجز على الموقع باختيار 3 بالغين أو بالتواصل معنا. الإجمالي 3 أسرة قابلة للطي — توافر محدود بحسب ترتيب الطلب. حد أقصى سرير إضافي واحد لكل غرفة.",
-        "tags": ["مهد", "سرير إضافي", "شخص ثالث", "شخص إضافي", "رضيع", "أريكة سرير"],
-        "links": [{ "label": "احجز مع سرير إضافي", "url": "/booking", "icon": "bed-double" }]
+        "tags": [
+          "مهد",
+          "سرير إضافي",
+          "شخص ثالث",
+          "شخص إضافي",
+          "رضيع",
+          "أريكة سرير"
+        ],
+        "links": [
+          {
+            "label": "احجز مع سرير إضافي",
+            "url": "/booking",
+            "icon": "bed-double"
+          }
+        ]
       },
       {
         "q": "هل تعملون أيام الأحد والعطل الرسمية؟",
         "a": "نعمل معظم أيام العطل الرسمية عدا 14-16 أغسطس و15 ديسمبر و1 يناير. معظم أيام الأحد نكون مغلقين، لكن إذا وصلت السبت يمكنك البقاء طوال الأحد — تسجيل الخروج الاثنين الساعة 11:00.",
-        "links": [{ "label": "دليل الوصول", "url": "/checkin", "icon": "calendar" }]
+        "links": [
+          {
+            "label": "دليل الوصول",
+            "url": "/checkin",
+            "icon": "calendar"
+          }
+        ]
       },
       {
         "q": "هل يمكن الدخول إلى النزل بعد الساعة 21:00؟",
         "a": "وقت تسجيل الدخول من 14:00 إلى 21:00؛ يُغلق النزل الساعة 21:00 دون استثناء. لا يمكن تسجيل الدخول بعد الساعة 21:00 بأي حال. ومع ذلك، بعد الوصول ستستلم مفاتيح للدخول الحر في أي وقت.",
-        "tags": ["وصول متأخر", "تأخير", "دخول ليلي", "مفاتيح 24 ساعة"]
+        "tags": [
+          "وصول متأخر",
+          "تأخير",
+          "دخول ليلي",
+          "مفاتيح 24 ساعة"
+        ]
       },
       {
         "q": "هل النزل هادئ؟",
         "a": "في عام 2026 تم تركيب نوافذ وستائر جديدة حسّنت عزل الضوضاء الخارجية بشكل ملحوظ. العزل بين الغرف أساسي. إذا كنت تحتاج غرفة هادئة — أخبرنا عند الحجز أو تسجيل الدخول.",
-        "tags": ["ضوضاء", "صاخب", "سدادات أذن", "نوم", "عزل صوتي", "جيران"],
-        "links": [{ "label": "الغرف المتاحة", "url": "/gallery", "icon": "building" }]
+        "tags": [
+          "ضوضاء",
+          "صاخب",
+          "سدادات أذن",
+          "نوم",
+          "عزل صوتي",
+          "جيران"
+        ],
+        "links": [
+          {
+            "label": "الغرف المتاحة",
+            "url": "/gallery",
+            "icon": "building"
+          }
+        ]
       },
       {
         "q": "وصلت إلى الاستقبال ولا يوجد أحد. ماذا أفعل؟",
         "a": "اتصل بهاتف النزل: +34 980 533 152. أحياناً نكون مشغولين خارج الاستقبال أو نخدم ضيوفاً آخرين. مهم: اجرِ مكالمة هاتفية عادية — مكالمات واتساب لا تُرد. ساعات العمل: 10:00–21:00.",
         "links": [
-          { "label": "اتصل", "url": "tel:+34980533152", "icon": "phone" },
-          { "label": "راسل عبر واتساب", "url": "https://wa.me/34639980253", "icon": "message-circle" }
+          {
+            "label": "اتصل",
+            "url": "tel:+34980533152",
+            "icon": "phone"
+          },
+          {
+            "label": "راسل عبر واتساب",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
         "q": "اتصلت لكن لا أحد يرد.",
         "a": "تحقق من صحة الرقم: +34 980 533 152. أحياناً نتلقى مكالمات متعددة في آنٍ واحد. أعد المحاولة بعد ~10 دقائق. يمكنك أيضاً مراسلتنا عبر البريد الإلكتروني hostalsol{'@'}outlook.com أو واتساب +34 639 980 253. مهم: مكالمات واتساب لا تُرد.",
         "links": [
-          { "label": "أرسل بريداً إلكترونياً", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" },
-          { "label": "واتساب", "url": "https://wa.me/34639980253", "icon": "message-circle" },
-          { "label": "اتصل مجدداً", "url": "tel:+34980533152", "icon": "phone" }
+          {
+            "label": "أرسل بريداً إلكترونياً",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          },
+          {
+            "label": "واتساب",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "اتصل مجدداً",
+            "url": "tel:+34980533152",
+            "icon": "phone"
+          }
         ]
       },
       {
@@ -402,119 +804,317 @@
         "q": "أريد الحجز لكن لا توجد غرف متاحة. هل يمكنكم المساعدة؟",
         "a": "إذا كان التاريخ المختار في الشهرين أو الثلاثة أشهر القادمة — على الأرجح هو محجوز. راجع الموقع من حين لآخر لمتابعة إلغاءات الحجز المحتملة. أحياناً نُنشئ قوائم انتظار للمواعيد الشعبية (أسبوع الفصح، حفلات Zetta).",
         "links": [
-          { "label": "تحقق من التوفر", "url": "/booking", "icon": "search" },
-          { "label": "راسل عبر واتساب", "url": "https://wa.me/34639980253", "icon": "message-circle" }
+          {
+            "label": "تحقق من التوفر",
+            "url": "/booking",
+            "icon": "search"
+          },
+          {
+            "label": "راسل عبر واتساب",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
         "q": "هل يمكن الحجز بالهاتف؟",
         "a": "نقبل فقط الحجوزات المدفوعة مسبقاً عبر الموقع. الحجز بالهاتف فقط دون دفع غير ممكن. نوصي بالحجز على موقعنا — هنا أفضل سعر مضمون.",
         "links": [
-          { "label": "احجز إلكترونياً", "url": "/booking", "icon": "credit-card" },
-          { "label": "اتصل للمساعدة", "url": "tel:+34980533152", "icon": "phone" }
+          {
+            "label": "احجز إلكترونياً",
+            "url": "/booking",
+            "icon": "credit-card"
+          },
+          {
+            "label": "اتصل للمساعدة",
+            "url": "tel:+34980533152",
+            "icon": "phone"
+          }
         ]
       },
       {
         "q": "ما البيانات المطلوبة للحجز؟",
         "a": "نحتاج: الاسم الكامل، رقم الهاتف، البريد الإلكتروني، العنوان البريدي وبيانات الدفع. عند تسجيل الدخول يجب على جميع الضيوف من 14 عاماً فما فوق تقديم وثيقة سارية المفعول وفقاً للمرسوم الملكي 933/2021.",
         "links": [
-          { "label": "متطلبات التوثيق", "url": "/checkin", "icon": "file-text" },
-          { "label": "احجز", "url": "/booking", "icon": "calendar-check" }
+          {
+            "label": "متطلبات التوثيق",
+            "url": "/checkin",
+            "icon": "file-text"
+          },
+          {
+            "label": "احجز",
+            "url": "/booking",
+            "icon": "calendar-check"
+          }
         ]
       },
       {
         "q": "لم أستلم بريد تأكيد الحجز.",
         "a": "إذا لم يصل أي بريد تأكيد بعد الحجز — تواصل معنا عبر الهاتف أو البريد الإلكتروني أو واتساب للتحقق. افحص أيضاً مجلد الرسائل غير المرغوب فيها (Spam).",
         "links": [
-          { "label": "راسل عبر واتساب", "url": "https://wa.me/34639980253", "icon": "message-circle" },
-          { "label": "أرسل بريداً إلكترونياً", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }
+          {
+            "label": "راسل عبر واتساب",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "أرسل بريداً إلكترونياً",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
         ]
       },
       {
         "q": "هل يمكنني طلب غرفة بعينها؟",
         "a": "نعم، أخبرنا عبر رسالة أو واتساب أو هاتف — سنحاول حجزها لك. لا يمكن ضمان غرفة بعينها دائماً، لكننا سنبذل كل ما في وسعنا. كلما أبكرت في الإخطار، كان أفضل.",
-        "links": [{ "label": "أنواع الغرف", "url": "/gallery", "icon": "building" }]
+        "links": [
+          {
+            "label": "أنواع الغرف",
+            "url": "/gallery",
+            "icon": "building"
+          }
+        ]
       },
       {
         "q": "كيف أُلغي الحجز؟",
         "a": "الإلغاء المجاني ممكن قبل 48 ساعة من الوصول إذا سمح بذلك السعر (الأسعار غير القابلة للاسترداد لا تتيح الإلغاء). للإلغاء استخدم الرابط في بريد التأكيد أو سجّل الدخول إلى حسابك على موقعنا. المبلغ يُرد بنفس طريقة الدفع عادةً خلال 5-15 يوم عمل. إذا حجزت عبر بوابة خارجية (Booking وExpedia وغيرها) — ألغِ من خلالها.",
-        "tags": ["استرداد", "إعادة المبلغ", "تغيير الحجز", "سياسة الإلغاء", "إلغاء مجاني"],
-        "links": [{ "label": "حسابي", "url": "/booking", "icon": "user" }]
+        "tags": [
+          "استرداد",
+          "إعادة المبلغ",
+          "تغيير الحجز",
+          "سياسة الإلغاء",
+          "إلغاء مجاني"
+        ],
+        "links": [
+          {
+            "label": "حسابي",
+            "url": "/booking",
+            "icon": "user"
+          }
+        ]
       },
       {
         "q": "كيف أطلب فاتورة؟",
         "a": "يمكن طلب الفاتورة من آخر يوم من الإقامة حتى 30 يوماً بعد تسجيل الخروج. حدد جميع البيانات الضريبية اللازمة عند الحجز (الاسم/الشركة، الرقم الضريبي، العنوان). ترسل الفاتورة عبر البريد الإلكتروني بصيغة PDF.",
-        "tags": ["إيصال", "فوترة", "ضريبة القيمة المضافة", "شركة", "فاتورة", "عامل حر"],
-        "links": [{ "label": "تواصل بشأن الفاتورة", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }]
+        "tags": [
+          "إيصال",
+          "فوترة",
+          "ضريبة القيمة المضافة",
+          "شركة",
+          "فاتورة",
+          "عامل حر"
+        ],
+        "links": [
+          {
+            "label": "تواصل بشأن الفاتورة",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
+        ]
       },
       {
         "q": "ماذا أفعل إذا نسيت أغراضاً في النزل؟",
         "a": "إذا كنت تعتقد أنك نسيت شيئاً — تواصل معنا في أقرب وقت. الأغراض المعثور عليها تُحفظ لمدة 30 يوماً. الشحن البريدي لا نتولى تنظيمه ولا دفع تكاليفه — يجب على الضيف تعاقد خدمة الشحن.",
-        "tags": ["أغراض منسية", "شيء مفقود", "أغراض موجودة", "شحن", "بريد", "هاتف منسي", "محفظة", "مفاتيح"],
+        "tags": [
+          "أغراض منسية",
+          "شيء مفقود",
+          "أغراض موجودة",
+          "شحن",
+          "بريد",
+          "هاتف منسي",
+          "محفظة",
+          "مفاتيح"
+        ],
         "links": [
-          { "label": "راسل عبر واتساب", "url": "https://wa.me/34639980253", "icon": "message-circle" },
-          { "label": "أرسل بريداً إلكترونياً", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }
+          {
+            "label": "راسل عبر واتساب",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "أرسل بريداً إلكترونياً",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
         ]
       },
       {
         "q": "يبدو السعر مرتفعاً. هل يوجد خصومات؟",
         "a": "أسعارنا عادةً هي الأدنى في وسط زامورا. من 11 ليلة — خصم 10٪ تلقائياً. نوصي بالحجز على موقعنا — الأسعار أقل بكثير من Booking وExpedia وغيرها.",
-        "links": [{ "label": "أفضل الأسعار", "url": "/booking", "icon": "tag" }]
+        "links": [
+          {
+            "label": "أفضل الأسعار",
+            "url": "/booking",
+            "icon": "tag"
+          }
+        ]
       },
       {
         "q": "أريد الحجز ولدي أسئلة. كيف أتواصل معكم؟",
         "a": "بالهاتف +34 980 533 152، واتساب +34 639 980 253 أو بريد إلكتروني hostalsol{'@'}outlook.com. الخدمة الهاتفية: 10:00–21:00. مكالمات واتساب لا تُرد — فقط المكالمات الهاتفية العادية.",
         "links": [
-          { "label": "اتصل", "url": "tel:+34980533152", "icon": "phone" },
-          { "label": "راسل عبر واتساب", "url": "https://wa.me/34639980253", "icon": "message-circle" },
-          { "label": "أرسل بريداً إلكترونياً", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }
+          {
+            "label": "اتصل",
+            "url": "tel:+34980533152",
+            "icon": "phone"
+          },
+          {
+            "label": "راسل عبر واتساب",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "أرسل بريداً إلكترونياً",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
         ]
       },
       {
         "q": "هل التدخين مسموح به؟",
         "a": "التدخين محظور تماماً في جميع أنحاء النزل بما فيها الغرف والنوافذ والشرفات والمناطق المشتركة. عدم الامتثال يستوجب غرامة بين 100€ و1000€ لتنظيف وتعطير الغرفة. يُمنع أيضاً إشعال النار واستخدام الشموع أو البخور.",
-        "tags": ["سيجارة", "تدخين", "تبغ", "شمعة", "بخور", "نار"]
+        "tags": [
+          "سيجارة",
+          "تدخين",
+          "تبغ",
+          "شمعة",
+          "بخور",
+          "نار"
+        ]
       },
       {
         "q": "هل يمكنني تخزين دراجتي؟",
         "a": "نعم، يمكن تخزين الدراجة في غرفتك طالما كانت نظيفة (بدون وحل أو بقع). نوصي بإخطارنا مسبقاً — سنحاول تخصيص غرفة أوسع. المصعد صغير؛ للدراجات الكبيرة قد يكون الصعود بالدرج ضرورياً.",
-        "tags": ["دراجة", "ركوب الدراجات", "دراجة كهربائية", "دراجة جبلية", "تخزين دراجة"]
+        "tags": [
+          "دراجة",
+          "ركوب الدراجات",
+          "دراجة كهربائية",
+          "دراجة جبلية",
+          "تخزين دراجة"
+        ]
       },
       {
         "q": "أنا مهتم بإقامة طويلة. هل توجد شروط خاصة؟",
         "a": "نعم، من 11 ليلة — خصم 10٪ تلقائياً. للمجموعات أو الإقامات الطويلة جداً — تواصل معنا.",
-        "links": [{ "label": "احجز إقامة طويلة", "url": "/booking", "icon": "calendar-check" }]
+        "links": [
+          {
+            "label": "احجز إقامة طويلة",
+            "url": "/booking",
+            "icon": "calendar-check"
+          }
+        ]
       },
       {
         "q": "ما اللغات التي يتحدثها الموظفون؟",
         "a": "موظفو النزل يتحدثون الإسبانية فقط. للتواصل بلغة أخرى — راسلنا عبر واتساب أو البريد الإلكتروني وسنستخدم مترجمين إلكترونيين. عند الوصول اتصل بالواي فاي المجاني واستخدم مترجماً على هاتفك — Google Translate أو DeepL أو Bing Translator.",
-        "tags": ["لغة", "إنجليزي", "فرنسي", "ألماني", "صيني", "عربي", "غاليسي", "روسي", "إيطالي", "برتغالي", "تواصل", "ترجمة"],
+        "tags": [
+          "لغة",
+          "إنجليزي",
+          "فرنسي",
+          "ألماني",
+          "صيني",
+          "عربي",
+          "غاليسي",
+          "روسي",
+          "إيطالي",
+          "برتغالي",
+          "تواصل",
+          "ترجمة"
+        ],
         "links": [
-          { "label": "Google Translate", "url": "https://translate.google.com/", "icon": "languages" },
-          { "label": "DeepL مترجم", "url": "https://www.deepl.com/translator", "icon": "languages" },
-          { "label": "Bing Translator", "url": "https://www.bing.com/translator", "icon": "languages" },
-          { "label": "واتساب", "url": "https://wa.me/34639980253", "icon": "message-circle" },
-          { "label": "البريد الإلكتروني", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }
+          {
+            "label": "Google Translate",
+            "url": "https://translate.google.com/",
+            "icon": "languages"
+          },
+          {
+            "label": "DeepL مترجم",
+            "url": "https://www.deepl.com/translator",
+            "icon": "languages"
+          },
+          {
+            "label": "Bing Translator",
+            "url": "https://www.bing.com/translator",
+            "icon": "languages"
+          },
+          {
+            "label": "واتساب",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "البريد الإلكتروني",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
         ]
       },
       {
         "q": "هل يمكنني الحجز باسم شخص آخر؟",
         "a": "لا ننصح بذلك. الأسلم أن يحجز كل ضيف باسمه الخاص. إذا حجزت لشخص آخر — اترك تعليقاً بالاسم الكامل والهاتف لذلك الشخص، وتأكد من أنه يُجري تسجيل الدخول الإلكتروني ببياناته. لقطات الشاشة لا تُقبل كتأكيد.",
-        "tags": ["حجز باسم آخر", "طرف ثالث", "صاحب الحجز", "أمان", "تحقق", "لقطة شاشة", "حجز لشخص آخر"],
+        "tags": [
+          "حجز باسم آخر",
+          "طرف ثالث",
+          "صاحب الحجز",
+          "أمان",
+          "تحقق",
+          "لقطة شاشة",
+          "حجز لشخص آخر"
+        ],
         "links": [
-          { "label": "دليل الوصول", "url": "/checkin", "icon": "file-text" },
-          { "label": "واتساب", "url": "https://wa.me/34639980253", "icon": "message-circle" }
+          {
+            "label": "دليل الوصول",
+            "url": "/checkin",
+            "icon": "file-text"
+          },
+          {
+            "label": "واتساب",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
         "q": "ما هي التجهيزات المتوفرة في الغرف؟",
         "a": "حمام خاص، واي فاي (كلمة المرور ومزيد من التعليمات موجودة على الورقة خلف الباب)، مكتب وكرسي، مشعاع (مع أدوات تحكم تلقائية)، مكيف هواء مع جهاز تحكم، تلفزيون مع جهاز تحكم، مجفف شعر ومكواة عند الطلب، كرسي بذراعين، نافذة، سرير يشمل الملاءات. ستجد في الحمام صابونًا أساسيًا وشامبو وصابون يدين، بالإضافة إلى المناشف. إذا كنت بحاجة إلى أي شيء آخر، فأخبرنا بذلك.",
-        "tags": ["تجهيزات", "غرفة", "مرافق", "خدمات", "حمام", "واي فاي", "تكييف", "تلفزيون", "مجفف شعر", "مكواة", "سرير", "مناشف"]
+        "tags": [
+          "تجهيزات",
+          "غرفة",
+          "مرافق",
+          "خدمات",
+          "حمام",
+          "واي فاي",
+          "تكييف",
+          "تلفزيون",
+          "مجفف شعر",
+          "مكواة",
+          "سرير",
+          "مناشف"
+        ]
       },
       {
         "q": "من الذي قام بإنشاء هذا الموقع الإلكتروني؟",
         "a": "تم تطوير هذا الموقع بواسطة خوان مانويل بيك (https://juanman.tech/). الكود المصدري مفتوح ومتاح على GitHub: https://github.com/JuanmanDev/HostalSolZamoraWeb2026",
-        "tags": ["موقع", "مطور", "مؤلف", "كود", "github", "juanman", "تكنولوجيا"]
+        "tags": [
+          "موقع",
+          "مطور",
+          "مؤلف",
+          "كود",
+          "github",
+          "juanman",
+          "تكنولوجيا"
+        ]
+      },
+      {
+        "q": "هل يمكنني رؤية الموقع القديم؟",
+        "a": "نعم، يمكنك التحقق من تصميم ومحتوى موقعنا السابق على الرابط التالي.",
+        "links": [
+          {
+            "label": "رؤية الموقع القديم",
+            "url": "/old/hostalsolzamora.com/index.html",
+            "icon": "external-link"
+          }
+        ]
       }
     ]
   },
@@ -525,7 +1125,12 @@
     "discountLabel": "خصم",
     "discountNote": "على موقعنا فقط",
     "note": "السعر المباشر دائماً أرخص من Booking وExpedia وغيرها.",
-    "features": ["دفع آمن", "تأكيد فوري", "أفضل سعر مضمون", "إلغاء مجاني 48 ساعة"],
+    "features": [
+      "دفع آمن",
+      "تأكيد فوري",
+      "أفضل سعر مضمون",
+      "إلغاء مجاني 48 ساعة"
+    ],
     "bookBtn": "الذهاب إلى الحجز",
     "helpText": "مشاكل في نظام الحجز؟",
     "helpLink": "الذهاب إلى صفحة الحجز الكاملة →"
@@ -676,7 +1281,12 @@
       "heading": "حجز غرفة",
       "discountLabel": "خصم 15٪ عند الحجز على موقعنا",
       "discountSub": "السعر المباشر دائماً أرخص من Booking وExpedia وغيرها",
-      "features": ["تأكيد فوري", "دفع آمن", "أفضل سعر مضمون", "إلغاء مجاني 48 ساعة مسبقاً*"],
+      "features": [
+        "تأكيد فوري",
+        "دفع آمن",
+        "أفضل سعر مضمون",
+        "إلغاء مجاني 48 ساعة مسبقاً*"
+      ],
       "iframeTitle": "نظام حجز Hostal Sol Zamora",
       "troubleText": "مشاكل في نظام الحجز؟ اتصل بنا:",
       "backHome": "→ العودة إلى الرئيسية",
@@ -733,28 +1343,60 @@
       "docTypes": [
         {
           "name": "DNI / IDESP",
-          "fields": ["رقم الوثيقة", "رقم الدعم", "تاريخ الانتهاء", "تاريخ الميلاد", "الجنس", "الاسم الكامل", "الجنسية"]
+          "fields": [
+            "رقم الوثيقة",
+            "رقم الدعم",
+            "تاريخ الانتهاء",
+            "تاريخ الميلاد",
+            "الجنس",
+            "الاسم الكامل",
+            "الجنسية"
+          ]
         },
         {
           "name": "جواز السفر",
-          "fields": ["رقم جواز السفر", "سطر MRZ الكامل", "تاريخ الإصدار", "تاريخ الانتهاء", "الجنسية", "الاسم الكامل"]
+          "fields": [
+            "رقم جواز السفر",
+            "سطر MRZ الكامل",
+            "تاريخ الإصدار",
+            "تاريخ الانتهاء",
+            "الجنسية",
+            "الاسم الكامل"
+          ]
         },
         {
           "name": "NIE / TIE",
-          "fields": ["رقم NIE/TIE", "رقم الدعم", "تاريخ الانتهاء"]
+          "fields": [
+            "رقم NIE/TIE",
+            "رقم الدعم",
+            "تاريخ الانتهاء"
+          ]
         },
         {
           "name": "رخصة القيادة (الاتحاد الأوروبي)",
-          "fields": ["رقم الرخصة", "الاسم واللقب"]
+          "fields": [
+            "رقم الرخصة",
+            "الاسم واللقب"
+          ]
         }
       ],
       "backHome": "→ العودة إلى الرئيسية",
       "docFields": [
-        "الاسم الكامل", "اللقب", "نوع الوثيقة (جواز سفر / NIE / إذن إقامة)",
-        "رقم الوثيقة", "رقم الدعم / الرقم التسلسلي (إن وُجد)",
-        "تاريخ الإصدار", "تاريخ الانتهاء", "تاريخ الميلاد",
-        "بلد الميلاد", "بلد الإقامة", "المجتمع الذاتي (لإسبانيا)",
-        "الجنسية", "الجنس", "البريد الإلكتروني للتواصل", "رقم الهاتف للتواصل"
+        "الاسم الكامل",
+        "اللقب",
+        "نوع الوثيقة (جواز سفر / NIE / إذن إقامة)",
+        "رقم الوثيقة",
+        "رقم الدعم / الرقم التسلسلي (إن وُجد)",
+        "تاريخ الإصدار",
+        "تاريخ الانتهاء",
+        "تاريخ الميلاد",
+        "بلد الميلاد",
+        "بلد الإقامة",
+        "المجتمع الذاتي (لإسبانيا)",
+        "الجنسية",
+        "الجنس",
+        "البريد الإلكتروني للتواصل",
+        "رقم الهاتف للتواصل"
       ],
       "ineNote": "INE — إحصاءات السياحة: وفقاً لقانون الوظيفة الإحصائية العامة، يتطلب المعهد الوطني للإحصاء (INE) بلد المصدر أو المجتمع الذاتي لكل ضيف لإعداد إحصاءات السياحة الوطنية. البيانات تُرسل بصورة مجهولة ومجمّعة."
     },
@@ -813,13 +1455,34 @@
       "mapBtn": "ابحث عنا على الخريطة",
       "distancesTitle": "المسافات من النزل",
       "distances": [
-        { "name": "محطة القطار", "value": "1.2 كم · 15 دقيقة سيراً" },
-        { "name": "محطة الحافلات", "value": "1 كم · 13 دقيقة سيراً" },
-        { "name": "الساحة الرئيسية / المركز التاريخي", "value": "450 م · 5 دقائق سيراً" },
-        { "name": "موقف La Marina", "value": "400 م · 4 دقائق سيراً" },
-        { "name": "موقف Constitución", "value": "260 م · دقيقتان سيراً" },
-        { "name": "سلمنقة", "value": "67 كم · 48 دقيقة بالسيارة" },
-        { "name": "بلد الوليد", "value": "101 كم · 1 ساعة 11 دقيقة بالسيارة" }
+        {
+          "name": "محطة القطار",
+          "value": "1.2 كم · 15 دقيقة سيراً"
+        },
+        {
+          "name": "محطة الحافلات",
+          "value": "1 كم · 13 دقيقة سيراً"
+        },
+        {
+          "name": "الساحة الرئيسية / المركز التاريخي",
+          "value": "450 م · 5 دقائق سيراً"
+        },
+        {
+          "name": "موقف La Marina",
+          "value": "400 م · 4 دقائق سيراً"
+        },
+        {
+          "name": "موقف Constitución",
+          "value": "260 م · دقيقتان سيراً"
+        },
+        {
+          "name": "سلمنقة",
+          "value": "67 كم · 48 دقيقة بالسيارة"
+        },
+        {
+          "name": "بلد الوليد",
+          "value": "101 كم · 1 ساعة 11 دقيقة بالسيارة"
+        }
       ],
       "formTitle": "أرسل رسالة",
       "formIntro": "املأ النموذج ونرد عليك بالبريد الإلكتروني. للحصول على رد أسرع الأفضل الاتصال أو الكتابة عبر واتساب.",

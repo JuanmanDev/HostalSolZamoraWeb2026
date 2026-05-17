@@ -4,7 +4,7 @@
 
     <main class="page-content">
       <!-- Header -->
-      <section class="page-section">
+      <section id="parking-header" class="page-section">
         <UiSectionTag>Parking</UiSectionTag>
         <h1 class="page-heading">{{ t('pages.parking.heading') }}</h1>
         <p class="page-lead">{{ t('pages.parking.lead') }}</p>
@@ -24,7 +24,7 @@
       </section>
 
       <!-- Car/moto access -->
-      <section class="page-section">
+      <section id="car-access" class="page-section">
         <h2 class="section-heading">{{ t('pages.parking.carAccess') }}</h2>
         <p class="section-body">{{ t('pages.parking.carAccessDesc') }}</p>
         <div class="nav-apps">
@@ -45,7 +45,7 @@
       </section>
 
       <!-- Street parking -->
-      <section class="page-section">
+      <section id="street-parking" class="page-section">
         <h2 class="section-heading">{{ t('pages.parking.streetParking') }}</h2>
         <p class="section-body">{{ t('pages.parking.streetParkingDesc') }}</p>
         <div class="parking-grid">
@@ -67,7 +67,7 @@
       </section>
 
       <!-- Underground parking -->
-      <section class="page-section">
+      <section id="underground-parking" class="page-section">
         <h2 class="section-heading">{{ t('pages.parking.undergroundParking') }}</h2>
         <p class="section-body">{{ t('pages.parking.undergroundParkingDesc') }}</p>
         <div class="parking-grid">
@@ -94,7 +94,7 @@
       </section>
 
       <!-- Map embed -->
-      <section class="page-section">
+      <section id="parking-map" class="page-section">
         <h2 class="section-heading">{{ t('map.title') }}</h2>
         <iframe
           src="https://maps.google.com/maps?q=Hostal+Sol,+Calle+Benavente,+2,+49014+Zamora+Espa%C3%B1a&output=embed&z=16"

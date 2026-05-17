@@ -3,7 +3,7 @@
     <LayoutTheNavbar :solid-from-start="true" />
 
     <main class="page-content">
-      <header class="about-hero">
+      <header id="about-hero" class="about-hero">
         <UiSectionTag>{{ t('pages.sobreNosotros.tag') }}</UiSectionTag>
         <h1 class="page-heading">{{ t('pages.sobreNosotros.heading') }}</h1>
         <p class="page-lead">{{ t('pages.sobreNosotros.intro1') }}</p>
@@ -23,7 +23,7 @@
       </header>
 
       <!-- Photo banner -->
-      <div class="about-photo">
+      <div id="about-photo" class="about-photo">
         <NuxtPicture
           src="/images/about.webp"
           alt="Hostal Sol Zamora"
@@ -35,14 +35,14 @@
       </div>
 
       <!-- Philosophy -->
-      <section class="about-block">
+      <section id="about-philosophy" class="about-block">
         <UiSectionTag>{{ t('pages.sobreNosotros.philosophyTag') }}</UiSectionTag>
         <h2 class="block-heading">{{ t('pages.sobreNosotros.philosophyTitle') }}</h2>
         <p class="block-body">{{ t('pages.sobreNosotros.philosophyBody') }}</p>
       </section>
 
       <!-- Feel at home -->
-      <section class="about-block about-block--alt">
+      <section id="about-home" class="about-block about-block--alt">
         <UiSectionTag>{{ t('pages.sobreNosotros.homeTag') }}</UiSectionTag>
         <h2 class="block-heading">{{ t('pages.sobreNosotros.homeTitle') }}</h2>
         <p class="block-body">{{ t('pages.sobreNosotros.homeBody1') }}</p>
@@ -50,14 +50,14 @@
       </section>
 
       <!-- Location -->
-      <section class="about-block">
+      <section id="about-location" class="about-block">
         <UiSectionTag>{{ t('pages.sobreNosotros.locationTag') }}</UiSectionTag>
         <h2 class="block-heading">{{ t('pages.sobreNosotros.locationTitle') }}</h2>
         <p class="block-body">{{ t('pages.sobreNosotros.locationBody') }}</p>
       </section>
 
       <!-- History -->
-      <section class="about-block about-block--alt">
+      <section id="about-history" class="about-block about-block--alt">
         <UiSectionTag>{{ t('pages.sobreNosotros.historyTag') }}</UiSectionTag>
         <h2 class="block-heading">{{ t('pages.sobreNosotros.historyTitle') }}</h2>
         <p class="block-body">{{ t('pages.sobreNosotros.historyBody1') }}</p>
@@ -65,7 +65,7 @@
       </section>
 
       <!-- Bottom CTA -->
-      <div class="about-cta">
+      <div id="about-bottom-cta" class="about-cta">
         <NuxtLink :to="localePath('reserva')" class="btn-primary btn-primary--lg">
           {{ t('pages.sobreNosotros.ctaReserve') }} →
         </NuxtLink>

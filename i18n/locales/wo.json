@@ -1,14 +1,30 @@
 {
   "ogImage": {
     "tagline": "Kër bi ci Samura",
-    "home": { "title": "Hostal Sol Zamora" },
-    "faq": { "title": "Laaj yi ñu naan" },
-    "parking": { "title": "Bës bu parking ci Samura" },
-    "checkin": { "title": "Jëm ak Check-in" },
-    "galeria": { "title": "Galerie bi ci néeg yi" },
-    "reserva": { "title": "Reservasiyon bi" },
-    "sobreNosotros": { "title": "Ci sunu xam-xam" },
-    "contacto": { "title": "Contacter nanu" },
+    "home": {
+      "title": "Hostal Sol Zamora"
+    },
+    "faq": {
+      "title": "Laaj yi ñu naan"
+    },
+    "parking": {
+      "title": "Bës bu parking ci Samura"
+    },
+    "checkin": {
+      "title": "Jëm ak Check-in"
+    },
+    "galeria": {
+      "title": "Galerie bi ci néeg yi"
+    },
+    "reserva": {
+      "title": "Reservasiyon bi"
+    },
+    "sobreNosotros": {
+      "title": "Ci sunu xam-xam"
+    },
+    "contacto": {
+      "title": "Contacter nanu"
+    },
     "location": "Samura, Espagne"
   },
   "nav": {
@@ -32,14 +48,46 @@
     "ctaRooms": "Xool néeg yi",
     "discount": "Réservé directement — 15% discount",
     "features": [
-      { "icon": "map-pin", "label": "Askan wi yi", "link": null },
-      { "icon": "wifi", "label": "WiFi yore", "link": null },
-      { "icon": "paw-print", "label": "Jaramp yi ñu naan", "link": null },
-      { "icon": "shower-head", "label": "Salle de bain privé", "link": null },
-      { "icon": "banknote-arrow-down", "label": "Jëg yu wàcc", "link": null },
-      { "icon": "wind", "label": "Climatisation", "link": null },
-      { "icon": "tv", "label": "Télévision", "link": null },
-      { "icon": "laptop", "label": "Bureau ak kees", "link": null }
+      {
+        "icon": "map-pin",
+        "label": "Askan wi yi",
+        "link": null
+      },
+      {
+        "icon": "wifi",
+        "label": "WiFi yore",
+        "link": null
+      },
+      {
+        "icon": "paw-print",
+        "label": "Jaramp yi ñu naan",
+        "link": null
+      },
+      {
+        "icon": "shower-head",
+        "label": "Salle de bain privé",
+        "link": null
+      },
+      {
+        "icon": "banknote-arrow-down",
+        "label": "Jëg yu wàcc",
+        "link": null
+      },
+      {
+        "icon": "wind",
+        "label": "Climatisation",
+        "link": null
+      },
+      {
+        "icon": "tv",
+        "label": "Télévision",
+        "link": null
+      },
+      {
+        "icon": "laptop",
+        "label": "Bureau ak kees",
+        "link": null
+      }
     ]
   },
   "about": {
@@ -68,21 +116,29 @@
         "label": "Ñaari lit",
         "icon": "bed-single",
         "photoPath": "/images/rooms/301/003.jpg",
-        "extras": ["2 lits de 90cm"],
+        "extras": [
+          "2 lits de 90cm"
+        ],
         "rateId": "578650"
       },
       {
         "label": "Chambre double",
         "icon": "bed-double",
         "photoPath": "/images/rooms/323/002.jpg",
-        "extras": ["1 lit de 135cm"],
+        "extras": [
+          "1 lit de 135cm"
+        ],
         "rateId": "578649"
       },
       {
         "label": "Double ak balcon",
         "icon": "building",
         "photoPath": "/images/rooms/321/021.jpg",
-        "extras": ["1 lit de 135cm", "Balcon privé", "Grande télévision"],
+        "extras": [
+          "1 lit de 135cm",
+          "Balcon privé",
+          "Grande télévision"
+        ],
         "rateId": "752069"
       }
     ],
@@ -270,82 +326,222 @@
       {
         "q": "Hostal bi dëkk na ci jamano ñu?",
         "a": "Téléphone: 10h00-21h00. Check-in: 14h00-21h00. Hostal bi tëgg na ci 21h00 — yëgëloon amul. Ci 21h00, réservations yi ñu tëggu amul. Check-in bi ak clés yi, dinga dem wala ñëw boo bëgg. Ñu digg dimaangi dëkk, wante boo ñëw Samedi dinga mën yóbboo ci Dimanche yépp. Jours fériés yi ñu dëkk sauf 14-16 Août, 15 Décembre ak 1 Janvier.",
-        "links": [{ "label": "Guide complet check-in", "url": "/checkin", "icon": "log-in" }]
+        "links": [
+          {
+            "label": "Guide complet check-in",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
       },
       {
         "q": "Check-in ak check-out ci jamano ñu?",
         "a": "Check-in: 14h00-21h00. Boo ñëw ci kanam 14h00 danga mën bëgg baggages ci réception sans problème. Ci périodes de faible occupation, danga mën jëfë chambre ci kanam, wante garantie amul. Check-out: 11h00. Ba check-out bi, danga mën bëgg baggages ci bës bi ñu jógë (sauf Dimanche). Fonner nanu. Boo ñëw ba 21h00 mënuñu ko taxaw, horaire bi flexible déedet.",
-        "tags": ["ñëw", "check-in tôt", "baggage", "valise", "check-out tard"],
-        "links": [{ "label": "Guide complet check-in", "url": "/checkin", "icon": "log-in" }]
+        "tags": [
+          "ñëw",
+          "check-in tôt",
+          "baggage",
+          "valise",
+          "check-out tard"
+        ],
+        "links": [
+          {
+            "label": "Guide complet check-in",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
       },
       {
         "q": "Papier yi ma soxor ci check-in?",
         "a": "Ci Décret Royal 933/2021, hôtes yépp ak jaambur 14 an doole na jëf document d'identité officielle ak photo: DNI, passeport, NIE, TIE walla permis de conduire UE. Papiers yi ñu tàmbalee, bu tàkk, bu mënul jàng, walla ñu yonnë par email walla WhatsApp ñu naan dañu taxaw. Hôte gannaaw bi doole na jëf dokument ji; titre de réservation bi rekk dëkk na. Chekin en ligne ci kanam bi ci ñëw ñu bëgg.",
-        "tags": ["passeport", "DNI", "document", "check-in online", "Chekin"],
+        "tags": [
+          "passeport",
+          "DNI",
+          "document",
+          "check-in online",
+          "Chekin"
+        ],
         "links": [
-          { "label": "Faire check-in online", "url": "/checkin", "icon": "file-text" },
-          { "label": "Xool types de document", "url": "/checkin", "icon": "id-card" }
+          {
+            "label": "Faire check-in online",
+            "url": "/checkin",
+            "icon": "file-text"
+          },
+          {
+            "label": "Xool types de document",
+            "url": "/checkin",
+            "icon": "id-card"
+          }
         ]
       },
       {
         "q": "Hostal bi accessible ci handicap?",
         "a": "Hostal bi dëkk na ci 3ème étage bu immeuble ak 2 ascenseurs. Escaliers amul ci entrée wala ci chambres yi. Danga mën xool photos ak vidéos ci galerie bi ngir xool si espace bi ak dimensions yi dox ci besoins mi. Bëgg laaj, contact nanu.",
-        "tags": ["fauteuil roulant", "handicap", "mobilité réduite", "ascenseur", "accessible"],
-        "links": [{ "label": "Galerie yi néeg", "url": "/galeria", "icon": "image" }]
+        "tags": [
+          "fauteuil roulant",
+          "handicap",
+          "mobilité réduite",
+          "ascenseur",
+          "accessible"
+        ],
+        "links": [
+          {
+            "label": "Galerie yi néeg",
+            "url": "/galeria",
+            "icon": "image"
+          }
+        ]
       },
       {
         "q": "Parking bi dëkk fii?",
         "a": "Hostal bi amul parking privé, wante dafa am options bu bari ci cig-cig. Parking Plaza Constitución (3 min., 1,45€/h, 14,70€/jour, 24h) moy le plus proche. Ak Parking Plaza de la Marina Española (5 min., réservation Empark). Boo bëgg gratuit, gare de train (2 km, bus L3) dafa am parking gratuit 24h. Devant hostal dafa am zone ORA (bleu, 0,35€/30min, max 3h).",
-        "tags": ["gare", "voiture", "apparquer", "moto", "parking proche"],
+        "tags": [
+          "gare",
+          "voiture",
+          "apparquer",
+          "moto",
+          "parking proche"
+        ],
         "links": [
-          { "label": "Guide complet parking", "url": "/parking", "icon": "car" },
-          { "label": "Ouvrir Google Maps", "url": "https://www.google.com/maps/dir//Calle+Benavente,+2+Zamora", "icon": "map-pin" }
+          {
+            "label": "Guide complet parking",
+            "url": "/parking",
+            "icon": "car"
+          },
+          {
+            "label": "Ouvrir Google Maps",
+            "url": "https://www.google.com/maps/dir//Calle+Benavente,+2+Zamora",
+            "icon": "map-pin"
+          }
         ]
       },
       {
         "q": "Comment ñëw ba hostal bi ci gare walla station de bus?",
         "a": "Gare de train ak station de bus dëkk na akk ci Avenida de las Tres Cruces, ci 2 km du hostal. Options: taxi (5-7 min, environ 6-8€), bus urbain Ligne 3 (El Acercame, 0,95€) arrêt 'Mercado' (5 min. à pied du hostal), walla à pied environ 25-30 min. Gare de train dafa am parking gratuit 24h ak consigne bagage.",
-        "tags": ["train", "Renfe", "bus", "ALSA", "gare", "arrivée", "transport"],
+        "tags": [
+          "train",
+          "Renfe",
+          "bus",
+          "ALSA",
+          "gare",
+          "arrivée",
+          "transport"
+        ],
         "links": [
-          { "label": "Gare de Zamora — Renfe", "url": "https://www.renfe.com/es/es/inspirate/estaciones/estacion-zamora", "icon": "external-link" },
-          { "label": "Gare de train — Google Maps", "url": "https://www.google.com/maps/dir//Estaci%C3%B3n+de+Ferrocarril+Zamora", "icon": "map-pin" },
-          { "label": "Station de bus — Google Maps", "url": "https://www.google.com/maps/dir//Estaci%C3%B3n+de+Autobuses+de+Zamora", "icon": "map-pin" },
-          { "label": "Bus El Acercame", "url": "https://www.acercame.es", "icon": "bus" }
+          {
+            "label": "Gare de Zamora — Renfe",
+            "url": "https://www.renfe.com/es/es/inspirate/estaciones/estacion-zamora",
+            "icon": "external-link"
+          },
+          {
+            "label": "Gare de train — Google Maps",
+            "url": "https://www.google.com/maps/dir//Estaci%C3%B3n+de+Ferrocarril+Zamora",
+            "icon": "map-pin"
+          },
+          {
+            "label": "Station de bus — Google Maps",
+            "url": "https://www.google.com/maps/dir//Estaci%C3%B3n+de+Autobuses+de+Zamora",
+            "icon": "map-pin"
+          },
+          {
+            "label": "Bus El Acercame",
+            "url": "https://www.acercame.es",
+            "icon": "bus"
+          }
         ]
       },
       {
         "q": "Nan taxikat ci Samura?",
         "a": "Coopérative principale: Radio Taxi Zamora (tél. 980 531 515). Danga mën taxikat ci station gare de train walla ci places principales du centre. Trajet gare→hostal: environ 6-8€, 5-7 minutes. Option bu mën ci nuit walla ak bagages bu bari.",
-        "tags": ["taxi", "transport", "voiture"],
+        "tags": [
+          "taxi",
+          "transport",
+          "voiture"
+        ],
         "links": [
-          { "label": "Radio Taxi Zamora — 980 531 515", "url": "tel:+34980531515", "icon": "phone" },
-          { "label": "Chercher taxis Google Maps", "url": "https://www.google.com/maps/search/taxi+zamora", "icon": "car" }
+          {
+            "label": "Radio Taxi Zamora — 980 531 515",
+            "url": "tel:+34980531515",
+            "icon": "phone"
+          },
+          {
+            "label": "Chercher taxis Google Maps",
+            "url": "https://www.google.com/maps/search/taxi+zamora",
+            "icon": "car"
+          }
         ]
       },
       {
         "q": "Nan ñëw IFEZA ci hostal?",
         "a": "IFEZA (Instituto Ferial de Zamora) dëkk na ci 4-5 km du hostal. Bus Ligne 5 (El Acercame, 0,95€). Taxi: environ 10 minutes, 8-10€. Conseil: ci grands événements et concerts, organisateurs yi soxoru bus gratuits (navettes) ci centre de Zamora jusqu'à IFEZA. Vérifie site officiel événement bi. Événements populaires ci IFEZA: Fromago (Feria Internationale du Fromage), concerts Zeta, SIFER.",
-        "tags": ["IFEZA", "foire", "concert", "Zeta", "Fromago", "SIFER", "événement", "navette"],
+        "tags": [
+          "IFEZA",
+          "foire",
+          "concert",
+          "Zeta",
+          "Fromago",
+          "SIFER",
+          "événement",
+          "navette"
+        ],
         "links": [
-          { "label": "IFEZA — Site officiel", "url": "https://www.ifeza.es/", "icon": "building-2" },
-          { "label": "Ligne 5 — El Acercame", "url": "https://www.acercame.es/index.php/linea/linea5", "icon": "bus" },
-          { "label": "IFEZA — Google Maps", "url": "https://www.google.com/maps/dir//IFEZA+Zamora", "icon": "map-pin" }
+          {
+            "label": "IFEZA — Site officiel",
+            "url": "https://www.ifeza.es/",
+            "icon": "building-2"
+          },
+          {
+            "label": "Ligne 5 — El Acercame",
+            "url": "https://www.acercame.es/index.php/linea/linea5",
+            "icon": "bus"
+          },
+          {
+            "label": "IFEZA — Google Maps",
+            "url": "https://www.google.com/maps/dir//IFEZA+Zamora",
+            "icon": "map-pin"
+          }
         ]
       },
       {
         "q": "Dëj bi am ci hostal?",
         "a": "Dëj amul ci hostal, wante cafétérias ak boulangeries dafa bari ci cig-cig. Sunuy conseil: Bar Restaurante Padornelo, ci 2 minutes à pied ci porte du hostal. Ouvre Lundi-Vendredi ci 10h00 ak petits-déjeuners de qualité ci bon prix.",
-        "tags": ["manger", "déjeuner", "café", "cafétéria", "boulangerie"],
+        "tags": [
+          "manger",
+          "déjeuner",
+          "café",
+          "cafétéria",
+          "boulangerie"
+        ],
         "links": [
-          { "label": "Restaurante Padornelo", "url": "/#restaurant", "icon": "utensils-crossed" },
-          { "label": "Voir Google Maps", "url": "https://www.google.com/maps/dir//Calle+Benavente,+2+Zamora", "icon": "map-pin" }
+          {
+            "label": "Restaurante Padornelo",
+            "url": "/#restaurant",
+            "icon": "utensils-crossed"
+          },
+          {
+            "label": "Voir Google Maps",
+            "url": "https://www.google.com/maps/dir//Calle+Benavente,+2+Zamora",
+            "icon": "map-pin"
+          }
         ]
       },
       {
         "q": "Jaramp yi ñu naan?",
         "a": "Waaw, pet friendly lañu. Jaramp yi ñu naan ak supplément 7€/nuit ci animal gannaaw bi. Danga mën fey ci site bi ci wàllu addina service extra ci réservation bi. Important: animaux yi doole na dëkk ak adamaan rekk ci yépp jamano. Mënuñu dëk seul ci chambre, ci hostal, ci voiture walla fii. Règle bi boo yëgëlul, animal bi dina dem.",
-        "tags": ["mbam", "muus", "animal", "jaramp"],
-        "links": [{ "label": "Réserver ak réduction", "url": "/reserva", "icon": "paw-print" }]
+        "tags": [
+          "mbam",
+          "muus",
+          "animal",
+          "jaramp"
+        ],
+        "links": [
+          {
+            "label": "Réserver ak réduction",
+            "url": "/reserva",
+            "icon": "paw-print"
+          }
+        ]
       },
       {
         "q": "Mënaa jëlël jaramp am ci chambre bi seul?",
@@ -354,32 +550,71 @@
       {
         "q": "WiFi am ci chambres yi?",
         "a": "Waaw, WiFi gratuit am ci yépp hostal bi, ak chambres yi yépp. Mot de passe bi jëlël ci check-in. Vitesse bi dëk na ci 50 Mbps ci ñu dëkk ci chambres yi — suffisant ngir naviguer, email, streaming ak appels vidéo. Tëstël na ak nekk bu bari ak ordinateur ci même temps sans problème. WiFi bu baax ci télétravail.",
-        "tags": ["internet", "mot de passe WiFi", "connexion", "vitesse", "télétravail"]
+        "tags": [
+          "internet",
+          "mot de passe WiFi",
+          "connexion",
+          "vitesse",
+          "télétravail"
+        ]
       },
       {
         "q": "Climatisation am ci chambres yi?",
         "a": "Waaw, yépp chambres yi dafa am climatisation ak chauffage. Système bu modern ak bu bon pour konfort ci dul jamano yépp. Danga mën régler température bi. Bëgg taxaw, personnel bi dina ko taxaw.",
-        "tags": ["climatisation", "chauffage", "température", "froid", "chaud"]
+        "tags": [
+          "climatisation",
+          "chauffage",
+          "température",
+          "froid",
+          "chaud"
+        ]
       },
       {
         "q": "Télévision bu ñu am ci chambres yi?",
         "a": "Chambres ak balcon dafa am télévision à écran plat 32 pouces, certaines Smart TV. Chambres sans balcon dafa am TV 18 pouces (pas Smart TV), wante danga mën connecter appareils par port HDMI.",
-        "tags": ["télévision", "Netflix", "streaming", "HBO", "HDMI", "Smart TV"]
+        "tags": [
+          "télévision",
+          "Netflix",
+          "streaming",
+          "HBO",
+          "HDMI",
+          "Smart TV"
+        ]
       },
       {
         "q": "Sécurité ci hostal?",
         "a": "Hostal bi dëkk na ci 3ème étage, 2 clés soxor ngir rentrer (immeuble ak hostal). Couloir yi dafa am caméras de sécurité. Chambre gannaaw bi dafa am serrure bi soxor, ak nous bëgg vérifier bunt bi ferm woo woo boo ñëw walla dem.",
-        "tags": ["coffre-fort", "objets de valeur", "clé", "sécurité", "caméra", "CCTV"]
+        "tags": [
+          "coffre-fort",
+          "objets de valeur",
+          "clé",
+          "sécurité",
+          "caméra",
+          "CCTV"
+        ]
       },
       {
         "q": "Réfrigérateur, machine à café walla micro-ondes am ci chambres?",
         "a": "Amul. Wante dafa am supermarchés bu bari ci cig hostal. Réception bi dina ko taxaw ak recommandations boo soxor bëgg.",
-        "tags": ["réfrigérateur", "cuisine", "micro-ondes", "cuisiner", "machine à café", "minibar"]
+        "tags": [
+          "réfrigérateur",
+          "cuisine",
+          "micro-ondes",
+          "cuisiner",
+          "machine à café",
+          "minibar"
+        ]
       },
       {
         "q": "Service de blanchisserie am?",
         "a": "Hostal bi amul service de blanchisserie, wante laveries automatiques dafa bari ci cig. Li ëpp ci cig dëkk na ci Calle San Torcuato, ci 5 minutes à pied, ak machines à laver et sécher de grande capacité. Serviettes, draps ak linge de lit inclus ci prix chambre bi ak changement régulier. Bëgg changement supplémentaire, demande ci réception bi.",
-        "tags": ["laver", "vêtements", "machine à laver", "sèche-linge", "laverie"]
+        "tags": [
+          "laver",
+          "vêtements",
+          "machine à laver",
+          "sèche-linge",
+          "laverie"
+        ]
       },
       {
         "q": "Nettoyage chaque jour am?",
@@ -388,12 +623,22 @@
       {
         "q": "Sèche-cheveux walla fer à friser am?",
         "a": "Waaw, sèche-cheveux ak fers à friser dafa am sur demande ci réception, sans frais. Demande ci jamano ñu ci réception. Boo sëlëm, bëgg ci chambre bi ak ñu jëlël ci nettoyage. Service gratuit.",
-        "tags": ["sèche-cheveux", "fer à friser", "cheveux"]
+        "tags": [
+          "sèche-cheveux",
+          "fer à friser",
+          "cheveux"
+        ]
       },
       {
         "q": "Li am ci chambre bi?",
         "a": "Yépp chambres yi dafa am: linge de lit complet (draps, couvertures, oreillers, duvets), serviettes (1 ou 2 ci hôte gannaaw bi selon type chambre), mobilier de base (lit, tables de chevet, armoire ou portant avec cintres, bureau, chaise), salle de bain privée complète avec verre, savon pour les mains, gel douche et papier toilette. Sur demande gratuite: sèche-cheveux et fer à friser. Réfrigérateur, machine à café et micro-ondes amul.",
-        "links": [{ "label": "Galerie yi néeg", "url": "/galeria", "icon": "image" }]
+        "links": [
+          {
+            "label": "Galerie yi néeg",
+            "url": "/galeria",
+            "icon": "image"
+          }
+        ]
       },
       {
         "q": "Ndox bu tangk am?",
@@ -403,57 +648,132 @@
         "q": "Jëg yi ñu am?",
         "a": "Sunuy hostal am na jëg yi ëpp wàcc ci Samura centre. Tarifs varient ci saison ak type chambre (individuel, double, balcon). Weekends ak fériés dafa mën am ci jëg bu yokk. Ci séjours wu yàgg (ak 11 nuits, 10% réduction automatique) ak groupes. Réserver toujours ci site bi — prix bu ëpp wàcc ci Booking, Expedia walla autres.",
         "links": [
-          { "label": "Voir prix ak réserver", "url": "/reserva", "icon": "tag" },
-          { "label": "Contacter WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }
+          {
+            "label": "Voir prix ak réserver",
+            "url": "/reserva",
+            "icon": "tag"
+          },
+          {
+            "label": "Contacter WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
         "q": "Réduction ci séjour wu yàgg?",
         "a": "Waaw, ci 11 nuits ak jëf bi 10% réduction automatique ci prix total. Réduction bi applique na ci tarifs non-remboursables. Boo site bi réduction bi yëgëlul, contact nanu. Réductions groupes am — laaj nanu.",
-        "links": [{ "label": "Réserver ak réduction", "url": "/reserva", "icon": "calendar-check" }]
+        "links": [
+          {
+            "label": "Réserver ak réduction",
+            "url": "/reserva",
+            "icon": "calendar-check"
+          }
+        ]
       },
       {
         "q": "Danga mën fey ak carte?",
         "a": "Waaw, cartes principales: Visa, MasterCard, American Express ak autres. Espèces ak virement bancaire (préavis 1 semaine). Chèques amul.",
-        "tags": ["espèces", "Visa", "MasterCard", "carte crédit", "paiement", "virement"]
+        "tags": [
+          "espèces",
+          "Visa",
+          "MasterCard",
+          "carte crédit",
+          "paiement",
+          "virement"
+        ]
       },
       {
         "q": "Lits supplémentaires am?",
         "a": "Waaw, sur demande ci 25€/nuit. Danga mën ajouter ci réservation bi (3 adultes) walla contact nanu. 3 lits pliants total — disponibilité limitée. 1 lit pliant max ci chambre. Groupes bu bari, réserver plusieurs chambres.",
-        "tags": ["lit bébé", "lit pliant", "troisième personne", "bébé", "canapé-lit"],
-        "links": [{ "label": "Réserver ak lit supplémentaire", "url": "/reserva", "icon": "bed-double" }]
+        "tags": [
+          "lit bébé",
+          "lit pliant",
+          "troisième personne",
+          "bébé",
+          "canapé-lit"
+        ],
+        "links": [
+          {
+            "label": "Réserver ak lit supplémentaire",
+            "url": "/reserva",
+            "icon": "bed-double"
+          }
+        ]
       },
       {
         "q": "Dimanches ak fériés yi ñu dëkk?",
         "a": "Ñu dëkk fériés yi bu bari, sauf: 14, 15 ak 16 Août, 15 Décembre ak 1 Janvier. Dimanches yi ñu dëkk bu bari déedet, wante boo ñëw Samedi dinga mën dëk yépp Dimanche bi — check-out ci 11h00 bës bi dem.",
-        "links": [{ "label": "Guide check-in", "url": "/checkin", "icon": "calendar" }]
+        "links": [
+          {
+            "label": "Guide check-in",
+            "url": "/checkin",
+            "icon": "calendar"
+          }
+        ]
       },
       {
         "q": "Danga mën rentrer ci kanam 21h00?",
         "a": "Check-in: 14h00-21h00. Hostal bi tëgg na ci 21h00 sans exception. Ñu mënul check-in ba 21h00 ci yépp circonstances. Wante boo check-in boo done, jëlël na clés yi (immeuble, hostal ak chambre) ngir dem wala ñëw ci yépp heure.",
-        "tags": ["arrivée tardive", "accès nuit", "check-in nuit"]
+        "tags": [
+          "arrivée tardive",
+          "accès nuit",
+          "check-in nuit"
+        ]
       },
       {
         "q": "Hostal bi am silence?",
         "a": "Hostal bi am na fenêtres ak volets yees installés ci 2026 bu baax lool ci isolation acoustique. Wante isolation entre chambres yi bu yomb, ñu dëkk ci néeg yu baax dëgg dëkk. Bëgg néeg bu jàmm, wax nanu ci réservation bi walla check-in.",
-        "tags": ["bruit", "dormir", "isolation", "acoustique", "voisins"],
-        "links": [{ "label": "Voir chambres disponibles", "url": "/galeria", "icon": "building" }]
+        "tags": [
+          "bruit",
+          "dormir",
+          "isolation",
+          "acoustique",
+          "voisins"
+        ],
+        "links": [
+          {
+            "label": "Voir chambres disponibles",
+            "url": "/galeria",
+            "icon": "building"
+          }
+        ]
       },
       {
         "q": "Ñëmëm ci réception bi xamal kenn. Lan la?",
         "a": "Premier, fonner ci numéro du hostal: +34 980 533 152. Parfois ñu am engagements dehors walla ñu jàpp appels ou hôtes autres. Important: appel téléphonique traditionnel rekk — appels WhatsApp taxawul. Boo appel boo dome taxaw contact bi, taxaw quelques minutes ak essaye de nouveau. Horaire: 10h00-21h00.",
         "links": [
-          { "label": "Fonner léegi", "url": "tel:+34980533152", "icon": "phone" },
-          { "label": "Envoyer WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }
+          {
+            "label": "Fonner léegi",
+            "url": "tel:+34980533152",
+            "icon": "phone"
+          },
+          {
+            "label": "Envoyer WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
         "q": "Ma woté fonner wante repassul.",
         "a": "Vérifie numéro bi: +34 980 533 152. Parfois appels bu bari ak ñu mënul jàpp yépp. Essaye de nouveau ci 10 minutes. Email hostalsol{'@'}outlook.com walla WhatsApp +34 639 980 253. Important: appels WhatsApp taxawul.",
         "links": [
-          { "label": "Envoyer email", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" },
-          { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" },
-          { "label": "Fonner ci kanam", "url": "tel:+34980533152", "icon": "phone" }
+          {
+            "label": "Envoyer email",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          },
+          {
+            "label": "WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "Fonner ci kanam",
+            "url": "tel:+34980533152",
+            "icon": "phone"
+          }
         ]
       },
       {
@@ -464,119 +784,302 @@
         "q": "Ma bëgg réserver wante xool disponibilité amul. Ñu mën taxaw?",
         "a": "Si dates bi ci 2-3 prochains mois, yëgël na dafa am. Xool site bi sobu sobu si annulations dafa am. Actuellement liste d'attente générale amul. Dates bu xóór sëbëti comme Semana Santa ak concerts Zetta, parfois ñu crée liste d'attente.",
         "links": [
-          { "label": "Vérifier disponibilité", "url": "/reserva", "icon": "search" },
-          { "label": "Contacter WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }
+          {
+            "label": "Vérifier disponibilité",
+            "url": "/reserva",
+            "icon": "search"
+          },
+          {
+            "label": "Contacter WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
         "q": "Ñu mën réserver ci téléphone?",
         "a": "Actuellement, réservations prépayées ci site bi rekk. Réservation ci téléphone seulement (sans paiement) amul. Réserver directement ci site bi — meilleur prix garanti. Si problème ak moteur de réservation, fonner +34 980 533 152 walla +34 639 980 253.",
         "links": [
-          { "label": "Réserver online", "url": "/reserva", "icon": "credit-card" },
-          { "label": "Fonner ngir aide", "url": "tel:+34980533152", "icon": "phone" }
+          {
+            "label": "Réserver online",
+            "url": "/reserva",
+            "icon": "credit-card"
+          },
+          {
+            "label": "Fonner ngir aide",
+            "url": "tel:+34980533152",
+            "icon": "phone"
+          }
         ]
       },
       {
         "q": "Li ñu soxor ci réservation bi?",
         "a": "Ñu soxor: nom complet, numéro de téléphone, adresse email, adresse postale ak données de paiement. Ci arrivée, hôtes yépp ak jambur 14 an doole na jëf document d'identité valide (DNI, passeport, NIE, TIE walla permis UE) ci Décret Royal 933/2021. Hôte gannaaw bi jëfal na dokument ji soxor, pas titre de réservation bi rekk.",
         "links": [
-          { "label": "Xool exigences documentation", "url": "/checkin", "icon": "file-text" },
-          { "label": "Réserver léegi", "url": "/reserva", "icon": "calendar-check" }
+          {
+            "label": "Xool exigences documentation",
+            "url": "/checkin",
+            "icon": "file-text"
+          },
+          {
+            "label": "Réserver léegi",
+            "url": "/reserva",
+            "icon": "calendar-check"
+          }
         ]
       },
       {
         "q": "Boo réserver boo amul email confirmation?",
         "a": "Boo réserver boo amul email confirmation, contact nanu ci téléphone, email walla WhatsApp. Yëgël na problème technique bi jangal na réservation bi. Contact nanu tëkk ngir éviter problèmes de disponibilité. Vérifie également dossier spam bi.",
         "links": [
-          { "label": "Contacter WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" },
-          { "label": "Envoyer email", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }
+          {
+            "label": "Contacter WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "Envoyer email",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
         ]
       },
       {
         "q": "Mënaa demander chambre bi soxor?",
         "a": "Waaw, wax ci message, WhatsApp walla téléphone ak ñu dina tëj. Garantir chambre spécifique waawoon déedet toujours possible, wante ñu dina yëgël ci disponibilité. Wax nanu tëkk. Danga mën donner préférences: basse/haute étage, chambre tranquille.",
-        "links": [{ "label": "Xool types de chambre", "url": "/galeria", "icon": "building" }]
+        "links": [
+          {
+            "label": "Xool types de chambre",
+            "url": "/galeria",
+            "icon": "building"
+          }
+        ]
       },
       {
         "q": "Nan annuler réservation bi?",
         "a": "Danga mën annuler gratuitement jusqu'à 48h avant arrivée (tarifs non-remboursables dëkk déedet). Annuler ci lien email confirmation bi walla compte ci site bi. Remboursement ci même moyen paiement — 5-15 jours ouvrés. Si réservé ci autre site (Booking, Expedia), gérer annulation ci cette plateforme.",
-        "tags": ["remboursement", "modification réservation", "annulation gratuite"],
-        "links": [{ "label": "Aller à compte bi", "url": "/reserva", "icon": "user" }]
+        "tags": [
+          "remboursement",
+          "modification réservation",
+          "annulation gratuite"
+        ],
+        "links": [
+          {
+            "label": "Aller à compte bi",
+            "url": "/reserva",
+            "icon": "user"
+          }
+        ]
       },
       {
         "q": "Nan demander facture?",
         "a": "Danga mën demander facture ci dernier jour séjour bi jusqu'à 30 jours après check-out. Ci réservation bi, remplis tous les champs nécessaires (nom ou raison sociale, numéro fiscal, adresse). Facture bi envoyée par email ci format PDF. Mënuñu émettre factures après 30 jours.",
-        "tags": ["reçu", "facturation", "TVA", "entreprise", "freelance"],
-        "links": [{ "label": "Contacter facture", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }]
+        "tags": [
+          "reçu",
+          "facturation",
+          "TVA",
+          "entreprise",
+          "freelance"
+        ],
+        "links": [
+          {
+            "label": "Contacter facture",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
+        ]
       },
       {
         "q": "Boo dëlësi wala dafa def quelque chose ci hostal?",
         "a": "Boo soxor yëgël def quelque chose ci hostal, contact nanu tëkk. Ñu dëk objets trouvés 30 jours. Ba 30 jours passés, objets non-réclamés jetés. Bëgg envoyer à une autre adresse, contact nanu. Service de messagerie bi yaw rekk gère.",
-        "tags": ["oublié", "objet perdu", "objets trouvés", "envoi", "récupérer"],
+        "tags": [
+          "oublié",
+          "objet perdu",
+          "objets trouvés",
+          "envoi",
+          "récupérer"
+        ],
         "links": [
-          { "label": "Contacter WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" },
-          { "label": "Envoyer email", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }
+          {
+            "label": "Contacter WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "Envoyer email",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
         ]
       },
       {
         "q": "Ma xam jëg bi weeru jëgëm. Réduction am?",
         "a": "Sunuy jëg yi ëpp wàcc ci Samura centre. Boo soxor yëgël erreur ci prix bi, yonnë email ak ñu xool. Ci séjours yu yàgg (11+ nuits) 10% réduction automatique. Réserver toujours ci site bi — prix bu ëpp wàcc ci Booking, Expedia ak autres.",
-        "links": [{ "label": "Voir meilleurs prix", "url": "/reserva", "icon": "tag" }]
+        "links": [
+          {
+            "label": "Voir meilleurs prix",
+            "url": "/reserva",
+            "icon": "tag"
+          }
+        ]
       },
       {
         "q": "Dëgëw réserver wante am laaj supplémentaires. Nan contactar?",
         "a": "Danga mën contacter ci téléphone +34 980 533 152, WhatsApp +34 639 980 253, walla email hostalsol{'@'}outlook.com. Boo écrit ak ñu repassul ci 3 jours, contact de nouveau. Horaire téléphonique: 10h00-21h00. Appels WhatsApp taxawul.",
         "links": [
-          { "label": "Fonner léegi", "url": "tel:+34980533152", "icon": "phone" },
-          { "label": "Envoyer WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" },
-          { "label": "Envoyer email", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }
+          {
+            "label": "Fonner léegi",
+            "url": "tel:+34980533152",
+            "icon": "phone"
+          },
+          {
+            "label": "Envoyer WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "Envoyer email",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
         ]
       },
       {
         "q": "Danga mën fàtte?",
         "a": "Fàtte bu bari défendu na ci yépp hostal bi, ak chambres yi, fenêtres yi, terrasses ak zones communes. Amende 100€ à 1.000€ ci violation. Dëf feu, bougies ak encens interdits.",
-        "tags": ["cigarette", "fàtte", "vapotage", "tabac", "bougie"]
+        "tags": [
+          "cigarette",
+          "fàtte",
+          "vapotage",
+          "tabac",
+          "bougie"
+        ]
       },
       {
         "q": "Danga mën bëgg vélo bi?",
         "a": "Waaw, danga mën bëgg vélo bi ci chambre bi boo seta (boue amul). Wax nanu ci kanam ngir jox chambre bu mag. Ascenseur bi mën am wu bari ngir vélo bu mag, doole na yóbboo ci escaliers.",
-        "tags": ["vélo", "cyclisme", "vélo électrique", "VTT", "mountain bike"]
+        "tags": [
+          "vélo",
+          "cyclisme",
+          "vélo électrique",
+          "VTT",
+          "mountain bike"
+        ]
       },
       {
         "q": "Séjour wu yàgg, conditions spéciales am?",
         "a": "Waaw, ci 11 nuits 10% réduction automatique ci prix total. Tarifs non-remboursables. Groupes ak séjours très longs conditions spéciales — contact nanu. Réduction bi applique déedet automatiquement, contact nanu.",
-        "links": [{ "label": "Réserver long séjour", "url": "/reserva", "icon": "calendar-check" }]
+        "links": [
+          {
+            "label": "Réserver long séjour",
+            "url": "/reserva",
+            "icon": "calendar-check"
+          }
+        ]
       },
       {
         "q": "Lammiñu ci hostal bi?",
         "a": "Personnel bi wax Espagnol rekk. Bëgg lire autre langue, écris WhatsApp walla email — ñu jëfë traducteurs en ligne. Arrivée, connecte WiFi gratuit hostal bi ak jëfë depuis téléphone bi Google Traduction, DeepL walla Bing Translator.",
-        "tags": ["langue", "anglais", "français", "wolof", "arabe", "communication"],
+        "tags": [
+          "langue",
+          "anglais",
+          "français",
+          "wolof",
+          "arabe",
+          "communication"
+        ],
         "links": [
-          { "label": "Google Traduction", "url": "https://translate.google.com/", "icon": "languages" },
-          { "label": "DeepL Traducteur", "url": "https://www.deepl.com/translator", "icon": "languages" },
-          { "label": "Bing Translator", "url": "https://www.bing.com/translator", "icon": "languages" },
-          { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" },
-          { "label": "Email", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }
+          {
+            "label": "Google Traduction",
+            "url": "https://translate.google.com/",
+            "icon": "languages"
+          },
+          {
+            "label": "DeepL Traducteur",
+            "url": "https://www.deepl.com/translator",
+            "icon": "languages"
+          },
+          {
+            "label": "Bing Translator",
+            "url": "https://www.bing.com/translator",
+            "icon": "languages"
+          },
+          {
+            "label": "WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "Email",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
         ]
       },
       {
         "q": "Mënaa réserver ci tur nit wéy?",
         "a": "Sëbëtu déedet. Meilleur: hôte gannaaw bi réserve ci tur ji soxor (nom complet ak téléphone enregistrés). Boo réserver ci nit wéy, wax ci commentaire nom complet ak téléphone bi, ak ñi soxor dëkk Chekin online ak données yi soxor. Code réservation bi rekk dëkk déedet — doole na vérifier personne bi am droit. Screenshots taxawul comme preuve. Ñu am doute, ñu fonner titre bi réservation ngir confirmer.",
-        "tags": ["réservation pour autre", "tiers", "sécurité", "vérification", "screenshot"],
+        "tags": [
+          "réservation pour autre",
+          "tiers",
+          "sécurité",
+          "vérification",
+          "screenshot"
+        ],
         "links": [
-          { "label": "Guide check-in", "url": "/checkin", "icon": "file-text" },
-          { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }
+          {
+            "label": "Guide check-in",
+            "url": "/checkin",
+            "icon": "file-text"
+          },
+          {
+            "label": "WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
         "q": "Lan la néeg yi am?",
         "a": "Salle de bain bu privé, wifi (mot de passe bi ak yeneen bataaxal ci kayit bi gannaaw bunt bi), bureau ak chaise, radiateur (ak contrôle automatique), climatisation ak télécommande, télé ak télécommande, sèche-cheveux ak fer à repasser (soo ko laajee), fauteuil, palanteer, lal ak draps. Ci salle de bain bi dinga fa fekk sabu bu ndaw, shampooing ak sabun loxo, ak serviettes. Soo soxlaa leneen, wax nu ko.",
-        "tags": ["jumtukaay", "néeg", "amenities", "sërviss", "salle de bain", "wifi", "climatisation", "télé", "sèche-cheveux", "fer", "lal", "serviettes"]
+        "tags": [
+          "jumtukaay",
+          "néeg",
+          "amenities",
+          "sërviss",
+          "salle de bain",
+          "wifi",
+          "climatisation",
+          "télé",
+          "sèche-cheveux",
+          "fer",
+          "lal",
+          "serviettes"
+        ]
       },
       {
         "q": "Kan moo defar site web bi?",
         "a": "Site web bii Juan Manuel Béc (https://juanman.tech/) moo ko defar. Code source bi ubbiku na te nekk na ci GitHub: https://github.com/JuanmanDev/HostalSolZamoraWeb2026",
-        "tags": ["web", "développeur", "auteur", "code", "github", "juanman", "technologie"]
+        "tags": [
+          "web",
+          "développeur",
+          "auteur",
+          "code",
+          "github",
+          "juanman",
+          "technologie"
+        ]
+      },
+      {
+        "q": "Ndax man naa gis site bu yàgg ba?",
+        "a": "Waaw, mën nga xool melo ak mbirum site bu yàgg ba ci lëkkalekaay bii di ñëw.",
+        "links": [
+          {
+            "label": "Gis site bu yàgg ba",
+            "url": "/old/hostalsolzamora.com/index.html",
+            "icon": "external-link"
+          }
+        ]
       }
     ]
   },
@@ -805,19 +1308,41 @@
       "docTypes": [
         {
           "name": "DNI / IDESP",
-          "fields": ["Numéro document", "Numéro support", "Date expiration", "Date naissance", "Sexe", "Nom ak prénoms", "Nationalité"]
+          "fields": [
+            "Numéro document",
+            "Numéro support",
+            "Date expiration",
+            "Date naissance",
+            "Sexe",
+            "Nom ak prénoms",
+            "Nationalité"
+          ]
         },
         {
           "name": "Passeport",
-          "fields": ["Numéro passeport", "Ligne MRZ complète", "Date émission", "Date expiration", "Nationalité", "Nom ak prénoms"]
+          "fields": [
+            "Numéro passeport",
+            "Ligne MRZ complète",
+            "Date émission",
+            "Date expiration",
+            "Nationalité",
+            "Nom ak prénoms"
+          ]
         },
         {
           "name": "NIE / TIE",
-          "fields": ["Numéro NIE/TIE", "Numéro support", "Date expiration"]
+          "fields": [
+            "Numéro NIE/TIE",
+            "Numéro support",
+            "Date expiration"
+          ]
         },
         {
           "name": "Permis de conduire (UE)",
-          "fields": ["Numéro permis", "Nom ak prénoms"]
+          "fields": [
+            "Numéro permis",
+            "Nom ak prénoms"
+          ]
         }
       ],
       "backHome": "← Sedet ci kaw",
@@ -895,13 +1420,34 @@
       "mapBtn": "Seet nanu ci carte",
       "distancesTitle": "Distances ci hostal",
       "distances": [
-        { "name": "Gare de train", "value": "1,2 km · 15 min à pied" },
-        { "name": "Station de bus", "value": "1 km · 13 min à pied" },
-        { "name": "Plaza Mayor / Keur historique", "value": "450 m · 5 min à pied" },
-        { "name": "Parking La Marina", "value": "400 m · 4 min à pied" },
-        { "name": "Parking de la Constitución", "value": "260 m · 2 min à pied" },
-        { "name": "Salamanque", "value": "67 km · 48 min en voiture" },
-        { "name": "Valladolid", "value": "101 km · 1h 11 min en voiture" }
+        {
+          "name": "Gare de train",
+          "value": "1,2 km · 15 min à pied"
+        },
+        {
+          "name": "Station de bus",
+          "value": "1 km · 13 min à pied"
+        },
+        {
+          "name": "Plaza Mayor / Keur historique",
+          "value": "450 m · 5 min à pied"
+        },
+        {
+          "name": "Parking La Marina",
+          "value": "400 m · 4 min à pied"
+        },
+        {
+          "name": "Parking de la Constitución",
+          "value": "260 m · 2 min à pied"
+        },
+        {
+          "name": "Salamanque",
+          "value": "67 km · 48 min en voiture"
+        },
+        {
+          "name": "Valladolid",
+          "value": "101 km · 1h 11 min en voiture"
+        }
       ],
       "formTitle": "Yonnë message ci nanu",
       "formIntro": "Remplis formulaire bi ak ñu dina respond ci email. Bëgg respond bu gaaw, ëpp baax fonner walla écrire WhatsApp.",

@@ -1056,43 +1056,149 @@
       {
         "q": "¿Qué idiomas habláis en el hostal?",
         "a": "El personal del hostal habla exclusivamente español. Si necesitas comunicarte en otro idioma, escríbenos por WhatsApp o email y nos apoyamos en traductores online para entendernos. Al llegar, conéctate al WiFi gratuito del hostal y usa desde tu móvil cualquier traductor online como Google Translate, DeepL o Bing Translator.",
-        "tags": ["idioma", "inglés", "francés", "alemán", "chino", "árabe", "ruso", "italiano", "portugués", "language", "english", "speak", "hablar", "comunicación"],
+        "tags": [
+          "idioma",
+          "inglés",
+          "francés",
+          "alemán",
+          "chino",
+          "árabe",
+          "ruso",
+          "italiano",
+          "portugués",
+          "language",
+          "english",
+          "speak",
+          "hablar",
+          "comunicación"
+        ],
         "links": [
-          { "label": "Google Translate", "url": "https://translate.google.com/", "icon": "languages" },
-          { "label": "DeepL Traductor", "url": "https://www.deepl.com/translator", "icon": "languages" },
-          { "label": "Bing Translator", "url": "https://www.bing.com/translator", "icon": "languages" },
-          { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" },
-          { "label": "Email", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }
+          {
+            "label": "Google Translate",
+            "url": "https://translate.google.com/",
+            "icon": "languages"
+          },
+          {
+            "label": "DeepL Traductor",
+            "url": "https://www.deepl.com/translator",
+            "icon": "languages"
+          },
+          {
+            "label": "Bing Translator",
+            "url": "https://www.bing.com/translator",
+            "icon": "languages"
+          },
+          {
+            "label": "WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "Email",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
         ]
       },
       {
         "q": "¿Puedo hacer una reserva a nombre de otra persona?",
         "a": "No lo recomendamos. Lo más seguro es que cada huésped reserve bajo su propio nombre, para que todos los datos (nombre completo y teléfono) queden correctamente registrados. Si reservas para otra persona, deja un comentario en la reserva con su nombre completo y teléfono, y asegúrate de que esa persona complete el proceso de check-in online con sus propios datos. El código de reserva solo no es suficiente: necesitamos verificar que la persona que llega tiene derecho a utilizarla. Las capturas de pantalla no se aceptan como prueba de reserva, ya que no podemos comprobar su autenticidad. Si tenemos dudas, llamaremos al titular de la reserva para confirmar. Nos tomamos muy en serio la seguridad de todos nuestros huéspedes y sus pertenencias.",
-        "tags": ["reserva para otro", "terceros", "nombre titular", "seguridad", "verificación", "captura de pantalla", "screenshot", "reservar para alguien", "DNI verificación"],
+        "tags": [
+          "reserva para otro",
+          "terceros",
+          "nombre titular",
+          "seguridad",
+          "verificación",
+          "captura de pantalla",
+          "screenshot",
+          "reservar para alguien",
+          "DNI verificación"
+        ],
         "links": [
-          { "label": "Guía de check-in", "url": "/checkin", "icon": "file-text" },
-          { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }
+          {
+            "label": "Guía de check-in",
+            "url": "/checkin",
+            "icon": "file-text"
+          },
+          {
+            "label": "WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
         "q": "¿Qué tiene la habitación?",
         "a": "Baño privado, wifi (la contraseña y más instrucciones están en el papel detrás de la puerta), escritorio y silla, radiador (con controles automáticos), aire acondicionado con mando, TV con mando, secador de pelo y plancha bajo petición, sillón, ventana, cama con sábanas incluidas. En el baño encontrarás jabón básico, champú y jabón de manos, además de toallas. Si necesitas algo más, dínoslo.",
-        "tags": ["equipamiento", "habitación", "amenities", "servicios", "baño", "wifi", "aire acondicionado", "TV", "secador", "plancha", "cama", "toallas"]
+        "tags": [
+          "equipamiento",
+          "habitación",
+          "amenities",
+          "servicios",
+          "baño",
+          "wifi",
+          "aire acondicionado",
+          "TV",
+          "secador",
+          "plancha",
+          "cama",
+          "toallas"
+        ]
       },
       {
         "q": "¿Quién ha hecho esta página web?",
         "a": "Juan Manuel Béc: https://juanman.tech/. El código fuente de esta web está en https://github.com/JuanmanDev/HostalSolZamoraWeb2026",
-        "tags": ["web", "desarrollador", "autor", "código", "github", "juanman", "tecnología"]
+        "tags": [
+          "web",
+          "desarrollador",
+          "autor",
+          "código",
+          "github",
+          "juanman",
+          "tecnología"
+        ]
       },
       {
         "q": "¿Qué equipamiento tienen las habitaciones?",
         "a": "Baño privado, wifi (la contraseña y más instrucciones están en el papel detrás de la puerta), escritorio y silla, radiador (con controles automáticos), aire acondicionado con mando, TV con mando, secador de pelo y plancha bajo petición, sillón, ventana, cama con sábanas incluidas. En el baño encontrarás jabón básico, champú y jabón de manos, además de toallas. Si necesitas algo más, dínoslo.",
-        "tags": ["equipamiento", "habitación", "amenities", "servicios", "baño", "wifi", "aire acondicionado", "TV", "secador", "plancha", "cama", "toallas"]
+        "tags": [
+          "equipamiento",
+          "habitación",
+          "amenities",
+          "servicios",
+          "baño",
+          "wifi",
+          "aire acondicionado",
+          "TV",
+          "secador",
+          "plancha",
+          "cama",
+          "toallas"
+        ]
       },
       {
         "q": "¿Quién ha hecho esta página web?",
         "a": "Esta web ha sido desarrollada por Juan Manuel Béc (https://juanman.tech/). El código fuente es abierto y está disponible en GitHub: https://github.com/JuanmanDev/HostalSolZamoraWeb2026",
-        "tags": ["web", "desarrollador", "autor", "código", "github", "juanman", "tecnología"]
+        "tags": [
+          "web",
+          "desarrollador",
+          "autor",
+          "código",
+          "github",
+          "juanman",
+          "tecnología"
+        ]
+      },
+      {
+        "q": "¿Puedo ver la página antigua?",
+        "a": "Sí, puedes consultar el diseño y contenido de nuestra web anterior en el siguiente enlace.",
+        "links": [
+          {
+            "label": "Ver web antigua",
+            "url": "/old/hostalsolzamora.com/index.html",
+            "icon": "external-link"
+          }
+        ]
       }
     ]
   },

@@ -16,6 +16,40 @@ services:
       - "traefik.http.routers.hostalsol.tls.certresolver=myresolver"
       - "traefik.http.services.hostalsol.loadbalancer.server.port=80"
 
+  umami:
+    image: ghcr.io/umami-software/umami:postgresql-latest
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgresql://umami:umami@umami-db:5432/umami
+      DATABASE_TYPE: postgresql
+      HASH_SALT: umami-salt-hostalsol-2026
+      APP_SECRET: umami-secret-hostalsol-2026
+    depends_on:
+      - umami-db
+    networks:
+      - traefik-public
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.umami.rule=Host(`umami.hostalsol.79.72.51.163.nip.io`)"
+      - "traefik.http.routers.umami.entrypoints=websecure"
+      - "traefik.http.routers.umami.tls.certresolver=myresolver"
+      - "traefik.http.services.umami.loadbalancer.server.port=3000"
+
+  umami-db:
+    image: postgres:15-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: umami
+      POSTGRES_USER: umami
+      POSTGRES_PASSWORD: umami
+    volumes:
+      - umami-db-data:/var/lib/postgresql/data
+    networks:
+      - traefik-public
+
+volumes:
+  umami-db-data:
+
 networks:
   traefik-public:
     external: true

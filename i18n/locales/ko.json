@@ -1,14 +1,30 @@
 {
   "ogImage": {
     "tagline": "사모라의 당신의 집",
-    "home": { "title": "Hostal Sol Zamora" },
-    "faq": { "title": "자주 묻는 질문" },
-    "parking": { "title": "사모라 주차 안내" },
-    "checkin": { "title": "오시는 길 및 체크인" },
-    "galeria": { "title": "객실 갤러리" },
-    "reserva": { "title": "객실 예약" },
-    "sobreNosotros": { "title": "소개" },
-    "contacto": { "title": "연락처" },
+    "home": {
+      "title": "Hostal Sol Zamora"
+    },
+    "faq": {
+      "title": "자주 묻는 질문"
+    },
+    "parking": {
+      "title": "사모라 주차 안내"
+    },
+    "checkin": {
+      "title": "오시는 길 및 체크인"
+    },
+    "galeria": {
+      "title": "객실 갤러리"
+    },
+    "reserva": {
+      "title": "객실 예약"
+    },
+    "sobreNosotros": {
+      "title": "소개"
+    },
+    "contacto": {
+      "title": "연락처"
+    },
     "location": "스페인 사모라"
   },
   "nav": {
@@ -32,14 +48,46 @@
     "ctaRooms": "객실 보기",
     "discount": "직접 예약 — 15% 할인",
     "features": [
-      { "icon": "map-pin", "label": "중심 위치", "link": null },
-      { "icon": "wifi", "label": "무료 WiFi", "link": null },
-      { "icon": "paw-print", "label": "반려동물 허용", "link": null },
-      { "icon": "shower-head", "label": "개인 욕실", "link": null },
-      { "icon": "banknote-arrow-down", "label": "합리적인 가격", "link": null },
-      { "icon": "wind", "label": "에어컨", "link": null },
-      { "icon": "tv", "label": "TV", "link": null },
-      { "icon": "laptop", "label": "책상", "link": null }
+      {
+        "icon": "map-pin",
+        "label": "중심 위치",
+        "link": null
+      },
+      {
+        "icon": "wifi",
+        "label": "무료 WiFi",
+        "link": null
+      },
+      {
+        "icon": "paw-print",
+        "label": "반려동물 허용",
+        "link": null
+      },
+      {
+        "icon": "shower-head",
+        "label": "개인 욕실",
+        "link": null
+      },
+      {
+        "icon": "banknote-arrow-down",
+        "label": "합리적인 가격",
+        "link": null
+      },
+      {
+        "icon": "wind",
+        "label": "에어컨",
+        "link": null
+      },
+      {
+        "icon": "tv",
+        "label": "TV",
+        "link": null
+      },
+      {
+        "icon": "laptop",
+        "label": "책상",
+        "link": null
+      }
     ]
   },
   "about": {
@@ -68,29 +116,47 @@
         "label": "트윈 (1인용 침대 2개)",
         "icon": "bed-single",
         "photoPath": "/images/rooms/301/003.jpg",
-        "extras": ["90cm 침대 2개"],
+        "extras": [
+          "90cm 침대 2개"
+        ],
         "rateId": "578650"
       },
       {
         "label": "더블 (더블 침대)",
         "icon": "bed-double",
         "photoPath": "/images/rooms/323/002.jpg",
-        "extras": ["135cm 침대 1개"],
+        "extras": [
+          "135cm 침대 1개"
+        ],
         "rateId": "578649"
       },
       {
         "label": "발코니 더블",
         "icon": "building",
         "photoPath": "/images/rooms/321/021.jpg",
-        "extras": ["135cm 침대 1개", "개인 발코니", "TV Superior"],
+        "extras": [
+          "135cm 침대 1개",
+          "개인 발코니",
+          "TV Superior"
+        ],
         "rateId": "752069"
       }
     ],
     "amenities": [
-      "TV", "WiFi", "개인 욕실", "책상",
-      "중앙 난방", "욕실 용품", "수건 및 침구",
-      "에어컨", "헤어드라이어 (요청 시)", "옷장",
-      "매일 청소", "의자", "공용 공간 CCTV", "엘리베이터"
+      "TV",
+      "WiFi",
+      "개인 욕실",
+      "책상",
+      "중앙 난방",
+      "욕실 용품",
+      "수건 및 침구",
+      "에어컨",
+      "헤어드라이어 (요청 시)",
+      "옷장",
+      "매일 청소",
+      "의자",
+      "공용 공간 CCTV",
+      "엘리베이터"
     ],
     "filterAll": "전체",
     "filterBalcon": "발코니",
@@ -171,19 +237,71 @@
     "ctaBand": "공식 홈페이지에서 직접 예약하고 최저가 보장 혜택을 받으세요",
     "ctaBandBtn": "할인 예약하기 →",
     "items": [
-      { "name": "Gemma", "text": "Me ha encantado la localización, el estilo del hostal es muy moderno y el chico super majo. La ducha era genial, ¡me dio pena marcharme!", "stars": 5 },
-      { "name": "Iker Zulueta", "text": "En pleno centro histórico, habitaciones amplias, limpias y equipadas. Trato del personal inmejorable. ¡Volveré a repetir!", "stars": 5 },
-      { "name": "José Manuel Serrano", "text": "Ubicación muy céntrica, te evitas el coche. El chico que nos atendió se ofreció para cualquier cosa. Excelente.", "stars": 5 },
-      { "name": "Annayara", "text": "Fui con un brazo lesionado y enseguida me ofrecieron cambiar la habitación por una más amplia. Esos detalles son los que cuentan.", "stars": 5 },
-      { "name": "Javier Fidalgo", "text": "El sitio es perfecto. Muy limpio, todo lo necesario, ubicación increíble y el recepcionista muy majo. Sin duda volveremos.", "stars": 5 },
-      { "name": "Carla Aguilar", "text": "Hostal estupendo en pleno centro. Nos explicaron qué ver y los mejores lugares a visitar. Sin duda, cuando volvamos repetiremos.", "stars": 5 },
-      { "name": "L. Elisabeth", "text": "Limpio, cómodo y práctico. Personal atento y preocupado de atender bien. Un acierto escoger este hostal.", "stars": 5 },
-      { "name": "Juan Manuel", "text": "El WiFi funcionó perfectamente y pude trabajar sin problemas. Creo que volveré pronto.", "stars": 5 },
-      { "name": "Thomas K. (DE)", "text": "Sehr zentral gelegen, saubere Zimmer und freundliches Personal. Kann ich nur empfehlen!", "stars": 5 },
-      { "name": "Marie L. (FR)", "text": "Excellent rapport qualité-prix. Chambre propre, bien équipée et idéalement située dans le centre historique.", "stars": 5 },
-      { "name": "James H. (UK)", "text": "Great location right in the historic centre. Clean rooms, helpful staff. Would definitely stay again.", "stars": 5 },
-      { "name": "Valentina R. (IT)", "text": "Ottima posizione nel centro storico, stanza pulita e personale cordiale. Consigliato!", "stars": 5 },
-      { "name": "Pedro A. (PT)", "text": "Localização perfeita no centro histórico. Quartos limpos e pessoal simpático. Recomendo!", "stars": 5 }
+      {
+        "name": "Gemma",
+        "text": "Me ha encantado la localización, el estilo del hostal es muy moderno y el chico super majo. La ducha era genial, ¡me dio pena marcharme!",
+        "stars": 5
+      },
+      {
+        "name": "Iker Zulueta",
+        "text": "En pleno centro histórico, habitaciones amplias, limpias y equipadas. Trato del personal inmejorable. ¡Volveré a repetir!",
+        "stars": 5
+      },
+      {
+        "name": "José Manuel Serrano",
+        "text": "Ubicación muy céntrica, te evitas el coche. El chico que nos atendió se ofreció para cualquier cosa. Excelente.",
+        "stars": 5
+      },
+      {
+        "name": "Annayara",
+        "text": "Fui con un brazo lesionado y enseguida me ofrecieron cambiar la habitación por una más amplia. Esos detalles son los que cuentan.",
+        "stars": 5
+      },
+      {
+        "name": "Javier Fidalgo",
+        "text": "El sitio es perfecto. Muy limpio, todo lo necesario, ubicación increíble y el recepcionista muy majo. Sin duda volveremos.",
+        "stars": 5
+      },
+      {
+        "name": "Carla Aguilar",
+        "text": "Hostal estupendo en pleno centro. Nos explicaron qué ver y los mejores lugares a visitar. Sin duda, cuando volvamos repetiremos.",
+        "stars": 5
+      },
+      {
+        "name": "L. Elisabeth",
+        "text": "Limpio, cómodo y práctico. Personal atento y preocupado de atender bien. Un acierto escoger este hostal.",
+        "stars": 5
+      },
+      {
+        "name": "Juan Manuel",
+        "text": "El WiFi funcionó perfectamente y pude trabajar sin problemas. Creo que volveré pronto.",
+        "stars": 5
+      },
+      {
+        "name": "Thomas K. (DE)",
+        "text": "Sehr zentral gelegen, saubere Zimmer und freundliches Personal. Kann ich nur empfehlen!",
+        "stars": 5
+      },
+      {
+        "name": "Marie L. (FR)",
+        "text": "Excellent rapport qualité-prix. Chambre propre, bien équipée et idéalement située dans le centre historique.",
+        "stars": 5
+      },
+      {
+        "name": "James H. (UK)",
+        "text": "Great location right in the historic centre. Clean rooms, helpful staff. Would definitely stay again.",
+        "stars": 5
+      },
+      {
+        "name": "Valentina R. (IT)",
+        "text": "Ottima posizione nel centro storico, stanza pulita e personale cordiale. Consigliato!",
+        "stars": 5
+      },
+      {
+        "name": "Pedro A. (PT)",
+        "text": "Localização perfeita no centro histórico. Quartos limpos e pessoal simpático. Recomendo!",
+        "stars": 5
+      }
     ]
   },
   "restaurant": {
@@ -208,82 +326,227 @@
       {
         "q": "호스텔 운영 시간은 어떻게 됩니까?",
         "a": "전화 응대: 10:00–21:00. 체크인: 14:00–21:00. 호스텔은 예외 없이 21:00에 문을 닫습니다 — 사전 합의 없이 21:00 이후 도착은 불가합니다. 도착 후 열쇠를 받아 자유롭게 출입할 수 있습니다. 대부분의 일요일은 문을 닫지만, 토요일에 도착하면 일요일 내내 머물 수 있습니다. 8월 14-16일, 12월 15일, 1월 1일을 제외한 대부분의 공휴일에 운영합니다.",
-        "links": [{ "label": "전체 도착 안내", "url": "/checkin", "icon": "log-in" }]
+        "links": [
+          {
+            "label": "전체 도착 안내",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
       },
       {
         "q": "체크인 및 체크아웃 시간은 언제입니까?",
         "a": "체크인: 14:00–21:00. 14:00 이전에 도착하면 프런트에서 짐을 보관해 드릴 수 있습니다. 비수기에는 조기 체크인이 가능할 수 있지만 보장되지는 않습니다. 체크아웃: 11:00. 체크아웃 후에도 당일(일요일 제외) 짐 보관이 가능합니다 — 알려주세요. 21:00 이후에 도착하면 어떠한 경우에도 서비스를 받을 수 없습니다.",
-        "tags": ["도착", "조기 체크인", "짐 보관", "가방", "늦은 체크아웃"],
-        "links": [{ "label": "전체 도착 안내", "url": "/checkin", "icon": "log-in" }]
+        "tags": [
+          "도착",
+          "조기 체크인",
+          "짐 보관",
+          "가방",
+          "늦은 체크아웃"
+        ],
+        "links": [
+          {
+            "label": "전체 도착 안내",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
       },
       {
         "q": "체크인에 필요한 서류는 무엇입니까?",
         "a": "스페인 왕령 933/2021에 따라 14세 이상 모든 투숙객은 사진이 있는 유효한 공식 신분증을 제시해야 합니다: 스페인 국민 신분증(DNI), 여권, NIE, TIE 또는 EU 운전면허증. 만료되었거나 훼손되었거나 판독 불가능하거나 이메일/WhatsApp으로 전송된 서류는 허용되지 않습니다. 각 투숙객은 본인의 서류를 직접 제시해야 합니다. 처리 과정을 빠르게 하려면 도착 전 Chekin을 통해 온라인 체크인을 권장합니다.",
-        "tags": ["여권", "운전면허증", "DNI", "서류", "온라인 체크인", "chekin", "NIE"],
+        "tags": [
+          "여권",
+          "운전면허증",
+          "DNI",
+          "서류",
+          "온라인 체크인",
+          "chekin",
+          "NIE"
+        ],
         "links": [
-          { "label": "온라인 체크인", "url": "/checkin", "icon": "file-text" },
-          { "label": "허용 서류 유형", "url": "/checkin", "icon": "id-card" }
+          {
+            "label": "온라인 체크인",
+            "url": "/checkin",
+            "icon": "file-text"
+          },
+          {
+            "label": "허용 서류 유형",
+            "url": "/checkin",
+            "icon": "id-card"
+          }
         ]
       },
       {
         "q": "거동이 불편한 분들을 위해 접근 가능한 시설이 있습니까?",
         "a": "호스텔은 엘리베이터 2대가 있는 건물 3층에 있습니다. 입구와 객실로 이어지는 복도에 계단이 없습니다. 갤러리에서 객실 사진과 동영상을 확인하여 공간이 귀하의 필요에 맞는지 확인할 수 있습니다. 질문이 있으면 연락해 주세요.",
-        "tags": ["휠체어", "거동 불편", "엘리베이터", "계단", "접근성"],
-        "links": [{ "label": "객실 갤러리", "url": "/gallery", "icon": "image" }]
+        "tags": [
+          "휠체어",
+          "거동 불편",
+          "엘리베이터",
+          "계단",
+          "접근성"
+        ],
+        "links": [
+          {
+            "label": "객실 갤러리",
+            "url": "/gallery",
+            "icon": "image"
+          }
+        ]
       },
       {
         "q": "주차는 어디서 할 수 있습니까?",
         "a": "호스텔에는 전용 주차장이 없지만 근처에 여러 옵션이 있습니다. Plaza Constitución 주차장(도보 3분, 1.45€/시간, 14.70€/일, 24시간) — 가장 가깝습니다. Plaza de la Marina Española 주차장(도보 5분, Empark 온라인 예약). 무료 주차 — 기차역(2km, L3번 버스), 24시간 무료. 바로 앞 — ORA 파란 구역 0.35€/30분, 최대 3시간. 보행자 구역이지만 시청에서 투숙객이 짐을 내리기 위해 Calle San Miguel에서 접근하는 것을 허용합니다.",
-        "tags": ["주차장", "자동차", "오토바이", "차량", "근처 주차"],
+        "tags": [
+          "주차장",
+          "자동차",
+          "오토바이",
+          "차량",
+          "근처 주차"
+        ],
         "links": [
-          { "label": "전체 주차 안내", "url": "/parking", "icon": "car" },
-          { "label": "구글 지도에서 열기", "url": "https://www.google.com/maps/dir//Calle+Benavente,+2+Zamora", "icon": "map-pin" }
+          {
+            "label": "전체 주차 안내",
+            "url": "/parking",
+            "icon": "car"
+          },
+          {
+            "label": "구글 지도에서 열기",
+            "url": "https://www.google.com/maps/dir//Calle+Benavente,+2+Zamora",
+            "icon": "map-pin"
+          }
         ]
       },
       {
         "q": "역에서 호스텔까지 어떻게 옵니까?",
         "a": "기차역과 버스역은 Avenida de las Tres Cruces에 함께 있으며, 호스텔에서 약 2km 거리입니다. 이동 방법: 택시(5-7분, 약 6-8€), 시내버스 3번(El Acercame, 0.95€) — 'Mercado' 정류장 하차(호스텔까지 도보 5분) — 또는 도보 약 25-30분. 역에는 24시간 무료 주차장과 물품 보관함이 있습니다.",
-        "tags": ["기차", "renfe", "버스", "역", "도착", "교통", "오는 방법"],
+        "tags": [
+          "기차",
+          "renfe",
+          "버스",
+          "역",
+          "도착",
+          "교통",
+          "오는 방법"
+        ],
         "links": [
-          { "label": "사모라역 — Renfe", "url": "https://www.renfe.com/es/es/inspirate/estaciones/estacion-zamora", "icon": "external-link" },
-          { "label": "기차역 — 구글 지도", "url": "https://www.google.com/maps/dir//Estaci%C3%B3n+de+Ferrocarril+Zamora", "icon": "map-pin" },
-          { "label": "버스역 — 구글 지도", "url": "https://www.google.com/maps/dir//Estaci%C3%B3n+de+Autobuses+de+Zamora", "icon": "map-pin" },
-          { "label": "El Acercame 버스", "url": "https://www.acercame.es", "icon": "bus" }
+          {
+            "label": "사모라역 — Renfe",
+            "url": "https://www.renfe.com/es/es/inspirate/estaciones/estacion-zamora",
+            "icon": "external-link"
+          },
+          {
+            "label": "기차역 — 구글 지도",
+            "url": "https://www.google.com/maps/dir//Estaci%C3%B3n+de+Ferrocarril+Zamora",
+            "icon": "map-pin"
+          },
+          {
+            "label": "버스역 — 구글 지도",
+            "url": "https://www.google.com/maps/dir//Estaci%C3%B3n+de+Autobuses+de+Zamora",
+            "icon": "map-pin"
+          },
+          {
+            "label": "El Acercame 버스",
+            "url": "https://www.acercame.es",
+            "icon": "bus"
+          }
         ]
       },
       {
         "q": "사모라에서 택시를 부르는 방법은?",
         "a": "주요 택시 조합은 Radio Taxi Zamora(전화: 980 531 515)입니다. 역 택시 승강장이나 시내 광장에서도 택시를 찾을 수 있습니다. 역에서 호스텔까지 약 6-8€이며 5-7분 정도 걸립니다. 택시는 늦은 도착이나 짐이 많을 때 가장 편리한 옵션입니다.",
-        "tags": ["택시", "radio taxi", "교통", "사모라 택시"],
+        "tags": [
+          "택시",
+          "radio taxi",
+          "교통",
+          "사모라 택시"
+        ],
         "links": [
-          { "label": "Radio Taxi Zamora — 980 531 515", "url": "tel:+34980531515", "icon": "phone" },
-          { "label": "구글 지도에서 택시 찾기", "url": "https://www.google.com/maps/search/taxi+zamora", "icon": "car" }
+          {
+            "label": "Radio Taxi Zamora — 980 531 515",
+            "url": "tel:+34980531515",
+            "icon": "phone"
+          },
+          {
+            "label": "구글 지도에서 택시 찾기",
+            "url": "https://www.google.com/maps/search/taxi+zamora",
+            "icon": "car"
+          }
         ]
       },
       {
         "q": "IFEZA에 어떻게 갑니까?",
         "a": "IFEZA(사모라 전시관)는 호스텔에서 약 4-5km 거리에 있습니다. 시내버스 5번(El Acercame, 0.95€), 택시(약 10분, 8-10€) 또는 자동차로 이동할 수 있습니다. 중요: 대형 행사와 콘서트 기간에는 주최측에서 보통 사모라 시내에서 IFEZA까지 무료 셔틀버스를 운행합니다. 항상 행사 또는 IFEZA 공식 웹사이트를 확인하세요.",
-        "tags": ["IFEZA", "전시회", "콘서트", "Zeta", "Fromago", "SIFER", "행사", "5번 버스", "무료 버스"],
+        "tags": [
+          "IFEZA",
+          "전시회",
+          "콘서트",
+          "Zeta",
+          "Fromago",
+          "SIFER",
+          "행사",
+          "5번 버스",
+          "무료 버스"
+        ],
         "links": [
-          { "label": "IFEZA — 공식 웹사이트", "url": "https://www.ifeza.es/", "icon": "building-2" },
-          { "label": "5번 버스 — El Acercame", "url": "https://www.acercame.es/index.php/linea/linea5", "icon": "bus" },
-          { "label": "IFEZA — 구글 지도", "url": "https://www.google.com/maps/dir//IFEZA+Zamora", "icon": "map-pin" }
+          {
+            "label": "IFEZA — 공식 웹사이트",
+            "url": "https://www.ifeza.es/",
+            "icon": "building-2"
+          },
+          {
+            "label": "5번 버스 — El Acercame",
+            "url": "https://www.acercame.es/index.php/linea/linea5",
+            "icon": "bus"
+          },
+          {
+            "label": "IFEZA — 구글 지도",
+            "url": "https://www.google.com/maps/dir//IFEZA+Zamora",
+            "icon": "map-pin"
+          }
         ]
       },
       {
         "q": "호스텔에서 조식을 제공합니까?",
         "a": "조식은 제공하지 않지만 근처에 카페와 베이커리가 여러 곳 있습니다. Bar Restaurante Padornelo를 추천합니다 — 호스텔 입구에서 도보 2분 이내. 월-금 10:00 오픈, 합리적인 가격에 양질의 조식을 제공합니다.",
-        "tags": ["음식", "커피", "바", "베이커리", "근처 조식"],
+        "tags": [
+          "음식",
+          "커피",
+          "바",
+          "베이커리",
+          "근처 조식"
+        ],
         "links": [
-          { "label": "Restaurante Padornelo", "url": "/#restaurant", "icon": "utensils-crossed" },
-          { "label": "구글 지도에서 열기", "url": "https://www.google.com/maps/dir//Calle+Benavente,+2+Zamora", "icon": "map-pin" }
+          {
+            "label": "Restaurante Padornelo",
+            "url": "/#restaurant",
+            "icon": "utensils-crossed"
+          },
+          {
+            "label": "구글 지도에서 열기",
+            "url": "https://www.google.com/maps/dir//Calle+Benavente,+2+Zamora",
+            "icon": "map-pin"
+          }
         ]
       },
       {
         "q": "반려동물을 데려올 수 있습니까?",
         "a": "네, 반려동물을 환영합니다! 동물 한 마리당 7€/박의 추가 요금이 있습니다. 추가 요금은 공식 홈페이지 예약 시 결제할 수 있습니다. 동물은 항상 동반자가 있어야 합니다 — 객실, 호스텔, 차량 또는 다른 어떤 곳에도 혼자 남겨둘 수 없습니다. 위반 시 동물 수용 거부 및 위약금과 함께 예약 취소가 될 수 있습니다.",
-        "tags": ["강아지", "고양이", "동물", "강아지", "반려동물 허용"],
-        "links": [{ "label": "할인 예약하기", "url": "/booking", "icon": "paw-print" }]
+        "tags": [
+          "강아지",
+          "고양이",
+          "동물",
+          "강아지",
+          "반려동물 허용"
+        ],
+        "links": [
+          {
+            "label": "할인 예약하기",
+            "url": "/booking",
+            "icon": "paw-print"
+          }
+        ]
       },
       {
         "q": "반려동물을 객실에 혼자 둘 수 있습니까?",
@@ -292,32 +555,80 @@
       {
         "q": "객실에 WiFi가 있습니까?",
         "a": "네, 모든 객실을 포함한 호스텔 전체에서 무료 WiFi를 이용하실 수 있습니다. 비밀번호는 체크인 시 제공되며 프런트에서도 안내받을 수 있습니다. 대부분의 객실에서 50Mbps 이상의 속도를 제공합니다 — 인터넷 서핑, 이메일, 영상 스트리밍 및 화상 통화에 충분합니다. 재택근무에 탁월한 환경입니다.",
-        "tags": ["인터넷", "WiFi 비밀번호", "연결", "네트워크", "속도", "광섬유", "재택근무"]
+        "tags": [
+          "인터넷",
+          "WiFi 비밀번호",
+          "연결",
+          "네트워크",
+          "속도",
+          "광섬유",
+          "재택근무"
+        ]
       },
       {
         "q": "객실에 에어컨이 있습니까?",
         "a": "네, 모든 객실에 에어컨과 난방이 설치되어 있습니다. 연중 내내 쾌적한 온도를 보장하는 현대적이고 효율적인 시스템입니다. 취향에 맞게 온도를 조절하실 수 있습니다.",
-        "tags": ["에어컨", "난방", "온도", "더위", "추위", "온도 조절기", "선풍기", "기후"]
+        "tags": [
+          "에어컨",
+          "난방",
+          "온도",
+          "더위",
+          "추위",
+          "온도 조절기",
+          "선풍기",
+          "기후"
+        ]
       },
       {
         "q": "객실에는 어떤 TV가 있습니까?",
         "a": "발코니 객실 — 32인치 평면 TV, 일부는 스트리밍 플랫폼을 위한 Smart TV. 발코니 없는 객실 — 18인치 TV(Smart TV 아님), 하지만 HDMI로 외부 기기 연결 가능.",
-        "tags": ["TV", "Netflix", "스트리밍", "HBO", "Prime", "HDMI", "채널", "smart tv"]
+        "tags": [
+          "TV",
+          "Netflix",
+          "스트리밍",
+          "HBO",
+          "Prime",
+          "HDMI",
+          "채널",
+          "smart tv"
+        ]
       },
       {
         "q": "호스텔에 어떤 보안 조치가 있습니까?",
         "a": "호스텔은 3층에 있어서 객실 복도에 들어가려면 열쇠 2개가 필요합니다(건물용과 호스텔 문용). 복도에는 CCTV 카메라가 설치되어 있습니다. 각 객실은 개별 잠금장치가 있습니다.",
-        "tags": ["금고", "귀중품", "잠금장치", "도난", "카메라", "보안", "CCTV"]
+        "tags": [
+          "금고",
+          "귀중품",
+          "잠금장치",
+          "도난",
+          "카메라",
+          "보안",
+          "CCTV"
+        ]
       },
       {
         "q": "객실에 냉장고, 커피 메이커 또는 전자레인지가 있습니까?",
         "a": "아니요, 객실에는 냉장고, 커피 메이커 또는 전자레인지가 없습니다. 다만 호스텔 근처에 슈퍼마켓이 여러 곳 있습니다.",
-        "tags": ["냉장고", "주방", "전자레인지", "커피 메이커", "전기 주전자", "미니 바"]
+        "tags": [
+          "냉장고",
+          "주방",
+          "전자레인지",
+          "커피 메이커",
+          "전기 주전자",
+          "미니 바"
+        ]
       },
       {
         "q": "세탁 서비스가 있습니까?",
         "a": "호스텔에는 자체 세탁실이 없지만 근처에 셀프 세탁소가 여러 곳 있습니다. 가장 가까운 곳은 Calle San Torcuato에 있으며 도보 5분 이내입니다. 수건, 침대 시트 및 침구 교체는 객실 요금에 포함됩니다.",
-        "tags": ["세탁", "옷", "세탁기", "건조기", "세탁소", "의류 세탁"]
+        "tags": [
+          "세탁",
+          "옷",
+          "세탁기",
+          "건조기",
+          "세탁소",
+          "의류 세탁"
+        ]
       },
       {
         "q": "매일 청소 서비스가 있습니까?",
@@ -326,12 +637,23 @@
       {
         "q": "헤어드라이어 또는 다리미가 있습니까?",
         "a": "네, 프런트에 요청하면 무료로 헤어드라이어와 다리미를 대여할 수 있습니다. 모든 투숙객을 위한 무료 서비스입니다.",
-        "tags": ["머리", "헤어드라이어", "다리미", "다림질"]
+        "tags": [
+          "머리",
+          "헤어드라이어",
+          "다리미",
+          "다림질"
+        ]
       },
       {
         "q": "객실 요금에는 무엇이 포함됩니까?",
         "a": "모든 객실에는 다음이 포함됩니다: 완전한 침구(시트, 담요, 베개, 이불), 수건(유형과 기간에 따라 투숙객 1인당 1-2장), 기본 가구(침대, 사이드 테이블, 옷장 또는 옷걸이대, 책상, 의자) 및 칫솔, 손세정제, 샤워젤, 화장지가 갖춰진 개인 욕실. 헤어드라이어와 다리미 — 무료 요청 시 제공.",
-        "links": [{ "label": "객실 갤러리", "url": "/gallery", "icon": "image" }]
+        "links": [
+          {
+            "label": "객실 갤러리",
+            "url": "/gallery",
+            "icon": "image"
+          }
+        ]
       },
       {
         "q": "온수가 나옵니까?",
@@ -341,57 +663,137 @@
         "q": "가격은 얼마입니까?",
         "a": "저희는 사모라 시내 중심가에서 가장 저렴한 경제형 호스텔입니다. 요금은 계절과 객실 유형에 따라 다릅니다. 11박 이상 — 자동으로 10% 할인. 공식 홈페이지에서 예약하는 것을 항상 권장합니다 — 여기 가격이 Booking, Expedia 등 외부 플랫폼보다 훨씬 저렴합니다.",
         "links": [
-          { "label": "가격 확인 및 예약", "url": "/booking", "icon": "tag" },
-          { "label": "WhatsApp으로 연락", "url": "https://wa.me/34639980253", "icon": "message-circle" }
+          {
+            "label": "가격 확인 및 예약",
+            "url": "/booking",
+            "icon": "tag"
+          },
+          {
+            "label": "WhatsApp으로 연락",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
         "q": "장기 투숙 할인이 있습니까?",
         "a": "네, 11박 이상 — 총 금액에서 자동 10% 할인. 할인은 환불 불가 요금에 적용됩니다. 단체 할인도 있습니다.",
-        "links": [{ "label": "할인 예약하기", "url": "/booking", "icon": "calendar-check" }]
+        "links": [
+          {
+            "label": "할인 예약하기",
+            "url": "/booking",
+            "icon": "calendar-check"
+          }
+        ]
       },
       {
         "q": "카드로 결제할 수 있습니까?",
         "a": "네, 주요 신용카드 및 직불카드를 받습니다: Visa, MasterCard, American Express 등. 현금과 1주일 전 통보 시 은행 이체도 허용합니다. 수표는 받지 않습니다.",
-        "tags": ["현금", "visa", "mastercard", "신용카드", "직불카드", "결제 방법", "은행 이체", "결제"]
+        "tags": [
+          "현금",
+          "visa",
+          "mastercard",
+          "신용카드",
+          "직불카드",
+          "결제 방법",
+          "은행 이체",
+          "결제"
+        ]
       },
       {
         "q": "엑스트라 베드가 있습니까?",
         "a": "네, 요청 시 25€/박. 공식 홈페이지 예약 시 성인 3명을 선택하거나 저희에게 연락하여 엑스트라 베드를 추가할 수 있습니다. 총 접이식 침대 3개 — 요청 순서에 따라 제한된 수량. 객실당 최대 엑스트라 베드 1개.",
-        "tags": ["유아 침대", "엑스트라 베드", "세 번째 인원", "추가 인원", "유아", "소파 침대"],
-        "links": [{ "label": "엑스트라 베드로 예약", "url": "/booking", "icon": "bed-double" }]
+        "tags": [
+          "유아 침대",
+          "엑스트라 베드",
+          "세 번째 인원",
+          "추가 인원",
+          "유아",
+          "소파 침대"
+        ],
+        "links": [
+          {
+            "label": "엑스트라 베드로 예약",
+            "url": "/booking",
+            "icon": "bed-double"
+          }
+        ]
       },
       {
         "q": "일요일과 공휴일에도 운영합니까?",
         "a": "8월 14-16일, 12월 15일, 1월 1일을 제외한 대부분의 공휴일에 운영합니다. 대부분의 일요일은 문을 닫지만, 토요일에 도착했다면 일요일 내내 머물 수 있습니다 — 월요일 11:00 체크아웃.",
-        "links": [{ "label": "도착 안내", "url": "/checkin", "icon": "calendar" }]
+        "links": [
+          {
+            "label": "도착 안내",
+            "url": "/checkin",
+            "icon": "calendar"
+          }
+        ]
       },
       {
         "q": "21:00 이후에 호스텔에 들어갈 수 있습니까?",
         "a": "체크인 시간은 14:00-21:00입니다. 호스텔은 예외 없이 21:00에 문을 닫습니다. 21:00 이후에는 어떠한 경우에도 체크인이 불가능합니다. 다만 도착 후에는 언제든지 자유롭게 출입할 수 있는 열쇠를 받게 됩니다.",
-        "tags": ["늦은 도착", "지연", "야간 접근", "24시간 열쇠"]
+        "tags": [
+          "늦은 도착",
+          "지연",
+          "야간 접근",
+          "24시간 열쇠"
+        ]
       },
       {
         "q": "호스텔은 조용합니까?",
         "a": "2026년에 새 창문과 블라인드가 설치되어 외부 소음 차단이 크게 개선되었습니다. 객실 간 방음은 기본 수준입니다. 조용한 객실이 필요하면 예약 또는 체크인 시 알려주세요.",
-        "tags": ["소음", "시끄러운", "귀마개", "수면", "방음", "이웃"],
-        "links": [{ "label": "이용 가능한 객실", "url": "/gallery", "icon": "building" }]
+        "tags": [
+          "소음",
+          "시끄러운",
+          "귀마개",
+          "수면",
+          "방음",
+          "이웃"
+        ],
+        "links": [
+          {
+            "label": "이용 가능한 객실",
+            "url": "/gallery",
+            "icon": "building"
+          }
+        ]
       },
       {
         "q": "프런트에 도착했는데 아무도 없습니다. 어떻게 해야 합니까?",
         "a": "호스텔 전화로 연락해 주세요: +34 980 533 152. 가끔 프런트 외에서 업무 중이거나 다른 투숙객을 응대하고 있을 수 있습니다. 중요: 일반 전화 통화를 이용해 주세요 — WhatsApp 통화는 받지 않습니다. 서비스 시간: 10:00–21:00.",
         "links": [
-          { "label": "전화", "url": "tel:+34980533152", "icon": "phone" },
-          { "label": "WhatsApp으로 연락", "url": "https://wa.me/34639980253", "icon": "message-circle" }
+          {
+            "label": "전화",
+            "url": "tel:+34980533152",
+            "icon": "phone"
+          },
+          {
+            "label": "WhatsApp으로 연락",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
         "q": "전화했는데 아무도 받지 않습니다.",
         "a": "번호가 맞는지 확인해 주세요: +34 980 533 152. 가끔 동시에 여러 통화가 들어옵니다. 약 10분 후 다시 시도해 주세요. hostalsol{'@'}outlook.com으로 이메일이나 +34 639 980 253 WhatsApp으로도 연락할 수 있습니다. 중요: WhatsApp 통화는 받지 않습니다.",
         "links": [
-          { "label": "이메일 보내기", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" },
-          { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" },
-          { "label": "다시 전화하기", "url": "tel:+34980533152", "icon": "phone" }
+          {
+            "label": "이메일 보내기",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          },
+          {
+            "label": "WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "다시 전화하기",
+            "url": "tel:+34980533152",
+            "icon": "phone"
+          }
         ]
       },
       {
@@ -402,119 +804,317 @@
         "q": "예약하고 싶은데 빈 객실이 없습니다. 도움이 가능합니까?",
         "a": "선택한 날짜가 앞으로 2-3개월 이내라면 — 아마도 이미 예약이 차 있을 겁니다. 취소 가능한 예약이 생길 수 있으니 가끔 웹사이트를 확인해 보세요. 인기 있는 날짜(부활절, Zetta 콘서트)에는 대기 명단을 만들기도 합니다.",
         "links": [
-          { "label": "이용 가능 여부 확인", "url": "/booking", "icon": "search" },
-          { "label": "WhatsApp으로 연락", "url": "https://wa.me/34639980253", "icon": "message-circle" }
+          {
+            "label": "이용 가능 여부 확인",
+            "url": "/booking",
+            "icon": "search"
+          },
+          {
+            "label": "WhatsApp으로 연락",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
         "q": "전화로 예약할 수 있습니까?",
         "a": "홈페이지를 통한 선불 예약만 받습니다. 결제 없는 전화 예약만은 불가능합니다. 공식 홈페이지에서 예약하는 것을 권장합니다 — 여기 최저가 보장.",
         "links": [
-          { "label": "온라인 예약", "url": "/booking", "icon": "credit-card" },
-          { "label": "도움을 위한 전화", "url": "tel:+34980533152", "icon": "phone" }
+          {
+            "label": "온라인 예약",
+            "url": "/booking",
+            "icon": "credit-card"
+          },
+          {
+            "label": "도움을 위한 전화",
+            "url": "tel:+34980533152",
+            "icon": "phone"
+          }
         ]
       },
       {
         "q": "예약에 필요한 정보는 무엇입니까?",
         "a": "필요한 정보: 성명, 전화번호, 이메일, 우편 주소 및 결제 정보. 체크인 시 14세 이상 모든 투숙객은 왕령 933/2021에 따라 유효한 서류를 제시해야 합니다.",
         "links": [
-          { "label": "서류 요건", "url": "/checkin", "icon": "file-text" },
-          { "label": "예약", "url": "/booking", "icon": "calendar-check" }
+          {
+            "label": "서류 요건",
+            "url": "/checkin",
+            "icon": "file-text"
+          },
+          {
+            "label": "예약",
+            "url": "/booking",
+            "icon": "calendar-check"
+          }
         ]
       },
       {
         "q": "예약 확인 이메일을 받지 못했습니다.",
         "a": "예약 후 확인 이메일이 오지 않으면 — 전화, 이메일 또는 WhatsApp으로 저희에게 연락하여 확인해 주세요. 스팸 메일함도 확인해 보세요.",
         "links": [
-          { "label": "WhatsApp으로 연락", "url": "https://wa.me/34639980253", "icon": "message-circle" },
-          { "label": "이메일 보내기", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }
+          {
+            "label": "WhatsApp으로 연락",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "이메일 보내기",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
         ]
       },
       {
         "q": "특정 객실을 요청할 수 있습니까?",
         "a": "네, 메시지, WhatsApp 또는 전화로 알려주세요 — 예약해 드리도록 노력하겠습니다. 항상 특정 객실을 보장하는 것은 아니지만 최선을 다하겠습니다. 일찍 알려주실수록 좋습니다.",
-        "links": [{ "label": "객실 유형", "url": "/gallery", "icon": "building" }]
+        "links": [
+          {
+            "label": "객실 유형",
+            "url": "/gallery",
+            "icon": "building"
+          }
+        ]
       },
       {
         "q": "예약을 취소하려면 어떻게 합니까?",
         "a": "도착 48시간 전 무료 취소가 가능합니다(요금 정책이 허용하는 경우 — 환불 불가 요금은 취소 불가). 취소는 확인 이메일의 링크를 사용하거나 홈페이지에서 계정에 로그인하여 처리할 수 있습니다. 환불은 동일한 결제 방법으로 보통 5-15 영업일 내에 진행됩니다. 외부 플랫폼(Booking, Expedia 등)을 통해 예약한 경우 — 해당 플랫폼을 통해 취소하세요.",
-        "tags": ["환불", "환불 요청", "예약 변경", "취소 정책", "무료 취소"],
-        "links": [{ "label": "내 계정", "url": "/booking", "icon": "user" }]
+        "tags": [
+          "환불",
+          "환불 요청",
+          "예약 변경",
+          "취소 정책",
+          "무료 취소"
+        ],
+        "links": [
+          {
+            "label": "내 계정",
+            "url": "/booking",
+            "icon": "user"
+          }
+        ]
       },
       {
         "q": "영수증을 어떻게 요청합니까?",
         "a": "영수증은 투숙 마지막 날부터 체크아웃 후 30일 이내에 요청할 수 있습니다. 예약 시 필요한 모든 세금 정보를 기입해 주세요(이름/회사, 세금 번호, 주소). 영수증은 PDF 형식으로 이메일로 발송됩니다.",
-        "tags": ["영수증", "청구서", "부가세", "회사", "세금계산서", "프리랜서"],
-        "links": [{ "label": "영수증 문의", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }]
+        "tags": [
+          "영수증",
+          "청구서",
+          "부가세",
+          "회사",
+          "세금계산서",
+          "프리랜서"
+        ],
+        "links": [
+          {
+            "label": "영수증 문의",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
+        ]
       },
       {
         "q": "호스텔에 물건을 두고 왔으면 어떻게 합니까?",
         "a": "무언가 잊어버린 것 같으면 — 최대한 빨리 연락해 주세요. 발견된 물건은 30일간 보관합니다. 우편 배송은 저희가 준비하거나 비용을 부담하지 않습니다 — 배송 서비스는 투숙객이 직접 계약해야 합니다.",
-        "tags": ["잊어버린 물건", "분실물", "발견된 물건", "배송", "택배", "잊어버린 전화", "지갑", "열쇠"],
+        "tags": [
+          "잊어버린 물건",
+          "분실물",
+          "발견된 물건",
+          "배송",
+          "택배",
+          "잊어버린 전화",
+          "지갑",
+          "열쇠"
+        ],
         "links": [
-          { "label": "WhatsApp으로 연락", "url": "https://wa.me/34639980253", "icon": "message-circle" },
-          { "label": "이메일 보내기", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }
+          {
+            "label": "WhatsApp으로 연락",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "이메일 보내기",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
         ]
       },
       {
         "q": "가격이 비싼 것 같습니다. 할인이 있습니까?",
         "a": "저희 가격은 일반적으로 사모라 시내 중심가에서 가장 저렴합니다. 11박 이상 — 자동으로 10% 할인. 공식 홈페이지에서 예약하는 것을 권장합니다 — 가격이 Booking, Expedia 등보다 훨씬 저렴합니다.",
-        "links": [{ "label": "최저 가격", "url": "/booking", "icon": "tag" }]
+        "links": [
+          {
+            "label": "최저 가격",
+            "url": "/booking",
+            "icon": "tag"
+          }
+        ]
       },
       {
         "q": "예약하고 싶은데 더 궁금한 점이 있습니다. 어떻게 연락합니까?",
         "a": "전화: +34 980 533 152, WhatsApp: +34 639 980 253 또는 이메일: hostalsol{'@'}outlook.com. 전화 서비스 시간: 10:00–21:00. WhatsApp 통화는 받지 않습니다 — 일반 전화 통화만 가능합니다.",
         "links": [
-          { "label": "전화", "url": "tel:+34980533152", "icon": "phone" },
-          { "label": "WhatsApp으로 연락", "url": "https://wa.me/34639980253", "icon": "message-circle" },
-          { "label": "이메일 보내기", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }
+          {
+            "label": "전화",
+            "url": "tel:+34980533152",
+            "icon": "phone"
+          },
+          {
+            "label": "WhatsApp으로 연락",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "이메일 보내기",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
         ]
       },
       {
         "q": "흡연이 허용됩니까?",
         "a": "객실, 창문, 테라스 및 공용 공간을 포함한 호스텔 전체에서 흡연이 엄격히 금지됩니다. 위반 시 객실 청소 및 탈취에 100€-1000€의 벌금이 부과됩니다. 불 지피기, 양초 또는 향 사용도 금지됩니다.",
-        "tags": ["담배", "흡연", "전자담배", "양초", "향", "불"]
+        "tags": [
+          "담배",
+          "흡연",
+          "전자담배",
+          "양초",
+          "향",
+          "불"
+        ]
       },
       {
         "q": "자전거를 보관할 수 있습니까?",
         "a": "네, 깨끗한 상태(진흙이나 오염 흔적 없음)라면 자전거를 객실에 보관할 수 있습니다. 미리 알려주시면 더 넓은 객실을 배정하도록 노력하겠습니다. 엘리베이터가 작아서 큰 자전거는 계단으로 올라와야 할 수 있습니다.",
-        "tags": ["자전거", "사이클링", "전기 자전거", "산악 자전거", "자전거 보관"]
+        "tags": [
+          "자전거",
+          "사이클링",
+          "전기 자전거",
+          "산악 자전거",
+          "자전거 보관"
+        ]
       },
       {
         "q": "장기 투숙에 관심이 있습니다. 특별 조건이 있습니까?",
         "a": "네, 11박 이상 — 자동으로 10% 할인. 단체 또는 매우 장기 투숙 — 저희에게 연락해 주세요.",
-        "links": [{ "label": "장기 투숙 예약", "url": "/booking", "icon": "calendar-check" }]
+        "links": [
+          {
+            "label": "장기 투숙 예약",
+            "url": "/booking",
+            "icon": "calendar-check"
+          }
+        ]
       },
       {
         "q": "직원은 어떤 언어를 구사합니까?",
         "a": "호스텔 직원은 스페인어만 구사합니다. 다른 언어로 소통하려면 — WhatsApp이나 이메일로 연락해 주세요, 온라인 번역기를 사용하겠습니다. 도착 시 무료 WiFi에 연결하고 스마트폰의 번역기를 사용하세요 — Google 번역, DeepL 또는 Bing 번역기.",
-        "tags": ["언어", "영어", "프랑스어", "독일어", "중국어", "아랍어", "갈리시아어", "러시아어", "이탈리아어", "포르투갈어", "소통", "번역"],
+        "tags": [
+          "언어",
+          "영어",
+          "프랑스어",
+          "독일어",
+          "중국어",
+          "아랍어",
+          "갈리시아어",
+          "러시아어",
+          "이탈리아어",
+          "포르투갈어",
+          "소통",
+          "번역"
+        ],
         "links": [
-          { "label": "Google 번역", "url": "https://translate.google.com/", "icon": "languages" },
-          { "label": "DeepL 번역기", "url": "https://www.deepl.com/translator", "icon": "languages" },
-          { "label": "Bing 번역기", "url": "https://www.bing.com/translator", "icon": "languages" },
-          { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" },
-          { "label": "이메일", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }
+          {
+            "label": "Google 번역",
+            "url": "https://translate.google.com/",
+            "icon": "languages"
+          },
+          {
+            "label": "DeepL 번역기",
+            "url": "https://www.deepl.com/translator",
+            "icon": "languages"
+          },
+          {
+            "label": "Bing 번역기",
+            "url": "https://www.bing.com/translator",
+            "icon": "languages"
+          },
+          {
+            "label": "WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "이메일",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
         ]
       },
       {
         "q": "다른 사람 이름으로 예약할 수 있습니까?",
         "a": "권장하지 않습니다. 각 투숙객이 본인 이름으로 예약하는 것이 가장 안전합니다. 다른 사람을 위해 예약하는 경우 — 그 사람의 성명과 전화번호를 메모에 남기고, 그 사람이 본인 정보로 온라인 체크인을 하도록 해 주세요. 스크린샷은 확인으로 인정되지 않습니다.",
-        "tags": ["다른 이름으로 예약", "제3자", "예약자", "보안", "확인", "스크린샷", "대리 예약"],
+        "tags": [
+          "다른 이름으로 예약",
+          "제3자",
+          "예약자",
+          "보안",
+          "확인",
+          "스크린샷",
+          "대리 예약"
+        ],
         "links": [
-          { "label": "도착 안내", "url": "/checkin", "icon": "file-text" },
-          { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }
+          {
+            "label": "도착 안내",
+            "url": "/checkin",
+            "icon": "file-text"
+          },
+          {
+            "label": "WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
         "q": "객실에는 어떤 시설이 있습니까?",
         "a": "개인 욕실, wifi(비밀번호 및 자세한 안내는 문 뒤쪽의 종이에 있습니다), 책상과 의자, 라디에이터(자동 제어), 리모컨이 있는 에어컨, 리모컨이 있는 TV, 헤어드라이어 및 다리미(요청 시), 안락의자, 창문, 시트가 포함된 침대. 욕실에는 기본 비누, 샴푸, 손 세정제 및 수건이 마련되어 있습니다. 그 외 필요한 것이 있으면 알려주세요.",
-        "tags": ["시설", "객실", "어메니티", "서비스", "욕실", "wifi", "에어컨", "TV", "헤어드라이어", "다리미", "침대", "수건"]
+        "tags": [
+          "시설",
+          "객실",
+          "어메니티",
+          "서비스",
+          "욕실",
+          "wifi",
+          "에어컨",
+          "TV",
+          "헤어드라이어",
+          "다리미",
+          "침대",
+          "수건"
+        ]
       },
       {
         "q": "이 웹사이트는 누가 만들었습니까?",
         "a": "이 웹사이트는 Juan Manuel Béc(https://juanman.tech/)이 개발했습니다. 소스 코드는 오픈 소스이며 GitHub에서 확인할 수 있습니다: https://github.com/JuanmanDev/HostalSolZamoraWeb2026",
-        "tags": ["웹", "개발자", "제작자", "코드", "github", "juanman", "기술"]
+        "tags": [
+          "웹",
+          "개발자",
+          "제작자",
+          "코드",
+          "github",
+          "juanman",
+          "기술"
+        ]
+      },
+      {
+        "q": "이전 웹사이트를 볼 수 있나요?",
+        "a": "네, 다음 링크에서 이전 웹사이트의 디자인과 콘텐츠를 확인하실 수 있습니다.",
+        "links": [
+          {
+            "label": "이전 웹사이트 보기",
+            "url": "/old/hostalsolzamora.com/index.html",
+            "icon": "external-link"
+          }
+        ]
       }
     ]
   },
@@ -525,7 +1125,12 @@
     "discountLabel": "할인",
     "discountNote": "공식 홈페이지 전용",
     "note": "직접 예약 가격은 항상 Booking, Expedia 등보다 저렴합니다.",
-    "features": ["안전 결제", "즉시 확인", "최저가 보장", "48시간 무료 취소"],
+    "features": [
+      "안전 결제",
+      "즉시 확인",
+      "최저가 보장",
+      "48시간 무료 취소"
+    ],
     "bookBtn": "예약하러 가기",
     "helpText": "예약 시스템에 문제가 있습니까?",
     "helpLink": "전체 예약 페이지로 이동 →"
@@ -676,7 +1281,12 @@
       "heading": "객실 예약",
       "discountLabel": "공식 홈페이지 예약 시 15% 할인",
       "discountSub": "직접 예약 가격은 항상 Booking, Expedia 등보다 저렴합니다",
-      "features": ["즉시 확인", "안전 결제", "최저가 보장", "48시간 전 무료 취소*"],
+      "features": [
+        "즉시 확인",
+        "안전 결제",
+        "최저가 보장",
+        "48시간 전 무료 취소*"
+      ],
       "iframeTitle": "Hostal Sol Zamora 예약 시스템",
       "troubleText": "예약 시스템에 문제가 있습니까? 전화해 주세요:",
       "backHome": "← 홈으로 돌아가기",
@@ -733,28 +1343,60 @@
       "docTypes": [
         {
           "name": "DNI / IDESP",
-          "fields": ["서류 번호", "지원 번호", "유효 기간", "생년월일", "성별", "성명", "국적"]
+          "fields": [
+            "서류 번호",
+            "지원 번호",
+            "유효 기간",
+            "생년월일",
+            "성별",
+            "성명",
+            "국적"
+          ]
         },
         {
           "name": "여권",
-          "fields": ["여권 번호", "전체 MRZ 줄", "발급일", "유효 기간", "국적", "성명"]
+          "fields": [
+            "여권 번호",
+            "전체 MRZ 줄",
+            "발급일",
+            "유효 기간",
+            "국적",
+            "성명"
+          ]
         },
         {
           "name": "NIE / TIE",
-          "fields": ["NIE/TIE 번호", "지원 번호", "유효 기간"]
+          "fields": [
+            "NIE/TIE 번호",
+            "지원 번호",
+            "유효 기간"
+          ]
         },
         {
           "name": "운전면허증 (EU)",
-          "fields": ["면허 번호", "성명"]
+          "fields": [
+            "면허 번호",
+            "성명"
+          ]
         }
       ],
       "backHome": "← 홈으로 돌아가기",
       "docFields": [
-        "성명", "성씨", "서류 유형 (여권/NIE/거주 허가)",
-        "서류 번호", "지원 번호/일련번호 (해당 시)",
-        "발급일", "유효 기간", "생년월일",
-        "출생 국가", "거주 국가", "자치주 (스페인의 경우)",
-        "국적", "성별", "연락 이메일", "연락 전화번호"
+        "성명",
+        "성씨",
+        "서류 유형 (여권/NIE/거주 허가)",
+        "서류 번호",
+        "지원 번호/일련번호 (해당 시)",
+        "발급일",
+        "유효 기간",
+        "생년월일",
+        "출생 국가",
+        "거주 국가",
+        "자치주 (스페인의 경우)",
+        "국적",
+        "성별",
+        "연락 이메일",
+        "연락 전화번호"
       ],
       "ineNote": "INE — 관광 통계: 공공 통계 기능법에 따라 국가통계원(INE)은 국가 관광 통계를 작성하기 위해 각 투숙객의 출발 국가 또는 자치주를 요구합니다. 데이터는 익명 집계 방식으로 전송됩니다."
     },
@@ -813,13 +1455,34 @@
       "mapBtn": "지도에서 찾기",
       "distancesTitle": "호스텔에서의 거리",
       "distances": [
-        { "name": "기차역", "value": "1.2km · 도보 15분" },
-        { "name": "버스역", "value": "1km · 도보 13분" },
-        { "name": "주광장 / 역사 구시가", "value": "450m · 도보 5분" },
-        { "name": "La Marina 주차장", "value": "400m · 도보 4분" },
-        { "name": "Constitución 주차장", "value": "260m · 도보 2분" },
-        { "name": "살라망카", "value": "67km · 차로 48분" },
-        { "name": "바야돌리드", "value": "101km · 차로 1시간 11분" }
+        {
+          "name": "기차역",
+          "value": "1.2km · 도보 15분"
+        },
+        {
+          "name": "버스역",
+          "value": "1km · 도보 13분"
+        },
+        {
+          "name": "주광장 / 역사 구시가",
+          "value": "450m · 도보 5분"
+        },
+        {
+          "name": "La Marina 주차장",
+          "value": "400m · 도보 4분"
+        },
+        {
+          "name": "Constitución 주차장",
+          "value": "260m · 도보 2분"
+        },
+        {
+          "name": "살라망카",
+          "value": "67km · 차로 48분"
+        },
+        {
+          "name": "바야돌리드",
+          "value": "101km · 차로 1시간 11분"
+        }
       ],
       "formTitle": "메시지 보내기",
       "formIntro": "양식을 작성하면 이메일로 답변 드리겠습니다. 빠른 답변을 원하시면 전화하거나 WhatsApp으로 메시지를 보내는 것이 더 좋습니다.",

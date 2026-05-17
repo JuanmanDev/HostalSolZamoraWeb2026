@@ -1053,33 +1053,117 @@
       {
         "q": "What languages do you speak at the hostel?",
         "a": "The hostel staff speaks Spanish only. If you need to communicate in another language, send us a message via WhatsApp or email and we will use online translators to assist you. When you arrive, connect to the hostel's free WiFi and use any online translator directly from your phone — Google Translate, DeepL and Bing Translator all work well.",
-        "tags": ["language", "spanish", "english", "french", "german", "chinese", "arabic", "russian", "italian", "speak", "idioma", "hablar", "communication", "translate"],
+        "tags": [
+          "language",
+          "spanish",
+          "english",
+          "french",
+          "german",
+          "chinese",
+          "arabic",
+          "russian",
+          "italian",
+          "speak",
+          "idioma",
+          "hablar",
+          "communication",
+          "translate"
+        ],
         "links": [
-          { "label": "Google Translate", "url": "https://translate.google.com/", "icon": "languages" },
-          { "label": "DeepL Translator", "url": "https://www.deepl.com/translator", "icon": "languages" },
-          { "label": "Bing Translator", "url": "https://www.bing.com/translator", "icon": "languages" },
-          { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" },
-          { "label": "Email", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }
+          {
+            "label": "Google Translate",
+            "url": "https://translate.google.com/",
+            "icon": "languages"
+          },
+          {
+            "label": "DeepL Translator",
+            "url": "https://www.deepl.com/translator",
+            "icon": "languages"
+          },
+          {
+            "label": "Bing Translator",
+            "url": "https://www.bing.com/translator",
+            "icon": "languages"
+          },
+          {
+            "label": "WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "Email",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
         ]
       },
       {
         "q": "Can I make a reservation for someone else?",
         "a": "We do not recommend it. The safest approach is for each guest to book under their own name so all required details (full name and phone number) are correctly registered. If you do book for another person, leave a comment in the reservation with their full name and phone number, and make sure that person completes the online check-in with their own details. The reservation code alone is not enough — we need to verify that the person arriving is authorised to use the booking. Screenshots are not accepted as proof of reservation, as we cannot verify their authenticity. If we have any doubts, we will call the reservation holder directly to confirm. We take the security of all our guests and their belongings very seriously.",
-        "tags": ["reservation for someone else", "third party", "booking name", "security", "verification", "screenshot", "book for another person", "ID check"],
+        "tags": [
+          "reservation for someone else",
+          "third party",
+          "booking name",
+          "security",
+          "verification",
+          "screenshot",
+          "book for another person",
+          "ID check"
+        ],
         "links": [
-          { "label": "Check-in guide", "url": "/checkin", "icon": "file-text" },
-          { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }
+          {
+            "label": "Check-in guide",
+            "url": "/checkin",
+            "icon": "file-text"
+          },
+          {
+            "label": "WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
         "q": "What do the rooms have?",
         "a": "Private bathroom, wifi (password and more instructions on the paper on the back of the door), a desktop and a chair, radiator (with automatic controls), air conditioner with remote, tv with remote, hair dryer and iron on request, armchair, window, bed including the sheets. In the bathroom you will find basic soap, shampoo and hand soap, and towels. If you need anything else, let us know.",
-        "tags": ["equipment", "room", "amenities", "services", "bathroom", "wifi", "air conditioning", "TV", "hair dryer", "iron", "bed", "towels"]
+        "tags": [
+          "equipment",
+          "room",
+          "amenities",
+          "services",
+          "bathroom",
+          "wifi",
+          "air conditioning",
+          "TV",
+          "hair dryer",
+          "iron",
+          "bed",
+          "towels"
+        ]
       },
       {
         "q": "Who made this website?",
         "a": "This website was developed by Juan Manuel Béc (https://juanman.tech/). The source code is open and available on GitHub: https://github.com/JuanmanDev/HostalSolZamoraWeb2026",
-        "tags": ["web", "developer", "author", "code", "github", "juanman", "technology"]
+        "tags": [
+          "web",
+          "developer",
+          "author",
+          "code",
+          "github",
+          "juanman",
+          "technology"
+        ]
+      },
+      {
+        "q": "Can I see the old website?",
+        "a": "Yes, you can check the design and content of our previous website at the following link.",
+        "links": [
+          {
+            "label": "See old website",
+            "url": "/old/hostalsolzamora.com/index.html",
+            "icon": "external-link"
+          }
+        ]
       }
     ]
   },

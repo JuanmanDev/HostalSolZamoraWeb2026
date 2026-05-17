@@ -1,14 +1,30 @@
 {
   "ogImage": {
     "tagline": "Zure etxea Zamoran",
-    "home": { "title": "Hostal Sol Zamora" },
-    "faq": { "title": "Maiz Egiten Diren Galderak" },
-    "parking": { "title": "Aparkamendua Zamoran" },
-    "checkin": { "title": "Nola iritsi eta sarrera" },
-    "galeria": { "title": "Logelak argazkietan" },
-    "reserva": { "title": "Logela erreserba" },
-    "sobreNosotros": { "title": "Guri buruz" },
-    "contacto": { "title": "Kontaktua" },
+    "home": {
+      "title": "Hostal Sol Zamora"
+    },
+    "faq": {
+      "title": "Maiz Egiten Diren Galderak"
+    },
+    "parking": {
+      "title": "Aparkamendua Zamoran"
+    },
+    "checkin": {
+      "title": "Nola iritsi eta sarrera"
+    },
+    "galeria": {
+      "title": "Logelak argazkietan"
+    },
+    "reserva": {
+      "title": "Logela erreserba"
+    },
+    "sobreNosotros": {
+      "title": "Guri buruz"
+    },
+    "contacto": {
+      "title": "Kontaktua"
+    },
     "location": "ZAMORA, ESPAINIA"
   },
   "nav": {
@@ -32,14 +48,46 @@
     "ctaRooms": "Logelak ikusi",
     "discount": "Erreserba zuzena — %15 deskontua",
     "features": [
-      { "icon": "map-pin", "label": "Kokapen zentrala", "link": null },
-      { "icon": "wifi", "label": "WiFi erabilgarri", "link": null },
-      { "icon": "paw-print", "label": "Maskotak onartzen dira", "link": null },
-      { "icon": "shower-head", "label": "Bainugela pribatua", "link": null },
-      { "icon": "banknote-arrow-down", "label": "Prezio ekonomikoak", "link": null },
-      { "icon": "wind", "label": "Aire girotua", "link": null },
-      { "icon": "tv", "label": "Telebista", "link": null },
-      { "icon": "laptop", "label": "Idazmahaia", "link": null }
+      {
+        "icon": "map-pin",
+        "label": "Kokapen zentrala",
+        "link": null
+      },
+      {
+        "icon": "wifi",
+        "label": "WiFi erabilgarri",
+        "link": null
+      },
+      {
+        "icon": "paw-print",
+        "label": "Maskotak onartzen dira",
+        "link": null
+      },
+      {
+        "icon": "shower-head",
+        "label": "Bainugela pribatua",
+        "link": null
+      },
+      {
+        "icon": "banknote-arrow-down",
+        "label": "Prezio ekonomikoak",
+        "link": null
+      },
+      {
+        "icon": "wind",
+        "label": "Aire girotua",
+        "link": null
+      },
+      {
+        "icon": "tv",
+        "label": "Telebista",
+        "link": null
+      },
+      {
+        "icon": "laptop",
+        "label": "Idazmahaia",
+        "link": null
+      }
     ]
   },
   "about": {
@@ -68,29 +116,47 @@
         "label": "Bikoitza (ohe bereiziak)",
         "icon": "bed-single",
         "photoPath": "/images/rooms/301/003.jpg",
-        "extras": ["2 ohe 90 cm-koak"],
+        "extras": [
+          "2 ohe 90 cm-koak"
+        ],
         "rateId": "578650"
       },
       {
         "label": "Bikoitza (ohe bikoitza)",
         "icon": "bed-double",
         "photoPath": "/images/rooms/323/002.jpg",
-        "extras": ["1 ohe 135 cm-koa"],
+        "extras": [
+          "1 ohe 135 cm-koa"
+        ],
         "rateId": "578649"
       },
       {
         "label": "Bikoitza balkoiduna",
         "icon": "building",
         "photoPath": "/images/rooms/321/021.jpg",
-        "extras": ["1 ohe 135 cm-koa", "Balkoi pribatua", "TV Superior"],
+        "extras": [
+          "1 ohe 135 cm-koa",
+          "Balkoi pribatua",
+          "TV Superior"
+        ],
         "rateId": "752069"
       }
     ],
     "amenities": [
-      "Telebista", "WiFi", "Bainugela pribatua", "Idazmahaia",
-      "Berogailu zentrala", "Komuneko produktuak", "Eskuoihalak eta ohe-arropa",
-      "Aire girotua", "Ilezaborra (eskariz)", "Armairua",
-      "Garbiketa egunerokoa", "Aulkia", "Kamera zaintzaileak eremu komunetan", "Igogailua"
+      "Telebista",
+      "WiFi",
+      "Bainugela pribatua",
+      "Idazmahaia",
+      "Berogailu zentrala",
+      "Komuneko produktuak",
+      "Eskuoihalak eta ohe-arropa",
+      "Aire girotua",
+      "Ilezaborra (eskariz)",
+      "Armairua",
+      "Garbiketa egunerokoa",
+      "Aulkia",
+      "Kamera zaintzaileak eremu komunetan",
+      "Igogailua"
     ],
     "filterAll": "Guztiak",
     "filterBalcon": "Balkoia",
@@ -171,19 +237,71 @@
     "ctaBand": "Erreserbatu zuzenean gure webgunean eta lortu prezioa bermatuta",
     "ctaBandBtn": "Deskontuekin erreserbatu →",
     "items": [
-      { "name": "Gemma", "text": "Me ha encantado la localización, el estilo del hostal es muy moderno y el chico super majo. La ducha era genial, ¡me dio pena marcharme!", "stars": 5 },
-      { "name": "Iker Zulueta", "text": "En pleno centro histórico, habitaciones amplias, limpias y equipadas. Trato del personal inmejorable. ¡Volveré a repetir!", "stars": 5 },
-      { "name": "José Manuel Serrano", "text": "Ubicación muy céntrica, te evitas el coche. El chico que nos atendió se ofreció para cualquier cosa. Excelente.", "stars": 5 },
-      { "name": "Annayara", "text": "Fui con un brazo lesionado y enseguida me ofrecieron cambiar la habitación por una más amplia. Esos detalles son los que cuentan.", "stars": 5 },
-      { "name": "Javier Fidalgo", "text": "El sitio es perfecto. Muy limpio, todo lo necesario, ubicación increíble y el recepcionista muy majo. Sin duda volveremos.", "stars": 5 },
-      { "name": "Carla Aguilar", "text": "Hostal estupendo en pleno centro. Nos explicaron qué ver y los mejores lugares a visitar. Sin duda, cuando volvamos repetiremos.", "stars": 5 },
-      { "name": "L. Elisabeth", "text": "Limpio, cómodo y práctico. Personal atento y preocupado de atender bien. Un acierto escoger este hostal.", "stars": 5 },
-      { "name": "Juan Manuel", "text": "El WiFi funcionó perfectamente y pude trabajar sin problemas. Creo que volveré pronto.", "stars": 5 },
-      { "name": "Thomas K. (DE)", "text": "Sehr zentral gelegen, saubere Zimmer und freundliches Personal. Kann ich nur empfehlen!", "stars": 5 },
-      { "name": "Marie L. (FR)", "text": "Excellent rapport qualité-prix. Chambre propre, bien équipée et idéalement située dans le centre historique.", "stars": 5 },
-      { "name": "James H. (UK)", "text": "Great location right in the historic centre. Clean rooms, helpful staff. Would definitely stay again.", "stars": 5 },
-      { "name": "Valentina R. (IT)", "text": "Ottima posizione nel centro storico, stanza pulita e personale cordiale. Consigliato!", "stars": 5 },
-      { "name": "Pedro A. (PT)", "text": "Localização perfeita no centro histórico. Quartos limpos e pessoal simpático. Recomendo!", "stars": 5 }
+      {
+        "name": "Gemma",
+        "text": "Me ha encantado la localización, el estilo del hostal es muy moderno y el chico super majo. La ducha era genial, ¡me dio pena marcharme!",
+        "stars": 5
+      },
+      {
+        "name": "Iker Zulueta",
+        "text": "En pleno centro histórico, habitaciones amplias, limpias y equipadas. Trato del personal inmejorable. ¡Volveré a repetir!",
+        "stars": 5
+      },
+      {
+        "name": "José Manuel Serrano",
+        "text": "Ubicación muy céntrica, te evitas el coche. El chico que nos atendió se ofreció para cualquier cosa. Excelente.",
+        "stars": 5
+      },
+      {
+        "name": "Annayara",
+        "text": "Fui con un brazo lesionado y enseguida me ofrecieron cambiar la habitación por una más amplia. Esos detalles son los que cuentan.",
+        "stars": 5
+      },
+      {
+        "name": "Javier Fidalgo",
+        "text": "El sitio es perfecto. Muy limpio, todo lo necesario, ubicación increíble y el recepcionista muy majo. Sin duda volveremos.",
+        "stars": 5
+      },
+      {
+        "name": "Carla Aguilar",
+        "text": "Hostal estupendo en pleno centro. Nos explicaron qué ver y los mejores lugares a visitar. Sin duda, cuando volvamos repetiremos.",
+        "stars": 5
+      },
+      {
+        "name": "L. Elisabeth",
+        "text": "Limpio, cómodo y práctico. Personal atento y preocupado de atender bien. Un acierto escoger este hostal.",
+        "stars": 5
+      },
+      {
+        "name": "Juan Manuel",
+        "text": "El WiFi funcionó perfectamente y pude trabajar sin problemas. Creo que volveré pronto.",
+        "stars": 5
+      },
+      {
+        "name": "Thomas K. (DE)",
+        "text": "Sehr zentral gelegen, saubere Zimmer und freundliches Personal. Kann ich nur empfehlen!",
+        "stars": 5
+      },
+      {
+        "name": "Marie L. (FR)",
+        "text": "Excellent rapport qualité-prix. Chambre propre, bien équipée et idéalement située dans le centre historique.",
+        "stars": 5
+      },
+      {
+        "name": "James H. (UK)",
+        "text": "Great location right in the historic centre. Clean rooms, helpful staff. Would definitely stay again.",
+        "stars": 5
+      },
+      {
+        "name": "Valentina R. (IT)",
+        "text": "Ottima posizione nel centro storico, stanza pulita e personale cordiale. Consigliato!",
+        "stars": 5
+      },
+      {
+        "name": "Pedro A. (PT)",
+        "text": "Localização perfeita no centro histórico. Quartos limpos e pessoal simpático. Recomendo!",
+        "stars": 5
+      }
     ]
   },
   "restaurant": {
@@ -208,82 +326,227 @@
       {
         "q": "Zein da hostalaren ordutegia?",
         "a": "Telefono arreta: 10:00–21:00. Check-in: 14:00–21:00. Hostala 21:00etan ixten da salbuespenik gabe — aurretiazko akordiorik gabe 21:00ak ondoren iristea ez da posible. Iritsi ondoren giltzak jasoko dituzu eta askatasunez sartu eta irten ahal izango zara. Igande gehienetan itxita gaude, baina larunbatean iristen bazara igande osoan gera zaitezke. Jai gehienetan lan egiten dugu, abuztuaren 14–16, abenduaren 15 eta urtarrilaren 1a izan ezik.",
-        "links": [{ "label": "Iristeko gida osoa", "url": "/checkin", "icon": "log-in" }]
+        "links": [
+          {
+            "label": "Iristeko gida osoa",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
       },
       {
         "q": "Zein da check-in eta check-out ordutegia?",
         "a": "Check-in 14:00tik 21:00etara. 14:00 baino lehen iristen bazara, ekipaia harreran gorde dezakegu. Okupazio baxuko garaietan batzuetan lehenago egitea posible da, baina ez dago bermatuta. Check-out 11:00etan. Check-out ondoren ere ekipaia gordetzeko aukera dago irteera egunean (igandeak izan ezik) — abisatu. 21:00ak ondoren iristen bazara, ezin zaitu inola ere hartu.",
-        "tags": ["iristea", "goizeko check-in", "ekipai gordetzea", "maleta", "beranduago check-out"],
-        "links": [{ "label": "Iristeko gida osoa", "url": "/checkin", "icon": "log-in" }]
+        "tags": [
+          "iristea",
+          "goizeko check-in",
+          "ekipai gordetzea",
+          "maleta",
+          "beranduago check-out"
+        ],
+        "links": [
+          {
+            "label": "Iristeko gida osoa",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
       },
       {
         "q": "Zein dokumentu behar dira check-inerako?",
         "a": "933/2021 Errege Dekretuaren arabera, 14 urte edo gehiagoko gonbidatu guztiek argazkidun nortasun agiri ofiziala aurkeztu behar dute: DNI, pasaportea, NIE, TIE edo EBko gidabaimena. Ez dira onartzen iraungitako, hondatutako, irakurtezin edo email/WhatsApp bidez bidalitako dokumentuak. Gonbidatu bakoitzak bere dokumentua aurkeztu behar du. Prozesua bizkortzeko Chekin bidezko online check-in egitea gomendatzen dugu iritsi aurretik.",
-        "tags": ["pasaportea", "gidabaimena", "DNI", "dokumentuak", "online check-in", "chekin", "NIE"],
+        "tags": [
+          "pasaportea",
+          "gidabaimena",
+          "DNI",
+          "dokumentuak",
+          "online check-in",
+          "chekin",
+          "NIE"
+        ],
         "links": [
-          { "label": "Online check-in", "url": "/checkin", "icon": "file-text" },
-          { "label": "Onartutako dokumentu motak", "url": "/checkin", "icon": "id-card" }
+          {
+            "label": "Online check-in",
+            "url": "/checkin",
+            "icon": "file-text"
+          },
+          {
+            "label": "Onartutako dokumentu motak",
+            "url": "/checkin",
+            "icon": "id-card"
+          }
         ]
       },
       {
         "q": "Mugikortasun murriztapena duten pertsonentzat irisgarria da hostala?",
         "a": "Hostala 2 igogailu dituen eraikin baten 3. solairuan dago. Ez dago mailarik sarreran ezta logelarako pasabideetan ere. Gure galerian logelen argazkiak eta bideoak ikusi ditzakezu espazioa zure beharrei egokitzen zaion egiaztatzeko. Galderarik baduzu — jarri gurekin harremanetan.",
-        "tags": ["gurpil-aulkia", "mugikortasun murriztapena", "igogailua", "eskailerak", "irisgarritasuna"],
-        "links": [{ "label": "Logelako galeria", "url": "/gallery", "icon": "image" }]
+        "tags": [
+          "gurpil-aulkia",
+          "mugikortasun murriztapena",
+          "igogailua",
+          "eskailerak",
+          "irisgarritasuna"
+        ],
+        "links": [
+          {
+            "label": "Logelako galeria",
+            "url": "/gallery",
+            "icon": "image"
+          }
+        ]
       },
       {
         "q": "Non aparka dezaket?",
         "a": "Hostalak ez du aparkamendu propiorik, baina hurbil hainbat aukera daude. Plaza Constitución aparkamendua (3 min. oinezkoz, 1,45€/ordu, 14,70€/egun, 24h) — hurbilena. Plaza de la Marina Española aparkamendua (5 min., Empark-en online erreserba). Doaneko aparkamendurako — tren geltokia (2 km, L3 autobusa), 24h doan. Atean bertan — ORA eremu urdina 0,35€/30 min., gehienez 3h. Oinezkoen eremua den arren, udalak gonbidatuei Calle San Miguel kaletik sarbidea onartzen die ekipaia descargatzeko.",
-        "tags": ["garajea", "autoa", "motorra", "ibilgailua", "hurbileko aparkamendua"],
+        "tags": [
+          "garajea",
+          "autoa",
+          "motorra",
+          "ibilgailua",
+          "hurbileko aparkamendua"
+        ],
         "links": [
-          { "label": "Aparkamendu gida osoa", "url": "/parking", "icon": "car" },
-          { "label": "Google Maps-en ireki", "url": "https://www.google.com/maps/dir//Calle+Benavente,+2+Zamora", "icon": "map-pin" }
+          {
+            "label": "Aparkamendu gida osoa",
+            "url": "/parking",
+            "icon": "car"
+          },
+          {
+            "label": "Google Maps-en ireki",
+            "url": "https://www.google.com/maps/dir//Calle+Benavente,+2+Zamora",
+            "icon": "map-pin"
+          }
         ]
       },
       {
         "q": "Nola iritsi hostalera geltokitik?",
         "a": "Tren eta autobus geltokia elkarrekin daude Avenida de las Tres Cruces-en, hostalaren 2 km ingurura. Aukerak: taxi (5–7 min., ~6–8€), 3. lerroko hiri-autobusa (El Acercame, 0,95€) — 'Mercado' geltokian jaitsi (hostalaren 5 min. oinezkoz) — edo oinez ~25–30 min. Geltokian 24h doaneko aparkamendua eta taquilla daude.",
-        "tags": ["trena", "renfe", "autobusa", "geltokia", "iristea", "garraioa", "nola iritsi"],
+        "tags": [
+          "trena",
+          "renfe",
+          "autobusa",
+          "geltokia",
+          "iristea",
+          "garraioa",
+          "nola iritsi"
+        ],
         "links": [
-          { "label": "Zamora Geltokia — Renfe", "url": "https://www.renfe.com/es/es/inspirate/estaciones/estacion-zamora", "icon": "external-link" },
-          { "label": "Tren geltokia — Google Maps", "url": "https://www.google.com/maps/dir//Estaci%C3%B3n+de+Ferrocarril+Zamora", "icon": "map-pin" },
-          { "label": "Autobus geltokia — Google Maps", "url": "https://www.google.com/maps/dir//Estaci%C3%B3n+de+Autobuses+de+Zamora", "icon": "map-pin" },
-          { "label": "El Acercame autobusak", "url": "https://www.acercame.es", "icon": "bus" }
+          {
+            "label": "Zamora Geltokia — Renfe",
+            "url": "https://www.renfe.com/es/es/inspirate/estaciones/estacion-zamora",
+            "icon": "external-link"
+          },
+          {
+            "label": "Tren geltokia — Google Maps",
+            "url": "https://www.google.com/maps/dir//Estaci%C3%B3n+de+Ferrocarril+Zamora",
+            "icon": "map-pin"
+          },
+          {
+            "label": "Autobus geltokia — Google Maps",
+            "url": "https://www.google.com/maps/dir//Estaci%C3%B3n+de+Autobuses+de+Zamora",
+            "icon": "map-pin"
+          },
+          {
+            "label": "El Acercame autobusak",
+            "url": "https://www.acercame.es",
+            "icon": "bus"
+          }
         ]
       },
       {
         "q": "Nola eskatu taxi bat Zamoran?",
         "a": "Kooperatiba nagusia Radio Taxi Zamora da (tel. 980 531 515). Geltokiko parada edo erdiguneko plazetako taxiak ere erabil ditzakezu. Geltokitik hostalera bidaia ~6–8€ da eta 5–7 minutu inguru behar ditu. Taxia erosoena da beranduago iristeko edo ekipai astunagatik.",
-        "tags": ["taxia", "radio taxi", "garraioa", "zamora taxia"],
+        "tags": [
+          "taxia",
+          "radio taxi",
+          "garraioa",
+          "zamora taxia"
+        ],
         "links": [
-          { "label": "Radio Taxi Zamora — 980 531 515", "url": "tel:+34980531515", "icon": "phone" },
-          { "label": "Taxiak Google Maps-en", "url": "https://www.google.com/maps/search/taxi+zamora", "icon": "car" }
+          {
+            "label": "Radio Taxi Zamora — 980 531 515",
+            "url": "tel:+34980531515",
+            "icon": "phone"
+          },
+          {
+            "label": "Taxiak Google Maps-en",
+            "url": "https://www.google.com/maps/search/taxi+zamora",
+            "icon": "car"
+          }
         ]
       },
       {
         "q": "Nola iritsi IFEZAra?",
         "a": "IFEZA (Instituto Ferial de Zamora) hostalaren 4–5 km-tara dago. 5. lerroko hiri-autobusez (El Acercame, 0,95€), taxiz (~10 min., 8–10€) edo autoz iritsi zaitezke. Garrantzitsua: ekitaldi eta kontzertu handietan antolatzaileak askotan doaneko autobusak eskaintzen dituzte Zamorako erditik IFEZAra eta alderantziz. Beti egiaztatu ekitaldiaren edo IFEZAren webgunea.",
-        "tags": ["IFEZA", "azoka", "kontzertua", "Zeta", "Fromago", "SIFER", "ekitaldia", "5. lerroa", "doako autobusa"],
+        "tags": [
+          "IFEZA",
+          "azoka",
+          "kontzertua",
+          "Zeta",
+          "Fromago",
+          "SIFER",
+          "ekitaldia",
+          "5. lerroa",
+          "doako autobusa"
+        ],
         "links": [
-          { "label": "IFEZA — Webgune ofiziala", "url": "https://www.ifeza.es/", "icon": "building-2" },
-          { "label": "5. lerroa — El Acercame", "url": "https://www.acercame.es/index.php/linea/linea5", "icon": "bus" },
-          { "label": "IFEZA — Google Maps", "url": "https://www.google.com/maps/dir//IFEZA+Zamora", "icon": "map-pin" }
+          {
+            "label": "IFEZA — Webgune ofiziala",
+            "url": "https://www.ifeza.es/",
+            "icon": "building-2"
+          },
+          {
+            "label": "5. lerroa — El Acercame",
+            "url": "https://www.acercame.es/index.php/linea/linea5",
+            "icon": "bus"
+          },
+          {
+            "label": "IFEZA — Google Maps",
+            "url": "https://www.google.com/maps/dir//IFEZA+Zamora",
+            "icon": "map-pin"
+          }
         ]
       },
       {
         "q": "Gosaria eskaintzen al da hostalean?",
         "a": "Ez dugu gosaririk zerbitzatzen, baina hurbil hainbat kafetegi eta okindegi daude. Bar Restaurante Padornelo gomendatzen dugu — hostalaren sarreratik 2 minutu baino gutxiagora. Al–Or irekitzen da 10:00etan, kalitate oneko gosariak prezio onarekin.",
-        "tags": ["janaria", "kafea", "taberna", "okindegi", "hurbileko gosaria"],
+        "tags": [
+          "janaria",
+          "kafea",
+          "taberna",
+          "okindegi",
+          "hurbileko gosaria"
+        ],
         "links": [
-          { "label": "Restaurante Padornelo", "url": "/#restaurant", "icon": "utensils-crossed" },
-          { "label": "Google Maps-en ireki", "url": "https://www.google.com/maps/dir//Calle+Benavente,+2+Zamora", "icon": "map-pin" }
+          {
+            "label": "Restaurante Padornelo",
+            "url": "/#restaurant",
+            "icon": "utensils-crossed"
+          },
+          {
+            "label": "Google Maps-en ireki",
+            "url": "https://www.google.com/maps/dir//Calle+Benavente,+2+Zamora",
+            "icon": "map-pin"
+          }
         ]
       },
       {
         "q": "Maskotak onartzen al dira?",
         "a": "Bai, maskotak ongietorriak dira! 7€/gau gehigarri animalia bakoitzeko. Gehigarria gure webgunean erre­serba­tzerakoan ordain daiteke. Animaliek beti lagun baten ondoan egon behar dute — ezin dira logela­an, hostalean, autoan edo beste inon bakarrik utzi. Ez betetzeak animalia ez hartzea eta erreserbaren ezeztatze potentzial bat penaltziarekin dakartza.",
-        "tags": ["txakurra", "katua", "animalia", "kumea", "maskotak onartuta"],
-        "links": [{ "label": "Deskontuekin erreserbatu", "url": "/booking", "icon": "paw-print" }]
+        "tags": [
+          "txakurra",
+          "katua",
+          "animalia",
+          "kumea",
+          "maskotak onartuta"
+        ],
+        "links": [
+          {
+            "label": "Deskontuekin erreserbatu",
+            "url": "/booking",
+            "icon": "paw-print"
+          }
+        ]
       },
       {
         "q": "Maskota logela­an bakarrik utzi al dezaket?",
@@ -292,32 +555,80 @@
       {
         "q": "WiFi dago logeletan?",
         "a": "Bai, WiFi doakoa hostal osoan, logela guztiak barne. Pasahitza check-in-ean ematen da eta harreran ere eskuragarri dago. Abiadura 50 Mbps baino gehiago da logela gehienetan — nahikoa nabigatzeko, posta elektronikoa, bideo streaming eta bideo-deiketarako. Aukera bikaina urruneko lanerako.",
-        "tags": ["internet", "wifi pasahitza", "konexioa", "sarea", "abiadura", "zuntz optikoa", "urruneko lana"]
+        "tags": [
+          "internet",
+          "wifi pasahitza",
+          "konexioa",
+          "sarea",
+          "abiadura",
+          "zuntz optikoa",
+          "urruneko lana"
+        ]
       },
       {
         "q": "Aire girotua dago logeletan?",
         "a": "Bai, logela guztiek aire girotua eta berogailua daukate. Sistema moderno eta eraginkorra da urte osoan zehar tenperatura erosoa bermatzen duena. Zure nahien arabera tenperatura doitu dezakezu.",
-        "tags": ["aire girotua", "berogailua", "tenperatura", "beroa", "hotza", "termostatoa", "haizagailua", "klima"]
+        "tags": [
+          "aire girotua",
+          "berogailua",
+          "tenperatura",
+          "beroa",
+          "hotza",
+          "termostatoa",
+          "haizagailua",
+          "klima"
+        ]
       },
       {
         "q": "Zein telebista daude logeletan?",
         "a": "Balkoiko logeletan — 32 hazbeteko pantaila laueko telebistak, batzuk Smart TV streaming plataformetarako. Balkoia ez duten logeletan — 18 hazbeteko telebistak (Smart TV ez), baina kanpoko gailuak HDMI bidez konekta ditzakezu.",
-        "tags": ["telebista", "Netflix", "streaming", "HBO", "Prime", "HDMI", "kateak", "smart tv"]
+        "tags": [
+          "telebista",
+          "Netflix",
+          "streaming",
+          "HBO",
+          "Prime",
+          "HDMI",
+          "kateak",
+          "smart tv"
+        ]
       },
       {
         "q": "Zein segurtasun neurri ditu hostalak?",
         "a": "Hostala 3. solairuan dago, beraz logelako pasabideetara sartzeko 2 giltza behar dira (bat eraikinekoa, bestea hostaleko aterako). Pasabideetan bideo-zaintza kamerak daude. Logela bakoitzak bere giltza-sarbidea du.",
-        "tags": ["kutxa gotorra", "baliozkoak", "giltza-sarbidea", "lapurreta", "kamera", "segurtasuna", "CCTV"]
+        "tags": [
+          "kutxa gotorra",
+          "baliozkoak",
+          "giltza-sarbidea",
+          "lapurreta",
+          "kamera",
+          "segurtasuna",
+          "CCTV"
+        ]
       },
       {
         "q": "Hozkailua, kafetegia edo mikrouhinak al daude logeletan?",
         "a": "Ez, logelek ez dute hozkailurik, kafetegiarik ezta mikrouhinik ere. Hala ere, hostalaren inguruan hainbat supermerkatu daude.",
-        "tags": ["hozkailua", "sukaldea", "mikrouhinak", "kafetegiak", "hervidorea", "minibar"]
+        "tags": [
+          "hozkailua",
+          "sukaldea",
+          "mikrouhinak",
+          "kafetegiak",
+          "hervidorea",
+          "minibar"
+        ]
       },
       {
         "q": "Garbitegia zerbitzua al dago?",
         "a": "Hostalak ez du garbitegia propiorik, baina hurbil hainbat self-service garbitegia daude. Hurbilena Calle San Torcuato kalean dago, 5 minutu baino gutxiagora oinezkoz. Eskuoihalak, izarak eta ohe-arropa aldatzea logelaren prezioaren barruan dago.",
-        "tags": ["garbiketa", "arropa", "garbigailua", "lehorgailua", "garbitegia", "arropa garbiketa"]
+        "tags": [
+          "garbiketa",
+          "arropa",
+          "garbigailua",
+          "lehorgailua",
+          "garbitegia",
+          "arropa garbiketa"
+        ]
       },
       {
         "q": "Eguneroko garbiketa al dago?",
@@ -326,12 +637,23 @@
       {
         "q": "Ile-lehorgailua edo arropa-lisatua al dago?",
         "a": "Bai, harreran eskariz ile-lehorgailuak eta arropa-lisatuak eskuragarri daude, kostu gehigarririk gabe. Gonbidatu guztientzako doako zerbitzua da.",
-        "tags": ["ilea", "ile-lehorgailua", "lisatua", "lisatzea"]
+        "tags": [
+          "ilea",
+          "ile-lehorgailua",
+          "lisatua",
+          "lisatzea"
+        ]
       },
       {
         "q": "Zer barne hartzen du logelaren preziak?",
         "a": "Logela guztiek hauek dituzte: ohe-arropa osoa (izarak, mantak, burukoiak, nordikoa), eskuoihalak (1 edo 2 gonbidatu bakoitzeko, motaren eta iraupanaren arabera), oinarrizko altzariak (ohea, gau-mahaiak, armairua edo perchero pertzako, idazmahaia, aulkia) eta bainugela pribatua eskuila, eskuz garbitzeko xaboia, dutxarako gela eta paper higienikoarekin. Ile-lehorgailua eta lisatua — eskariz doan.",
-        "links": [{ "label": "Logelako galeria", "url": "/gallery", "icon": "image" }]
+        "links": [
+          {
+            "label": "Logelako galeria",
+            "url": "/gallery",
+            "icon": "image"
+          }
+        ]
       },
       {
         "q": "Ur beroa al dago?",
@@ -341,57 +663,137 @@
         "q": "Zein dira zuen prezioak?",
         "a": "Zamorako erdiguneko prezio baxuenetako hostala gara. Tarifak denboraldiaren eta logela motaren arabera aldatzen dira. 11 gauetik — automatikoki %10eko deskontua. Beti gure webgunean erreserba egitea gomendatzen dugu — hemen prezioak Booking, Expedia eta beste atarietatik askoz ere txikiagoak dira.",
         "links": [
-          { "label": "Prezioak ikusi eta erreserbatu", "url": "/booking", "icon": "tag" },
-          { "label": "WhatsApp bidez idatzi", "url": "https://wa.me/34639980253", "icon": "message-circle" }
+          {
+            "label": "Prezioak ikusi eta erreserbatu",
+            "url": "/booking",
+            "icon": "tag"
+          },
+          {
+            "label": "WhatsApp bidez idatzi",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
         "q": "Egonaldi luzerako deskontua al dago?",
         "a": "Bai, 11 gauetik — %10eko deskontua automatikoki guztizkoaren gainean. Deskontua itzulezinezko tarifen gainean aplikatzen da. Taldeentzako deskontuak ere badaude.",
-        "links": [{ "label": "Deskontuekin erreserbatu", "url": "/booking", "icon": "calendar-check" }]
+        "links": [
+          {
+            "label": "Deskontuekin erreserbatu",
+            "url": "/booking",
+            "icon": "calendar-check"
+          }
+        ]
       },
       {
         "q": "Txartelaz ordaindu al daiteke?",
         "a": "Bai, kreditu eta debitu txartel nagusiak onartzen ditugu: Visa, MasterCard, American Express eta beste. Eskudirua eta transferentzia bankarioa ere onartzen dugu aste bateko aurreko abisuarekin. Txekeak ez dira onartzen.",
-        "tags": ["eskudirua", "visa", "mastercard", "kreditu txartela", "debitu txartela", "ordainketa modua", "banku transferentzia", "ordainketa"]
+        "tags": [
+          "eskudirua",
+          "visa",
+          "mastercard",
+          "kreditu txartela",
+          "debitu txartela",
+          "ordainketa modua",
+          "banku transferentzia",
+          "ordainketa"
+        ]
       },
       {
         "q": "Osagarrizko oheak al daude?",
         "a": "Bai, eskariz 25€/gau. Web bidez erreserbatzerakoan osagarrizko ohea gehi dezakezu 3 heldu aukeratuz edo gurekin harremanetan jarriz. Guztira 3 tolesgarri ohe daude — eskuragarritasun mugatua, eskaera ordenaren arabera. Gehienez 1 osagarrizko ohe logelako.",
-        "tags": ["sehaskaohea", "osagarrizko ohea", "hirugarren pertsona", "pertsona gehigarria", "haurra", "sofa-ohea"],
-        "links": [{ "label": "Ohe extra-rekin erreserbatu", "url": "/booking", "icon": "bed-double" }]
+        "tags": [
+          "sehaskaohea",
+          "osagarrizko ohea",
+          "hirugarren pertsona",
+          "pertsona gehigarria",
+          "haurra",
+          "sofa-ohea"
+        ],
+        "links": [
+          {
+            "label": "Ohe extra-rekin erreserbatu",
+            "url": "/booking",
+            "icon": "bed-double"
+          }
+        ]
       },
       {
         "q": "Igandetan eta jai egunetan lan egiten al duzue?",
         "a": "Jai egun gehienetan lan egiten dugu, abuztuaren 14–16, abenduaren 15 eta urtarrilaren 1a izan ezik. Igande gehienetan itxita gaude, baina larunbatean iritsi bazara igande osoan gera zaitezke — check-out astelehenean 11:00etan.",
-        "links": [{ "label": "Iristeko gida", "url": "/checkin", "icon": "calendar" }]
+        "links": [
+          {
+            "label": "Iristeko gida",
+            "url": "/checkin",
+            "icon": "calendar"
+          }
+        ]
       },
       {
         "q": "21:00ak ondoren hostalean sartu al daiteke?",
         "a": "Check-in ordutegia 14:00tik 21:00etara da; hostala 21:00etan ixten da salbuespenik gabe. Ezin da 21:00ak ondoren check-in egin inola ere. Hala ere, iritsi ondoren giltzak jasoko dituzu edozein ordutan askatasunez sartzeko.",
-        "tags": ["beranduako iristea", "atzerapena", "gaueko sarbidea", "24h giltzak"]
+        "tags": [
+          "beranduako iristea",
+          "atzerapena",
+          "gaueko sarbidea",
+          "24h giltzak"
+        ]
       },
       {
         "q": "Isiltasuna al dago hostalean?",
         "a": "2026an kanpoko zarata asko murriztu zuten leiho eta pertsianen berrikuntzak egin ziren. Logelatxoen arteko isolamendua oinarrizkoa da. Logela lasai bat behar baduzu — esan iezaguzu erreserbatzean edo check-in-ean.",
-        "tags": ["zarata", "zaratatsua", "belarri-tapoi", "loa", "akustiko isolamendua", "bizilagunak"],
-        "links": [{ "label": "Eskuragarri dauden logelak", "url": "/gallery", "icon": "building" }]
+        "tags": [
+          "zarata",
+          "zaratatsua",
+          "belarri-tapoi",
+          "loa",
+          "akustiko isolamendua",
+          "bizilagunak"
+        ],
+        "links": [
+          {
+            "label": "Eskuragarri dauden logelak",
+            "url": "/gallery",
+            "icon": "building"
+          }
+        ]
       },
       {
         "q": "Harrerara iritsi naiz eta inor ez dago. Zer egin?",
         "a": "Deitu hostaleko telefonora: +34 980 533 152. Batzuetan harreratik kanpo gaude edo beste gonbidatuen arreta ematen ari gara. Garrantzitsua: egin telefono dei arrunta — WhatsApp deiak ez dira erantzuten. Arreta ordutegia: 10:00–21:00.",
         "links": [
-          { "label": "Deitu", "url": "tel:+34980533152", "icon": "phone" },
-          { "label": "WhatsApp bidez idatzi", "url": "https://wa.me/34639980253", "icon": "message-circle" }
+          {
+            "label": "Deitu",
+            "url": "tel:+34980533152",
+            "icon": "phone"
+          },
+          {
+            "label": "WhatsApp bidez idatzi",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
         "q": "Deitu dut baina inork ez du erantzuten.",
         "a": "Egiaztatu zenbakia zuzena dela: +34 980 533 152. Batzuetan dei asko aldi berean jasotzen ditugu. Saiatu berriro ~10 minutu barru. Baita hostalsol{'@'}outlook.com emailera edo +34 639 980 253 WhatsAppera ere idatz dezakezu. Garrantzitsua: WhatsApp deiak ez dira erantzuten.",
         "links": [
-          { "label": "Emaila idatzi", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" },
-          { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" },
-          { "label": "Berriro deitu", "url": "tel:+34980533152", "icon": "phone" }
+          {
+            "label": "Emaila idatzi",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          },
+          {
+            "label": "WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "Berriro deitu",
+            "url": "tel:+34980533152",
+            "icon": "phone"
+          }
         ]
       },
       {
@@ -402,119 +804,319 @@
         "q": "Erreserbatu nahi dut baina ez dago logelarik libre. Lagun al dezakezue?",
         "a": "Aukeratutako data hurrengo 2-3 hilabeteetan bada — ziur aski beteta dago. Egiaztatu webgunea noizean behin ezezkatzeak egon daitezkeen jakiteko. Batzuetan itxaron-zerrendak sortzen ditugu data popularretarako (Aste Santua, Zetta kontzertuak).",
         "links": [
-          { "label": "Eskuragarritasuna egiaztatu", "url": "/booking", "icon": "search" },
-          { "label": "WhatsApp bidez idatzi", "url": "https://wa.me/34639980253", "icon": "message-circle" }
+          {
+            "label": "Eskuragarritasuna egiaztatu",
+            "url": "/booking",
+            "icon": "search"
+          },
+          {
+            "label": "WhatsApp bidez idatzi",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
         "q": "Telefonoz erreserbatu al daiteke?",
         "a": "Aurretiaz ordaindutako erreserbak bakarrik onartzen ditugu webgunean zehar. Ordainketarik gabeko telefono erreserbak ez dira posible. Gure webgunean erreserbatzea gomendatzen dugu — hemen prezio onena bermatuta.",
         "links": [
-          { "label": "Online erreserbatu", "url": "/booking", "icon": "credit-card" },
-          { "label": "Laguntzarako deitu", "url": "tel:+34980533152", "icon": "phone" }
+          {
+            "label": "Online erreserbatu",
+            "url": "/booking",
+            "icon": "credit-card"
+          },
+          {
+            "label": "Laguntzarako deitu",
+            "url": "tel:+34980533152",
+            "icon": "phone"
+          }
         ]
       },
       {
         "q": "Zein datu behar dira erreserbatzeko?",
         "a": "Behar ditugu: izen-abizen osoa, telefonoa, emaila, posta helbidea eta ordainketa datuak. Check-in-ean 14 urte edo gehiagoko gonbidatu guztiek 933/2021 Errege Dekretuaren arabera baliozko dokumentua aurkeztu behar dute.",
         "links": [
-          { "label": "Dokumentazio baldintzak", "url": "/checkin", "icon": "file-text" },
-          { "label": "Erreserbatu", "url": "/booking", "icon": "calendar-check" }
+          {
+            "label": "Dokumentazio baldintzak",
+            "url": "/checkin",
+            "icon": "file-text"
+          },
+          {
+            "label": "Erreserbatu",
+            "url": "/booking",
+            "icon": "calendar-check"
+          }
         ]
       },
       {
         "q": "Ez dut erreserba berrespena jaso.",
         "a": "Erreserbatu ondoren berrespen emailik iritsi ez bada — jarri gurekin harremanetan telefonoz, emailez edo WhatsAppez egiaztatzeko. Egiaztatu baita Spam karpeta ere.",
         "links": [
-          { "label": "WhatsApp bidez idatzi", "url": "https://wa.me/34639980253", "icon": "message-circle" },
-          { "label": "Emaila idatzi", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }
+          {
+            "label": "WhatsApp bidez idatzi",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "Emaila idatzi",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
         ]
       },
       {
         "q": "Logela zehatza eskatu al dezaket?",
         "a": "Bai, esan iezaguzu mezu, WhatsApp edo telefonoz — saiatuko gara erreserbatzen. Logela zehatza bermatzea ez da beti posible, baina ahal dugun guztia egingo dugu. Zenbat eta lehenago abisatu, hobeto.",
-        "links": [{ "label": "Logela motak", "url": "/gallery", "icon": "building" }]
+        "links": [
+          {
+            "label": "Logela motak",
+            "url": "/gallery",
+            "icon": "building"
+          }
+        ]
       },
       {
         "q": "Nola ezeztatu erreserba bat?",
         "a": "Doaneko ezeztatzea posible da iritsi baino 48 ordu lehenago, tarifak baimendu badu (itzulezinezko tarifak ez dute ezeztatzea baimendu). Ezeztatzeko erabili berrespen emaileko esteka edo sartu zure kontura gure webgunean. Itzulketa ordainketa bide berdinera egiten da, normalean 5–15 egun baliodunetan. Kanpoko atari baten bidez (Booking, Expedia, etab.) erreserbatu baduzu — horren bidez ezeztatu.",
-        "tags": ["itzulketa", "ezeztatzea", "erreserba aldatzea", "ezeztapen politika", "doaneko ezeztatzea"],
-        "links": [{ "label": "Nire kontua", "url": "/booking", "icon": "user" }]
+        "tags": [
+          "itzulketa",
+          "ezeztatzea",
+          "erreserba aldatzea",
+          "ezeztapen politika",
+          "doaneko ezeztatzea"
+        ],
+        "links": [
+          {
+            "label": "Nire kontua",
+            "url": "/booking",
+            "icon": "user"
+          }
+        ]
       },
       {
         "q": "Nola eskatu faktura bat?",
         "a": "Faktura eskatu daiteke egonaldiaren azken egunetik check-out-a eta gero 30 egunera arte. Adierazi beharrezko datu fiskal guztiak erreserbatzerakoan (izena/enpresa, IFZ, helbidea). Faktura PDFn emailez bidaltzen da.",
-        "tags": ["ordainagiria", "fakturaketa", "BEZa", "enpresa", "faktura", "autonomoa"],
-        "links": [{ "label": "Fakturarako harremanetan jarri", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }]
+        "tags": [
+          "ordainagiria",
+          "fakturaketa",
+          "BEZa",
+          "enpresa",
+          "faktura",
+          "autonomoa"
+        ],
+        "links": [
+          {
+            "label": "Fakturarako harremanetan jarri",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
+        ]
       },
       {
         "q": "Zer egiten dut hostalean gauzak ahaztu badira?",
         "a": "Zerbait ahaztu duzula uste baduzu — jarri gurekin harremanetan ahalik eta lasterren. Aurkitutako objektuak 30 egunez gordetzen dira. Posta bidalketa ez dugu antolatzen ezta ordaintzen — mezularitza zerbitzua gonbidatuak kontratatu behar du.",
-        "tags": ["ahaztutako gauzak", "galdutako objektua", "aurkitutako gauzak", "bidalketa", "mezularitza", "ahaztutako telefonoa", "zorroa", "giltzak"],
+        "tags": [
+          "ahaztutako gauzak",
+          "galdutako objektua",
+          "aurkitutako gauzak",
+          "bidalketa",
+          "mezularitza",
+          "ahaztutako telefonoa",
+          "zorroa",
+          "giltzak"
+        ],
         "links": [
-          { "label": "WhatsApp bidez idatzi", "url": "https://wa.me/34639980253", "icon": "message-circle" },
-          { "label": "Emaila idatzi", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }
+          {
+            "label": "WhatsApp bidez idatzi",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "Emaila idatzi",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
         ]
       },
       {
         "q": "Garestia iruditzen zait. Deskonturik al dago?",
         "a": "Gure prezioak normalean Zamorako erdiguneko baxuenak dira. 11 gauetik — automatikoki %10eko deskontua. Gure webgunean erreserbatzea gomendatzen dugu — prezioak Booking, Expedia eta beste atarietatik askoz ere txikiagoak dira.",
-        "links": [{ "label": "Prezio onenak", "url": "/booking", "icon": "tag" }]
+        "links": [
+          {
+            "label": "Prezio onenak",
+            "url": "/booking",
+            "icon": "tag"
+          }
+        ]
       },
       {
         "q": "Erreserbatu nahi dut baina galdera gehiago ditut. Nola harremanetan jarri?",
         "a": "+34 980 533 152 telefonoz, +34 639 980 253 WhatsAppez edo hostalsol{'@'}outlook.com emailez. Telefono arreta: 10:00–21:00. WhatsApp deiak ez dira erantzuten — telefono dei arruntak bakarrik.",
         "links": [
-          { "label": "Deitu", "url": "tel:+34980533152", "icon": "phone" },
-          { "label": "WhatsApp bidez idatzi", "url": "https://wa.me/34639980253", "icon": "message-circle" },
-          { "label": "Emaila idatzi", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }
+          {
+            "label": "Deitu",
+            "url": "tel:+34980533152",
+            "icon": "phone"
+          },
+          {
+            "label": "WhatsApp bidez idatzi",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "Emaila idatzi",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
         ]
       },
       {
         "q": "Erretzea baimenduta al dago?",
         "a": "Tabakoa zorrotz debekatuta dago hostal osoan, logelak, leihoak, terrazak eta eremu komunak barne. Ez betetzeak 100€tik 1.000€ra arteko isuna ekartzen du logelaren garbiketarako eta usain kentzeko. Sua piztea eta kandelak edo intsentsua erabiltzea ere debekatuta dago.",
-        "tags": ["zigarroa", "erretzea", "vapeo", "tabakoa", "kandela", "intsentsu", "sua"]
+        "tags": [
+          "zigarroa",
+          "erretzea",
+          "vapeo",
+          "tabakoa",
+          "kandela",
+          "intsentsu",
+          "sua"
+        ]
       },
       {
         "q": "Bizikleta gorde al dezaket?",
         "a": "Bai, bizikleta logelan gorde daiteke betiere garbia bada (lokatzik edo lohi-arrastorik gabe). Aurretiaz abisatzea gomendatzen dugu — logela zabalago bat esleitzen saiatuko gara. Igogailua txikia da; bizikleta handietarako eskaileratik igo behar izango da agian.",
-        "tags": ["bizikleta", "ziklismoa", "txirrindularia", "bizikleta elektrikoa", "mendi-bizikleta", "bizikleta gordetzea"]
+        "tags": [
+          "bizikleta",
+          "ziklismoa",
+          "txirrindularia",
+          "bizikleta elektrikoa",
+          "mendi-bizikleta",
+          "bizikleta gordetzea"
+        ]
       },
       {
         "q": "Egonaldi luzeetan interesatuta nago. Baldintza bereziak al daude?",
         "a": "Bai, 11 gauetik — automatikoki %10eko deskontua. Talde edo egonaldi oso luzetarako — jarri gurekin harremanetan.",
-        "links": [{ "label": "Egonaldi luzea erreserbatu", "url": "/booking", "icon": "calendar-check" }]
+        "links": [
+          {
+            "label": "Egonaldi luzea erreserbatu",
+            "url": "/booking",
+            "icon": "calendar-check"
+          }
+        ]
       },
       {
         "q": "Zein hizkuntzetan hitz egiten du langileak?",
         "a": "Hostaleko langileek espainolez bakarrik hitz egiten dute. Beste hizkuntza batean komunikatzeko — idatzi WhatsAppez edo emailez, online itzultzaileak erabiliko ditugu. Iristean doaneko WiFira konektatu eta telefonoko itzultzaile bat erabili — Google Translate, DeepL edo Bing Translator.",
-        "tags": ["hizkuntza", "ingelesa", "frantsesa", "alemana", "txinera", "arabiera", "galegoa", "errusiera", "italiera", "portugesa", "komunikazioa", "itzulpena"],
+        "tags": [
+          "hizkuntza",
+          "ingelesa",
+          "frantsesa",
+          "alemana",
+          "txinera",
+          "arabiera",
+          "galegoa",
+          "errusiera",
+          "italiera",
+          "portugesa",
+          "komunikazioa",
+          "itzulpena"
+        ],
         "links": [
-          { "label": "Google Translate", "url": "https://translate.google.com/", "icon": "languages" },
-          { "label": "DeepL Itzultzailea", "url": "https://www.deepl.com/translator", "icon": "languages" },
-          { "label": "Bing Translator", "url": "https://www.bing.com/translator", "icon": "languages" },
-          { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" },
-          { "label": "Emaila", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }
+          {
+            "label": "Google Translate",
+            "url": "https://translate.google.com/",
+            "icon": "languages"
+          },
+          {
+            "label": "DeepL Itzultzailea",
+            "url": "https://www.deepl.com/translator",
+            "icon": "languages"
+          },
+          {
+            "label": "Bing Translator",
+            "url": "https://www.bing.com/translator",
+            "icon": "languages"
+          },
+          {
+            "label": "WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "Emaila",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
         ]
       },
       {
         "q": "Beste baten izenean erreserba egin al dezaket?",
         "a": "Ez dugu gomendatzen. Seguruagoa da gonbidatu bakoitzak bere izenean erreserbatzea. Beste batentzat erreserbatzen baduzu — utzi iruzkin bat izen-abizen osoa eta telefono zenbakiarekin, eta ziurtatu online check-in bere datuetan egiten duela. Pantaila-argazkiak ez dira berrespen gisa onartzen.",
-        "tags": ["beste izenean erreserba", "hirugarrenak", "erreserba titularra", "segurtasuna", "egiaztapena", "pantaila-argazkia", "norbaitegatik erreserbatu"],
+        "tags": [
+          "beste izenean erreserba",
+          "hirugarrenak",
+          "erreserba titularra",
+          "segurtasuna",
+          "egiaztapena",
+          "pantaila-argazkia",
+          "norbaitegatik erreserbatu"
+        ],
         "links": [
-          { "label": "Iristeko gida", "url": "/checkin", "icon": "file-text" },
-          { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }
+          {
+            "label": "Iristeko gida",
+            "url": "/checkin",
+            "icon": "file-text"
+          },
+          {
+            "label": "WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
         "q": "Zer ekipamendu daukate logelek?",
         "a": "Bainugela pribatua, wifi (pasahitza eta argibide gehiago atearen atzealdeko paperrean daude), idazmahaia eta aulkia, erradiadorea (kontrol automatikoekin), aire girotua agintearekin, telebista agintearekin, ile-lehorgailua eta lisatua eskaeraren arabera, besaulki, leihoa, ohea izarak barne. Bainugelan oinarrizko xaboia, xanpua eta eskuetarako xaboia aurkituko dituzu, baita eskuoihalak ere. Beste zerbait behar baduzu, esan iezaguzu.",
-        "tags": ["ekipamendua", "logela", "amenities", "zerbitzuak", "bainugela", "wifi", "aire girotua", "telebista", "ile-lehorgailua", "lisatua", "ohea", "eskuoihalak"]
+        "tags": [
+          "ekipamendua",
+          "logela",
+          "amenities",
+          "zerbitzuak",
+          "bainugela",
+          "wifi",
+          "aire girotua",
+          "telebista",
+          "ile-lehorgailua",
+          "lisatua",
+          "ohea",
+          "eskuoihalak"
+        ]
       },
       {
         "q": "Nork egin du webgune hau?",
         "a": "Webgune hau Juan Manuel Béc-ek garatu du (https://juanman.tech/). Iturburu-kodea irekia da eta GitHub-en dago eskuragarri: https://github.com/JuanmanDev/HostalSolZamoraWeb2026",
-        "tags": ["web", "garatzailea", "egilea", "kodea", "github", "juanman", "teknologia"]
+        "tags": [
+          "web",
+          "garatzailea",
+          "egilea",
+          "kodea",
+          "github",
+          "juanman",
+          "teknologia"
+        ]
+      },
+      {
+        "q": "Webgune zaharra ikus dezaket?",
+        "a": "Bai, gure aurreko webgunearen diseinua eta edukia hurrengo estekan kontsulta ditzakezu.",
+        "links": [
+          {
+            "label": "Webgune zaharra ikusi",
+            "url": "/old/hostalsolzamora.com/index.html",
+            "icon": "external-link"
+          }
+        ]
       }
     ]
   },
@@ -525,7 +1127,12 @@
     "discountLabel": "Deskontua",
     "discountNote": "Gure webgunean bakarrik",
     "note": "Prezio zuzena beti Booking, Expedia eta beste atarietatik merkeagoa da.",
-    "features": ["Ordainketa segurua", "Berehala baieztapena", "Prezio onena bermatuta", "48h doaneko ezeztatzea"],
+    "features": [
+      "Ordainketa segurua",
+      "Berehala baieztapena",
+      "Prezio onena bermatuta",
+      "48h doaneko ezeztatzea"
+    ],
     "bookBtn": "Erreserbara joan",
     "helpText": "Erreserba sistemarekin arazoak?",
     "helpLink": "Erreserba orri osora joan →"
@@ -676,7 +1283,12 @@
       "heading": "Logela erreserbatu",
       "discountLabel": "%15 deskontua gure webgunean erreserbatzean",
       "discountSub": "Prezio zuzena beti Booking, Expedia eta beste atarietatik merkeagoa da",
-      "features": ["Berehala baieztapena", "Ordainketa segurua", "Prezio onena bermatuta", "48h lehenago doaneko ezeztatzea*"],
+      "features": [
+        "Berehala baieztapena",
+        "Ordainketa segurua",
+        "Prezio onena bermatuta",
+        "48h lehenago doaneko ezeztatzea*"
+      ],
       "iframeTitle": "Hostal Sol Zamora erreserba sistema",
       "troubleText": "Erreserba sistemarekin arazoak? Deitu:",
       "backHome": "← Hasierara itzuli",
@@ -733,28 +1345,60 @@
       "docTypes": [
         {
           "name": "DNI / IDESP",
-          "fields": ["Dokumentu zenbakia", "Euskarri zenbakia", "Iraungitze data", "Jaiotze data", "Sexua", "Izen-abizenak", "Nazionalitatea"]
+          "fields": [
+            "Dokumentu zenbakia",
+            "Euskarri zenbakia",
+            "Iraungitze data",
+            "Jaiotze data",
+            "Sexua",
+            "Izen-abizenak",
+            "Nazionalitatea"
+          ]
         },
         {
           "name": "Pasaportea",
-          "fields": ["Pasaporte zenbakia", "MRZ lerro osoa", "Igorpen data", "Iraungitze data", "Nazionalitatea", "Izen-abizenak"]
+          "fields": [
+            "Pasaporte zenbakia",
+            "MRZ lerro osoa",
+            "Igorpen data",
+            "Iraungitze data",
+            "Nazionalitatea",
+            "Izen-abizenak"
+          ]
         },
         {
           "name": "NIE / TIE",
-          "fields": ["NIE/TIE zenbakia", "Euskarri zenbakia", "Iraungitze data"]
+          "fields": [
+            "NIE/TIE zenbakia",
+            "Euskarri zenbakia",
+            "Iraungitze data"
+          ]
         },
         {
           "name": "Gidabaimena (EB)",
-          "fields": ["Baimen zenbakia", "Abizenak eta izena"]
+          "fields": [
+            "Baimen zenbakia",
+            "Abizenak eta izena"
+          ]
         }
       ],
       "backHome": "← Hasierara itzuli",
       "docFields": [
-        "Izen-abizenak", "Abizenak", "Dokumentu mota (Pasaportea / NIE / Egoitza baimena)",
-        "Dokumentu zenbakia", "Euskarri zenbakia / serie zenbakia (hala badagokio)",
-        "Igorpen data", "Iraungitze data", "Jaiotze data",
-        "Jaiotze herrialdea", "Egoitza herrialdea", "Autonomia erkidegoa (Espainiarentzat)",
-        "Nazionalitatea", "Sexua", "Harremanetarako emaila", "Harremanetarako telefonoa"
+        "Izen-abizenak",
+        "Abizenak",
+        "Dokumentu mota (Pasaportea / NIE / Egoitza baimena)",
+        "Dokumentu zenbakia",
+        "Euskarri zenbakia / serie zenbakia (hala badagokio)",
+        "Igorpen data",
+        "Iraungitze data",
+        "Jaiotze data",
+        "Jaiotze herrialdea",
+        "Egoitza herrialdea",
+        "Autonomia erkidegoa (Espainiarentzat)",
+        "Nazionalitatea",
+        "Sexua",
+        "Harremanetarako emaila",
+        "Harremanetarako telefonoa"
       ],
       "ineNote": "INE — Turismo estatistika: Funtzio Estatistiko Publikoaren Legearen arabera, Instituto Nacional de Estadística (INE)k helmugako herrialdea edo autonomia erkidegoa eskatzen du gonbidatu bakoitzarentzat turismo estatistika nazionala egiteko. Datuak modu anonimoan eta agregatuan bidaltzen dira."
     },
@@ -813,13 +1457,34 @@
       "mapBtn": "Mapan aurkitu",
       "distancesTitle": "Distantziak hostalaren ondotik",
       "distances": [
-        { "name": "Tren geltokia", "value": "1,2 km · 15 min. oinezkoz" },
-        { "name": "Autobus geltokia", "value": "1 km · 13 min. oinezkoz" },
-        { "name": "Plaza Mayor / Alde Historikoa", "value": "450 m · 5 min. oinezkoz" },
-        { "name": "La Marina aparkamendua", "value": "400 m · 4 min. oinezkoz" },
-        { "name": "Constitución aparkamendua", "value": "260 m · 2 min. oinezkoz" },
-        { "name": "Salamanca", "value": "67 km · 48 min. autoz" },
-        { "name": "Valladolid", "value": "101 km · 1h 11 min. autoz" }
+        {
+          "name": "Tren geltokia",
+          "value": "1,2 km · 15 min. oinezkoz"
+        },
+        {
+          "name": "Autobus geltokia",
+          "value": "1 km · 13 min. oinezkoz"
+        },
+        {
+          "name": "Plaza Mayor / Alde Historikoa",
+          "value": "450 m · 5 min. oinezkoz"
+        },
+        {
+          "name": "La Marina aparkamendua",
+          "value": "400 m · 4 min. oinezkoz"
+        },
+        {
+          "name": "Constitución aparkamendua",
+          "value": "260 m · 2 min. oinezkoz"
+        },
+        {
+          "name": "Salamanca",
+          "value": "67 km · 48 min. autoz"
+        },
+        {
+          "name": "Valladolid",
+          "value": "101 km · 1h 11 min. autoz"
+        }
       ],
       "formTitle": "Mezua bidali",
       "formIntro": "Bete formularioa eta emailez erantzuten dizugu. Erantzun azkarrerako hobe da deitzea edo WhatsAppez idaztea.",

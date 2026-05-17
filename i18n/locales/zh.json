@@ -1,14 +1,30 @@
 {
   "ogImage": {
     "tagline": "您在萨莫拉的家",
-    "home": { "title": "Hostal Sol Zamora" },
-    "faq": { "title": "常见问题" },
-    "parking": { "title": "萨莫拉停车指南" },
-    "checkin": { "title": "如何抵达及入住" },
-    "galeria": { "title": "客房图库" },
-    "reserva": { "title": "预订客房" },
-    "sobreNosotros": { "title": "关于我们" },
-    "contacto": { "title": "联系我们" },
+    "home": {
+      "title": "Hostal Sol Zamora"
+    },
+    "faq": {
+      "title": "常见问题"
+    },
+    "parking": {
+      "title": "萨莫拉停车指南"
+    },
+    "checkin": {
+      "title": "如何抵达及入住"
+    },
+    "galeria": {
+      "title": "客房图库"
+    },
+    "reserva": {
+      "title": "预订客房"
+    },
+    "sobreNosotros": {
+      "title": "关于我们"
+    },
+    "contacto": {
+      "title": "联系我们"
+    },
     "location": "西班牙萨莫拉"
   },
   "nav": {
@@ -32,14 +48,46 @@
     "ctaRooms": "查看客房",
     "discount": "直接预订 — 享受15%折扣",
     "features": [
-      { "icon": "map-pin", "label": "中心位置", "link": null },
-      { "icon": "wifi", "label": "免费WiFi", "link": null },
-      { "icon": "paw-print", "label": "允许携带宠物", "link": null },
-      { "icon": "shower-head", "label": "独立卫浴", "link": null },
-      { "icon": "banknote-arrow-down", "label": "经济实惠", "link": null },
-      { "icon": "wind", "label": "空调", "link": null },
-      { "icon": "tv", "label": "电视", "link": null },
-      { "icon": "laptop", "label": "书桌", "link": null }
+      {
+        "icon": "map-pin",
+        "label": "中心位置",
+        "link": null
+      },
+      {
+        "icon": "wifi",
+        "label": "免费WiFi",
+        "link": null
+      },
+      {
+        "icon": "paw-print",
+        "label": "允许携带宠物",
+        "link": null
+      },
+      {
+        "icon": "shower-head",
+        "label": "独立卫浴",
+        "link": null
+      },
+      {
+        "icon": "banknote-arrow-down",
+        "label": "经济实惠",
+        "link": null
+      },
+      {
+        "icon": "wind",
+        "label": "空调",
+        "link": null
+      },
+      {
+        "icon": "tv",
+        "label": "电视",
+        "link": null
+      },
+      {
+        "icon": "laptop",
+        "label": "书桌",
+        "link": null
+      }
     ]
   },
   "about": {
@@ -68,29 +116,47 @@
         "label": "双人间（双床）",
         "icon": "bed-single",
         "photoPath": "/images/rooms/301/003.jpg",
-        "extras": ["2张90cm床"],
+        "extras": [
+          "2张90cm床"
+        ],
         "rateId": "578650"
       },
       {
         "label": "双人间（大床）",
         "icon": "bed-double",
         "photoPath": "/images/rooms/323/002.jpg",
-        "extras": ["1张135cm床"],
+        "extras": [
+          "1张135cm床"
+        ],
         "rateId": "578649"
       },
       {
         "label": "阳台双人间",
         "icon": "building",
         "photoPath": "/images/rooms/321/021.jpg",
-        "extras": ["1张135cm床", "私人阳台", "TV Superior"],
+        "extras": [
+          "1张135cm床",
+          "私人阳台",
+          "TV Superior"
+        ],
         "rateId": "752069"
       }
     ],
     "amenities": [
-      "电视", "WiFi", "独立卫浴", "书桌",
-      "中央供暖", "洗漱用品", "毛巾及床上用品",
-      "空调", "吹风机（按需提供）", "衣柜",
-      "每日清洁", "椅子", "公共区域监控摄像头", "电梯"
+      "电视",
+      "WiFi",
+      "独立卫浴",
+      "书桌",
+      "中央供暖",
+      "洗漱用品",
+      "毛巾及床上用品",
+      "空调",
+      "吹风机（按需提供）",
+      "衣柜",
+      "每日清洁",
+      "椅子",
+      "公共区域监控摄像头",
+      "电梯"
     ],
     "filterAll": "全部",
     "filterBalcon": "阳台",
@@ -171,19 +237,71 @@
     "ctaBand": "直接在我们官网预订，享受最优价格保证",
     "ctaBandBtn": "折扣预订 →",
     "items": [
-      { "name": "Gemma", "text": "Me ha encantado la localización, el estilo del hostal es muy moderno y el chico super majo. La ducha era genial, ¡me dio pena marcharme!", "stars": 5 },
-      { "name": "Iker Zulueta", "text": "En pleno centro histórico, habitaciones amplias, limpias y equipadas. Trato del personal inmejorable. ¡Volveré a repetir!", "stars": 5 },
-      { "name": "José Manuel Serrano", "text": "Ubicación muy céntrica, te evitas el coche. El chico que nos atendió se ofreció para cualquier cosa. Excelente.", "stars": 5 },
-      { "name": "Annayara", "text": "Fui con un brazo lesionado y enseguida me ofrecieron cambiar la habitación por una más amplia. Esos detalles son los que cuentan.", "stars": 5 },
-      { "name": "Javier Fidalgo", "text": "El sitio es perfecto. Muy limpio, todo lo necesario, ubicación increíble y el recepcionista muy majo. Sin duda volveremos.", "stars": 5 },
-      { "name": "Carla Aguilar", "text": "Hostal estupendo en pleno centro. Nos explicaron qué ver y los mejores lugares a visitar. Sin duda, cuando volvamos repetiremos.", "stars": 5 },
-      { "name": "L. Elisabeth", "text": "Limpio, cómodo y práctico. Personal atento y preocupado de atender bien. Un acierto escoger este hostal.", "stars": 5 },
-      { "name": "Juan Manuel", "text": "El WiFi funcionó perfectamente y pude trabajar sin problemas. Creo que volveré pronto.", "stars": 5 },
-      { "name": "Thomas K. (DE)", "text": "Sehr zentral gelegen, saubere Zimmer und freundliches Personal. Kann ich nur empfehlen!", "stars": 5 },
-      { "name": "Marie L. (FR)", "text": "Excellent rapport qualité-prix. Chambre propre, bien équipée et idéalement située dans le centre historique.", "stars": 5 },
-      { "name": "James H. (UK)", "text": "Great location right in the historic centre. Clean rooms, helpful staff. Would definitely stay again.", "stars": 5 },
-      { "name": "Valentina R. (IT)", "text": "Ottima posizione nel centro storico, stanza pulita e personale cordiale. Consigliato!", "stars": 5 },
-      { "name": "Pedro A. (PT)", "text": "Localização perfeita no centro histórico. Quartos limpos e pessoal simpático. Recomendo!", "stars": 5 }
+      {
+        "name": "Gemma",
+        "text": "Me ha encantado la localización, el estilo del hostal es muy moderno y el chico super majo. La ducha era genial, ¡me dio pena marcharme!",
+        "stars": 5
+      },
+      {
+        "name": "Iker Zulueta",
+        "text": "En pleno centro histórico, habitaciones amplias, limpias y equipadas. Trato del personal inmejorable. ¡Volveré a repetir!",
+        "stars": 5
+      },
+      {
+        "name": "José Manuel Serrano",
+        "text": "Ubicación muy céntrica, te evitas el coche. El chico que nos atendió se ofreció para cualquier cosa. Excelente.",
+        "stars": 5
+      },
+      {
+        "name": "Annayara",
+        "text": "Fui con un brazo lesionado y enseguida me ofrecieron cambiar la habitación por una más amplia. Esos detalles son los que cuentan.",
+        "stars": 5
+      },
+      {
+        "name": "Javier Fidalgo",
+        "text": "El sitio es perfecto. Muy limpio, todo lo necesario, ubicación increíble y el recepcionista muy majo. Sin duda volveremos.",
+        "stars": 5
+      },
+      {
+        "name": "Carla Aguilar",
+        "text": "Hostal estupendo en pleno centro. Nos explicaron qué ver y los mejores lugares a visitar. Sin duda, cuando volvamos repetiremos.",
+        "stars": 5
+      },
+      {
+        "name": "L. Elisabeth",
+        "text": "Limpio, cómodo y práctico. Personal atento y preocupado de atender bien. Un acierto escoger este hostal.",
+        "stars": 5
+      },
+      {
+        "name": "Juan Manuel",
+        "text": "El WiFi funcionó perfectamente y pude trabajar sin problemas. Creo que volveré pronto.",
+        "stars": 5
+      },
+      {
+        "name": "Thomas K. (DE)",
+        "text": "Sehr zentral gelegen, saubere Zimmer und freundliches Personal. Kann ich nur empfehlen!",
+        "stars": 5
+      },
+      {
+        "name": "Marie L. (FR)",
+        "text": "Excellent rapport qualité-prix. Chambre propre, bien équipée et idéalement située dans le centre historique.",
+        "stars": 5
+      },
+      {
+        "name": "James H. (UK)",
+        "text": "Great location right in the historic centre. Clean rooms, helpful staff. Would definitely stay again.",
+        "stars": 5
+      },
+      {
+        "name": "Valentina R. (IT)",
+        "text": "Ottima posizione nel centro storico, stanza pulita e personale cordiale. Consigliato!",
+        "stars": 5
+      },
+      {
+        "name": "Pedro A. (PT)",
+        "text": "Localização perfeita no centro histórico. Quartos limpos e pessoal simpático. Recomendo!",
+        "stars": 5
+      }
     ]
   },
   "restaurant": {
@@ -208,82 +326,227 @@
       {
         "q": "旅馆的营业时间是什么？",
         "a": "电话服务：10:00–21:00。入住时间：14:00–21:00。旅馆于21:00关门，无例外——未经事先约定在21:00后到达不可能入住。到达后您将收到钥匙，可自由进出。大多数周日关闭，但若您周六到达可停留整个周日。大多数节假日营业，但8月14-16日、12月15日和1月1日除外。",
-        "links": [{ "label": "完整到达指引", "url": "/checkin", "icon": "log-in" }]
+        "links": [
+          {
+            "label": "完整到达指引",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
       },
       {
         "q": "入住和退房时间是什么？",
         "a": "入住时间：14:00–21:00。若您在14:00前到达，我们可以在前台为您保管行李。在低峰期有时可以提前入住，但不保证。退房时间：11:00。退房后，我们也可以在离开当天保管行李（周日除外）——请告知我们。若您在21:00后到达，我们无法为您办理入住。",
-        "tags": ["抵达", "提前入住", "行李寄存", "行李箱", "延迟退房"],
-        "links": [{ "label": "完整到达指引", "url": "/checkin", "icon": "log-in" }]
+        "tags": [
+          "抵达",
+          "提前入住",
+          "行李寄存",
+          "行李箱",
+          "延迟退房"
+        ],
+        "links": [
+          {
+            "label": "完整到达指引",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
       },
       {
         "q": "入住需要哪些证件？",
         "a": "根据西班牙皇家法令933/2021，所有14岁及以上的客人必须出示有效的官方带照片身份证件：西班牙国民身份证DNI、护照、NIE、TIE或欧盟驾照。不接受过期、损坏、不可读或通过电子邮件/WhatsApp发送的证件。每位客人须出示本人证件。为加快办理流程，建议在到达前通过Chekin在线办理。",
-        "tags": ["护照", "驾照", "DNI", "证件", "在线入住", "chekin", "NIE"],
+        "tags": [
+          "护照",
+          "驾照",
+          "DNI",
+          "证件",
+          "在线入住",
+          "chekin",
+          "NIE"
+        ],
         "links": [
-          { "label": "在线办理入住", "url": "/checkin", "icon": "file-text" },
-          { "label": "接受的证件类型", "url": "/checkin", "icon": "id-card" }
+          {
+            "label": "在线办理入住",
+            "url": "/checkin",
+            "icon": "file-text"
+          },
+          {
+            "label": "接受的证件类型",
+            "url": "/checkin",
+            "icon": "id-card"
+          }
         ]
       },
       {
         "q": "旅馆是否适合行动不便的人士？",
         "a": "旅馆位于一栋配有2部电梯的建筑三楼。入口处和通往客房的走廊均无台阶。您可以在我们的图库查看客房照片和视频，确认空间是否满足您的需求。如有疑问——请联系我们。",
-        "tags": ["轮椅", "行动不便", "电梯", "楼梯", "无障碍"],
-        "links": [{ "label": "客房图库", "url": "/gallery", "icon": "image" }]
+        "tags": [
+          "轮椅",
+          "行动不便",
+          "电梯",
+          "楼梯",
+          "无障碍"
+        ],
+        "links": [
+          {
+            "label": "客房图库",
+            "url": "/gallery",
+            "icon": "image"
+          }
+        ]
       },
       {
         "q": "我可以在哪里停车？",
         "a": "旅馆没有自有停车场，但附近有多个选择。Plaza Constitución停车场（步行3分钟，1.45€/小时，14.70€/天，24小时）——最近的选择。Plaza de la Marina Española停车场（步行5分钟，Empark在线预订）。免费停车——火车站（2公里，L3路公交），24小时免费。门口即有ORA限时停车区（蓝色区域）0.35€/30分钟，最长3小时。尽管是步行区，市政府允许客人从Calle San Miguel进入卸载行李。",
-        "tags": ["车库", "汽车", "摩托车", "车辆", "附近停车"],
+        "tags": [
+          "车库",
+          "汽车",
+          "摩托车",
+          "车辆",
+          "附近停车"
+        ],
         "links": [
-          { "label": "完整停车指南", "url": "/parking", "icon": "car" },
-          { "label": "在谷歌地图中打开", "url": "https://www.google.com/maps/dir//Calle+Benavente,+2+Zamora", "icon": "map-pin" }
+          {
+            "label": "完整停车指南",
+            "url": "/parking",
+            "icon": "car"
+          },
+          {
+            "label": "在谷歌地图中打开",
+            "url": "https://www.google.com/maps/dir//Calle+Benavente,+2+Zamora",
+            "icon": "map-pin"
+          }
         ]
       },
       {
         "q": "如何从车站抵达旅馆？",
         "a": "火车站和公交车站位于Avenida de las Tres Cruces，距旅馆约2公里。交通选择：出租车（5-7分钟，约6-8€）、城市公交3路（El Acercame，0.95€）——在'Mercado'站下车（距旅馆步行5分钟）——或步行约25-30分钟。车站有24小时免费停车场和行李寄存柜。",
-        "tags": ["火车", "renfe", "公交", "车站", "抵达", "交通", "如何抵达"],
+        "tags": [
+          "火车",
+          "renfe",
+          "公交",
+          "车站",
+          "抵达",
+          "交通",
+          "如何抵达"
+        ],
         "links": [
-          { "label": "萨莫拉站 — Renfe", "url": "https://www.renfe.com/es/es/inspirate/estaciones/estacion-zamora", "icon": "external-link" },
-          { "label": "火车站 — 谷歌地图", "url": "https://www.google.com/maps/dir//Estaci%C3%B3n+de+Ferrocarril+Zamora", "icon": "map-pin" },
-          { "label": "汽车站 — 谷歌地图", "url": "https://www.google.com/maps/dir//Estaci%C3%B3n+de+Autobuses+de+Zamora", "icon": "map-pin" },
-          { "label": "El Acercame公交", "url": "https://www.acercame.es", "icon": "bus" }
+          {
+            "label": "萨莫拉站 — Renfe",
+            "url": "https://www.renfe.com/es/es/inspirate/estaciones/estacion-zamora",
+            "icon": "external-link"
+          },
+          {
+            "label": "火车站 — 谷歌地图",
+            "url": "https://www.google.com/maps/dir//Estaci%C3%B3n+de+Ferrocarril+Zamora",
+            "icon": "map-pin"
+          },
+          {
+            "label": "汽车站 — 谷歌地图",
+            "url": "https://www.google.com/maps/dir//Estaci%C3%B3n+de+Autobuses+de+Zamora",
+            "icon": "map-pin"
+          },
+          {
+            "label": "El Acercame公交",
+            "url": "https://www.acercame.es",
+            "icon": "bus"
+          }
         ]
       },
       {
         "q": "如何在萨莫拉叫出租车？",
         "a": "主要出租车合作社是Radio Taxi Zamora（电话：980 531 515）。也可在车站附近或市中心广场找到出租车。从车站到旅馆约需6-8€，行程约5-7分钟。出租车是晚到或携带大量行李时的最佳选择。",
-        "tags": ["出租车", "radio taxi", "交通", "萨莫拉出租车"],
+        "tags": [
+          "出租车",
+          "radio taxi",
+          "交通",
+          "萨莫拉出租车"
+        ],
         "links": [
-          { "label": "Radio Taxi Zamora — 980 531 515", "url": "tel:+34980531515", "icon": "phone" },
-          { "label": "谷歌地图找出租车", "url": "https://www.google.com/maps/search/taxi+zamora", "icon": "car" }
+          {
+            "label": "Radio Taxi Zamora — 980 531 515",
+            "url": "tel:+34980531515",
+            "icon": "phone"
+          },
+          {
+            "label": "谷歌地图找出租车",
+            "url": "https://www.google.com/maps/search/taxi+zamora",
+            "icon": "car"
+          }
         ]
       },
       {
         "q": "如何前往IFEZA？",
         "a": "IFEZA（萨莫拉展览馆）距旅馆约4-5公里。可乘城市公交5路（El Acercame，0.95€）、出租车（约10分钟，8-10€）或自驾前往。重要提示：举办大型活动和音乐会期间，主办方通常提供从萨莫拉市中心至IFEZA的免费接驳车。请务必查看活动或IFEZA官网。",
-        "tags": ["IFEZA", "展览", "音乐会", "Zeta", "Fromago", "SIFER", "活动", "5路", "免费公交"],
+        "tags": [
+          "IFEZA",
+          "展览",
+          "音乐会",
+          "Zeta",
+          "Fromago",
+          "SIFER",
+          "活动",
+          "5路",
+          "免费公交"
+        ],
         "links": [
-          { "label": "IFEZA — 官方网站", "url": "https://www.ifeza.es/", "icon": "building-2" },
-          { "label": "5路 — El Acercame", "url": "https://www.acercame.es/index.php/linea/linea5", "icon": "bus" },
-          { "label": "IFEZA — 谷歌地图", "url": "https://www.google.com/maps/dir//IFEZA+Zamora", "icon": "map-pin" }
+          {
+            "label": "IFEZA — 官方网站",
+            "url": "https://www.ifeza.es/",
+            "icon": "building-2"
+          },
+          {
+            "label": "5路 — El Acercame",
+            "url": "https://www.acercame.es/index.php/linea/linea5",
+            "icon": "bus"
+          },
+          {
+            "label": "IFEZA — 谷歌地图",
+            "url": "https://www.google.com/maps/dir//IFEZA+Zamora",
+            "icon": "map-pin"
+          }
         ]
       },
       {
         "q": "旅馆提供早餐吗？",
         "a": "我们不提供早餐，但附近有多家咖啡馆和面包店。推荐Bar Restaurante Padornelo——距旅馆入口步行不到2分钟。周一至周五10:00开业，供应物美价廉的早餐。",
-        "tags": ["食物", "咖啡", "酒吧", "面包店", "附近早餐"],
+        "tags": [
+          "食物",
+          "咖啡",
+          "酒吧",
+          "面包店",
+          "附近早餐"
+        ],
         "links": [
-          { "label": "Restaurante Padornelo", "url": "/#restaurant", "icon": "utensils-crossed" },
-          { "label": "在谷歌地图中打开", "url": "https://www.google.com/maps/dir//Calle+Benavente,+2+Zamora", "icon": "map-pin" }
+          {
+            "label": "Restaurante Padornelo",
+            "url": "/#restaurant",
+            "icon": "utensils-crossed"
+          },
+          {
+            "label": "在谷歌地图中打开",
+            "url": "https://www.google.com/maps/dir//Calle+Benavente,+2+Zamora",
+            "icon": "map-pin"
+          }
         ]
       },
       {
         "q": "可以携带宠物吗？",
         "a": "可以，欢迎携带宠物！每只宠物收取7€/晚的附加费。附加费可在官网预订时支付。宠物必须时刻有人陪同——不得将其单独留在客房、旅馆、车内或任何其他地方。违规将导致拒绝接待宠物，并可能取消预订并收取罚款。",
-        "tags": ["狗", "猫", "动物", "幼崽", "允许宠物"],
-        "links": [{ "label": "折扣预订", "url": "/booking", "icon": "paw-print" }]
+        "tags": [
+          "狗",
+          "猫",
+          "动物",
+          "幼崽",
+          "允许宠物"
+        ],
+        "links": [
+          {
+            "label": "折扣预订",
+            "url": "/booking",
+            "icon": "paw-print"
+          }
+        ]
       },
       {
         "q": "我可以把宠物单独留在客房吗？",
@@ -292,32 +555,79 @@
       {
         "q": "客房有WiFi吗？",
         "a": "是的，旅馆全区提供免费WiFi，包括所有客房。密码在入住时提供，也可在前台获取。大多数客房网速超过50Mbps——足够浏览网页、收发邮件、视频流媒体和视频通话。非常适合远程办公。",
-        "tags": ["网络", "WiFi密码", "连接", "网络速度", "光纤", "远程办公"]
+        "tags": [
+          "网络",
+          "WiFi密码",
+          "连接",
+          "网络速度",
+          "光纤",
+          "远程办公"
+        ]
       },
       {
         "q": "客房有空调吗？",
         "a": "是的，所有客房都配有空调和暖气。该系统现代高效，全年保证舒适温度。您可根据个人喜好调节温度。",
-        "tags": ["空调", "暖气", "温度", "热", "冷", "恒温器", "风扇", "气候"]
+        "tags": [
+          "空调",
+          "暖气",
+          "温度",
+          "热",
+          "冷",
+          "恒温器",
+          "风扇",
+          "气候"
+        ]
       },
       {
         "q": "客房配备什么电视？",
         "a": "带阳台的客房配有32英寸平板电视，部分为Smart TV，支持流媒体平台。无阳台的客房配有18英寸电视（非Smart TV），但可通过HDMI连接外部设备。",
-        "tags": ["电视", "Netflix", "流媒体", "HBO", "Prime", "HDMI", "频道", "smart tv"]
+        "tags": [
+          "电视",
+          "Netflix",
+          "流媒体",
+          "HBO",
+          "Prime",
+          "HDMI",
+          "频道",
+          "smart tv"
+        ]
       },
       {
         "q": "旅馆有哪些安全措施？",
         "a": "旅馆位于三楼，进入客房走廊需要2把钥匙（一把用于大楼，一把用于旅馆门）。走廊安装有视频监控摄像头。每间客房都有独立门锁。",
-        "tags": ["保险箱", "贵重物品", "门锁", "盗窃", "摄像头", "安全", "CCTV"]
+        "tags": [
+          "保险箱",
+          "贵重物品",
+          "门锁",
+          "盗窃",
+          "摄像头",
+          "安全",
+          "CCTV"
+        ]
       },
       {
         "q": "客房有冰箱、咖啡机或微波炉吗？",
         "a": "没有，客房不配备冰箱、咖啡机或微波炉。但旅馆附近有多家超市。",
-        "tags": ["冰箱", "厨房", "微波炉", "咖啡机", "热水壶", "小酒吧"]
+        "tags": [
+          "冰箱",
+          "厨房",
+          "微波炉",
+          "咖啡机",
+          "热水壶",
+          "小酒吧"
+        ]
       },
       {
         "q": "有洗衣服务吗？",
         "a": "旅馆没有自营洗衣房，但附近有多家自助洗衣店。最近的在Calle San Torcuato街，步行不到5分钟。更换毛巾、床单和床上用品含在客房价格内。",
-        "tags": ["洗衣", "衣物", "洗衣机", "烘干机", "洗衣房", "衣物清洗"]
+        "tags": [
+          "洗衣",
+          "衣物",
+          "洗衣机",
+          "烘干机",
+          "洗衣房",
+          "衣物清洗"
+        ]
       },
       {
         "q": "有每日清洁服务吗？",
@@ -326,12 +636,23 @@
       {
         "q": "有吹风机或熨衣设备吗？",
         "a": "是的，向前台申请可免费使用吹风机和熨斗。这是为所有客人提供的免费服务。",
-        "tags": ["头发", "吹风机", "熨斗", "熨烫"]
+        "tags": [
+          "头发",
+          "吹风机",
+          "熨斗",
+          "熨烫"
+        ]
       },
       {
         "q": "客房价格包含哪些内容？",
         "a": "所有客房包含：完整床上用品（床单、毯子、枕头、被子）、毛巾（根据房型和入住时长提供1或2条）、基本家具（床、床头柜、衣柜或挂衣架、书桌、椅子）以及配有牙刷、洗手液、沐浴露和卫生纸的独立卫浴。吹风机和熨斗——免费申请。",
-        "links": [{ "label": "客房图库", "url": "/gallery", "icon": "image" }]
+        "links": [
+          {
+            "label": "客房图库",
+            "url": "/gallery",
+            "icon": "image"
+          }
+        ]
       },
       {
         "q": "有热水吗？",
@@ -341,57 +662,137 @@
         "q": "你们的价格是多少？",
         "a": "我们是萨莫拉市中心价格最低的经济型旅馆。价格因季节和房型而异。入住11晚及以上——自动享受10%折扣。建议直接在我们官网预订——这里的价格比Booking、Expedia等平台便宜得多。",
         "links": [
-          { "label": "查看价格并预订", "url": "/booking", "icon": "tag" },
-          { "label": "通过WhatsApp联系", "url": "https://wa.me/34639980253", "icon": "message-circle" }
+          {
+            "label": "查看价格并预订",
+            "url": "/booking",
+            "icon": "tag"
+          },
+          {
+            "label": "通过WhatsApp联系",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
         "q": "长住有折扣吗？",
         "a": "是的，11晚及以上——总价自动享受10%折扣。折扣适用于不可退款价格。团体也有折扣。",
-        "links": [{ "label": "折扣预订", "url": "/booking", "icon": "calendar-check" }]
+        "links": [
+          {
+            "label": "折扣预订",
+            "url": "/booking",
+            "icon": "calendar-check"
+          }
+        ]
       },
       {
         "q": "可以刷卡付款吗？",
         "a": "是的，我们接受主要信用卡和借记卡：Visa、MasterCard、American Express等。也接受现金和提前一周通知的银行转账。不接受支票。",
-        "tags": ["现金", "visa", "mastercard", "信用卡", "借记卡", "付款方式", "银行转账", "付款"]
+        "tags": [
+          "现金",
+          "visa",
+          "mastercard",
+          "信用卡",
+          "借记卡",
+          "付款方式",
+          "银行转账",
+          "付款"
+        ]
       },
       {
         "q": "有加床服务吗？",
         "a": "是的，按需收费25€/晚。可在官网预订时选择3名成人或联系我们添加加床。共有3张折叠床——供应有限，先到先得。每间客房最多1张加床。",
-        "tags": ["婴儿床", "加床", "第三人", "额外人员", "婴儿", "沙发床"],
-        "links": [{ "label": "预订加床", "url": "/booking", "icon": "bed-double" }]
+        "tags": [
+          "婴儿床",
+          "加床",
+          "第三人",
+          "额外人员",
+          "婴儿",
+          "沙发床"
+        ],
+        "links": [
+          {
+            "label": "预订加床",
+            "url": "/booking",
+            "icon": "bed-double"
+          }
+        ]
       },
       {
         "q": "周日和节假日营业吗？",
         "a": "大多数节假日营业，但8月14-16日、12月15日和1月1日除外。大多数周日关闭，但若您周六到达可停留整个周日——周一11:00退房。",
-        "links": [{ "label": "到达指引", "url": "/checkin", "icon": "calendar" }]
+        "links": [
+          {
+            "label": "到达指引",
+            "url": "/checkin",
+            "icon": "calendar"
+          }
+        ]
       },
       {
         "q": "21:00后可以进入旅馆吗？",
         "a": "入住时间为14:00至21:00；旅馆于21:00关门，无例外。21:00后无法办理入住手续。但是，入住后您将获得一套钥匙，可在任何时间自由进出。",
-        "tags": ["深夜抵达", "延误", "夜间进入", "24小时钥匙"]
+        "tags": [
+          "深夜抵达",
+          "延误",
+          "夜间进入",
+          "24小时钥匙"
+        ]
       },
       {
         "q": "旅馆安静吗？",
         "a": "2026年安装了新窗户和百叶窗，显著改善了外部噪音隔音效果。房间之间的隔音较基本。如需安静的客房——请在预订或入住时告知我们。",
-        "tags": ["噪音", "嘈杂", "耳塞", "睡眠", "隔音", "邻居"],
-        "links": [{ "label": "可用客房", "url": "/gallery", "icon": "building" }]
+        "tags": [
+          "噪音",
+          "嘈杂",
+          "耳塞",
+          "睡眠",
+          "隔音",
+          "邻居"
+        ],
+        "links": [
+          {
+            "label": "可用客房",
+            "url": "/gallery",
+            "icon": "building"
+          }
+        ]
       },
       {
         "q": "我到了前台但没有人。该怎么办？",
         "a": "请拨打旅馆电话：+34 980 533 152。有时我们在前台之外或正在服务其他客人。重要：请拨打普通电话——WhatsApp通话不会接听。服务时间：10:00–21:00。",
         "links": [
-          { "label": "致电", "url": "tel:+34980533152", "icon": "phone" },
-          { "label": "通过WhatsApp联系", "url": "https://wa.me/34639980253", "icon": "message-circle" }
+          {
+            "label": "致电",
+            "url": "tel:+34980533152",
+            "icon": "phone"
+          },
+          {
+            "label": "通过WhatsApp联系",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
         "q": "我打电话了但没有人接。",
         "a": "请确认号码正确：+34 980 533 152。有时我们同时接到多个电话。请约10分钟后再试。您也可以发邮件至hostalsol{'@'}outlook.com或通过WhatsApp +34 639 980 253联系。重要：WhatsApp通话不会接听。",
         "links": [
-          { "label": "发送电子邮件", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" },
-          { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" },
-          { "label": "重新致电", "url": "tel:+34980533152", "icon": "phone" }
+          {
+            "label": "发送电子邮件",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          },
+          {
+            "label": "WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "重新致电",
+            "url": "tel:+34980533152",
+            "icon": "phone"
+          }
         ]
       },
       {
@@ -402,119 +803,317 @@
         "q": "我想预订但没有空房。你们能帮忙吗？",
         "a": "若所选日期在未来2-3个月内——可能已满房。请不时查看网站，看是否有取消的预订。有时我们会为热门日期（复活节、Zetta音乐会）建立候补名单。",
         "links": [
-          { "label": "查看可用情况", "url": "/booking", "icon": "search" },
-          { "label": "通过WhatsApp联系", "url": "https://wa.me/34639980253", "icon": "message-circle" }
+          {
+            "label": "查看可用情况",
+            "url": "/booking",
+            "icon": "search"
+          },
+          {
+            "label": "通过WhatsApp联系",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
         "q": "可以电话预订吗？",
         "a": "我们只接受通过官网在线预付款的预订。仅凭电话预订而不付款是不可能的。建议在我们官网预订——这里保证最优价格。",
         "links": [
-          { "label": "在线预订", "url": "/booking", "icon": "credit-card" },
-          { "label": "致电获取帮助", "url": "tel:+34980533152", "icon": "phone" }
+          {
+            "label": "在线预订",
+            "url": "/booking",
+            "icon": "credit-card"
+          },
+          {
+            "label": "致电获取帮助",
+            "url": "tel:+34980533152",
+            "icon": "phone"
+          }
         ]
       },
       {
         "q": "预订需要哪些信息？",
         "a": "我们需要：全名、电话、电子邮件、邮寄地址和付款信息。入住时，所有14岁及以上的客人须根据皇家法令933/2021出示有效证件。",
         "links": [
-          { "label": "证件要求", "url": "/checkin", "icon": "file-text" },
-          { "label": "预订", "url": "/booking", "icon": "calendar-check" }
+          {
+            "label": "证件要求",
+            "url": "/checkin",
+            "icon": "file-text"
+          },
+          {
+            "label": "预订",
+            "url": "/booking",
+            "icon": "calendar-check"
+          }
         ]
       },
       {
         "q": "我没有收到预订确认邮件。",
         "a": "若预订后未收到确认邮件——请通过电话、电子邮件或WhatsApp联系我们核实。也请检查垃圾邮件文件夹。",
         "links": [
-          { "label": "通过WhatsApp联系", "url": "https://wa.me/34639980253", "icon": "message-circle" },
-          { "label": "发送电子邮件", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }
+          {
+            "label": "通过WhatsApp联系",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "发送电子邮件",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
         ]
       },
       {
         "q": "我可以指定特定客房吗？",
         "a": "可以，请通过短信、WhatsApp或电话告诉我们——我们会尽力为您预留。不能始终保证指定客房，但我们会尽一切努力。越早告知越好。",
-        "links": [{ "label": "客房类型", "url": "/gallery", "icon": "building" }]
+        "links": [
+          {
+            "label": "客房类型",
+            "url": "/gallery",
+            "icon": "building"
+          }
+        ]
       },
       {
         "q": "如何取消预订？",
         "a": "在到达前48小时内可免费取消（如价格允许——不可退款价格不允许取消）。取消请使用确认邮件中的链接或登录我们官网的账户。退款通过相同支付方式退回，通常需5-15个工作日。若您通过外部平台预订（Booking、Expedia等）——请通过该平台取消。",
-        "tags": ["退款", "退钱", "更改预订", "取消政策", "免费取消"],
-        "links": [{ "label": "我的账户", "url": "/booking", "icon": "user" }]
+        "tags": [
+          "退款",
+          "退钱",
+          "更改预订",
+          "取消政策",
+          "免费取消"
+        ],
+        "links": [
+          {
+            "label": "我的账户",
+            "url": "/booking",
+            "icon": "user"
+          }
+        ]
       },
       {
         "q": "如何申请发票？",
         "a": "可从入住最后一天起至退房后30天内申请发票。预订时请提供所有必要的税务信息（姓名/公司、税号、地址）。发票以PDF格式发送至您的电子邮件。",
-        "tags": ["收据", "开票", "增值税", "公司", "发票", "自由职业者"],
-        "links": [{ "label": "联系申请发票", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }]
+        "tags": [
+          "收据",
+          "开票",
+          "增值税",
+          "公司",
+          "发票",
+          "自由职业者"
+        ],
+        "links": [
+          {
+            "label": "联系申请发票",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
+        ]
       },
       {
         "q": "我在旅馆忘了东西怎么办？",
         "a": "若您认为遗忘了物品——请尽快联系我们。找到的物品保存30天。我们不负责安排或支付邮寄费用——快递服务须由客人自行预约。",
-        "tags": ["遗忘物品", "失物", "找到的物品", "快递", "遗忘的电话", "钱包", "钥匙"],
+        "tags": [
+          "遗忘物品",
+          "失物",
+          "找到的物品",
+          "快递",
+          "遗忘的电话",
+          "钱包",
+          "钥匙"
+        ],
         "links": [
-          { "label": "通过WhatsApp联系", "url": "https://wa.me/34639980253", "icon": "message-circle" },
-          { "label": "发送电子邮件", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }
+          {
+            "label": "通过WhatsApp联系",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "发送电子邮件",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
         ]
       },
       {
         "q": "我觉得价格有点贵。有折扣吗？",
         "a": "我们的价格通常是萨莫拉市中心最低的。11晚及以上——自动享受10%折扣。建议在我们官网预订——价格比Booking、Expedia等平台便宜得多。",
-        "links": [{ "label": "最优价格", "url": "/booking", "icon": "tag" }]
+        "links": [
+          {
+            "label": "最优价格",
+            "url": "/booking",
+            "icon": "tag"
+          }
+        ]
       },
       {
         "q": "我想预订但还有问题。如何联系？",
         "a": "电话：+34 980 533 152，WhatsApp：+34 639 980 253，或电子邮件：hostalsol{'@'}outlook.com。电话服务时间：10:00–21:00。WhatsApp通话不接听——仅接受普通电话。",
         "links": [
-          { "label": "致电", "url": "tel:+34980533152", "icon": "phone" },
-          { "label": "通过WhatsApp联系", "url": "https://wa.me/34639980253", "icon": "message-circle" },
-          { "label": "发送电子邮件", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }
+          {
+            "label": "致电",
+            "url": "tel:+34980533152",
+            "icon": "phone"
+          },
+          {
+            "label": "通过WhatsApp联系",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "发送电子邮件",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
         ]
       },
       {
         "q": "允许吸烟吗？",
         "a": "旅馆全区严禁吸烟，包括客房、窗户、露台和公共区域。违规将处以100€至1000€的罚款用于客房清洁和除味。也禁止生火及使用蜡烛或香。",
-        "tags": ["香烟", "吸烟", "电子烟", "烟草", "蜡烛", "香", "火"]
+        "tags": [
+          "香烟",
+          "吸烟",
+          "电子烟",
+          "烟草",
+          "蜡烛",
+          "香",
+          "火"
+        ]
       },
       {
         "q": "我可以存放自行车吗？",
         "a": "可以，自行车可存放在您的客房，前提是干净（无泥土或可能污染的痕迹）。建议提前告知我们——我们会尽量安排更宽敞的客房。电梯较小；大型自行车可能需要走楼梯搬运。",
-        "tags": ["自行车", "骑行", "电动自行车", "山地车", "存放自行车"]
+        "tags": [
+          "自行车",
+          "骑行",
+          "电动自行车",
+          "山地车",
+          "存放自行车"
+        ]
       },
       {
         "q": "我对长期入住感兴趣。有特殊条件吗？",
         "a": "是的，11晚及以上——自动享受10%折扣。团体或超长入住——请联系我们。",
-        "links": [{ "label": "预订长期入住", "url": "/booking", "icon": "calendar-check" }]
+        "links": [
+          {
+            "label": "预订长期入住",
+            "url": "/booking",
+            "icon": "calendar-check"
+          }
+        ]
       },
       {
         "q": "工作人员会哪些语言？",
         "a": "旅馆工作人员仅会西班牙语。如需用其他语言沟通——请通过WhatsApp或电子邮件联系，我们会使用在线翻译工具。到达时连接免费WiFi，在您的手机上使用翻译软件——Google翻译、DeepL或Bing翻译器。",
-        "tags": ["语言", "英语", "法语", "德语", "中文", "阿拉伯语", "加利西亚语", "俄语", "意大利语", "葡萄牙语", "沟通", "翻译"],
+        "tags": [
+          "语言",
+          "英语",
+          "法语",
+          "德语",
+          "中文",
+          "阿拉伯语",
+          "加利西亚语",
+          "俄语",
+          "意大利语",
+          "葡萄牙语",
+          "沟通",
+          "翻译"
+        ],
         "links": [
-          { "label": "Google翻译", "url": "https://translate.google.com/", "icon": "languages" },
-          { "label": "DeepL翻译", "url": "https://www.deepl.com/translator", "icon": "languages" },
-          { "label": "Bing翻译器", "url": "https://www.bing.com/translator", "icon": "languages" },
-          { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" },
-          { "label": "电子邮件", "url": "mailto:hostalsol{'@'}outlook.com", "icon": "mail" }
+          {
+            "label": "Google翻译",
+            "url": "https://translate.google.com/",
+            "icon": "languages"
+          },
+          {
+            "label": "DeepL翻译",
+            "url": "https://www.deepl.com/translator",
+            "icon": "languages"
+          },
+          {
+            "label": "Bing翻译器",
+            "url": "https://www.bing.com/translator",
+            "icon": "languages"
+          },
+          {
+            "label": "WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "电子邮件",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
         ]
       },
       {
         "q": "我可以用别人的名字预订吗？",
         "a": "不建议这样做。最安全的方式是每位客人以自己的名字预订。若您为他人预订——请留下该人的全名和电话，并确保他/她以本人信息在线办理入住。截图不作为确认凭证。",
-        "tags": ["以他人名义预订", "第三方", "预订持有人", "安全", "核实", "截图", "为他人预订"],
+        "tags": [
+          "以他人名义预订",
+          "第三方",
+          "预订持有人",
+          "安全",
+          "核实",
+          "截图",
+          "为他人预订"
+        ],
         "links": [
-          { "label": "到达指引", "url": "/checkin", "icon": "file-text" },
-          { "label": "WhatsApp", "url": "https://wa.me/34639980253", "icon": "message-circle" }
+          {
+            "label": "到达指引",
+            "url": "/checkin",
+            "icon": "file-text"
+          },
+          {
+            "label": "WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
         "q": "客房内有哪些设备？",
         "a": "私人浴室、wifi（密码和更多说明在门后的纸上）、书桌和椅子、暖气（自动控制）、带遥控器的空调、带遥控器的电视、应要求提供吹风机和熨斗、扶手椅、窗户、配有床单的床。在浴室里您会找到基本香皂、洗发水和洗手液，以及毛巾。如果您还需要什么，请告诉我们。",
-        "tags": ["设备", "客房", "设施", "服务", "浴室", "wifi", "空调", "电视", "吹风机", "熨斗", "床", "毛巾"]
+        "tags": [
+          "设备",
+          "客房",
+          "设施",
+          "服务",
+          "浴室",
+          "wifi",
+          "空调",
+          "电视",
+          "吹风机",
+          "熨斗",
+          "床",
+          "毛巾"
+        ]
       },
       {
         "q": "谁制作了这个网站？",
         "a": "此网站由 Juan Manuel Béc (https://juanman.tech/) 开发。源代码是开源的，可在 GitHub 上获取：https://github.com/JuanmanDev/HostalSolZamoraWeb2026",
-        "tags": ["网络", "开发者", "作者", "代码", "github", "juanman", "技术"]
+        "tags": [
+          "网络",
+          "开发者",
+          "作者",
+          "代码",
+          "github",
+          "juanman",
+          "技术"
+        ]
+      },
+      {
+        "q": "我可以看旧网站吗？",
+        "a": "可以，您可以通过以下链接查看我们以前网站的设计和内容。",
+        "links": [
+          {
+            "label": "查看旧网站",
+            "url": "/old/hostalsolzamora.com/index.html",
+            "icon": "external-link"
+          }
+        ]
       }
     ]
   },
@@ -525,7 +1124,12 @@
     "discountLabel": "折扣",
     "discountNote": "仅在官网",
     "note": "直接价格总是比Booking、Expedia等平台更便宜。",
-    "features": ["安全支付", "即时确认", "最优价格保证", "48小时免费取消"],
+    "features": [
+      "安全支付",
+      "即时确认",
+      "最优价格保证",
+      "48小时免费取消"
+    ],
     "bookBtn": "前往预订",
     "helpText": "预订系统有问题？",
     "helpLink": "前往完整预订页面 →"
@@ -676,7 +1280,12 @@
       "heading": "预订客房",
       "discountLabel": "在官网预订享受15%折扣",
       "discountSub": "直接价格总是比Booking、Expedia等平台便宜",
-      "features": ["即时确认", "安全支付", "最优价格保证", "48小时前免费取消*"],
+      "features": [
+        "即时确认",
+        "安全支付",
+        "最优价格保证",
+        "48小时前免费取消*"
+      ],
       "iframeTitle": "Hostal Sol Zamora预订系统",
       "troubleText": "预订系统有问题？请致电：",
       "backHome": "← 返回首页",
@@ -733,28 +1342,60 @@
       "docTypes": [
         {
           "name": "DNI / IDESP",
-          "fields": ["证件号码", "支持编号", "有效期", "出生日期", "性别", "全名", "国籍"]
+          "fields": [
+            "证件号码",
+            "支持编号",
+            "有效期",
+            "出生日期",
+            "性别",
+            "全名",
+            "国籍"
+          ]
         },
         {
           "name": "护照",
-          "fields": ["护照号码", "完整MRZ行", "签发日期", "有效期", "国籍", "全名"]
+          "fields": [
+            "护照号码",
+            "完整MRZ行",
+            "签发日期",
+            "有效期",
+            "国籍",
+            "全名"
+          ]
         },
         {
           "name": "NIE / TIE",
-          "fields": ["NIE/TIE号码", "支持编号", "有效期"]
+          "fields": [
+            "NIE/TIE号码",
+            "支持编号",
+            "有效期"
+          ]
         },
         {
           "name": "驾照（欧盟）",
-          "fields": ["驾照号码", "姓名"]
+          "fields": [
+            "驾照号码",
+            "姓名"
+          ]
         }
       ],
       "backHome": "← 返回首页",
       "docFields": [
-        "全名", "姓氏", "证件类型（护照/NIE/居留许可）",
-        "证件号码", "支持编号/序列号（如有）",
-        "签发日期", "有效期", "出生日期",
-        "出生国家", "居住国家", "自治区（西班牙适用）",
-        "国籍", "性别", "联系邮箱", "联系电话"
+        "全名",
+        "姓氏",
+        "证件类型（护照/NIE/居留许可）",
+        "证件号码",
+        "支持编号/序列号（如有）",
+        "签发日期",
+        "有效期",
+        "出生日期",
+        "出生国家",
+        "居住国家",
+        "自治区（西班牙适用）",
+        "国籍",
+        "性别",
+        "联系邮箱",
+        "联系电话"
       ],
       "ineNote": "INE——旅游统计：根据公共统计职能法，国家统计局（INE）需要每位客人的来源国家或自治区，以编制国家旅游统计数据。数据以匿名聚合方式发送。"
     },
@@ -813,13 +1454,34 @@
       "mapBtn": "在地图上找到我们",
       "distancesTitle": "距旅馆的距离",
       "distances": [
-        { "name": "火车站", "value": "1.2公里 · 步行15分钟" },
-        { "name": "汽车站", "value": "1公里 · 步行13分钟" },
-        { "name": "主广场/历史古城", "value": "450米 · 步行5分钟" },
-        { "name": "La Marina停车场", "value": "400米 · 步行4分钟" },
-        { "name": "Constitución停车场", "value": "260米 · 步行2分钟" },
-        { "name": "萨拉曼卡", "value": "67公里 · 开车48分钟" },
-        { "name": "巴利亚多利德", "value": "101公里 · 开车1小时11分钟" }
+        {
+          "name": "火车站",
+          "value": "1.2公里 · 步行15分钟"
+        },
+        {
+          "name": "汽车站",
+          "value": "1公里 · 步行13分钟"
+        },
+        {
+          "name": "主广场/历史古城",
+          "value": "450米 · 步行5分钟"
+        },
+        {
+          "name": "La Marina停车场",
+          "value": "400米 · 步行4分钟"
+        },
+        {
+          "name": "Constitución停车场",
+          "value": "260米 · 步行2分钟"
+        },
+        {
+          "name": "萨拉曼卡",
+          "value": "67公里 · 开车48分钟"
+        },
+        {
+          "name": "巴利亚多利德",
+          "value": "101公里 · 开车1小时11分钟"
+        }
       ],
       "formTitle": "发送消息",
       "formIntro": "填写表单，我们会通过电子邮件回复您。若需更快回复，最好致电或发WhatsApp。",
