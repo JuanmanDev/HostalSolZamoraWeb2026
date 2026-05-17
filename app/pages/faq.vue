@@ -235,6 +235,10 @@ useJsonLd({
   margin-top: 2px;
 }
 
+@media (max-width: 800px) {
+  .faq-contact-btn { width: 100%; }
+}
+
 .faq-search {
   position: relative;
   max-width: 600px;
@@ -335,9 +339,11 @@ useJsonLd({
 .faq-info-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  
   gap: 16px;
   margin: 48px 0 64px;
   width: 100%;
+  max-width: 1275px;
 }
 
 @media (min-width: 1200px) {
