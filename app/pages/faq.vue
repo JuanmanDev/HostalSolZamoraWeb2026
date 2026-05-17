@@ -1,7 +1,15 @@
 <template>
-  <div>
+  <div class="faq-page">
     <!-- Navbar -->
     <LayoutTheNavbar :solid-from-start="true" />
+
+    <!-- Background decorative elements -->
+    <div class="clover-decoration clover-decoration--left">
+      <img src="/images/logo-clover.png" alt="" aria-hidden="true" />
+    </div>
+    <div class="clover-decoration clover-decoration--right">
+      <img src="/images/logo-clover.png" alt="" aria-hidden="true" />
+    </div>
 
     <main class="page-content">
       <UiSectionTag>{{ t('nav.faq') }}</UiSectionTag>
@@ -30,19 +38,21 @@
         />
       </div>
 
-      <!-- Results -->
-      <div v-if="filteredItems.length === 0" class="faq-empty">
-        {{ t('pages.faq.noResults') }}
-      </div>
-
-      <div v-else class="faq-list">
-        <div v-for="(item, i) in filteredItems" :key="i" class="faq-item">
-          <button class="faq-item__q" @click="open = open === i ? null : i">
+      <!-- List (always shows all items) -->
+      <div class="faq-list">
+        <div 
+          v-for="(item, i) in allItems" 
+          :key="i" 
+          :id="`faq-item-${i}`"
+          class="faq-item"
+          :class="{ 'faq-item--highlight': isMatch(item) }"
+        >
+          <button class="faq-item__q" @click="toggle(i)">
             <span v-html="highlight(item.q)" />
-            <LucideIcon :name="open === i ? 'minus' : 'plus'" :size="18" color="var(--green)" />
+            <LucideIcon :name="openIndices.includes(i) ? 'minus' : 'plus'" :size="18" color="var(--green)" />
           </button>
           <Transition name="expand">
-            <div v-if="open === i" class="faq-item__a">
+            <div v-if="openIndices.includes(i)" class="faq-item__a">
               <p class="faq-item__a-text">{{ item.a }}</p>
               <div v-if="item.links?.length" class="faq-item__links">
                 <NuxtLink
@@ -110,7 +120,7 @@ const allItems = computed(() =>
   (tm('faq.items') as any[]).map((item: any) => ({
     q: rt(item.q),
     a: rt(item.a),
-    tags: item.tags?.map((t: any) => rt(t)) as string[] | undefined,
+    tags: item.tags?.map((tag: any) => rt(tag)) as string[] | undefined,
     links: item.links?.map((l: any) => ({
       label: rt(l.label),
       url: rt(l.url),
@@ -118,22 +128,55 @@ const allItems = computed(() =>
     })),
   })) as FaqItem[]
 )
+
 const query = ref((route.query.q as string) || '')
-const open  = ref<number | null>(null)
+const openIndices = ref<number[]>([])
+
+function toggle(index: number) {
+  if (openIndices.value.includes(index)) {
+    openIndices.value = openIndices.value.filter(i => i !== index)
+  } else {
+    openIndices.value.push(index)
+  }
+}
 
 function normalize(text: string): string {
   return text.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
 }
 
-const filteredItems = computed(() => {
-  if (!query.value.trim()) return allItems.value
+function isMatch(item: FaqItem): boolean {
+  if (!query.value.trim()) return false
   const q = normalize(query.value)
-  return allItems.value.filter(item =>
+  return (
     normalize(item.q).includes(q) ||
     normalize(item.a).includes(q) ||
     (item.tags?.some(tag => normalize(tag).includes(q)) ?? false)
   )
-})
+}
+
+// Watch query to auto-open matches and scroll
+watch(query, (newQuery) => {
+  if (!newQuery.trim()) {
+    openIndices.value = []
+    return
+  }
+
+  const matches = allItems.value
+    .map((item, index) => ({ item, index }))
+    .filter(({ item }) => isMatch(item))
+  
+  openIndices.value = matches.map(m => m.index)
+
+  if (matches.length > 0) {
+    const firstMatchIndex = matches[0].index
+    nextTick(() => {
+      const el = document.getElementById(`faq-item-${firstMatchIndex}`)
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' })
+      }
+    })
+  }
+}, { immediate: true })
 
 function highlight(text: string): string {
   if (!query.value.trim()) return text
@@ -175,10 +218,52 @@ useJsonLd({
 </script>
 
 <style scoped>
+.faq-page {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.clover-decoration {
+  position: fixed;
+  z-index: -1;
+  opacity: 0.1;
+  /* width: min(600px, 45vw); */
+  pointer-events: none;
+  filter: grayscale(0.5);
+}
+.clover-decoration img {
+  width: 100%;
+  height: auto;
+}
+
+.clover-decoration--left {
+  left: -75%;
+  top: 20%;
+  animation: float-slow-up 30s ease-in-out infinite alternate;
+}
+
+.clover-decoration--right {
+  right: -75%;
+  bottom: 10%;
+  animation: float-slow-down 35s ease-in-out infinite alternate;
+}
+
+@keyframes float-slow-up {
+  0% { transform: translateY(10%) rotate(-5deg); }
+  100% { transform: translateY(-10%) rotate(5deg); }
+}
+
+@keyframes float-slow-down {
+  0% { transform: translateY(-10%) rotate(5deg); }
+  100% { transform: translateY(10%) rotate(-5deg); }
+}
+
 .page-content {
   max-width: 1200px;
   margin: 0 auto;
   padding: 100px max(24px, 5vw) 80px;
+  position: relative;
 }
 
 .page-heading {
@@ -265,8 +350,6 @@ useJsonLd({
 }
 .faq-search__input:focus { border-color: var(--green); }
 
-.faq-empty { color: var(--dark-muted); font-size: 15px; margin-bottom: 40px; }
-
 .faq-list { 
   display: flex; 
   flex-direction: column; 
@@ -280,7 +363,15 @@ useJsonLd({
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s, transform 0.3s, border-color 0.3s;
+  border: 1px solid transparent;
 }
+.faq-item--highlight {
+  border-color: var(--green);
+  box-shadow: 0 4px 12px rgba(104, 126, 86, 0.15);
+  transform: translateY(-2px);
+}
+
 .faq-item__q {
   width: 100%;
   text-align: left;
@@ -373,7 +464,7 @@ useJsonLd({
 /* Expand transition */
 .expand-enter-active, .expand-leave-active {
   transition: opacity 0.2s, max-height 0.4s ease;
-  max-height: 600px;
+  max-height: 800px;
   overflow: hidden;
 }
 .expand-enter-from, .expand-leave-to { opacity: 0; max-height: 0; }
