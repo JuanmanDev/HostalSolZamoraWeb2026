@@ -132,6 +132,7 @@ const chips = [
   display: flex;
   gap: 12px;
   align-items: center;
+  flex-wrap: wrap;
 }
 .map-section__arrive-btn { font-size: 14px; align-self: flex-start; }
 
