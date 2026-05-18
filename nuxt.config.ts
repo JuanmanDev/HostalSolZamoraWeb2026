@@ -119,6 +119,102 @@ export default defineNuxtConfig({
     enabled: true,
   },
 
+  // Public runtime config — overridable with NUXT_PUBLIC_SITE_URL env var
+  runtimeConfig: {
+    public: {
+      siteUrl: 'https://hostalsolzamora.com',
+      siteName: 'Hostal Sol Zamora',
+      defaultOgImage: '/images/og-default.jpg',
+    },
+  },
+
+  vite: {
+    server: {
+      allowedHosts: ['89a4-79-116-52-42.ngrok-free.app'],
+    },
+  },
+
+  image: {
+    dir: join(process.cwd(), 'public'),
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536,
+      '2xl': 1536,
+      '3xl': 2560,
+      '4k': 3840
+    },
+    densities: [1, 2],
+    quality: 90,
+    format: ['webp', 'avif', 'jpg'],
+    sharp: {
+      rotate: true
+    },
+    ipx: {
+      sharpOptions: {
+        autoOrient: true,
+      },
+    },
+  },
+
+  css: ['~/assets/css/main.css', 'vue3-carousel/dist/carousel.css'],
+
+  appConfig: {
+    roomImages,
+  },
+
+  i18n: {
+    bundle: { optimizeTranslationDirective: false },
+    langDir: 'locales',
+    locales: [
+      { code: 'es', file: 'es.json', name: 'Español',    language: 'es-ES' },
+      { code: 'en', file: 'en.json', name: 'English',    language: 'en-GB' },
+      { code: 'pt', file: 'pt.json', name: 'Português',  language: 'pt-PT' },
+      { code: 'fr', file: 'fr.json', name: 'Français',   language: 'fr-FR' },
+      { code: 'de', file: 'de.json', name: 'Deutsch',    language: 'de-DE' },
+      { code: 'it', file: 'it.json', name: 'Italiano',   language: 'it-IT' },
+      { code: 'nl', file: 'nl.json', name: 'Nederlands', language: 'nl-NL' },
+      { code: 'ro', file: 'ro.json', name: 'Română',     language: 'ro-RO' },
+      { code: 'ru', file: 'ru.json', name: 'Русский',    language: 'ru-RU' },
+      { code: 'uk', file: 'uk.json', name: 'Українська', language: 'uk-UA' },
+      { code: 'pl', file: 'pl.json', name: 'Polski',     language: 'pl-PL' },
+      { code: 'el', file: 'el.json', name: 'Ελληνικά',   language: 'el-GR' },
+      { code: 'gl', file: 'gl.json', name: 'Galego',     language: 'gl-ES' },
+      { code: 'ca', file: 'ca.json', name: 'Català',     language: 'ca-ES' },
+      { code: 'eu', file: 'eu.json', name: 'Euskara',    language: 'eu-ES' },
+      { code: 'ar', file: 'ar.json', name: 'العربية',    language: 'ar-MA', dir: 'rtl' },
+      { code: 'zh', file: 'zh.json', name: '中文',        language: 'zh-CN' },
+      { code: 'ko', file: 'ko.json', name: '한국어',       language: 'ko-KR' },
+      { code: 'ja', file: 'ja.json', name: '日本語',       language: 'ja-JP' },
+      { code: 'wo', file: 'wo.json', name: 'Wolof',      language: 'wo-SN' },
+      { code: 'ber', file: 'ber.json', name: 'Tamaziɣt', language: 'ber-MA' },
+    ],
+    defaultLocale: 'es',
+    strategy: 'prefix_except_default',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'hsz_lang',
+      redirectOn: 'root',
+      fallbackLocale: 'es',
+    },
+    baseUrl: 'https://hostalsolzamora.com',
+    pages: {
+      'index':                    { en: '/', es: '/' },
+      'galeria':                  { en: '/gallery', es: '/galeria' },
+      'reserva':                  { en: '/booking', es: '/reserva' },
+      'checkin':                  { en: '/check-in', es: '/checkin' },
+      'faq':                      { en: '/faq', es: '/faq' },
+      'parking':                  { en: '/parking', es: '/parking' },
+      'contacto':                 { en: '/contact', es: '/contacto' },
+      'sobre-nosotros':           { en: '/about', es: '/sobre-nosotros' },
+      'politica-de-cookies-ue':   { en: '/cookie-policy', es: '/politica-de-cookies-ue' },
+      'terminos-y-condiciones':   { en: '/terms-and-conditions', es: '/terminos-y-condiciones' },
+    },
+  },
+
   // Route rules: 301-redirect old WordPress URLs to new equivalents,
   // pre-render every page at build time, and set aggressive cache
   // headers for static asset paths.
@@ -171,8 +267,7 @@ export default defineNuxtConfig({
     prerender: {
       crawlLinks: true,
       ignoreErrors: true,
-      concurrency: 1, // Be conservative to avoid crashing the runner
-      interval: 100, // Small delay between requests
+      concurrency: 2, // Slightly more aggressive but still safe
     },
   },
 
