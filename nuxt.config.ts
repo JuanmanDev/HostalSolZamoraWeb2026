@@ -55,6 +55,28 @@ export default defineNuxtConfig({
     'nuxt-umami'
   ],
 
+  linkChecker: {
+    enabled: true,
+    runOnBuild: true,
+    // Ignore the base URL case because GitHub Pages requires the repo name case
+    excludeLinks: [
+      '/HostalSolZamoraWeb2026/**',
+      'https://hostalsolzamora.com/**',
+    ],
+    // Skip checking certain rules that are too noisy or unavoidable
+    skipInspections: [
+      'no-uppercase-chars',
+      'link-text',
+      'no-trailing-slash',
+    ],
+    // Only report real errors (404s) to keep logs clean
+    report: {
+      html: false,
+      markdown: false,
+    },
+    showLiveInspections: false,
+  },
+
   umami: {
     host: 'https://umami.hostalsol.79.72.51.163.nip.io',
     id: '9afca95c-0468-4ef2-adb0-5bfc7bf15889',

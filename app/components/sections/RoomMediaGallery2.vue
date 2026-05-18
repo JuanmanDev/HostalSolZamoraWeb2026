@@ -72,8 +72,6 @@ const mediaItems = computed((): MediaItem[] => {
     const videoItems: MediaItem[] = roomsToShow
       .filter(room => ROOM_YT[room])
       .map(room => ({ type: 'video', room }))
-    
-      console.log('Video items for', activeRoom.value, videoItems)
 
     if (mediaFilter.value === 'all') {
       items.push(...videoItems)

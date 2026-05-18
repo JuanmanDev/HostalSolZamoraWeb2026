@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar" :class="{ 'navbar--solid': scrolled }">
     <div class="navbar__inner">
-      <NuxtLink :to="localePath('index')" class="navbar__logo-btn" @click.prevent="handleLogoClick">
+      <NuxtLink :to="localePath('index')" class="navbar__logo-btn" @click.prevent="handleLogoClick" aria-label="Hostal Sol Zamora">
         <span class="navbar__logo-desktop">
           <NuxtPicture :src="LOGO_ICON_SVG" alt="" class="navbar__logo-icon" width="64" height="64" />
           <NuxtPicture :src="LOGO_TEXT_SVG" alt="Hostal Sol Zamora" class="navbar__logo-type" width="200" height="48" />
