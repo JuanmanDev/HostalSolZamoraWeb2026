@@ -28,8 +28,14 @@
         </div>
       </div>
 
-      <!-- SiteMinder IBE widget -->
-      <div class="ibe" data-region="emea" data-channelcode="hostalsoldirect" :data-query-check_in_date="checkInDate" data-query-number_adults="2" :data-query-locale="siteMinderLocale" data-widget="embed" style="min-height: 480px"></div>
+      <!-- SiteMinder IBE Iframe -->
+      <iframe
+        class="ibe-iframe"
+        :src="bookingUrl"
+        frameborder="0"
+        scrolling="yes"
+        title="Hostal Sol Zamora Booking"
+      ></iframe>
 
       <p class="trouble-text">
         {{ t('pages.reserva.troubleText') }}
@@ -63,8 +69,11 @@ const SITEMINDER_LOCALES = new Set(['en', 'es', 'fr', 'de', 'it', 'nl', 'pt', 'r
 const siteMinderLocale = computed(() => SITEMINDER_LOCALES.has(locale.value) ? locale.value : 'en')
 
 const bookingUrl = computed(() => {
+  // Use a string template but ensure the structure is clean. 
+  // We hardcode promocode=WEB to ensure it is always applied as requested.
   const base = 'https://app.thebookingbutton.com/properties/hostalsoldirect?skin=0&locale=' + computedLocale.value + '&promocode=WEB&currency=EUR&trackPage=no'
   const rateId = route.query.rateId as string | undefined
+  
   if (!rateId) return base
   return `${base}&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&items[0][rateId]=${rateId}`
 })
@@ -106,20 +115,13 @@ const features  = computed(() =>
 )
 const featIcons = ['zap', 'shield-check', 'lock', 'x-circle']
 
-onMounted(() => {
-  const script = document.createElement('script')
-  script.src = 'https://widget.siteminder.com/ibe.min.js'
-  script.async = true
-  document.head.appendChild(script)
-})
 </script>
 
 <style scoped>
 .page-content {
-  max-width: 1100px;
+  max-width: 1240px; /* Slightly wider container for the iframe */
   margin: 0 auto;
   padding: 92px 0 80px;
-  /* padding: 92px max(24px, 5vw) 80px; */
 }
 
 .title__block {
@@ -129,6 +131,7 @@ onMounted(() => {
   gap: 24px;
   flex-wrap: wrap;
   margin-bottom: 32px;
+  padding: 0 max(24px, 5vw); /* Add padding to title block */
 }
 
 @media (max-width: 768px) {
@@ -138,36 +141,14 @@ onMounted(() => {
 }
 
 .page-sub-heading, .page-heading, .discount-banner {
-  margin: 0 max(24px, 5vw);
+  /* No global side margin here, handled by title__block and features container */
 }
+
 .page-heading {
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 500;
   line-height: 1.1;
   margin-bottom: 20px;
-}
-
-.discount-banner {
-  background: var(--green);
-  color: #fff;
-  border-radius: 12px;
-  padding: 18px 24px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 24px;
-  flex-wrap: wrap;
-}
-.discount-banner__text { flex: 1; }
-.discount-banner__label { font-weight: 700; font-size: 16px; margin-bottom: 2px; }
-.discount-banner__sub   { font-size: 13.5px; color: rgba(255,255,255,0.8); }
-.discount-banner__badge {
-  background: rgba(255,255,255,0.18);
-  border-radius: 8px;
-  padding: 8px 16px;
-  font-weight: 800;
-  font-size: 20px;
-  letter-spacing: 0.04em;
 }
 
 .features {
@@ -179,7 +160,7 @@ onMounted(() => {
   justify-content: space-evenly;
   margin-bottom: 28px;
   overflow-y: auto;
-  padding: 0 10px;
+  padding: 0 max(24px, 5vw); /* Match page alignment */
   scrollbar-width: none;
 }
 
@@ -204,22 +185,25 @@ onMounted(() => {
 }
 .trouble-link { color: var(--green); font-weight: 700; margin-left: 4px; }
 
-.ibe {
-  width: 100%;
-  max-width: 2240px;
+.ibe-iframe {
+  width: calc(100% - 40px); /* Minimal margin on bigger screens */
+  max-width: 1100px;
+  height: 2200px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
   margin: 0 auto;
-}
-
-.ibe :deep(iframe) {
-  width: 100%;
+  display: block;
 }
 
 @media (max-width: 768px) {
-  .ibe {
-    max-width: 100vw;
-    width: 100vw;
-    margin: 0 -16px;
+  .ibe-iframe {
+    width: 100%; /* Full width on mobile */
+    max-width: 100%;
+    margin: 0;
     border-radius: 0;
+    box-shadow: none;
+    height: 2500px; /* Taller for mobile layout */
   }
 }
 
@@ -227,13 +211,14 @@ onMounted(() => {
   display: block;
   width: fit-content;
   max-width: calc(100% - 2rem);
-  margin: 18px auto 0;
+  margin: 32px auto 0;
   text-align: center;
 
   background: var(--green);
   color: white;
   font-weight: 700;
-  padding: 10px;
+  padding: 12px 24px;
   border-radius: 8px;
+  text-decoration: none;
 }
 </style>
