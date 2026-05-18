@@ -112,6 +112,8 @@ export default defineNuxtConfig({
     ],
     // AI crawlers welcome — llms.txt provides machine-readable site info
     blockAiBots: false,
+    // Fix: Nuxt Robots cannot generate robots.txt when using a base URL
+    robotsTxt: false,
   },
 
   // ── OG Image ───────────────────────────────────────────────────────────────
@@ -143,13 +145,10 @@ export default defineNuxtConfig({
       lg: 1024,
       xl: 1280,
       xxl: 1536,
-      '2xl': 1536,
-      '3xl': 2560,
-      '4k': 3840
     },
     densities: [1, 2],
     quality: 90,
-    format: ['webp', 'avif', 'jpg'],
+    format: ['webp', 'jpg'],
     sharp: {
       rotate: true
     },
@@ -267,7 +266,7 @@ export default defineNuxtConfig({
     prerender: {
       crawlLinks: true,
       ignoreErrors: true,
-      concurrency: 2, // Slightly more aggressive but still safe
+      concurrency: 1, // Be strict to avoid OG image render timeouts
     },
   },
 
