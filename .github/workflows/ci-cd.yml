@@ -20,16 +20,28 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '24'
+          node-version: '22'
           cache: 'npm'
 
+      - name: Restore Nuxt Cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            .nuxt
+            node_modules/.cache
+          key: ${{ runner.os }}-nuxt-${{ hashFiles('package-lock.json') }}-${{ hashFiles('app/**/*.vue', 'app/**/*.ts', 'nuxt.config.ts') }}
+          restore-keys: |
+            ${{ runner.os }}-nuxt-${{ hashFiles('package-lock.json') }}-
+            ${{ runner.os }}-nuxt-
+
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Generate Static Site
         run: npm run generate
         env:
           NUXT_APP_BASE_URL: /HostalSolZamoraWeb2026/
+          NODE_OPTIONS: --max-old-space-size=4096
 
       - name: Upload Static Files Artifact
         uses: actions/upload-artifact@v4
@@ -47,6 +59,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Download Static Files
+        uses: actions/download-artifact@v4
+        with:
+          name: static-site
+          path: .output/public
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
@@ -79,7 +97,8 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          platforms: linux/amd64,linux/arm64
+          file: ./Dockerfile
+          platforms: linux/amd64
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}

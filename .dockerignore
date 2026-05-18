@@ -1,0 +1,17 @@
+.git
+.gitignore
+.github
+.nuxt
+node_modules
+project.tar.gz
+README.md
+AUDIT.md
+DESIGN_BRIEF.md
+faq.md
+parking.md
+pictures
+app
+i18n
+server
+*.tar.gz
+*.zip
