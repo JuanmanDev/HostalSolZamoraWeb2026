@@ -15,7 +15,7 @@
         <p class="galeria__text">{{ t('pages.galeria.p4') }}</p>
 
         <!-- Lista de todas las características de las habtaionces del hostal -->
-         <SectionsRoomAmenityChipsTranslated baseKey="rooms.amenities" />
+         <SectionsRoomAmenityChips :items="amenities" />
       </div>
 
       <!-- Room Media Gallery -->
@@ -34,9 +34,18 @@
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n()
+import { AMENITY_ICONS } from '~/composables/useRooms'
+
+const { t, tm, rt } = useI18n()
 const route  = useRoute()
 const router = useRouter()
+
+const amenities = computed(() =>
+  (tm('rooms.amenities') as any[]).map((a: any, i: number) => ({
+    label: rt(a),
+    icon: AMENITY_ICONS[i] || 'check'
+  }))
+)
 
 useSeo({
   title:       computed(() => t('pages.galeria.title')),

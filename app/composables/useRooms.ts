@@ -100,3 +100,29 @@ export function useRooms() {
 
   return { photoUrl, roomPhotoPaths, roomKeys, typeKeys }
 }
+
+export const AMENITY_ICONS = [
+  'tv',               // 0: TV
+  'wifi',             // 1: WiFi
+  'shower-head',      // 2: Bathroom
+  'laptop',           // 3: Desk
+  'thermometer',      // 4: Heating
+  'droplets',         // 5: Amenities
+  'bed',              // 6: Towels
+  'wind',             // 7: Air Conditioning
+  'zap',              // 8: Hair dryer
+  'shirt',            // 9: Wardrobe
+  'spray-can',        // 10: Cleaning
+  'armchair',         // 11: Chair
+  'cctv',             // 12: CCTV
+  'arrow-up-down',    // 13: Elevator
+]
+
+export function getExtraIcon(label: string): string {
+  const l = label.toLowerCase()
+  if (l.includes('balcón') || l.includes('balcony')) return 'building'
+  if (l.includes('cama')   || l.includes('bed'))     return 'bed'
+  if (l.includes('tv'))                              return 'tv'
+  if (l.includes('wifi'))                            return 'wifi'
+  return 'check'
+}

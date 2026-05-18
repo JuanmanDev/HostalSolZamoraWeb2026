@@ -55,6 +55,7 @@
 
 <script setup lang="ts">
 import type { RoomType } from '~/types'
+import { AMENITY_ICONS, getExtraIcon } from '~/composables/useRooms'
 
 const { t, tm, rt } = useI18n()
 const localePath = useLocalePath()
@@ -64,13 +65,19 @@ const roomTypes = computed(() =>
     label:     rt(type.label),
     icon:      rt(type.icon),
     photoPath: rt(type.photoPath),
-    extras:    (type.extras as any[]).map((e: any) => rt(e)),
+    extras:    (type.extras as any[]).map((e: any) => ({
+      label: rt(e),
+      icon: getExtraIcon(rt(e))
+    })),
     rateId:    rt(type.rateId),
-  })) as RoomType[]
+  })) as any[]
 )
 
 const amenities = computed(() =>
-  (tm('rooms.amenities') as any[]).map((a: any) => rt(a)) as string[]
+  (tm('rooms.amenities') as any[]).map((a: any, i: number) => ({
+    label: rt(a),
+    icon: AMENITY_ICONS[i] || 'check'
+  }))
 )
 
 </script>
