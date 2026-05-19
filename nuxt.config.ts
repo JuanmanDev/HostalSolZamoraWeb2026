@@ -282,7 +282,7 @@ export default defineNuxtConfig({
       ignoreErrors: true,
       // Aumentado a 4. Renderizará 4 páginas a la vez. 
       // Al haber aumentado la RAM a 6GB en el workflow, aguantará sin problemas.
-      concurrency: 4, 
+      concurrency: 2, 
     },
   },
 
