@@ -65,8 +65,10 @@ const bookingUrl = computed(() => {
   // Use 'WEB' as the default promocode unless one is provided in the URL query
   const queryPromocode = route.query.promocode as string | undefined
   const finalPromocode = queryPromocode || 'WEB'
+
+  const realLocal = locale.value === 'es' ? 'es' : 'en';
   
-  const base = `https://app.thebookingbutton.com/properties/hostalsoldirect?skin=0&locale=${siteMinderLocale.value}&promocode=${finalPromocode}&currency=EUR&trackPage=no`
+  const base = `https://app.thebookingbutton.com/properties/hostalsoldirect?skin=0&locale=${realLocal}&promocode=${finalPromocode}&currency=EUR&trackPage=no`
   const rateId = route.query.rateId as string | undefined
   
   if (!rateId) return base
@@ -181,9 +183,9 @@ const featIcons = ['zap', 'shield-check', 'lock', 'x-circle']
 .trouble-link { color: var(--green); font-weight: 700; margin-left: 4px; }
 
 .ibe-iframe {
-  width: calc(100% - 40px); /* Minimal margin on bigger screens */
+  width: 100%; /* Minimal margin on bigger screens */
   max-width: 1100px;
-  height: 2200px;
+  height: 2700px;
   border: none;
   border-radius: 12px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.08);
