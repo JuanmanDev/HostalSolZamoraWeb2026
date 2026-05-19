@@ -3,7 +3,7 @@
     <div class="container grid-2">
       <!-- Left: info -->
       <div>
-        <NuxtPicture
+        <NuxtImg
           :src="LOGO_SVG"
           alt="Hostal Sol"
           class="contact__logo"
