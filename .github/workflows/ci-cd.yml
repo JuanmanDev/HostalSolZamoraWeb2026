@@ -21,33 +21,35 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22'
-          cache: 'npm'
+          cache: 'npm' # Esto se encarga de la caché de NPM (~/.npm)
 
-      - name: Restore Nuxt Cache
+      # 1. Instalar dependencias PRIMERO.
+      # Esto elimina node_modules y lo recrea limpio.
+      - name: Install dependencies
+        run: npm ci
+
+      # 2. Restaurar la caché de Nuxt y las imágenes DESPUÉS de npm ci.
+      - name: Cache Nuxt & Images
         uses: actions/cache@v4
         with:
           path: |
             .nuxt
-            node_modules/.cache
-          key: ${{ runner.os }}-nuxt-${{ hashFiles('package-lock.json') }}-${{ hashFiles('app/**/*.vue', 'app/**/*.ts', 'nuxt.config.ts') }}
+            node_modules/.cache/ipx
+            node_modules/.cache/nuxt-og-image
+            node_modules/.cache/vite
+            node_modules/.cache/nitro      # <-- Caché de prerenderizado de Nitro (OG Images)
+          # Usamos el SHA del commit para la key, obligando a crear una caché nueva si el build tiene éxito.
+          key: ${{ runner.os }}-nuxt-${{ github.sha }}
+          # El restore-key rescata la caché del último build exitoso.
           restore-keys: |
-            ${{ runner.os }}-nuxt-${{ hashFiles('package-lock.json') }}-
             ${{ runner.os }}-nuxt-
-
-      - name: Install dependencies
-        run: npm ci
 
       - name: Generate Static Site
         run: npm run generate
         env:
           NUXT_APP_BASE_URL: /HostalSolZamoraWeb2026/
-          NODE_OPTIONS: --max-old-space-size=4096
-
-      - name: Upload Static Files Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: static-site
-          path: .output/public
+          # Aumentamos la memoria de Node. Los runners de Ubuntu en GitHub tienen 7GB de RAM.
+          NODE_OPTIONS: --max-old-space-size=6144
 
   publish-docker:
     runs-on: ubuntu-latest

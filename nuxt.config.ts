@@ -119,6 +119,16 @@ export default defineNuxtConfig({
   // ── OG Image ───────────────────────────────────────────────────────────────
   ogImage: {
     enabled: true,
+    // Forzamos el uso de Satori (10x más rápido que Chromium) y cacheamos las fuentes
+    fonts: [
+      'Cormorant Garamond:400',
+      'Cormorant Garamond:500',
+      'Cormorant Garamond:600',
+      'Plus Jakarta Sans:400',
+      'Plus Jakarta Sans:500',
+      'Plus Jakarta Sans:600',
+      'Plus Jakarta Sans:700'
+    ]
   },
 
   // Public runtime config — overridable with NUXT_PUBLIC_SITE_URL env var
@@ -145,6 +155,9 @@ export default defineNuxtConfig({
       lg: 1024,
       xl: 1280,
       xxl: 1536,
+      '3xl': 1920, // Pantallas Full HD
+      '4xl': 2560, // Pantallas 2K
+      '5xl': 3840, // Pantallas 4K
     },
     densities: [1, 2],
     quality: 90,
@@ -224,28 +237,28 @@ export default defineNuxtConfig({
     '/aviso-legal':               { redirect: { to: '/terminos-y-condiciones', statusCode: 301 } },
     '/ifeza':                     { redirect: { to: '/parking',                statusCode: 301 } },
 
-    // Disable OG Image generation for non-Spanish locales to speed up build
-    // (They will fall back to the defaultOgImage defined in runtimeConfig)
-    '/en/**': { ogImage: false },
-    '/pt/**': { ogImage: false },
-    '/fr/**': { ogImage: false },
-    '/de/**': { ogImage: false },
-    '/it/**': { ogImage: false },
-    '/nl/**': { ogImage: false },
-    '/ro/**': { ogImage: false },
-    '/ru/**': { ogImage: false },
-    '/uk/**': { ogImage: false },
-    '/pl/**': { ogImage: false },
-    '/el/**': { ogImage: false },
-    '/gl/**': { ogImage: false },
-    '/ca/**': { ogImage: false },
-    '/eu/**': { ogImage: false },
-    '/ar/**': { ogImage: false },
-    '/zh/**': { ogImage: false },
-    '/ko/**': { ogImage: false },
-    '/ja/**': { ogImage: false },
-    '/wo/**': { ogImage: false },
-    '/ber/**': { ogImage: false },
+    // // Disable OG Image generation for non-Spanish locales to speed up build
+    // // (They will fall back to the defaultOgImage defined in runtimeConfig)
+    // '/en/**': { ogImage: false },
+    // '/pt/**': { ogImage: false },
+    // '/fr/**': { ogImage: false },
+    // '/de/**': { ogImage: false },
+    // '/it/**': { ogImage: false },
+    // '/nl/**': { ogImage: false },
+    // '/ro/**': { ogImage: false },
+    // '/ru/**': { ogImage: false },
+    // '/uk/**': { ogImage: false },
+    // '/pl/**': { ogImage: false },
+    // '/el/**': { ogImage: false },
+    // '/gl/**': { ogImage: false },
+    // '/ca/**': { ogImage: false },
+    // '/eu/**': { ogImage: false },
+    // '/ar/**': { ogImage: false },
+    // '/zh/**': { ogImage: false },
+    // '/ko/**': { ogImage: false },
+    // '/ja/**': { ogImage: false },
+    // '/wo/**': { ogImage: false },
+    // '/ber/**': { ogImage: false },
 
     // Aggressively cache fingerprinted assets (Nuxt build output + IPX images).
     // The hash in the filename means the URL changes whenever the content changes,
@@ -262,11 +275,14 @@ export default defineNuxtConfig({
   // Crawler follows internal links so prerender catches every page
   // declared in i18n.pages. /sitemap.xml and /robots.txt are emitted
   // by their respective modules and don't need explicit listing.
+  // Crawler follows internal links so prerender catches every page
   nitro: {
     prerender: {
       crawlLinks: true,
       ignoreErrors: true,
-      concurrency: 1, // Be strict to avoid OG image render timeouts
+      // Aumentado a 4. Renderizará 4 páginas a la vez. 
+      // Al haber aumentado la RAM a 6GB en el workflow, aguantará sin problemas.
+      concurrency: 4, 
     },
   },
 
