@@ -69,9 +69,11 @@ const SITEMINDER_LOCALES = new Set(['en', 'es', 'fr', 'de', 'it', 'nl', 'pt', 'r
 const siteMinderLocale = computed(() => SITEMINDER_LOCALES.has(locale.value) ? locale.value : 'en')
 
 const bookingUrl = computed(() => {
-  // Use a string template but ensure the structure is clean. 
-  // We hardcode promocode=WEB to ensure it is always applied as requested.
-  const base = 'https://app.thebookingbutton.com/properties/hostalsoldirect?skin=0&locale=' + computedLocale.value + '&promocode=WEB&currency=EUR&trackPage=no'
+  // Use 'WEB' as the default promocode unless one is provided in the URL query
+  const queryPromocode = route.query.promocode as string | undefined
+  const finalPromocode = queryPromocode || 'WEB'
+  
+  const base = `https://app.thebookingbutton.com/properties/hostalsoldirect?skin=0&locale=${computedLocale.value}&promocode=${finalPromocode}&currency=EUR&trackPage=no`
   const rateId = route.query.rateId as string | undefined
   
   if (!rateId) return base
