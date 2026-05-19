@@ -104,7 +104,7 @@ useJsonLd({
     target: {
       '@type': 'EntryPoint',
       
-      urlTemplate: 'https://direct-book.com/properties/hostalsoldirect?promocode=WEB',
+      urlTemplate: `https://direct-book.com/properties/hostalsoldirect?promocode=${route.query.promocode || 'WEB'}`,
       inLanguage: 'es-ES',
       actionPlatform: ['http://schema.org/DesktopWebPlatform','http://schema.org/MobileWebPlatform'],
     },
