@@ -58,13 +58,6 @@
 const { t, tm, rt, locale } = useI18n()
 const route = useRoute()
 
-const computedLocale = computed(() => locale.value === 'es' ? 'es' : 'en')
-
-const checkInDate = computed(() => {
-  const d = new Date()
-  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
-})
-
 const SITEMINDER_LOCALES = new Set(['en', 'es', 'fr', 'de', 'it', 'nl', 'pt', 'ru', 'zh', 'ko', 'ja', 'pl', 'ro', 'el', 'ar', 'ca'])
 const siteMinderLocale = computed(() => SITEMINDER_LOCALES.has(locale.value) ? locale.value : 'en')
 
@@ -73,7 +66,7 @@ const bookingUrl = computed(() => {
   const queryPromocode = route.query.promocode as string | undefined
   const finalPromocode = queryPromocode || 'WEB'
   
-  const base = `https://app.thebookingbutton.com/properties/hostalsoldirect?skin=0&locale=${computedLocale.value}&promocode=${finalPromocode}&currency=EUR&trackPage=no`
+  const base = `https://app.thebookingbutton.com/properties/hostalsoldirect?skin=0&locale=${siteMinderLocale.value}&promocode=${finalPromocode}&currency=EUR&trackPage=no`
   const rateId = route.query.rateId as string | undefined
   
   if (!rateId) return base
