@@ -60,8 +60,8 @@ jobs:
           mkdir -p .output/public/_ipx
           cp -R .ipx-cache/* .output/public/_ipx/ 2>/dev/null || true
           cp -R .output/public/_ipx/* .ipx-cache/ 2>/dev/null || true
+          touch .output/public/.nojekyll
         env:
-          NUXT_APP_BASE_URL: /HostalSolZamoraWeb2026/
           # Aumentamos la memoria de Node. Los runners de Ubuntu en GitHub tienen 7GB de RAM.
           NODE_OPTIONS: --max-old-space-size=6144
 
