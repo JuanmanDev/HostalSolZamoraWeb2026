@@ -116,7 +116,7 @@ const featIcons = ['zap', 'shield-check', 'lock', 'x-circle']
 
 <style scoped>
 .page-content {
-  max-width: 1240px; /* Slightly wider container for the iframe */
+  /* max-width: 1240px; Slightly wider container for the iframe */
   margin: 0 auto;
   padding: 92px 0 80px;
 }
@@ -184,8 +184,8 @@ const featIcons = ['zap', 'shield-check', 'lock', 'x-circle']
 
 .ibe-iframe {
   width: 100%; /* Minimal margin on bigger screens */
-  max-width: 1100px;
-  height: 2700px;
+  /* max-width: 1100px; */
+  height: 2200px;
   border: none;
   border-radius: 12px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.08);
@@ -200,7 +200,7 @@ const featIcons = ['zap', 'shield-check', 'lock', 'x-circle']
     margin: 0;
     border-radius: 0;
     box-shadow: none;
-    height: 2500px; /* Taller for mobile layout */
+    height: 95vh
   }
 }
 
