@@ -45,6 +45,19 @@ import { ABOUT_IMG } from '~/composables/useRooms'
 const { t } = useI18n()
 const expanded = ref(false)
 
+watch(expanded, (v) => {
+  if (v) {
+    try {
+      const umami = useUmami()
+      umami.track('about-history-expand', {
+        path: window.location.pathname
+      })
+    } catch (e) {
+      console.warn('Umami not initialized:', e)
+    }
+  }
+})
+
 const chips = [
   { key: 'location', icon: 'map-pin' },
   { key: 'bathroom', icon: 'shower-head' },

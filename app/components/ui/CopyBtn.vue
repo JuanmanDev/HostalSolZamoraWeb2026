@@ -14,6 +14,16 @@ async function copy() {
     await navigator.clipboard.writeText(props.text)
     copied.value = true
     setTimeout(() => { copied.value = false }, 1500)
+    
+    try {
+      const umami = useUmami()
+      umami.track('info-copy', {
+        text: props.text,
+        path: window.location.pathname
+      })
+    } catch (e) {
+      console.warn('Umami not initialized:', e)
+    }
   } catch {}
 }
 </script>

@@ -132,6 +132,7 @@ const allItems = computed(() =>
 
 const query = ref((route.query.q as string) || '')
 const openIndices = ref<number[]>([])
+let searchDebounceTimer: any = null
 
 function updateUrlQuery() {
   const newQuery: any = {}
@@ -165,6 +166,7 @@ function scrollToItem(index: number) {
 }
 
 function toggle(index: number) {
+  const isOpening = !openIndices.value.includes(index)
   if (openIndices.value.includes(index)) {
     openIndices.value = openIndices.value.filter(i => i !== index)
   } else {
@@ -177,6 +179,21 @@ function toggle(index: number) {
     }
   }
   updateUrlQuery()
+
+  try {
+    const umami = useUmami()
+    const item = allItems.value[index]
+    if (item) {
+      umami.track('faq-toggle', {
+        question: item.q,
+        index: index,
+        action: isOpening ? 'open' : 'close',
+        path: window.location.pathname
+      })
+    }
+  } catch (e) {
+    console.warn('Umami not initialized:', e)
+  }
 }
 
 function normalize(text: string): string {
@@ -216,6 +233,24 @@ watch(query, (newQuery) => {
         el.scrollIntoView({ behavior: 'smooth', block: 'center' })
       }
     })
+  }
+
+  // Debounced Umami tracking
+  if (searchDebounceTimer) clearTimeout(searchDebounceTimer)
+  const trimmed = newQuery.trim()
+  if (trimmed) {
+    searchDebounceTimer = setTimeout(() => {
+      try {
+        const umami = useUmami()
+        umami.track('faq-search', {
+          query: trimmed,
+          resultsCount: matches.length,
+          path: window.location.pathname
+        })
+      } catch (e) {
+        console.warn('Umami not initialized:', e)
+      }
+    }, 1500)
   }
 })
 

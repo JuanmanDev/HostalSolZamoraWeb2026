@@ -38,7 +38,7 @@
             :key="r.route + r.title"
             :to="r.route"
             :class="['gsearch__result', { 'gsearch__result--active': i === activeIdx }]"
-            @click="close"
+            @click="onSelectResult(r)"
             @mouseenter="activeIdx = i"
           >
             <span class="gsearch__result-cat">{{ r.category }}</span>
@@ -56,7 +56,7 @@
         </div>
 
         <div v-if="query.length >= 2" class="gsearch__footer">
-          <NuxtLink :to="`/faq?q=${encodeURIComponent(query)}`" class="gsearch__allfaq" @click="close">
+          <NuxtLink :to="`/faq?q=${encodeURIComponent(query)}`" class="gsearch__allfaq" @click="onClickSearchInFaq">
             {{ t('search.searchInFaq') }} →
           </NuxtLink>
         </div>
@@ -80,7 +80,30 @@ const inputEl   = ref<HTMLInputElement | null>(null)
 
 const results = computed(() => search(query.value))
 
-watch(query, () => { activeIdx.value = 0 })
+let searchDebounceTimer: any = null
+
+watch(query, (newQuery) => {
+  activeIdx.value = 0
+  
+  if (searchDebounceTimer) {
+    clearTimeout(searchDebounceTimer)
+  }
+  
+  if (newQuery.trim().length >= 2) {
+    searchDebounceTimer = setTimeout(() => {
+      try {
+        const umami = useUmami()
+        umami.track('global-search', {
+          query: newQuery.trim(),
+          resultsCount: results.value.length,
+          path: window.location.pathname
+        })
+      } catch (e) {
+        console.warn('Umami not initialized:', e)
+      }
+    }, 1500)
+  }
+})
 
 watch(open, (v) => {
   if (v) {
@@ -93,6 +116,9 @@ watch(open, (v) => {
 function close() {
   open.value  = false
   query.value = ''
+  if (searchDebounceTimer) {
+    clearTimeout(searchDebounceTimer)
+  }
 }
 
 function moveDown() {
@@ -106,7 +132,50 @@ function moveUp() {
 function selectActive() {
   const r = results.value[activeIdx.value]
   if (!r) return
+  
+  try {
+    const umami = useUmami()
+    umami.track('global-search-select', {
+      query: query.value.trim(),
+      selectedTitle: r.title,
+      selectedRoute: r.route,
+      category: r.category,
+      path: window.location.pathname
+    })
+  } catch (e) {
+    console.warn('Umami not initialized:', e)
+  }
+
   navigateTo(r.route)
+  close()
+}
+
+function onSelectResult(r: any) {
+  try {
+    const umami = useUmami()
+    umami.track('global-search-select', {
+      query: query.value.trim(),
+      selectedTitle: r.title,
+      selectedRoute: r.route,
+      category: r.category,
+      path: window.location.pathname
+    })
+  } catch (e) {
+    console.warn('Umami not initialized:', e)
+  }
+  close()
+}
+
+function onClickSearchInFaq() {
+  try {
+    const umami = useUmami()
+    umami.track('global-search-to-faq', {
+      query: query.value.trim(),
+      path: window.location.pathname
+    })
+  } catch (e) {
+    console.warn('Umami not initialized:', e)
+  }
   close()
 }
 

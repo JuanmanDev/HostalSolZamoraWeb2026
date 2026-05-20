@@ -112,6 +112,18 @@ const features  = computed(() =>
 )
 const featIcons = ['zap', 'shield-check', 'lock', 'x-circle']
 
+onMounted(() => {
+  try {
+    const umami = useUmami()
+    umami.track('booking-funnel-start', {
+      promocode: (route.query.promocode as string) || 'WEB',
+      rateId: (route.query.rateId as string) || undefined,
+      path: window.location.pathname
+    })
+  } catch (e) {
+    console.warn('Umami not initialized:', e)
+  }
+})
 </script>
 
 <style scoped>

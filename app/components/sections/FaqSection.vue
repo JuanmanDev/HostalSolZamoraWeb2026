@@ -9,7 +9,7 @@
 
       <div class="faq__list">
         <div v-for="(item, i) in previewItems" :key="i" class="faq__item">
-          <button class="faq__question" @click="open = open === i ? null : i">
+          <button class="faq__question" @click="toggle(i)">
             <span>{{ item.q }}</span>
             <LucideIcon :name="open === i ? 'minus' : 'plus'" :size="18" color="var(--green)" />
           </button>
@@ -42,6 +42,27 @@ const allItems = computed(() =>
 const previewItems = computed(() => allItems.value.slice(0, 6))
 
 const open = ref<number | null>(null)
+
+function toggle(i: number) {
+  const isOpening = open.value !== i
+  open.value = isOpening ? i : null
+
+  try {
+    const umami = useUmami()
+    const item = previewItems.value[i]
+    if (item) {
+      umami.track('faq-toggle', {
+        question: item.q,
+        index: i,
+        action: isOpening ? 'open' : 'close',
+        location: 'home_preview',
+        path: window.location.pathname
+      })
+    }
+  } catch (e) {
+    console.warn('Umami not initialized:', e)
+  }
+}
 </script>
 
 <style scoped>

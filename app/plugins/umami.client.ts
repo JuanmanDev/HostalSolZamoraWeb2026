@@ -25,6 +25,81 @@ export default defineNuxtPlugin(() => {
         const id = element.id
         const href = (element as HTMLAnchorElement).href
         
+        if (href) {
+          if (href.startsWith('tel:')) {
+            umami.track('contact-phone-click', {
+              phone: href.replace('tel:', ''),
+              label,
+              path: window.location.pathname
+            })
+            return
+          }
+          if (href.startsWith('mailto:')) {
+            umami.track('contact-email-click', {
+              email: href.replace('mailto:', ''),
+              label,
+              path: window.location.pathname
+            })
+            return
+          }
+          if (href.includes('wa.me') || href.includes('whatsapp.com')) {
+            const match = href.match(/(?:wa\.me|api\.whatsapp\.com\/send\?phone=)(\d+)/)
+            const phone = match ? '+' + match[1] : href
+            umami.track('contact-whatsapp-click', {
+              phone,
+              label,
+              path: window.location.pathname
+            })
+            return
+          }
+          if (
+            href.includes('google.com/maps') ||
+            href.includes('maps.google.com') ||
+            href.includes('goo.gl/maps') ||
+            href.includes('maps.apple.com') ||
+            href.includes('maps.apple/') ||
+            href.includes('waze.com') ||
+            href.includes('bing.com/maps')
+          ) {
+            let appName = 'Google Maps'
+            if (href.includes('apple.com') || href.includes('maps.apple/')) appName = 'Apple Maps'
+            else if (href.includes('waze.com')) appName = 'Waze'
+            else if (href.includes('bing.com')) appName = 'Bing Maps'
+
+            umami.track('navigation-app-click', {
+              app: appName,
+              url: href,
+              label,
+              path: window.location.pathname
+            })
+            return
+          }
+          if (href.includes('direct-book.com') || href.includes('thebookingbutton.com')) {
+            umami.track('booking-click', {
+              url: href,
+              label,
+              path: window.location.pathname
+            })
+            return
+          }
+          if (href.includes('guest.chekin.com') || href.includes('chekin.com')) {
+            umami.track('checkin-portal-click', {
+              url: href,
+              label,
+              path: window.location.pathname
+            })
+            return
+          }
+          if (href.includes('boe.es')) {
+            umami.track('legal-boe-click', {
+              url: href,
+              label,
+              path: window.location.pathname
+            })
+            return
+          }
+        }
+
         umami.track('click', {
           label,
           id: id || undefined,

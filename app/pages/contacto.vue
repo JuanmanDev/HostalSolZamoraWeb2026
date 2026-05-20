@@ -206,6 +206,16 @@ const sent = ref(false)
 // For a future server-backed contact form, swap this for a POST to
 // /api/contact (Nitro server route).
 function onSubmit() {
+  try {
+    const umami = useUmami()
+    umami.track('contact-form-submit', {
+      subject: form.subject,
+      path: window.location.pathname
+    })
+  } catch (e) {
+    console.warn('Umami not initialized:', e)
+  }
+
   const subject = encodeURIComponent(`[Web] ${form.subject}`)
   const body    = encodeURIComponent(
     `Nombre: ${form.name}\nEmail: ${form.email}\n\n${form.message}`

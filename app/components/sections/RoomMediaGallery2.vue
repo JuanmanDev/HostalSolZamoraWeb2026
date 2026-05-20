@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import 'vue3-carousel/carousel.css'
 import { Carousel, Slide, Navigation } from 'vue3-carousel'
-import { ref, computed, onMounted, onUnmounted, nextTick } from 'vue'
+import { ref, computed, onMounted, onUnmounted, nextTick, watch } from 'vue'
 import { ROOM_YT, YT_SHORTS_URL, ROOM_TYPES } from '~/composables/useRooms'
 
 const props = defineProps<{
@@ -51,12 +51,32 @@ function onMediaChange(key: 'all' | 'photos' | 'videos') {
   mediaFilter.value = key
   currentSlide.value = 0
   emit('update:media', key)
+
+  try {
+    const umami = useUmami()
+    umami.track('gallery-media-filter', {
+      filter: key,
+      path: window.location.pathname
+    })
+  } catch (e) {
+    console.warn('Umami not initialized:', e)
+  }
 }
 
 function onRoomChange(key: string) {
   activeRoom.value = key
   currentSlide.value = 0
   emit('update:room', key)
+
+  try {
+    const umami = useUmami()
+    umami.track('gallery-room-filter', {
+      room: key,
+      path: window.location.pathname
+    })
+  } catch (e) {
+    console.warn('Umami not initialized:', e)
+  }
 }
 
 type MediaItem =
@@ -95,14 +115,24 @@ const mediaItems = computed((): MediaItem[] => {
 
 const lbPhotoItems = computed((): MediaItem[] => mediaItems.value)
 
-
-
-
-
-
-
-
-
+// Slide change tracking
+watch(currentSlide, (newVal) => {
+  try {
+    const umami = useUmami()
+    const item = mediaItems.value[newVal]
+    if (item) {
+      umami.track('gallery-slide-change', {
+        slideIndex: newVal,
+        mediaType: item.type,
+        mediaPath: item.type === 'photo' ? item.path : undefined,
+        videoRoom: item.type === 'video' ? item.room : undefined,
+        path: window.location.pathname
+      })
+    }
+  } catch (e) {
+    console.warn('Umami not initialized:', e)
+  }
+})
 
 // Lightbox
 const lbOpen   = ref(false)
@@ -114,6 +144,24 @@ const dragging = ref(false)
 const lbLoading = ref(false)
 let dX = 0, dY = 0
 let startX = 0, startY = 0
+
+// Zoom level tracking with debounce
+let zoomDebounceTimer: any = null
+watch(zoom, (newZoom) => {
+  if (zoomDebounceTimer) clearTimeout(zoomDebounceTimer)
+  zoomDebounceTimer = setTimeout(() => {
+    try {
+      const umami = useUmami()
+      umami.track('lightbox-zoom', {
+        scale: Number(newZoom.toFixed(2)),
+        path: lbPhotoItems.value[lbIdx.value]?.path,
+        pathName: window.location.pathname
+      })
+    } catch (e) {
+      console.warn('Umami not initialized:', e)
+    }
+  }, 800)
+})
 
 const route = useRoute()
 const router = useRouter()
@@ -135,11 +183,33 @@ function openLb(i: number) {
   resetZoom(); 
   lbLoading.value = true;
   updateLbUrl();
+
+  try {
+    const umami = useUmami()
+    umami.track('lightbox-open', {
+      index: i,
+      room: activeRoom.value,
+      path: lbPhotoItems.value[i]?.path,
+      pathName: window.location.pathname
+    })
+  } catch (e) {
+    console.warn('Umami not initialized:', e)
+  }
 }
 
 function closeLb() { 
   lbOpen.value = false;
   updateLbUrl();
+
+  try {
+    const umami = useUmami()
+    umami.track('lightbox-close', {
+      lastIndex: lbIdx.value,
+      pathName: window.location.pathname
+    })
+  } catch (e) {
+    console.warn('Umami not initialized:', e)
+  }
 }
 
 function lbPrev() { 
@@ -147,6 +217,18 @@ function lbPrev() {
   resetZoom(); 
   lbLoading.value = true;
   updateLbUrl();
+
+  try {
+    const umami = useUmami()
+    umami.track('lightbox-navigate', {
+      direction: 'prev',
+      newIndex: lbIdx.value,
+      path: lbPhotoItems.value[lbIdx.value]?.path,
+      pathName: window.location.pathname
+    })
+  } catch (e) {
+    console.warn('Umami not initialized:', e)
+  }
 }
 
 function lbNext() { 
@@ -154,6 +236,18 @@ function lbNext() {
   resetZoom(); 
   lbLoading.value = true;
   updateLbUrl();
+
+  try {
+    const umami = useUmami()
+    umami.track('lightbox-navigate', {
+      direction: 'next',
+      newIndex: lbIdx.value,
+      path: lbPhotoItems.value[lbIdx.value]?.path,
+      pathName: window.location.pathname
+    })
+  } catch (e) {
+    console.warn('Umami not initialized:', e)
+  }
 }
 
 function resetZoom() { zoom.value = 1; panX.value = 0; panY.value = 0 }
@@ -325,7 +419,7 @@ function handleSlideClick(i: number, item: MediaItem) {
               alt="Gallery Image"
               class="gallery-image"
               @click="handleSlideClick(i, image)"
-              sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw xxl:100vw 2xl:100vw 3xl:100vw 4k:100vw"
+              sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw xxl:100vw 3xl:100vw 4xl:100vw 5xl:100vw"
               :modifiers="{ rotate: 0 }"
               :loading="i === 0 ? 'eager' : 'lazy'"
           />
@@ -346,7 +440,7 @@ function handleSlideClick(i: number, item: MediaItem) {
         v-for="path in roomPhotoPaths('All')"
         :key="path"
         :src="path"
-        sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw xxl:100vw 2xl:100vw 3xl:100vw 4k:100vw"
+        sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw xxl:100vw 3xl:100vw 4xl:100vw 5xl:100vw"
         :modifiers="{ rotate: 0 }"
       />
     </div>
@@ -488,8 +582,20 @@ function handleSlideClick(i: number, item: MediaItem) {
               <img src="/images/logo-icon.svg" class="lb__loader-logo" alt="Loading..." />
             </div>
 
+            <img
+              v-if="lbPhotoItems[lbIdx] && lbPhotoItems[lbIdx].type === 'photo' && zoom > 1"
+              :src="lbPhotoItems[lbIdx].path"
+              alt=""
+              class="lb__img"
+              draggable="false"
+              @load="lbLoading = false"
+              :style="{ 
+                transform: `scale(${zoom}) translate(${panX / zoom}px, ${panY / zoom}px)`,
+                transition: dragging ? 'none' : 'transform 0.3s ease-out'
+              }"
+            />
             <NuxtPicture
-              v-if="lbPhotoItems[lbIdx] && lbPhotoItems[lbIdx].type === 'photo'"
+              v-else-if="lbPhotoItems[lbIdx] && lbPhotoItems[lbIdx].type === 'photo'"
               :src="lbPhotoItems[lbIdx].path"
               alt=""
               class="lb__img"
@@ -501,7 +607,7 @@ function handleSlideClick(i: number, item: MediaItem) {
                   transition: dragging ? 'none' : 'transform 0.3s ease-out'
                 }
               }"
-              sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw xxl:100vw 2xl:100vw 3xl:100vw 4k:100vw"
+              sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw xxl:100vw 3xl:100vw 4xl:100vw 5xl:100vw"
               :modifiers="{ rotate: 0 }"
             />
             <div v-else
