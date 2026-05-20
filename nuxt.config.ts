@@ -277,6 +277,16 @@ export default defineNuxtConfig({
   // by their respective modules and don't need explicit listing.
   // Crawler follows internal links so prerender catches every page
   nitro: {
+    hooks: {
+      'prerender:generate'(route) {
+        if (route.route?.startsWith('/_ipx/')) {
+          const cachePath = join(process.cwd(), '.ipx-cache', decodeURI(route.route).replace('/_ipx/', ''))
+          if (existsSync(cachePath)) {
+            route.skip = true
+          }
+        }
+      }
+    },
     prerender: {
       crawlLinks: true,
       ignoreErrors: true,

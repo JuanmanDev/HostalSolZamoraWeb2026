@@ -44,8 +44,22 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nuxt-
 
+      - name: Cache IPX Images
+        uses: actions/cache@v4
+        with:
+          path: .ipx-cache
+          key: ${{ runner.os }}-ipx-cache-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-ipx-cache-
+
+
       - name: Generate Static Site
-        run: npm run generate
+        run: |
+          npm run generate
+          mkdir -p .ipx-cache
+          mkdir -p .output/public/_ipx
+          cp -R .ipx-cache/* .output/public/_ipx/ 2>/dev/null || true
+          cp -R .output/public/_ipx/* .ipx-cache/ 2>/dev/null || true
         env:
           NUXT_APP_BASE_URL: /HostalSolZamoraWeb2026/
           # Aumentamos la memoria de Node. Los runners de Ubuntu en GitHub tienen 7GB de RAM.
