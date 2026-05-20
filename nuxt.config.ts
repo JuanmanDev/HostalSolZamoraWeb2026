@@ -78,7 +78,7 @@ export default defineNuxtConfig({
   },
 
   umami: {
-    host: 'https://umami.hostalsol.79.72.51.163.nip.io',
+    host: 'https://dashboard.hostalsolzamora.com',
     id: '9afca95c-0468-4ef2-adb0-5bfc7bf15889',
     ignoreLocalhost: true,
     autoTrack: true,
@@ -88,7 +88,7 @@ export default defineNuxtConfig({
   site: {
     url: 'https://hostalsolzamora.com',
     name: 'Hostal Sol Zamora',
-    description: 'Hostal boutique en el centro histórico de Zamora. Habitaciones nórdicas, baño privado, WiFi y mejor precio garantizado.',
+    description: 'Hostal boutique en el centro histórico de Zamora. Habitaciones nórdicas, baño privado, WiFi y un precio bajo.',
     defaultLocale: 'es',
     trailingSlash: false,
     indexable: true,
