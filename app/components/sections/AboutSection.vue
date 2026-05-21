@@ -48,7 +48,7 @@ const expanded = ref(false)
 watch(expanded, (v) => {
   if (v) {
     try {
-      const umami = useUmami()
+      const umami = { track: typeof umTrackEvent !== 'undefined' ? umTrackEvent : () => {} }
       umami.track('about-history-expand', {
         path: window.location.pathname
       })

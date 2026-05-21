@@ -48,7 +48,7 @@ function toggle(i: number) {
   open.value = isOpening ? i : null
 
   try {
-    const umami = useUmami()
+    const umami = { track: typeof umTrackEvent !== 'undefined' ? umTrackEvent : () => {} }
     const item = previewItems.value[i]
     if (item) {
       umami.track('faq-toggle', {

@@ -55,7 +55,7 @@ function onMediaChange(key: 'all' | 'photos' | 'videos') {
   emit('update:media', key)
 
   try {
-    const umami = useUmami()
+    const umami = { track: typeof umTrackEvent !== 'undefined' ? umTrackEvent : () => {} }
     umami.track('gallery-media-filter', {
       filter: key,
       path: window.location.pathname
@@ -71,7 +71,7 @@ function onRoomChange(key: string) {
   emit('update:room', key)
 
   try {
-    const umami = useUmami()
+    const umami = { track: typeof umTrackEvent !== 'undefined' ? umTrackEvent : () => {} }
     umami.track('gallery-room-filter', {
       room: key,
       path: window.location.pathname
@@ -120,7 +120,7 @@ const lbPhotoItems = computed((): MediaItem[] => mediaItems.value)
 // Slide change tracking
 watch(currentSlide, (newVal) => {
   try {
-    const umami = useUmami()
+    const umami = { track: typeof umTrackEvent !== 'undefined' ? umTrackEvent : () => {} }
     const item = mediaItems.value[newVal]
     if (item) {
       umami.track('gallery-slide-change', {
@@ -167,7 +167,7 @@ watch(zoom, (newZoom) => {
   if (zoomDebounceTimer) clearTimeout(zoomDebounceTimer)
   zoomDebounceTimer = setTimeout(() => {
     try {
-      const umami = useUmami()
+      const umami = { track: typeof umTrackEvent !== 'undefined' ? umTrackEvent : () => {} }
       umami.track('lightbox-zoom', {
         scale: Number(newZoom.toFixed(2)),
         path: lbPhotoItems.value[lbIdx.value]?.path,
@@ -201,7 +201,7 @@ function openLb(i: number) {
   updateLbUrl();
 
   try {
-    const umami = useUmami()
+    const umami = { track: typeof umTrackEvent !== 'undefined' ? umTrackEvent : () => {} }
     umami.track('lightbox-open', {
       index: i,
       room: activeRoom.value,
@@ -218,7 +218,7 @@ function closeLb() {
   updateLbUrl();
 
   try {
-    const umami = useUmami()
+    const umami = { track: typeof umTrackEvent !== 'undefined' ? umTrackEvent : () => {} }
     umami.track('lightbox-close', {
       lastIndex: lbIdx.value,
       pathName: window.location.pathname
@@ -235,7 +235,7 @@ function lbPrev() {
   updateLbUrl();
 
   try {
-    const umami = useUmami()
+    const umami = { track: typeof umTrackEvent !== 'undefined' ? umTrackEvent : () => {} }
     umami.track('lightbox-navigate', {
       direction: 'prev',
       newIndex: lbIdx.value,
@@ -254,7 +254,7 @@ function lbNext() {
   updateLbUrl();
 
   try {
-    const umami = useUmami()
+    const umami = { track: typeof umTrackEvent !== 'undefined' ? umTrackEvent : () => {} }
     umami.track('lightbox-navigate', {
       direction: 'next',
       newIndex: lbIdx.value,

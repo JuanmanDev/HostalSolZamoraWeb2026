@@ -16,7 +16,7 @@ async function copy() {
     setTimeout(() => { copied.value = false }, 1500)
     
     try {
-      const umami = useUmami()
+      const umami = { track: typeof umTrackEvent !== 'undefined' ? umTrackEvent : () => {} }
       umami.track('info-copy', {
         text: props.text,
         path: window.location.pathname

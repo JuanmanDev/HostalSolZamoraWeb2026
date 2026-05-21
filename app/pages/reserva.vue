@@ -114,7 +114,7 @@ const featIcons = ['zap', 'shield-check', 'lock', 'x-circle']
 
 onMounted(() => {
   try {
-    const umami = useUmami()
+    const umami = { track: typeof umTrackEvent !== 'undefined' ? umTrackEvent : () => {} }
     umami.track('booking-funnel-start', {
       promocode: (route.query.promocode as string) || 'WEB',
       rateId: (route.query.rateId as string) || undefined,

@@ -1,12 +1,6 @@
 export default defineNuxtPlugin(() => {
   // Use try-catch or check if useUmami is available to avoid errors if module not loaded
-  let umami: any
-  try {
-    umami = useUmami()
-  } catch (e) {
-    console.warn('Umami not initialized:', e)
-    return
-  }
+  const umami = { track: typeof umTrackEvent !== 'undefined' ? umTrackEvent : () => {} }
 
   if (process.client) {
     // 1. Global click tracking

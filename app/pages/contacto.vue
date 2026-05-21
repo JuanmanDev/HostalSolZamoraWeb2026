@@ -207,7 +207,7 @@ const sent = ref(false)
 // /api/contact (Nitro server route).
 function onSubmit() {
   try {
-    const umami = useUmami()
+    const umami = { track: typeof umTrackEvent !== 'undefined' ? umTrackEvent : () => {} }
     umami.track('contact-form-submit', {
       subject: form.subject,
       path: window.location.pathname

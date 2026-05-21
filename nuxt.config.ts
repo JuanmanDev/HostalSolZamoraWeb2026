@@ -52,7 +52,8 @@ export default defineNuxtConfig({
     'nuxt-schema-org',
     'nuxt-seo-utils',
     'nuxt-skew-protection',
-    'nuxt-umami'
+    'nuxt-umami',
+    '@nuxt/fonts'
   ],
 
   linkChecker: {
@@ -78,7 +79,7 @@ export default defineNuxtConfig({
   },
 
   umami: {
-    host: 'https://dashboard.hostalsolzamora.com',
+    host: 'https://umami.hostalsolzamora.com',
     id: '9afca95c-0468-4ef2-adb0-5bfc7bf15889',
     ignoreLocalhost: true,
     autoTrack: true,
@@ -119,16 +120,6 @@ export default defineNuxtConfig({
   // ── OG Image ───────────────────────────────────────────────────────────────
   ogImage: {
     enabled: true,
-    // Forzamos el uso de Satori (10x más rápido que Chromium) y cacheamos las fuentes
-    fonts: [
-      'Cormorant Garamond:400',
-      'Cormorant Garamond:500',
-      'Cormorant Garamond:600',
-      'Plus Jakarta Sans:400',
-      'Plus Jakarta Sans:500',
-      'Plus Jakarta Sans:600',
-      'Plus Jakarta Sans:700'
-    ]
   },
 
   // Public runtime config — overridable with NUXT_PUBLIC_SITE_URL env var

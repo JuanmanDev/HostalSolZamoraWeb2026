@@ -181,7 +181,7 @@ function toggle(index: number) {
   updateUrlQuery()
 
   try {
-    const umami = useUmami()
+    const umami = { track: typeof umTrackEvent !== 'undefined' ? umTrackEvent : () => {} }
     const item = allItems.value[index]
     if (item) {
       umami.track('faq-toggle', {
@@ -241,7 +241,7 @@ watch(query, (newQuery) => {
   if (trimmed) {
     searchDebounceTimer = setTimeout(() => {
       try {
-        const umami = useUmami()
+        const umami = { track: typeof umTrackEvent !== 'undefined' ? umTrackEvent : () => {} }
         umami.track('faq-search', {
           query: trimmed,
           resultsCount: matches.length,

@@ -92,7 +92,7 @@ watch(query, (newQuery) => {
   if (newQuery.trim().length >= 2) {
     searchDebounceTimer = setTimeout(() => {
       try {
-        const umami = useUmami()
+        const umami = { track: typeof umTrackEvent !== 'undefined' ? umTrackEvent : () => {} }
         umami.track('global-search', {
           query: newQuery.trim(),
           resultsCount: results.value.length,
@@ -134,7 +134,7 @@ function selectActive() {
   if (!r) return
   
   try {
-    const umami = useUmami()
+    const umami = { track: typeof umTrackEvent !== 'undefined' ? umTrackEvent : () => {} }
     umami.track('global-search-select', {
       query: query.value.trim(),
       selectedTitle: r.title,
@@ -152,7 +152,7 @@ function selectActive() {
 
 function onSelectResult(r: any) {
   try {
-    const umami = useUmami()
+    const umami = { track: typeof umTrackEvent !== 'undefined' ? umTrackEvent : () => {} }
     umami.track('global-search-select', {
       query: query.value.trim(),
       selectedTitle: r.title,
@@ -168,7 +168,7 @@ function onSelectResult(r: any) {
 
 function onClickSearchInFaq() {
   try {
-    const umami = useUmami()
+    const umami = { track: typeof umTrackEvent !== 'undefined' ? umTrackEvent : () => {} }
     umami.track('global-search-to-faq', {
       query: query.value.trim(),
       path: window.location.pathname

@@ -39,7 +39,7 @@
     </div>
     <!-- Room Media Gallery -->
     <SectionsRoomMediaGallery2
-      hideThumbailsAll="false"
+      :hideThumbailsAll="false"
     />
 
   </section>
