@@ -22,6 +22,8 @@ const galleryConfig = {
   mouseDrag: false,
   touchDrag: false,
   height: "75vh",
+  autoplay: 3000,
+  pauseAutoplayOnHover: true,
 }
 
 const thumbnailsConfig = {
@@ -144,6 +146,20 @@ const dragging = ref(false)
 const lbLoading = ref(false)
 let dX = 0, dY = 0
 let startX = 0, startY = 0
+let initialPinchDist = 0
+let initialPinchZoom = 1
+
+watch(lbOpen, (isOpen) => {
+  if (process.client) {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden'
+      document.body.style.touchAction = 'none'
+    } else {
+      document.body.style.overflow = ''
+      document.body.style.touchAction = ''
+    }
+  }
+})
 
 // Zoom level tracking with debounce
 let zoomDebounceTimer: any = null
@@ -266,6 +282,12 @@ function onLbWheel(e: WheelEvent) {
   if (zoom.value === 1) { panX.value = 0; panY.value = 0 }
 }
 
+function getTouchesDist(touches: TouchList) {
+  const dx = touches[0].clientX - touches[1].clientX
+  const dy = touches[0].clientY - touches[1].clientY
+  return Math.hypot(dx, dy)
+}
+
 function getCoords(e: MouseEvent | TouchEvent) {
   if ('touches' in e && e.touches.length > 0) {
     return { x: e.touches[0].clientX, y: e.touches[0].clientY }
@@ -277,6 +299,12 @@ function getCoords(e: MouseEvent | TouchEvent) {
 }
 
 function onLbDown(e: MouseEvent | TouchEvent) {
+  if ('touches' in e && e.touches.length === 2) {
+    initialPinchDist = getTouchesDist(e.touches)
+    initialPinchZoom = zoom.value
+    dragging.value = true
+    return
+  }
   const { x, y } = getCoords(e)
   startX = x; startY = y
   dragging.value = true
@@ -287,6 +315,12 @@ function onLbDown(e: MouseEvent | TouchEvent) {
 
 function onLbMove(e: MouseEvent | TouchEvent) {
   if (!dragging.value) return
+  if ('touches' in e && e.touches.length === 2) {
+    const dist = getTouchesDist(e.touches)
+    const scale = dist / initialPinchDist
+    zoom.value = Math.max(1, Math.min(5, initialPinchZoom * scale))
+    return
+  }
   const { x, y } = getCoords(e)
   if (zoom.value > 1) {
     panX.value = x - dX; panY.value = y - dY
@@ -295,8 +329,15 @@ function onLbMove(e: MouseEvent | TouchEvent) {
 
 function onLbUp(e: MouseEvent | TouchEvent) {
   if (!dragging.value) return
-  const { x, y } = getCoords(e)
+  if ('touches' in e && e.touches.length > 0) return // Still fingers on screen
   
+  if (initialPinchDist > 0) {
+    initialPinchDist = 0
+    dragging.value = false
+    return
+  }
+
+  const { x, y } = getCoords(e)
   const diffX = x - startX
   const diffY = y - startY
   const dist = Math.hypot(diffX, diffY)
@@ -412,22 +453,23 @@ function handleSlideClick(i: number, item: MediaItem) {
 
     <Carousel id="gallery" v-bind="galleryConfig" v-model="currentSlide">
       <Slide v-for="(image, i) in mediaItems" :key="`${image.type}-${i}`">
-        <template v-if="Math.abs(currentSlide - i) <= 2 || i === 0 || i === mediaItems.length - 1">
-          <NuxtPicture
-              v-if="image.type === 'photo'"
-              :src="image.path"
-              alt="Gallery Image"
-              class="gallery-image"
-              @click="handleSlideClick(i, image)"
-              sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw xxl:100vw 3xl:100vw 4xl:100vw 5xl:100vw"
-              :modifiers="{ rotate: 0 }"
-              :loading="i === 0 ? 'eager' : 'lazy'"
-          />
-          <div v-else class="video-placeholder">
-            <iframe v-if="currentSlide === i" width="100%" height="100%" :src="`https://www.youtube.com/embed/${ROOM_YT[image.room!]}?rel=0&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=${ROOM_YT[image.room!]}`" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
+        <template #default="{ isActive, isVisible }">
+          <template v-if="isVisible || isActive">
+            <NuxtPicture
+                v-if="image.type === 'photo'"
+                :src="image.path"
+                alt="Gallery Image"
+                class="gallery-image"
+                @click="handleSlideClick(i, image)"
+                sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw xxl:100vw 3xl:100vw 4xl:100vw 5xl:100vw"
+                :modifiers="{ rotate: 0 }"
+                :loading="i === 0 ? 'eager' : 'lazy'"
+            />
+            <div v-else class="video-placeholder">
+              <iframe v-if="isActive" width="100%" height="100%" :src="`https://www.youtube.com/embed/${ROOM_YT[image.room!]}?rel=0&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=${ROOM_YT[image.room!]}`" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </template>
         </template>
-        <div v-else class="gallery-image-placeholder" style="height: 75vh; width: 100%; background: #eee;"></div>
       </Slide>
     </Carousel>
 
