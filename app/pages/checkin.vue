@@ -81,8 +81,7 @@
             <div class="ci-step__body">
               <div class="ci-step__title">{{ step.title }}</div>
               <div class="ci-step__desc">{{ step.desc }}</div>
-              
-              <NuxtLink v-if="step.link" :to="step.link" class="ci-step__link">
+              <NuxtLink v-if="step.link" :to="step.link.startsWith('/') ? localePath(step.link.substring(1)) : step.link" class="ci-step__link">
                 {{ step.linkText }} →
               </NuxtLink>
             </div>

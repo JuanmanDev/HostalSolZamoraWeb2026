@@ -392,7 +392,7 @@
         "links": [
           {
             "label": "Vedi la galleria delle camere",
-            "url": "/galleria",
+            "url": "/galeria",
             "icon": "image"
           }
         ]
@@ -410,7 +410,7 @@
         "links": [
           {
             "label": "Guida completa al parcheggio",
-            "url": "/parcheggio",
+            "url": "/parking",
             "icon": "car"
           },
           {
@@ -548,7 +548,7 @@
         "links": [
           {
             "label": "Prenota con sconto",
-            "url": "/prenotazione",
+            "url": "/reserva",
             "icon": "paw-print"
           }
         ]
@@ -657,7 +657,7 @@
         "links": [
           {
             "label": "Vedi la galleria delle camere",
-            "url": "/galleria",
+            "url": "/galeria",
             "icon": "image"
           }
         ]
@@ -672,7 +672,7 @@
         "links": [
           {
             "label": "Controlla prezzi e prenota",
-            "url": "/prenotazione",
+            "url": "/reserva",
             "icon": "tag"
           },
           {
@@ -688,7 +688,7 @@
         "links": [
           {
             "label": "Prenota con sconto",
-            "url": "/prenotazione",
+            "url": "/reserva",
             "icon": "calendar-check"
           }
         ]
@@ -721,7 +721,7 @@
         "links": [
           {
             "label": "Prenota con letto extra",
-            "url": "/prenotazione",
+            "url": "/reserva",
             "icon": "bed-double"
           }
         ]
@@ -732,7 +732,7 @@
         "links": [
           {
             "label": "Guida al check-in",
-            "url": "/arrivo",
+            "url": "/checkin",
             "icon": "calendar"
           }
         ]
@@ -763,7 +763,7 @@
         "links": [
           {
             "label": "Vedi le camere disponibili",
-            "url": "/galleria",
+            "url": "/galeria",
             "icon": "building"
           }
         ]
@@ -815,7 +815,7 @@
         "links": [
           {
             "label": "Controlla disponibilità",
-            "url": "/prenotazione",
+            "url": "/reserva",
             "icon": "search"
           },
           {
@@ -831,7 +831,7 @@
         "links": [
           {
             "label": "Prenota online",
-            "url": "/prenotazione",
+            "url": "/reserva",
             "icon": "credit-card"
           },
           {
@@ -847,12 +847,12 @@
         "links": [
           {
             "label": "Requisiti documentazione",
-            "url": "/arrivo",
+            "url": "/checkin",
             "icon": "file-text"
           },
           {
             "label": "Prenota ora",
-            "url": "/prenotazione",
+            "url": "/reserva",
             "icon": "calendar-check"
           }
         ]
@@ -879,7 +879,7 @@
         "links": [
           {
             "label": "Vedi tipi di camera",
-            "url": "/galleria",
+            "url": "/galeria",
             "icon": "building"
           }
         ]
@@ -898,7 +898,7 @@
         "links": [
           {
             "label": "Vai al tuo account",
-            "url": "/prenotazione",
+            "url": "/reserva",
             "icon": "user"
           }
         ]
@@ -958,7 +958,7 @@
         "links": [
           {
             "label": "Vedi i migliori prezzi",
-            "url": "/prenotazione",
+            "url": "/reserva",
             "icon": "tag"
           }
         ]
@@ -1017,7 +1017,7 @@
         "links": [
           {
             "label": "Prenota soggiorno lungo",
-            "url": "/prenotazione",
+            "url": "/reserva",
             "icon": "calendar-check"
           }
         ]
@@ -1082,7 +1082,7 @@
         "links": [
           {
             "label": "Guida al check-in",
-            "url": "/arrivo",
+            "url": "/checkin",
             "icon": "file-text"
           },
           {
@@ -1324,7 +1324,7 @@
         {
           "title": "Vai in Calle Benavente 2",
           "desc": "Puoi arrivare a piedi, in taxi o in auto. Se vieni in auto, tieni presente il parcheggio: puoi accedere da Calle San Miguel per scaricare i bagagli.",
-          "link": "/parcheggio",
+          "link": "/parking",
           "linkText": "Vedi opzioni di parcheggio"
         },
         {

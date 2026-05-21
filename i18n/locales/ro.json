@@ -392,7 +392,7 @@
         "links": [
           {
             "label": "Vezi galeria camerelor",
-            "url": "/galerie",
+            "url": "/galeria",
             "icon": "image"
           }
         ]
@@ -410,7 +410,7 @@
         "links": [
           {
             "label": "Ghid complet de parcare",
-            "url": "/parcare",
+            "url": "/parking",
             "icon": "car"
           },
           {
@@ -548,7 +548,7 @@
         "links": [
           {
             "label": "Rezervă cu reducere",
-            "url": "/rezervare",
+            "url": "/reserva",
             "icon": "paw-print"
           }
         ]
@@ -657,7 +657,7 @@
         "links": [
           {
             "label": "Vezi galeria camerelor",
-            "url": "/galerie",
+            "url": "/galeria",
             "icon": "image"
           }
         ]
@@ -672,7 +672,7 @@
         "links": [
           {
             "label": "Verifică prețuri și rezervă",
-            "url": "/rezervare",
+            "url": "/reserva",
             "icon": "tag"
           },
           {
@@ -688,7 +688,7 @@
         "links": [
           {
             "label": "Rezervă cu reducere",
-            "url": "/rezervare",
+            "url": "/reserva",
             "icon": "calendar-check"
           }
         ]
@@ -721,7 +721,7 @@
         "links": [
           {
             "label": "Rezervă cu pat extra",
-            "url": "/rezervare",
+            "url": "/reserva",
             "icon": "bed-double"
           }
         ]
@@ -732,7 +732,7 @@
         "links": [
           {
             "label": "Ghid de check-in",
-            "url": "/sosire",
+            "url": "/checkin",
             "icon": "calendar"
           }
         ]
@@ -762,7 +762,7 @@
         "links": [
           {
             "label": "Vezi camerele disponibile",
-            "url": "/galerie",
+            "url": "/galeria",
             "icon": "building"
           }
         ]
@@ -814,7 +814,7 @@
         "links": [
           {
             "label": "Verifică disponibilitatea",
-            "url": "/rezervare",
+            "url": "/reserva",
             "icon": "search"
           },
           {
@@ -830,7 +830,7 @@
         "links": [
           {
             "label": "Rezervă online",
-            "url": "/rezervare",
+            "url": "/reserva",
             "icon": "credit-card"
           },
           {
@@ -846,12 +846,12 @@
         "links": [
           {
             "label": "Cerințe de documentație",
-            "url": "/sosire",
+            "url": "/checkin",
             "icon": "file-text"
           },
           {
             "label": "Rezervă acum",
-            "url": "/rezervare",
+            "url": "/reserva",
             "icon": "calendar-check"
           }
         ]
@@ -878,7 +878,7 @@
         "links": [
           {
             "label": "Vezi tipuri de camere",
-            "url": "/galerie",
+            "url": "/galeria",
             "icon": "building"
           }
         ]
@@ -897,7 +897,7 @@
         "links": [
           {
             "label": "Mergi la contul tău",
-            "url": "/rezervare",
+            "url": "/reserva",
             "icon": "user"
           }
         ]
@@ -956,7 +956,7 @@
         "links": [
           {
             "label": "Vezi cele mai bune prețuri",
-            "url": "/rezervare",
+            "url": "/reserva",
             "icon": "tag"
           }
         ]
@@ -1013,7 +1013,7 @@
         "links": [
           {
             "label": "Rezervă sejur lung",
-            "url": "/rezervare",
+            "url": "/reserva",
             "icon": "calendar-check"
           }
         ]
@@ -1078,7 +1078,7 @@
         "links": [
           {
             "label": "Ghid de check-in",
-            "url": "/sosire",
+            "url": "/checkin",
             "icon": "file-text"
           },
           {
@@ -1320,7 +1320,7 @@
         {
           "title": "Mergi la Calle Benavente 2",
           "desc": "Poți ajunge pe jos, cu taxiul sau cu mașina. Dacă vii cu mașina, ține cont de parcare: poți accesa de pe Calle San Miguel pentru a descărca bagajele.",
-          "link": "/parcare",
+          "link": "/parking",
           "linkText": "Vezi opțiunile de parcare"
         },
         {

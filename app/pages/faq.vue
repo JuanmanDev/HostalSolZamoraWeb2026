@@ -58,7 +58,7 @@
                 <NuxtLink
                   v-for="(link, li) in item.links"
                   :key="li"
-                  :to="link.url"
+                  :to="link.url.startsWith('/') ? localePath(link.url.substring(1)) : link.url"
                   class="faq-item__link"
                 >
                   <LucideIcon v-if="link.icon" :name="link.icon" :size="14" />

@@ -392,7 +392,7 @@
         "links": [
           {
             "label": "Bekijk kamergalerij",
-            "url": "/galerij",
+            "url": "/galeria",
             "icon": "image"
           }
         ]
@@ -410,7 +410,7 @@
         "links": [
           {
             "label": "Volledige parkeergids",
-            "url": "/parkeren",
+            "url": "/parking",
             "icon": "car"
           },
           {
@@ -547,7 +547,7 @@
         "links": [
           {
             "label": "Boek met korting",
-            "url": "/reserveren",
+            "url": "/reserva",
             "icon": "paw-print"
           }
         ]
@@ -656,7 +656,7 @@
         "links": [
           {
             "label": "Bekijk kamergalerij",
-            "url": "/galerij",
+            "url": "/galeria",
             "icon": "image"
           }
         ]
@@ -671,7 +671,7 @@
         "links": [
           {
             "label": "Controleer prijzen en boek",
-            "url": "/reserveren",
+            "url": "/reserva",
             "icon": "tag"
           },
           {
@@ -687,7 +687,7 @@
         "links": [
           {
             "label": "Boek met korting",
-            "url": "/reserveren",
+            "url": "/reserva",
             "icon": "calendar-check"
           }
         ]
@@ -720,7 +720,7 @@
         "links": [
           {
             "label": "Boek met extra bed",
-            "url": "/reserveren",
+            "url": "/reserva",
             "icon": "bed-double"
           }
         ]
@@ -731,7 +731,7 @@
         "links": [
           {
             "label": "Incheckgids",
-            "url": "/aankomst",
+            "url": "/checkin",
             "icon": "calendar"
           }
         ]
@@ -761,7 +761,7 @@
         "links": [
           {
             "label": "Bekijk beschikbare kamers",
-            "url": "/galerij",
+            "url": "/galeria",
             "icon": "building"
           }
         ]
@@ -813,7 +813,7 @@
         "links": [
           {
             "label": "Controleer beschikbaarheid",
-            "url": "/reserveren",
+            "url": "/reserva",
             "icon": "search"
           },
           {
@@ -829,7 +829,7 @@
         "links": [
           {
             "label": "Online boeken",
-            "url": "/reserveren",
+            "url": "/reserva",
             "icon": "credit-card"
           },
           {
@@ -845,12 +845,12 @@
         "links": [
           {
             "label": "Documentatievereisten",
-            "url": "/aankomst",
+            "url": "/checkin",
             "icon": "file-text"
           },
           {
             "label": "Nu boeken",
-            "url": "/reserveren",
+            "url": "/reserva",
             "icon": "calendar-check"
           }
         ]
@@ -877,7 +877,7 @@
         "links": [
           {
             "label": "Bekijk kamertypen",
-            "url": "/galerij",
+            "url": "/galeria",
             "icon": "building"
           }
         ]
@@ -896,7 +896,7 @@
         "links": [
           {
             "label": "Ga naar je account",
-            "url": "/reserveren",
+            "url": "/reserva",
             "icon": "user"
           }
         ]
@@ -955,7 +955,7 @@
         "links": [
           {
             "label": "Bekijk beste prijzen",
-            "url": "/reserveren",
+            "url": "/reserva",
             "icon": "tag"
           }
         ]
@@ -1013,7 +1013,7 @@
         "links": [
           {
             "label": "Boek lang verblijf",
-            "url": "/reserveren",
+            "url": "/reserva",
             "icon": "calendar-check"
           }
         ]
@@ -1078,7 +1078,7 @@
         "links": [
           {
             "label": "Incheckgids",
-            "url": "/aankomst",
+            "url": "/checkin",
             "icon": "file-text"
           },
           {
@@ -1320,7 +1320,7 @@
         {
           "title": "Ga naar Calle Benavente 2",
           "desc": "Je kunt te voet, per taxi of per auto aankomen. Als je per auto komt, houd dan rekening met de parkeeroptie — je kunt via Calle San Miguel toegang krijgen om bagage af te zetten.",
-          "link": "/parkeren",
+          "link": "/parking",
           "linkText": "Bekijk parkeeropties"
         },
         {
