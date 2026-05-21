@@ -36,15 +36,25 @@ export const HERO_PHOTOS = [
   '/images/hero/hero-15.webp',
 ]
 
-function shuffleArray(array: any[]) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-}
-
-export const SHUFFLED_HERO_PHOTOS = [...HERO_PHOTOS]
-shuffleArray(SHUFFLED_HERO_PHOTOS)
+// Deterministic pre-shuffled order for the hero slideshow to avoid hydration mismatches
+// during SSR / SSG while ensuring a beautiful, balanced visual progression.
+export const SHUFFLED_HERO_PHOTOS = [
+  '/images/hero/hero-1.jpg',
+  '/images/hero/hero-8.jpg',
+  '/images/hero/hero-4.jpg',
+  '/images/hero/hero-12.png',
+  '/images/hero/hero-7.jpg',
+  '/images/hero/hero-14.jpg',
+  '/images/hero/hero-3.jpg',
+  '/images/hero/hero-11.jpg',
+  '/images/hero/hero-6.jpg',
+  '/images/hero/hero-2.jpg',
+  '/images/hero/hero-9.jpg',
+  '/images/hero/hero-15.webp',
+  '/images/hero/hero-5.jpg',
+  '/images/hero/hero-10.jpg',
+  '/images/hero/hero-13.png',
+]
 
 export const LOGO_SVG      = '/images/logo.svg'
 export const LOGO_ICON     = '/images/logo-icon.png'

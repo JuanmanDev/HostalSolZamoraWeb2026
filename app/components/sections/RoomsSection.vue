@@ -42,15 +42,14 @@
       :hideThumbailsAll="false"
     />
 
+    <!--  Button to go the the gallery -->
+    <div class="container" style="text-align:center; margin-top: 20px;">
+      <NuxtLink :to="localePath('galeria')" class="btn btn-secondary">
+        {{ t('rooms.galleryBtn') }}
+        <LucideIcon name="image" :size="14" color="var(--dark)" style="margin-left:6px" />
+      </NuxtLink>
+    </div>
   </section>
-
-  <!--  Button to go the the gallery -->
-  <div class="container" style="text-align:center; margin-top: 20px;">
-    <NuxtLink :to="localePath('galeria')" class="btn btn-secondary">
-      {{ t('rooms.galleryBtn') }}
-      <LucideIcon name="image" :size="14" color="var(--dark)" style="margin-left:6px" />
-    </NuxtLink>
-   </div>
 </template>
 
 <script setup lang="ts">
