@@ -86,32 +86,44 @@ type MediaItem =
   | { type: 'video'; room: string }
 
 const mediaItems = computed((): MediaItem[] => {
-  const paths = roomPhotoPaths(activeRoom.value)
-  const items: MediaItem[] = paths.map(path => ({ type: 'photo', path }))
+  const items: MediaItem[] = []
 
   if (activeRoom.value === 'All' || typeKeys.includes(activeRoom.value)) {
     const roomsToShow = activeRoom.value === 'All' ? roomKeys : ROOM_TYPES[activeRoom.value]
-    const videoItems: MediaItem[] = roomsToShow
-      .filter(room => ROOM_YT[room])
-      .map(room => ({ type: 'video', room }))
-
-    if (mediaFilter.value === 'all') {
-      items.push(...videoItems)
-    }
 
     if (mediaFilter.value === 'videos') {
-      return videoItems
+      return roomsToShow
+        .filter(room => ROOM_YT[room])
+        .map(room => ({ type: 'video', room }))
     }
-    
+
+    for (const room of roomsToShow) {
+      const paths = roomPhotoPaths(room)
+      const roomItems: MediaItem[] = paths.map(path => ({ type: 'photo', path }))
+
+      if (mediaFilter.value === 'all' && ROOM_YT[room]) {
+        const insertIdx = Math.min(2, roomItems.length)
+        roomItems.splice(insertIdx, 0, { type: 'video', room })
+      }
+
+      items.push(...roomItems)
+    }
+
   } else {
-    const hasVideo = ROOM_YT[activeRoom.value]
-    if (hasVideo && mediaFilter.value !== 'photos') {
-      items.splice(2, 0, { type: 'video', room: activeRoom.value })
+    const paths = roomPhotoPaths(activeRoom.value)
+    const roomItems: MediaItem[] = paths.map(path => ({ type: 'photo', path }))
+
+    if (mediaFilter.value !== 'photos' && ROOM_YT[activeRoom.value]) {
+      if (mediaFilter.value === 'videos') {
+        return [{ type: 'video', room: activeRoom.value }]
+      }
+      const insertIdx = Math.min(2, roomItems.length)
+      roomItems.splice(insertIdx, 0, { type: 'video', room: activeRoom.value })
     }
+
+    items.push(...roomItems)
   }
 
-  if (mediaFilter.value === 'photos') return items.filter(m => m.type === 'photo')
-  if (mediaFilter.value === 'videos') return items.filter(m => m.type === 'video')
   return items
 })
 
@@ -378,10 +390,11 @@ onMounted(() => {
 
 
 function handleSlideClick(i: number, item: MediaItem) {
-  // if (item.type === 'video') return
-  
-  const photoIdx = lbPhotoItems.value.findIndex(p => p.path === (item as { path: string }).path)
-  openLb(photoIdx >= 0 ? photoIdx : 0)
+  const lbIdx = lbPhotoItems.value.findIndex(m => 
+    m.type === 'photo' && item.type === 'photo' ? m.path === item.path :
+    m.type === 'video' && item.type === 'video' ? m.room === item.room : false
+  )
+  openLb(lbIdx >= 0 ? lbIdx : 0)
 }
 </script>
 
@@ -517,13 +530,10 @@ function handleSlideClick(i: number, item: MediaItem) {
             />
             <div v-else class="video-placeholder thumbnail-video">
               <LucideIcon class="thumbnail-video__play" name="play-circle" :size="32" color="#fff" />
-              <NuxtImg
+              <img
                   :src="`https://i.ytimg.com/vi/${ROOM_YT[image.room!]}/default.jpg`"
                   alt="Video Thumbnail"
                   class="thumbnail-image"
-                  width="120"
-                  height="80"
-                  format="webp"
                   loading="lazy"
               />
             </div>
