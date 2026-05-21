@@ -11,29 +11,29 @@
   "dependencies": {
     "@nuxt/fonts": "^0.14.0",
     "@nuxt/image": "^2.0.0",
-    "@nuxtjs/i18n": "^9.5.2",
+    "@nuxtjs/i18n": "^10.4.0",
     "@nuxtjs/robots": "^6.0.8",
     "@nuxtjs/sitemap": "^8.0.15",
     "@resvg/resvg-js": "^2.6.2",
     "fuse.js": "^7.3.0",
-    "lucide-vue-next": "^0.525.0",
-    "nuxt": "^3.17.4",
-    "nuxt-ai-ready": "^1.3.2",
+    "lucide-vue-next": "^1.0.0",
+    "nuxt": "^4.4.6",
+    "nuxt-ai-ready": "^1.3.7",
     "nuxt-link-checker": "^5.0.10",
-    "nuxt-og-image": "^6.5.0",
+    "nuxt-og-image": "^6.5.1",
     "nuxt-schema-org": "^6.0.4",
     "nuxt-seo-utils": "^8.1.11",
     "nuxt-skew-protection": "^1.1.1",
     "satori": "^0.26.0",
-    "vue": "^3.5.16",
-    "vue-router": "^4.5.1",
+    "vue": "^3.5.34",
+    "vue-router": "^5.0.7",
     "vue3-carousel": "^0.17.0"
   },
   "devDependencies": {
-    "@nuxt/scripts": "^1.0.6",
-    "@types/node": "^22.15.21",
+    "@nuxt/scripts": "^1.1.1",
+    "@types/node": "^25.9.1",
     "nuxt-umami": "^3.2.1",
-    "typescript": "^5.8.3",
-    "vue-tsc": "^2.2.10"
+    "typescript": "^6.0.3",
+    "vue-tsc": "^3.3.1"
   }
 }

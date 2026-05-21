@@ -36,9 +36,7 @@ if (existsSync(roomsDir)) {
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-01',
 
-  future: {
-    compatibilityVersion: 4,
-  },
+
 
   modules: [
     '@nuxtjs/i18n',
