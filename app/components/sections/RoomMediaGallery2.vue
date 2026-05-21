@@ -443,6 +443,16 @@ function handleSlideClick(i: number, item: MediaItem) {
         sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw xxl:100vw 3xl:100vw 4xl:100vw 5xl:100vw"
         :modifiers="{ rotate: 0 }"
       />
+      <!-- Pre-render miniature thumbnails so client-side room filters do not fail on static export -->
+      <NuxtImg
+        v-for="path in roomPhotoPaths('All')"
+        :key="`thumb-pre-${path}`"
+        :src="path"
+        width="80"
+        height="60"
+        format="webp"
+        :modifiers="{ rotate: 0 }"
+      />
     </div>
 
     <Carousel id="thumbnails" v-bind="thumbnailsConfig" v-model="currentSlide">
