@@ -6,18 +6,22 @@ export default defineNuxtPlugin(() => {
     // 1. Global click tracking
     document.addEventListener('click', (event) => {
       const target = event.target as HTMLElement
-      const element = target.closest('button, a, [role="button"]')
+      const element = target.closest('button, a, [role="button"], img')
       if (element) {
         // Skip tracking for elements that already have data-umami-event
         // as the module might track them automatically
         if (element.hasAttribute('data-umami-event')) return
 
-        const text = element.innerText.trim().slice(0, 50)
+        const text = element.innerText?.trim().slice(0, 50)
         const aria = element.getAttribute('aria-label') || element.getAttribute('title')
-        const label = text || aria || 'unnamed-element'
+        
+        let label = text || aria || 'unnamed-element'
+        if (element.tagName.toLowerCase() === 'img') {
+          label = (element as HTMLImageElement).alt || (element as HTMLImageElement).src || 'image'
+        }
         
         const id = element.id
-        const href = (element as HTMLAnchorElement).href
+        const href = (element as HTMLAnchorElement).href || (element as HTMLImageElement).src
         
         if (href) {
           if (href.startsWith('tel:')) {
@@ -144,10 +148,26 @@ export default defineNuxtPlugin(() => {
 
     // Initial observation
     observeSections()
+    
+    // 3. Page/URL view duration tracking
+    let pageStartTime = Date.now()
+    
+    const sendPageDuration = () => {
+      const duration = Math.round((Date.now() - pageStartTime) / 1000)
+      if (duration >= 2) {
+        umami.track('page-view-duration', {
+          duration,
+          path: window.location.pathname
+        })
+      }
+    }
 
     // Re-observe on page changes
     const router = useRouter()
     router.afterEach(() => {
+      sendPageDuration()
+      pageStartTime = Date.now()
+      
       // Use a small delay to ensure the DOM has updated
       setTimeout(observeSections, 1000)
     })
@@ -155,6 +175,8 @@ export default defineNuxtPlugin(() => {
     // Also handle visibility change (user leaves tab)
     document.addEventListener('visibilitychange', () => {
       if (document.visibilityState === 'hidden') {
+        sendPageDuration()
+        
         // Send all active section timers
         sectionTimers.forEach((startTime, sectionName) => {
           const duration = Math.round((Date.now() - startTime) / 1000)
@@ -167,6 +189,8 @@ export default defineNuxtPlugin(() => {
           }
         })
         sectionTimers.clear()
+      } else {
+        pageStartTime = Date.now()
       }
     })
   }

@@ -129,8 +129,36 @@ const mediaItems = computed((): MediaItem[] => {
 
 const lbPhotoItems = computed((): MediaItem[] => mediaItems.value)
 
+// Main gallery slide duration tracking
+let gallerySlideStartTime = Date.now()
+
+const sendGallerySlideDuration = (index: number) => {
+  if (!gallerySlideStartTime) return
+  const duration = Math.round((Date.now() - gallerySlideStartTime) / 1000)
+  if (duration >= 1) {
+    try {
+      const umami = { track: typeof umTrackEvent !== 'undefined' ? umTrackEvent : () => {} }
+      const item = mediaItems.value[index]
+      if (item) {
+        umami.track('gallery-slide-view', {
+          duration,
+          mediaType: item.type,
+          mediaPath: item.type === 'photo' ? item.path : item.room,
+          pathName: window.location.pathname
+        })
+      }
+    } catch (e) {}
+  }
+  gallerySlideStartTime = 0
+}
+
 // Slide change tracking
-watch(currentSlide, (newVal) => {
+watch(currentSlide, (newVal, oldVal) => {
+  if (oldVal !== undefined) {
+    sendGallerySlideDuration(oldVal)
+  }
+  gallerySlideStartTime = Date.now()
+  
   try {
     const umami = { track: typeof umTrackEvent !== 'undefined' ? umTrackEvent : () => {} }
     const item = mediaItems.value[newVal]
@@ -148,6 +176,32 @@ watch(currentSlide, (newVal) => {
   }
 })
 
+// Lightbox media duration tracking
+let lbImageStartTime = 0
+
+const sendLbImageDuration = (index: number) => {
+  if (!lbImageStartTime) return
+  const duration = Math.round((Date.now() - lbImageStartTime) / 1000)
+  if (duration >= 1) {
+    try {
+      const umami = { track: typeof umTrackEvent !== 'undefined' ? umTrackEvent : () => {} }
+      const item = lbPhotoItems.value[index]
+      if (item) {
+        umami.track('lightbox-media-view', {
+          duration,
+          mediaType: item.type,
+          mediaPath: item.type === 'photo' ? item.path : item.room,
+          room: activeRoom.value,
+          pathName: window.location.pathname
+        })
+      }
+    } catch (e) {
+      console.warn('Umami not initialized:', e)
+    }
+  }
+  lbImageStartTime = 0
+}
+
 // Lightbox
 const lbOpen   = ref(false)
 const lbIdx    = ref(0)
@@ -164,12 +218,21 @@ let initialPinchZoom = 1
 watch(lbOpen, (isOpen) => {
   if (process.client) {
     if (isOpen) {
+      lbImageStartTime = Date.now()
       document.body.style.overflow = 'hidden'
       document.body.style.touchAction = 'none'
     } else {
+      sendLbImageDuration(lbIdx.value)
       document.body.style.overflow = ''
       document.body.style.touchAction = ''
     }
+  }
+})
+
+watch(lbIdx, (newIdx, oldIdx) => {
+  if (lbOpen.value) {
+    sendLbImageDuration(oldIdx)
+    lbImageStartTime = Date.now()
   }
 })
 
