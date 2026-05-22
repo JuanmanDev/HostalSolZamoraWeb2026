@@ -96,6 +96,19 @@ export default defineNuxtPlugin(() => {
             })
             return
           }
+          
+          try {
+            const url = new URL(href, window.location.origin)
+            if (url.hostname && url.hostname !== window.location.hostname) {
+              umami.track('external-link-click', {
+                url: href,
+                domain: url.hostname,
+                label,
+                path: window.location.pathname
+              })
+              return
+            }
+          } catch (e) {}
         }
 
         umami.track('click', {
@@ -162,11 +175,40 @@ export default defineNuxtPlugin(() => {
       }
     }
 
+    // 4. Scroll depth tracking
+    const scrollDepths = new Set<number>()
+    
+    const handleScroll = () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop
+      const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight
+      const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0
+
+      const milestones = [25, 50, 75, 90, 100]
+      for (const milestone of milestones) {
+        if (scrollPercent >= milestone && !scrollDepths.has(milestone)) {
+          scrollDepths.add(milestone)
+          umami.track('scroll-depth', {
+            percentage: milestone,
+            path: window.location.pathname
+          })
+        }
+      }
+    }
+
+    let scrollTimeout: any = null
+    const onScroll = () => {
+      if (scrollTimeout) clearTimeout(scrollTimeout)
+      scrollTimeout = setTimeout(handleScroll, 150)
+    }
+
+    document.addEventListener('scroll', onScroll, { passive: true })
+
     // Re-observe on page changes
     const router = useRouter()
     router.afterEach(() => {
       sendPageDuration()
       pageStartTime = Date.now()
+      scrollDepths.clear()
       
       // Use a small delay to ensure the DOM has updated
       setTimeout(observeSections, 1000)
