@@ -8,6 +8,7 @@ const props = defineProps<{
   initialRoom?: string
   initialMedia?: 'all' | 'photos' | 'videos'
   hideThumbailsAll?: boolean
+  hideGrouped?: boolean
 }>()
 
 
@@ -15,16 +16,27 @@ const currentSlide = ref(0)
 
 const slideTo = (nextSlide) => (currentSlide.value = nextSlide)
 
-const galleryConfig = {
+const autoplayDelay = ref(7000)
+let pauseTimeout: ReturnType<typeof setTimeout> | null = null
+
+function pauseCarousel() {
+  autoplayDelay.value = 0
+  if (pauseTimeout) clearTimeout(pauseTimeout)
+  pauseTimeout = setTimeout(() => {
+    autoplayDelay.value = 7000
+  }, 120000) // 2 minutes
+}
+
+const galleryConfig = computed(() => ({
   itemsToShow: 1,
   wrapAround: true,
   slideEffect: 'fade',
   mouseDrag: false,
   touchDrag: false,
   height: "75vh",
-  autoplay: 3000,
+  autoplay: autoplayDelay.value,
   pauseAutoplayOnHover: true,
-}
+}))
 
 const thumbnailsConfig = {
   height: 80,
@@ -527,7 +539,7 @@ function handleSlideClick(i: number, item: MediaItem) {
       </select>
     </div>
 
-    <Carousel id="gallery" v-bind="galleryConfig" v-model="currentSlide">
+    <Carousel id="gallery" v-bind="galleryConfig" v-model="currentSlide" @mousedown.capture="pauseCarousel" @touchstart.capture="pauseCarousel">
       <Slide v-for="(image, i) in mediaItems" :key="`${image.type}-${i}`">
         <template #default="{ isActive, isVisible }">
           <template v-if="isVisible || isActive">
@@ -573,7 +585,7 @@ function handleSlideClick(i: number, item: MediaItem) {
       />
     </div>
 
-    <Carousel id="thumbnails" v-bind="thumbnailsConfig" v-model="currentSlide">
+    <Carousel id="thumbnails" v-bind="thumbnailsConfig" v-model="currentSlide" @mousedown.capture="pauseCarousel" @touchstart.capture="pauseCarousel">
       <Slide v-for="(image, i) in mediaItems" :key="`thumb-${image.type}-${i}`">
         <template #default="{ currentIndex, isActive }">
           <div
@@ -638,7 +650,7 @@ function handleSlideClick(i: number, item: MediaItem) {
     </div>
 
     <!-- If all media are showing or a type is selected, group by room -->
-    <div v-if="isMultipleRooms" class="room-gallery__grouped">
+    <div v-if="isMultipleRooms && !props.hideGrouped" class="room-gallery__grouped">
       <div 
         v-for="key in (activeRoom === 'All' ? roomKeys : ROOM_TYPES[activeRoom])" 
         :key="key" 

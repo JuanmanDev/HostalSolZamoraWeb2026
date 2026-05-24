@@ -40,6 +40,7 @@
     <!-- Room Media Gallery -->
     <SectionsRoomMediaGallery2
       :hideThumbailsAll="false"
+      :hideGrouped="true"
     />
 
     <!--  Button to go the the gallery -->
