@@ -20,6 +20,7 @@
         }"
         :loading="i === 0 ? 'eager' : 'lazy'"
         :preload="i === 0"
+        placeholder
         sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw xxl:100vw 2xl:100vw 3xl:100vw 4k:100vw"
         :modifiers="{ rotate: 0 }"
       />
@@ -41,8 +42,8 @@
       <NuxtPicture
         :src="LOGO_SVG"
         alt="Hostal Sol Zamora"
-        width="480"
-        height="110"
+        width="864"
+        height="198"
         class="hero__logo"
       />
       <p class="hero__sub">{{ t('hero.sub') }}</p>
@@ -85,6 +86,14 @@
               </div>
             </Slide>
           </Carousel>
+          <template #fallback>
+            <div class="hero__features-fallback">
+              <div v-for="(feat, i) in features" :key="i" class="hero__feat-card">
+                <LucideIcon :name="feat.icon" :size="feat.link ? 18 : 22" color="#fff" />
+                <span>{{ feat.label }}</span>
+              </div>
+            </div>
+          </template>
         </ClientOnly>
       </div>
     </div>
@@ -201,12 +210,16 @@ onMounted(() => {
 }
 
 .hero__logo {
-  height: clamp(52px, 8vw, 110px);
-  width: auto;
+  width: clamp(280px, 45vw, 864px);
+  max-width: 70vw;
+  height: auto;
   display: block;
   filter: brightness(0) invert(1);
   margin-bottom: 20px;
-  max-width: 480px;
+}
+.hero__logo :deep(img) {
+  width: 100%;
+  height: auto;
 }
 
 .hero__sub {
@@ -258,6 +271,21 @@ onMounted(() => {
 
 .hero__features-carousel {
   width: 100%;
+}
+
+.hero__features-fallback {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 5px;
+}
+
+@media (max-width: 640px) {
+  .hero__features-fallback {
+    justify-content: flex-start;
+  }
 }
 
 .hero__features-wrap :deep(.carousel__slide) {
