@@ -65,7 +65,7 @@
           :key="i" 
           class="faq-item"
         >
-          <NuxtLink :to="localePath({ name: 'faq-slug', params: { slug: item.slug } })" class="faq-item__q">
+          <NuxtLink :to="localePath('/faq/' + item.slug)" class="faq-item__q">
             <span>{{ item.q }}</span>
             <LucideIcon name="chevron-right" :size="18" color="var(--green)" />
           </NuxtLink>

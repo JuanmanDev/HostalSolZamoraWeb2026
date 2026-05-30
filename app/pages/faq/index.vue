@@ -57,7 +57,7 @@
               <div v-if="item.links?.length || item.slug" class="faq-item__links">
                 <NuxtLink
                   v-if="item.slug"
-                  :to="localePath({ name: 'faq-slug', params: { slug: item.slug } })"
+                  :to="localePath('/faq/' + item.slug)"
                   class="faq-item__link faq-item__link--subpage"
                 >
                   <LucideIcon name="link" :size="14" />
