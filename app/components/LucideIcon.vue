@@ -10,13 +10,13 @@ import {
   Tv, Tv2, ParkingSquare, Car, Info, Navigation, Landmark, Train,
   Plus, Minus, ShieldCheck, XCircle, Lock, Zap, CalendarCheck, CalendarClock,
   Phone, Smartphone, Mail, Clock, Key, LogOut, LogIn, Moon, MessageCircle,
-  Copy, Check, Footprints, UtensilsCrossed, ZoomIn,
+  Copy, Check, Footprints, UtensilsCrossed, ZoomIn, Link, ArrowLeft,
   ShowerHead, Wifi, Armchair, Thermometer, Wind, Package, Bed, Trees,
   Warehouse, ImageOff, Youtube, ExternalLink,
   Luggage, UserCheck, AlertCircle, DoorOpen, IdCard, FileText,
   Laptop, FileBadge2, Search, FileCheck,
   BanknoteArrowDown, Calendar, CreditCard, PiggyBank, User,
-  Shirt, SprayCan, Cctv, ArrowUpDown, Droplets,
+  Shirt, SprayCan, Cctv, ArrowUpDown, Droplets, Bus,
   type LucideIcon,
 } from 'lucide-vue-next'
 
@@ -25,11 +25,13 @@ const ICON_MAP: Record<string, LucideIcon> = {
   'globe': Globe, 'menu': Menu, 'x': X, 'tag': Tag,
   'chevron-down': ChevronDown, 'chevron-up': ChevronUp,
   'chevron-left': ChevronLeft, 'chevron-right': ChevronRight,
+  'arrow-left': ArrowLeft,
   'layout-grid': LayoutGrid,
 
   // Location & transport
   'map-pin': MapPin, 'building-2': Building2, 'building': Building,
   'navigation': Navigation, 'landmark': Landmark, 'train': Train, 'car': Car,
+  'bus': Bus,
   'parking-square': ParkingSquare, 'warehouse': Warehouse,
 
   // Accommodation
@@ -63,7 +65,7 @@ const ICON_MAP: Record<string, LucideIcon> = {
   // Status & UI
   'plus': Plus, 'minus': Minus, 'check': Check, 'copy': Copy,
   'info': Info, 'alert-circle': AlertCircle,
-  'external-link': ExternalLink, 'footprints': Footprints,
+  'external-link': ExternalLink, 'link': Link, 'footprints': Footprints,
 
   // Documents
   'id-card': IdCard, 'file-text': FileText, 'file-badge': FileBadge2,

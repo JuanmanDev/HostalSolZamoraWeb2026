@@ -52,9 +52,17 @@
             <LucideIcon :name="openIndices.includes(i) ? 'minus' : 'plus'" :size="18" color="var(--green)" />
           </button>
           <Transition name="expand">
-            <div v-if="openIndices.includes(i)" class="faq-item__a">
+            <div v-show="openIndices.includes(i)" class="faq-item__a">
               <p class="faq-item__a-text">{{ item.a }}</p>
-              <div v-if="item.links?.length" class="faq-item__links">
+              <div v-if="item.links?.length || item.slug" class="faq-item__links">
+                <NuxtLink
+                  v-if="item.slug"
+                  :to="localePath({ name: 'faq-slug', params: { slug: item.slug } })"
+                  class="faq-item__link faq-item__link--subpage"
+                >
+                  <LucideIcon name="link" :size="14" />
+                  Enlace directo
+                </NuxtLink>
                 <NuxtLink
                   v-for="(link, li) in item.links"
                   :key="li"
@@ -102,9 +110,11 @@
 
 <script setup lang="ts">
 import type { FaqItem } from '~/types'
+import { slugify } from '~/utils/slugify'
 const { t, tm, rt } = useI18n()
 const route = useRoute()
 const router = useRouter()
+const localePath = useLocalePath()
 
 useSeo({
   title:       computed(() => t('pages.faq.title')),
@@ -121,6 +131,7 @@ const allItems = computed(() =>
   (tm('faq.items') as any[]).map((item: any) => ({
     q: rt(item.q),
     a: rt(item.a),
+    slug: slugify(rt(item.q)),
     tags: item.tags?.map((tag: any) => rt(tag)) as string[] | undefined,
     links: item.links?.map((l: any) => ({
       label: rt(l.label),
@@ -141,7 +152,7 @@ function updateUrlQuery() {
   }
   if (openIndices.value.length === 1 && !query.value.trim()) {
      // Only save the open question index in URL if no search is active
-     newQuery.open = openIndices.value[0].toString()
+     newQuery.open = openIndices.value[0]?.toString()
   }
   
   router.replace({ query: newQuery })
@@ -226,7 +237,7 @@ watch(query, (newQuery) => {
   updateUrlQuery()
 
   if (matches.length > 0) {
-    const firstMatchIndex = matches[0].index
+    const firstMatchIndex = matches[0]?.index
     nextTick(() => {
       const el = document.getElementById(`faq-item-${firstMatchIndex}`)
       if (el) {
@@ -506,6 +517,14 @@ useJsonLd({
 .faq-item__link:hover {
   background: var(--green);
   color: #fff;
+}
+.faq-item__link--subpage {
+  background: #f1f5f9;
+  color: var(--dark-muted);
+}
+.faq-item__link--subpage:hover {
+  background: #e2e8f0;
+  color: var(--dark);
 }
 
 :global(.hl) {

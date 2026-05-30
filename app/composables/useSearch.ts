@@ -1,4 +1,5 @@
 import Fuse from 'fuse.js'
+import { slugify } from '~/utils/slugify'
 
 export interface SearchResult {
   title: string
@@ -148,10 +149,11 @@ export function useSearch() {
         const a    = rt(item.a)
         const tags = (item.tags as any[] | undefined)?.map((tag: any) => rt(tag)) ?? []
         const kw   = faqKeyword(item.tags, q, rt)
+        const slug = slugify(q)
         items.push({
           title:       q,
           description: a.length > 110 ? a.substring(0, 110) + '…' : a,
-          route:       `/faq?q=${encodeURIComponent(kw)}`,
+          route:       `/faq/${slug}`,
           category:    cat.faq,
           hidden:      `${tags.join(' ')} ${a.substring(0, 200)}`,
         })
