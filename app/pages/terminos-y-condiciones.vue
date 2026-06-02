@@ -1,8 +1,6 @@
 <template>
   <div>
-    <LayoutTheNavbar :solid-from-start="true" />
-
-    <main class="legal-content">
+        <main class="legal-content">
       <div class="legal-container">
         <UiSectionTag>Legal</UiSectionTag>
         <h1 class="legal-heading">Términos y Condiciones</h1>
@@ -114,8 +112,7 @@
       </div>
     </main>
 
-    <LayoutTheFooter />
-  </div>
+      </div>
 </template>
 
 <script setup lang="ts">

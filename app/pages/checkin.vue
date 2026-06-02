@@ -1,12 +1,10 @@
 <template>
   <div>
-    <LayoutTheNavbar :solid-from-start="true" />
-
-    <main class="page-content container">
+        <main class="page-content container">
       <section id="checkin-intro">
         <UiSectionTag>Check-in</UiSectionTag>
-        <h1 class="page-heading">{{ t('pages.checkin.heading') }}</h1>
-        <p class="page-lead">{{ t('pages.checkin.lead') }}</p>
+        <h1 class="page-heading" style="view-transition-name: page-heading">{{ t('pages.checkin.heading') }}</h1>
+        <p class="page-lead" style="view-transition-name: page-lead">{{ t('pages.checkin.lead') }}</p>
       </section>
 
       <!-- Before you arrive -->
@@ -159,8 +157,7 @@
       </section>
     </main>
 
-    <LayoutTheFooter />
-  </div>
+      </div>
 </template>
 
 <script setup lang="ts">
@@ -215,7 +212,7 @@ const steps = computed(() =>
   (tm('pages.checkin.steps') as any[]).map((s: any) => ({
     title:    rt(s.title),
     desc:     rt(s.desc),
-    link:     s.link ?? null,
+    link:     s.link ? rt(s.link) : null,
     linkText: s.linkText ? rt(s.linkText) : null,
   })) as (CheckinStep & { link: string | null; linkText: string | null })[]
 )

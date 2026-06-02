@@ -1,6 +1,8 @@
 <template>
   <div :dir="isRtl ? 'rtl' : 'ltr'">
-    <NuxtPage />
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>
 

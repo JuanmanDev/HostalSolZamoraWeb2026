@@ -1,8 +1,6 @@
 <template>
   <div class="faq-page">
-    <LayoutTheNavbar :solid-from-start="true" />
-
-    <div class="clover-decoration clover-decoration--left">
+        <div class="clover-decoration clover-decoration--left">
       <img src="/images/logo-clover.png" alt="" aria-hidden="true" />
     </div>
     <div class="clover-decoration clover-decoration--right">
@@ -18,8 +16,8 @@
       </section>
 
       <!-- Main FAQ Item -->
-      <section v-if="currentItem" class="faq-main-item">
-        <h1 class="page-heading">{{ currentItem.q }}</h1>
+      <section v-if="currentItem" class="faq-main-item" :style="`view-transition-name: faq-item-${currentItem.slug}`">
+        <h1 class="page-heading" :style="`view-transition-name: faq-q-${currentItem.slug}`">{{ currentItem.q }}</h1>
         <div class="faq-main-item__a">
           <p class="page-lead">{{ currentItem.a }}</p>
           <div v-if="currentItem.links?.length" class="faq-item__links">
@@ -64,9 +62,10 @@
           v-for="(item, i) in otherItems" 
           :key="i" 
           class="faq-item"
+          :style="`view-transition-name: faq-item-${item.slug}`"
         >
           <NuxtLink :to="localePath('/faq/' + item.slug)" class="faq-item__q">
-            <span>{{ item.q }}</span>
+            <span :style="`view-transition-name: faq-q-${item.slug}`">{{ item.q }}</span>
             <LucideIcon name="chevron-right" :size="18" color="var(--green)" />
           </NuxtLink>
         </div>
@@ -98,8 +97,7 @@
       </section>
     </main>
 
-    <LayoutTheFooter />
-  </div>
+      </div>
 </template>
 
 <script setup lang="ts">

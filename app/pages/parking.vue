@@ -1,13 +1,11 @@
 <template>
   <div>
-    <LayoutTheNavbar :solid-from-start="true" />
-
-    <main class="page-content">
+        <main class="page-content">
       <!-- Header -->
       <section id="parking-header" class="page-section">
         <UiSectionTag>Parking</UiSectionTag>
-        <h1 class="page-heading">{{ t('pages.parking.heading') }}</h1>
-        <p class="page-lead">{{ t('pages.parking.lead') }}</p>
+        <h1 class="page-heading" style="view-transition-name: page-heading">{{ t('pages.parking.heading') }}</h1>
+        <p class="page-lead" style="view-transition-name: page-lead">{{ t('pages.parking.lead') }}</p>
 
         <div class="addr-card">
           <LucideIcon name="building-2" :size="24" color="var(--green)" />
@@ -105,8 +103,7 @@
       </section>
     </main>
 
-    <LayoutTheFooter />
-  </div>
+      </div>
 </template>
 
 <script setup lang="ts">

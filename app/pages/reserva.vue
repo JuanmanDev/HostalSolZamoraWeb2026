@@ -1,12 +1,10 @@
 <template>
   <div>
-    <LayoutTheNavbar :solid-from-start="true" />
-
-    <main class="page-content">
+        <main class="page-content">
       <div class="title__block">
         <div class="title__text">
           <UiSectionTag class="page-sub-heading">{{ t('nav.reserve') }}</UiSectionTag>
-          <h1 class="page-heading">{{ t('pages.reserva.heading') }}</h1>
+          <h1 class="page-heading" style="view-transition-name: page-heading">{{ t('pages.reserva.heading') }}</h1>
         </div>
         <div class="title__discount">
           <SectionsDiscountCard3d>
@@ -50,8 +48,7 @@
       </a>
     </main>
 
-    <LayoutTheFooter />
-  </div>
+      </div>
 </template>
 
 <script setup lang="ts">

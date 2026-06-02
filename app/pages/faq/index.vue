@@ -1,9 +1,7 @@
 <template>
   <div class="faq-page">
     <!-- Navbar -->
-    <LayoutTheNavbar :solid-from-start="true" />
-
-    <!-- Background decorative elements -->
+        <!-- Background decorative elements -->
     <div class="clover-decoration clover-decoration--left">
       <img src="/images/logo-clover.png" alt="" aria-hidden="true" />
     </div>
@@ -14,8 +12,8 @@
     <main class="page-content">
       <section id="faq-intro">
         <UiSectionTag>{{ t('nav.faq') }}</UiSectionTag>
-        <h1 class="page-heading">{{ t('pages.faq.heading') }}</h1>
-        <p class="page-lead">{{ t('pages.faq.lead') }}</p>
+        <h1 class="page-heading" style="view-transition-name: page-heading">{{ t('pages.faq.heading') }}</h1>
+        <p class="page-lead" style="view-transition-name: page-lead">{{ t('pages.faq.lead') }}</p>
       </section>
 
       <!-- Info grid -->
@@ -46,13 +44,14 @@
           :id="`faq-item-${i}`"
           class="faq-item"
           :class="{ 'faq-item--highlight': isMatch(item) }"
+          :style="`view-transition-name: faq-item-${item.slug}`"
         >
           <button class="faq-item__q" @click="toggle(i)">
-            <span v-html="highlight(item.q)" />
+            <span v-html="highlight(item.q)" :style="`view-transition-name: faq-q-${item.slug}`" />
             <LucideIcon :name="openIndices.includes(i) ? 'minus' : 'plus'" :size="18" color="var(--green)" />
           </button>
           <Transition name="expand">
-            <div v-show="openIndices.includes(i)" class="faq-item__a">
+            <div v-if="openIndices.includes(i)" class="faq-item__a">
               <p class="faq-item__a-text">{{ item.a }}</p>
               <div v-if="item.links?.length || item.slug" class="faq-item__links">
                 <NuxtLink
@@ -104,8 +103,7 @@
       </section>
     </main>
 
-    <LayoutTheFooter />
-  </div>
+      </div>
 </template>
 
 <script setup lang="ts">

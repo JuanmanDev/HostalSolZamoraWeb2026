@@ -1,15 +1,13 @@
 <template>
   <div>
-    <LayoutTheNavbar :solid-from-start="true" />
-
-    <main class="galeria-page">
+        <main class="galeria-page">
       <div id="gallery-header" class="galeria__header">
         <UiSectionTag>{{ t('pages.galeria.tag') }}</UiSectionTag>
-        <h1 class="galeria__heading">{{ t('pages.galeria.heading') }}</h1>
+        <h1 class="galeria__heading" style="view-transition-name: page-heading">{{ t('pages.galeria.heading') }}</h1>
       </div>
 
       <div id="gallery-intro" class="galeria__header">
-        <p class="galeria__text">{{ t('pages.galeria.p1') }}</p>
+        <p class="galeria__text" style="view-transition-name: page-lead">{{ t('pages.galeria.p1') }}</p>
         <p class="galeria__text">{{ t('pages.galeria.p2') }}</p>
         <p class="galeria__text">{{ t('pages.galeria.p3') }}</p>
         <p class="galeria__text">{{ t('pages.galeria.p4') }}</p>
@@ -29,8 +27,7 @@
       </section>
     </main>
 
-    <LayoutTheFooter />
-  </div>
+      </div>
 </template>
 
 <script setup lang="ts">

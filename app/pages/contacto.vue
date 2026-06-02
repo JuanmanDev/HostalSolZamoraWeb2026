@@ -1,12 +1,10 @@
 <template>
   <div>
-    <LayoutTheNavbar :solid-from-start="true" />
-
-    <main class="page-content">
+        <main class="page-content">
       <section id="contact-intro">
         <UiSectionTag>{{ t('pages.contacto.tag') }}</UiSectionTag>
-        <h1 class="page-heading">{{ t('pages.contacto.heading') }}</h1>
-        <p class="page-lead">{{ t('pages.contacto.lead') }}</p>
+        <h1 class="page-heading" style="view-transition-name: page-heading">{{ t('pages.contacto.heading') }}</h1>
+        <p class="page-lead" style="view-transition-name: page-lead">{{ t('pages.contacto.lead') }}</p>
       </section>
 
       <div class="contact-grid">
@@ -143,8 +141,7 @@
       </div>
     </main>
 
-    <LayoutTheFooter />
-  </div>
+      </div>
 </template>
 
 <script setup lang="ts">

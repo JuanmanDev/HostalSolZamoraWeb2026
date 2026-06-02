@@ -1,7 +1,6 @@
 <template>
   <div>
-    <LayoutTheNavbar />
-    <main>
+        <main>
       <SectionsHeroSection id="hero" />
       <SectionsAboutSection id="about" />
       <SectionsRoomsSection id="rooms" />
@@ -12,8 +11,7 @@
       <SectionsFaqSection id="faq" />
       <SectionsReservationSection id="reservation" />
     </main>
-    <LayoutTheFooter />
-  </div>
+      </div>
 </template>
 
 <script setup lang="ts">

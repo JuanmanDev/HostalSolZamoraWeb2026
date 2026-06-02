@@ -1,12 +1,10 @@
 <template>
   <div>
-    <LayoutTheNavbar :solid-from-start="true" />
-
-    <main class="page-content">
+        <main class="page-content">
       <header id="about-hero" class="about-hero">
         <UiSectionTag>{{ t('pages.sobreNosotros.tag') }}</UiSectionTag>
-        <h1 class="page-heading">{{ t('pages.sobreNosotros.heading') }}</h1>
-        <p class="page-lead">{{ t('pages.sobreNosotros.intro1') }}</p>
+        <h1 class="page-heading" style="view-transition-name: page-heading">{{ t('pages.sobreNosotros.heading') }}</h1>
+        <p class="page-lead" style="view-transition-name: page-lead">{{ t('pages.sobreNosotros.intro1') }}</p>
         <p class="page-lead">{{ t('pages.sobreNosotros.intro2') }}</p>
         <p class="page-lead">{{ t('pages.sobreNosotros.intro3') }}</p>
 
@@ -72,8 +70,7 @@
       </div>
     </main>
 
-    <LayoutTheFooter />
-  </div>
+      </div>
 </template>
 
 <script setup lang="ts">
