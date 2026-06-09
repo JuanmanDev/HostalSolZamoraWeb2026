@@ -1164,6 +1164,18 @@
             "icon": "external-link"
           }
         ]
+      },
+      {
+        "q": "What should I do if I have payment problems or the confirmation email doesn't arrive?",
+        "a": "If the confirmation email hasn't arrived in 2 minutes and isn't in your spam or junk folder, the reservation is not confirmed. It's possible that a payment attempt was made and the money is temporarily blocked by your bank, but the payment was not completed and the reservation is not guaranteed. Additionally, some cards require explicitly accepting foreign payments or allowing non-secure payments in your banking app, depending on the situation. Please check that you have sufficient balance or try using different cards. If you still have problems, please contact us via WhatsApp, email, or phone call.",
+        "tags": [
+          "payment",
+          "rejected",
+          "card",
+          "email",
+          "confirmation",
+          "blocked"
+        ]
       }
     ]
   },
@@ -1339,7 +1351,8 @@
       "iframeTitle": "Hostal Sol Zamora booking engine",
       "troubleText": "Having trouble with the booking engine? Call us on",
       "backHome": "← Back to home",
-      "iframeFallback": "If the booking engine isn't showing above, click here to open it directly."
+      "fallbackTitle": "Having trouble booking?",
+      "fallbackSubtitle": "Click here to open a simpler booking page in a new tab."
     },
     "checkin": {
       "title": "How to Arrive & Check-in — Hostal Sol Zamora",

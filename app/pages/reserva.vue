@@ -26,13 +26,62 @@
         </div>
       </div>
 
+      <!-- Popup Fallback Card -->
+      <Teleport to="body">
+        <Transition name="slide-down-popup">
+          <div 
+            v-if="showPopup"
+            class="fallback-booking-popup-wrapper"
+          >
+            <div
+              class="fallback-booking-popup"
+              @touchstart="onTouchStart"
+              @touchmove="onTouchMove"
+              @touchend="onTouchEnd"
+              :style="{ transform: popupTransform, transition: isDragging ? 'none' : 'transform 0.3s ease' }"
+            >
+              <a :href="bookingUrl" target="_blank" rel="noopener noreferrer" class="fallback-booking-popup-link" @click="closePopup">
+                <div class="fallback-booking-icon">
+                  <LucideIcon name="external-link" :size="24" color="var(--green)" />
+                </div>
+                <div class="fallback-booking-content">
+                  <h3 class="fallback-booking-title">{{ t('pages.reserva.fallbackTitle') }}</h3>
+                  <p class="fallback-booking-subtitle">{{ t('pages.reserva.fallbackSubtitle') }}</p>
+                </div>
+              </a>
+              <button class="fallback-booking-close" @click.prevent="closePopup" aria-label="Close">
+                <LucideIcon name="x" :size="20" color="var(--dark)" />
+              </button>
+            </div>
+          </div>
+        </Transition>
+      </Teleport>
+
+      <a
+        class="fallback-booking-card"
+        :href="bookingUrl" target="_blank" rel="noopener noreferrer"
+      >
+        <div class="fallback-booking-icon">
+          <LucideIcon name="external-link" :size="24" color="var(--green)" />
+        </div>
+        <div class="fallback-booking-content">
+          <h3 class="fallback-booking-title">{{ t('pages.reserva.fallbackTitle') }}</h3>
+          <p class="fallback-booking-subtitle">{{ t('pages.reserva.fallbackSubtitle') }}</p>
+        </div>
+        <div class="fallback-booking-arrow">
+          <LucideIcon name="chevron-right" :size="20" color="var(--green)" />
+        </div>
+      </a>
+
       <!-- SiteMinder IBE Iframe -->
       <iframe
+        ref="iframeEl"
         class="ibe-iframe"
         :src="bookingUrl"
         frameborder="0"
         scrolling="yes"
         title="Hostal Sol Zamora Booking"
+        @load="onIframeLoad"
       ></iframe>
 
       <p class="trouble-text">
@@ -41,10 +90,19 @@
       </p>
 
       <a
-        class="link-to-reservation"
+        class="fallback-booking-card fallback-booking-card--bottom"
         :href="bookingUrl" target="_blank" rel="noopener noreferrer"
       >
-        {{ t('pages.reserva.iframeFallback') }}
+        <div class="fallback-booking-icon">
+          <LucideIcon name="external-link" :size="24" color="var(--green)" />
+        </div>
+        <div class="fallback-booking-content">
+          <h3 class="fallback-booking-title">{{ t('pages.reserva.fallbackTitle') }}</h3>
+          <p class="fallback-booking-subtitle">{{ t('pages.reserva.fallbackSubtitle') }}</p>
+        </div>
+        <div class="fallback-booking-arrow">
+          <LucideIcon name="chevron-right" :size="20" color="var(--green)" />
+        </div>
       </a>
     </main>
 
@@ -108,6 +166,85 @@ const features  = computed(() =>
   (tm('pages.reserva.features') as any[]).map((f: any) => rt(f)) as string[]
 )
 const featIcons = ['zap', 'shield-check', 'lock', 'x-circle']
+
+const iframeEl = ref<HTMLIFrameElement | null>(null)
+
+// Popup State
+const showPopup = ref(false)
+const popupDismissed = ref(false)
+let popupAutoCloseTimer: ReturnType<typeof setTimeout> | null = null
+
+function closePopup() {
+  showPopup.value = false
+  popupDismissed.value = true
+  if (popupAutoCloseTimer) {
+    clearTimeout(popupAutoCloseTimer)
+  }
+}
+
+// Swipe logic
+const touchStartX = ref(0)
+const touchCurrentX = ref(0)
+const isDragging = ref(false)
+const popupTransform = computed(() => {
+  if (!isDragging.value && touchStartX.value === 0) return ''
+  const diff = touchCurrentX.value - touchStartX.value
+  return `translateX(${diff}px)`
+})
+
+function onTouchStart(e: TouchEvent) {
+  touchStartX.value = e.touches[0].clientX
+  touchCurrentX.value = e.touches[0].clientX
+  isDragging.value = true
+}
+
+function onTouchMove(e: TouchEvent) {
+  if (!isDragging.value) return
+  touchCurrentX.value = e.touches[0].clientX
+}
+
+function onTouchEnd() {
+  if (!isDragging.value) return
+  isDragging.value = false
+  const diff = touchCurrentX.value - touchStartX.value
+  // Swipe threshold
+  if (Math.abs(diff) > 80) {
+    // Swipe away visual
+    touchCurrentX.value = touchStartX.value + (Math.sign(diff) * window.innerWidth)
+    setTimeout(() => {
+      closePopup()
+      touchStartX.value = 0
+      touchCurrentX.value = 0
+    }, 150) // wait for transition
+  } else {
+    // Snap back
+    touchStartX.value = 0
+    touchCurrentX.value = 0
+  }
+}
+
+function onIframeLoad() {
+  // Only scroll if the user is at the very top of the page
+  setTimeout(() => {
+    if (window.scrollY < 50 && iframeEl.value) {
+      // 64 is the navbar height
+      const top = iframeEl.value.getBoundingClientRect().top + window.scrollY - 64
+      window.scrollTo({ top, behavior: 'smooth' })
+    }
+  }, 100)
+
+  // Show popup after 20s
+  setTimeout(() => {
+    if (!popupDismissed.value) {
+      showPopup.value = true
+      
+      // Auto-hide after 15s
+      popupAutoCloseTimer = setTimeout(() => {
+        if (showPopup.value) closePopup()
+      }, 15000)
+    }
+  }, 20000)
+}
 
 onMounted(() => {
   try {
@@ -209,22 +346,154 @@ onMounted(() => {
     margin: 0;
     border-radius: 0;
     box-shadow: none;
-    height: 95vh
+    height: calc(100vh - 64px); /* Fallback */
+    height: calc(100dvh - 64px);
   }
 }
 
-.link-to-reservation {
-  display: block;
-  width: fit-content;
-  max-width: calc(100% - 2rem);
-  margin: 32px auto 0;
-  text-align: center;
-
-  background: var(--green);
-  color: white;
-  font-weight: 700;
-  padding: 12px 24px;
-  border-radius: 8px;
+.fallback-booking-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 24px;
   text-decoration: none;
+  margin: 0 auto 24px;
+  max-width: 800px;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.fallback-booking-card--bottom {
+  margin-top: 32px;
+}
+
+.fallback-booking-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  border-color: var(--green);
+}
+
+.fallback-booking-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: var(--green-light, #eaf5ec);
+  border-radius: 50%;
+}
+
+.fallback-booking-content {
+  flex: 1;
+}
+
+.fallback-booking-title {
+  color: var(--dark);
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+}
+
+.fallback-booking-subtitle {
+  color: var(--dark-muted);
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.fallback-booking-arrow {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .fallback-booking-card {
+    margin: 0 16px 24px;
+    padding: 16px;
+    gap: 12px;
+  }
+  .fallback-booking-title {
+    font-size: 15px;
+  }
+  .fallback-booking-subtitle {
+    font-size: 13px;
+  }
+}
+
+/* Popup styles */
+.fallback-booking-popup-wrapper {
+  position: fixed;
+  top: 16px;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  padding: 0 16px;
+  pointer-events: none;
+}
+
+.fallback-booking-popup {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.fallback-booking-popup-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 48px 16px 24px;
+  text-decoration: none;
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .fallback-booking-popup-link {
+    padding: 16px 48px 16px 16px;
+    gap: 12px;
+  }
+}
+
+.fallback-booking-close {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+.fallback-booking-close:hover {
+  background: rgba(0,0,0,0.05);
+}
+
+.slide-down-popup-enter-active,
+.slide-down-popup-leave-active {
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.4s ease;
+}
+.slide-down-popup-enter-from,
+.slide-down-popup-leave-to {
+  opacity: 0;
+  transform: translateY(-150%);
 }
 </style>

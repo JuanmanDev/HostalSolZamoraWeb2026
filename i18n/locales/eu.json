@@ -1117,6 +1117,18 @@
             "icon": "external-link"
           }
         ]
+      },
+      {
+        "q": "Zer egin behar dut ordaintzeko arazoak baditut edo berrespen-mezua ez bazaigu iristen?",
+        "a": "Berrespen-mezua 2 minuturen buruan iritsi ez bada eta spam edo zabor-postaren karpetan ez badago, erreserba ez dago baieztatuta. Baliteke ordainketa-saiakeraren bat egin izana eta dirua aldi baterako blokeatuta egotea zure bankuaren eskutik, baina ordainketa ez da amaitu eta erreserba ez dago bermatuta. Gainera, txartel batzuek atzerriko ordainketak esplizituki onartzea edo zure banku-aplikazioan ordainketa ez-seguruak baimentzea eskatzen dute, egoeraren arabera. Egiaztatu saldo nahikoa duzula edo saiatu beste txartel batzuk erabiltzen. Oraindik arazoak badituzu, jarri gurekin harremanetan WhatsApp, mezu elektroniko edo telefono dei bidez.",
+        "tags": [
+          "ordainketa",
+          "ukatua",
+          "txartela",
+          "posta",
+          "baieztapena",
+          "blokeatua"
+        ]
       }
     ]
   },
@@ -1292,7 +1304,8 @@
       "iframeTitle": "Hostal Sol Zamora erreserba sistema",
       "troubleText": "Erreserba sistemarekin arazoak? Deitu:",
       "backHome": "← Hasierara itzuli",
-      "iframeFallback": "Erreserba sistema agertzen ez bada, sakatu hemen zuzenean sartzeko."
+      "fallbackTitle": "Erreserba egiteko arazoak dituzu?",
+      "fallbackSubtitle": "Sakatu hemen erreserba orri errazago bat fitxa berri batean irekitzeko."
     },
     "checkin": {
       "title": "Nola iritsi eta check-in — Hostal Sol Zamora",

@@ -1067,6 +1067,18 @@
             "icon": "external-link"
           }
         ]
+      },
+      {
+        "q": "D acu ara xedmeɣ ma sɛiɣ uguren n usekles neɣ ur d-yewwiḍ ara yizen n uṣeggem?",
+        "a": "Ma yella izen n uṣeggem ur d-yewwiḍ ara deg snat n tseddatin yerna ur yelli ara deg yizen ur nzewweǧ, taseglit ur tṣeggem ara. Yezmer lḥal tella-d aɛraḍ n usekles yerna idrimen ḥebsen sɣur lbanka-k, dɣa usekles ur yekfil ara yerna taseglit ur teḍmin ara. Rnu ɣef waya, kra n tkaṛḍiwin ttḥeddiment ad teqbleḍ iseklasen iberraniyen neɣ ad teǧǧeḍ iseklasen ur nḍmin ara deg tesnasit-ik n lbanka, ɛla ḥsab n tegnit. Ttxil-k, senqed ma tesɛiḍ aḥric yewwḍen neɣ ɛreḍ ad tesqedceḍ tikaṛḍiwin nniḍen. Ma tkemmleḍ tesɛiḍ uguren, ttxil-k mmeslay-d yid-neɣ s WhatsApp, izen neɣ s usawal.",
+        "tags": [
+          "asekles",
+          "yettwagi",
+          "takaṛḍa",
+          "izen",
+          "aṣeggem",
+          "yeḥbes"
+        ]
       }
     ]
   },
@@ -1242,7 +1254,8 @@
       "iframeTitle": "Anagraw n Tenzert Hostal Sol Zamora",
       "troubleText": "Llant yiluɣan d anagraw n tenzert? Siɣeḍ-aɣ-d:",
       "backHome": "← Sedet ɣer Asebded",
-      "iframeFallback": "Ma anagraw n tenzert ur yebban ara ɣef wudem, kren fad i wakken ad t-teldiḍ maczin."
+      "fallbackTitle": "Iɣeblan deg uḥader?",
+      "fallbackSubtitle": "Senned dagi i wakken ad teldiḍ asebtar n uḥader fessusen deg yicer amaynut."
     },
     "checkin": {
       "title": "Tili d Check-in — Hostal Sol Zamora",

@@ -1129,6 +1129,18 @@
             "icon": "external-link"
           }
         ]
+      },
+      {
+        "q": "Ce ar trebui să fac dacă am probleme de plată sau nu ajunge e-mailul de confirmare?",
+        "a": "Dacă e-mailul de confirmare nu a ajuns în 2 minute și nu se află în folderul de spam, rezervarea nu este confirmată. Este posibil să fi avut loc o încercare de plată și banii să fie blocați temporar de către banca dvs., dar plata nu s-a finalizat, iar rezervarea nu este garantată. În plus, anumite carduri necesită acceptarea explicită a plăților externe sau permiterea plăților nesecurizate în aplicația bancară, în funcție de situație. Vă rugăm să verificați dacă aveți sold suficient sau să încercați să folosiți alte carduri. Dacă tot aveți probleme, contactați-ne prin WhatsApp, e-mail sau apel telefonic.",
+        "tags": [
+          "plată",
+          "respins",
+          "card",
+          "email",
+          "confirmare",
+          "blocat"
+        ]
       }
     ]
   },
@@ -1304,7 +1316,8 @@
       "iframeTitle": "Motor de rezervare Hostal Sol Zamora",
       "troubleText": "Ai probleme cu motorul de rezervare? Sună-ne la",
       "backHome": "← Înapoi la pagina principală",
-      "iframeFallback": "Dacă motorul de rezervare nu apare mai sus, apasă aici pentru a-l deschide direct."
+      "fallbackTitle": "Probleme la efectuarea rezervării?",
+      "fallbackSubtitle": "Faceți clic aici pentru a deschide o pagină de rezervare mai simplă într-o filă nouă."
     },
     "checkin": {
       "title": "Cum Ajungi și Check-in — Hostal Sol Zamora",

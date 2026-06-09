@@ -1114,6 +1114,18 @@
             "icon": "external-link"
           }
         ]
+      },
+      {
+        "q": "O que devo fazer se tiver problemas com o pagamento ou não receber o e-mail de confirmação?",
+        "a": "Se o e-mail de confirmação não chegou em 2 minutos e não está na sua pasta de spam ou lixo eletrônico, a reserva não está confirmada. É possível que uma tentativa de pagamento tenha sido feita e o dinheiro esteja temporariamente bloqueado pelo seu banco, mas o pagamento não foi concluído e a reserva não está garantida. Além disso, alguns cartões exigem aceitar explicitamente pagamentos no exterior ou permitir pagamentos não seguros em seu aplicativo bancário, dependendo da situação. Verifique se você tem saldo suficiente ou tente usar cartões diferentes. Se você ainda tiver problemas, entre em contato conosco via WhatsApp, e-mail ou telefonema.",
+        "tags": [
+          "pagamento",
+          "rejeitado",
+          "cartão",
+          "email",
+          "confirmação",
+          "bloqueado"
+        ]
       }
     ]
   },
@@ -1289,7 +1301,8 @@
       "iframeTitle": "Motor de reservas Hostal Sol Zamora",
       "troubleText": "Tens problemas com o motor de reservas? Liga-nos para o",
       "backHome": "← Voltar ao início",
-      "iframeFallback": "Se o motor de reservas não aparecer acima, clica aqui para o abrir diretamente."
+      "fallbackTitle": "Problemas a fazer a reserva?",
+      "fallbackSubtitle": "Clica aqui para abrir uma página de reservas mais simples num novo separador."
     },
     "checkin": {
       "title": "Como Chegar e Check-in — Hostal Sol Zamora",

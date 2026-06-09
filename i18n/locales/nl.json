@@ -1129,6 +1129,18 @@
             "icon": "external-link"
           }
         ]
+      },
+      {
+        "q": "Wat moet ik doen als ik betalingsproblemen heb of de bevestigingsmail niet aankomt?",
+        "a": "Als de bevestigingsmail niet binnen 2 minuten is aangekomen en niet in je spam- of ongewenste map zit, is de reservering niet bevestigd. Het is mogelijk dat er een betalingspoging is gedaan en het geld tijdelijk is geblokkeerd door je bank, maar de betaling is niet voltooid en de reservering is niet gegarandeerd. Bovendien vereisen sommige kaarten expliciet het accepteren van buitenlandse betalingen of het toestaan van onveilige betalingen in je bank-app, afhankelijk van de situatie. Controleer of je voldoende saldo hebt of probeer andere kaarten te gebruiken. Als je nog steeds problemen ondervindt, neem dan contact met ons op via WhatsApp, e-mail of telefoongesprek.",
+        "tags": [
+          "betaling",
+          "geweigerd",
+          "kaart",
+          "e-mail",
+          "bevestiging",
+          "geblokkeerd"
+        ]
       }
     ]
   },
@@ -1304,7 +1316,8 @@
       "iframeTitle": "Boekingsmotor Hostal Sol Zamora",
       "troubleText": "Problemen met de boekingsmotor? Bel ons op",
       "backHome": "← Terug naar home",
-      "iframeFallback": "Als de boekingsmotor hierboven niet verschijnt, klik dan hier om het direct te openen."
+      "fallbackTitle": "Problemen met boeken?",
+      "fallbackSubtitle": "Klik hier om een eenvoudigere boekingspagina in een nieuw tabblad te openen."
     },
     "checkin": {
       "title": "Hoe Aanreizen & Inchecken — Hostal Sol Zamora",

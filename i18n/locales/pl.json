@@ -1117,6 +1117,18 @@
             "icon": "external-link"
           }
         ]
+      },
+      {
+        "q": "Co powinienem zrobić, jeśli mam problemy z płatnością lub nie otrzymam e-maila z potwierdzeniem?",
+        "a": "Jeśli e-mail z potwierdzeniem nie dotarł w ciągu 2 minut i nie ma go w folderze spam, rezerwacja nie jest potwierdzona. Możliwe, że podjęto próbę płatności i pieniądze zostały tymczasowo zablokowane przez Twój bank, ale płatność nie została zrealizowana, a rezerwacja nie jest gwarantowana. Dodatkowo niektóre karty wymagają wyraźnego zaakceptowania płatności zagranicznych lub zezwolenia na płatności niezabezpieczone w Twojej aplikacji bankowej, w zależności od sytuacji. Sprawdź, czy masz wystarczające środki lub spróbuj użyć innej karty. Jeśli nadal masz problemy, skontaktuj się z nami przez WhatsApp, e-mail lub telefonicznie.",
+        "tags": [
+          "płatność",
+          "odrzucona",
+          "karta",
+          "email",
+          "potwierdzenie",
+          "zablokowana"
+        ]
       }
     ]
   },
@@ -1292,7 +1304,8 @@
       "iframeTitle": "System rezerwacji Hostal Sol Zamora",
       "troubleText": "Problemy z systemem rezerwacji? Zadzwoń do nas:",
       "backHome": "← Na stronę główną",
-      "iframeFallback": "Jeśli system rezerwacji się nie wyświetla, kliknij tutaj, aby przejść bezpośrednio."
+      "fallbackTitle": "Problemy z rezerwacją?",
+      "fallbackSubtitle": "Kliknij tutaj, aby otworzyć prostszą stronę rezerwacji w nowej karcie."
     },
     "checkin": {
       "title": "Jak dojechać i zameldowanie — Hostal Sol Zamora",

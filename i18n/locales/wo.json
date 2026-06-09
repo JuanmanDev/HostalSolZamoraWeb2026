@@ -1080,6 +1080,18 @@
             "icon": "external-link"
           }
         ]
+      },
+      {
+        "q": "Lu ma wara def su ma amee jafe-jafe fay walla bataaxal bi dikkul?",
+        "a": "Su bataaxal bi dikkul ci 2 simili te nekkul ci sa mbustug spam, dafa tekki ni sa doggal bi dëgërul. Mën na am ñu jéem a fay te sa bank tek loxo ci xaalis bi diir bu gat, waaye fay gi matul te doggal bi dëgërul. Leneen li mooy, yenn kart yi dañuy laaj nga nangu fay bu bitim réew walla nangu fay yu amul kaaraange ci sa appli bank, aju ci ni mbir mi mel. Ñu ngi lay ñaan nga xool ndax am nga xaalis bu doy walla nga jéem a jëfandikoo yeneen kart. Su jafe-jafe yi weyee, woo nu ci WhatsApp, bataaxal, walla telefon.",
+        "tags": [
+          "fay",
+          "bañ",
+          "kart",
+          "bataaxal",
+          "dëgëral",
+          "teye"
+        ]
       }
     ]
   },
@@ -1255,7 +1267,8 @@
       "iframeTitle": "Moteur de réservation Hostal Sol Zamora",
       "troubleText": "Problèmes ak moteur de réservation? Fonner nanu:",
       "backHome": "← Sedet ci kaw",
-      "iframeFallback": "Si moteur de réservation bi feeñul ci kanam, cliquer fii ngir ouvrir directement."
+      "fallbackTitle": "Jafe-jafe ngir def réservation bi?",
+      "fallbackSubtitle": "Bësal fii ngir ubbi xët wu yees te gëna yomb."
     },
     "checkin": {
       "title": "Jëm ak Check-in — Hostal Sol Zamora",
