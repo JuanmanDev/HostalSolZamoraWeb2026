@@ -347,7 +347,7 @@ onMounted(() => {
 .hero__dot::before {
   content: '';
   position: absolute;
-  top: -8px; left: -8px; right: -8px; bottom: -8px; /* 24x24 touch target */
+  top: -20px; left: -20px; right: -20px; bottom: -20px; /* 48x48 touch target */
 }
 .hero__dot--active { width: 24px; background: #fff; }
 

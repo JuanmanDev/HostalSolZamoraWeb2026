@@ -110,7 +110,7 @@ const year = new Date().getFullYear()
   gap: 10px;
 }
 
-.footer__copy { color: rgba(255,255,255,0.3); font-size: 12px; }
+.footer__copy { color: rgba(255,255,255,0.6); font-size: 12px; }
 
 .footer__links {
   display: flex;
@@ -118,10 +118,10 @@ const year = new Date().getFullYear()
   flex-wrap: wrap;
 }
 .footer__links a {
-  color: rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.6);
   font-size: 12px;
   text-decoration: none;
   transition: color 0.2s;
 }
-.footer__links a:hover { color: rgba(255,255,255,0.6); }
+.footer__links a:hover { color: rgba(255,255,255,1); }
 </style>

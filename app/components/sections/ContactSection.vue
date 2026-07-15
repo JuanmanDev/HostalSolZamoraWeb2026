@@ -203,7 +203,7 @@ const infoItems = computed(() => [
 }
 
 .contact__time-label {
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.75);
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.06em;

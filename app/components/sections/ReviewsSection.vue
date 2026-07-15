@@ -191,7 +191,7 @@ const itemsToShow = computed(() => {
 :deep(.carousel__pagination-button::before) {
   content: '';
   position: absolute;
-  top: -8px; left: -8px; right: -8px; bottom: -8px;
+  top: -20px; left: -20px; right: -20px; bottom: -20px;
 }
 :deep(.carousel__pagination-button--active) {
   width: 24px;

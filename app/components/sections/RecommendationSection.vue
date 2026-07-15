@@ -210,7 +210,7 @@ onMounted(() => {
 .rec__dot::before {
   content: '';
   position: absolute;
-  top: -8.5px; left: -8.5px; right: -8.5px; bottom: -8.5px;
+  top: -21px; left: -21px; right: -21px; bottom: -21px;
 }
 .rec__dot--active { width: 24px; background: #fff; border-color: #fff; }
 
