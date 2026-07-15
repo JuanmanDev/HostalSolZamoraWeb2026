@@ -20,7 +20,7 @@
         }"
         :loading="i === 0 ? 'eager' : 'lazy'"
         :preload="i === 0"
-        placeholder
+        :placeholder="[120, 80, 25, 5]"
         sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw xxl:100vw 2xl:100vw 3xl:100vw 4k:100vw"
         :modifiers="{ rotate: 0 }"
       />
@@ -334,6 +334,7 @@ onMounted(() => {
 }
 
 .hero__dot {
+  position: relative;
   width: 8px;
   height: 8px;
   border-radius: 4px;
@@ -342,6 +343,11 @@ onMounted(() => {
   cursor: pointer;
   padding: 0;
   transition: width 0.3s, background 0.3s;
+}
+.hero__dot::before {
+  content: '';
+  position: absolute;
+  top: -8px; left: -8px; right: -8px; bottom: -8px; /* 24x24 touch target */
 }
 .hero__dot--active { width: 24px; background: #fff; }
 

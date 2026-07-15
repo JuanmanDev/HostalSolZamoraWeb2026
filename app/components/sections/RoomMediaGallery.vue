@@ -8,6 +8,7 @@
           :key="m.key"
           :class="['room-gallery__media-btn', { 'room-gallery__media-btn--active': mediaFilter === m.key }]"
           @click="onMediaChange(m.key)"
+          :aria-label="t(`rooms.${m.labelKey}`)"
         >
           <LucideIcon :name="m.icon" :size="13" />
           {{ t(`rooms.${m.labelKey}`) }}
@@ -36,6 +37,7 @@
         class="room-gallery__room-select room-gallery__room-tabs--mobile"
         :value="activeRoom"
         @change="onRoomChange(($event.target as HTMLSelectElement).value)"
+        :aria-label="t('rooms.filterAll')"
       >
         <option value="All">{{ t('rooms.filterAll') }}</option>
         <option v-for="key in roomKeys" :key="key" :value="key">

@@ -39,16 +39,16 @@
 
     <!-- Platform badges -->
     <div class="reviews__platforms">
-      <a href="https://www.booking.com/hotel/es/hostal-sol-zamora.es.html" target="_blank" rel="noopener noreferrer" class="reviews__platform-badge reviews__platform-badge--booking" aria-label="Booking.com">
-        <NuxtPicture src="/images/icon/booking.svg" alt="Booking.com logo" class="reviews__platform-logo" width="80" height="80" />
+      <a href="https://www.booking.com/hotel/es/hostal-sol-zamora.es.html" target="_blank" rel="noopener noreferrer" class="reviews__platform-badge reviews__platform-badge--booking">
+        <NuxtPicture src="/images/icon/booking.svg" alt="" class="reviews__platform-logo" width="80" height="80" />
         <span class="reviews__platform-name">Booking.com</span>
       </a>
-      <a href="https://www.expedia.es/Zamora-Hoteles-Hostal-Sol.h101083476.Informacion-Hotel" target="_blank" rel="noopener noreferrer" class="reviews__platform-badge reviews__platform-badge--expedia" aria-label="Expedia">
-        <NuxtPicture src="/images/icon/expedia.png" alt="Expedia logo" class="reviews__platform-logo" width="80" height="80" />
+      <a href="https://www.expedia.es/Zamora-Hoteles-Hostal-Sol.h101083476.Informacion-Hotel" target="_blank" rel="noopener noreferrer" class="reviews__platform-badge reviews__platform-badge--expedia">
+        <NuxtPicture src="/images/icon/expedia.png" alt="" class="reviews__platform-logo" width="80" height="80" />
         <span class="reviews__platform-name">Expedia</span>
       </a>
-      <a href="https://www.spanish.hostelworld.com/pwa/hosteldetails.php/Hostal-Sol/Zamora/330134" target="_blank" rel="noopener noreferrer" class="reviews__platform-badge reviews__platform-badge--hostelworld" aria-label="HostelWorld">
-        <NuxtPicture src="/images/icon/hostelworld.png" alt="HostelWorld logo" class="reviews__platform-logo" width="80" height="80" />
+      <a href="https://www.spanish.hostelworld.com/pwa/hosteldetails.php/Hostal-Sol/Zamora/330134" target="_blank" rel="noopener noreferrer" class="reviews__platform-badge reviews__platform-badge--hostelworld">
+        <NuxtPicture src="/images/icon/hostelworld.png" alt="" class="reviews__platform-logo" width="80" height="80" />
         <span class="reviews__platform-name">HostelWorld</span>
       </a>
     </div>
@@ -181,11 +181,17 @@ const itemsToShow = computed(() => {
 /* Carousel overrides */
 :deep(.carousel__pagination) { margin-top: 16px; }
 :deep(.carousel__pagination-button) {
+  position: relative;
   width: 8px; height: 8px;
   border-radius: 4px;
   background: var(--border);
   padding: 0;
   transition: width 0.3s, background 0.3s;
+}
+:deep(.carousel__pagination-button::before) {
+  content: '';
+  position: absolute;
+  top: -8px; left: -8px; right: -8px; bottom: -8px;
 }
 :deep(.carousel__pagination-button--active) {
   width: 24px;

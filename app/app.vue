@@ -13,8 +13,17 @@ const config     = useRuntimeConfig()
 const RTL_LOCALES = ['ar', 'he', 'fa']
 const isRtl = computed(() => RTL_LOCALES.includes(locale.value))
 
-// Keep <html lang> in sync with the active i18n locale.
-useHead(() => ({ htmlAttrs: { lang: locale.value } }))
+const i18nHead = useLocaleHead({ addDirAttribute: true, addSeoAttributes: true })
+
+// Keep <html lang> in sync with the active i18n locale, and add SEO meta/links.
+useHead(() => ({
+  htmlAttrs: {
+    lang: locale.value,
+    ...i18nHead.value.htmlAttrs
+  },
+  meta: i18nHead.value.meta,
+  link: i18nHead.value.link
+}))
 
 // Site-wide Organization schema (one knowledge-graph entry for the brand).
 const siteUrl  = (config.public.siteUrl as string).replace(/\/$/, '')

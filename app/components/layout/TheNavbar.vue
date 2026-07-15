@@ -45,7 +45,7 @@
 
         <UiGlobalSearch :solid="scrolled" />
         
-        <button class="navbar__hamburger" @click="menuOpen = !menuOpen">
+        <button class="navbar__hamburger" @click="menuOpen = !menuOpen" aria-label="Menu">
           <LucideIcon :name="menuOpen ? 'x' : 'menu'" :size="22" :color="scrolled ? 'var(--dark)' : '#fff'" />
         </button>
       </div>

@@ -1,10 +1,10 @@
 /* ── Design tokens ─────────────────────────────────────────── */
 :root {
-  --green:       #687e56;
+  --green:       #556846;
   --green-light: #edf0e8;
   --cream:       #faf8f3;
   --dark:        #2a2a22;
-  --dark-muted:  #6a6a5a;
+  --dark-muted:  #5a5a4a;
   --border:      #e2e0d8;
   --footer-bg:   #15150f;
   --whatsapp:    #25d366;
@@ -177,3 +177,16 @@ img {
 
 /* ── RTL ───────────────────────────────────────────────────── */
 [dir="rtl"] { text-align: right; }
+
+/* ── Accessibility Overrides ───────────────────────────────── */
+.carousel__pagination-button {
+  position: relative;
+}
+.carousel__pagination-button::after {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 24px; height: 24px;
+  background: transparent;
+}

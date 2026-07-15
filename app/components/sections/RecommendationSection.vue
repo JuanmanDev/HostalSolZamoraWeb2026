@@ -13,6 +13,7 @@
         height="1080"
         format="webp"
         class="rec__bg-img"
+        alt=""
         :img-attrs="{ style: 'width: 100%; height: 100%; object-fit: cover;' }"
         loading="lazy"
       />
@@ -196,6 +197,7 @@ onMounted(() => {
 }
 
 .rec__dot {
+  position: relative;
   width: 7px;
   height: 7px;
   border-radius: 4px;
@@ -204,6 +206,11 @@ onMounted(() => {
   cursor: pointer;
   padding: 0;
   transition: all 0.3s;
+}
+.rec__dot::before {
+  content: '';
+  position: absolute;
+  top: -8.5px; left: -8.5px; right: -8.5px; bottom: -8.5px;
 }
 .rec__dot--active { width: 24px; background: #fff; border-color: #fff; }
 

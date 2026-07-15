@@ -15,7 +15,15 @@
       "Read(//tmp/**)",
       "Bash(node -e \"const l = require\\('c:/code/HostalSol2026/node_modules/lucide-vue-next'\\); ['Calendar','CreditCard','PiggyBank','User','BanknoteArrowDown'].forEach\\(n => console.log\\(n, !!l[n]\\)\\)\")",
       "Bash(node -e \"const l = require\\('c:/code/HostalSol2026/node_modules/lucide-vue-next'\\); const icons = ['Globe','Menu','Tag','MapPin','Building2','PawPrint','Star','ChevronDown','ChevronUp','ChevronLeft','ChevronRight','BedDouble','Building','BedSingle','LayoutGrid','Image','PlayCircle','Play','Tv','Tv2','ParkingSquare','Car','Info','Navigation','Landmark','Train','Plus','Minus','ShieldCheck','XCircle','Lock','Zap','CalendarCheck','CalendarClock','Phone','Smartphone','Mail','Clock','Key','LogOut','LogIn','Moon','MessageCircle','Copy','Check','Footprints','UtensilsCrossed','ZoomIn','ShowerHead','Wifi','Armchair','Thermometer','Wind','Package','Bed','Trees','Warehouse','ImageOff','Youtube','ExternalLink','Luggage','UserCheck','AlertCircle','DoorOpen','IdCard','FileText','Laptop','FileBadge2','Search','FileCheck','BanknoteArrowDown','Calendar','CreditCard','PiggyBank','User']; icons.forEach\\(n => { if \\(!l[n]\\) console.log\\('MISSING:', n\\); }\\); console.log\\('done'\\)\")",
-      "Bash(node -e \"const l = require\\('c:/code/HostalSol2026/node_modules/lucide-vue-next'\\); const candidates = ['WashingMachine','Shirt','Wardrobe','Sofa','Armchair','MonitorSmartphone','Monitor','Laptop2','Briefcase','ClipboardCheck','SprayCan','Droplets','Scissors','Sparkles','Elevator','ArrowUpDown','Cctv','ShieldAlert','Lock','DoorClosed','Wind','Zap','Star','Dumbbell','Coffee','Utensils','Package2','Gift']; candidates.forEach\\(n => { if \\(l[n]\\) console.log\\('✓', n\\); else console.log\\('✗', n\\); }\\)\")"
+      "Bash(node -e \"const l = require\\('c:/code/HostalSol2026/node_modules/lucide-vue-next'\\); const candidates = ['WashingMachine','Shirt','Wardrobe','Sofa','Armchair','MonitorSmartphone','Monitor','Laptop2','Briefcase','ClipboardCheck','SprayCan','Droplets','Scissors','Sparkles','Elevator','ArrowUpDown','Cctv','ShieldAlert','Lock','DoorClosed','Wind','Zap','Star','Dumbbell','Coffee','Utensils','Package2','Gift']; candidates.forEach\\(n => { if \\(l[n]\\) console.log\\('✓', n\\); else console.log\\('✗', n\\); }\\)\")",
+      "Bash(Get-ChildItem -Path \"c:\\\\code\\\\HostalSol2026\" -Force)",
+      "Bash(Select-Object Name, Mode)",
+      "Bash(npm install *)",
+      "Bash(npm view *)",
+      "Bash(dir \"c:\\\\code\\\\HostalSol2026\\\\public\" /b)",
+      "Bash(node -e \"const p = require\\('c:/code/HostalSol2026/node_modules/nuxt-og-image/package.json'\\); console.log\\(p.version, Object.keys\\(p.exports || {}\\).join\\(' '\\)\\)\")",
+      "Bash(node -e \"const src = require\\('fs'\\).readFileSync\\('c:/code/HostalSol2026/node_modules/nuxt-og-image/dist/runtime/composables/defineOgImage.js','utf8'\\).slice\\(0,800\\); console.log\\(src\\)\")",
+      "Bash(python3 -c ' *)"
     ]
   }
 }

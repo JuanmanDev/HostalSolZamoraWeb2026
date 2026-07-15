@@ -1,6 +1,6 @@
 # Hostal Sol Zamora — llms.txt
 
-Hostal boutique con estilo nórdico en el centro histórico de Zamora (Castilla y León, España). Más de 50 años de historia hotelera familiar.
+> Hostal boutique con estilo nórdico en el centro histórico de Zamora (Castilla y León, España). Más de 50 años de historia hotelera familiar.
 
 ## Información de contacto
 
