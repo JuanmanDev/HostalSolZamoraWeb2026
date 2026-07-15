@@ -201,7 +201,7 @@ const itemsToShow = computed(() => {
 :deep(.carousel__next) {
   background: #fff;
   border-radius: 50%;
-  width: 40px; height: 40px;
+  width: 48px; height: 48px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   color: var(--dark);
 }
