@@ -3,13 +3,13 @@
         <main>
       <SectionsHeroSection id="hero" />
       <SectionsAboutSection id="about" />
-      <SectionsRoomsSection id="rooms" />
-      <SectionsMapSection id="map" />
-      <SectionsParkingSection id="parking" />
-      <SectionsReviewsSection id="reviews" />
-      <SectionsRecommendationSection id="recommendation" />
-      <SectionsFaqSection id="faq" />
-      <SectionsReservationSection id="reservation" />
+      <LazySectionsRoomsSection id="rooms" />
+      <LazySectionsMapSection id="map" />
+      <LazySectionsParkingSection id="parking" />
+      <LazySectionsReviewsSection id="reviews" />
+      <LazySectionsRecommendationSection id="recommendation" />
+      <LazySectionsFaqSection id="faq" />
+      <LazySectionsReservationSection id="reservation" />
     </main>
       </div>
 </template>
