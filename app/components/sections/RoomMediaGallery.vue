@@ -145,13 +145,13 @@
           @mouseup="onLbUp"
           @mouseleave="onLbUp"
         >
-          <button class="lb__close" @click="closeLb">
+          <button class="lb__close" @click="closeLb" aria-label="Cerrar">
             <LucideIcon name="x" :size="22" color="#fff" />
           </button>
-          <button class="lb__nav lb__nav--prev" @click.stop="lbPrev">
+          <button class="lb__nav lb__nav--prev" @click.stop="lbPrev" aria-label="Anterior">
             <LucideIcon name="chevron-left" :size="28" color="#fff" />
           </button>
-          <button class="lb__nav lb__nav--next" @click.stop="lbNext">
+          <button class="lb__nav lb__nav--next" @click.stop="lbNext" aria-label="Siguiente">
             <LucideIcon name="chevron-right" :size="28" color="#fff" />
           </button>
           <div

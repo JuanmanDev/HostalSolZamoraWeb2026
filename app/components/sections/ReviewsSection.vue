@@ -181,21 +181,20 @@ const itemsToShow = computed(() => {
 /* Carousel overrides */
 :deep(.carousel__pagination) { margin-top: 16px; }
 :deep(.carousel__pagination-button) {
-  position: relative;
-  width: 8px; height: 8px;
-  border-radius: 4px;
-  background: var(--border);
-  padding: 0;
-  transition: width 0.3s, background 0.3s;
-}
-:deep(.carousel__pagination-button::before) {
-  content: '';
-  position: absolute;
-  top: -20px; left: -20px; right: -20px; bottom: -20px;
+  width: 48px;
+  height: 48px;
+  padding: 20px;
+  background-color: var(--border);
+  background-clip: content-box;
+  border-radius: 24px;
+  border: none;
+  transition: width 0.3s, background-color 0.3s;
+  box-sizing: border-box;
+  margin: -16px 0;
 }
 :deep(.carousel__pagination-button--active) {
-  width: 24px;
-  background: var(--green);
+  width: 64px;
+  background-color: var(--green);
 }
 :deep(.carousel__prev),
 :deep(.carousel__next) {

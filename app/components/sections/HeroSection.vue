@@ -333,23 +333,20 @@ onMounted(() => {
   z-index: 2;
 }
 
-.hero__dot {
-  position: relative;
-  width: 8px;
-  height: 8px;
-  border-radius: 4px;
-  background: rgba(255,255,255,0.4);
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  transition: width 0.3s, background 0.3s;
-}
-.hero__dot::before {
-  content: '';
-  position: absolute;
-  top: -20px; left: -20px; right: -20px; bottom: -20px; /* 48x48 touch target */
-}
-.hero__dot--active { width: 24px; background: #fff; }
+  .hero__dot {
+    width: 48px;
+    height: 48px;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.4);
+    background-clip: content-box;
+    border: none;
+    cursor: pointer;
+    border-radius: 24px;
+    box-sizing: border-box;
+    transition: width 0.3s, background-color 0.3s;
+    margin: -16px; /* offset the padding to maintain layout */
+  }
+  .hero__dot--active { width: 64px; background-color: #fff; }
 
 /* Mobile: center logo and content */
 @media (max-width: 640px) {

@@ -31,7 +31,7 @@
             <LucideIcon name="phone" :size="14" color="#fff" /> {{ t('contact.phone1') }}
           </a>
           <a href="https://wa.me/34639980253" target="_blank" rel="noopener noreferrer" class="contact__btn contact__btn--wa">
-            <LucideIcon name="message-circle" :size="14" color="#fff" /> WhatsApp
+            <LucideIcon name="message-circle" :size="14" color="#000" /> WhatsApp
           </a>
           <a :href="`mailto:${t('contact.email')}`" class="contact__btn">
             <LucideIcon name="mail" :size="14" color="#fff" /> Email
@@ -161,8 +161,8 @@ const infoItems = computed(() => [
   transition: background 0.2s;
 }
 .contact__btn:hover { background: rgba(255,255,255,0.22); }
-.contact__btn--wa { background: var(--whatsapp); border-color: var(--whatsapp); }
-.contact__btn--wa:hover { background: #1fb954; }
+.contact__btn--wa { background: var(--whatsapp); border-color: var(--whatsapp); color: #000; font-weight: 700; }
+.contact__btn--wa:hover { background: #1fb954; color: #000; }
 
 /* Pets note */
 .contact__pets-note {

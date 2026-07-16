@@ -27,7 +27,7 @@
             @keydown.enter.prevent="selectActive"
           />
           <kbd class="gsearch__esc">ESC</kbd>
-          <button class="gsearch__close" @click="close">
+          <button class="gsearch__close" @click="close" aria-label="Cerrar">
             <LucideIcon name="x" :size="14" color="var(--dark-muted)" />
           </button>
         </div>
