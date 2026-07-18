@@ -197,8 +197,8 @@ onMounted(() => {
 }
 
 .rec__dot {
-  width: 47px;
-  height: 47px;
+  width: 48px;
+  height: 48px;
   padding: 20px;
   background-color: transparent;
   background-clip: content-box;

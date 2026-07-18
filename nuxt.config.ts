@@ -168,6 +168,8 @@ export default defineNuxtConfig({
   },
 
   i18n: {
+    seo: false,
+    baseUrl: 'https://hostalsolzamora.com',
     bundle: { optimizeTranslationDirective: false },
     langDir: 'locales',
     locales: [
@@ -191,10 +193,11 @@ export default defineNuxtConfig({
       { code: 'ko', file: 'ko.json', name: '한국어',       language: 'ko-KR' },
       { code: 'ja', file: 'ja.json', name: '日本語',       language: 'ja-JP' },
       { code: 'wo', file: 'wo.json', name: 'Wolof',      language: 'wo-SN' },
-      { code: 'ber', file: 'ber.json', name: 'Tamaziɣt', language: 'ber-MA' },
+      { code: 'zgh', file: 'zgh.json', name: 'Tamaziɣt', language: 'zgh-MA' },
     ],
     defaultLocale: 'es',
     strategy: 'prefix_except_default',
+    lazy: true,
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'hsz_lang',
@@ -247,7 +250,7 @@ export default defineNuxtConfig({
     '/ko/**': { ogImage: false },
     '/ja/**': { ogImage: false },
     '/wo/**': { ogImage: false },
-    '/ber/**': { ogImage: false },
+    '/zgh/**': { ogImage: false },
 
     // Aggressively cache fingerprinted assets (Nuxt build output + IPX images).
     // The hash in the filename means the URL changes whenever the content changes,
@@ -278,6 +281,7 @@ export default defineNuxtConfig({
     },
     prerender: {
       crawlLinks: true,
+      failOnError: false,
       ignoreErrors: true,
       // Aumentado a 4. Renderizará 4 páginas a la vez. 
       // Al haber aumentado la RAM a 6GB en el workflow, aguantará sin problemas.

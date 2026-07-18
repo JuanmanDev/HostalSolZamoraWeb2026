@@ -6,6 +6,8 @@
         <NuxtImg
           :src="LOGO_SVG"
           alt="Hostal Sol"
+          width="864"
+          height="198"
           class="contact__logo"
         />
         <UiSectionTag light>{{ t('contact.title') }}</UiSectionTag>

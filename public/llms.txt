@@ -1,16 +1,16 @@
-# Hostal Sol Zamora — llms.txt
+# Hostal Sol Zamora - llms.txt
 
 > Hostal boutique con estilo nórdico en el centro histórico de Zamora (Castilla y León, España). Más de 50 años de historia hotelera familiar.
 
-## Información de contacto
+## Contacto y Redes
 
-- Web: https://hostalsolzamora.com
+- [Sitio Web Oficial](https://hostalsolzamora.com)
+- [Instagram](https://www.instagram.com/hostalsolzamora/)
+- [Facebook](https://www.facebook.com/hostalsolzam)
 - Teléfono: +34 980 533 152
 - WhatsApp: +34 639 980 253
 - Email: hostalsol@outlook.com
-- Dirección: Calle Benavente, 2 – 3ª planta, 49014 Zamora, España
-- Instagram: https://www.instagram.com/hostalsolzamora/
-- Facebook: https://www.facebook.com/hostalsolzam
+- Dirección: Calle Benavente, 2 - 3ª planta, 49014 Zamora, España
 
 ## Sobre el alojamiento
 
@@ -20,7 +20,6 @@
 - Estilo: Nórdico / minimalista
 - Abierto desde: 1975 (como Pensión Padornelo; Hostal Sol desde reforma)
 - Valoración: 7.7 / 10 (más de 500 valoraciones)
-- Rango de precios: €€
 
 ## Servicios incluidos
 
@@ -37,49 +36,35 @@
 
 - Check-in: 14:00h (2:00 PM)
 - Check-out: 11:00h (11:00 AM)
-- Sin recepción los domingos — check-in self-service disponible
+- Sin recepción los domingos - check-in self-service disponible
 - Mascotas: permitidas (informar al reservar)
-- Cancelación: consultar en cada tarifa
 
 ## Reservas
 
-- Motor de reservas: https://direct-book.com/properties/hostalsoldirect?promocode=WEB
+- [Motor de reservas directo](https://direct-book.com/properties/hostalsoldirect?promocode=WEB)
 - Código de descuento directo: WEB (15% de descuento)
 - Moneda: EUR
 - Formas de pago: efectivo, tarjeta, transferencia bancaria
 
-## Ubicación y transporte
-
-- En el casco histórico de Zamora, a pasos de la Catedral románica
-- Coordenadas: 41.5067° N, -5.7428° W
-- Acceso en coche: Calle San Miguel (zona peatonal con acceso a huéspedes)
-- Sin parking propio
-
-### Aparcamientos cercanos
-
-- Parking Plaza Constitución: 3 min a pie · 14,70€/24h · Tel. 980 53 72 08
-- Parking Plaza Marina Española: 5 min a pie · desde 19,45€/día
-- Zona ORA (calle): 1 min · 0,35€/30min (L-V y S mañana)
-- Estación de Ferrocarril: gratuito · 2 km (bus L3 → parada Mercado)
-
 ## Páginas del sitio web
 
-| Página | URL (ES) | URL (EN) |
-|--------|----------|----------|
-| Inicio | https://hostalsolzamora.com/ | https://hostalsolzamora.com/en/ |
-| Habitaciones / Galería | https://hostalsolzamora.com/galeria | https://hostalsolzamora.com/en/gallery |
-| Reservar | https://hostalsolzamora.com/reserva | https://hostalsolzamora.com/en/booking |
-| Check-in | https://hostalsolzamora.com/checkin | https://hostalsolzamora.com/en/check-in |
-| Preguntas frecuentes | https://hostalsolzamora.com/faq | https://hostalsolzamora.com/en/faq |
-| Aparcamiento | https://hostalsolzamora.com/parking | https://hostalsolzamora.com/en/parking |
-| Contacto | https://hostalsolzamora.com/contacto | https://hostalsolzamora.com/en/contact |
-| Sobre nosotros | https://hostalsolzamora.com/sobre-nosotros | https://hostalsolzamora.com/en/about |
+- [Inicio (Español)](https://hostalsolzamora.com/)
+- [Inicio (English)](https://hostalsolzamora.com/en/)
+- [Habitaciones / Galería (Español)](https://hostalsolzamora.com/galeria)
+- [Rooms / Gallery (English)](https://hostalsolzamora.com/en/gallery)
+- [Reservar (Español)](https://hostalsolzamora.com/reserva)
+- [Booking (English)](https://hostalsolzamora.com/en/booking)
+- [Check-in (Español)](https://hostalsolzamora.com/checkin)
+- [Check-in (English)](https://hostalsolzamora.com/en/check-in)
+- [Preguntas frecuentes (Español)](https://hostalsolzamora.com/faq)
+- [FAQ (English)](https://hostalsolzamora.com/en/faq)
+- [Aparcamiento (Español)](https://hostalsolzamora.com/parking)
+- [Parking (English)](https://hostalsolzamora.com/en/parking)
+- [Contacto (Español)](https://hostalsolzamora.com/contacto)
+- [Contact (English)](https://hostalsolzamora.com/en/contact)
+- [Sobre nosotros (Español)](https://hostalsolzamora.com/sobre-nosotros)
+- [About us (English)](https://hostalsolzamora.com/en/about)
 
 ## Sitemap
 
-https://hostalsolzamora.com/sitemap.xml
-
-## Idiomas disponibles
-
-- Español (es) — predeterminado
-- English (en) — /en/...
+- [Sitemap](https://hostalsolzamora.com/sitemap.xml)

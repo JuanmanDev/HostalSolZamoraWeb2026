@@ -542,7 +542,7 @@ function handleSlideClick(i: number, item: MediaItem) {
     </div>
 
     <Carousel id="gallery" v-bind="galleryConfig" v-model="currentSlide" @mousedown.capture="pauseCarousel" @touchstart.capture="pauseCarousel">
-      <Slide v-for="(image, i) in mediaItems" :key="`${image.type}-${i}`">
+      <Slide v-for="(image, i) in displayedItems" :key="`${image.type}-${i}`">
         <template #default="{ isActive, isVisible }">
           <template v-if="isVisible || isActive">
             <NuxtPicture
@@ -563,32 +563,10 @@ function handleSlideClick(i: number, item: MediaItem) {
       </Slide>
     </Carousel>
 
-    <!-- 
-      Hidden container for crawler discovery. 
-      Nuxt Image needs to see these tags in the HTML to optimize images during 'generate'.
-    -->
-    <div style="display: none;" aria-hidden="true">
-      <NuxtPicture
-        v-for="path in roomPhotoPaths('All')"
-        :key="path"
-        :src="path"
-        sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw xxl:100vw 3xl:100vw 4xl:100vw 5xl:100vw"
-        :modifiers="{ rotate: 0 }"
-      />
-      <!-- Pre-render miniature thumbnails so client-side room filters do not fail on static export -->
-      <NuxtImg
-        v-for="path in roomPhotoPaths('All')"
-        :key="`thumb-pre-${path}`"
-        :src="path"
-        width="80"
-        height="60"
-        format="webp"
-        :modifiers="{ rotate: 0 }"
-      />
-    </div>
+    <!-- Hidden container for crawler discovery removed to optimize DOM size and initial payload -->
 
     <Carousel id="thumbnails" v-bind="thumbnailsConfig" v-model="currentSlide" @mousedown.capture="pauseCarousel" @touchstart.capture="pauseCarousel">
-      <Slide v-for="(image, i) in mediaItems" :key="`thumb-${image.type}-${i}`">
+      <Slide v-for="(image, i) in displayedItems" :key="`thumb-${image.type}-${i}`">
         <template #default="{ currentIndex, isActive }">
           <div
             :class="['thumbnail', { 'is-active': isActive }]"

@@ -2,13 +2,14 @@
   <section id="hero" class="hero">
     <!-- Slideshow -->
     <div
-      v-for="(src, i) in HERO_PHOTOS"
+      v-for="(src, i) in displayedHeroPhotos"
       :key="i"
       class="hero__slide"
       :style="{ opacity: i === currentIdx ? 1 : 0 }"
       aria-hidden="true"
     >
       <NuxtPicture
+        v-if="i === 0 || i === currentIdx || i === (currentIdx + 1) % displayedHeroPhotos.length"
         :src="src"
         format="webp"
         class="hero__slide-img"
@@ -45,6 +46,8 @@
         width="864"
         height="198"
         class="hero__logo"
+        preload
+        :img-attrs="{ fetchpriority: 'high' }"
       />
       <p class="hero__sub">{{ t('hero.sub') }}</p>
       <div class="hero__ctas">
@@ -101,7 +104,7 @@
     <!-- Dot pagination -->
     <div class="hero__dots">
       <button
-        v-for="(_, i) in HERO_PHOTOS"
+        v-for="(_, i) in displayedHeroPhotos"
         :key="i"
         :class="['hero__dot', { 'hero__dot--active': i === currentIdx }]"
         :aria-label="`Foto ${i + 1}`"
@@ -122,6 +125,24 @@ const localePath = useLocalePath()
 const { scrollTo } = useScrollTo()
 
 const currentIdx = ref(0)
+const isMounted = ref(false)
+
+onMounted(() => {
+  isMounted.value = true
+})
+
+const displayedHeroPhotos = computed(() => {
+  return isMounted.value ? HERO_PHOTOS : [HERO_PHOTOS[0]]
+})
+
+const img = useImage()
+const lcpUrl = img(HERO_PHOTOS[0], { width: 1920, format: 'webp' })
+
+useHead({
+  link: [
+    { rel: 'preload', as: 'image', href: lcpUrl }
+  ]
+})
 
 const features = computed(() =>
   (tm('hero.features') as any[]).map((f: any) => ({

@@ -62,7 +62,7 @@
           itemsToShow="auto"
           @slide-end="onSlideEnd"
         >
-          <Slide v-for="(item, i) in mediaItems" :key="`${item.type}-${item.type === 'photo' ? item.path : item.room}-${i}`">
+          <Slide v-for="(item, i) in displayedItems" :key="`${item.type}-${item.type === 'photo' ? item.path : item.room}-${i}`">
             <div class="room-gallery__slide">
               <NuxtPicture
                 v-if="item.type === 'photo'"
@@ -97,7 +97,7 @@
             @mouseleave="onThumbDragEnd"
           >
             <button
-              v-for="(item, i) in mediaItems"
+              v-for="(item, i) in displayedItems"
               :key="i"
               :class="['room-gallery__thumb', { 'room-gallery__thumb--active': i === currentSlide }]"
               @click="goToSlide(i)"
@@ -248,6 +248,13 @@ const mediaItems = computed((): MediaItem[] => {
   if (mediaFilter.value === 'photos') return items.filter(m => m.type === 'photo')
   if (mediaFilter.value === 'videos') return items.filter(m => m.type === 'video')
   return items
+})
+
+const isMounted = ref(false)
+onMounted(() => isMounted.value = true)
+
+const displayedItems = computed(() => {
+  return isMounted.value ? mediaItems.value : mediaItems.value.slice(0, 5)
 })
 
 const lbPhotoItems = computed((): Array<{ path: string }> =>
