@@ -542,9 +542,8 @@ function handleSlideClick(i: number, item: MediaItem) {
     </div>
 
     <Carousel id="gallery" v-bind="galleryConfig" v-model="currentSlide" @mousedown.capture="pauseCarousel" @touchstart.capture="pauseCarousel">
-      <Slide v-for="(image, i) in displayedItems" :key="`${image.type}-${i}`">
-        <template #default="{ isActive, isVisible }">
-          <template v-if="isVisible || isActive">
+      <Slide v-for="(image, i) in mediaItems" :key="`${image.type}-${i}`">
+        <template #default="{ isActive }">
             <NuxtPicture
                 v-if="image.type === 'photo'"
                 :src="image.path"
@@ -558,7 +557,6 @@ function handleSlideClick(i: number, item: MediaItem) {
             <div v-else class="video-placeholder">
               <iframe v-if="isActive" width="100%" height="100%" :src="`https://www.youtube.com/embed/${ROOM_YT[image.room!]}?rel=0&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=${ROOM_YT[image.room!]}`" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-          </template>
         </template>
       </Slide>
     </Carousel>
@@ -566,7 +564,7 @@ function handleSlideClick(i: number, item: MediaItem) {
     <!-- Hidden container for crawler discovery removed to optimize DOM size and initial payload -->
 
     <Carousel id="thumbnails" v-bind="thumbnailsConfig" v-model="currentSlide" @mousedown.capture="pauseCarousel" @touchstart.capture="pauseCarousel">
-      <Slide v-for="(image, i) in displayedItems" :key="`thumb-${image.type}-${i}`">
+      <Slide v-for="(image, i) in mediaItems" :key="`thumb-${image.type}-${i}`">
         <template #default="{ currentIndex, isActive }">
           <div
             :class="['thumbnail', { 'is-active': isActive }]"
