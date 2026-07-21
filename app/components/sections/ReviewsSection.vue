@@ -179,21 +179,27 @@ const itemsToShow = computed(() => {
 .reviews__author { font-weight: 700; font-size: 13px; color: var(--green); }
 
 /* Carousel overrides */
-:deep(.carousel__pagination) { margin-top: 16px; }
+:deep(.carousel__pagination) { 
+  margin-top: 16px; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+}
 :deep(.carousel__pagination-button) {
-  width: 48px;
-  height: 48px;
-  padding: 20px;
+  width: 32px;
+  height: 32px;
+  padding: 12px;
   background-color: var(--border);
   background-clip: content-box;
-  border-radius: 24px;
+  border-radius: 16px;
   border: none;
   transition: width 0.3s, background-color 0.3s;
   box-sizing: border-box;
-  margin: -16px 0;
+  margin: 0;
 }
 :deep(.carousel__pagination-button--active) {
-  width: 64px;
+  width: 48px;
   background-color: var(--green);
 }
 :deep(.carousel__prev),
