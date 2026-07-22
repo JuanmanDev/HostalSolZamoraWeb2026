@@ -180,26 +180,35 @@ const itemsToShow = computed(() => {
 
 /* Carousel overrides */
 :deep(.carousel__pagination) { 
-  margin-top: 16px; 
+  margin-top: 20px; 
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
-  gap: 4px;
+  align-items: center;
+  gap: 6px;
+  max-width: 100%;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+:deep(.carousel__pagination-item) {
+  display: flex;
+  align-items: center;
 }
 :deep(.carousel__pagination-button) {
-  width: 32px;
-  height: 32px;
-  padding: 12px;
+  width: 14px;
+  height: 14px;
+  padding: 3px;
   background-color: var(--border);
   background-clip: content-box;
-  border-radius: 16px;
+  border-radius: 10px;
   border: none;
-  transition: width 0.3s, background-color 0.3s;
+  transition: width 0.3s ease, background-color 0.3s ease;
   box-sizing: border-box;
   margin: 0;
+  cursor: pointer;
 }
 :deep(.carousel__pagination-button--active) {
-  width: 48px;
+  width: 28px;
   background-color: var(--green);
 }
 :deep(.carousel__prev),

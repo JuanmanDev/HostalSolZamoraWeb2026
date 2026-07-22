@@ -194,25 +194,27 @@ onMounted(() => {
   width: 100%;
   padding: 0 16px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
-  gap: 4px;
+  align-items: center;
+  gap: 6px;
+  box-sizing: border-box;
   z-index: 3;
 }
 
 .rec__dot {
-  width: 32px;
-  height: 32px;
-  padding: 12px;
+  width: 14px;
+  height: 14px;
+  padding: 3px;
   background-color: transparent;
   background-clip: content-box;
-  border: 1.5px solid rgba(255,255,255,0.5);
-  border-radius: 16px;
+  border: 1.5px solid rgba(255,255,255,0.6);
+  border-radius: 10px;
   box-sizing: border-box;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: width 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
   margin: 0;
 }
-.rec__dot--active { width: 48px; background-color: #fff; border-color: transparent; }
+.rec__dot--active { width: 28px; background-color: #fff; border-color: transparent; }
 
 </style>
