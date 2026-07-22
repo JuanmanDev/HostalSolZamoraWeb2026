@@ -1,0 +1,70 @@
+# Hostal Sol Zamora - llms.txt
+
+> Hostal boutique con estilo nórdico en el centro histórico de Zamora (Castilla y León, España). Más de 50 años de historia hotelera familiar.
+
+## Contacto y Redes
+
+- [Sitio Web Oficial](https://hostalsolzamora.com)
+- [Instagram](https://www.instagram.com/hostalsolzamora/)
+- [Facebook](https://www.facebook.com/hostalsolzam)
+- Teléfono: +34 980 533 152
+- WhatsApp: +34 639 980 253
+- Email: hostalsol@outlook.com
+- Dirección: Calle Benavente, 2 - 3ª planta, 49014 Zamora, España
+
+## Sobre el alojamiento
+
+- Tipo: Hostal boutique (hotel de 2 estrellas)
+- Habitaciones: 17
+- Plantas: 3ª planta con ascensor
+- Estilo: Nórdico / minimalista
+- Abierto desde: 1975 (como Pensión Padornelo; Hostal Sol desde reforma)
+- Valoración: 7.7 / 10 (más de 500 valoraciones)
+
+## Servicios incluidos
+
+- WiFi gratuito en todas las habitaciones
+- Baño privado
+- Aire acondicionado y calefacción central
+- TV en cada habitación
+- Limpieza diaria
+- Ascensor (acceso a 3ª planta)
+- Pet-friendly (mascotas bienvenidas con pequeño suplemento)
+- Reserva directa con 15% de descuento frente a OTAs
+
+## Políticas
+
+- Check-in: 14:00h (2:00 PM)
+- Check-out: 11:00h (11:00 AM)
+- Sin recepción los domingos - check-in self-service disponible
+- Mascotas: permitidas (informar al reservar)
+
+## Reservas
+
+- [Motor de reservas directo](https://direct-book.com/properties/hostalsoldirect?promocode=WEB)
+- Código de descuento directo: WEB (15% de descuento)
+- Moneda: EUR
+- Formas de pago: efectivo, tarjeta, transferencia bancaria
+
+## Páginas del sitio web
+
+- [Inicio (Español)](https://hostalsolzamora.com/)
+- [Inicio (English)](https://hostalsolzamora.com/en/)
+- [Habitaciones / Galería (Español)](https://hostalsolzamora.com/galeria)
+- [Rooms / Gallery (English)](https://hostalsolzamora.com/en/gallery)
+- [Reservar (Español)](https://hostalsolzamora.com/reserva)
+- [Booking (English)](https://hostalsolzamora.com/en/booking)
+- [Check-in (Español)](https://hostalsolzamora.com/checkin)
+- [Check-in (English)](https://hostalsolzamora.com/en/check-in)
+- [Preguntas frecuentes (Español)](https://hostalsolzamora.com/faq)
+- [FAQ (English)](https://hostalsolzamora.com/en/faq)
+- [Aparcamiento (Español)](https://hostalsolzamora.com/parking)
+- [Parking (English)](https://hostalsolzamora.com/en/parking)
+- [Contacto (Español)](https://hostalsolzamora.com/contacto)
+- [Contact (English)](https://hostalsolzamora.com/en/contact)
+- [Sobre nosotros (Español)](https://hostalsolzamora.com/sobre-nosotros)
+- [About us (English)](https://hostalsolzamora.com/en/about)
+
+## Sitemap
+
+- [Sitemap](https://hostalsolzamora.com/sitemap.xml)

@@ -1,0 +1,15 @@
+{
+  "name": "Hostal Sol Zamora",
+  "short_name": "Hostal Sol",
+  "description": "Hostal boutique con estilo nórdico en el corazón de Zamora.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#faf8f3",
+  "theme_color": "#687e56",
+  "lang": "es",
+  "icons": [
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/favicon.svg",          "sizes": "any",     "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

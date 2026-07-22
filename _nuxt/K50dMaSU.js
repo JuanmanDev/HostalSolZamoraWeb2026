@@ -1,0 +1,1 @@
+import{e as n,c as a,a8 as o,J as s,o as c}from"./CEsj3d3k.js";const i=n({__name:"SectionTag",props:{light:{type:Boolean}},setup(e){return(t,l)=>(c(),a("span",{class:s(["section-tag",{"section-tag--light":e.light}])},[o(t.$slots,"default")],2))}}),_=Object.assign(i,{__name:"UiSectionTag"});export{_};

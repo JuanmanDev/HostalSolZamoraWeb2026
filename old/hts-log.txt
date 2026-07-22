@@ -1,0 +1,57 @@
+HTTrack3.49-2+htsswf+htsjava launched on Wed, 13 May 2026 23:37:44 at https://hostalsolzamora.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://hostalsolzamora.com/ -O1 "C:\tmp\http\hostalsol" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+23:40:02	Error: 	"Not Found" (404) at link https://hostalsolzamora.com/POST (from https://hostalsolzamora.com/)
+23:40:02	Error: 	"Not Found" (404) at link https://hostalsolzamora.com/href (from https://hostalsolzamora.com/)
+23:40:02	Error: 	"Not Found" (404) at link https://hostalsolzamora.com/document.location.href (from https://hostalsolzamora.com/)
+23:40:02	Error: 	"Not Found" (404) at link https://hostalsolzamora.com/wp-json/iawp/search (from https://hostalsolzamora.com/)
+23:40:11	Error: 	"Not Found" (404) at link https://hostalsolzamora.com/wp-content/themes/jevelin/css/fonts/glyphicons-halflings-regular.eot (from https://hostalsolzamora.com/wp-content/cache/minify/751aa.css)
+23:40:11	Error: 	"Not Found" (404) at link https://hostalsolzamora.com/wp-content/themes/jevelin/css/fonts/glyphicons-halflings-regular.eot? (from https://hostalsolzamora.com/wp-content/cache/minify/751aa.css)
+23:40:11	Error: 	"Not Found" (404) at link https://hostalsolzamora.com/wp-content/themes/jevelin/css/fonts/glyphicons-halflings-regular.woff2 (from https://hostalsolzamora.com/wp-content/cache/minify/751aa.css)
+23:40:11	Error: 	"Not Found" (404) at link https://hostalsolzamora.com/wp-content/themes/jevelin/css/fonts/glyphicons-halflings-regular.woff (from https://hostalsolzamora.com/wp-content/cache/minify/751aa.css)
+23:40:11	Error: 	"Not Found" (404) at link https://hostalsolzamora.com/wp-content/themes/jevelin/css/fonts/glyphicons-halflings-regular.ttf (from https://hostalsolzamora.com/wp-content/cache/minify/751aa.css)
+23:40:11	Error: 	"Not Found" (404) at link https://hostalsolzamora.com/wp-content/themes/jevelin/css/fonts/glyphicons-halflings-regular.svg (from https://hostalsolzamora.com/wp-content/cache/minify/751aa.css)
+23:40:11	Error: 	"Not Found" (404) at link https://hostalsolzamora.com/GET (from https://hostalsolzamora.com/wp-content/cache/minify/2917c.js)
+23:40:11	Error: 	"Not Found" (404) at link https://hostalsolzamora.com/this.config.iconUrl,window.location (from https://hostalsolzamora.com/wp-content/cache/minify/c899e.js)
+23:40:11	Error: 	"Not Found" (404) at link https://hostalsolzamora.com/e[0].thumbnail_large (from https://hostalsolzamora.com/wp-content/cache/minify/c899e.js)
+23:40:11	Error: 	"Not Found" (404) at link https://hostalsolzamora.com/default.jpg (from https://hostalsolzamora.com/wp-content/cache/minify/c899e.js)
+23:40:11	Error: 	"Not Found" (404) at link https://hostalsolzamora.com/e.tagUrl (from https://hostalsolzamora.com/wp-content/cache/minify/c899e.js)
+23:40:11	Error: 	"Not Found" (404) at link https://hostalsolzamora.com/e (from https://hostalsolzamora.com/wp-content/cache/minify/c899e.js)
+23:40:11	Warning: 	Moved Permanently for https://hostalsolzamora.com/?p=28
+23:40:11	Warning: 	File has moved from https://hostalsolzamora.com/?p=28 to https://hostalsolzamora.com/reserva
+23:40:11	Warning: 	Moved Permanently for https://hostalsolzamora.com/?p=24
+23:40:11	Warning: 	File has moved from https://hostalsolzamora.com/?p=24 to https://hostalsolzamora.com/habitaciones
+23:40:11	Error: 	"Not Found" (404) at link https://hostalsolzamora.com/%22poster/ (from https://hostalsolzamora.com/habitaciones)
+23:40:11	Error: 	"Not Found" (404) at link https://hostalsolzamora.com/%22src/ (from https://hostalsolzamora.com/habitaciones)
+23:40:11	Error: 	"Not Found" (404) at link https://hostalsolzamora.com/"{{src}}/"> (from https://hostalsolzamora.com/habitaciones)
+23:40:16	Warning: 	Moved Permanently for https://hostalsolzamora.com/?p=512
+23:40:16	Warning: 	File has moved from https://hostalsolzamora.com/?p=512 to https://hostalsolzamora.com/parking
+23:40:16	Warning: 	Moved Permanently for https://hostalsolzamora.com/?p=26
+23:40:16	Warning: 	File has moved from https://hostalsolzamora.com/?p=26 to https://hostalsolzamora.com/sobre-nosotros-cercania
+23:40:16	Warning: 	Moved Permanently for https://hostalsolzamora.com/?p=30
+23:40:16	Warning: 	File has moved from https://hostalsolzamora.com/?p=30 to https://hostalsolzamora.com/contacto
+23:40:21	Warning: 	Moved Permanently for https://hostalsolzamora.com/?p=662
+23:40:21	Warning: 	File has moved from https://hostalsolzamora.com/?p=662 to https://hostalsolzamora.com/ifeza
+23:40:22	Warning: 	Moved Permanently for https://hostalsolzamora.com/?p=128
+23:40:22	Warning: 	File has moved from https://hostalsolzamora.com/?p=128 to https://hostalsolzamora.com/politica-de-cookies-ue
+23:40:22	Warning: 	Moved Permanently for https://hostalsolzamora.com/?p=131
+23:40:22	Warning: 	File has moved from https://hostalsolzamora.com/?p=131 to https://hostalsolzamora.com/terminos-y-condiciones
+23:40:22	Warning: 	Moved Permanently for https://hostalsolzamora.com/contact/
+23:40:22	Warning: 	File has moved from https://hostalsolzamora.com/contact/ to https://hostalsolzamora.com/contacto
+23:40:22	Error: 	"Not Found" (404) at link https://hostalsolzamora.com/Popover requires tooltip.js (from https://hostalsolzamora.com/wp-content/cache/minify/9f6b1.js)
+23:40:22	Error: 	"Not Found" (404) at link https://hostalsolzamora.com/+http:/www.google.com/bot.html (from https://hostalsolzamora.com/wp-content/cache/minify/27129.js)
+23:40:22	Error: 	"Not Found" (404) at link https://hostalsolzamora.com/placeholder.jpg (from https://hostalsolzamora.com/wp-content/cache/minify/27129.js)
+23:40:22	Error: 	"Not Found" (404) at link https://hostalsolzamora.com/window.location.href (from https://hostalsolzamora.com/wp-content/cache/minify/27129.js)
+23:40:22	Error: 	"Not Found" (404) at link https://hostalsolzamora.com/n (from https://hostalsolzamora.com/wp-content/cache/minify/a3a88.js)
+23:40:22	Error: 	"Not Found" (404) at link https://hostalsolzamora.com/d (from https://hostalsolzamora.com/wp-content/cache/minify/a3a88.js)
+23:40:22	Warning: 	Moved Permanently for https://hostalsolzamora.com/?p=75
+23:40:22	Warning: 	File has moved from https://hostalsolzamora.com/?p=75 to https://hostalsolzamora.com/aviso-legal
+23:40:22	Error: 	"Not Found" (404) at link https://hostalsolzamora.com/t.value (from https://hostalsolzamora.com/wp-content/cache/minify/35d8e.js)
+
+HTTrack Website Copier/3.49-2 mirror complete in 2 minutes 38 seconds : 328 links scanned, 291 files written (38462706 bytes overall) [34004519 bytes received at 215218 bytes/sec], 9772092 bytes transferred using HTTP compression in 121 files, ratio 30%, 21.1 requests per connection
+(26 errors, 20 warnings, 0 messages)
