@@ -38,6 +38,13 @@
         </a>
       </div> -->
 
+      <!-- NAP: name, address, phone — identical to the LodgingBusiness schema -->
+      <address class="footer__nap">
+        <strong>Hostal Sol Zamora</strong>
+        <span>Calle Benavente, 2, 3ª planta · 49014 Zamora</span>
+        <a href="tel:+34980533152">+34 980 533 152</a>
+      </address>
+
       <!-- Bottom row -->
       <div class="footer__bottom">
         <span class="footer__copy">
@@ -51,6 +58,10 @@
           <NuxtLink :to="localePath('faq')">{{ t('nav.faq') }}</NuxtLink>
           <NuxtLink :to="localePath('contacto')">{{ t('nav.contact') }}</NuxtLink>
           <NuxtLink :to="localePath('reserva')">{{ t('nav.reserve') }}</NuxtLink>
+          <template v-if="hasGuides">
+            <NuxtLink :to="localePath('semana-santa-zamora')">{{ t('nav.semanaSanta') }}</NuxtLink>
+            <NuxtLink :to="localePath('peregrinos-via-de-la-plata-zamora')">{{ t('nav.peregrinos') }}</NuxtLink>
+          </template>
           <NuxtLink :to="localePath('terminos-y-condiciones')">{{ t('footer.terms') }}</NuxtLink>
           <NuxtLink :to="localePath('politica-de-cookies-ue')">{{ t('footer.cookies') }}</NuxtLink>
         </nav>
@@ -60,8 +71,10 @@
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n()
+const { t, locale } = useI18n()
 const localePath = useLocalePath()
+// Guide pages only exist in Spanish and English (defineI18nRoute)
+const hasGuides = computed(() => ['es', 'en'].includes(locale.value))
 const year = new Date().getFullYear()
 </script>
 
@@ -73,6 +86,28 @@ const year = new Date().getFullYear()
 }
 
 .footer__container { max-width: 1500px; margin: 0 auto; }
+
+.footer__nap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 16px;
+  font-style: normal;
+  font-size: 13px;
+  color: rgba(255,255,255,0.7);
+  padding-bottom: 14px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+.footer__nap strong { color: rgba(255,255,255,0.9); font-weight: 600; }
+.footer__nap a {
+  color: rgba(255,255,255,0.9);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+}
 
 /* Social row */
 .footer__social {

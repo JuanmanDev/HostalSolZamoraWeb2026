@@ -118,7 +118,7 @@
 <script setup lang="ts">
 const localePath = useLocalePath()
 useSeo({
-  title:       'Términos y Condiciones — Hostal Sol Zamora',
+  title:       'Términos y Condiciones',
   description: 'Términos y Condiciones de uso del sitio web y de los servicios de alojamiento del Hostal Sol Zamora, Zamora.',
   type:        'article',
   noIndex:     true,

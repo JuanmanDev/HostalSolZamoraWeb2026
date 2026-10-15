@@ -91,7 +91,7 @@
       <section id="checkin-map" class="ci-section">
         <iframe
           src="https://maps.google.com/maps?q=Hostal+Sol,+Calle+Benavente,+2,+49014+Zamora+Espa%C3%B1a&output=embed&z=17"
-          title="Hostal Sol Zamora"
+          :title="`Hostal Sol Zamora — ${t('nav.checkin')} — Google Maps`"
           class="ci-map"
           loading="lazy"
         />
@@ -179,26 +179,13 @@ const cfg      = useRuntimeConfig()
 const siteUrl  = (cfg.public.siteUrl as string).replace(/\/$/, '')
 const localePath = useLocalePath()
 
-const howToSteps = (tm('pages.checkin.steps') as any[]).map((s: any, i: number) => ({
-  '@type': 'HowToStep',
-  position: i + 1,
-  name: rt(s.title),
-  text: rt(s.desc),
-}))
-
+// HowTo rich results were retired by Google in 2023 — breadcrumb only.
 useJsonLd([
-  {
-    '@context': 'https://schema.org',
-    '@type': 'HowTo',
-    name: t('pages.checkin.title'),
-    description: t('pages.checkin.description'),
-    step: howToSteps,
-  },
   {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: t('nav.home'),    item: `${siteUrl}/` },
+      { '@type': 'ListItem', position: 1, name: t('nav.home'),    item: `${siteUrl}${localePath('index')}` },
       { '@type': 'ListItem', position: 2, name: t('nav.checkin'), item: `${siteUrl}${localePath('checkin')}` },
     ],
   },

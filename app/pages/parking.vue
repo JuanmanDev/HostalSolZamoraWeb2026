@@ -96,7 +96,7 @@
         <h2 class="section-heading">{{ t('map.title') }}</h2>
         <iframe
           src="https://maps.google.com/maps?q=Hostal+Sol,+Calle+Benavente,+2,+49014+Zamora+Espa%C3%B1a&output=embed&z=16"
-          title="Hostal Sol Zamora"
+          :title="`Hostal Sol Zamora — ${t('nav.parking')} — Google Maps`"
           class="page-map"
           loading="lazy"
         />
@@ -127,7 +127,7 @@ useJsonLd({
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: t('nav.home'),    item: `${siteUrl}/` },
+    { '@type': 'ListItem', position: 1, name: t('nav.home'),    item: `${siteUrl}${localePath('index')}` },
     { '@type': 'ListItem', position: 2, name: t('nav.parking'), item: `${siteUrl}${localePath('parking')}` },
   ],
 })

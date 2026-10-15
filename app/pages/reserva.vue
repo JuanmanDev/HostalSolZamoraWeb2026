@@ -5,6 +5,7 @@
         <div class="title__text">
           <UiSectionTag class="page-sub-heading">{{ t('nav.reserve') }}</UiSectionTag>
           <h1 class="page-heading" style="view-transition-name: page-heading">{{ t('pages.reserva.heading') }}</h1>
+          <p class="reserva-price">{{ t('common.priceFrom') }}</p>
         </div>
         <div class="title__discount">
           <SectionsDiscountCard3d>
@@ -25,6 +26,8 @@
           {{ feat }}
         </div>
       </div>
+
+      <UiKeyFacts />
 
       <!-- Popup Fallback Card -->
       <Teleport to="body">
@@ -154,11 +157,12 @@ useJsonLd({
     target: {
       '@type': 'EntryPoint',
       
-      urlTemplate: `https://direct-book.com/properties/hostalsoldirect?promocode=${route.query.promocode || 'WEB'}`,
-      inLanguage: 'es-ES',
-      actionPlatform: ['http://schema.org/DesktopWebPlatform','http://schema.org/MobileWebPlatform'],
+      urlTemplate: 'https://direct-book.com/properties/hostalsoldirect?promocode=WEB',
+      inLanguage: locale.value,
+      actionPlatform: ['https://schema.org/DesktopWebPlatform', 'https://schema.org/MobileWebPlatform'],
     },
-    result: { '@type': 'LodgingReservation', name: 'Reserva en Hostal Sol Zamora' },
+    object: { '@id': `${siteUrl}/#lodging` },
+    result: { '@type': 'LodgingReservation', name: t('pages.reserva.title') },
   },
 })
 
@@ -193,14 +197,14 @@ const popupTransform = computed(() => {
 })
 
 function onTouchStart(e: TouchEvent) {
-  touchStartX.value = e.touches[0].clientX
-  touchCurrentX.value = e.touches[0].clientX
+  touchStartX.value = (e.touches[0]?.clientX ?? 0)
+  touchCurrentX.value = (e.touches[0]?.clientX ?? 0)
   isDragging.value = true
 }
 
 function onTouchMove(e: TouchEvent) {
   if (!isDragging.value) return
-  touchCurrentX.value = e.touches[0].clientX
+  touchCurrentX.value = (e.touches[0]?.clientX ?? 0)
 }
 
 function onTouchEnd() {
@@ -261,6 +265,13 @@ onMounted(() => {
 </script>
 
 <style scoped>
+.reserva-price {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--green);
+  margin: 4px 0 0;
+}
+
 .page-content {
   /* max-width: 1240px; Slightly wider container for the iframe */
   margin: 0 auto;

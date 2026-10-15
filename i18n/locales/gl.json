@@ -1108,17 +1108,6 @@
         ]
       },
       {
-        "q": "Podo ver a páxina antiga?",
-        "a": "Si, podes consultar o deseño e o contido da nosa web anterior na seguinte ligazón.",
-        "links": [
-          {
-            "label": "Ver web antiga",
-            "url": "/old/hostalsolzamora.com/index.html",
-            "icon": "external-link"
-          }
-        ]
-      },
-      {
         "q": "Que fago se teño problemas co pago ou non me chega o correo electrónico de confirmación?",
         "a": "Se o correo electrónico de confirmación non chegou en 2 minutos e non está na túa carpeta de correo lixo ou spam, a reserva non está confirmada. É posible que se fixera un intento de pago e o diñeiro estea bloqueado temporalmente polo teu banco, pero non se completou o pago e a reserva non está garantida. Ademais, algunhas tarxetas requiren aceptar explicitamente pagos no estranxeiro ou permitir pagos non seguros na túa aplicación bancaria, dependendo da situación. Suxerímosche que comprobes que tes saldo suficiente ou que probes a usar diferentes tarxetas. Se aínda tes problemas, póñase en contacto connosco a través de WhatsApp, correo electrónico ou chamada telefónica.",
         "tags": [
@@ -1130,7 +1119,8 @@
           "bloqueado"
         ]
       }
-    ]
+    ],
+    "directLink": "Ligazón directa"
   },
   "reserve": {
     "title": "Reservar habitación",
@@ -1196,11 +1186,11 @@
   },
   "pages": {
     "home": {
-      "title": "Hostal Sol Zamora — O teu fogar en Zamora",
+      "title": "O teu fogar en Zamora",
       "description": "Hostal céntrico e sinxelo en Zamora — o teu fogar cando o necesitas."
     },
     "faq": {
-      "title": "Preguntas Frecuentes — Hostal Sol Zamora",
+      "title": "Preguntas Frecuentes",
       "description": "Todo o que necesitas saber antes de chegar: horarios, check-in e normas.",
       "heading": "Todo o que necesitas saber antes de chegar",
       "lead": "Recollemos as preguntas máis frecuentes dos nosos hóspedes. Se non atopas resposta — contacta connosco:",
@@ -1209,7 +1199,7 @@
       "backHome": "← Volver ao inicio"
     },
     "parking": {
-      "title": "Guía de Aparcamento — Hostal Sol Zamora",
+      "title": "Guía de Aparcamento",
       "description": "O hostal non ten aparcamento propio, pero ensinámoscho como chegar e onde aparcar.",
       "heading": "Aparcamento preto do Hostal Sol Zamora",
       "lead": "O hostal non ten aparcamento privado, pero estamos no centro histórico con varias opcións preto.",
@@ -1290,7 +1280,7 @@
       ]
     },
     "reserva": {
-      "title": "Reservas — Hostal Sol Zamora",
+      "title": "Reservas",
       "description": "Reserva directamente cun 15% de desconto respecto a calquera canal externo.",
       "heading": "Reservar habitación",
       "discountLabel": "15% de desconto ao reservar na nosa web",
@@ -1308,7 +1298,7 @@
       "fallbackSubtitle": "Preme aquí para abrir unha páxina de reservas máis sinxela nunha nova pestana."
     },
     "checkin": {
-      "title": "Como chegar e check-in — Hostal Sol Zamora",
+      "title": "Como chegar e check-in",
       "description": "Guía paso a paso: localización, documentos necesarios e proceso de chegada.",
       "heading": "Como chegar e facer o check-in",
       "lead": "Guía paso a paso para chegar ao hostal e preparar a documentación que esixe a lei.",
@@ -1417,7 +1407,7 @@
     },
     "galeria": {
       "tag": "Galería",
-      "title": "Galería de habitacións — Hostal Sol Zamora",
+      "title": "Galería de habitacións",
       "heading": "Galería de habitacións",
       "description": "Fotos e vídeos reais das habitacións sen retoques nin posados.",
       "p1": "No Hostal Sol Zamora cremos que a honestidade é a mellor presentación. Aquí atoparás fotos e vídeos reais das nosas habitacións — sen retoques nin sorpresas — para que reserves con total confianza.",
@@ -1427,7 +1417,7 @@
     },
     "sobreNosotros": {
       "tag": "Sobre nós",
-      "title": "Sobre nós · Calor, tranquilidade e ambiente de fogar — Hostal Sol Zamora",
+      "title": "Sobre nós · Calor, tranquilidade e ambiente de fogar",
       "description": "Máis de 50 anos de hospitalidade en Zamora — desde a Pensión Padornelo ata o Hostal Sol.",
       "heading": "Un hostal que te recibe con alma",
       "intro1": "Benvido á nosa casa — diferente, moderna e fresca, que quere acollerte para darte descanso nun ambiente cálido e tranquilo. Polas nosas portas pasaron distintos donos, viaxeiros de tódolos recantos do mundo e persoas con distintas vidas que se atoparon baixo o noso teito.",
@@ -1452,7 +1442,7 @@
     },
     "contacto": {
       "tag": "Contacto",
-      "title": "Contacto — Hostal Sol Zamora",
+      "title": "Contacto",
       "description": "Chama, escribe por WhatsApp ou email. Estamos aquí para axudarte.",
       "heading": "Contacta connosco",
       "lead": "Encantados de responder a calquera pregunta. Chama, escribe por WhatsApp, manda un email ou encha o formulario — respondemos canto antes.",
@@ -1513,5 +1503,37 @@
       "parkingNote": "Se a túa pregunta é sobre aparcamento, preparamos unha guía completa con todas as opcións próximas:",
       "parkingLink": "Guía de aparcamento →"
     }
+  },
+  "common": {
+    "priceFrom": "Desde 40 € a noite"
+  },
+  "keyFacts": {
+    "title": "Bo de saber antes de reservar",
+    "items": [
+      {
+        "icon": "clock",
+        "text": "Check-in de 14:00 a 21:00 · Check-out ás 11:00"
+      },
+      {
+        "icon": "moon",
+        "text": "Recepción pechada a maioría dos domingos: se chegas o sábado, quédaste o domingo"
+      },
+      {
+        "icon": "bed-double",
+        "text": "Habitacións privadas, todas con baño propio"
+      },
+      {
+        "icon": "message-circle",
+        "text": "O persoal fala só castelán: escríbenos por WhatsApp e entendémonos con tradutor"
+      },
+      {
+        "icon": "utensils-crossed",
+        "text": "Sen almorzo: cafetarías a menos de 2 minutos"
+      },
+      {
+        "icon": "paw-print",
+        "text": "Mascotas benvidas (7 € por noite)"
+      }
+    ]
   }
 }

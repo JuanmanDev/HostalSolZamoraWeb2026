@@ -125,7 +125,7 @@
           <iframe
             id="contact-map"
             src="https://maps.google.com/maps?q=Hostal+Sol,+Calle+Benavente,+2,+49014+Zamora+Espa%C3%B1a&output=embed&z=17"
-            title="Hostal Sol Zamora"
+            :title="`Hostal Sol Zamora — ${t('nav.contact')} — Google Maps`"
             class="contact-map"
             loading="lazy"
           />
@@ -167,15 +167,15 @@ useJsonLd([
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: t('nav.home'),    item: `${siteUrl}/` },
+      { '@type': 'ListItem', position: 1, name: t('nav.home'),    item: `${siteUrl}${localePath('index')}` },
       { '@type': 'ListItem', position: 2, name: t('nav.contact'), item: `${siteUrl}${localePath('contacto')}` },
     ],
   },
   {
     '@context': 'https://schema.org',
     '@type': 'ContactPage',
-    name: 'Contacto — Hostal Sol Zamora',
-    url: `${siteUrl}/contacto`,
+    name: t('pages.contacto.title'),
+    url: `${siteUrl}${localePath('contacto')}`,
     mainEntity: {
       '@type': 'LodgingBusiness',
       '@id': `${siteUrl}/#lodging`,

@@ -45,7 +45,7 @@
 
         <UiGlobalSearch :solid="scrolled" />
         
-        <button class="navbar__hamburger" @click="menuOpen = !menuOpen" aria-label="Menu">
+        <button class="navbar__hamburger" :aria-expanded="menuOpen" @click="menuOpen = !menuOpen" aria-label="Menu">
           <LucideIcon :name="menuOpen ? 'x' : 'menu'" :size="22" :color="scrolled ? 'var(--dark)' : '#fff'" />
         </button>
       </div>
@@ -228,6 +228,7 @@ onMounted(() => {
   background: none;
   border: none;
   padding: 6px 12px;
+  min-height: 40px;
   cursor: pointer;
   font-family: inherit;
   font-size: 13.5px;
@@ -263,6 +264,9 @@ onMounted(() => {
   cursor: pointer;
   display: flex;
   align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
 }
 
 .navbar__dropdown {
@@ -305,6 +309,9 @@ onMounted(() => {
   color: #fff !important;
   border-radius: 8px;
   padding: 8px 18px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
   font-weight: 700;
   border: none;
   cursor: pointer;

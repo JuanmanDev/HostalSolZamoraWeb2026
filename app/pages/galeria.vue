@@ -72,7 +72,7 @@ useJsonLd([
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: t('nav.home'), item: `${siteUrl}/` },
+      { '@type': 'ListItem', position: 1, name: t('nav.home'), item: `${siteUrl}${useLocalePath()('index')}` },
       { '@type': 'ListItem', position: 2, name: t('pages.galeria.heading'), item: `${siteUrl}${route.path}` },
     ],
   },

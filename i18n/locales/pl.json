@@ -1108,17 +1108,6 @@
         ]
       },
       {
-        "q": "Czy mogę zobaczyć starą stronę internetową?",
-        "a": "Tak, możesz sprawdzić projekt i zawartość naszej poprzedniej strony internetowej pod poniższym linkiem.",
-        "links": [
-          {
-            "label": "Zobacz starą stronę",
-            "url": "/old/hostalsolzamora.com/index.html",
-            "icon": "external-link"
-          }
-        ]
-      },
-      {
         "q": "Co powinienem zrobić, jeśli mam problemy z płatnością lub nie otrzymam e-maila z potwierdzeniem?",
         "a": "Jeśli e-mail z potwierdzeniem nie dotarł w ciągu 2 minut i nie ma go w folderze spam, rezerwacja nie jest potwierdzona. Możliwe, że podjęto próbę płatności i pieniądze zostały tymczasowo zablokowane przez Twój bank, ale płatność nie została zrealizowana, a rezerwacja nie jest gwarantowana. Dodatkowo niektóre karty wymagają wyraźnego zaakceptowania płatności zagranicznych lub zezwolenia na płatności niezabezpieczone w Twojej aplikacji bankowej, w zależności od sytuacji. Sprawdź, czy masz wystarczające środki lub spróbuj użyć innej karty. Jeśli nadal masz problemy, skontaktuj się z nami przez WhatsApp, e-mail lub telefonicznie.",
         "tags": [
@@ -1130,7 +1119,8 @@
           "zablokowana"
         ]
       }
-    ]
+    ],
+    "directLink": "Bezpośredni link"
   },
   "reserve": {
     "title": "Zarezerwuj pokój",
@@ -1196,11 +1186,11 @@
   },
   "pages": {
     "home": {
-      "title": "Hostal Sol Zamora — Twój dom w Zamorze",
+      "title": "Twój dom w Zamorze",
       "description": "Prosty centralnie położony hostal w Zamorze — Twój dom, kiedy tego potrzebujesz."
     },
     "faq": {
-      "title": "Często zadawane pytania — Hostal Sol Zamora",
+      "title": "Często zadawane pytania",
       "description": "Wszystko, co musisz wiedzieć przed przyjazdem: godziny, zameldowanie i zasady.",
       "heading": "Wszystko, co musisz wiedzieć przed przyjazdem",
       "lead": "Zebraliśmy najczęstsze pytania naszych gości. Jeśli nie znalazłeś odpowiedzi — skontaktuj się z nami:",
@@ -1209,7 +1199,7 @@
       "backHome": "← Na stronę główną"
     },
     "parking": {
-      "title": "Przewodnik parkingowy — Hostal Sol Zamora",
+      "title": "Przewodnik parkingowy",
       "description": "Hostal nie posiada własnego parkingu, ale pokażemy, jak dojechać i gdzie zaparkować.",
       "heading": "Parking w pobliżu Hostal Sol Zamora",
       "lead": "Hostal nie posiada prywatnego parkingu, ale jesteśmy w centrum historycznym z kilkoma opcjami w pobliżu.",
@@ -1290,7 +1280,7 @@
       ]
     },
     "reserva": {
-      "title": "Rezerwacja — Hostal Sol Zamora",
+      "title": "Rezerwacja",
       "description": "Rezerwuj bezpośrednio ze zniżką 15% w porównaniu z jakimkolwiek zewnętrznym kanałem.",
       "heading": "Zarezerwuj pokój",
       "discountLabel": "Rabat 15% przy rezerwacji na naszej stronie",
@@ -1308,7 +1298,7 @@
       "fallbackSubtitle": "Kliknij tutaj, aby otworzyć prostszą stronę rezerwacji w nowej karcie."
     },
     "checkin": {
-      "title": "Jak dojechać i zameldowanie — Hostal Sol Zamora",
+      "title": "Jak dojechać i zameldowanie",
       "description": "Przewodnik krok po kroku: lokalizacja, wymagane dokumenty i proces zameldowania.",
       "heading": "Jak dojechać i się zameldować",
       "lead": "Przewodnik krok po kroku dotyczący przyjazdu do hostalu i przygotowania wymaganych prawnie dokumentów.",
@@ -1417,7 +1407,7 @@
     },
     "galeria": {
       "tag": "Galeria",
-      "title": "Galeria pokoi — Hostal Sol Zamora",
+      "title": "Galeria pokoi",
       "heading": "Galeria pokoi",
       "description": "Prawdziwe zdjęcia i filmy pokoi bez retuszu i inscenizacji.",
       "p1": "W Hostal Sol Zamora wierzymy, że szczerość to najlepsze przedstawienie. Tutaj znajdziesz prawdziwe zdjęcia i filmy naszych pokoi — bez retuszu i niespodzianek — abyś mógł rezerwować z pełnym zaufaniem.",
@@ -1427,7 +1417,7 @@
     },
     "sobreNosotros": {
       "tag": "O nas",
-      "title": "O nas · Ciepło, spokój i domowa atmosfera — Hostal Sol Zamora",
+      "title": "O nas · Ciepło, spokój i domowa atmosfera",
       "description": "Ponad 50 lat gościnności w Zamorze — od Pensión Padornelo do Hostal Sol.",
       "heading": "Hostal, który przyjmuje Cię z sercem",
       "intro1": "Witaj w naszym domu — innym, nowoczesnym i świeżym, który chce Cię przyjąć, aby dać Ci odpoczynek w ciepłej i spokojnej atmosferze. Przez nasze drzwi przeszli różni właściciele, podróżnicy z różnych zakątków świata i ludzie o różnych losach, którzy spotkali się pod naszym dachem.",
@@ -1452,7 +1442,7 @@
     },
     "contacto": {
       "tag": "Kontakt",
-      "title": "Kontakt — Hostal Sol Zamora",
+      "title": "Kontakt",
       "description": "Zadzwoń, napisz na WhatsApp lub email. Jesteśmy do dyspozycji.",
       "heading": "Skontaktuj się z nami",
       "lead": "Chętnie odpowiemy na każde pytanie. Zadzwoń, napisz na WhatsApp, wyślij email lub wypełnij formularz — odpowiemy jak najszybciej.",
@@ -1513,5 +1503,37 @@
       "parkingNote": "Jeśli pytanie dotyczy parkowania, przygotowaliśmy pełny przewodnik ze wszystkimi najbliższymi opcjami:",
       "parkingLink": "Przewodnik parkingowy →"
     }
+  },
+  "common": {
+    "priceFrom": "Od 40 € za noc"
+  },
+  "keyFacts": {
+    "title": "Warto wiedzieć przed rezerwacją",
+    "items": [
+      {
+        "icon": "clock",
+        "text": "Zameldowanie 14:00–21:00 · Wymeldowanie 11:00"
+      },
+      {
+        "icon": "moon",
+        "text": "W większość niedziel recepcja jest zamknięta — przyjedź w sobotę i zostań"
+      },
+      {
+        "icon": "bed-double",
+        "text": "Prywatne pokoje, wszystkie z własną łazienką"
+      },
+      {
+        "icon": "message-circle",
+        "text": "Personel mówi tylko po hiszpańsku — napisz na WhatsApp, przetłumaczymy"
+      },
+      {
+        "icon": "utensils-crossed",
+        "text": "Bez śniadania — kawiarnie w odległości 2 minut"
+      },
+      {
+        "icon": "paw-print",
+        "text": "Zwierzęta mile widziane (7 € za noc)"
+      }
+    ]
   }
 }

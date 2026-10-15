@@ -111,6 +111,69 @@ export function useRooms() {
   return { photoUrl, roomPhotoPaths, roomKeys, typeKeys }
 }
 
+/** Extracts the room key ('301', 'Entrada', …) from a photo path. */
+export function roomFromPath(path: string): string {
+  const m = path.match(/\/images\/rooms\/([^/]+)\/[^/]+$/)
+  return m ? m[1]! : 'Entrada'
+}
+
+/**
+ * Descriptive, localised alt texts for room photos/videos, built only from
+ * existing i18n strings (rooms.types[].label, rooms.entrance, rooms.mediaPhotos,
+ * rooms.videoLabel) — e.g. "Doble de matrimonio 323 — Fotos 2/16".
+ */
+export function useRoomMediaAlts() {
+  const { t, tm, rt } = useI18n()
+  const { roomPhotoPaths, roomKeys } = useRooms()
+
+  // room key → localised room-type label (via the type card photoPath)
+  const roomTypeLabels = computed(() => {
+    const map: Record<string, string> = {}
+    for (const [typeKey, rooms] of Object.entries(ROOM_TYPES)) {
+      const fallback = t(`rooms.filter${typeKey.replace(' ', '')}`)
+      for (const r of rooms) map[r] = fallback
+    }
+    for (const type of ((tm('rooms.types') as any[]) || [])) {
+      const room = roomFromPath(rt(type.photoPath))
+      const typeKey = Object.keys(ROOM_TYPES).find(k => ROOM_TYPES[k]!.includes(room))
+      if (!typeKey) continue
+      const label = rt(type.label)
+      for (const r of ROOM_TYPES[typeKey]!) map[r] = label
+    }
+    return map
+  })
+
+  function roomLabel(room: string): string {
+    if (room === 'Entrada') return t('rooms.entrance')
+    const typeLabel = roomTypeLabels.value[room]
+    return typeLabel ? `${typeLabel} ${room}` : room
+  }
+
+  // path → alt, precomputed once per locale
+  const photoAlts = computed(() => {
+    const photos = t('rooms.mediaPhotos')
+    const map: Record<string, string> = {}
+    for (const room of roomKeys) {
+      const paths = roomPhotoPaths(room)
+      const label = roomLabel(room)
+      paths.forEach((p, i) => {
+        if (!map[p]) map[p] = `${label} — ${photos} ${i + 1}/${paths.length}`
+      })
+    }
+    return map
+  })
+
+  function photoAlt(path: string): string {
+    return photoAlts.value[path] || roomLabel(roomFromPath(path))
+  }
+
+  function videoAlt(room: string): string {
+    return `${roomLabel(room)} — ${t('rooms.videoLabel')}`
+  }
+
+  return { roomLabel, photoAlt, videoAlt }
+}
+
 export const AMENITY_ICONS = [
   'tv',               // 0: TV
   'wifi',             // 1: WiFi

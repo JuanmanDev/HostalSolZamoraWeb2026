@@ -1071,17 +1071,6 @@
         ]
       },
       {
-        "q": "Ndax man naa gis site bu yàgg ba?",
-        "a": "Waaw, mën nga xool melo ak mbirum site bu yàgg ba ci lëkkalekaay bii di ñëw.",
-        "links": [
-          {
-            "label": "Gis site bu yàgg ba",
-            "url": "/old/hostalsolzamora.com/index.html",
-            "icon": "external-link"
-          }
-        ]
-      },
-      {
         "q": "Lu ma wara def su ma amee jafe-jafe fay walla bataaxal bi dikkul?",
         "a": "Su bataaxal bi dikkul ci 2 simili te nekkul ci sa mbustug spam, dafa tekki ni sa doggal bi dëgërul. Mën na am ñu jéem a fay te sa bank tek loxo ci xaalis bi diir bu gat, waaye fay gi matul te doggal bi dëgërul. Leneen li mooy, yenn kart yi dañuy laaj nga nangu fay bu bitim réew walla nangu fay yu amul kaaraange ci sa appli bank, aju ci ni mbir mi mel. Ñu ngi lay ñaan nga xool ndax am nga xaalis bu doy walla nga jéem a jëfandikoo yeneen kart. Su jafe-jafe yi weyee, woo nu ci WhatsApp, bataaxal, walla telefon.",
         "tags": [
@@ -1093,7 +1082,8 @@
           "teye"
         ]
       }
-    ]
+    ],
+    "directLink": "Direct link"
   },
   "reserve": {
     "title": "Réserver",
@@ -1159,11 +1149,11 @@
   },
   "pages": {
     "home": {
-      "title": "Hostal Sol Zamora — Kër bi ci Samura",
+      "title": "Kër bi ci Samura",
       "description": "Hostal bu yomb ak bu xëy ci Samura, kër bi boo soxor ko."
     },
     "faq": {
-      "title": "Laaj yi ñu naan — Hostal Sol Zamora",
+      "title": "Laaj yi ñu naan",
       "description": "Yépp li soxor xam ci kanam bi ñëw: heures, check-in ak règles.",
       "heading": "Yépp li soxor xam ci kanam bi ñëw",
       "lead": "Ñu sëggël laaj yi ñu naan ëpp ci hôtes yi sunu. Boo seet li boo bëgg amul, contact nanu:",
@@ -1172,7 +1162,7 @@
       "backHome": "← Sedet ci kaw"
     },
     "parking": {
-      "title": "Guide Parking — Hostal Sol Zamora",
+      "title": "Guide Parking",
       "description": "Hostal bi amul parking, wante fii ñu feeñ options yi ci cig-cig.",
       "heading": "Nan apparker ci cig Hostal Sol Zamora",
       "lead": "Hostal bi amul parking privé, wante ñu ci centre historique ak options bu bari ci cig-cig.",
@@ -1253,7 +1243,7 @@
       ]
     },
     "reserva": {
-      "title": "Réserver — Hostal Sol Zamora",
+      "title": "Réserver",
       "description": "Réservé directement ak 15% de réduction sur tout canal externe.",
       "heading": "Réserver séjour bi",
       "discountLabel": "15% réduction ci réservation site bi",
@@ -1271,7 +1261,7 @@
       "fallbackSubtitle": "Bësal fii ngir ubbi xët wu yees te gëna yomb."
     },
     "checkin": {
-      "title": "Jëm ak Check-in — Hostal Sol Zamora",
+      "title": "Jëm ak Check-in",
       "description": "Guide étape par étape: emplacement, documentation requise et processus check-in.",
       "heading": "Nan jëm ak faire check-in",
       "lead": "Guide étape par étape ngir jëm ci hostal ak préparer documentation requise par loi.",
@@ -1380,7 +1370,7 @@
     },
     "galeria": {
       "tag": "Galerie",
-      "title": "Galerie Chambres — Hostal Sol Zamora",
+      "title": "Galerie Chambres",
       "heading": "Galerie des chambres",
       "description": "Photos ak vidéos réelles des chambres, sans retouches ni mise en scène.",
       "p1": "Ci Hostal Sol Zamora ñu xam-xam honnesteté bi moy meilleur présentation bi. Fii danga am photos ak vidéos réelles ci chambres yi — sans retouches ni mises en scène — ngir danga mën réserver ci confiance yépp.",
@@ -1390,7 +1380,7 @@
     },
     "sobreNosotros": {
       "tag": "Ci sunu bëtëk",
-      "title": "Ci sunu bëtëk · Proximité, tranquillité et familiarité — Hostal Sol Zamora",
+      "title": "Ci sunu bëtëk · Proximité, tranquillité et familiarité",
       "description": "Plus de 50 ans d'hôtellerie à Samura, de Pensión Padornelo à Hostal Sol.",
       "heading": "Kër bu am fàww ak tëggëy bu jox traitement bu baax ëpp",
       "intro1": "Dalal ak sunu kër, kër bu wéy, bu yees ak bu nekk bu ñëw ngir jox ci kër jàmm ak am ci cig-cig. Portes yi ñëw ak yënn bopp, voyageurs ci dëkk yi ci aduna bi ak ñit ak chemins yu wéy ñu jëkk ci sunu dëk.",
@@ -1415,7 +1405,7 @@
     },
     "contacto": {
       "tag": "Contact",
-      "title": "Contact — Hostal Sol Zamora",
+      "title": "Contact",
       "description": "Fonner nanu, écrire WhatsApp walla email. Ñu am ngir taxaw.",
       "heading": "Wax ak nanu",
       "lead": "Ñu soxor résoudre yépp laaj walla consultation. Fonner nanu, écrire WhatsApp, envoyer email walla jëfë formulaire ak ñu dina respond tëkk.",
@@ -1476,5 +1466,37 @@
       "parkingNote": "Bëgg laaj ci parking, ñu preparé na guide complet ak yépp options ci cig-cig:",
       "parkingLink": "Xool guide parking →"
     }
+  },
+  "common": {
+    "priceFrom": "From €40 per night"
+  },
+  "keyFacts": {
+    "title": "Good to know before you book",
+    "items": [
+      {
+        "icon": "clock",
+        "text": "Check-in 14:00–21:00 · Check-out 11:00"
+      },
+      {
+        "icon": "moon",
+        "text": "Reception closed on most Sundays — arrive on Saturday and stay on"
+      },
+      {
+        "icon": "bed-double",
+        "text": "Private rooms with en-suite bathroom (a Spanish hostal, not a dorm hostel)"
+      },
+      {
+        "icon": "message-circle",
+        "text": "Staff speak Spanish only — message us on WhatsApp and we'll translate"
+      },
+      {
+        "icon": "utensils-crossed",
+        "text": "No breakfast — cafés less than 2 minutes away"
+      },
+      {
+        "icon": "paw-print",
+        "text": "Pets welcome (€7 per night)"
+      }
+    ]
   }
 }

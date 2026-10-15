@@ -6,6 +6,7 @@
  *
  * Usage in any page:
  *   useSeo({
+ *     // Without the brand: nuxt-seo-utils appends " | Hostal Sol Zamora".
  *     title:       computed(() => t('pages.faq.title')),
  *     description: computed(() => t('pages.faq.description')),
  *     image:       '/images/hero/hero-1.jpg',  // optional, falls back to default OG
@@ -134,12 +135,16 @@ export function useSeo(opts: SeoOptions = {}) {
 /**
  * useJsonLd — inject one (or more) JSON-LD documents into the page head.
  * Wraps useHead with the right script type + serialization.
+ *
+ * `scope` namespaces the head keys: app.vue uses 'site', pages use the
+ * default 'page'. Sharing one key made the page block silently replace the
+ * site-wide Organization/LodgingBusiness graph.
  */
-export function useJsonLd(data: object | object[]) {
+export function useJsonLd(data: object | object[], scope = 'page') {
   const items = Array.isArray(data) ? data : [data]
   useHead({
     script: items.map((doc, i) => ({
-      key: `ld-json-${i}`,
+      key: `ld-json-${scope}-${i}`,
       type: 'application/ld+json',
       innerHTML: JSON.stringify(doc),
     })),

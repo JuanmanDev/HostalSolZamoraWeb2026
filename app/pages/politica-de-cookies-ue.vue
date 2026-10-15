@@ -80,7 +80,7 @@
 
 <script setup lang="ts">
 useSeo({
-  title:       'Política de Cookies — Hostal Sol Zamora',
+  title:       'Política de Cookies',
   description: 'Política de cookies del sitio web del Hostal Sol Zamora. Conoce qué cookies utilizamos y cómo gestionarlas.',
   type:        'article',
   noIndex:     true,

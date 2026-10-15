@@ -21,14 +21,48 @@
       </div>
     </div>
 
-    <!-- Full-width map embed -->
+    <!-- Full-width map: click-to-load facade (Google Maps iframe ≈ 400 KB / 14 requests) -->
     <div class="map-section__embed-wrap">
       <iframe
-        src="https://maps.google.com/maps?q=Hostal+Sol,+Calle+Benavente,+2,+49014+Zamora+Espa%C3%B1a&output=embed&z=17"
-        title="Hostal Sol Zamora"
+        v-if="mapLoaded"
+        :src="MAP_EMBED_SRC"
+        :title="mapTitle"
         class="map-section__embed"
         loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
       />
+      <div v-else class="map-section__facade">
+        <div class="map-section__facade-card">
+          <span class="map-section__facade-pin" aria-hidden="true">
+            <LucideIcon name="map-pin" :size="22" color="#fff" />
+          </span>
+          <p class="map-section__facade-name">Hostal Sol Zamora</p>
+          <p class="map-section__facade-address">
+            {{ t('map.address') }}<br>{{ t('map.city') }}
+          </p>
+          <div class="map-section__facade-actions">
+            <button
+              type="button"
+              class="btn btn-primary map-section__facade-btn"
+              :aria-label="mapTitle"
+              @click="mapLoaded = true"
+            >
+              <LucideIcon name="navigation" :size="15" color="#fff" />
+              {{ t('nav.map') }}
+            </button>
+            <a
+              :href="MAPS_LINK"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="map-section__facade-link"
+            >
+              {{ t('restaurant.mapsBtn') }}
+              <LucideIcon name="external-link" :size="13" color="var(--green)" />
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Nav app buttons — below the map -->
@@ -71,10 +105,18 @@ interface MapNavApp {
 const { t } = useI18n()
 const localePath = useLocalePath()
 
+const MAPS_LINK = 'https://www.google.com/maps/dir//Hostal+Sol,+Calle+Benavente,+2,+3%C2%BA,+49014+Zamora,+Espa%C3%B1a/@41.5062474,-5.7435342,18z/'
+const MAP_EMBED_SRC = 'https://maps.google.com/maps?q=Hostal+Sol,+Calle+Benavente,+2,+49014+Zamora+Espa%C3%B1a&output=embed&z=17'
+
+// Iframe is only injected after an explicit click (false on SSR and hydration).
+const mapLoaded = ref(false)
+// Unique, descriptive title from existing strings, e.g. "Cómo llegar — Hostal Sol Zamora, Calle Benavente, 2 — 3ª planta"
+const mapTitle = computed(() => `${t('map.title')} — Hostal Sol Zamora, ${t('map.address')}`)
+
 const navApps: MapNavApp[] = [
   {
     name: 'Google Maps', color: '#1a67d2',
-    href: 'https://www.google.com/maps/dir//Hostal+Sol,+Calle+Benavente,+2,+3%C2%BA,+49014+Zamora,+Espa%C3%B1a/@41.5062474,-5.7435342,18z/',
+    href: MAPS_LINK,
     svgPath: '<svg width="15" height="15" viewBox="0 0 24 24" fill="white"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>',
   },
   {
@@ -139,6 +181,78 @@ const chips = [
 /* Map embed */
 .map-section__embed-wrap { width: 100%; height: 420px; margin-top: 28px; }
 .map-section__embed { width: 100%; height: 100%; border: none; display: block; }
+
+/* Static facade shown until the user asks for the interactive map */
+.map-section__facade {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background-color: var(--green-light);
+  background-image:
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px),
+    linear-gradient(35deg, transparent 47%, #fff 47%, #fff 53%, transparent 53%),
+    linear-gradient(-55deg, transparent 48%, #fff 48%, #fff 52%, transparent 52%);
+  background-size: 48px 48px, 48px 48px, 100% 100%, 100% 100%;
+}
+.map-section__facade-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  padding: 24px 28px;
+  max-width: 380px;
+  width: 100%;
+  text-align: center;
+}
+.map-section__facade-pin {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--green);
+  margin-bottom: 10px;
+}
+.map-section__facade-name {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--dark);
+  margin-bottom: 4px;
+}
+.map-section__facade-address {
+  color: var(--dark-muted);
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+.map-section__facade-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.map-section__facade-btn {
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  justify-content: center;
+  min-width: 160px;
+}
+.map-section__facade-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--green);
+  text-decoration: none;
+}
+.map-section__facade-link:hover { text-decoration: underline; }
 
 /* Nav apps — below map */
 .map-section__nav-apps {

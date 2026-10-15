@@ -48,6 +48,7 @@ const thumbnailsConfig = {
 
 const { t } = useI18n()
 const { photoUrl, roomPhotoPaths, roomKeys, typeKeys } = useRooms()
+const { photoAlt, videoAlt } = useRoomMediaAlts()
 const emit = defineEmits(['update:room', 'update:media'])
 
 const activeRoom  = ref(props.initialRoom || 'All')
@@ -141,6 +142,62 @@ const mediaItems = computed((): MediaItem[] => {
 
 const lbPhotoItems = computed((): MediaItem[] => mediaItems.value)
 
+// Grouped overview (galería page): computed once instead of re-filtering
+// mediaItems × roomPhotoPaths on every render.
+const groupedItems = computed(() => {
+  const keys = activeRoom.value === 'All' ? roomKeys : (ROOM_TYPES[activeRoom.value] || [])
+  return keys.map((key) => {
+    const paths = new Set(roomPhotoPaths(key))
+    return {
+      key,
+      items: mediaItems.value.filter(m => (m.type === 'photo' ? paths.has(m.path) : m.room === key)),
+    }
+  })
+})
+
+// ── Render windowing ─────────────────────────────────────────────────────────
+// Only the active slide and its immediate neighbours mount a real image; the
+// rest render a lightweight placeholder. The previously active slide is kept
+// mounted too so the fade-out after a long jump (thumbnail click) doesn't flash.
+// Everything derives from currentSlide (0 on both server and client), so SSR
+// and hydration produce identical markup.
+const MAIN_WINDOW  = 1
+const THUMB_WINDOW = 6
+const prevSlide = ref(-1)
+
+watch(currentSlide, (_n, o) => { prevSlide.value = o ?? -1 })
+watch(mediaItems, () => { prevSlide.value = -1 })
+
+function isInMainWindow(i: number): boolean {
+  const n = mediaItems.value.length
+  if (i === prevSlide.value) return true
+  const d = Math.abs(i - currentSlide.value)
+  return Math.min(d, n - d) <= MAIN_WINDOW // wrapAround: last ↔ first are neighbours
+}
+
+// Thumbnails mount images only once the strip is near the viewport (client
+// only — false during SSR and hydration), and only around the active slide.
+const thumbsWrap = ref<HTMLElement | null>(null)
+const thumbsInView = ref(false)
+let thumbsObserver: IntersectionObserver | null = null
+
+function isThumbRendered(i: number): boolean {
+  return thumbsInView.value && Math.abs(i - currentSlide.value) <= THUMB_WINDOW
+}
+
+const MAIN_SIZES = 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw xxl:100vw 3xl:100vw'
+
+// Main slides, the thumbnail strip and the lightbox only mount images on the
+// client (windowed), so register every variant for the static build.
+// Props must mirror the NuxtImg/NuxtPicture usages in the template.
+usePrerenderImages(
+  [...new Set(Object.values((useAppConfig().roomImages ?? {}) as Record<string, string[]>).flat())],
+  [
+    { sizes: MAIN_SIZES, densities: 'x1', format: 'webp', modifiers: { rotate: 0 } },
+    { sizes: '120px', width: 120, height: 80, format: 'webp', modifiers: { rotate: 0 } },
+  ],
+)
+
 // Main gallery slide duration tracking
 let gallerySlideStartTime = Date.now()
 
@@ -222,6 +279,9 @@ const panX     = ref(0)
 const panY     = ref(0)
 const dragging = ref(false)
 const lbLoading = ref(false)
+const lbCurrent    = computed(() => lbPhotoItems.value[lbIdx.value])
+const lbPhotoPath  = computed(() => (lbCurrent.value?.type === 'photo' ? lbCurrent.value.path : null))
+const lbVideoRoom  = computed(() => (lbCurrent.value?.type === 'video' ? lbCurrent.value.room : null))
 let dX = 0, dY = 0
 let startX = 0, startY = 0
 let initialPinchDist = 0
@@ -458,7 +518,24 @@ onMounted(() => {
     if (e.key === 'ArrowRight') lbNext()
   }
   window.addEventListener('keydown', handler)
-  onUnmounted(() => window.removeEventListener('keydown', handler))
+
+  if (thumbsWrap.value && 'IntersectionObserver' in window) {
+    thumbsObserver = new IntersectionObserver((entries) => {
+      if (entries.some(e => e.isIntersecting)) {
+        thumbsInView.value = true
+        thumbsObserver?.disconnect()
+        thumbsObserver = null
+      }
+    }, { rootMargin: '300px 0px' })
+    thumbsObserver.observe(thumbsWrap.value)
+  } else {
+    thumbsInView.value = true
+  }
+
+  onUnmounted(() => {
+    window.removeEventListener('keydown', handler)
+    thumbsObserver?.disconnect()
+  })
 })
 
 
@@ -544,18 +621,23 @@ function handleSlideClick(i: number, item: MediaItem) {
     <Carousel id="gallery" v-bind="galleryConfig" v-model="currentSlide" @mousedown.capture="pauseCarousel" @touchstart.capture="pauseCarousel">
       <Slide v-for="(image, i) in mediaItems" :key="`${image.type}-${i}`">
         <template #default="{ isActive }">
-            <NuxtPicture
-                v-if="image.type === 'photo'"
-                :src="image.path"
-                alt="Gallery Image"
-                class="gallery-image"
-                @click="handleSlideClick(i, image)"
-                sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw xxl:100vw 3xl:100vw 4xl:100vw 5xl:100vw"
-                :modifiers="{ rotate: 0 }"
-                :loading="i === 0 ? 'eager' : 'lazy'"
-            />
+            <template v-if="image.type === 'photo'">
+              <NuxtImg
+                  v-if="isInMainWindow(i)"
+                  :src="image.path"
+                  :alt="photoAlt(image.path)"
+                  class="gallery-image"
+                  @click="handleSlideClick(i, image)"
+                  :sizes="MAIN_SIZES"
+                  densities="x1"
+                  format="webp"
+                  :modifiers="{ rotate: 0 }"
+                  :loading="i === 0 ? 'eager' : 'lazy'"
+              />
+              <div v-else class="gallery-image-placeholder" aria-hidden="true" />
+            </template>
             <div v-else class="video-placeholder">
-              <iframe v-if="isActive" width="100%" height="100%" :src="`https://www.youtube.com/embed/${ROOM_YT[image.room!]}?rel=0&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=${ROOM_YT[image.room!]}`" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe v-if="isActive" width="100%" height="100%" :src="`https://www.youtube.com/embed/${ROOM_YT[image.room!]}?rel=0&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=${ROOM_YT[image.room!]}`" :title="videoAlt(image.room)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </template>
       </Slide>
@@ -563,6 +645,7 @@ function handleSlideClick(i: number, item: MediaItem) {
 
     <!-- Hidden container for crawler discovery removed to optimize DOM size and initial payload -->
 
+    <div ref="thumbsWrap">
     <Carousel id="thumbnails" v-bind="thumbnailsConfig" v-model="currentSlide" @mousedown.capture="pauseCarousel" @touchstart.capture="pauseCarousel">
       <Slide v-for="(image, i) in mediaItems" :key="`thumb-${image.type}-${i}`">
         <template #default="{ currentIndex, isActive }">
@@ -570,22 +653,27 @@ function handleSlideClick(i: number, item: MediaItem) {
             :class="['thumbnail', { 'is-active': isActive }]"
             @click="slideTo(currentIndex)"
           >
-            <NuxtImg
-                v-if="image.type === 'photo'"
-                :src="image.path"
-                alt="Thumbnail Image"
-                class="thumbnail-image"
-                width="120"
-                height="80"
-                format="webp"
-                loading="lazy"
-                :modifiers="{ rotate: 0 }"
-            />
+            <template v-if="image.type === 'photo'">
+              <NuxtImg
+                  v-if="isThumbRendered(i)"
+                  :src="image.path"
+                  :alt="photoAlt(image.path)"
+                  class="thumbnail-image"
+                  width="120"
+                  height="80"
+                  sizes="120px"
+                  format="webp"
+                  loading="lazy"
+                  :modifiers="{ rotate: 0 }"
+              />
+              <div v-else class="thumbnail-placeholder" aria-hidden="true" />
+            </template>
             <div v-else class="video-placeholder thumbnail-video">
               <LucideIcon class="thumbnail-video__play" name="play-circle" :size="32" color="#fff" />
               <img
+                  v-if="isThumbRendered(i)"
                   :src="`https://i.ytimg.com/vi/${ROOM_YT[image.room!]}/default.jpg`"
-                  alt="Video Thumbnail"
+                  :alt="videoAlt(image.room)"
                   class="thumbnail-image"
                   loading="lazy"
               />
@@ -598,6 +686,7 @@ function handleSlideClick(i: number, item: MediaItem) {
         <Navigation />
       </template>
     </Carousel>
+    </div>
 
   <div v-if="!props.hideThumbailsAll">
 
@@ -613,7 +702,7 @@ function handleSlideClick(i: number, item: MediaItem) {
         <NuxtImg
             v-if="image.type === 'photo'"
             :src="image.path"
-            alt="Thumbnail Image"
+            :alt="photoAlt(image.path)"
             class="thumbnail-image"
             width="80"
             height="60"
@@ -629,23 +718,23 @@ function handleSlideClick(i: number, item: MediaItem) {
 
     <!-- If all media are showing or a type is selected, group by room -->
     <div v-if="isMultipleRooms && !props.hideGrouped" class="room-gallery__grouped">
-      <div 
-        v-for="key in (activeRoom === 'All' ? roomKeys : ROOM_TYPES[activeRoom])" 
-        :key="key" 
+      <div
+        v-for="group in groupedItems"
+        :key="group.key"
         class="room-gallery__group"
       >
-        <p class="room-gallery__group-title">{{ key === 'Entrada' ? t('rooms.entrance') : key }}</p>
+        <p class="room-gallery__group-title">{{ group.key === 'Entrada' ? t('rooms.entrance') : group.key }}</p>
         <div class="room-gallery__group-items">
           <div
-            v-for="item in mediaItems.filter(m => (m.type === 'photo' ? roomPhotoPaths(key).includes(m.path) : m.room === key))"
+            v-for="item in group.items"
             :key="`${item.type}-${item.type === 'photo' ? item.path : item.room}`"
             class="room-gallery__group-item"
-            @click="handleSlideClick(mediaItems.findIndex(m => (m.type === 'photo' ? m.path === item.path : m.room === item.room)), item)"
+            @click="handleSlideClick(0, item)"
           >
             <NuxtImg
                 v-if="item.type === 'photo'"
                 :src="item.path"
-                alt="Media Image"
+                :alt="photoAlt(item.path)"
                 class="thumbnail-image"
                 width="140"
                 height="93"
@@ -655,7 +744,7 @@ function handleSlideClick(i: number, item: MediaItem) {
             />
             <div v-else class="video-placeholder thumbnail-video">
               <LucideIcon class="thumbnail-video__play" name="play-circle" :size="24" color="#fff" />
-              <img :src="`https://i.ytimg.com/vi/${ROOM_YT[item.room!]}/default.jpg`" alt="Video Thumbnail" class="thumbnail-image" />
+              <img :src="`https://i.ytimg.com/vi/${ROOM_YT[item.room!]}/default.jpg`" :alt="videoAlt(item.room)" class="thumbnail-image" loading="lazy" />
             </div>
           </div>
         </div>  
@@ -698,9 +787,9 @@ function handleSlideClick(i: number, item: MediaItem) {
             </div>
 
             <img
-              v-if="lbPhotoItems[lbIdx] && lbPhotoItems[lbIdx].type === 'photo' && zoom > 1"
-              :src="lbPhotoItems[lbIdx].path"
-              alt=""
+              v-if="lbPhotoPath && zoom > 1"
+              :src="lbPhotoPath"
+              :alt="photoAlt(lbPhotoPath)"
               class="lb__img"
               draggable="false"
               @load="lbLoading = false"
@@ -710,10 +799,11 @@ function handleSlideClick(i: number, item: MediaItem) {
               }"
             />
             <NuxtPicture
-              v-else-if="lbPhotoItems[lbIdx] && lbPhotoItems[lbIdx].type === 'photo'"
-              :src="lbPhotoItems[lbIdx].path"
-              alt=""
+              v-else-if="lbPhotoPath"
+              :src="lbPhotoPath"
+              :alt="photoAlt(lbPhotoPath)"
               class="lb__img"
+              format="webp"
               @load="lbLoading = false"
               :img-attrs="{
                 draggable: 'false',
@@ -722,12 +812,13 @@ function handleSlideClick(i: number, item: MediaItem) {
                   transition: dragging ? 'none' : 'transform 0.3s ease-out'
                 }
               }"
-              sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw xxl:100vw 3xl:100vw 4xl:100vw 5xl:100vw"
+              :sizes="MAIN_SIZES"
+              densities="x1"
               :modifiers="{ rotate: 0 }"
             />
-            <div v-else
+            <div v-else-if="lbVideoRoom"
               class="lb__video-placeholder">
-              <iframe width="100%" height="100%" :src="`https://www.youtube.com/embed/${ROOM_YT[mediaItems[lbIdx].room!]}?rel=0&amp;autoplay=1&amp;loop=1&amp;playlist=${ROOM_YT[mediaItems[lbIdx].room!]}`" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen @load="lbLoading = false"></iframe>
+              <iframe width="100%" height="100%" :src="`https://www.youtube.com/embed/${ROOM_YT[lbVideoRoom]}?rel=0&amp;autoplay=1&amp;loop=1&amp;playlist=${ROOM_YT[lbVideoRoom]}`" :title="videoAlt(lbVideoRoom)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen @load="lbLoading = false"></iframe>
             </div>
           </div>
           <div class="lb__counter">{{ lbIdx + 1 }} / {{ lbPhotoItems.length }}</div>
@@ -756,17 +847,14 @@ img {
   image-orientation: from-image;
 }
 
+/* Now a plain <img> (was <picture>): keep the 8px radius users actually saw,
+   which came from the global img rule on the inner <img>. */
 .gallery-image {
-  border-radius: 16px;
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-.gallery-image :deep(img) {
+  border-radius: 8px;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .thumbnail-image {
@@ -1067,11 +1155,19 @@ img {
   opacity: 0.65;
 }
 
-.gallery-image-placeholder {
-  height: 75vh;
+.thumbnail-placeholder {
   width: 100%;
-  background: #f5f5f5;
-  border-radius: 16px;
+  height: 100%;
+  background: var(--green-light);
+  border-radius: 8px;
+}
+
+.gallery-image-placeholder {
+  height: 100%;
+  min-height: 75vh;
+  width: 100%;
+  background: var(--green-light);
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1167,6 +1263,9 @@ img {
   margin-top: 40px;
 }
 .room-gallery__group {
+  /* Skip layout/paint of off-screen groups (151 images on /galeria) */
+  content-visibility: auto;
+  contain-intrinsic-size: auto 260px;
   margin-bottom: 32px;
   background: var(--border);
   border: 3px solid var(--border);

@@ -41,27 +41,30 @@
         <div 
           v-for="(item, i) in allItems" 
           :key="i" 
-          :id="`faq-item-${i}`"
+          :id="item.slug"
           class="faq-item"
           :class="{ 'faq-item--highlight': isMatch(item) }"
           :style="`view-transition-name: faq-item-${item.slug}`"
         >
-          <button class="faq-item__q" @click="toggle(i)">
-            <span v-html="highlight(item.q)" :style="`view-transition-name: faq-q-${item.slug}`" />
-            <LucideIcon :name="openIndices.includes(i) ? 'minus' : 'plus'" :size="18" color="var(--green)" />
-          </button>
+          <h2 class="faq-item__heading">
+            <button class="faq-item__q" :aria-expanded="openIndices.includes(i)" @click="toggle(i)">
+              <span v-html="highlight(item.q)" :style="`view-transition-name: faq-q-${item.slug}`" />
+              <LucideIcon :name="openIndices.includes(i) ? 'minus' : 'plus'" :size="18" color="var(--green)" />
+            </button>
+          </h2>
           <Transition name="expand">
-            <div v-if="openIndices.includes(i)" class="faq-item__a">
+            <!-- v-show (not v-if): answers stay in the prerendered HTML for crawlers -->
+            <div v-show="openIndices.includes(i)" class="faq-item__a">
               <p class="faq-item__a-text">{{ item.a }}</p>
               <div v-if="item.links?.length || item.slug" class="faq-item__links">
-                <NuxtLink
+                <a
                   v-if="item.slug"
-                  :to="localePath('/faq/' + item.slug)"
+                  :href="`#${item.slug}`"
                   class="faq-item__link faq-item__link--subpage"
                 >
                   <LucideIcon name="link" :size="14" />
-                  Enlace directo
-                </NuxtLink>
+                  {{ t('faq.directLink') }}
+                </a>
                 <NuxtLink
                   v-for="(link, li) in item.links"
                   :key="li"
@@ -160,7 +163,7 @@ function scrollToItem(index: number) {
   nextTick(() => {
     // Wait for the Vue transition to finish before scrolling
     setTimeout(() => {
-      const el = document.getElementById(`faq-item-${index}`)
+      const el = document.getElementById(allItems.value[index]?.slug ?? '')
       if (el) {
          // Check if element fits in viewport
          const rect = el.getBoundingClientRect()
@@ -237,7 +240,7 @@ watch(query, (newQuery) => {
   if (matches.length > 0) {
     const firstMatchIndex = matches[0]?.index
     nextTick(() => {
-      const el = document.getElementById(`faq-item-${firstMatchIndex}`)
+      const el = document.getElementById(allItems.value[firstMatchIndex ?? -1]?.slug ?? '')
       if (el) {
         el.scrollIntoView({ behavior: 'smooth', block: 'center' })
       }
@@ -265,6 +268,16 @@ watch(query, (newQuery) => {
 
 // Initialize state from URL on mount
 onMounted(() => {
+  // Deep link: /faq#<question-slug>
+  const hashSlug = decodeURIComponent(route.hash.replace(/^#/, ''))
+  if (hashSlug && !query.value) {
+    const idx = allItems.value.findIndex(item => item.slug === hashSlug)
+    if (idx >= 0) {
+      openIndices.value = [idx]
+      scrollToItem(idx)
+      return
+    }
+  }
   if (route.query.open && !query.value) {
     const idx = parseInt(route.query.open as string, 10)
     if (!isNaN(idx) && idx >= 0 && idx < allItems.value.length) {
@@ -289,8 +302,8 @@ const infoTiles = [
   { icon: 'building-2', labelKey: 'floor',     valKey: 'floorVal' },
 ]
 
-// JSON-LD FAQPage — eligible for Google's FAQ rich result. Strip
-// HTML/markdown from answers so the schema is plain text.
+// JSON-LD FAQPage. Google retired FAQ rich results for all sites on
+// 7 May 2026; kept as structured Q&A only. Strip HTML so text is plain.
 function plain(text: string): string {
   return text
     .replace(/<[^>]+>/g, '')
@@ -299,18 +312,12 @@ function plain(text: string): string {
     .trim()
 }
 
-useJsonLd({
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: allItems.value.map(item => ({
-    '@type': 'Question',
-    name: plain(item.q),
-    acceptedAnswer: {
-      '@type': 'Answer',
-      text: plain(item.a),
-    },
-  })),
-})
+// nuxt-schema-org already types this page's WebPage node as FAQPage; attach
+// the questions to it instead of emitting a second, separate FAQPage.
+useSchemaOrg(allItems.value.map(item => defineQuestion({
+  name: plain(item.q),
+  acceptedAnswer: plain(item.a),
+})))
 </script>
 
 <style scoped>
@@ -466,6 +473,11 @@ useJsonLd({
   border-color: var(--green);
   box-shadow: 0 4px 12px rgba(104, 126, 86, 0.15);
   transform: translateY(-2px);
+}
+
+.faq-item__heading {
+  margin: 0;
+  font: inherit;
 }
 
 .faq-item__q {

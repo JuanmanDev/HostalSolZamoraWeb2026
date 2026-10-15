@@ -22,7 +22,7 @@
         :loading="i === 0 ? 'eager' : 'lazy'"
         :preload="i === 0"
         :placeholder="[120, 80, 25, 5]"
-        sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw xxl:100vw 2xl:100vw 3xl:100vw 4k:100vw"
+        :sizes="HERO_SIZES"
         :modifiers="{ rotate: 0 }"
       />
     </div>
@@ -40,16 +40,18 @@
 
     <!-- Content -->
     <div class="hero__content">
-      <NuxtPicture
+      <!-- Plain <img>: an SVG needs no IPX variants, and NuxtPicture's preload
+           emitted an empty <link rel="preload" as="image">. -->
+      <img
         :src="LOGO_SVG"
         alt="Hostal Sol Zamora"
         width="864"
         height="198"
         class="hero__logo"
-        preload
-        :img-attrs="{ fetchpriority: 'high' }"
+        fetchpriority="high"
       />
-      <p class="hero__sub">{{ t('hero.sub') }}</p>
+      <h1 class="hero__sub">{{ t('hero.sub') }}</h1>
+      <p class="hero__price">{{ t('common.priceFrom') }}</p>
       <div class="hero__ctas">
         <NuxtLink class="hero__cta-primary" :to="localePath('reserva')">
           {{ t('hero.cta') }}
@@ -135,14 +137,14 @@ const displayedHeroPhotos = computed(() => {
   return isMounted.value ? HERO_PHOTOS : [HERO_PHOTOS[0]]
 })
 
-const img = useImage()
-const lcpUrl = img(HERO_PHOTOS[0], { width: 1920, format: 'webp' })
+// The first slide is preloaded by NuxtPicture (:preload) with the same
+// srcset the browser will use — no manual preload, which fetched it twice.
 
-useHead({
-  link: [
-    { rel: 'preload', as: 'image', href: lcpUrl }
-  ]
-})
+const HERO_SIZES = 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw xxl:100vw 3xl:100vw'
+
+// Slides after the first only render on the client, so their IPX variants
+// must be registered explicitly or the static build won't contain them.
+usePrerenderImages(HERO_PHOTOS, [{ sizes: HERO_SIZES, format: 'webp', modifiers: { rotate: 0 } }])
 
 const features = computed(() =>
   (tm('hero.features') as any[]).map((f: any) => ({
@@ -238,17 +240,31 @@ onMounted(() => {
   filter: brightness(0) invert(1);
   margin-bottom: 20px;
 }
-.hero__logo :deep(img) {
-  width: 100%;
-  height: auto;
-}
 
 .hero__sub {
-  color: rgba(255,255,255,0.85);
+  color: rgba(255,255,255,0.92);
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.5;
   font-size: clamp(1rem, 2vw, 1.2rem);
-  margin-bottom: 32px;
-  
+  margin: 0 16px 32px;
+  max-width: 40rem;
+  text-align: center;
+
   text-shadow: 0 1px 8px rgba(0,0,0,0.35);
+}
+
+.hero__price {
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  background: rgba(0,0,0,0.28);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 30px;
+  padding: 6px 16px;
+  margin: -16px 0 24px;
+  backdrop-filter: blur(6px);
 }
 
 .hero__ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 36px; }

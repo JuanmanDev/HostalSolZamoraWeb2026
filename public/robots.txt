@@ -1,6 +1,4 @@
 User-agent: *
-Disallow: /politica-de-cookies-ue
-Disallow: /en/cookie-policy
-Disallow: /terminos-y-condiciones
-Disallow: /en/terms-and-conditions
-Sitemap: https://hostalsolzamora.com/sitemap.xml
+Allow: /
+
+Sitemap: https://hostalsolzamora.com/sitemap_index.xml

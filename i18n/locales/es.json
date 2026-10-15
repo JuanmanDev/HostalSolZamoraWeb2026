@@ -38,12 +38,14 @@
     "contact": "Contacto",
     "about": "Sobre nosotros",
     "search": "Buscar",
-    "searchPlaceholder": "Buscar habitaciones, servicios, dudas..."
+    "searchPlaceholder": "Buscar habitaciones, servicios, dudas...",
+    "semanaSanta": "Semana Santa",
+    "peregrinos": "Peregrinos"
   },
   "hero": {
     "tag": "Centro histórico · Zamora",
     "title": "Tu hogar\nen Zamora",
-    "sub": "Hostal boutique con estilo nórdico en el corazón de la ciudad",
+    "sub": "Hostal boutique de estilo nórdico en el centro histórico de Zamora",
     "cta": "Reservar ahora",
     "ctaRooms": "Ver habitaciones",
     "discount": "Reserva directa con 15% de descuento",
@@ -1043,17 +1045,6 @@
         ]
       },
       {
-        "q": "Estoy interesado en una estancia larga. ¿Tenéis condiciones especiales?",
-        "a": "Sí, a partir de 11 noches ofrecemos un descuento automático del 10% en el precio total. El descuento se aplica sobre tarifas no reembolsables. También podemos estudiar condiciones especiales para grupos o estancias muy prolongadas; contáctanos y lo valoramos. Si el descuento no se aplica automáticamente en la web, escríbenos y te ayudamos.",
-        "links": [
-          {
-            "label": "Reservar larga estancia",
-            "url": "/reserva",
-            "icon": "calendar-check"
-          }
-        ]
-      },
-      {
         "q": "¿Qué idiomas habláis en el hostal?",
         "a": "El personal del hostal habla exclusivamente español. Si necesitas comunicarte en otro idioma, escríbenos por WhatsApp o email y nos apoyamos en traductores online para entendernos. Al llegar, conéctate al WiFi gratuito del hostal y usa desde tu móvil cualquier traductor online como Google Translate, DeepL o Bing Translator.",
         "tags": [
@@ -1147,37 +1138,6 @@
       },
       {
         "q": "¿Quién ha hecho esta página web?",
-        "a": "Juan Manuel Béc: https://juanman.tech/. El código fuente de esta web está en https://github.com/JuanmanDev/HostalSolZamoraWeb2026",
-        "tags": [
-          "web",
-          "desarrollador",
-          "autor",
-          "código",
-          "github",
-          "juanman",
-          "tecnología"
-        ]
-      },
-      {
-        "q": "¿Qué equipamiento tienen las habitaciones?",
-        "a": "Baño privado, wifi (la contraseña y más instrucciones están en el papel detrás de la puerta), escritorio y silla, radiador (con controles automáticos), aire acondicionado con mando, TV con mando, secador de pelo y plancha bajo petición, sillón, ventana, cama con sábanas incluidas. En el baño encontrarás jabón básico, champú y jabón de manos, además de toallas. Si necesitas algo más, dínoslo.",
-        "tags": [
-          "equipamiento",
-          "habitación",
-          "amenities",
-          "servicios",
-          "baño",
-          "wifi",
-          "aire acondicionado",
-          "TV",
-          "secador",
-          "plancha",
-          "cama",
-          "toallas"
-        ]
-      },
-      {
-        "q": "¿Quién ha hecho esta página web?",
         "a": "Esta web ha sido desarrollada por Juan Manuel Béc (https://juanman.tech/). El código fuente es abierto y está disponible en GitHub: https://github.com/JuanmanDev/HostalSolZamoraWeb2026",
         "tags": [
           "web",
@@ -1187,17 +1147,6 @@
           "github",
           "juanman",
           "tecnología"
-        ]
-      },
-      {
-        "q": "¿Puedo ver la página antigua?",
-        "a": "Sí, puedes consultar el diseño y contenido de nuestra web anterior en el siguiente enlace.",
-        "links": [
-          {
-            "label": "Ver web antigua",
-            "url": "/old/hostalsolzamora.com/index.html",
-            "icon": "external-link"
-          }
         ]
       },
       {
@@ -1212,7 +1161,8 @@
           "bloqueado"
         ]
       }
-    ]
+    ],
+    "directLink": "Enlace directo"
   },
   "reserve": {
     "title": "Reservar",
@@ -1278,12 +1228,12 @@
   },
   "pages": {
     "home": {
-      "title": "Hostal Sol Zamora — Tu hogar en Zamora",
-      "description": "Hostal sencillo y céntrico en Zamora, tu hogar cuando lo necesitas."
+      "title": "Hostal en el centro de Zamora desde 40 €/noche",
+      "description": "Hostal Sol, en el casco histórico de Zamora: habitaciones privadas con baño, WiFi y ascensor desde 40 € la noche. Reserva directa con un 15% de descuento."
     },
     "faq": {
-      "title": "Preguntas Frecuentes — Hostal Sol Zamora",
-      "description": "Todo lo que necesitas saber antes de llegar: horarios, check-in y normas.",
+      "title": "Preguntas frecuentes",
+      "description": "Horarios, check-in, mascotas, aparcamiento, pagos y cancelaciones: respuestas a todo lo que necesitas saber antes de alojarte en Hostal Sol Zamora.",
       "heading": "Todo lo que necesitas saber antes de llegar",
       "lead": "Hemos reunido las preguntas más habituales de nuestros huéspedes. Si no encuentras lo que buscas, contáctanos:",
       "searchPlaceholder": "Buscar pregunta...",
@@ -1291,8 +1241,8 @@
       "backHome": "← Volver al inicio"
     },
     "parking": {
-      "title": "Guía de Aparcamiento — Hostal Sol Zamora",
-      "description": "El hostal no tiene aparcamiento, pero aquí te explicamos cómo llegar y dónde aparcar.",
+      "title": "Dónde aparcar en el centro de Zamora",
+      "description": "El hostal no tiene garaje propio: te explicamos cómo llegar en coche, dónde dejar las maletas y los aparcamientos y zonas ORA más cercanos en Zamora.",
       "heading": "Cómo aparcar cerca del Hostal Sol Zamora",
       "lead": "El hostal no dispone de parking propio, pero estamos en el centro histórico con varias opciones muy cercanas.",
       "addressCard": {
@@ -1372,8 +1322,8 @@
       ]
     },
     "reserva": {
-      "title": "Reservar — Hostal Sol Zamora",
-      "description": "Reserva directamente con un 15% de descuento sobre cualquier canal externo.",
+      "title": "Reservar desde 40 €/noche con 15% de descuento",
+      "description": "Reserva tu habitación en Hostal Sol Zamora directamente en nuestra web desde 40 € la noche y ahorra un 15% frente a otras plataformas.",
       "heading": "Reserva tu estancia",
       "discountLabel": "15% de descuento al reservar en nuestra web",
       "discountSub": "Precio directo — siempre más barato que Booking, Expedia u otros portales",
@@ -1390,8 +1340,8 @@
       "fallbackSubtitle": "Pulsa aquí para abrir una página de reservas más sencilla en una nueva pestaña."
     },
     "checkin": {
-      "title": "Cómo Llegar y Check-in — Hostal Sol Zamora",
-      "description": "Guía de llegada paso a paso: ubicación, documentación necesaria y proceso de check-in.",
+      "title": "Cómo llegar y check-in",
+      "description": "Cómo llegar a Hostal Sol en Calle Benavente 2 (Zamora) a pie o en coche, qué documentación necesitas y el proceso de check-in paso a paso.",
       "heading": "Cómo llegar y hacer el check-in",
       "lead": "Guía paso a paso para llegar al hostal y preparar la documentación requerida por ley.",
       "beforeTitle": "Antes de llegar",
@@ -1499,9 +1449,9 @@
     },
     "galeria": {
       "tag": "Galería",
-      "title": "Galería de Habitaciones — Hostal Sol Zamora",
+      "title": "Fotos de las habitaciones",
       "heading": "Galería de habitaciones",
-      "description": "Fotos y vídeos reales de las habitaciones, sin retoques ni puesta en escena.",
+      "description": "Fotos y vídeos reales de todas las habitaciones y zonas comunes de Hostal Sol, en el centro histórico de Zamora. Sin retoques ni puesta en escena.",
       "p1": "En Hostal Sol Zamora creemos que la honestidad es la mejor presentación. Aquí encontrarás fotos y vídeos reales de nuestras habitaciones — sin retoques ni escenificaciones — para que puedas reservar con total confianza.",
       "p2": "Explora cada tipo de habitación: tipo de cama, distribución, mobiliario, vistas y servicios incluidos. Los vídeos te permiten recorrer el espacio como si ya estuvieras aquí.",
       "p3": "¿Tienes alguna pregunta sobre una habitación concreta? Escríbenos o llámanos — con mucho gusto te ayudamos a elegir la mejor opción para tu estancia.",
@@ -1509,8 +1459,8 @@
     },
     "sobreNosotros": {
       "tag": "Sobre nosotros",
-      "title": "Sobre Nosotros · Cercanía, tranquilidad y familiaridad — Hostal Sol Zamora",
-      "description": "Más de 50 años en hostelería zamorana, desde la Pensión Padornelo al Hostal Sol.",
+      "title": "Sobre nosotros · 50 años en Zamora",
+      "description": "Más de 50 años de hostelería familiar en Zamora, desde la Pensión Padornelo hasta el Hostal Sol: nuestra historia y nuestra forma de recibirte.",
       "heading": "Un alojamiento lleno de ganas e ilusión que te ofrece el mejor trato",
       "intro1": "Bienvenidos a nuestra casa, una casa diferente, actual y con un aire fresco que quiere acogerte para darte ese descanso en un ambiente de cercanía y tranquilidad. Por sus puertas han entrado diferentes dueños, viajeros de varias partes del mundo y personas con caminos distintos que han coincidido bajo nuestro techo.",
       "intro2": "Desde 2023 el Hostal Sol es gestionado por una familia con más de 50 años de experiencia en el sector del hospedaje. Hemos pasado por momentos de cambio, de inexperiencia y de miedo. Tras mucho esfuerzo y trabajo —y con una pandemia que nos frenó en seco— hemos sacado el hostal adelante, dándole a nuestra casa todo lo que merecía y aprendiendo de cada persona que ha pasado por aquí.",
@@ -1534,8 +1484,8 @@
     },
     "contacto": {
       "tag": "Contacto",
-      "title": "Contacto — Hostal Sol Zamora",
-      "description": "Llámanos, escríbenos por WhatsApp o email. Estamos para ayudarte.",
+      "title": "Contacto y ubicación",
+      "description": "Llámanos al +34 980 533 152, escríbenos por WhatsApp o email, o visítanos en Calle Benavente 2, 3ª planta, en el centro histórico de Zamora.",
       "heading": "Hablemos",
       "lead": "Estamos encantados de resolver cualquier duda o consulta. Llámanos, escríbenos por WhatsApp, mándanos un email o usa el formulario y te responderemos lo antes posible.",
       "infoTitle": "Datos de contacto",
@@ -1594,6 +1544,102 @@
       "fSent": "¡Gracias! Tu mensaje se ha preparado en tu cliente de correo. Si no se abre, escríbenos directamente a hostalsol{'@'}outlook.com.",
       "parkingNote": "Si tu duda es sobre el aparcamiento, hemos preparado una guía completa con todas las opciones cercanas:",
       "parkingLink": "Ver guía de parking →"
+    },
+    "semanaSanta": {
+      "title": "Semana Santa en Zamora: dónde dormir en el casco histórico",
+      "description": "Alójate en Semana Santa en pleno casco histórico de Zamora: habitaciones privadas con baño, llaves para las procesiones nocturnas y precios desde 40 € la noche.",
+      "tag": "Semana Santa",
+      "heading": "Semana Santa en Zamora, desde el casco histórico",
+      "lead": "La Semana Santa de Zamora, declarada de Interés Turístico Internacional, es una de las más antiguas y sobrecogedoras de España. Desde Hostal Sol, en pleno casco histórico, llegas andando a los recorridos de las procesiones y vuelves a descansar sin coger el coche.",
+      "sections": [
+        {
+          "title": "Fechas de la Semana Santa 2027",
+          "body": "En 2027 la Semana Santa va del Domingo de Ramos, 21 de marzo, al Domingo de Resurrección, 28 de marzo. Son los días de más demanda del año en Zamora: si quieres dormir en el centro, reserva con meses de antelación."
+        },
+        {
+          "title": "Procesiones de noche, con tus propias llaves",
+          "body": "Muchas procesiones salen de noche o de madrugada. Una vez hecho el check-in recibes tus llaves y puedes entrar y salir del hostal cuando quieras, también de madrugada."
+        },
+        {
+          "title": "Llega antes de las 21:00",
+          "body": "El check-in es de 14:00 a 21:00 y no es posible hacerlo más tarde, tampoco en Semana Santa. Organiza tu viaje para llegar antes de esa hora; si llegas antes de las 14:00 te guardamos el equipaje y puedes salir a ver la ciudad."
+        },
+        {
+          "title": "Si vienes en coche",
+          "body": "Durante las procesiones se cortan al tráfico muchas calles del centro. El hostal no tiene garaje propio: deja el coche en un aparcamiento cercano antes de que empiecen los cortes y muévete a pie. En nuestra guía de aparcamiento tienes las opciones más próximas."
+        },
+        {
+          "title": "Fuera de Semana Santa: el Museo de Semana Santa",
+          "body": "Si visitas Zamora en otra época del año, el Museo de Semana Santa reúne los pasos de las cofradías zamoranas y es la mejor manera de conocer esta celebración."
+        }
+      ],
+      "ctaTitle": "Reserva directa para Semana Santa",
+      "ctaBody": "Desde 40 € la noche y un 15% de descuento reservando en nuestra web.",
+      "ctaParking": "Guía de aparcamiento"
+    },
+    "peregrinos": {
+      "title": "Alojamiento para peregrinos de la Vía de la Plata en Zamora",
+      "description": "Habitación privada con baño propio para peregrinos de la Vía de la Plata en el casco histórico de Zamora. Bicicleta en la habitación, desde 40 € la noche.",
+      "tag": "Vía de la Plata",
+      "heading": "Peregrinos de la Vía de la Plata: tu parada en Zamora",
+      "lead": "Zamora es una de las etapas de la Vía de la Plata hacia Santiago. Si después de la etapa prefieres una habitación privada con baño propio, Hostal Sol está en pleno casco histórico de la ciudad.",
+      "sections": [
+        {
+          "title": "Habitación privada que puedes reservar",
+          "body": "Aquí no compartes dormitorio: tienes habitación privada con baño propio, ropa de cama y toallas, y puedes reservarla con antelación en nuestra web con un 15% de descuento. Precios desde 40 € la noche."
+        },
+        {
+          "title": "Tu bicicleta, dentro de la habitación",
+          "body": "Si haces el Camino en bici, puedes guardarla en tu propia habitación siempre que esté limpia. Avísanos al reservar y te asignaremos una habitación más amplia si es posible. Hay dos ascensores y también puedes subirla por las escaleras hasta la tercera planta."
+        },
+        {
+          "title": "Llegada de 14:00 a 21:00",
+          "body": "El check-in es de 14:00 a 21:00, sin excepciones después de esa hora. Si terminas la etapa antes, te guardamos la mochila. La mayoría de domingos la recepción está cerrada: si llegas en domingo, consúltanos antes de reservar."
+        },
+        {
+          "title": "Si caminas con tu perro",
+          "body": "Las mascotas son bienvenidas con un suplemento de 7 € por noche. Deben estar siempre acompañadas: no pueden quedarse solas en la habitación."
+        },
+        {
+          "title": "Desayuno",
+          "body": "No ofrecemos desayuno, pero hay cafeterías a menos de 2 minutos andando del hostal."
+        }
+      ],
+      "ctaTitle": "Reserva tu noche en Zamora",
+      "ctaBody": "Desde 40 € la noche y un 15% de descuento reservando en nuestra web.",
+      "ctaParking": "Cómo llegar"
     }
+  },
+  "common": {
+    "priceFrom": "Desde 40 € la noche"
+  },
+  "keyFacts": {
+    "title": "Antes de reservar, conviene saber",
+    "items": [
+      {
+        "icon": "clock",
+        "text": "Check-in de 14:00 a 21:00 · Check-out a las 11:00"
+      },
+      {
+        "icon": "moon",
+        "text": "Recepción cerrada la mayoría de domingos: si llegas el sábado, te quedas el domingo"
+      },
+      {
+        "icon": "bed-double",
+        "text": "Habitaciones privadas, todas con baño propio"
+      },
+      {
+        "icon": "message-circle",
+        "text": "Atención solo en español: escríbenos por WhatsApp y nos entendemos con traductor"
+      },
+      {
+        "icon": "utensils-crossed",
+        "text": "Sin desayuno: cafeterías a menos de 2 minutos"
+      },
+      {
+        "icon": "paw-print",
+        "text": "Mascotas bienvenidas (7 € por noche)"
+      }
+    ]
   }
 }

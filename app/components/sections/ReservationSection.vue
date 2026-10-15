@@ -3,6 +3,7 @@
     <div class="container-sm">
       <UiSectionTag>{{ t('reserve.title') }}</UiSectionTag>
       <h2 class="reserve__heading">{{ t('reserve.sub') }}</h2>
+      <p class="reserve__price">{{ t('common.priceFrom') }}</p>
 
       <SectionsDiscountCard3d>
         <template #num><div class="reserve__discount-num">{{ t('reserve.discountNum') }}</div></template>
@@ -24,6 +25,8 @@
           {{ t('nav.reserve') }}
         </NuxtLink>
       </div>
+
+      <UiKeyFacts />
 
       <!-- Booking engine iframe -->
       <!-- <div class="reserve__iframe-wrap">
@@ -86,6 +89,13 @@ onMounted(() => {
 
 <style scoped>
 .reserve { background: #fff; }
+
+.reserve__price {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--green);
+  margin: -20px 0 28px;
+}
 
 .reserve__heading {
   font-size: clamp(1.5rem, 2.5vw, 2.2rem);

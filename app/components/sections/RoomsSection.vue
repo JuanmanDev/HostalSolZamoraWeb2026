@@ -3,6 +3,10 @@
     <div class="container">
       <UiSectionTag>{{ t('rooms.title') }}</UiSectionTag>
       <h2 class="rooms__heading">{{ t('rooms.sub') }}</h2>
+      <p class="rooms__price">
+        <LucideIcon name="tag" :size="15" color="var(--green)" />
+        {{ t('common.priceFrom') }}
+      </p>
 
       <SectionsRoomAmenityChips :items="amenities" />
 
@@ -36,12 +40,31 @@
           {{ t('rooms.reserveBtn') }}
         </NuxtLink>
       </div> -->
+      <!-- Compact gallery preview (full gallery lives on /galeria) -->
+      <ul class="rooms__preview">
+        <li v-for="photo in previewPhotos" :key="photo.path" class="rooms__preview-item">
+          <NuxtLink
+            :to="localePath({ name: 'galeria', query: { room: photo.room } })"
+            class="rooms__preview-link"
+            :aria-label="`${photo.alt} — ${t('rooms.galleryBtn')}`"
+          >
+            <NuxtImg
+              :src="photo.path"
+              :alt="photo.alt"
+              class="rooms__preview-img"
+              width="400"
+              height="300"
+              sizes="xs:50vw md:33vw lg:25vw xl:360px"
+              densities="x1 x2"
+              format="webp"
+              loading="lazy"
+              :modifiers="{ rotate: 0 }"
+            />
+            <span class="rooms__preview-caption">{{ photo.label }}</span>
+          </NuxtLink>
+        </li>
+      </ul>
     </div>
-    <!-- Room Media Gallery -->
-    <SectionsRoomMediaGallery2
-      :hideThumbailsAll="false"
-      :hideGrouped="true"
-    />
 
     <!--  Button to go the the gallery -->
     <div class="container" style="text-align:center; margin-top: 20px;">
@@ -55,10 +78,31 @@
 
 <script setup lang="ts">
 import type { RoomType } from '~/types'
-import { AMENITY_ICONS, getExtraIcon } from '~/composables/useRooms'
+import { AMENITY_ICONS, getExtraIcon, ROOM_TYPES, useRoomMediaAlts } from '~/composables/useRooms'
 
 const { t, tm, rt } = useI18n()
 const localePath = useLocalePath()
+const { roomPhotoPaths } = useRooms()
+const { roomLabel, photoAlt } = useRoomMediaAlts()
+
+// 8 representative photos: round-robin over room types (first photo of each
+// room), skipping photos already used on the type cards. Deterministic → SSR-safe.
+const PREVIEW_COUNT = 8
+const previewPhotos = computed(() => {
+  const cardPhotos = new Set(roomTypes.value.map(r => r.photoPath))
+  const typeRooms = Object.values(ROOM_TYPES)
+  const maxLen = Math.max(...typeRooms.map(r => r.length))
+  const out: { path: string; room: string; alt: string; label: string }[] = []
+  for (let i = 0; i < maxLen && out.length < PREVIEW_COUNT; i++) {
+    for (const rooms of typeRooms) {
+      const room = rooms[i]
+      if (!room || out.length >= PREVIEW_COUNT) continue
+      const path = roomPhotoPaths(room).find(p => !cardPhotos.has(p))
+      if (path) out.push({ path, room, alt: photoAlt(path), label: roomLabel(room) })
+    }
+  }
+  return out
+})
 
 const roomTypes = computed(() =>
   (tm('rooms.types') as any[]).map((type: any) => ({
@@ -82,13 +126,46 @@ const amenities = computed(() =>
 
 </script>
 
+<style>
+/*
+ * Preserve homepage look: these global rules used to reach the homepage via
+ * RoomMediaGallery2's unscoped <style> block, which is no longer rendered here.
+ * TODO: move to assets/css/main.css (or scope them) and drop this block.
+ */
+.carousel {
+  --vc-nav-background: rgba(255, 255, 255, 0.7);
+  --vc-nav-border-radius: 100%;
+}
+img {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  image-orientation: from-image;
+}
+</style>
+
 <style scoped>
 .rooms { background: #fff; }
 
 .rooms__heading {
   font-size: clamp(1.8rem, 3vw, 2.8rem);
   color: var(--dark);
-  margin: 0 0 36px;
+  margin: 0 0 16px;
+}
+
+.rooms__price {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--green-light);
+  color: var(--dark);
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 30px;
+  padding: 8px 16px;
+  margin: 0 0 28px;
 }
 
 /* Type cards */
@@ -134,6 +211,51 @@ const amenities = computed(() =>
 
 .rooms.section-padding {
   padding-bottom: 8px;
+}
+
+/* Gallery preview */
+.rooms__preview {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin: 8px 0 0;
+  padding: 0;
+}
+@media (max-width: 860px) { .rooms__preview { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 600px) { .rooms__preview { grid-template-columns: repeat(2, 1fr); gap: 8px; } }
+
+.rooms__preview-link {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 3;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  background: var(--green-light);
+}
+.rooms__preview-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  transition: transform 0.4s;
+}
+.rooms__preview-link:hover .rooms__preview-img,
+.rooms__preview-link:focus-visible .rooms__preview-img { transform: scale(1.05); }
+.rooms__preview-link:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+
+.rooms__preview-caption {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 18px 12px 8px;
+  background: linear-gradient(to top, rgba(0,0,0,0.55), transparent);
+  color: #fff;
+  font-size: 12.5px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .btn.btn-secondary {

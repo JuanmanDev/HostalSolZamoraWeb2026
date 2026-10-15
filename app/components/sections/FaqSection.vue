@@ -14,21 +14,22 @@
           class="faq__item"
           :style="item.slug ? `view-transition-name: faq-item-${item.slug}` : ''"
         >
-          <button class="faq__question" @click="toggle(i)">
+          <button class="faq__question" :aria-expanded="open === i" @click="toggle(i)">
             <span :style="item.slug ? `view-transition-name: faq-q-${item.slug}` : ''">{{ item.q }}</span>
             <LucideIcon :name="open === i ? 'minus' : 'plus'" :size="18" color="var(--green)" />
           </button>
           <Transition name="expand">
-            <div v-if="open === i" class="faq__answer">
+            <!-- v-show (not v-if): answers stay in the prerendered HTML for crawlers -->
+            <div v-show="open === i" class="faq__answer">
               <p class="faq__a-text">{{ item.a }}</p>
               <div v-if="item.links?.length || item.slug" class="faq__links">
                 <NuxtLink
                   v-if="item.slug"
-                  :to="localePath('/faq/' + item.slug)"
+                  :to="`${localePath('faq')}#${item.slug}`"
                   class="faq__link faq__link--subpage"
                 >
                   <LucideIcon name="link" :size="14" />
-                  Enlace directo
+                  {{ t('faq.directLink') }}
                 </NuxtLink>
                 <NuxtLink
                   v-for="(link, li) in item.links"
@@ -56,6 +57,7 @@
 
 <script setup lang="ts">
 import type { FaqItem } from '~/types'
+import { slugify } from '~/utils/slugify'
 
 const { t, tm, rt } = useI18n()
 const localePath = useLocalePath()
@@ -63,7 +65,7 @@ const allItems = computed(() =>
   (tm('faq.items') as any[]).map((item: any) => ({
     q: rt(item.q),
     a: rt(item.a),
-    slug: item.slug ? rt(item.slug) : undefined,
+    slug: slugify(rt(item.q)),
     links: item.links ? item.links.map((l: any) => ({
       label: rt(l.label),
       url: rt(l.url),

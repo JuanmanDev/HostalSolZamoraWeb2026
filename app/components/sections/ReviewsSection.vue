@@ -35,6 +35,16 @@
           <Pagination />
         </template>
       </Carousel>
+      <!-- Server-rendered fallback so review text is in the prerendered HTML -->
+      <template #fallback>
+        <ul class="reviews__fallback">
+          <li v-for="(rev, i) in items" :key="i" class="reviews__card">
+            <UiStarRating :count="rev.stars" />
+            <p class="reviews__text">"{{ rev.text }}"</p>
+            <div class="reviews__author">— {{ rev.name }}</div>
+          </li>
+        </ul>
+      </template>
     </ClientOnly>
 
     <!-- Platform badges -->
@@ -46,6 +56,10 @@
       <a href="https://www.expedia.es/Zamora-Hoteles-Hostal-Sol.h101083476.Informacion-Hotel" target="_blank" rel="noopener noreferrer" class="reviews__platform-badge reviews__platform-badge--expedia">
         <NuxtPicture src="/images/icon/expedia.png" alt="" class="reviews__platform-logo" width="80" height="80" />
         <span class="reviews__platform-name">Expedia</span>
+      </a>
+      <a href="https://maps.google.com/maps?cid=2829160904761521734" target="_blank" rel="noopener noreferrer" class="reviews__platform-badge reviews__platform-badge--google">
+        <LucideIcon name="map-pin" :size="56" color="#4285f4" />
+        <span class="reviews__platform-name">Google</span>
       </a>
       <a href="https://www.spanish.hostelworld.com/pwa/hosteldetails.php/Hostal-Sol/Zamora/330134" target="_blank" rel="noopener noreferrer" class="reviews__platform-badge reviews__platform-badge--hostelworld">
         <NuxtPicture src="/images/icon/hostelworld.png" alt="" class="reviews__platform-logo" width="80" height="80" />
@@ -268,5 +282,16 @@ const itemsToShow = computed(() => {
   font-weight: 700;
   white-space: nowrap;
   flex-shrink: 0;
+}
+.reviews__fallback {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0 max(24px, 5vw);
+  overflow: hidden;
+}
+.reviews__fallback .reviews__card {
+  flex: 0 0 min(360px, 85vw);
 }
 </style>

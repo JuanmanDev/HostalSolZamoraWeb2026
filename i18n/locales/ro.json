@@ -1120,17 +1120,6 @@
         ]
       },
       {
-        "q": "Pot vedea vechiul site?",
-        "a": "Da, puteți consulta designul și conținutul site-ului nostru anterior la următorul link.",
-        "links": [
-          {
-            "label": "Vezi vechiul site",
-            "url": "/old/hostalsolzamora.com/index.html",
-            "icon": "external-link"
-          }
-        ]
-      },
-      {
         "q": "Ce ar trebui să fac dacă am probleme de plată sau nu ajunge e-mailul de confirmare?",
         "a": "Dacă e-mailul de confirmare nu a ajuns în 2 minute și nu se află în folderul de spam, rezervarea nu este confirmată. Este posibil să fi avut loc o încercare de plată și banii să fie blocați temporar de către banca dvs., dar plata nu s-a finalizat, iar rezervarea nu este garantată. În plus, anumite carduri necesită acceptarea explicită a plăților externe sau permiterea plăților nesecurizate în aplicația bancară, în funcție de situație. Vă rugăm să verificați dacă aveți sold suficient sau să încercați să folosiți alte carduri. Dacă tot aveți probleme, contactați-ne prin WhatsApp, e-mail sau apel telefonic.",
         "tags": [
@@ -1142,7 +1131,8 @@
           "blocat"
         ]
       }
-    ]
+    ],
+    "directLink": "Link direct"
   },
   "reserve": {
     "title": "Rezervă sejurul tău",
@@ -1208,11 +1198,11 @@
   },
   "pages": {
     "home": {
-      "title": "Hostal Sol Zamora — Acasă la Zamora",
+      "title": "Acasă la Zamora",
       "description": "Hostal simplu și central în Zamora, acasă atunci când ai nevoie."
     },
     "faq": {
-      "title": "Întrebări Frecvente — Hostal Sol Zamora",
+      "title": "Întrebări Frecvente",
       "description": "Tot ce trebuie să știi înainte de sosire: program, check-in și reguli.",
       "heading": "Tot ce trebuie să știi înainte de sosire",
       "lead": "Am adunat cele mai frecvente întrebări ale oaspeților noștri. Dacă nu găsești ce cauți, contactează-ne:",
@@ -1221,7 +1211,7 @@
       "backHome": "← Înapoi la pagina principală"
     },
     "parking": {
-      "title": "Ghid de Parcare — Hostal Sol Zamora",
+      "title": "Ghid de Parcare",
       "description": "Hostalul nu are parcare proprie, dar îți arătăm cum ajungi și unde poți parca.",
       "heading": "Cum să parchezi lângă Hostal Sol Zamora",
       "lead": "Hostalul nu dispune de parcare privată, dar ne aflăm în centrul istoric cu mai multe opțiuni foarte aproape.",
@@ -1302,7 +1292,7 @@
       ]
     },
     "reserva": {
-      "title": "Rezervă — Hostal Sol Zamora",
+      "title": "Rezervă",
       "description": "Rezervă direct cu 15% reducere față de orice canal extern.",
       "heading": "Rezervă sejurul tău",
       "discountLabel": "15% reducere la rezervarea pe site-ul nostru",
@@ -1320,7 +1310,7 @@
       "fallbackSubtitle": "Faceți clic aici pentru a deschide o pagină de rezervare mai simplă într-o filă nouă."
     },
     "checkin": {
-      "title": "Cum Ajungi și Check-in — Hostal Sol Zamora",
+      "title": "Cum Ajungi și Check-in",
       "description": "Ghid de sosire pas cu pas: locație, documente necesare și procesul de check-in.",
       "heading": "Cum ajungi și faci check-in",
       "lead": "Ghid pas cu pas pentru a ajunge la hostal și a pregăti documentația cerută de lege.",
@@ -1429,7 +1419,7 @@
     },
     "galeria": {
       "tag": "Galerie",
-      "title": "Galeria Camerelor — Hostal Sol Zamora",
+      "title": "Galeria Camerelor",
       "heading": "Galeria camerelor",
       "description": "Fotografii și videouri reale ale camerelor, fără retușuri sau punere în scenă.",
       "p1": "La Hostal Sol Zamora credem că onestitatea este cea mai bună prezentare. Aici vei găsi fotografii și videouri reale ale camerelor noastre — fără retușuri sau surprize — pentru a putea rezerva cu deplină încredere.",
@@ -1439,7 +1429,7 @@
     },
     "sobreNosotros": {
       "tag": "Despre noi",
-      "title": "Despre Noi · Căldură, liniște și familiaritate — Hostal Sol Zamora",
+      "title": "Despre Noi · Căldură, liniște și familiaritate",
       "description": "Peste 50 de ani de ospitalitate în Zamora, de la Pensión Padornelo la Hostal Sol.",
       "heading": "Un hostal plin de entuziasm care îți oferă cel mai bun tratament",
       "intro1": "Bun venit în casa noastră — o casă diferită, modernă și cu un aer proaspăt care vrea să te primească pentru a-ți oferi acel repaus într-o atmosferă caldă și liniștită. Pe la ușile noastre au trecut proprietari diferiți, călători din diverse colțuri ale lumii și oameni cu drumuri diferite care s-au întâlnit sub acoperișul nostru.",
@@ -1464,7 +1454,7 @@
     },
     "contacto": {
       "tag": "Contact",
-      "title": "Contact — Hostal Sol Zamora",
+      "title": "Contact",
       "description": "Sună-ne, scrie-ne pe WhatsApp sau email. Suntem aici să te ajutăm.",
       "heading": "Vorbim",
       "lead": "Suntem bucuroși să răspundem oricărei întrebări. Sună-ne, trimite-ne un mesaj pe WhatsApp, un email sau folosește formularul și îți răspundem cât mai curând.",
@@ -1525,5 +1515,37 @@
       "parkingNote": "Dacă întrebarea ta este despre parcare, am pregătit un ghid complet cu toate opțiunile din apropiere:",
       "parkingLink": "Vezi ghidul de parcare →"
     }
+  },
+  "common": {
+    "priceFrom": "De la 40 € pe noapte"
+  },
+  "keyFacts": {
+    "title": "Bine de știut înainte de rezervare",
+    "items": [
+      {
+        "icon": "clock",
+        "text": "Check-in 14:00–21:00 · Check-out 11:00"
+      },
+      {
+        "icon": "moon",
+        "text": "Recepția este închisă în majoritatea duminicilor — sosește sâmbătă și rămâi"
+      },
+      {
+        "icon": "bed-double",
+        "text": "Camere private, toate cu baie proprie"
+      },
+      {
+        "icon": "message-circle",
+        "text": "Personalul vorbește doar spaniolă — scrie-ne pe WhatsApp și traducem"
+      },
+      {
+        "icon": "utensils-crossed",
+        "text": "Fără mic dejun — cafenele la mai puțin de 2 minute"
+      },
+      {
+        "icon": "paw-print",
+        "text": "Animalele sunt binevenite (7 € pe noapte)"
+      }
+    ]
   }
 }

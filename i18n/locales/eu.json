@@ -1108,17 +1108,6 @@
         ]
       },
       {
-        "q": "Webgune zaharra ikus dezaket?",
-        "a": "Bai, gure aurreko webgunearen diseinua eta edukia hurrengo estekan kontsulta ditzakezu.",
-        "links": [
-          {
-            "label": "Webgune zaharra ikusi",
-            "url": "/old/hostalsolzamora.com/index.html",
-            "icon": "external-link"
-          }
-        ]
-      },
-      {
         "q": "Zer egin behar dut ordaintzeko arazoak baditut edo berrespen-mezua ez bazaigu iristen?",
         "a": "Berrespen-mezua 2 minuturen buruan iritsi ez bada eta spam edo zabor-postaren karpetan ez badago, erreserba ez dago baieztatuta. Baliteke ordainketa-saiakeraren bat egin izana eta dirua aldi baterako blokeatuta egotea zure bankuaren eskutik, baina ordainketa ez da amaitu eta erreserba ez dago bermatuta. Gainera, txartel batzuek atzerriko ordainketak esplizituki onartzea edo zure banku-aplikazioan ordainketa ez-seguruak baimentzea eskatzen dute, egoeraren arabera. Egiaztatu saldo nahikoa duzula edo saiatu beste txartel batzuk erabiltzen. Oraindik arazoak badituzu, jarri gurekin harremanetan WhatsApp, mezu elektroniko edo telefono dei bidez.",
         "tags": [
@@ -1130,7 +1119,8 @@
           "blokeatua"
         ]
       }
-    ]
+    ],
+    "directLink": "Esteka zuzena"
   },
   "reserve": {
     "title": "Logela erreserbatu",
@@ -1196,11 +1186,11 @@
   },
   "pages": {
     "home": {
-      "title": "Hostal Sol Zamora — Zure etxea Zamoran",
+      "title": "Zure etxea Zamoran",
       "description": "Zamorako hostal zentrala eta sinplea — zure etxea behar duzunean."
     },
     "faq": {
-      "title": "Maiz Egiten Diren Galderak — Hostal Sol Zamora",
+      "title": "Maiz Egiten Diren Galderak",
       "description": "Iritsi aurretik jakin behar duzun guztia: ordutegiak, check-in eta arauak.",
       "heading": "Iritsi aurretik jakin behar duzun guztia",
       "lead": "Gure gonbidatuen galdera ohikoenak bildu ditugu. Erantzunik aurkitzen ez baduzu — jarri gurekin harremanetan:",
@@ -1209,7 +1199,7 @@
       "backHome": "← Hasierara itzuli"
     },
     "parking": {
-      "title": "Aparkamendu Gida — Hostal Sol Zamora",
+      "title": "Aparkamendu Gida",
       "description": "Hostalak ez du aparkamendu propiorik, baina erakusten dizugu nola iritsi eta non aparkatu.",
       "heading": "Hostal Sol Zamora-ren ondoko aparkamendua",
       "lead": "Hostalak ez du aparkamendu pribaturik, baina hiri historikoan gaude hurbileko hainbat aukerarekin.",
@@ -1290,7 +1280,7 @@
       ]
     },
     "reserva": {
-      "title": "Erreserbak — Hostal Sol Zamora",
+      "title": "Erreserbak",
       "description": "Erreserbatu zuzenean kanpoko edozein kanaletik %15eko deskonturekin.",
       "heading": "Logela erreserbatu",
       "discountLabel": "%15 deskontua gure webgunean erreserbatzean",
@@ -1308,7 +1298,7 @@
       "fallbackSubtitle": "Sakatu hemen erreserba orri errazago bat fitxa berri batean irekitzeko."
     },
     "checkin": {
-      "title": "Nola iritsi eta check-in — Hostal Sol Zamora",
+      "title": "Nola iritsi eta check-in",
       "description": "Pausoz pauso gida: kokapena, beharrezko dokumentuak eta iristeko prozesua.",
       "heading": "Nola iritsi eta check-in egin",
       "lead": "Hostalera iristeko eta legeak eskatzen duen dokumentazioa prestatzeko pausoz pauso gida.",
@@ -1417,7 +1407,7 @@
     },
     "galeria": {
       "tag": "Galeria",
-      "title": "Logelako galeria — Hostal Sol Zamora",
+      "title": "Logelako galeria",
       "heading": "Logelako galeria",
       "description": "Logelako argazki eta bideo errealen aztergailua, ukitu edo posatu gabe.",
       "p1": "Hostal Sol Zamoran uste dugu zintzotasuna da aurkezpen onena. Hemen gure logelako argazki eta bideo errealak aurkituko dituzu — ukiturik eta sorpresarik gabe — guztizko konfiantzarekin erreserbatu ahal izateko.",
@@ -1427,7 +1417,7 @@
     },
     "sobreNosotros": {
       "tag": "Guri buruz",
-      "title": "Guri buruz · Beroa, lasaitasuna eta etxeko giroa — Hostal Sol Zamora",
+      "title": "Guri buruz · Beroa, lasaitasuna eta etxeko giroa",
       "description": "50 urte baino gehiago ospitalitateaz Zamoran — Pensión Padornelo-tik Hostal Sol-era.",
       "heading": "Arima duen hostal bat",
       "intro1": "Ongi etorri gure etxera — desberdina, modernoa eta freskoa, bero eta lasai giroan atsedena emateko hartzen zaituena. Gure ateetan jabeen, munduko txoko guztietako bidaiarien eta gure teilatu pean topo egin duten bizitza desberdineko pertsonen joan-etorriak egon dira.",
@@ -1452,7 +1442,7 @@
     },
     "contacto": {
       "tag": "Kontaktua",
-      "title": "Kontaktua — Hostal Sol Zamora",
+      "title": "Kontaktua",
       "description": "Deitu, idatzi WhatsAppez edo emailez. Hemen gaude laguntzeko.",
       "heading": "Harremanetan jarri",
       "lead": "Edozein galderari erantzuteko prest gaude. Deitu, idatzi WhatsAppez, bidali email bat edo bete formularioa — ahalik eta lasterren erantzuten dugu.",
@@ -1513,5 +1503,37 @@
       "parkingNote": "Zure galdera aparkamenduari buruzkoa bada, hurbileko aukera guztiekin gida osoa prestatu dugu:",
       "parkingLink": "Aparkamendu gida →"
     }
+  },
+  "common": {
+    "priceFrom": "40 €-tik aurrera gaueko"
+  },
+  "keyFacts": {
+    "title": "Erreserbatu aurretik jakin beharrekoak",
+    "items": [
+      {
+        "icon": "clock",
+        "text": "Sarrera 14:00–21:00 · Irteera 11:00"
+      },
+      {
+        "icon": "moon",
+        "text": "Harrera itxita igande gehienetan: larunbatean iristen bazara, igandean geratu zaitezke"
+      },
+      {
+        "icon": "bed-double",
+        "text": "Logela pribatuak, guztiak bainugela propioarekin"
+      },
+      {
+        "icon": "message-circle",
+        "text": "Langileek gaztelaniaz bakarrik hitz egiten dute: idatzi WhatsApp bidez eta itzultzailearekin ulertuko gara"
+      },
+      {
+        "icon": "utensils-crossed",
+        "text": "Gosaririk ez: kafetegiak 2 minutura baino gutxiagora"
+      },
+      {
+        "icon": "paw-print",
+        "text": "Maskotak ongi etorriak (7 € gaueko)"
+      }
+    ]
   }
 }

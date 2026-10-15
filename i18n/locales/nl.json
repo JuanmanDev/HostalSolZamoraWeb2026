@@ -1120,17 +1120,6 @@
         ]
       },
       {
-        "q": "Kan ik de oude website zien?",
-        "a": "Ja, u kunt het ontwerp en de inhoud van onze vorige website bekijken via de volgende link.",
-        "links": [
-          {
-            "label": "Oude website bekijken",
-            "url": "/old/hostalsolzamora.com/index.html",
-            "icon": "external-link"
-          }
-        ]
-      },
-      {
         "q": "Wat moet ik doen als ik betalingsproblemen heb of de bevestigingsmail niet aankomt?",
         "a": "Als de bevestigingsmail niet binnen 2 minuten is aangekomen en niet in je spam- of ongewenste map zit, is de reservering niet bevestigd. Het is mogelijk dat er een betalingspoging is gedaan en het geld tijdelijk is geblokkeerd door je bank, maar de betaling is niet voltooid en de reservering is niet gegarandeerd. Bovendien vereisen sommige kaarten expliciet het accepteren van buitenlandse betalingen of het toestaan van onveilige betalingen in je bank-app, afhankelijk van de situatie. Controleer of je voldoende saldo hebt of probeer andere kaarten te gebruiken. Als je nog steeds problemen ondervindt, neem dan contact met ons op via WhatsApp, e-mail of telefoongesprek.",
         "tags": [
@@ -1142,7 +1131,8 @@
           "geblokkeerd"
         ]
       }
-    ]
+    ],
+    "directLink": "Directe link"
   },
   "reserve": {
     "title": "Boek je verblijf",
@@ -1208,11 +1198,11 @@
   },
   "pages": {
     "home": {
-      "title": "Hostal Sol Zamora — Jouw thuis in Zamora",
+      "title": "Jouw thuis in Zamora",
       "description": "Eenvoudig, centraal gelegen hostal in Zamora — jouw thuis wanneer je het nodig hebt."
     },
     "faq": {
-      "title": "Veelgestelde Vragen — Hostal Sol Zamora",
+      "title": "Veelgestelde Vragen",
       "description": "Alles wat je moet weten voor aankomst: openingstijden, inchecken en huisregels.",
       "heading": "Alles wat je moet weten voor aankomst",
       "lead": "We hebben de meest gestelde vragen van onze gasten verzameld. Als je niet kunt vinden wat je zoekt, neem dan contact met ons op:",
@@ -1221,7 +1211,7 @@
       "backHome": "← Terug naar home"
     },
     "parking": {
-      "title": "Parkeergids — Hostal Sol Zamora",
+      "title": "Parkeergids",
       "description": "Het hostal heeft geen eigen parkeerplaats, maar we laten je zien hoe je er komt en waar je kunt parkeren.",
       "heading": "Parkeren bij Hostal Sol Zamora",
       "lead": "Het hostal heeft geen eigen parkeerplaats, maar we bevinden ons in het historische centrum met verschillende opties vlakbij.",
@@ -1302,7 +1292,7 @@
       ]
     },
     "reserva": {
-      "title": "Boeken — Hostal Sol Zamora",
+      "title": "Boeken",
       "description": "Boek direct met 15% korting ten opzichte van elk extern kanaal.",
       "heading": "Boek je verblijf",
       "discountLabel": "15% korting bij boeking op onze website",
@@ -1320,7 +1310,7 @@
       "fallbackSubtitle": "Klik hier om een eenvoudigere boekingspagina in een nieuw tabblad te openen."
     },
     "checkin": {
-      "title": "Hoe Aanreizen & Inchecken — Hostal Sol Zamora",
+      "title": "Hoe Aanreizen & Inchecken",
       "description": "Stap-voor-stap aanrijgids: locatie, vereiste documenten en het incheckproces.",
       "heading": "Hoe aanreizen en inchecken",
       "lead": "Een stap-voor-stap gids voor het bereiken van het hostal en het voorbereiden van de wettelijk vereiste documenten.",
@@ -1429,7 +1419,7 @@
     },
     "galeria": {
       "tag": "Galerij",
-      "title": "Kamergalerij — Hostal Sol Zamora",
+      "title": "Kamergalerij",
       "heading": "Kamergalerij",
       "description": "Echte foto's en video's van elke kamer — geen filters, geen enscenering.",
       "p1": "Bij Hostal Sol Zamora geloven we dat eerlijkheid de beste introductie is. Hier vind je echte foto's en video's van onze kamers — geen enscenering, geen verrassingen — zodat je met vol vertrouwen kunt boeken.",
@@ -1439,7 +1429,7 @@
     },
     "sobreNosotros": {
       "tag": "Over ons",
-      "title": "Over Ons · Warmte, rust en familiegevoel — Hostal Sol Zamora",
+      "title": "Over Ons · Warmte, rust en familiegevoel",
       "description": "Meer dan 50 jaar gastvrijheid in Zamora, van Pensión Padornelo tot Hostal Sol.",
       "heading": "Een gastvrij hostal gerund door mensen die houden van wat ze doen",
       "intro1": "Welkom in ons huis — een ander, modern, fris huis dat je de rust wil geven die je verdient in een warme en stille sfeer. Reizigers van over de hele wereld zijn door onze deuren gekomen, en iedereen heeft zijn spoor achtergelaten.",
@@ -1464,7 +1454,7 @@
     },
     "contacto": {
       "tag": "Contact",
-      "title": "Contact — Hostal Sol Zamora",
+      "title": "Contact",
       "description": "Bel ons, stuur een WhatsApp of e-mail — we zijn er om je te helpen.",
       "heading": "Laten we praten",
       "lead": "We beantwoorden graag vragen. Bel ons, stuur een WhatsApp-bericht, een e-mail of gebruik het formulier hieronder — we reageren zo snel mogelijk.",
@@ -1525,5 +1515,37 @@
       "parkingNote": "Als je vraag over parkeren gaat, hebben we een volledige gids met alle nabijgelegen opties:",
       "parkingLink": "Bekijk parkeergids →"
     }
+  },
+  "common": {
+    "priceFrom": "Vanaf € 40 per nacht"
+  },
+  "keyFacts": {
+    "title": "Goed om te weten voor je boekt",
+    "items": [
+      {
+        "icon": "clock",
+        "text": "Inchecken 14:00–21:00 · Uitchecken 11:00"
+      },
+      {
+        "icon": "moon",
+        "text": "Receptie op de meeste zondagen gesloten — kom op zaterdag en blijf"
+      },
+      {
+        "icon": "bed-double",
+        "text": "Privékamers, allemaal met eigen badkamer"
+      },
+      {
+        "icon": "message-circle",
+        "text": "Ons personeel spreekt alleen Spaans — stuur ons een WhatsApp, wij vertalen"
+      },
+      {
+        "icon": "utensils-crossed",
+        "text": "Geen ontbijt — cafés op minder dan 2 minuten"
+      },
+      {
+        "icon": "paw-print",
+        "text": "Huisdieren welkom (€ 7 per nacht)"
+      }
+    ]
   }
 }

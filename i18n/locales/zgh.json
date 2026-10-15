@@ -1058,17 +1058,6 @@
         ]
       },
       {
-        "q": "Zemreɣ ad waliɣ asmel aqdim?",
-        "a": "Ih, tzemreɣ ad twaliḍ azenzari d wawal n usmel-nneɣ aqdim deg useɣwen-a.",
-        "links": [
-          {
-            "label": "Wali asmel aqdim",
-            "url": "/old/hostalsolzamora.com/index.html",
-            "icon": "external-link"
-          }
-        ]
-      },
-      {
         "q": "D acu ara xedmeɣ ma sɛiɣ uguren n usekles neɣ ur d-yewwiḍ ara yizen n uṣeggem?",
         "a": "Ma yella izen n uṣeggem ur d-yewwiḍ ara deg snat n tseddatin yerna ur yelli ara deg yizen ur nzewweǧ, taseglit ur tṣeggem ara. Yezmer lḥal tella-d aɛraḍ n usekles yerna idrimen ḥebsen sɣur lbanka-k, dɣa usekles ur yekfil ara yerna taseglit ur teḍmin ara. Rnu ɣef waya, kra n tkaṛḍiwin ttḥeddiment ad teqbleḍ iseklasen iberraniyen neɣ ad teǧǧeḍ iseklasen ur nḍmin ara deg tesnasit-ik n lbanka, ɛla ḥsab n tegnit. Ttxil-k, senqed ma tesɛiḍ aḥric yewwḍen neɣ ɛreḍ ad tesqedceḍ tikaṛḍiwin nniḍen. Ma tkemmleḍ tesɛiḍ uguren, ttxil-k mmeslay-d yid-neɣ s WhatsApp, izen neɣ s usawal.",
         "tags": [
@@ -1080,7 +1069,8 @@
           "yeḥbes"
         ]
       }
-    ]
+    ],
+    "directLink": "Direct link"
   },
   "reserve": {
     "title": "Aɣ Tenzert",
@@ -1146,11 +1136,11 @@
   },
   "pages": {
     "home": {
-      "title": "Hostal Sol Zamora — Axxam-ik deg Zamura",
+      "title": "Axxam-ik deg Zamura",
       "description": "Hostel aneɣlay d azedgan deg Zamura, axxam-ik akud ara t-txuṣṣeḍ."
     },
     "faq": {
-      "title": "Isteqsiyen Isɣalen — Hostal Sol Zamora",
+      "title": "Isteqsiyen Isɣalen",
       "description": "Akk ayen ilaq ad teɣreḍ deffir tili: wakud, check-in d isɣalen.",
       "heading": "Akk Ayen Ilaq Ad Teɣreḍ Deffir Tili",
       "lead": "Nessemɣer isteqsiyen isɣalen n imuddar-aneɣ. Ma ur tafiḍ ara ayen ara tbaḥeḍ, mudd-aɣ-d awal:",
@@ -1159,7 +1149,7 @@
       "backHome": "← Sedet ɣer Asebded"
     },
     "parking": {
-      "title": "Asgid Uwanag — Hostal Sol Zamora",
+      "title": "Asgid Uwanag",
       "description": "Hostel ur isɛi ara uwanag, maca fad iga-d amek ara d-tafeḍ d acu ara tsawleḍ.",
       "heading": "Amek Ara Awneɣ iqerb Hostal Sol Zamura",
       "lead": "Hostel ur isɛi ara uwanag uzgen, maca nheddar deg ufus n uɣerbaz aqdim s ixiyen bezzaf iqerben.",
@@ -1240,7 +1230,7 @@
       ]
     },
     "reserva": {
-      "title": "Aɣ Tenzert — Hostal Sol Zamora",
+      "title": "Aɣ Tenzert",
       "description": "Aɣ tenzert anamur s 15% tawuri ɣef yal aɣanib nniḍen.",
       "heading": "Aɣ Tenzert n Tẓirit-ik",
       "discountLabel": "15% tawuri deg tenzert s usmel-aneɣ",
@@ -1258,7 +1248,7 @@
       "fallbackSubtitle": "Senned dagi i wakken ad teldiḍ asebtar n uḥader fessusen deg yicer amaynut."
     },
     "checkin": {
-      "title": "Tili d Check-in — Hostal Sol Zamora",
+      "title": "Tili d Check-in",
       "description": "Asgid tallit s tallit: amkan, izerfan ixuṣṣen d uselkim n check-in.",
       "heading": "Amek Ara Tafeḍ d Amek Ara Txedmeḍ Check-in",
       "lead": "Asgid tallit s tallit i wakken ad tafeḍ hostel d ad teɣreḍ izerfan ixuṣṣen s unagraw.",
@@ -1367,7 +1357,7 @@
     },
     "galeria": {
       "tag": "Tasɣunt",
-      "title": "Tasɣunt n Tigmmiwin — Hostal Sol Zamora",
+      "title": "Tasɣunt n Tigmmiwin",
       "heading": "Tasɣunt n Tigmmiwin",
       "description": "Tiwlafin d vidéo imezwuren n tigmmiwin, s wara n urmid neɣ tarmitin.",
       "p1": "Deg Hostal Sol Zamura nettemmal d asuddes d aɣerbaz amezwaru. Fad tettefkeḍ tiwlafin d vidéo imezwuren n tigmmiwin-aneɣ — s wara n urmid neɣ tarmitin — i wakken ad tẓerḍ i tenzert s wamek tebɣiḍ.",
@@ -1377,7 +1367,7 @@
     },
     "sobreNosotros": {
       "tag": "Fell-aneɣ",
-      "title": "Fell-aneɣ · Iqerb, Aɣellas, d Timmad — Hostal Sol Zamora",
+      "title": "Fell-aneɣ · Iqerb, Aɣellas, d Timmad",
       "description": "Ugar n 50 iseggasen deg lhotiluri n Zamura, seg Pensión Padornelo ɣer Hostal Sol.",
       "heading": "Axxam Yesɛan Tafat d Tmurt i Yettken Ansuf n Lɛali",
       "intro1": "Ansuf ɣer axxam-aneɣ, axxam nniḍen, ameẓẓyan d yifri iẓrin i k-yettwaksen i wakken ad tehniḍ deg umkan n iqerb d aɣellas. Seg tewwurin-is feqqent bezzaf n imektuben, imussaɣen seg bezzaf n tmura n tudert d yemdanen s iɣewwaren nniḍen i itwamlulen ɣef wakal-aneɣ.",
@@ -1402,7 +1392,7 @@
     },
     "contacto": {
       "tag": "Tiqqna",
-      "title": "Tiqqna — Hostal Sol Zamora",
+      "title": "Tiqqna",
       "description": "Siɣeḍ-aɣ-d, kteb WhatsApp neɣ Imayl. Nheddar i wakken ad k-nwenneḍ.",
       "heading": "Awal d Yid-aneɣ",
       "lead": "Nettaf bezzaf ad nseled ɣef yal asteqsi neɣ talalt. Siɣeḍ-aɣ-d, kteb WhatsApp, azen imayl neɣ seqdec usebter d nettnezzeɣ-d s wura ilaq.",
@@ -1463,5 +1453,37 @@
       "parkingNote": "Ma steqsit ɣef uwanag, nesserger asgid ameqqran s akk ixiyen iqerben:",
       "parkingLink": "Ẓer Asgid Uwanag →"
     }
+  },
+  "common": {
+    "priceFrom": "From €40 per night"
+  },
+  "keyFacts": {
+    "title": "Good to know before you book",
+    "items": [
+      {
+        "icon": "clock",
+        "text": "Check-in 14:00–21:00 · Check-out 11:00"
+      },
+      {
+        "icon": "moon",
+        "text": "Reception closed on most Sundays — arrive on Saturday and stay on"
+      },
+      {
+        "icon": "bed-double",
+        "text": "Private rooms with en-suite bathroom (a Spanish hostal, not a dorm hostel)"
+      },
+      {
+        "icon": "message-circle",
+        "text": "Staff speak Spanish only — message us on WhatsApp and we'll translate"
+      },
+      {
+        "icon": "utensils-crossed",
+        "text": "No breakfast — cafés less than 2 minutes away"
+      },
+      {
+        "icon": "paw-print",
+        "text": "Pets welcome (€7 per night)"
+      }
+    ]
   }
 }

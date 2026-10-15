@@ -97,18 +97,24 @@ export default defineNuxtConfig({
   sitemap: {
     xsl: false,
     credits: false,
+    // Image discovery emitted ~700 double-escaped /_ipx URLs per locale (404s).
+    discoverImages: false,
+    discoverVideos: false,
+    // Legal pages are noindex — keep them out of the sitemap.
+    exclude: [
+      '/politica-de-cookies-ue',
+      '/terminos-y-condiciones',
+      '/*/politica-de-cookies-ue',
+      '/*/terminos-y-condiciones',
+    ],
   },
 
   // ── Robots ─────────────────────────────────────────────────────────────────
   robots: {
-    sitemap: 'https://hostalsolzamora.com/sitemap.xml',
+    sitemap: 'https://hostalsolzamora.com/sitemap_index.xml',
     allow:   ['/llms.txt'],
-    disallow: [
-      '/politica-de-cookies-ue',
-      '/en/cookie-policy',
-      '/terminos-y-condiciones',
-      '/en/terms-and-conditions',
-    ],
+    // Legal pages are noindex via meta; disallowing them would hide the noindex.
+    disallow: [],
     // AI crawlers welcome — llms.txt provides machine-readable site info
     blockAiBots: false,
     // Fix: Nuxt Robots cannot generate robots.txt when using a base URL
@@ -145,12 +151,12 @@ export default defineNuxtConfig({
       xl: 1280,
       xxl: 1536,
       '3xl': 1920, // Pantallas Full HD
-      '4xl': 2560, // Pantallas 2K
-      '5xl': 3840, // Pantallas 4K
     },
     densities: [1, 2],
-    quality: 90,
-    format: ['webp', 'jpg'],
+    quality: 75,
+    // webp only: every supported browser handles it, and one <source> per
+    // <picture> halves the srcset markup in the prerendered HTML.
+    format: ['webp'],
     sharp: {
       rotate: true
     },
@@ -162,6 +168,14 @@ export default defineNuxtConfig({
   },
 
   css: ['~/assets/css/main.css', 'vue3-carousel/dist/carousel.css'],
+
+  // Self-hosted via @nuxt/fonts (was a render-blocking Google Fonts stylesheet).
+  fonts: {
+    families: [
+      { name: 'Cormorant Garamond', provider: 'google', weights: [400, 500, 600], styles: ['normal', 'italic'] },
+      { name: 'Plus Jakarta Sans',  provider: 'google', weights: [400, 500, 600, 700] },
+    ],
+  },
 
   appConfig: {
     roomImages,
@@ -198,25 +212,13 @@ export default defineNuxtConfig({
     defaultLocale: 'es',
     strategy: 'prefix_except_default',
     lazy: true,
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'hsz_lang',
-      redirectOn: 'root',
-      fallbackLocale: 'es',
-    },
-    baseUrl: 'https://hostalsolzamora.com',
-    pages: {
-      'index':                    { en: '/', es: '/' },
-      'galeria':                  { en: '/gallery', es: '/galeria' },
-      'reserva':                  { en: '/booking', es: '/reserva' },
-      'checkin':                  { en: '/check-in', es: '/checkin' },
-      'faq':                      { en: '/faq', es: '/faq' },
-      'parking':                  { en: '/parking', es: '/parking' },
-      'contacto':                 { en: '/contact', es: '/contacto' },
-      'sobre-nosotros':           { en: '/about', es: '/sobre-nosotros' },
-      'politica-de-cookies-ue':   { en: '/cookie-policy', es: '/politica-de-cookies-ue' },
-      'terminos-y-condiciones':   { en: '/terms-and-conditions', es: '/terminos-y-condiciones' },
-    },
+    // No automatic redirect on "/": it made crawlers (Bing) index the English
+    // title for the Spanish homepage and cost a full reload on mobile.
+    // Visitors switch language with the navbar LangSwitcher.
+    detectBrowserLanguage: false,
+    // Every locale uses the file-based (Spanish) slugs, e.g. /en/galeria.
+    // The previous `pages` map was never applied (needs customRoutes: 'config'),
+    // so its English slugs only existed in the sitemap as soft 404s.
   },
 
   // Route rules: 301-redirect old WordPress URLs to new equivalents,
@@ -232,7 +234,8 @@ export default defineNuxtConfig({
         'Content-Security-Policy': "frame-ancestors 'self';"
       }
     },
-    // Legacy WordPress URLs → new Nuxt routes
+    // Legacy WordPress URLs → new Nuxt routes (nginx.conf serves real 301s;
+    // these only matter for `nuxi preview` / dev)
     '/habitaciones':              { redirect: { to: '/galeria',                statusCode: 301 } },
     '/sobre-nosotros-cercania':   { redirect: { to: '/sobre-nosotros',         statusCode: 301 } },
     '/aviso-legal':               { redirect: { to: '/terminos-y-condiciones', statusCode: 301 } },
@@ -306,9 +309,6 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page' },
     head: {
       link: [
-        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
-        { rel: 'preconnect', href: 'https://direct-book.com', crossorigin: '' },
         { rel: 'dns-prefetch', href: 'https://www.youtube.com' },
         { rel: 'dns-prefetch', href: 'https://maps.google.com' },
         // Favicons & manifest (files added under /public)
@@ -316,10 +316,6 @@ export default defineNuxtConfig({
         { rel: 'icon',             href: '/favicon.svg',          type: 'image/svg+xml' },
         { rel: 'apple-touch-icon', href: '/apple-touch-icon.png', sizes: '180x180' },
         { rel: 'manifest',         href: '/site.webmanifest' },
-        {
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap',
-        },
       ],
       meta: [
         { name: 'theme-color',                content: '#687e56' },

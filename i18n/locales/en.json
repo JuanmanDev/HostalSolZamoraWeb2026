@@ -38,12 +38,14 @@
     "contact": "Contact",
     "about": "About us",
     "search": "Search",
-    "searchPlaceholder": "Search rooms, services, FAQ..."
+    "searchPlaceholder": "Search rooms, services, FAQ...",
+    "semanaSanta": "Holy Week",
+    "peregrinos": "Pilgrims"
   },
   "hero": {
     "tag": "Historic centre · Zamora",
     "title": "Your home\nin Zamora",
-    "sub": "Boutique hostel with nordic style in the heart of the city",
+    "sub": "Boutique hostal with Nordic style in the historic centre of Zamora",
     "cta": "Book now",
     "ctaRooms": "View rooms",
     "discount": "Book direct — 15% discount on our website",
@@ -1040,17 +1042,6 @@
         ]
       },
       {
-        "q": "I'm interested in a long stay. Do you have special conditions?",
-        "a": "Yes, from 11 nights we offer an automatic 10% discount on the total price. The discount applies to non-refundable rates. We can also discuss special conditions for groups or very long stays — contact us and we'll assess it. If the discount doesn't apply automatically on the website, write to us and we'll help.",
-        "links": [
-          {
-            "label": "Book long stay",
-            "url": "/reserva",
-            "icon": "calendar-check"
-          }
-        ]
-      },
-      {
         "q": "What languages do you speak at the hostel?",
         "a": "The hostel staff speaks Spanish only. If you need to communicate in another language, send us a message via WhatsApp or email and we will use online translators to assist you. When you arrive, connect to the hostel's free WiFi and use any online translator directly from your phone — Google Translate, DeepL and Bing Translator all work well.",
         "tags": [
@@ -1155,17 +1146,6 @@
         ]
       },
       {
-        "q": "Can I see the old website?",
-        "a": "Yes, you can check the design and content of our previous website at the following link.",
-        "links": [
-          {
-            "label": "See old website",
-            "url": "/old/hostalsolzamora.com/index.html",
-            "icon": "external-link"
-          }
-        ]
-      },
-      {
         "q": "What should I do if I have payment problems or the confirmation email doesn't arrive?",
         "a": "If the confirmation email hasn't arrived in 2 minutes and isn't in your spam or junk folder, the reservation is not confirmed. It's possible that a payment attempt was made and the money is temporarily blocked by your bank, but the payment was not completed and the reservation is not guaranteed. Additionally, some cards require explicitly accepting foreign payments or allowing non-secure payments in your banking app, depending on the situation. Please check that you have sufficient balance or try using different cards. If you still have problems, please contact us via WhatsApp, email, or phone call.",
         "tags": [
@@ -1177,7 +1157,8 @@
           "blocked"
         ]
       }
-    ]
+    ],
+    "directLink": "Direct link"
   },
   "reserve": {
     "title": "Book your stay",
@@ -1243,12 +1224,12 @@
   },
   "pages": {
     "home": {
-      "title": "Hostal Sol Zamora — Your Home in Zamora",
-      "description": "Simple, central hostel in Zamora — your home whenever you need it."
+      "title": "Hostal in Zamora old town from €40/night",
+      "description": "Hostal Sol is a small hostal in Zamora's historic centre: private rooms with en-suite bathroom, WiFi and lift from €40 per night. Book direct for 15% off."
     },
     "faq": {
-      "title": "Frequently Asked Questions — Hostal Sol Zamora",
-      "description": "Everything you need to know before you arrive: hours, check-in and house rules.",
+      "title": "Frequently asked questions",
+      "description": "Opening hours, check-in, pets, parking, payment and cancellation: answers to everything you need to know before staying at Hostal Sol Zamora.",
       "heading": "Everything you need to know before you arrive",
       "lead": "We've collected the most common questions from our guests. If you can't find what you're looking for, contact us:",
       "searchPlaceholder": "Search a question...",
@@ -1256,8 +1237,8 @@
       "backHome": "← Back to home"
     },
     "parking": {
-      "title": "Parking Guide — Hostal Sol Zamora",
-      "description": "The hostel has no parking, but we show you how to get here and where to park nearby.",
+      "title": "Where to park in central Zamora",
+      "description": "The hostal has no garage of its own: how to arrive by car, where to drop your luggage and the nearest car parks and ORA pay zones in Zamora.",
       "heading": "How to park near Hostal Sol Zamora",
       "lead": "The hostel has no private parking, but we are in the historic centre with several very close options.",
       "addressCard": {
@@ -1337,8 +1318,8 @@
       ]
     },
     "reserva": {
-      "title": "Book — Hostal Sol Zamora",
-      "description": "Book direct with a 15% discount over any external channel.",
+      "title": "Book direct from €40/night with 15% off",
+      "description": "Book your room at Hostal Sol Zamora directly on our website from €40 per night and save 15% compared with other platforms.",
       "heading": "Book your stay",
       "discountLabel": "15% discount booking on our website",
       "discountSub": "Direct price — always cheaper than Booking, Expedia or any other portal",
@@ -1355,8 +1336,8 @@
       "fallbackSubtitle": "Click here to open a simpler booking page in a new tab."
     },
     "checkin": {
-      "title": "How to Arrive & Check-in — Hostal Sol Zamora",
-      "description": "Step-by-step arrival guide: location, required documents and the check-in process.",
+      "title": "Getting here & check-in",
+      "description": "How to reach Hostal Sol at Calle Benavente 2, Zamora, on foot or by car, which documents you need and the check-in process step by step.",
       "heading": "How to arrive and check in",
       "lead": "A step-by-step guide for getting to the hostel and preparing the documents required by law.",
       "beforeTitle": "Before you arrive",
@@ -1464,9 +1445,9 @@
     },
     "galeria": {
       "tag": "Gallery",
-      "title": "Room Gallery — Hostal Sol Zamora",
+      "title": "Room photos",
       "heading": "Room gallery",
-      "description": "Real photos and videos of every room — no filters, no staging.",
+      "description": "Real photos and videos of every room and common area at Hostal Sol, in Zamora's historic centre. No filters, no staging.",
       "p1": "At Hostal Sol Zamora we believe honesty is the best introduction. Here you'll find real photos and videos of our rooms — no staging, no surprises — so you can book with complete confidence.",
       "p2": "Browse each room type: bed size, layout, furniture, views and included amenities. The videos let you walk through the space as if you were already here.",
       "p3": "Questions about a specific room? Write or call us — we're happy to help you choose the best option for your stay.",
@@ -1474,8 +1455,8 @@
     },
     "sobreNosotros": {
       "tag": "About us",
-      "title": "About Us · Closeness, calm, family feel — Hostal Sol Zamora",
-      "description": "Over 50 years of hospitality in Zamora, from Pensión Padornelo to Hostal Sol.",
+      "title": "About us · 50+ years in Zamora",
+      "description": "Over 50 years of family hospitality in Zamora, from Pensión Padornelo to Hostal Sol: our story and the way we welcome you.",
       "heading": "A welcoming hostel run by people who love what they do",
       "intro1": "Welcome to our home — a different, modern, fresh place that wants to give you the rest you deserve in a warm and quiet atmosphere. Travellers from all over the world have come through our doors, and each one has left their mark.",
       "intro2": "Since 2023, Hostal Sol has been run by a family with more than 50 years of experience in hospitality. We've been through change, inexperience and fear. After plenty of effort and work — and a pandemic that brought everything to a halt — we've moved the hostel forward, giving our home everything it deserved and learning from every guest who's stayed with us.",
@@ -1499,8 +1480,8 @@
     },
     "contacto": {
       "tag": "Contact",
-      "title": "Contact — Hostal Sol Zamora",
-      "description": "Call us, WhatsApp or email — we are here to help you.",
+      "title": "Contact & location",
+      "description": "Call +34 980 533 152, message us on WhatsApp or email, or visit us at Calle Benavente 2, 3rd floor, in Zamora's historic centre.",
       "heading": "Let's talk",
       "lead": "We're happy to answer any question. Call us, message us on WhatsApp, send an email or use the form below — we'll get back to you as soon as possible.",
       "infoTitle": "Contact details",
@@ -1559,6 +1540,102 @@
       "fSent": "Thanks! Your message has been prepared in your mail client. If it doesn't open, write to us directly at hostalsol{'@'}outlook.com.",
       "parkingNote": "If your question is about parking, we've put together a full guide of nearby options:",
       "parkingLink": "See parking guide →"
+    },
+    "semanaSanta": {
+      "title": "Holy Week in Zamora: where to stay in the old town",
+      "description": "Stay in Zamora's historic centre for Holy Week (Semana Santa): private rooms with en-suite bathroom, your own keys for night processions, from €40 per night.",
+      "tag": "Holy Week",
+      "heading": "Holy Week in Zamora, from the heart of the old town",
+      "lead": "Zamora's Holy Week (Semana Santa), declared of International Tourist Interest, is one of the oldest and most moving in Spain. Hostal Sol is right in the historic centre, so you can walk to the procession routes and back to rest without a car.",
+      "sections": [
+        {
+          "title": "Holy Week 2027 dates",
+          "body": "In 2027 Holy Week runs from Palm Sunday, 21 March, to Easter Sunday, 28 March. These are the busiest days of the year in Zamora: if you want to sleep in the centre, book months ahead."
+        },
+        {
+          "title": "Night processions, with your own keys",
+          "body": "Many processions leave at night or in the early hours. Once you have checked in you get your own keys and can come and go whenever you like, including late at night."
+        },
+        {
+          "title": "Arrive before 21:00",
+          "body": "Check-in is from 14:00 to 21:00 and cannot be done later, Holy Week included. Plan your trip to arrive before then; if you arrive before 14:00 we'll keep your luggage so you can go out and see the city."
+        },
+        {
+          "title": "Coming by car",
+          "body": "Many streets in the centre close to traffic during the processions. The hostal has no garage of its own: leave your car in a nearby car park before the closures start and get around on foot. Our parking guide lists the closest options."
+        },
+        {
+          "title": "Outside Holy Week: the Holy Week Museum",
+          "body": "If you visit Zamora at another time of year, the Museo de Semana Santa displays the floats of Zamora's brotherhoods and is the best way to understand the celebration."
+        }
+      ],
+      "ctaTitle": "Book direct for Holy Week",
+      "ctaBody": "From €40 per night, with 15% off when you book on our website.",
+      "ctaParking": "Parking guide"
+    },
+    "peregrinos": {
+      "title": "Where to stay in Zamora on the Vía de la Plata",
+      "description": "A private room with en-suite bathroom for Vía de la Plata pilgrims in Zamora's historic centre. Keep your bike in your room. From €40 per night.",
+      "tag": "Vía de la Plata",
+      "heading": "Vía de la Plata pilgrims: your stop in Zamora",
+      "lead": "Zamora is one of the stages of the Vía de la Plata to Santiago. If after the day's walk you'd rather have a private room with your own bathroom, Hostal Sol is right in the city's historic centre.",
+      "sections": [
+        {
+          "title": "A private room you can book ahead",
+          "body": "No shared dormitory: you get a private room with en-suite bathroom, bed linen and towels, and you can book it in advance on our website with 15% off. Prices from €40 per night."
+        },
+        {
+          "title": "Keep your bike in your room",
+          "body": "If you ride the Camino, you can keep your bike in your own room as long as it is clean. Let us know when you book and we'll give you a larger room if possible. There are two lifts, and you can also carry it up the stairs to the third floor."
+        },
+        {
+          "title": "Arrival from 14:00 to 21:00",
+          "body": "Check-in is from 14:00 to 21:00, with no exceptions after that time. If you finish your stage early, we'll keep your backpack. Reception is closed on most Sundays: if you arrive on a Sunday, ask us before booking."
+        },
+        {
+          "title": "Walking with your dog",
+          "body": "Pets are welcome for €7 per night. They must always be accompanied and cannot be left alone in the room."
+        },
+        {
+          "title": "Breakfast",
+          "body": "We don't serve breakfast, but there are cafés less than 2 minutes' walk from the hostal."
+        }
+      ],
+      "ctaTitle": "Book your night in Zamora",
+      "ctaBody": "From €40 per night, with 15% off when you book on our website.",
+      "ctaParking": "Getting here"
     }
+  },
+  "common": {
+    "priceFrom": "From €40 per night"
+  },
+  "keyFacts": {
+    "title": "Good to know before you book",
+    "items": [
+      {
+        "icon": "clock",
+        "text": "Check-in 14:00–21:00 · Check-out 11:00"
+      },
+      {
+        "icon": "moon",
+        "text": "Reception closed on most Sundays — arrive on Saturday and stay on"
+      },
+      {
+        "icon": "bed-double",
+        "text": "Private rooms with en-suite bathroom (a Spanish hostal, not a dorm hostel)"
+      },
+      {
+        "icon": "message-circle",
+        "text": "Staff speak Spanish only — message us on WhatsApp and we'll translate"
+      },
+      {
+        "icon": "utensils-crossed",
+        "text": "No breakfast — cafés less than 2 minutes away"
+      },
+      {
+        "icon": "paw-print",
+        "text": "Pets welcome (€7 per night)"
+      }
+    ]
   }
 }

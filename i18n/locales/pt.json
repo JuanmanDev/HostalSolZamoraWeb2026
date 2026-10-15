@@ -1105,17 +1105,6 @@
         ]
       },
       {
-        "q": "Posso ver o site antigo?",
-        "a": "Sim, pode consultar o design e o conteúdo do nosso site anterior na seguinte ligação.",
-        "links": [
-          {
-            "label": "Ver site antigo",
-            "url": "/old/hostalsolzamora.com/index.html",
-            "icon": "external-link"
-          }
-        ]
-      },
-      {
         "q": "O que devo fazer se tiver problemas com o pagamento ou não receber o e-mail de confirmação?",
         "a": "Se o e-mail de confirmação não chegou em 2 minutos e não está na sua pasta de spam ou lixo eletrônico, a reserva não está confirmada. É possível que uma tentativa de pagamento tenha sido feita e o dinheiro esteja temporariamente bloqueado pelo seu banco, mas o pagamento não foi concluído e a reserva não está garantida. Além disso, alguns cartões exigem aceitar explicitamente pagamentos no exterior ou permitir pagamentos não seguros em seu aplicativo bancário, dependendo da situação. Verifique se você tem saldo suficiente ou tente usar cartões diferentes. Se você ainda tiver problemas, entre em contato conosco via WhatsApp, e-mail ou telefonema.",
         "tags": [
@@ -1127,7 +1116,8 @@
           "bloqueado"
         ]
       }
-    ]
+    ],
+    "directLink": "Link direto"
   },
   "reserve": {
     "title": "Reservar",
@@ -1193,11 +1183,11 @@
   },
   "pages": {
     "home": {
-      "title": "Hostal Sol Zamora — A tua casa em Zamora",
+      "title": "A tua casa em Zamora",
       "description": "Hostal simples e central em Zamora, a tua casa quando precisas."
     },
     "faq": {
-      "title": "Perguntas Frequentes — Hostal Sol Zamora",
+      "title": "Perguntas Frequentes",
       "description": "Tudo o que precisas saber antes de chegar: horários, check-in e regras.",
       "heading": "Tudo o que precisas saber antes de chegar",
       "lead": "Reunimos as perguntas mais frequentes dos nossos hóspedes. Se não encontrares o que procuras, contacta-nos:",
@@ -1206,7 +1196,7 @@
       "backHome": "← Voltar ao início"
     },
     "parking": {
-      "title": "Guia de Estacionamento — Hostal Sol Zamora",
+      "title": "Guia de Estacionamento",
       "description": "O hostal não tem estacionamento, mas aqui explicamos como chegar e onde estacionar.",
       "heading": "Como estacionar perto do Hostal Sol Zamora",
       "lead": "O hostal não tem estacionamento próprio, mas estamos no centro histórico com várias opções muito próximas.",
@@ -1287,7 +1277,7 @@
       ]
     },
     "reserva": {
-      "title": "Reservar — Hostal Sol Zamora",
+      "title": "Reservar",
       "description": "Reserva diretamente com 15% de desconto sobre qualquer canal externo.",
       "heading": "Reserva a tua estadia",
       "discountLabel": "15% de desconto ao reservar no nosso site",
@@ -1305,7 +1295,7 @@
       "fallbackSubtitle": "Clica aqui para abrir uma página de reservas mais simples num novo separador."
     },
     "checkin": {
-      "title": "Como Chegar e Check-in — Hostal Sol Zamora",
+      "title": "Como Chegar e Check-in",
       "description": "Guia de chegada passo a passo: localização, documentação necessária e processo de check-in.",
       "heading": "Como chegar e fazer o check-in",
       "lead": "Guia passo a passo para chegar ao hostal e preparar a documentação exigida por lei.",
@@ -1414,7 +1404,7 @@
     },
     "galeria": {
       "tag": "Galeria",
-      "title": "Galeria de Quartos — Hostal Sol Zamora",
+      "title": "Galeria de Quartos",
       "heading": "Galeria de quartos",
       "description": "Fotos e vídeos reais dos quartos, sem retoques nem encenação.",
       "p1": "No Hostal Sol Zamora acreditamos que a honestidade é a melhor apresentação. Aqui encontrarás fotos e vídeos reais dos nossos quartos — sem retoques nem encenações — para que possas reservar com total confiança.",
@@ -1424,7 +1414,7 @@
     },
     "sobreNosotros": {
       "tag": "Sobre nós",
-      "title": "Sobre Nós · Proximidade, tranquilidade e familiaridade — Hostal Sol Zamora",
+      "title": "Sobre Nós · Proximidade, tranquilidade e familiaridade",
       "description": "Mais de 50 anos na hotelaria zamorana, desde a Pensión Padornelo ao Hostal Sol.",
       "heading": "Um alojamento cheio de vontade e entusiasmo que te oferece o melhor atendimento",
       "intro1": "Bem-vindos à nossa casa, uma casa diferente, atual e com um ar fresco que quer acolher-te para te dar esse descanso num ambiente de proximidade e tranquilidade. Pelas suas portas passaram diferentes donos, viajantes de várias partes do mundo e pessoas com caminhos distintos que coincidiram sob o nosso teto.",
@@ -1449,7 +1439,7 @@
     },
     "contacto": {
       "tag": "Contacto",
-      "title": "Contacto — Hostal Sol Zamora",
+      "title": "Contacto",
       "description": "Liga-nos, escreve-nos por WhatsApp ou email. Estamos aqui para te ajudar.",
       "heading": "Vamos falar",
       "lead": "Estamos disponíveis para resolver qualquer dúvida ou consulta. Liga-nos, escreve-nos por WhatsApp, manda-nos um email ou usa o formulário e responderemos o mais rapidamente possível.",
@@ -1510,5 +1500,37 @@
       "parkingNote": "Se a tua dúvida é sobre estacionamento, preparámos um guia completo com todas as opções próximas:",
       "parkingLink": "Ver guia de estacionamento →"
     }
+  },
+  "common": {
+    "priceFrom": "Desde 40 € por noite"
+  },
+  "keyFacts": {
+    "title": "Bom saber antes de reservar",
+    "items": [
+      {
+        "icon": "clock",
+        "text": "Check-in 14:00–21:00 · Check-out 11:00"
+      },
+      {
+        "icon": "moon",
+        "text": "Receção fechada na maioria dos domingos — chegue no sábado e fique"
+      },
+      {
+        "icon": "bed-double",
+        "text": "Quartos privados, todos com casa de banho privativa"
+      },
+      {
+        "icon": "message-circle",
+        "text": "A equipa fala apenas espanhol — escreva-nos por WhatsApp e traduzimos"
+      },
+      {
+        "icon": "utensils-crossed",
+        "text": "Sem pequeno-almoço — cafés a menos de 2 minutos"
+      },
+      {
+        "icon": "paw-print",
+        "text": "Animais bem-vindos (7 € por noite)"
+      }
+    ]
   }
 }

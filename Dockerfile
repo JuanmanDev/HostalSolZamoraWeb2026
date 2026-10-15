@@ -3,6 +3,7 @@ FROM nginx:stable-alpine AS production-stage
 
 # Copy custom nginx configuration
 COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY nginx/security-headers.conf /etc/nginx/snippets/security-headers.conf
 
 # Copy static files from build context
 # In CI, we download the artifact to .output/public before building

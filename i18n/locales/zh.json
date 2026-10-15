@@ -1105,17 +1105,6 @@
         ]
       },
       {
-        "q": "我可以看旧网站吗？",
-        "a": "可以，您可以通过以下链接查看我们以前网站的设计和内容。",
-        "links": [
-          {
-            "label": "查看旧网站",
-            "url": "/old/hostalsolzamora.com/index.html",
-            "icon": "external-link"
-          }
-        ]
-      },
-      {
         "q": "如果遇到付款问题或未收到确认邮件，我该怎么办？",
         "a": "如果确认邮件在2分钟内未到达，且不在垃圾邮件文件夹中，则说明预订未确认。可能是进行了付款尝试，并且资金被您的银行暂时冻结，但付款未完成，预订不被保证。此外，根据情况，某些信用卡可能要求在您的银行应用中明确接受海外付款或允许非安全付款。请检查您的余额是否充足，或尝试使用其他信用卡。如果仍有问题，请通过WhatsApp、电子邮件或电话联系我们。",
         "tags": [
@@ -1127,7 +1116,8 @@
           "被冻结"
         ]
       }
-    ]
+    ],
+    "directLink": "直接链接"
   },
   "reserve": {
     "title": "预订客房",
@@ -1193,11 +1183,11 @@
   },
   "pages": {
     "home": {
-      "title": "Hostal Sol Zamora — 您在萨莫拉的家",
+      "title": "您在萨莫拉的家",
       "description": "萨莫拉市中心的经济实惠旅馆——您需要时的家。"
     },
     "faq": {
-      "title": "常见问题 — Hostal Sol Zamora",
+      "title": "常见问题",
       "description": "到达前您需要了解的一切：时间表、入住和规则。",
       "heading": "到达前您需要了解的一切",
       "lead": "我们收集了客人最常问的问题。若未找到答案——请联系我们：",
@@ -1206,7 +1196,7 @@
       "backHome": "← 返回首页"
     },
     "parking": {
-      "title": "停车指南 — Hostal Sol Zamora",
+      "title": "停车指南",
       "description": "旅馆没有自有停车场，但我们会告诉您如何到达以及在哪里停车。",
       "heading": "Hostal Sol Zamora附近停车",
       "lead": "旅馆没有私人停车场，但我们地处历史中心，附近有多个选择。",
@@ -1287,7 +1277,7 @@
       ]
     },
     "reserva": {
-      "title": "预订 — Hostal Sol Zamora",
+      "title": "预订",
       "description": "直接预订比任何外部渠道享受15%折扣。",
       "heading": "预订客房",
       "discountLabel": "在官网预订享受15%折扣",
@@ -1305,7 +1295,7 @@
       "fallbackSubtitle": "点击这里在新标签页中打开一个更简单的预订页面。"
     },
     "checkin": {
-      "title": "如何抵达及入住 — Hostal Sol Zamora",
+      "title": "如何抵达及入住",
       "description": "分步指南：位置、所需证件和到达流程。",
       "heading": "如何抵达并办理入住",
       "lead": "到达旅馆并准备法律所要求文件的分步指南。",
@@ -1414,7 +1404,7 @@
     },
     "galeria": {
       "tag": "图库",
-      "title": "客房图库 — Hostal Sol Zamora",
+      "title": "客房图库",
       "heading": "客房图库",
       "description": "未经修饰的真实客房照片和视频。",
       "p1": "在Hostal Sol Zamora，我们相信诚实是最好的介绍。这里您将找到我们客房的真实照片和视频——无修饰无惊喜——让您充满信心地预订。",
@@ -1424,7 +1414,7 @@
     },
     "sobreNosotros": {
       "tag": "关于我们",
-      "title": "关于我们 · 温暖、宁静与家的氛围 — Hostal Sol Zamora",
+      "title": "关于我们 · 温暖、宁静与家的氛围",
       "description": "50余年萨莫拉热情款待——从Pensión Padornelo到Hostal Sol。",
       "heading": "一家充满灵魂的旅馆",
       "intro1": "欢迎来到我们的家——与众不同、现代而清新，希望在温暖宁静的氛围中接待您，给您带来休息。形形色色的主人、来自世界各地的旅行者和拥有不同人生的人们都曾在我们屋檐下相遇。",
@@ -1449,7 +1439,7 @@
     },
     "contacto": {
       "tag": "联系我们",
-      "title": "联系我们 — Hostal Sol Zamora",
+      "title": "联系我们",
       "description": "致电、发WhatsApp或电子邮件。我们随时为您服务。",
       "heading": "联系我们",
       "lead": "我们很乐意回答任何问题。致电、发WhatsApp、发邮件或填写表单——我们会尽快回复。",
@@ -1510,5 +1500,37 @@
       "parkingNote": "若您的问题关于停车，我们准备了一份包含所有附近选项的完整指南：",
       "parkingLink": "停车指南 →"
     }
+  },
+  "common": {
+    "priceFrom": "每晚 40 € 起"
+  },
+  "keyFacts": {
+    "title": "预订前须知",
+    "items": [
+      {
+        "icon": "clock",
+        "text": "入住 14:00–21:00 · 退房 11:00"
+      },
+      {
+        "icon": "moon",
+        "text": "大多数周日前台不营业——周六入住即可继续住到周日"
+      },
+      {
+        "icon": "bed-double",
+        "text": "均为独立房间，配有独立卫浴"
+      },
+      {
+        "icon": "message-circle",
+        "text": "员工仅讲西班牙语——请通过 WhatsApp 联系我们，我们会借助翻译沟通"
+      },
+      {
+        "icon": "utensils-crossed",
+        "text": "不含早餐——步行 2 分钟内有咖啡馆"
+      },
+      {
+        "icon": "paw-print",
+        "text": "欢迎携带宠物（每晚 7 €）"
+      }
+    ]
   }
 }

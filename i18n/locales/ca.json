@@ -1108,17 +1108,6 @@
         ]
       },
       {
-        "q": "Puc veure la pàgina antiga?",
-        "a": "Sí, pots consultar el disseny i el contingut de la nostra web anterior en el següent enllaç.",
-        "links": [
-          {
-            "label": "Veure web antiga",
-            "url": "/old/hostalsolzamora.com/index.html",
-            "icon": "external-link"
-          }
-        ]
-      },
-      {
         "q": "Què haig de fer si tinc problemes amb el pagament o no m'arriba el correu de confirmació?",
         "a": "Si el correu de confirmació no ha arribat en 2 minuts i no està a la carpeta de correu brossa o spam, la reserva no està confirmada. És possible que s'hagi fet un intent de pagament i els diners estiguin bloquejats pel teu banc, però no s'ha completat el pagament i la reserva no està garantida. A més, algunes targetes requereixen acceptar pagaments a l'estranger o permetre el pagament no segur a la teva app bancària, depenent de la situació. Et suggerim que comprovis que hi ha saldo disponible suficient o que ho intentis amb altres targetes. Si segueixes tenint problemes, contacta amb nosaltres per WhatsApp, correu electrònic o trucada de telèfon.",
         "tags": [
@@ -1130,7 +1119,8 @@
           "bloquejat"
         ]
       }
-    ]
+    ],
+    "directLink": "Enllaç directe"
   },
   "reserve": {
     "title": "Reservar habitació",
@@ -1196,11 +1186,11 @@
   },
   "pages": {
     "home": {
-      "title": "Hostal Sol Zamora — La teva llar a Zamora",
+      "title": "La teva llar a Zamora",
       "description": "Hostal cèntric i senzill a Zamora — la teva llar quan la necessites."
     },
     "faq": {
-      "title": "Preguntes Freqüents — Hostal Sol Zamora",
+      "title": "Preguntes Freqüents",
       "description": "Tot el que necessites saber abans d'arribar: horaris, check-in i normes.",
       "heading": "Tot el que necessites saber abans d'arribar",
       "lead": "Hem recollit les preguntes més freqüents dels nostres hostes. Si no trobes resposta — contacta'ns:",
@@ -1209,7 +1199,7 @@
       "backHome": "← Tornar a l'inici"
     },
     "parking": {
-      "title": "Guia d'Aparcament — Hostal Sol Zamora",
+      "title": "Guia d'Aparcament",
       "description": "L'hostal no té aparcament propi, però t'ensenyem com arribar i on aparcar.",
       "heading": "Aparcament prop de l'Hostal Sol Zamora",
       "lead": "L'hostal no té aparcament privat, però som al centre històric amb diverses opcions a prop.",
@@ -1290,7 +1280,7 @@
       ]
     },
     "reserva": {
-      "title": "Reserves — Hostal Sol Zamora",
+      "title": "Reserves",
       "description": "Reserva directament amb un 15% de descompte respecte a qualsevol canal extern.",
       "heading": "Reservar habitació",
       "discountLabel": "15% de descompte en reservar al nostre web",
@@ -1308,7 +1298,7 @@
       "fallbackSubtitle": "Prem aquí per obrir una pàgina de reserves més senzilla en una nova pestanya."
     },
     "checkin": {
-      "title": "Com arribar i check-in — Hostal Sol Zamora",
+      "title": "Com arribar i check-in",
       "description": "Guia pas a pas: localització, documents necessaris i procés d'arribada.",
       "heading": "Com arribar i fer el check-in",
       "lead": "Guia pas a pas per arribar a l'hostal i preparar la documentació que exigeix la llei.",
@@ -1417,7 +1407,7 @@
     },
     "galeria": {
       "tag": "Galeria",
-      "title": "Galeria d'habitacions — Hostal Sol Zamora",
+      "title": "Galeria d'habitacions",
       "heading": "Galeria d'habitacions",
       "description": "Fotos i vídeos reals de les habitacions sense retocs ni posats.",
       "p1": "A l'Hostal Sol Zamora creiem que l'honestedat és la millor presentació. Aquí trobaràs fotos i vídeos reals de les nostres habitacions — sense retocs ni sorpreses — perquè reservis amb total confiança.",
@@ -1427,7 +1417,7 @@
     },
     "sobreNosotros": {
       "tag": "Sobre nosaltres",
-      "title": "Sobre nosaltres · Calidesa, tranquil·litat i ambient de llar — Hostal Sol Zamora",
+      "title": "Sobre nosaltres · Calidesa, tranquil·litat i ambient de llar",
       "description": "Més de 50 anys d'hospitalitat a Zamora — des de la Pensión Padornelo fins a l'Hostal Sol.",
       "heading": "Un hostal que et rep amb ànima",
       "intro1": "Benvingut a casa nostra — diferent, moderna i fresca, que vol acollir-te per donar-te descans en un ambient càlid i tranquil. Per les nostres portes han passat diferents propietaris, viatgers de tots els racons del món i persones amb vides molt diverses que s'han retrobat sota el nostre sostre.",
@@ -1452,7 +1442,7 @@
     },
     "contacto": {
       "tag": "Contacte",
-      "title": "Contacte — Hostal Sol Zamora",
+      "title": "Contacte",
       "description": "Truca, escriu per WhatsApp o email. Som aquí per ajudar-te.",
       "heading": "Contacta'ns",
       "lead": "Encantats de respondre qualsevol pregunta. Truca, escriu per WhatsApp, envia un email o omple el formulari — responem com més aviat millor.",
@@ -1513,5 +1503,37 @@
       "parkingNote": "Si la teva pregunta és sobre aparcament, hem preparat una guia completa amb totes les opcions properes:",
       "parkingLink": "Guia d'aparcament →"
     }
+  },
+  "common": {
+    "priceFrom": "Des de 40 € la nit"
+  },
+  "keyFacts": {
+    "title": "Bo de saber abans de reservar",
+    "items": [
+      {
+        "icon": "clock",
+        "text": "Check-in de 14:00 a 21:00 · Check-out a les 11:00"
+      },
+      {
+        "icon": "moon",
+        "text": "Recepció tancada la majoria de diumenges: si arribes dissabte, et quedes el diumenge"
+      },
+      {
+        "icon": "bed-double",
+        "text": "Habitacions privades, totes amb bany propi"
+      },
+      {
+        "icon": "message-circle",
+        "text": "El personal només parla castellà: escriu-nos per WhatsApp i ens entendrem amb traductor"
+      },
+      {
+        "icon": "utensils-crossed",
+        "text": "Sense esmorzar: cafeteries a menys de 2 minuts"
+      },
+      {
+        "icon": "paw-print",
+        "text": "Mascotes benvingudes (7 € per nit)"
+      }
+    ]
   }
 }

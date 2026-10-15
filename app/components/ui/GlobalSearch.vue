@@ -36,7 +36,7 @@
           <NuxtLink
             v-for="(r, i) in results"
             :key="r.route + r.title"
-            :to="r.route"
+            :to="localePath(r.route)"
             :class="['gsearch__result', { 'gsearch__result--active': i === activeIdx }]"
             @click="onSelectResult(r)"
             @mouseenter="activeIdx = i"
@@ -66,6 +66,7 @@
 </template>
 
 <script setup lang="ts">
+const localePath = useLocalePath()
 import { useSearch } from '~/composables/useSearch'
 
 const props = defineProps<{ solid?: boolean }>()
@@ -146,7 +147,7 @@ function selectActive() {
     console.warn('Umami not initialized:', e)
   }
 
-  navigateTo(r.route)
+  navigateTo(localePath(r.route))
   close()
 }
 
@@ -211,6 +212,9 @@ onMounted(() => {
   border-radius: 6px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  min-height: 40px;
   transition: background 0.15s;
 }
 .gsearch__trigger:hover { background: rgba(255,255,255,0.1); }
