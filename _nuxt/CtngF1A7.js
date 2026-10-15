@@ -1,0 +1,1 @@
+function l(){function t(n){const o=document.getElementById(n);if(!o)return;const e=o.getBoundingClientRect().top+window.scrollY-64;window.scrollTo({top:e,behavior:"auto"})}return{scrollTo:t}}export{l as u};

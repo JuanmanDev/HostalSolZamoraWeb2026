@@ -1,0 +1,62 @@
+# Hostal Sol Zamora
+
+> Hostal boutique en el centro histórico de Zamora. Habitaciones nórdicas, baño privado, WiFi y un precio bajo.
+
+Canonical Origin: https://hostalsolzamora.com
+
+## LLM Resources
+
+- [Full Content](https://hostalsolzamora.com/llms-full.txt)
+  Complete page content in markdown format.
+- [robots.txt](/robots.txt)
+  Crawler rules and permissions.
+
+## Available Languages on Website
+
+- Español (es) - 23 pages - / - Content included below
+- English (en) - 27 pages - /en - Visit website for content
+- Português (pt) - 25 pages - /pt - Visit website for content
+- Français (fr) - 25 pages - /fr - Visit website for content
+- Deutsch (de) - 25 pages - /de - Visit website for content
+- Italiano (it) - 25 pages - /it - Visit website for content
+- Nederlands (nl) - 25 pages - /nl - Visit website for content
+- Română (ro) - 25 pages - /ro - Visit website for content
+- Русский (ru) - 25 pages - /ru - Visit website for content
+- Українська (uk) - 25 pages - /uk - Visit website for content
+- Polski (pl) - 25 pages - /pl - Visit website for content
+- Ελληνικά (el) - 25 pages - /el - Visit website for content
+- Galego (gl) - 25 pages - /gl - Visit website for content
+- Català (ca) - 25 pages - /ca - Visit website for content
+- Euskara (eu) - 25 pages - /eu - Visit website for content
+- العربية (ar) - 25 pages - /ar - Visit website for content
+- 中文 (zh) - 25 pages - /zh - Visit website for content
+- 한국어 (ko) - 25 pages - /ko - Visit website for content
+- 日本語 (ja) - 25 pages - /ja - Visit website for content
+- Wolof (wo) - 25 pages - /wo - Visit website for content
+- Tamaziɣt (zgh) - 25 pages - /zgh - Visit website for content
+
+## Pages
+
+- [Hostal en el centro de Zamora desde 40 €&#x2F;noche | Hostal Sol Zamora](/): Hostal Sol, en el casco histórico de Zamora: habitaciones privadas con baño, WiFi y ascensor desde 40 € la noche. Reserva directa con un 15% de descuento.
+- [Cómo llegar y check-in | Hostal Sol Zamora](/checkin): Cómo llegar a Hostal Sol en Calle Benavente 2 (Zamora) a pie o en coche, qué documentación necesitas y el proceso de check-in paso a paso.
+- [Contacto y ubicación | Hostal Sol Zamora](/contacto): Llámanos al +34 980 533 152, escríbenos por WhatsApp o email, o visítanos en Calle Benavente 2, 3ª planta, en el centro histórico de Zamora.
+- [Preguntas frecuentes | Hostal Sol Zamora](/faq): Horarios, check-in, mascotas, aparcamiento, pagos y cancelaciones: respuestas a todo lo que necesitas saber antes de alojarte en Hostal Sol Zamora.
+- [Fotos de las habitaciones | Hostal Sol Zamora](/galeria): Fotos y vídeos reales de todas las habitaciones y zonas comunes de Hostal Sol, en el centro histórico de Zamora. Sin retoques ni puesta en escena.
+- [Fotos de las habitaciones | Hostal Sol Zamora](/galeria?room=301): Fotos y vídeos reales de todas las habitaciones y zonas comunes de Hostal Sol, en el centro histórico de Zamora. Sin retoques ni puesta en escena.
+- [Fotos de las habitaciones | Hostal Sol Zamora](/galeria?room=302): Fotos y vídeos reales de todas las habitaciones y zonas comunes de Hostal Sol, en el centro histórico de Zamora. Sin retoques ni puesta en escena.
+- [Fotos de las habitaciones | Hostal Sol Zamora](/galeria?room=303): Fotos y vídeos reales de todas las habitaciones y zonas comunes de Hostal Sol, en el centro histórico de Zamora. Sin retoques ni puesta en escena.
+- [Fotos de las habitaciones | Hostal Sol Zamora](/galeria?room=304): Fotos y vídeos reales de todas las habitaciones y zonas comunes de Hostal Sol, en el centro histórico de Zamora. Sin retoques ni puesta en escena.
+- [Fotos de las habitaciones | Hostal Sol Zamora](/galeria?room=305): Fotos y vídeos reales de todas las habitaciones y zonas comunes de Hostal Sol, en el centro histórico de Zamora. Sin retoques ni puesta en escena.
+- [Fotos de las habitaciones | Hostal Sol Zamora](/galeria?room=306): Fotos y vídeos reales de todas las habitaciones y zonas comunes de Hostal Sol, en el centro histórico de Zamora. Sin retoques ni puesta en escena.
+- [Fotos de las habitaciones | Hostal Sol Zamora](/galeria?room=310): Fotos y vídeos reales de todas las habitaciones y zonas comunes de Hostal Sol, en el centro histórico de Zamora. Sin retoques ni puesta en escena.
+- [Fotos de las habitaciones | Hostal Sol Zamora](/galeria?room=321): Fotos y vídeos reales de todas las habitaciones y zonas comunes de Hostal Sol, en el centro histórico de Zamora. Sin retoques ni puesta en escena.
+- [Dónde aparcar en el centro de Zamora | Hostal Sol Zamora](/parking): El hostal no tiene garaje propio: te explicamos cómo llegar en coche, dónde dejar las maletas y los aparcamientos y zonas ORA más cercanos en Zamora.
+- [Alojamiento para peregrinos de la Vía de la Plata en Zamora | Hostal Sol Zamora](/peregrinos-via-de-la-plata-zamora): Habitación privada con baño propio para peregrinos de la Vía de la Plata en el casco histórico de Zamora. Bicicleta en la habitación, desde 40 € la noche.
+- [Política de Cookies | Hostal Sol Zamora](/politica-de-cookies-ue): Política de cookies del sitio web del Hostal Sol Zamora. Conoce qué cookies utilizamos y cómo gestionarlas.
+- [Reservar desde 40 €&#x2F;noche con 15% de descuento | Hostal Sol Zamora](/reserva): Reserva tu habitación en Hostal Sol Zamora directamente en nuestra web desde 40 € la noche y ahorra un 15% frente a otras plataformas.
+- [Reservar desde 40 €&#x2F;noche con 15% de descuento | Hostal Sol Zamora](/reserva?rateId=578649): Reserva tu habitación en Hostal Sol Zamora directamente en nuestra web desde 40 € la noche y ahorra un 15% frente a otras plataformas.
+- [Reservar desde 40 €&#x2F;noche con 15% de descuento | Hostal Sol Zamora](/reserva?rateId=578650): Reserva tu habitación en Hostal Sol Zamora directamente en nuestra web desde 40 € la noche y ahorra un 15% frente a otras plataformas.
+- [Reservar desde 40 €&#x2F;noche con 15% de descuento | Hostal Sol Zamora](/reserva?rateId=752069): Reserva tu habitación en Hostal Sol Zamora directamente en nuestra web desde 40 € la noche y ahorra un 15% frente a otras plataformas.
+- [Semana Santa en Zamora: dónde dormir en el casco histórico | Hostal Sol Zamora](/semana-santa-zamora): Alójate en Semana Santa en pleno casco histórico de Zamora: habitaciones privadas con baño, llaves para las procesiones nocturnas y precios desde 40 € la noche.
+- [Sobre nosotros · 50 años en Zamora | Hostal Sol Zamora](/sobre-nosotros): Más de 50 años de hostelería familiar en Zamora, desde la Pensión Padornelo hasta el Hostal Sol: nuestra historia y nuestra forma de recibirte.
+- [Términos y Condiciones | Hostal Sol Zamora](/terminos-y-condiciones): Términos y Condiciones de uso del sitio web y de los servicios de alojamiento del Hostal Sol Zamora, Zamora.
