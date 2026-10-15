@@ -45,8 +45,8 @@
       <img
         :src="LOGO_SVG"
         alt="Hostal Sol Zamora"
-        width="864"
-        height="198"
+        width="1080"
+        height="745"
         class="hero__logo"
         fetchpriority="high"
       />
@@ -304,6 +304,9 @@ onMounted(() => {
   width: 100%;
   max-width: 100%;
   overflow: hidden;
+  /* Same height for the SSR fallback and the client carousel: the hero
+     content is vertically centred, so any change here shifted the CTAs. */
+  height: 96px;
 }
 
 .hero__features-carousel {
