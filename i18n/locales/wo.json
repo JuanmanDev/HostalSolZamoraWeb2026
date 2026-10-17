@@ -702,6 +702,28 @@
         ]
       },
       {
+        "q": "Ban lal la sama néeg am? Mën naa soppi ci lit double walla ñaari lal?",
+        "a": "Lal bi mooy bu type de chambre bi nga réserver: néeg yu lit double am nañu benn lal bu yaatuwaayam tollu ci 135 cm, te néeg yu ñaari lal am nañu ñaari lits individuels. Dinga ko gis ci turu néeg bi ci sa réservation, te ci galerie bi am na photos ak vidéos yu néeg bu nekk. Boo bëggee soppi ñaari lal jëm lit double, walla lit double jëm ñaari lal, bind nu te dinanu ko jéem, waaye aju na ci disponibilité, te ci bés yu nit ñi bari, mënul am saa su nekk. Su type de lal bi am solo ci yaw, li gën a wóor mooy tànn néeg bu baax bi ci réservation bi.",
+        "tags": [
+          "lit double",
+          "lit matrimonial",
+          "ñaari lal",
+          "lits individuels",
+          "twin",
+          "taille du lit",
+          "135 cm",
+          "soppi lal",
+          "lal"
+        ],
+        "links": [
+          {
+            "label": "Xool galerie néeg yi",
+            "url": "/galeria",
+            "icon": "bed-double"
+          }
+        ]
+      },
+      {
         "q": "Dimanches ak fériés yi ñu dëkk?",
         "a": "Ñu dëkk fériés yi bu bari, sauf: 14, 15 ak 16 Août, 15 Décembre ak 1 Janvier. Dimanches yi ñu dëkk bu bari déedet, wante boo ñëw Samedi dinga mën dëk yépp Dimanche bi — check-out ci 11h00 bës bi dem.",
         "links": [
@@ -719,6 +741,96 @@
           "arrivée tardive",
           "accès nuit",
           "check-in nuit"
+        ]
+      },
+      {
+        "q": "Mën naa jël clés yi walla dugg ci néeg bi balaa 14:00?",
+        "a": "Check-in bi ci 14:00 ba 21:00 la. Su kenn nekkatul ci sa néeg bi ndax hôte bi jiitu dem na, mën nanu la jox clés yi ci kanam, doonte néeg bi setu-agul, waaye du mukk balaa hôte bi jiitu dem. Mënunu ko garantir walla confirmer ci kanam, te mënunu xamal hôte bu nekk su néegam desee amul kenn. Li nga mën def mooy ñëw ci hostal bi ci 09:00 (sauf Dimanche) ngir bàyyi say baggages ci consigne bi te def enregistrement bi léegi, ak check-in en ligne walla nga won DNI walla passeport bu hôte bu nekk. Noonu, su néeg bi pareegul, dangay dellusi rekk ginnaaw ngir jël clés yi. Moo gën su fekkee dangay ñëw ci benn mariage, benn événement walla nga bëgg seetsi dëkk bi ci suba.",
+        "tags": [
+          "check-in tôt",
+          "ñëw ci kanam",
+          "arrivée tôt",
+          "clés ci kanam",
+          "dugg ci kanam",
+          "early check-in",
+          "consigne",
+          "bàyyi baggages",
+          "mariage",
+          "céet",
+          "ci suba"
+        ],
+        "links": [
+          {
+            "label": "Faire check-in online",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
+      },
+      {
+        "q": "Bind naa ci Booking.com waxtu bi may ñëw. Ndax war naa xaar ngeen confirmer ko?",
+        "a": "Déedéet. Boo tànnee ci Booking.com benn créneau d'arrivée, dañuy jot benn message automatique ni «Dama bëgg def check-in ci 18:00 - 19:00. Ndax mën na nekk?». Su créneau bi nekkee diggante 14:00 ak 21:00, soxlawul confirmation: mën nga ñëw ci waxtu wu la neex ci biir horaire boobu. Su tàmbalee balaa 14:00, mën nga bàyyi say baggages te jël clés yi bu néeg bi paree, waaye garantie amul ni dina nekk balaa 14:00. Su ginnaaw 21:00 la, mënunu la dalal: horaire d'arrivée bi flexible déet. Boo yéexee, yëgël nu, waaye xamal ni ci 21:00 dañuy tëj, lu mu mën di doon. Boo xamee ni doo àgg ci waxtu, jokkoo ak nun ci ni mu gëna gaawe ngir xool ban options la sa réservation am.",
+        "tags": [
+          "waxtu ñëw",
+          "heure d'arrivée",
+          "créneau",
+          "Booking",
+          "confirmer arrivée",
+          "ñëw",
+          "check-in",
+          "yéex",
+          "retard",
+          "trafic"
+        ],
+        "links": [
+          {
+            "label": "Guide complet check-in",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
+      },
+      {
+        "q": "Dinaa ñëw ginnaaw 21:00. Ndax sama àndandoo mën na def check-in bi?",
+        "a": "Waaw. Jëkk def check-in en ligne ak lien Chekin bi nu la yónnee, te scanner fa documents d'identité yu hôtes yépp. Ginnaaw loolu, sa àndandoo war na àgg ci hostal bi balaa 21:00, wax turu réservation bi te won benn ci documents yi ñu enregistrer ci check-in en ligne bi. Dinanu ko jox clés immeuble bi, hostal bi ak néeg bi, te mën ngeen dugg ak génn ci waxtu wu leen neex, ba ci guddi. Dunu nangu documents yu ñu yónnee ci WhatsApp walla email: enregistrement bi, ci check-in en ligne walla ci kanam lay def. Su kenn ci groupe bi mënul àgg balaa 21:00, mënunu def check-in bi.",
+        "tags": [
+          "àndandoo",
+          "accompagnant",
+          "ñëw tard",
+          "arrivée tardive",
+          "ginnaaw 21:00",
+          "keneen jël clés yi",
+          "check-in online",
+          "chekin",
+          "clés"
+        ],
+        "links": [
+          {
+            "label": "Faire check-in online",
+            "url": "/checkin",
+            "icon": "file-text"
+          }
+        ]
+      },
+      {
+        "q": "Mën naa def check-out ginnaaw 11:00?",
+        "a": "Check-out bi ci 11:00 la, ndax ci waxtu woowu lanuy tàmbali pare néeg yi ngir hôtes yi ci topp. Boo bëggee wéy di bég ci Samura bés bi ngay dem, mën nanu la denc say baggages ci réception bi bés boobu (sauf Dimanche); yëgël nu rekk. Boo soxlaa des ci néeg bi lu ëpp, laaj nu ci kanam te dinanu la wax ndax mën na am, aju ci occupation bés boobu, waaye mënunu ko garantir.",
+        "tags": [
+          "check-out tard",
+          "late check-out",
+          "génn tard",
+          "heure de départ",
+          "bàyyi néeg bi",
+          "denc baggages",
+          "valise",
+          "consigne"
+        ],
+        "links": [
+          {
+            "label": "Contacter WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
@@ -872,6 +984,27 @@
         ]
       },
       {
+        "q": "Mën naa soppi dates yi ci sama réservation?",
+        "a": "Aju na ci tarif bi. Ak tarif flexible, mën nga soppi dates yi, walla annuler sans frais te def réservation bu bees, ba 48 heures balaa nga ñëw. Tarifs non-remboursables yi, lu ëpp, nanguwuñu changement. Boo réserver ci Booking.com, def changement bi ci app walla site Booking.com: su am disponibilité, dañuy ko nangu automatiquement. Ci hostal bi mënunu la laajal changement bi, kon boo amee jafe-jafe ak app bi, jokkoo ak service client Booking.com. Boo réserver ci sunu site, jëfandikool lien bi ci email de confirmation bi walla bind nu.",
+        "tags": [
+          "soppi dates",
+          "changer dates",
+          "modifier réservation",
+          "avancer réservation",
+          "reporter réservation",
+          "soppi bés",
+          "changement de date",
+          "Booking"
+        ],
+        "links": [
+          {
+            "label": "Réserver ci sunu site",
+            "url": "/reserva",
+            "icon": "calendar-check"
+          }
+        ]
+      },
+      {
         "q": "Nan demander facture?",
         "a": "Danga mën demander facture ci dernier jour séjour bi jusqu'à 30 jours après check-out. Ci réservation bi, remplis tous les champs nécessaires (nom ou raison sociale, numéro fiscal, adresse). Facture bi envoyée par email ci format PDF. Mënuñu émettre factures après 30 jours.",
         "tags": [
@@ -884,6 +1017,57 @@
         "links": [
           {
             "label": "Contacter facture",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
+        ]
+      },
+      {
+        "q": "Réserver naa ci Booking.com. Naka laay laaje facture bi te ban montant lay wone?",
+        "a": "Laaj ko ci chat Booking.com (am na option ngir laaj facture) walla bind nu, joxe tur walla raison sociale, NIF walla CIF ak adresse fiscale. Dinanu ko bind te yónne la facture bi ci PDF ci email bu ngay def check-out. Mën nga ko laaj ba 30 jours ginnaaw check-out bi. Facture bi, montant bi Booking.com yónnee nu ngir sa réservation lañu koy defe. Su dëppoowul ak li nga fey ci Booking.com, jokkoo ak service client Booking.com, ñoo yor paiement boobu.",
+        "tags": [
+          "facture Booking",
+          "facture",
+          "Booking.com",
+          "montant facture",
+          "NIF",
+          "CIF",
+          "entreprise",
+          "raison sociale",
+          "facture bi dëppoowul"
+        ],
+        "links": [
+          {
+            "label": "Envoyer email",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
+        ]
+      },
+      {
+        "q": "Jot naa benn message buy laaj ma vérifier walla fey sama réservation ak benn lien. Ndax yeen a ko yónnee?",
+        "a": "Déedéet. Am na ay messages yu bari yu dul dëgg, rawatina ci WhatsApp, yuy def ni ñoo di hôtels walla plateformes de réservation. Dañuy wax ni war nga vérifier réservation bi walla fey ci gaaw ak benn lien, walla ni dañuy bàyyi néeg bi soo ko defulee ci biir 24 heures. Escroquerie la: bul bës ci lien bi te bul bind données yu sa carte. Dunu la mukk laaj paiement ci WhatsApp, te sa réservation du mukk annuler ndax defuloo paiement bu gaaw. Paiement bi rekk bi nu mën la laaj, ci guest.chekin.com rekk lay jaar. Boo jotee benn ci messages yooyu, yónne nu capture bu am numéro bi ak texte bi ci WhatsApp ci +34 639 980 253 walla ci email ci hostalsol{'@'}outlook.com, te yëgël it Booking.com boo fa réserver.",
+        "tags": [
+          "escroquerie",
+          "arnaque",
+          "fraude",
+          "phishing",
+          "faux WhatsApp",
+          "lien",
+          "vérifier réservation",
+          "paiement urgent",
+          "sécurité",
+          "carte",
+          "scam"
+        ],
+        "links": [
+          {
+            "label": "Yónne capture ci WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "Envoyer email",
             "url": "mailto:hostalsol{'@'}outlook.com",
             "icon": "mail"
           }
@@ -964,17 +1148,6 @@
           "vélo électrique",
           "VTT",
           "mountain bike"
-        ]
-      },
-      {
-        "q": "Séjour wu yàgg, conditions spéciales am?",
-        "a": "Waaw, ci 11 nuits 10% réduction automatique ci prix total. Tarifs non-remboursables. Groupes ak séjours très longs conditions spéciales — contact nanu. Réduction bi applique déedet automatiquement, contact nanu.",
-        "links": [
-          {
-            "label": "Réserver long séjour",
-            "url": "/reserva",
-            "icon": "calendar-check"
-          }
         ]
       },
       {

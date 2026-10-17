@@ -720,6 +720,29 @@
         ]
       },
       {
+        "q": "Jakie łóżko jest w moim pokoju? Czy mogę zmienić na łóżko małżeńskie albo dwa osobne łóżka?",
+        "a": "Łóżko zależy od typu pokoju, który zarezerwowano: w pokojach z łóżkiem małżeńskim jest łóżko o szerokości 135 cm, a w pokojach z osobnymi łóżkami są dwa łóżka pojedyncze. Zobaczysz to w nazwie pokoju w swojej rezerwacji, a w galerii znajdziesz zdjęcia i filmy każdego z nich. Jeśli chcesz zamienić dwa łóżka na małżeńskie lub odwrotnie, napisz do nas, a spróbujemy, ale zależy to od dostępności i w terminach o dużym obłożeniu nie zawsze jest możliwe. Jeśli rodzaj łóżka jest dla ciebie ważny, najpewniej będzie od razu wybrać odpowiedni pokój przy rezerwacji.",
+        "tags": [
+          "łóżko małżeńskie",
+          "łóżko podwójne",
+          "dwa łóżka",
+          "osobne łóżka",
+          "łóżka pojedyncze",
+          "twin",
+          "wymiary łóżka",
+          "135 cm",
+          "zmiana łóżka",
+          "rozmiar łóżka"
+        ],
+        "links": [
+          {
+            "label": "Galeria pokoi",
+            "url": "/galeria",
+            "icon": "bed-double"
+          }
+        ]
+      },
+      {
         "q": "Czy pracujecie w niedziele i święta?",
         "a": "Pracujemy przez większość świąt, z wyjątkiem 14–16 sierpnia, 15 grudnia i 1 stycznia. Większość niedziel jesteśmy zamknięci, ale jeśli przyjechałeś w sobotę, możesz zostać przez całą niedzielę — wymeldowanie o 11:00 w dniu wyjazdu. W sprawie konkretnych dat — zapytaj.",
         "links": [
@@ -738,6 +761,94 @@
           "spóźnienie",
           "nocny dostęp",
           "klucze 24h"
+        ]
+      },
+      {
+        "q": "Czy mogę odebrać klucze lub wejść do pokoju przed 14:00?",
+        "a": "Zameldowanie odbywa się od 14:00 do 21:00. Jeśli twój pokój jest już wolny, bo poprzedni gość wyjechał, możemy wydać ci klucze wcześniej, nawet jeśli pokój nie jest jeszcze posprzątany, ale nigdy przed wyjazdem poprzedniego gościa. Nie możemy tego zagwarantować ani potwierdzić z wyprzedzeniem, nie jesteśmy też w stanie powiadamiać każdego gościa, kiedy jego pokój się zwolni. Możesz za to przyjść do hostalu od 09:00 (oprócz niedziel), zostawić bagaż w przechowalni i od razu załatwić rejestrację: przez zameldowanie online albo okazując dowód osobisty lub paszport każdego gościa. Dzięki temu, jeśli pokój nie będzie jeszcze gotowy, wystarczy, że wrócisz później po klucze. To najlepsze rozwiązanie, jeśli przyjeżdżasz na wesele lub wydarzenie albo chcesz zwiedzać miasto od rana.",
+        "tags": [
+          "wczesne zameldowanie",
+          "wcześniejszy przyjazd",
+          "wczesny przyjazd",
+          "klucze wcześniej",
+          "wejść wcześniej",
+          "early check-in",
+          "przechowalnia bagażu",
+          "przechowanie bagażu",
+          "wesele",
+          "rano"
+        ],
+        "links": [
+          {
+            "label": "Zameldowanie online",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
+      },
+      {
+        "q": "Na Booking.com mam podaną godzinę przyjazdu. Czy muszę czekać, aż ją potwierdzicie?",
+        "a": "Nie. Kiedy wybierasz na Booking.com przedział godzin przyjazdu, dostajemy automatyczną wiadomość w rodzaju „Chciałbym zameldować się w godzinach 18:00 - 19:00. Czy to możliwe?”. Jeśli przedział mieści się między 14:00 a 21:00, nie trzeba go potwierdzać: możesz przyjechać o dowolnej porze w tych godzinach. Jeśli zaczyna się przed 14:00, możesz zostawić bagaż i odebrać klucze, gdy pokój będzie gotowy, bez gwarancji, że nastąpi to przed 14:00. Jeśli to godzina po 21:00, nie będziemy mogli cię przyjąć: godziny przyjazdu nie są elastyczne. Jeśli się spóźniasz, daj nam znać, ale pamiętaj, że i tak zamykamy o 21:00. Jeśli wiesz, że nie zdążysz, skontaktuj się z nami jak najszybciej, żebyśmy mogli sprawdzić, jakie możliwości daje twoja rezerwacja.",
+        "tags": [
+          "godzina przyjazdu",
+          "przedział godzin",
+          "Booking",
+          "potwierdzenie przyjazdu",
+          "przyjazd",
+          "zameldowanie",
+          "check-in",
+          "spóźnienie",
+          "korki"
+        ],
+        "links": [
+          {
+            "label": "Pełny przewodnik zameldowania",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
+      },
+      {
+        "q": "Przyjadę po 21:00. Czy osoba, która jedzie ze mną, może nas zameldować?",
+        "a": "Tak. Najpierw zamelduj się online przez link do Chekin, który ci wyślemy, i zeskanuj tam dokumenty tożsamości wszystkich gości. Następnie osoba towarzysząca musi dotrzeć do hostalu przed 21:00, podać nazwisko, na które jest rezerwacja, i okazać jeden z dokumentów zarejestrowanych przy zameldowaniu online. Wydamy jej klucze do budynku, hostalu i pokoju, a potem będziecie mogli wchodzić i wychodzić, kiedy chcecie, także w nocy. Nie akceptujemy dokumentów przesłanych przez WhatsApp ani e-mailem: rejestracja odbywa się przez zameldowanie online lub osobiście. Jeśli nikt z grupy nie może dotrzeć przed 21:00, zameldowanie nie będzie możliwe.",
+        "tags": [
+          "osoba towarzysząca",
+          "towarzysz podróży",
+          "późny przyjazd",
+          "spóźnienie",
+          "po 21:00",
+          "inna osoba odbiera klucze",
+          "zameldowanie online",
+          "chekin",
+          "klucze"
+        ],
+        "links": [
+          {
+            "label": "Zameldowanie online",
+            "url": "/checkin",
+            "icon": "file-text"
+          }
+        ]
+      },
+      {
+        "q": "Czy mogę wymeldować się później niż o 11:00?",
+        "a": "Wymeldowanie jest do 11:00, ponieważ od tej godziny przygotowujemy pokoje dla kolejnych gości. Jeśli w dniu wyjazdu chcesz jeszcze nacieszyć się Zamorą, możemy przechować twój bagaż na recepcji przez ten dzień (oprócz niedziel); wystarczy, że nas uprzedzisz. Jeśli potrzebujesz zostać w pokoju dłużej, zapytaj nas z wyprzedzeniem, a powiemy ci, czy to możliwe przy obłożeniu w danym dniu, ale nie możemy tego zagwarantować.",
+        "tags": [
+          "późne wymeldowanie",
+          "late check-out",
+          "późniejszy wyjazd",
+          "godzina wymeldowania",
+          "opuszczenie pokoju",
+          "przechowanie bagażu",
+          "walizka",
+          "przechowalnia bagażu"
+        ],
+        "links": [
+          {
+            "label": "Napisz na WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
@@ -894,6 +1005,27 @@
         ]
       },
       {
+        "q": "Czy mogę zmienić daty rezerwacji?",
+        "a": "To zależy od taryfy. Przy taryfie elastycznej możesz zmienić daty albo bezpłatnie anulować i zrobić nową rezerwację, najpóźniej 48 godzin przed przyjazdem. Taryfy bezzwrotne zazwyczaj nie pozwalają na zmiany. Jeśli rezerwacja jest z Booking.com, wprowadź zmianę w aplikacji lub na stronie Booking.com: jeśli są wolne miejsca, zostanie zaakceptowana automatycznie. My z poziomu hostalu nie możemy poprosić o zmianę w twoim imieniu, więc jeśli masz problem z aplikacją, skontaktuj się z obsługą klienta Booking.com. Jeśli rezerwacja jest z naszej strony, skorzystaj z linku w e-mailu z potwierdzeniem albo napisz do nas.",
+        "tags": [
+          "zmiana dat",
+          "zmiana terminu",
+          "zmiana rezerwacji",
+          "przesunięcie rezerwacji",
+          "wcześniejszy termin",
+          "późniejszy termin",
+          "inny dzień",
+          "Booking"
+        ],
+        "links": [
+          {
+            "label": "Rezerwuj na naszej stronie",
+            "url": "/reserva",
+            "icon": "calendar-check"
+          }
+        ]
+      },
+      {
         "q": "Jak poprosić o fakturę?",
         "a": "Fakturę można zamówić od ostatniego dnia pobytu do 30 dni po wymeldowaniu. Przy rezerwacji podaj wszystkie niezbędne dane do faktury (imię/nazwa firmy, NIP, adres). Jeśli brakuje odpowiedniego pola — użyj pola komentarzy. Faktura wysyłana jest na email w formacie PDF. Po 30 dniach od wymeldowania faktura nie jest wystawiana.",
         "tags": [
@@ -907,6 +1039,58 @@
         "links": [
           {
             "label": "Kontakt ws. faktury",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
+        ]
+      },
+      {
+        "q": "Mam rezerwację z Booking.com. Jak poprosić o fakturę i na jaką kwotę zostanie wystawiona?",
+        "a": "Poproś o nią przez czat Booking.com (jest tam opcja zamówienia faktury) albo napisz do nas, podając imię i nazwisko lub nazwę firmy, NIP i adres do faktury. Zanotujemy to i przy wymeldowaniu wyślemy ci fakturę w PDF e-mailem. Możesz o nią poprosić do 30 dni po wymeldowaniu. Faktura jest wystawiana na kwotę, którą Booking.com przekazuje nam dla twojej rezerwacji. Jeśli nie zgadza się ona z tym, co zapłacono na Booking.com, skontaktuj się z obsługą klienta Booking.com, bo to Booking.com obsługuje tę płatność.",
+        "tags": [
+          "faktura Booking",
+          "faktura",
+          "Booking.com",
+          "kwota faktury",
+          "NIP",
+          "CIF",
+          "firma",
+          "nazwa firmy",
+          "faktura VAT",
+          "faktura się nie zgadza"
+        ],
+        "links": [
+          {
+            "label": "Napisz email",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
+        ]
+      },
+      {
+        "q": "Przyszła mi wiadomość z prośbą o weryfikację lub opłacenie rezerwacji przez link. Czy to od was?",
+        "a": "Nie. Krąży fala fałszywych wiadomości, głównie na WhatsAppie, które podszywają się pod obiekty noclegowe i platformy rezerwacyjne. Piszą w nich, że musisz zweryfikować rezerwację lub pilnie zapłacić przez link, albo że pokój zostanie zwolniony, jeśli nie zrobisz tego w ciągu 24 godzin. To oszustwo: nie klikaj w link i nie wpisuj danych karty. Nigdy nie poprosimy cię o płatność przez WhatsApp, a twoja rezerwacja nigdy nie zostanie anulowana z powodu braku pilnej płatności. Jedyna płatność, o którą moglibyśmy cię poprosić, odbywa się wyłącznie przez guest.chekin.com. Jeśli dostaniesz taką wiadomość, wyślij nam zrzut ekranu z numerem i treścią przez WhatsApp na +34 639 980 253 lub e-mailem na hostalsol{'@'}outlook.com, a jeśli rezerwacja jest z Booking.com, zgłoś to również tam.",
+        "tags": [
+          "oszustwo",
+          "wyłudzenie",
+          "phishing",
+          "fałszywy WhatsApp",
+          "fałszywa wiadomość",
+          "link",
+          "weryfikacja rezerwacji",
+          "pilna płatność",
+          "bezpieczeństwo",
+          "karta",
+          "scam"
+        ],
+        "links": [
+          {
+            "label": "Wyślij zrzut ekranu na WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "Napisz email",
             "url": "mailto:hostalsol{'@'}outlook.com",
             "icon": "mail"
           }
@@ -993,17 +1177,6 @@
           "e-bike",
           "rower górski",
           "przechowywanie roweru"
-        ]
-      },
-      {
-        "q": "Interesuje mnie długi pobyt. Czy są specjalne warunki?",
-        "a": "Tak, od 11 nocy — automatycznie 10% zniżki. Zniżka dotyczy taryf bezzwrotnych. Specjalne warunki dla grup lub bardzo długich pobytów — skontaktuj się z nami. Jeśli zniżka nie nalicza się automatycznie na stronie — napisz.",
-        "links": [
-          {
-            "label": "Zarezerwuj długi pobyt",
-            "url": "/booking",
-            "icon": "calendar-check"
-          }
         ]
       },
       {

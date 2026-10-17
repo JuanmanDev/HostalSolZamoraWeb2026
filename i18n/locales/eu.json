@@ -720,6 +720,29 @@
         ]
       },
       {
+        "q": "Zer ohe dago nire logelan? Ohe bikoitzera edo bi oheetara alda dezaket?",
+        "a": "Ohea erreserbatu zenuen logela motari dagokiona da: ohe bikoitzeko logelek 135 cm-ko zabalerako ohe bat dute, eta bi oheko logelek banakako bi ohe. Zure erreserbako logelaren izenean ikusiko duzu, eta galerian bakoitzaren argazkiak eta bideoak dituzu. Bi oheetatik ohe bikoitzera aldatu nahi baduzu, edo alderantziz, idatzi iezaguzu eta saiatuko gara, baina eskuragarritasunaren araberakoa da, eta okupazio handiko datetan ez da beti posible. Ohe mota garrantzitsua bada zuretzat, seguruena erreserbatzean logela egokia aukeratzea da.",
+        "tags": [
+          "ohe bikoitza",
+          "matrimonio-ohea",
+          "bi ohe",
+          "banakako oheak",
+          "ohe bereiziak",
+          "twin",
+          "ohearen neurria",
+          "135 cm",
+          "ohea aldatu",
+          "ohearen tamaina"
+        ],
+        "links": [
+          {
+            "label": "Logelen galeria ikusi",
+            "url": "/galeria",
+            "icon": "bed-double"
+          }
+        ]
+      },
+      {
         "q": "Igandetan eta jai egunetan lan egiten al duzue?",
         "a": "Jai egun gehienetan lan egiten dugu, abuztuaren 14–16, abenduaren 15 eta urtarrilaren 1a izan ezik. Igande gehienetan itxita gaude, baina larunbatean iritsi bazara igande osoan gera zaitezke — check-out astelehenean 11:00etan.",
         "links": [
@@ -738,6 +761,93 @@
           "atzerapena",
           "gaueko sarbidea",
           "24h giltzak"
+        ]
+      },
+      {
+        "q": "Giltzak jaso ditzaket edo logelan sar naiteke 14:00ak baino lehen?",
+        "a": "Check-in ordutegia 14:00etatik 21:00etara da. Zure logela libre badago aurreko gonbidatua joan delako, giltzak lehenago eman diezazkizukegu, oraindik garbituta ez badago ere, baina inoiz ez hura joan baino lehen. Ezin dugu bermatu, ezta aldez aurretik baieztatu ere, eta ezin diogu gonbidatu bakoitzari abisatu bere logela libre geratzen denean. Egin dezakezuna da hostaletik pasatzea 09:00etatik aurrera (igandeetan izan ezik), ekipajea konsignan uzteko eta erregistroa egiteko, online check-inaren bidez edo gonbidatu bakoitzaren DNIa edo pasaportea erakutsiz. Horrela, logela prest ez badago, giltzen bila geroago itzultzea besterik ez duzu izango. Hau da aukerarik onena ezkontza batera, ekitaldi batera edo goizean hiria bisitatzera bazatoz.",
+        "tags": [
+          "check-in goiztiarra",
+          "lehenago iritsi",
+          "goiz iristea",
+          "giltzak lehenago",
+          "lehenago sartu",
+          "early check-in",
+          "konsigna",
+          "ekipajea gorde",
+          "ezkontza",
+          "goizean"
+        ],
+        "links": [
+          {
+            "label": "Online check-ina egin",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
+      },
+      {
+        "q": "Booking.com-en iritsiera ordua adierazi dut. Zuek baieztatu arte itxaron behar dut?",
+        "a": "Ez. Booking.com-en iristeko tarte bat aukeratzen duzunean, honelako mezu automatiko bat jasotzen dugu: «Check-ina 18:00 eta 19:00 artean egin nahiko nuke. Posible da?». Tartea 14:00ak eta 21:00ak artean badago, ez da baieztatu behar: ordutegi horren barruan edozein ordutan irits zaitezke. 14:00ak baino lehen hasten bada, ekipajea utzi eta giltzak jaso ditzakezu logela prest dagoenean, 14:00ak baino lehen izango denaren bermerik gabe. 21:00ak ondoren bada, ezin izango zaitugu hartu: iristeko ordutegia ez da malgua. Berandu bazatoz, abisatu iezaguzu, baina kontuan izan 21:00etan ixten dugula hala ere. Garaiz iritsiko ez zarela badakizu, jarri gurekin harremanetan lehenbailehen, zure erreserbak zer aukera dituen ikusteko.",
+        "tags": [
+          "iritsiera ordua",
+          "ordu tartea",
+          "Booking",
+          "iritsiera baieztatu",
+          "iritsi",
+          "check-in",
+          "atzerapena",
+          "trafikoa"
+        ],
+        "links": [
+          {
+            "label": "Check-inaren gida osoa",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
+      },
+      {
+        "q": "21:00ak ondoren iritsiko naiz. Nirekin datorren pertsonak egin dezake check-ina?",
+        "a": "Bai. Lehenik, egin online check-ina bidaltzen dizugun Chekin estekarekin eta eskaneatu bertan gonbidatu guztien nortasun agiriak. Ondoren, zurekin datorren pertsonak 21:00ak baino lehen iritsi behar du hostalera, erreserbaren izena esan eta online check-inean erregistratutako agirietako bat erakutsi. Eraikineko, hostaleko eta logelako giltzak emango dizkiogu, eta nahi duzuenean sartu eta irten ahal izango zarete, gauez ere bai. Ez dugu onartzen WhatsApp edo email bidez bidalitako agiririk: erregistroa online check-inaren bidez edo aurrez aurre egiten da. Taldeko inork ezin badu 21:00ak baino lehen iritsi, ezin izango dugu check-ina egin.",
+        "tags": [
+          "laguna",
+          "bidaidea",
+          "berandu iritsi",
+          "berandu iristea",
+          "21:00ak ondoren",
+          "beste pertsona batek giltzak jaso",
+          "online check-in",
+          "chekin",
+          "giltzak"
+        ],
+        "links": [
+          {
+            "label": "Online check-ina egin",
+            "url": "/checkin",
+            "icon": "file-text"
+          }
+        ]
+      },
+      {
+        "q": "Check-outa 11:00ak baino beranduago egin dezaket?",
+        "a": "Check-outa 11:00etan da, ordu horretatik aurrera hurrengo gonbidatuentzako logelak prestatzen ditugulako. Irteera egunean Zamoraz gozatzen jarraitu nahi baduzu, egun horretan ekipajea harreran gorde diezazukegu (igandeetan izan ezik); abisatzea besterik ez duzu. Logelan denbora gehiago geratu behar baduzu, galdetu aldez aurretik, eta egun horretako okupazioaren arabera posible den esango dizugu, baina ezin dugu bermatu.",
+        "tags": [
+          "check-out berantiarra",
+          "late check-out",
+          "berandu irten",
+          "irteera ordua",
+          "logela utzi",
+          "ekipajea gorde",
+          "maleta",
+          "konsigna"
+        ],
+        "links": [
+          {
+            "label": "WhatsApp bidez harremanetan jarri",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
@@ -894,6 +1004,26 @@
         ]
       },
       {
+        "q": "Nire erreserbaren datak alda ditzaket?",
+        "a": "Tarifaren araberakoa da. Tarifa malgu batekin datak alda ditzakezu, edo doan ezeztatu eta erreserba berri bat egin, iritsi baino 48 ordu lehenagora arte. Itzulezinezko tarifek, normalean, ez dute aldaketarik onartzen. Booking.com-en erreserbatu bazenuen, egin aldaketa Booking.com-en aplikaziotik edo webgunetik: eskuragarritasuna badago, automatikoki onartzen da. Hostaletik ezin dugu zure izenean aldaketa eskatu; beraz, aplikazioarekin arazoak badituzu, jarri harremanetan Booking.com-en bezeroarentzako arretarekin. Gure webgunean erreserbatu bazenuen, erabili berrespen emaileko esteka edo idatzi iezaguzu.",
+        "tags": [
+          "datak aldatu",
+          "erreserba aldatu",
+          "erreserba aurreratu",
+          "erreserba atzeratu",
+          "eguna aldatu",
+          "data aldaketa",
+          "Booking"
+        ],
+        "links": [
+          {
+            "label": "Gure webgunean erreserbatu",
+            "url": "/reserva",
+            "icon": "calendar-check"
+          }
+        ]
+      },
+      {
         "q": "Nola eskatu faktura bat?",
         "a": "Faktura eskatu daiteke egonaldiaren azken egunetik check-out-a eta gero 30 egunera arte. Adierazi beharrezko datu fiskal guztiak erreserbatzerakoan (izena/enpresa, IFZ, helbidea). Faktura PDFn emailez bidaltzen da.",
         "tags": [
@@ -907,6 +1037,57 @@
         "links": [
           {
             "label": "Fakturarako harremanetan jarri",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
+        ]
+      },
+      {
+        "q": "Booking.com-en erreserbatu dut. Nola eskatu faktura, eta zer zenbatekorekin egiten da?",
+        "a": "Eskatu Booking.com-en txatetik (faktura eskatzeko aukera bat du) edo idatzi iezaguzu, izena edo sozietatearen izena, NIF edo CIF zenbakia eta helbide fiskala adierazita. Datuak hartu, eta check-outa egitean faktura PDFn bidaliko dizugu emailez. Check-outa egin eta 30 egunera arte eska dezakezu. Faktura Booking.com-ek zure erreserbarako jakinarazten digun zenbatekoarekin egiten da. Booking.com-en ordaindu zenuenarekin bat ez badator, jarri harremanetan Booking.com-en bezeroarentzako arretarekin, hark kudeatzen baitu ordainketa hori.",
+        "tags": [
+          "Booking faktura",
+          "faktura",
+          "Booking.com",
+          "fakturaren zenbatekoa",
+          "IFZ",
+          "NIF",
+          "CIF",
+          "enpresa",
+          "sozietatearen izena",
+          "faktura ez dator bat"
+        ],
+        "links": [
+          {
+            "label": "Emaila bidali",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
+        ]
+      },
+      {
+        "q": "Erreserba esteka baten bidez egiaztatzeko edo ordaintzeko eskatzen didan mezu bat jaso dut. Zuena da?",
+        "a": "Ez. Mezu faltsuen olatu bat dabil, batez ere WhatsApp bidez, ostatuen eta erreserba plataformen itxurak egiten dituena. Erreserba egiaztatu behar duzula edo esteka baten bidez presaka ordaindu behar duzula diote, edo 24 orduan egiten ez baduzu logela askatu egingo dela. Iruzurra da: ez sakatu esteka eta ez idatzi zure txartelaren daturik. Ez dizugu inoiz ordainketarik eskatuko WhatsApp bidez, eta zure erreserba ez da inoiz ezeztatuko premiazko ordainketa bat ez egiteagatik. Eska diezazukegun ordainketa bakarra guest.chekin.com bidez bakarrik egiten da. Mezu horietako bat jasotzen baduzu, bidali iezaguzu pantaila-argazki bat, zenbakiarekin eta testuarekin, WhatsApp bidez +34 639 980 253 zenbakira edo emailez hostalsol{'@'}outlook.com helbidera, eta jakinarazi Booking.com-i ere, bertan erreserbatu bazenuen.",
+        "tags": [
+          "iruzurra",
+          "maula",
+          "phishing",
+          "WhatsApp faltsua",
+          "esteka",
+          "erreserba egiaztatu",
+          "premiazko ordainketa",
+          "segurtasuna",
+          "txartela",
+          "scam"
+        ],
+        "links": [
+          {
+            "label": "Pantaila-argazkia WhatsApp bidez bidali",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "Emaila bidali",
             "url": "mailto:hostalsol{'@'}outlook.com",
             "icon": "mail"
           }
@@ -993,17 +1174,6 @@
           "bizikleta elektrikoa",
           "mendi-bizikleta",
           "bizikleta gordetzea"
-        ]
-      },
-      {
-        "q": "Egonaldi luzeetan interesatuta nago. Baldintza bereziak al daude?",
-        "a": "Bai, 11 gauetik — automatikoki %10eko deskontua. Talde edo egonaldi oso luzetarako — jarri gurekin harremanetan.",
-        "links": [
-          {
-            "label": "Egonaldi luzea erreserbatu",
-            "url": "/booking",
-            "icon": "calendar-check"
-          }
         ]
       },
       {

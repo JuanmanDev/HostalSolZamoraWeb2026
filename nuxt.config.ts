@@ -1,5 +1,6 @@
-import { readdirSync, statSync, existsSync } from 'node:fs'
+import { readdirSync, readFileSync, statSync, existsSync } from 'node:fs'
 import { join } from 'node:path'
+import { slugify } from './app/utils/slugify'
 
 // Build-time discovery of room images
 const roomsDir = join(process.cwd(), 'public/images/rooms')
@@ -32,6 +33,26 @@ if (existsSync(roomsDir)) {
     }
   }
 }
+
+// Build-time FAQ slug map: { [locale]: slug[] }, aligned by item index.
+// Each locale slugifies its own question text, so /faq/<slug> differs per
+// language; the detail page uses this map for hreflang and the language
+// switcher. Indexes must line up across locales (same questions, same order).
+const localesDir = join(process.cwd(), 'i18n/locales')
+const faqSlugs: Record<string, string[]> = {}
+for (const file of readdirSync(localesDir).filter(f => f.endsWith('.json'))) {
+  const items = JSON.parse(readFileSync(join(localesDir, file), 'utf8')).faq?.items ?? []
+  // vue-i18n literal interpolation ({'@'}) resolves to the bare character
+  faqSlugs[file.replace(/\.json$/, '')] = items.map((item: { q: string }) =>
+    slugify(item.q.replace(/\{'(.*?)'\}/g, '$1')))
+}
+const faqCounts = new Set(Object.values(faqSlugs).map(s => s.length))
+if (faqCounts.size > 1) {
+  console.warn('[faq] locales have different FAQ item counts; hreflang for /faq/<slug> will be wrong:',
+    Object.fromEntries(Object.entries(faqSlugs).map(([l, s]) => [l, s.length])))
+}
+const faqRoutes = Object.entries(faqSlugs).flatMap(([locale, slugs]) =>
+  slugs.map(slug => encodeURI(`${locale === 'es' ? '' : `/${locale}`}/faq/${slug}`)))
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-01',
@@ -128,6 +149,8 @@ export default defineNuxtConfig({
 
   // Public runtime config — overridable with NUXT_PUBLIC_SITE_URL env var
   runtimeConfig: {
+    // Server-only (not shipped to the client); read by /api/faq-slugs/:index
+    faqSlugs,
     public: {
       siteUrl: 'https://hostalsolzamora.com',
       siteName: 'Hostal Sol Zamora',
@@ -293,6 +316,8 @@ export default defineNuxtConfig({
     },
     prerender: {
       crawlLinks: true,
+      // FAQ detail pages are linked from /faq, but list them so none depend on the crawler
+      routes: faqRoutes,
       failOnError: false,
       ignoreErrors: true,
       // Aumentado a 4. Renderizará 4 páginas a la vez. 

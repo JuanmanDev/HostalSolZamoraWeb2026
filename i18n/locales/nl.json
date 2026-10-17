@@ -726,6 +726,29 @@
         ]
       },
       {
+        "q": "Welk bed heeft mijn kamer? Kan ik wisselen naar een tweepersoonsbed of twee aparte bedden?",
+        "a": "Je krijgt het bed van het kamertype dat je hebt geboekt: de kamers met tweepersoonsbed hebben een bed van 135 cm breed en de kamers met aparte bedden hebben twee eenpersoonsbedden. Je ziet dit aan de kamernaam in je boeking, en in de galerij vind je foto's en video's van elke kamer. Wil je wisselen van twee aparte bedden naar een tweepersoonsbed, of andersom, stuur ons dan een bericht en we proberen het te regelen. Dit hangt wel af van de beschikbaarheid en is in drukke periodes niet altijd mogelijk. Is het type bed belangrijk voor je, kies dan bij het boeken meteen de juiste kamer; dat is het zekerst.",
+        "tags": [
+          "tweepersoonsbed",
+          "dubbel bed",
+          "twee bedden",
+          "aparte bedden",
+          "eenpersoonsbedden",
+          "twin",
+          "bedmaat",
+          "135 cm",
+          "ander bed",
+          "grootte van het bed"
+        ],
+        "links": [
+          {
+            "label": "Bekijk de kamergalerij",
+            "url": "/galeria",
+            "icon": "bed-double"
+          }
+        ]
+      },
+      {
         "q": "Zijn jullie open op zondag en feestdagen?",
         "a": "We zijn open op de meeste feestdagen, behalve 14–16 augustus, 15 december en 1 januari. De meeste zondagen zijn we gesloten, maar als je zaterdag aankomt kun je door de zondag en volgende dagen blijven zonder problemen, aangezien het uitchecken om 11:00 op de dag van vertrek is. Als je vragen hebt over een specifieke datum, neem dan contact met ons op.",
         "links": [
@@ -745,6 +768,94 @@
           "nachttoegang",
           "nacht inchecken",
           "sleutels 24u"
+        ]
+      },
+      {
+        "q": "Kan ik de sleutels ophalen of de kamer in vóór 14:00?",
+        "a": "Inchecken is van 14:00 tot 21:00. Als je kamer al vrij is omdat de vorige gast vertrokken is, kunnen we je de sleutels eerder geven, ook als de kamer nog niet schoongemaakt is, maar nooit voordat die gast vertrokken is. We kunnen dit niet garanderen of vooraf bevestigen, en we kunnen ook niet elke gast laten weten wanneer zijn kamer vrijkomt. Wat je wel kunt doen: kom vanaf 09:00 (behalve op zondag) langs bij het hostal om je bagage in bewaring te geven en meteen de registratie te regelen, via online inchecken of door de identiteitskaart of het paspoort van elke gast te laten zien. Is de kamer dan nog niet klaar, dan hoef je later alleen nog terug te komen om de sleutels op te halen. Dit is de beste optie als je voor een bruiloft of evenement komt, of 's ochtends de stad wilt bekijken.",
+        "tags": [
+          "vroeg inchecken",
+          "eerder aankomen",
+          "vroege aankomst",
+          "sleutels eerder",
+          "eerder naar de kamer",
+          "early check-in",
+          "bagage bewaren",
+          "bagageopslag",
+          "bruiloft",
+          "ochtend"
+        ],
+        "links": [
+          {
+            "label": "Online inchecken",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
+      },
+      {
+        "q": "Ik heb op Booking.com mijn aankomsttijd doorgegeven. Moet ik wachten tot jullie die bevestigen?",
+        "a": "Nee. Als je op Booking.com een tijdvak voor je aankomst kiest, krijgen wij een automatisch bericht zoals “Ik wil graag inchecken tussen 18:00 en 19:00. Is dat mogelijk?”. Valt het tijdvak tussen 14:00 en 21:00, dan hoeft het niet bevestigd te worden: je kunt op elk moment binnen die tijden aankomen. Begint het vóór 14:00, dan kun je je bagage achterlaten en de sleutels ophalen zodra de kamer klaar is, zonder garantie dat dat vóór 14:00 is. Is het na 21:00, dan kunnen we je niet ontvangen: de aankomsttijden zijn niet flexibel. Heb je vertraging, laat het ons dan weten, maar houd er rekening mee dat we hoe dan ook om 21:00 sluiten. Weet je dat je het niet op tijd haalt, neem dan zo snel mogelijk contact met ons op, zodat we kunnen bekijken welke opties je boeking heeft.",
+        "tags": [
+          "aankomsttijd",
+          "tijdvak",
+          "Booking",
+          "aankomst bevestigen",
+          "aankomen",
+          "inchecken",
+          "check-in",
+          "vertraging",
+          "file"
+        ],
+        "links": [
+          {
+            "label": "Volledige incheckgids",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
+      },
+      {
+        "q": "Ik kom na 21:00 aan. Kan mijn reisgenoot voor ons inchecken?",
+        "a": "Ja. Check eerst online in via de Chekin-link die we je sturen en scan daar de identiteitsbewijzen van alle gasten. Daarna moet je reisgenoot vóór 21:00 bij het hostal aankomen, de naam van de boeking noemen en een van de documenten laten zien die bij het online inchecken zijn geregistreerd. We geven dan de sleutels van het gebouw, het hostal en de kamer, en jullie kunnen komen en gaan wanneer je wilt, ook 's nachts. We accepteren geen documenten die via WhatsApp of e-mail worden gestuurd: de registratie gebeurt via online inchecken of persoonlijk. Als niemand van de groep vóór 21:00 kan aankomen, is inchecken niet mogelijk.",
+        "tags": [
+          "reisgenoot",
+          "medereiziger",
+          "laat aankomen",
+          "late aankomst",
+          "na 21:00",
+          "iemand anders haalt de sleutels op",
+          "online inchecken",
+          "chekin",
+          "sleutels"
+        ],
+        "links": [
+          {
+            "label": "Online inchecken",
+            "url": "/checkin",
+            "icon": "file-text"
+          }
+        ]
+      },
+      {
+        "q": "Kan ik later dan 11:00 uitchecken?",
+        "a": "Uitchecken is om 11:00, omdat we vanaf dat moment de kamers klaarmaken voor de volgende gasten. Wil je op je vertrekdag nog van Zamora genieten, dan kunnen we je bagage die dag bij de receptie bewaren (behalve op zondag); laat het ons gewoon weten. Heb je de kamer langer nodig, vraag het ons dan van tevoren. We laten je weten of het kan, afhankelijk van de bezetting die dag, maar we kunnen het niet garanderen.",
+        "tags": [
+          "laat uitchecken",
+          "late check-out",
+          "later vertrekken",
+          "vertrektijd",
+          "kamer verlaten",
+          "bagage bewaren",
+          "koffer",
+          "bagageopslag"
+        ],
+        "links": [
+          {
+            "label": "Contact via WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
@@ -902,6 +1013,28 @@
         ]
       },
       {
+        "q": "Kan ik de data van mijn boeking wijzigen?",
+        "a": "Dat hangt af van het tarief. Met een flexibel tarief kun je tot 48 uur vóór aankomst de data wijzigen, of kosteloos annuleren en opnieuw boeken. Niet-restitueerbare tarieven staan meestal geen wijzigingen toe. Heb je via Booking.com geboekt, wijzig de boeking dan in de app of op de website van Booking.com: als er beschikbaarheid is, wordt de wijziging automatisch geaccepteerd. Wij kunnen de wijziging vanuit het hostal niet voor je aanvragen, dus heb je problemen met de app, neem dan contact op met de klantenservice van Booking.com. Heb je via onze website geboekt, gebruik dan de link in je bevestigingsmail of stuur ons een bericht.",
+        "tags": [
+          "data wijzigen",
+          "datum wijzigen",
+          "boeking wijzigen",
+          "reservering wijzigen",
+          "omboeken",
+          "boeking vervroegen",
+          "boeking verzetten",
+          "andere dag",
+          "Booking"
+        ],
+        "links": [
+          {
+            "label": "Boek via onze website",
+            "url": "/reserva",
+            "icon": "calendar-check"
+          }
+        ]
+      },
+      {
         "q": "Hoe vraag ik een factuur aan?",
         "a": "Je kunt een factuur aanvragen vanaf de laatste dag van je verblijf tot 30 dagen na het uitchecken. Zorg er bij het boeken voor dat je alle benodigde facturatievelden invult (naam of bedrijfsnaam, btw-nummer, fiscaal adres). Als een specifiek veld niet beschikbaar is in het formulier, gebruik dan het opmerkingenveld. De factuur wordt per e-mail als PDF verzonden. We kunnen geen facturen uitstellen na de 30-dagenperiode na uitchecken.",
         "tags": [
@@ -916,6 +1049,58 @@
         "links": [
           {
             "label": "Contact voor factuur",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
+        ]
+      },
+      {
+        "q": "Ik heb via Booking.com geboekt. Hoe vraag ik een factuur aan en voor welk bedrag wordt die opgemaakt?",
+        "a": "Vraag hem aan via de chat van Booking.com (daar staat een optie om een factuur aan te vragen) of stuur ons een bericht met je naam of bedrijfsnaam, je btw- of fiscaal nummer en je factuuradres. We noteren het en sturen je de factuur bij het uitchecken als pdf per e-mail. Je kunt hem aanvragen tot 30 dagen na het uitchecken. De factuur wordt opgemaakt voor het bedrag dat Booking.com ons voor je boeking doorgeeft. Komt dat niet overeen met wat je op Booking.com hebt betaald, neem dan contact op met de klantenservice van Booking.com, want zij verwerken die betaling.",
+        "tags": [
+          "factuur Booking",
+          "factuur",
+          "Booking.com",
+          "factuurbedrag",
+          "btw-nummer",
+          "NIF",
+          "CIF",
+          "bedrijf",
+          "bedrijfsnaam",
+          "factuur klopt niet"
+        ],
+        "links": [
+          {
+            "label": "E-mail sturen",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
+        ]
+      },
+      {
+        "q": "Ik heb een bericht gekregen waarin ik mijn boeking via een link moet verifiëren of betalen. Komt dat van jullie?",
+        "a": "Nee. Er gaat een golf van nepberichten rond, vooral via WhatsApp, die zich voordoen als berichten van accommodaties en boekingsplatforms. Daarin staat dat je je boeking moet verifiëren of dringend via een link moet betalen, of dat de kamer wordt vrijgegeven als je dat niet binnen 24 uur doet. Dit is oplichting: klik niet op de link en vul je kaartgegevens niet in. We zullen je nooit via WhatsApp om een betaling vragen, en je boeking wordt nooit geannuleerd omdat je een dringende betaling niet hebt gedaan. De enige betaling die we je eventueel kunnen vragen, verloopt uitsluitend via guest.chekin.com. Krijg je zo'n bericht, stuur ons dan een screenshot met het nummer en de tekst via WhatsApp naar +34 639 980 253 of per e-mail naar hostalsol{'@'}outlook.com, en meld het ook bij Booking.com als je daar hebt geboekt.",
+        "tags": [
+          "oplichting",
+          "fraude",
+          "phishing",
+          "nep-WhatsApp",
+          "nepbericht",
+          "link",
+          "boeking verifiëren",
+          "dringende betaling",
+          "veiligheid",
+          "creditcard",
+          "scam"
+        ],
+        "links": [
+          {
+            "label": "Screenshot sturen via WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "E-mail sturen",
             "url": "mailto:hostalsol{'@'}outlook.com",
             "icon": "mail"
           }
@@ -1005,17 +1190,6 @@
           "mountainbike",
           "elektrische fiets",
           "fiets bewaren"
-        ]
-      },
-      {
-        "q": "Ik ben geïnteresseerd in een lang verblijf. Hebben jullie speciale voorwaarden?",
-        "a": "Ja, vanaf 11 nachten bieden we automatisch 10% korting op de totaalprijs. De korting geldt voor niet-restitueerbare tarieven. We kunnen ook speciale voorwaarden bespreken voor groepen of zeer lange verblijven — neem contact met ons op en we beoordelen het. Als de korting niet automatisch op de website wordt toegepast, schrijf ons dan en we helpen je.",
-        "links": [
-          {
-            "label": "Boek lang verblijf",
-            "url": "/reserva",
-            "icon": "calendar-check"
-          }
         ]
       },
       {

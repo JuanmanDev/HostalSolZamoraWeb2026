@@ -692,6 +692,28 @@
         ]
       },
       {
+        "q": "D acu n wusu i tesɛa taɣimt-iw? Zemreɣ ad beddleɣ ɣer wusu n sin neɣ ɣer sin isuyas?",
+        "a": "Usu d win n wanaw n taɣimt i tferneḍ: tigmmiwin s wusu n sin sɛant yiwen wusu s tehri n 135 cm, ma d tigmmiwin s sin isuyas sɛant sin isuyas n yiwen. Ad t-twaliḍ deg yisem n taɣimt deg tenzert-ik, u deg tesɣunt llant tiwlafin d vidéo n yal taɣimt. Ma tebɣiḍ ad tbeddleḍ seg sin isuyas ɣer wusu n sin, neɣ seg wusu n sin ɣer sin isuyas, aru-yaɣ-d u ad nɛreḍ, maca yeqqen ɣer wayen yellan, u deg wussan anda tigmmiwin ttwaṭṭfent s waṭas ur yettili ara yal tikkelt. Ma yella anaw n wusu yesɛa azal ɣur-k, ayen yelhan ugar d tafrant n taɣimt ilaqen mi ara tgeḍ tenzert.",
+        "tags": [
+          "usu n sin",
+          "usu ameqqran",
+          "sin isuyas",
+          "isuyas n yiwen",
+          "twin",
+          "tehri n wusu",
+          "135 cm",
+          "abeddel n wusu",
+          "tagelda"
+        ],
+        "links": [
+          {
+            "label": "Tasɣunt n Tigmmiwin",
+            "url": "/galeria",
+            "icon": "bed-double"
+          }
+        ]
+      },
+      {
         "q": "Llant wussan n Ahad d imukan?",
         "a": "Netteddar ugar n imukan, ɣar: 14, 15 d 16 Ɣuct, 15 Dujamber d 1 Yennayer. Uḥad ur netteddar ara, maca ma tusa-d Asebḥas tzemreḍ ad teqqimed akk Ahad — check-out deg 11:00 ass n uffaɣ.",
         "links": [
@@ -709,6 +731,91 @@
           "tili s tassast",
           "tiqqna n yid",
           "tsaratin 24 saɛa"
+        ]
+      },
+      {
+        "q": "Zemreɣ ad awiɣ tsaratin neɣ ad kecmeɣ ɣer taɣimt uqbel 14:00?",
+        "a": "Check-in: 14:00-21:00. Ma yella taɣimt-ik tilem yakan acku amuddar n uqbel yeffeɣ, nezmer ad ak-nefk tsaratin uqbel, ɣas ur tettwazeddeg ara mazal, maca werǧin uqbel ad yeffeɣ umuddar-nni. Ur nezmir ara ad t-neḍmen neɣ ad t-nesserg uqbel, yerna ur nezmir ara ad nessaɣ yal amuddar mi ara tilem taɣimt-is. Ayen tzemreḍ ad txedmeḍ: ad d-tasaḍ ɣer hostel seg 09:00 (ɣar Ahad) i wakken ad tesɣelḍ kus-nnik deg tesɣelt n kus, u ad tesmedeḍ ajerred s check-in s usiɣen neɣ s usken n DNI neɣ n usefsar n yal amuddar. Akka, ma yella taɣimt ur theggi ara, ad d-tuɣaleḍ kan ticki i wakken ad tawiḍ tsaratin. D ixiyar ilelliyen ma yella d-tusiḍ i tmeɣra, i tedyant neɣ i wakken ad terzuḍ ɣer temdint ṣṣbeḥ.",
+        "tags": [
+          "check-in uzwir",
+          "tili uqbel",
+          "tsaratin uqbel",
+          "akcam uqbel",
+          "early check-in",
+          "tasɣelt n kus",
+          "kus",
+          "tameɣra",
+          "ṣṣbeḥ"
+        ],
+        "links": [
+          {
+            "label": "Check-in Asiɣen",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
+      },
+      {
+        "q": "Fkiɣ akud n tili deg Booking.com. Ilaq ad rjuɣ ad t-tesnetmem?",
+        "a": "Ala. Mi ara tferneḍ deg Booking.com tilmi n tili, ad aɣ-d-yaweḍ yizen awurman am «Bɣiɣ ad xedmeɣ check-in gar 18:00 - 19:00. Yezmer ad yili?». Ma yella tilmi-nni gar 14:00 d 21:00, ur ilaq ara ad tettwasentem: tzemreḍ ad d-taweḍ melmi i tebɣiḍ deg wakud-nni. Ma tebda uqbel 14:00, tzemreḍ ad tesɣelḍ kus-nnik u ad tawiḍ tsaratin mi ara theggi taɣimt, war aḍman ad yili uqbel 14:00. Ma yella deffir 21:00, ur nezmir ara ad k-nsell: akud n tili ur yettbeddil ara. Ma yella ad tɛeṭṭleḍ, mudd-aɣ-d awal, maca ẓer belli ɣef 21:00 ad nmedel ɣas akken. Ma teẓriḍ ur d-tettaweḍ ara ɣef wakud, mudd-aɣ-d awal s wura ilaq i wakken ad nẓer d acu n yixiyaren i tesɛa tenzert-ik.",
+        "tags": [
+          "akud n tili",
+          "tilmi n wakud",
+          "Booking",
+          "asentem n tili",
+          "tili",
+          "check-in",
+          "aɛeṭṭel",
+          "abrid"
+        ],
+        "links": [
+          {
+            "label": "Asgid Ameqqran n Check-in",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
+      },
+      {
+        "q": "Ad d-awḍeɣ deffir 21:00. Amdakel-iw yezmer ad yexdem check-in?",
+        "a": "Ih. Xdem qbel kullec check-in s usiɣen s useɣwen n Chekin i ak-d-nuzen, u ssekcem dinna tugniwin n izerfan n tmagit n yimuddar meṛṛa. Syin, amdakel-ik ilaq ad d-yaweḍ ɣer hostel uqbel 21:00, ad d-yini isem n tenzert u ad d-yesken yiwen seg izerfan yettwajerden deg check-in s usiɣen. Ad as-nefk tsaratin n ufrag, n hostel d n taɣimt, u tzemrem ad tkecmem d ad teffɣem melmi i tebɣam, ula d deg yiḍ. Ur nqebbel ara izerfan i d-yettwaznen s WhatsApp neɣ s imayl: ajerred yettili s check-in s usiɣen neɣ s udem. Ma yella ula yiwen deg ugraw ur yezmir ad d-yaweḍ uqbel 21:00, ur nezmir ara ad nexdem check-in.",
+        "tags": [
+          "amdakel",
+          "tili deffir",
+          "tili s yiḍ",
+          "deffir 21:00",
+          "wayeḍ ad yawi tsaratin",
+          "check-in asiɣen",
+          "chekin",
+          "tsaratin"
+        ],
+        "links": [
+          {
+            "label": "Check-in Asiɣen",
+            "url": "/checkin",
+            "icon": "file-text"
+          }
+        ]
+      },
+      {
+        "q": "Zemreɣ ad xedmeɣ check-out deffir 11:00?",
+        "a": "Check-out deg 11:00, acku seg wakud-nni ad nheggi tigmmiwin i yimuddar i d-iteddun. Ma tebɣiḍ ad tkemmleḍ ad tzehhuḍ deg Zamura ass n uffeɣ, nezmer ad nesɣel kus-nnik deg talalt ass-nni (ɣar Ahad); ini-yaɣ-d kan. Ma tesriḍ ad teqqimeḍ ugar deg taɣimt, steqsi-yaɣ-d uqbel u ad ak-d-nini ma yezmer ad yili ɣef wacḥal n tigmmiwin yettwaṭṭfen ass-nni, maca ur nezmir ara ad t-neḍmen.",
+        "tags": [
+          "check-out usmelli",
+          "late check-out",
+          "tuffɣa deffir",
+          "akud n tuffɣa",
+          "ajaǧ n taɣimt",
+          "asɣel n kus",
+          "tabalizt",
+          "tasɣelt n kus"
+        ],
+        "links": [
+          {
+            "label": "Mudd Awal s WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
@@ -861,6 +968,26 @@
         ]
       },
       {
+        "q": "Zemreɣ ad beddleɣ izemzen n tenzert-iw?",
+        "a": "Yeqqen ɣer usemɣan. S usemɣan ilelli (flexible), tzemreḍ ad tbeddleḍ izemzen, neɣ ad tsefsxeḍ s tamajjant u ad txedmeḍ tenzert tamaynut, alamma d 48 saɛa uqbel tili. Isemɣan ur ttuttufaɣent ara (non-remboursables) s umata ur sriḥen ara abeddel. Ma tgiḍ tenzert deg Booking.com, xdem abeddel seg usnas neɣ seg usmel n Booking.com: ma yella wayen ilelli, ad yettwaqbel s wudem awurman. Seg hostel ur nezmir ara ad nessuter abeddel deg umkan-ik, ihi ma tesɛiḍ uguren d usnas, mudd awal i umeẓlu n yimsaɣen n Booking.com. Ma tgiḍ tenzert deg usmel-aneɣ, seqdec aseɣwen deg imayl n ussfel neɣ aru-yaɣ-d.",
+        "tags": [
+          "abeddel n izemzen",
+          "abeddel n tenzert",
+          "asnifel n tenzert",
+          "azemz",
+          "abeddel n wass",
+          "tenzert",
+          "Booking"
+        ],
+        "links": [
+          {
+            "label": "Aɣ Tenzert deg Usmel-aneɣ",
+            "url": "/reserva",
+            "icon": "calendar-check"
+          }
+        ]
+      },
+      {
         "q": "Amek ara ɣreɣ tnefkilt?",
         "a": "Tzemreḍ ad ɣreḍ tnefkilt seg ass aneggaru n tẓirit ɣer 30 wussan deffir check-out. Deg tenzert, ɣelleẓ akk ilmawen ixuṣṣen (isem, ubelɣu n ufran, tansut). Tnefkilt tettusseggas s imayl s PDF. Ur nezmir ara ad nkemmel tinefkilin deffir 30 wussan.",
         "tags": [
@@ -873,6 +1000,56 @@
         "links": [
           {
             "label": "Mudd Awal i Tnefkilt",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
+        ]
+      },
+      {
+        "q": "Giɣ tenzert deg Booking.com. Amek ara ssutreɣ tnefkilt, u s wacḥal ara tili?",
+        "a": "Ssuter-itt seg chat n Booking.com (yesɛa ixiyar i usuter n tnefkilt) neɣ aru-yaɣ-d s yisem neɣ isem n tkebbanit, NIF neɣ CIF d tansa tafiskalt. Ad t-naru u ad ak-d-nazen tnefkilt s PDF s imayl mi ara txedmeḍ check-out. Tzemreḍ ad tt-tessutreḍ alamma d 30 wussan deffir check-out. Tnefkilt tettwaxdam s wazal i aɣ-d-yenna Booking.com i tenzert-ik. Ma ur yemṣada ara d wayen i txelṣeḍ deg Booking.com, mudd awal i umeẓlu n yimsaɣen n Booking.com, d netta i yettḥazen axelleṣ-nni.",
+        "tags": [
+          "tnefkilt Booking",
+          "tnefkilt",
+          "Booking.com",
+          "azal n tnefkilt",
+          "NIF",
+          "CIF",
+          "takebbanit",
+          "isem n tkebbanit",
+          "tnefkilt ur temṣada ara"
+        ],
+        "links": [
+          {
+            "label": "Azen Imayl",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
+        ]
+      },
+      {
+        "q": "Yewweḍ-iyi-d yizen i yi-d-yessutren ad sentemeɣ neɣ ad xelṣeɣ tenzert-iw s useɣwen. D kunwi?",
+        "a": "Ala. Llan waṭas n yiznan n tkerkas, ladɣa deg WhatsApp, i d-yettbanen am akken d-ttwaznen sɣur imukan n wansay neɣ tiɣerɣarin n tenzert. Qqaren ilaq ad tesnetmeḍ tenzert neɣ ad txelṣeḍ s lɛejla s useɣwen, neɣ ad tettwasefsex taɣimt ma ur t-txedmeḍ ara deg 24 saɛa. D takellext: ur sit ara ɣef useɣwen, ur ttaru ara isefka n tkaṛḍa-k. Werǧin ad ak-nessuter axelleṣ s WhatsApp, u tenzert-ik werǧin ad tettwasefsex acku ur txelṣeḍ ara s lɛejla. Axelleṣ kan i nezmer ad ak-t-nessuter yettili kan s guest.chekin.com. Ma yewweḍ-ak-d yiwen seg yiznan-a, azen-aɣ-d tugna n ugdil s wuṭṭun d uḍris s WhatsApp ɣer +34 639 980 253 neɣ s imayl ɣer hostalsol{'@'}outlook.com, u ini-as daɣen i Booking.com ma tgiḍ tenzert dinna.",
+        "tags": [
+          "takellext",
+          "tikerkas",
+          "phishing",
+          "WhatsApp n tkerkas",
+          "aseɣwen",
+          "asentem n tenzert",
+          "axelleṣ s lɛejla",
+          "taɣellist",
+          "takaṛḍa",
+          "scam"
+        ],
+        "links": [
+          {
+            "label": "Azen Tugna n Ugdil s WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "Azen Imayl",
             "url": "mailto:hostalsol{'@'}outlook.com",
             "icon": "mail"
           }
@@ -952,17 +1129,6 @@
           "aɛeddis",
           "abiskil s lektrik",
           "VTT"
-        ]
-      },
-      {
-        "q": "Tẓirit yennuɣan, yella ayen nniḍen?",
-        "a": "Ih, seg 11 wussan 10% tawuri otomatik ɣef isemɣan imeqqranen. Ɣef isemɣan ur ttuttufaɣent ara. Tɣawat d tẓiriyin ennig nniḍen nzmer nessers isɣalen — mudd-aɣ-d awal. Ma tawuri ur tettɣewwit ara s usmel, seqqeḍ-aɣ-d.",
-        "links": [
-          {
-            "label": "Aɣ Tenzert Tẓirit Tameqqrant",
-            "url": "/reserva",
-            "icon": "calendar-check"
-          }
         ]
       },
       {

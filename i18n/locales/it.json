@@ -727,6 +727,29 @@
         ]
       },
       {
+        "q": "Che letto ha la mia camera? Posso passare a un letto matrimoniale o a due letti?",
+        "a": "Il letto è quello del tipo di camera che hai prenotato: le camere matrimoniali hanno un letto largo 135 cm e quelle a due letti hanno due letti singoli. Lo vedrai nel nome della camera della tua prenotazione, e nella galleria trovi foto e video di ciascuna. Se vuoi passare da due letti a un letto matrimoniale, o viceversa, scrivici e ci proveremo, ma dipende dalla disponibilità e nei periodi di alta occupazione non è sempre possibile. Se il tipo di letto è importante per te, la cosa più sicura è scegliere la camera giusta al momento della prenotazione.",
+        "tags": [
+          "letto matrimoniale",
+          "letto doppio",
+          "due letti",
+          "letti singoli",
+          "twin",
+          "misura del letto",
+          "135 cm",
+          "cambiare letto",
+          "dimensioni del letto",
+          "letto alla francese"
+        ],
+        "links": [
+          {
+            "label": "Vedi la galleria delle camere",
+            "url": "/galeria",
+            "icon": "bed-double"
+          }
+        ]
+      },
+      {
         "q": "Siete aperti di domenica e nei giorni festivi?",
         "a": "Siamo aperti la maggior parte dei giorni festivi, con le seguenti eccezioni: 14, 15 e 16 agosto, 15 dicembre e 1 gennaio. La maggior parte delle domeniche siamo chiusi, ma se arrivi il sabato puoi restare per tutta la domenica e i giorni successivi senza problemi, poiché il check-out è alle 11:00 del giorno di partenza. Se hai dubbi su una data specifica, contattaci.",
         "links": [
@@ -746,6 +769,92 @@
           "accesso notturno",
           "check-in notturno",
           "chiavi 24h"
+        ]
+      },
+      {
+        "q": "Posso ritirare le chiavi o entrare in camera prima delle 14:00?",
+        "a": "Il check-in è dalle 14:00 alle 21:00. Se la tua camera è già libera perché l'ospite precedente è andato via, possiamo darti le chiavi prima, anche se non è ancora stata pulita, ma mai prima che sia andato via. Non possiamo garantirlo né confermarlo in anticipo, e non possiamo nemmeno avvisare ogni ospite quando la sua camera si libera. Quello che puoi fare è passare dall'hostal dalle 09:00 (tranne la domenica) per lasciare il bagaglio in deposito e fare subito la registrazione, con il check-in online o mostrando la carta d'identità o il passaporto di ogni ospite. Così, se la camera non è pronta, dovrai solo tornare più tardi a ritirare le chiavi. È l'opzione migliore se vieni per un matrimonio, per un evento o per visitare la città in mattinata.",
+        "tags": [
+          "check-in anticipato",
+          "arrivare prima",
+          "arrivo anticipato",
+          "chiavi prima",
+          "entrare prima",
+          "early check-in",
+          "deposito bagagli",
+          "lasciare i bagagli",
+          "matrimonio",
+          "mattina"
+        ],
+        "links": [
+          {
+            "label": "Fai il check-in online",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
+      },
+      {
+        "q": "Ho indicato su Booking.com il mio orario di arrivo. Devo aspettare che lo confermiate?",
+        "a": "No. Quando scegli su Booking.com una fascia oraria di arrivo, riceviamo un messaggio automatico come «Vorrei richiedere il check-in alle 18:00 - 19:00. Va bene?». Se la fascia è tra le 14:00 e le 21:00, non serve confermarla: puoi arrivare a qualsiasi ora all'interno di quell'orario. Se inizia prima delle 14:00, puoi lasciare il bagaglio e ritirare le chiavi quando la camera è pronta, senza garanzia che sia prima delle 14:00. Se è dopo le 21:00, non potremo riceverti: l'orario di arrivo non è flessibile. Se sei in ritardo, avvisaci, ma tieni presente che alle 21:00 chiudiamo comunque. Se sai che non arriverai in tempo, contattaci il prima possibile per vedere quali opzioni prevede la tua prenotazione.",
+        "tags": [
+          "orario di arrivo",
+          "fascia oraria",
+          "Booking",
+          "confermare arrivo",
+          "arrivare",
+          "check-in",
+          "ritardo",
+          "traffico"
+        ],
+        "links": [
+          {
+            "label": "Guida completa al check-in",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
+      },
+      {
+        "q": "Arriverò dopo le 21:00. Può fare il check-in chi viaggia con me?",
+        "a": "Sì. Fai prima il check-in online con il link di Chekin che ti inviamo e scansiona lì i documenti d'identità di tutti gli ospiti. Poi il tuo accompagnatore deve arrivare all'hostal prima delle 21:00, dire il nome della prenotazione e mostrare uno dei documenti registrati nel check-in online. Consegneremo le chiavi dell'edificio, dell'hostal e della camera, e potrete entrare e uscire quando volete, anche di notte. Non accettiamo documenti inviati via WhatsApp o email: la registrazione si fa con il check-in online o di persona. Se nessuno del gruppo può arrivare prima delle 21:00, non potremo fare il check-in.",
+        "tags": [
+          "accompagnatore",
+          "arrivare tardi",
+          "arrivo tardivo",
+          "dopo le 21:00",
+          "un'altra persona ritira le chiavi",
+          "check-in online",
+          "chekin",
+          "chiavi"
+        ],
+        "links": [
+          {
+            "label": "Fai il check-in online",
+            "url": "/checkin",
+            "icon": "file-text"
+          }
+        ]
+      },
+      {
+        "q": "Posso fare il check-out dopo le 11:00?",
+        "a": "Il check-out è alle 11:00, perché da quell'ora prepariamo le camere per gli ospiti successivi. Se vuoi continuare a goderti Zamora il giorno della partenza, possiamo custodire il tuo bagaglio in reception per quel giorno (tranne la domenica); basta avvisarci. Se hai bisogno di restare in camera più a lungo, chiedicelo in anticipo e ti diremo se è possibile in base all'occupazione di quel giorno, ma non possiamo garantirlo.",
+        "tags": [
+          "late check-out",
+          "check-out posticipato",
+          "uscire tardi",
+          "orario di check-out",
+          "lasciare la camera",
+          "deposito bagagli",
+          "valigia",
+          "custodia bagagli"
+        ],
+        "links": [
+          {
+            "label": "Contatta via WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
@@ -904,6 +1013,26 @@
         ]
       },
       {
+        "q": "Posso cambiare le date della mia prenotazione?",
+        "a": "Dipende dalla tariffa. Con una tariffa flessibile puoi cambiare le date, oppure cancellare senza costi e fare una nuova prenotazione, fino a 48 ore prima dell'arrivo. Le tariffe non rimborsabili di solito non consentono modifiche. Se hai prenotato su Booking.com, fai la modifica dall'app o dal sito di Booking.com: se c'è disponibilità, viene accettata automaticamente. Dall'hostal non possiamo richiedere la modifica al posto tuo, quindi se hai problemi con l'app, contatta l'assistenza clienti di Booking.com. Se hai prenotato sul nostro sito, usa il link nell'email di conferma o scrivici.",
+        "tags": [
+          "cambiare date",
+          "modificare prenotazione",
+          "anticipare prenotazione",
+          "posticipare prenotazione",
+          "cambiare giorno",
+          "cambio data",
+          "Booking"
+        ],
+        "links": [
+          {
+            "label": "Prenota sul nostro sito",
+            "url": "/reserva",
+            "icon": "calendar-check"
+          }
+        ]
+      },
+      {
         "q": "Come richiedo una fattura?",
         "a": "Puoi richiedere la fattura dall'ultimo giorno del tuo soggiorno fino a 30 giorni dopo il check-out. Al momento della prenotazione, assicurati di compilare tutti i campi necessari per la fattura (nome o ragione sociale, codice fiscale/P.IVA, indirizzo fiscale). Se un campo specifico non è disponibile nel modulo, usa il campo commenti per indicarlo. La fattura verrà inviata via email in formato PDF. Non possiamo emettere fatture al di fuori dei 30 giorni dopo il check-out.",
         "tags": [
@@ -918,6 +1047,57 @@
         "links": [
           {
             "label": "Contatta per fattura",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
+        ]
+      },
+      {
+        "q": "Ho prenotato su Booking.com. Come richiedo la fattura e di che importo sarà?",
+        "a": "Richiedila dalla chat di Booking.com (c'è un'opzione per richiedere la fattura) oppure scrivici indicando nome o ragione sociale, codice fiscale o partita IVA (NIF o CIF) e indirizzo fiscale. Prendiamo nota e ti inviamo la fattura in PDF via email al momento del check-out. Puoi richiederla fino a 30 giorni dopo il check-out. La fattura viene emessa per l'importo che Booking.com ci comunica per la tua prenotazione. Se non corrisponde a quanto hai pagato su Booking.com, contatta l'assistenza clienti di Booking.com, che gestisce quel pagamento.",
+        "tags": [
+          "fattura Booking",
+          "fattura",
+          "Booking.com",
+          "importo della fattura",
+          "NIF",
+          "CIF",
+          "partita IVA",
+          "azienda",
+          "ragione sociale",
+          "la fattura non corrisponde"
+        ],
+        "links": [
+          {
+            "label": "Invia email",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
+        ]
+      },
+      {
+        "q": "Ho ricevuto un messaggio che mi chiede di verificare o pagare la prenotazione tramite un link. È vostro?",
+        "a": "No. È in corso un'ondata di messaggi falsi, soprattutto su WhatsApp, che si spacciano per strutture ricettive e piattaforme di prenotazione. Dicono che devi verificare la prenotazione o pagare con urgenza tramite un link, oppure che la camera verrà liberata se non lo fai entro 24 ore. È una truffa: non cliccare sul link e non inserire i dati della tua carta. Non ti chiederemo mai un pagamento via WhatsApp, e la tua prenotazione non verrà mai cancellata per un mancato pagamento urgente. L'unico pagamento che potremmo chiederti avviene esclusivamente tramite guest.chekin.com. Se ricevi uno di questi messaggi, inviaci uno screenshot con il numero e il testo via WhatsApp al +34 639 980 253 o via email a hostalsol{'@'}outlook.com, e avvisa anche Booking.com se hai prenotato lì.",
+        "tags": [
+          "truffa",
+          "frode",
+          "phishing",
+          "WhatsApp falso",
+          "link",
+          "verificare prenotazione",
+          "pagamento urgente",
+          "sicurezza",
+          "carta",
+          "scam"
+        ],
+        "links": [
+          {
+            "label": "Invia screenshot via WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "Invia email",
             "url": "mailto:hostalsol{'@'}outlook.com",
             "icon": "mail"
           }
@@ -1009,17 +1189,6 @@
           "MTB",
           "mountain bike",
           "custodire bici"
-        ]
-      },
-      {
-        "q": "Sono interessato a un soggiorno lungo. Avete condizioni speciali?",
-        "a": "Sì, da 11 notti offriamo uno sconto automatico del 10% sul prezzo totale. Lo sconto si applica sulle tariffe non rimborsabili. Possiamo anche valutare condizioni speciali per gruppi o soggiorni molto prolungati; contattaci e lo valutiamo. Se lo sconto non si applica automaticamente sul sito, scrivici e ti aiutiamo.",
-        "links": [
-          {
-            "label": "Prenota soggiorno lungo",
-            "url": "/reserva",
-            "icon": "calendar-check"
-          }
         ]
       },
       {

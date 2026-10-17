@@ -720,6 +720,29 @@
         ]
       },
       {
+        "q": "Que cama ten a miña habitación? Podo cambiar a cama de matrimonio ou a dúas camas?",
+        "a": "A cama é a do tipo de habitación que reservaches: as habitacións de cama de matrimonio teñen unha cama de 135 cm de ancho e as de dúas camas teñen dúas camas individuais. Veralo no nome da habitación da túa reserva, e na galería tes fotos e vídeos de cada unha. Se queres cambiar de dúas camas a cama de matrimonio, ou ao revés, escríbenos e intentarémolo, pero depende da dispoñibilidade e en datas con moita ocupación non sempre é posible. Se o tipo de cama é importante para ti, o máis seguro é escoller a habitación axeitada ao reservar.",
+        "tags": [
+          "cama de matrimonio",
+          "cama dobre",
+          "dúas camas",
+          "camas individuais",
+          "camas separadas",
+          "twin",
+          "medida da cama",
+          "135 cm",
+          "cambiar de cama",
+          "tamaño da cama"
+        ],
+        "links": [
+          {
+            "label": "Ver galería de habitacións",
+            "url": "/galeria",
+            "icon": "bed-double"
+          }
+        ]
+      },
+      {
         "q": "Traballades os domingos e festivos?",
         "a": "Traballamos a maioría dos festivos agás o 14–16 de agosto, o 15 de decembro e o 1 de xaneiro. A maioría dos domingos estamos pechados, pero se chegaches o sábado podes quedarte todo o domingo — check-out o luns ás 11:00.",
         "links": [
@@ -738,6 +761,92 @@
           "retraso",
           "acceso nocturno",
           "chaves 24h"
+        ]
+      },
+      {
+        "q": "Podo recoller as chaves ou entrar na habitación antes das 14:00?",
+        "a": "O check-in é de 14:00 a 21:00. Se a túa habitación xa está libre porque o hóspede anterior marchou, podemos darche as chaves antes, mesmo se aínda non está limpa, pero nunca antes de que marche. Non podemos garantilo nin confirmalo con antelación, e tampouco podemos avisar a cada hóspede cando a súa habitación queda libre. O que si podes facer é pasar polo hostal desde as 09:00 (agás os domingos) para deixar a equipaxe en consigna e facer xa o rexistro, co check-in en liña ou amosando o DNI ou o pasaporte de cada hóspede. Así, se a habitación non está lista, só terás que volver máis tarde a recoller as chaves. É a mellor opción se vés a unha voda, a un evento ou a visitar a cidade pola mañá.",
+        "tags": [
+          "check-in anticipado",
+          "chegar antes",
+          "chegada temperá",
+          "chaves antes",
+          "entrar antes",
+          "early check-in",
+          "consigna",
+          "gardar a equipaxe",
+          "voda",
+          "pola mañá"
+        ],
+        "links": [
+          {
+            "label": "Facer o check-in en liña",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
+      },
+      {
+        "q": "Indiquei en Booking.com a miña hora de chegada. Teño que agardar a que a confirmedes?",
+        "a": "Non. Cando escolles en Booking.com unha franxa de chegada, chéganos unha mensaxe automática como «Gustaríame facer o check-in entre as 18:00 e as 19:00. É posible?». Se a franxa está entre as 14:00 e as 21:00, non fai falta confirmala: podes chegar a calquera hora dentro dese horario. Se empeza antes das 14:00, podes deixar a equipaxe e recoller as chaves cando a habitación estea lista, sen garantía de que sexa antes das 14:00. Se é despois das 21:00, non poderemos recibirte: o horario de chegada non é flexible. Se vas con atraso, avísanos, pero ten en conta que ás 21:00 pechamos igualmente. Se sabes que non chegarás a tempo, contacta connosco canto antes para ver que opcións ten a túa reserva.",
+        "tags": [
+          "hora de chegada",
+          "franxa horaria",
+          "Booking",
+          "confirmar a chegada",
+          "chegar",
+          "check-in",
+          "atraso",
+          "tráfico"
+        ],
+        "links": [
+          {
+            "label": "Guía completa de check-in",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
+      },
+      {
+        "q": "Chegarei despois das 21:00. Pode facer o check-in a persoa que me acompaña?",
+        "a": "Si. Fai primeiro o check-in en liña coa ligazón de Chekin que che enviamos e escanea alí os documentos de identidade de todos os hóspedes. Despois, o teu acompañante debe chegar ao hostal antes das 21:00, dicir o nome da reserva e amosar un dos documentos rexistrados no check-in en liña. Darémoslle as chaves do edificio, do hostal e da habitación, e poderedes entrar e saír cando queirades, tamén de noite. Non aceptamos documentos enviados por WhatsApp ou email: o rexistro faise co check-in en liña ou en persoa. Se ninguén do grupo pode chegar antes das 21:00, non poderemos facer o check-in.",
+        "tags": [
+          "acompañante",
+          "chegar tarde",
+          "chegada tardía",
+          "despois das 21:00",
+          "outra persoa recolle as chaves",
+          "check-in en liña",
+          "chekin",
+          "chaves"
+        ],
+        "links": [
+          {
+            "label": "Facer o check-in en liña",
+            "url": "/checkin",
+            "icon": "file-text"
+          }
+        ]
+      },
+      {
+        "q": "Podo facer o check-out máis tarde das 11:00?",
+        "a": "O check-out é ás 11:00, porque a partir desa hora preparamos as habitacións para os seguintes hóspedes. Se queres seguir gozando de Zamora o día de saída, podemos gardarche a equipaxe na recepción durante ese día (agás os domingos); só tes que avisarnos. Se precisas quedar na habitación máis tempo, pregúntanos con antelación e dirémosche se é posible segundo a ocupación dese día, pero non podemos garantilo.",
+        "tags": [
+          "check-out tardío",
+          "late check-out",
+          "saída tarde",
+          "hora de saída",
+          "deixar a habitación",
+          "gardar a equipaxe",
+          "maleta",
+          "consigna"
+        ],
+        "links": [
+          {
+            "label": "Contactar por WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
@@ -894,6 +1003,26 @@
         ]
       },
       {
+        "q": "Podo cambiar as datas da miña reserva?",
+        "a": "Depende da tarifa. Cunha tarifa flexible podes cambiar as datas, ou cancelar sen custo e facer unha reserva nova, ata 48 horas antes da chegada. As tarifas non reembolsables normalmente non permiten cambios. Se reservaches en Booking.com, fai o cambio desde a app ou a web de Booking.com: se hai dispoñibilidade, acéptase automaticamente. Desde o hostal non podemos solicitar o cambio por ti, así que se tes problemas coa app, contacta coa atención ao cliente de Booking.com. Se reservaches na nosa web, usa a ligazón do correo de confirmación ou escríbenos.",
+        "tags": [
+          "cambiar datas",
+          "modificar a reserva",
+          "adiantar a reserva",
+          "atrasar a reserva",
+          "cambiar de día",
+          "cambio de data",
+          "Booking"
+        ],
+        "links": [
+          {
+            "label": "Reservar na nosa web",
+            "url": "/reserva",
+            "icon": "calendar-check"
+          }
+        ]
+      },
+      {
         "q": "Como solicitar unha factura?",
         "a": "Podes solicitar a factura desde o último día da estadía ata 30 días despois do check-out. Indica todos os datos fiscais necesarios ao reservar (nome/empresa, NIF, enderezo). A factura envíase ao email en formato PDF.",
         "tags": [
@@ -907,6 +1036,56 @@
         "links": [
           {
             "label": "Contactar por factura",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
+        ]
+      },
+      {
+        "q": "Reservei en Booking.com. Como pido a factura e por que importe sae?",
+        "a": "Pídea desde o chat de Booking.com (ten unha opción para solicitar factura) ou escríbenos indicando o nome ou a razón social, o NIF ou CIF e o enderezo fiscal. Anotámolo e enviámosche a factura en PDF por email cando fagas o check-out. Podes pedila ata 30 días despois do check-out. A factura emítese polo importe que Booking.com nos comunica para a túa reserva. Se non coincide co que pagaches en Booking.com, contacta coa atención ao cliente de Booking.com, que é quen xestiona ese pago.",
+        "tags": [
+          "factura Booking",
+          "factura",
+          "Booking.com",
+          "importe da factura",
+          "NIF",
+          "CIF",
+          "empresa",
+          "razón social",
+          "a factura non coincide"
+        ],
+        "links": [
+          {
+            "label": "Enviar email",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
+        ]
+      },
+      {
+        "q": "Recibín unha mensaxe que me pide verificar ou pagar a miña reserva cunha ligazón. É vosa?",
+        "a": "Non. Hai unha vaga de mensaxes falsas, sobre todo por WhatsApp, que se fan pasar por aloxamentos e plataformas de reserva. Din que debes verificar a reserva ou pagar con urxencia mediante unha ligazón, ou que a habitación se liberará se non o fas en 24 horas. É unha estafa: non premas a ligazón nin escribas os datos da túa tarxeta. Nunca che pediremos un pago por WhatsApp, e a túa reserva nunca se cancelará por non facer un pago urxente. O único pago que poderiamos pedirche faise exclusivamente a través de guest.chekin.com. Se recibes unha destas mensaxes, envíanos unha captura co número e o texto por WhatsApp ao +34 639 980 253 ou por email a hostalsol{'@'}outlook.com, e avisa tamén a Booking.com se reservaches alí.",
+        "tags": [
+          "estafa",
+          "fraude",
+          "phishing",
+          "WhatsApp falso",
+          "ligazón",
+          "verificar a reserva",
+          "pago urxente",
+          "seguridade",
+          "tarxeta",
+          "scam"
+        ],
+        "links": [
+          {
+            "label": "Enviar captura por WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "Enviar email",
             "url": "mailto:hostalsol{'@'}outlook.com",
             "icon": "mail"
           }
@@ -993,17 +1172,6 @@
           "bici eléctrica",
           "bici de montaña",
           "gardar bicicleta"
-        ]
-      },
-      {
-        "q": "Estou interesado nunha estadía longa. Hai condicións especiais?",
-        "a": "Si, desde 11 noites — automaticamente un 10% de desconto. Para grupos ou estadías moi longas — contacta connosco.",
-        "links": [
-          {
-            "label": "Reservar estadía longa",
-            "url": "/booking",
-            "icon": "calendar-check"
-          }
         ]
       },
       {

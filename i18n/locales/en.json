@@ -751,6 +751,29 @@
         ]
       },
       {
+        "q": "What bed does my room have? Can I switch to a double bed or twin beds?",
+        "a": "The bed matches the room type you booked: double rooms have a 135 cm wide bed and twin rooms have two single beds. You'll see it in the room name on your booking, and the gallery has photos and videos of each room. If you'd like to switch from twin beds to a double bed, or the other way round, write to us and we'll try, but it depends on availability and isn't always possible on busy dates. If the bed type matters to you, the safest option is to choose the right room when you book.",
+        "tags": [
+          "double bed",
+          "twin beds",
+          "two beds",
+          "single beds",
+          "twin",
+          "bed size",
+          "135 cm",
+          "change bed",
+          "queen bed",
+          "bed width"
+        ],
+        "links": [
+          {
+            "label": "View room gallery",
+            "url": "/galeria",
+            "icon": "bed-double"
+          }
+        ]
+      },
+      {
         "q": "Are you open on Sundays and public holidays?",
         "a": "We're open most public holidays, except August 14–16, December 15 and January 1. Most Sundays we're closed, but if you arrive on Saturday you can stay through Sunday and subsequent days without issue, since check-out is at 11:00 on your departure day. If you have questions about a specific date, contact us.",
         "links": [
@@ -770,6 +793,94 @@
           "night access",
           "night check-in",
           "keys 24h"
+        ]
+      },
+      {
+        "q": "Can I pick up the keys or get into my room before 14:00?",
+        "a": "Check-in is from 14:00 to 21:00. If your room is already free because the previous guest has left, we can give you the keys earlier, even if it hasn't been cleaned yet, but never before they've left. We can't guarantee or confirm this in advance, and we can't let each guest know when their room becomes free. What you can do is drop by the hostel from 09:00 (except Sundays) to leave your luggage with us and register straight away, either with online check-in or by showing the ID card or passport of each guest. That way, if the room isn't ready, you only need to come back later to pick up the keys. It's the best option if you're coming for a wedding or an event, or want to explore the city in the morning.",
+        "tags": [
+          "early check-in",
+          "arrive early",
+          "early arrival",
+          "keys early",
+          "early access",
+          "luggage storage",
+          "bag storage",
+          "leave luggage",
+          "wedding",
+          "morning"
+        ],
+        "links": [
+          {
+            "label": "Complete online check-in",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
+      },
+      {
+        "q": "I entered my arrival time on Booking.com. Do I need to wait for you to confirm it?",
+        "a": "No. When you choose an arrival time slot on Booking.com, we receive an automatic message like “I'd like to request check-in at 18:00 - 19:00. Is this ok?” If the slot is between 14:00 and 21:00, there's no need to confirm it: you can arrive at any time within those hours. If it starts before 14:00, you can leave your luggage and pick up the keys once the room is ready, with no guarantee that this will be before 14:00. If it's after 21:00, we won't be able to receive you: arrival hours are not flexible. If you're running late, let us know, but bear in mind that we close at 21:00 regardless. If you know you won't make it in time, contact us as soon as possible to see what options your booking has.",
+        "tags": [
+          "arrival time",
+          "time slot",
+          "Booking",
+          "confirm arrival",
+          "arrive",
+          "check-in",
+          "running late",
+          "delay",
+          "traffic"
+        ],
+        "links": [
+          {
+            "label": "Full check-in guide",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
+      },
+      {
+        "q": "I'll arrive after 21:00. Can my travel companion check in for us?",
+        "a": "Yes. First complete online check-in using the Chekin link we send you, and scan the ID documents of all guests there. Then your companion must arrive at the hostel before 21:00, give the name on the booking and show one of the documents registered during online check-in. We'll give them the keys to the building, the hostel and the room, and you'll be able to come and go whenever you like, including at night. We don't accept documents sent by WhatsApp or email: registration is done through online check-in or in person. If no one in your group can arrive before 21:00, we won't be able to check you in.",
+        "tags": [
+          "travel companion",
+          "late arrival",
+          "arrive late",
+          "after 21:00",
+          "someone else picks up the keys",
+          "online check-in",
+          "chekin",
+          "keys"
+        ],
+        "links": [
+          {
+            "label": "Complete online check-in",
+            "url": "/checkin",
+            "icon": "file-text"
+          }
+        ]
+      },
+      {
+        "q": "Can I check out later than 11:00?",
+        "a": "Check-out is at 11:00, because from then on we prepare the rooms for the next guests. If you'd like to keep enjoying Zamora on your departure day, we can store your luggage at reception for that day (except Sundays); just let us know. If you need to stay in the room longer, ask us in advance and we'll tell you whether it's possible depending on that day's occupancy, but we can't guarantee it.",
+        "tags": [
+          "late check-out",
+          "late checkout",
+          "leave late",
+          "check-out time",
+          "departure time",
+          "vacate the room",
+          "luggage storage",
+          "suitcase",
+          "bag storage"
+        ],
+        "links": [
+          {
+            "label": "Contact via WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
@@ -927,6 +1038,28 @@
         ]
       },
       {
+        "q": "Can I change the dates of my booking?",
+        "a": "It depends on the rate. With a flexible rate you can change the dates, or cancel free of charge and make a new booking, up to 48 hours before arrival. Non-refundable rates don't usually allow changes. If you booked on Booking.com, make the change in the Booking.com app or website: if there's availability, it's accepted automatically. We can't request the change on your behalf from the hostel, so if you have problems with the app, contact Booking.com customer service. If you booked on our website, use the link in your confirmation email or write to us.",
+        "tags": [
+          "change dates",
+          "modify booking",
+          "change reservation",
+          "bring booking forward",
+          "postpone booking",
+          "change day",
+          "date change",
+          "reschedule",
+          "Booking"
+        ],
+        "links": [
+          {
+            "label": "Book on our website",
+            "url": "/reserva",
+            "icon": "calendar-check"
+          }
+        ]
+      },
+      {
         "q": "How do I request an invoice?",
         "a": "You can request an invoice from the last day of your stay up to 30 days after check-out. When making the booking, make sure to fill in all required invoice fields (name or company name, tax ID/VAT number, tax address). If a specific field isn't available in the form, use the comments box. The invoice will be sent by email as a PDF. We cannot issue invoices outside the 30-day window after check-out.",
         "tags": [
@@ -943,6 +1076,58 @@
         "links": [
           {
             "label": "Contact for invoice",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
+        ]
+      },
+      {
+        "q": "I booked on Booking.com. How do I request an invoice and what amount will it show?",
+        "a": "Request it through the Booking.com chat (it has an option to request an invoice) or write to us with the name or company name, the tax ID (NIF or CIF) and the tax address. We'll make a note of it and email you the invoice as a PDF when you check out. You can request it up to 30 days after check-out. The invoice is issued for the amount Booking.com reports to us for your booking. If it doesn't match what you paid on Booking.com, contact Booking.com customer service, as they handle that payment.",
+        "tags": [
+          "Booking invoice",
+          "invoice",
+          "Booking.com",
+          "invoice amount",
+          "NIF",
+          "CIF",
+          "VAT number",
+          "company",
+          "company name",
+          "invoice doesn't match",
+          "receipt"
+        ],
+        "links": [
+          {
+            "label": "Send email",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
+        ]
+      },
+      {
+        "q": "I received a message asking me to verify or pay for my booking via a link. Is it from you?",
+        "a": "No. There's a wave of fake messages, mostly on WhatsApp, pretending to come from accommodation providers and booking platforms. They say you must verify your booking or pay urgently through a link, or that the room will be released if you don't do so within 24 hours. It's a scam: don't tap the link or enter your card details. We will never ask you for a payment on WhatsApp, and your booking will never be cancelled for not making an urgent payment. The only payment we might ask you for is made exclusively through guest.chekin.com. If you receive one of these messages, send us a screenshot showing the number and the text by WhatsApp to +34 639 980 253 or by email to hostalsol{'@'}outlook.com, and also report it to Booking.com if you booked there.",
+        "tags": [
+          "scam",
+          "fraud",
+          "phishing",
+          "fake WhatsApp",
+          "link",
+          "verify booking",
+          "urgent payment",
+          "security",
+          "card",
+          "suspicious message"
+        ],
+        "links": [
+          {
+            "label": "Send screenshot via WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "Send email",
             "url": "mailto:hostalsol{'@'}outlook.com",
             "icon": "mail"
           }

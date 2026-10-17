@@ -153,7 +153,7 @@ export function useSearch() {
         items.push({
           title:       q,
           description: a.length > 110 ? a.substring(0, 110) + '…' : a,
-          route:       `/faq#${slug}`,
+          route:       `/faq/${slug}`,
           category:    cat.faq,
           hidden:      `${tags.join(' ')} ${a.substring(0, 200)}`,
         })

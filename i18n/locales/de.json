@@ -722,6 +722,29 @@
         ]
       },
       {
+        "q": "Welches Bett hat mein Zimmer? Kann ich zu einem Doppelbett oder zwei Einzelbetten wechseln?",
+        "a": "Du bekommst das Bett des Zimmertyps, den du gebucht hast: Die Doppelzimmer haben ein 135 cm breites Doppelbett, die Zweibettzimmer zwei Einzelbetten. Das siehst du am Zimmernamen in deiner Buchung, und in der Galerie findest du Fotos und Videos von jedem Zimmer. Wenn du von zwei Einzelbetten zu einem Doppelbett wechseln möchtest oder umgekehrt, schreib uns und wir versuchen es. Das hängt aber von der Verfügbarkeit ab und ist bei hoher Auslastung nicht immer möglich. Wenn dir die Bettart wichtig ist, wählst du am besten schon bei der Buchung das passende Zimmer.",
+        "tags": [
+          "Doppelbett",
+          "Ehebett",
+          "zwei Betten",
+          "Einzelbetten",
+          "Zweibettzimmer",
+          "twin",
+          "Bettgröße",
+          "135 cm",
+          "Bett wechseln",
+          "Bettbreite"
+        ],
+        "links": [
+          {
+            "label": "Zimmergalerie ansehen",
+            "url": "/galeria",
+            "icon": "bed-double"
+          }
+        ]
+      },
+      {
         "q": "Seid ihr sonntags und an Feiertagen geöffnet?",
         "a": "Wir sind an den meisten Feiertagen geöffnet, außer 14.-16. August, 15. Dezember und 1. Januar. Die meisten Sonntage sind wir geschlossen, aber wenn du samstags ankommst, kannst du den ganzen Sonntag bleiben.",
         "links": [
@@ -741,6 +764,93 @@
           "Nachtzugang",
           "nächtlicher Check-in",
           "Schlüssel 24h"
+        ]
+      },
+      {
+        "q": "Kann ich die Schlüssel schon vor 14:00 Uhr abholen oder früher ins Zimmer?",
+        "a": "Check-in ist von 14:00 bis 21:00 Uhr. Wenn dein Zimmer schon frei ist, weil der vorherige Gast abgereist ist, können wir dir die Schlüssel früher geben, auch wenn es noch nicht gereinigt ist – aber nie, bevor der vorherige Gast abgereist ist. Wir können das weder garantieren noch im Voraus bestätigen, und wir können auch nicht jeden Gast benachrichtigen, sobald sein Zimmer frei wird. Was du aber tun kannst: Komm ab 09:00 Uhr (außer sonntags) im Hostal vorbei, gib dein Gepäck zur Aufbewahrung ab und erledige gleich die Anmeldung, entweder per Online-Check-in oder indem du den Personalausweis oder Reisepass jedes Gastes vorzeigst. Ist das Zimmer dann noch nicht fertig, musst du später nur noch zurückkommen, um die Schlüssel abzuholen. Das ist die beste Lösung, wenn du zu einer Hochzeit oder Veranstaltung kommst oder vormittags die Stadt besichtigen möchtest.",
+        "tags": [
+          "früher Check-in",
+          "frühe Anreise",
+          "früher ankommen",
+          "Schlüssel früher",
+          "früher ins Zimmer",
+          "early check-in",
+          "Gepäckaufbewahrung",
+          "Gepäck abgeben",
+          "Hochzeit",
+          "vormittags"
+        ],
+        "links": [
+          {
+            "label": "Online Check-in durchführen",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
+      },
+      {
+        "q": "Ich habe bei Booking.com meine Ankunftszeit angegeben. Muss ich warten, bis ihr sie bestätigt?",
+        "a": "Nein. Wenn du bei Booking.com ein Zeitfenster für deine Ankunft auswählst, erhalten wir eine automatische Nachricht wie „Ich möchte gerne zwischen 18:00 und 19:00 Uhr einchecken. Ist das möglich?“. Liegt das Zeitfenster zwischen 14:00 und 21:00 Uhr, muss es nicht bestätigt werden: Du kannst innerhalb dieser Zeiten jederzeit ankommen. Beginnt es vor 14:00 Uhr, kannst du dein Gepäck abgeben und die Schlüssel abholen, sobald das Zimmer fertig ist, ohne Garantie, dass das vor 14:00 Uhr der Fall ist. Liegt es nach 21:00 Uhr, können wir dich nicht empfangen: Die Ankunftszeiten sind nicht flexibel. Wenn du dich verspätest, sag uns Bescheid, aber denk daran, dass wir trotzdem um 21:00 Uhr schließen. Wenn du weißt, dass du es nicht rechtzeitig schaffst, melde dich so früh wie möglich bei uns, damit wir klären können, welche Möglichkeiten deine Buchung bietet.",
+        "tags": [
+          "Ankunftszeit",
+          "Zeitfenster",
+          "Booking",
+          "Ankunft bestätigen",
+          "ankommen",
+          "Check-in",
+          "Verspätung",
+          "Stau"
+        ],
+        "links": [
+          {
+            "label": "Vollständiger Check-in-Leitfaden",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
+      },
+      {
+        "q": "Ich komme erst nach 21:00 Uhr an. Kann meine Begleitung für mich einchecken?",
+        "a": "Ja. Mach zuerst den Online-Check-in über den Chekin-Link, den wir dir schicken, und scanne dort die Ausweisdokumente aller Gäste. Danach muss deine Begleitung vor 21:00 Uhr im Hostal ankommen, den Namen der Buchung nennen und eines der beim Online-Check-in registrierten Dokumente vorzeigen. Wir geben ihr die Schlüssel für das Gebäude, das Hostal und das Zimmer, und ihr könnt kommen und gehen, wann ihr wollt, auch nachts. Per WhatsApp oder E-Mail geschickte Dokumente akzeptieren wir nicht: Die Anmeldung erfolgt über den Online-Check-in oder persönlich. Wenn niemand aus eurer Gruppe vor 21:00 Uhr da sein kann, ist kein Check-in möglich.",
+        "tags": [
+          "Begleitung",
+          "Begleitperson",
+          "spät ankommen",
+          "späte Ankunft",
+          "nach 21:00 Uhr",
+          "andere Person holt Schlüssel ab",
+          "Online Check-in",
+          "chekin",
+          "Schlüssel"
+        ],
+        "links": [
+          {
+            "label": "Online Check-in durchführen",
+            "url": "/checkin",
+            "icon": "file-text"
+          }
+        ]
+      },
+      {
+        "q": "Kann ich später als 11:00 Uhr auschecken?",
+        "a": "Check-out ist um 11:00 Uhr, denn ab dann bereiten wir die Zimmer für die nächsten Gäste vor. Wenn du Zamora am Abreisetag noch genießen möchtest, können wir dein Gepäck an diesem Tag an der Rezeption aufbewahren (außer sonntags); sag uns einfach Bescheid. Wenn du das Zimmer länger brauchst, frag uns rechtzeitig vorher. Wir sagen dir dann, ob das je nach Auslastung an diesem Tag möglich ist, garantieren können wir es aber nicht.",
+        "tags": [
+          "später Check-out",
+          "late check-out",
+          "später abreisen",
+          "Abreisezeit",
+          "Zimmer verlassen",
+          "Gepäckaufbewahrung",
+          "Koffer",
+          "Gepäck abgeben"
+        ],
+        "links": [
+          {
+            "label": "Per WhatsApp kontaktieren",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
@@ -896,6 +1006,27 @@
         ]
       },
       {
+        "q": "Kann ich die Reisedaten meiner Buchung ändern?",
+        "a": "Das hängt vom Tarif ab. Mit einem flexiblen Tarif kannst du die Reisedaten bis 48 Stunden vor der Ankunft ändern oder kostenlos stornieren und neu buchen. Nicht erstattungsfähige Tarife erlauben in der Regel keine Änderungen. Wenn du über Booking.com gebucht hast, nimm die Änderung in der App oder auf der Website von Booking.com vor: Ist etwas frei, wird sie automatisch angenommen. Wir können die Änderung vom Hostal aus nicht für dich beantragen. Wenn du also Probleme mit der App hast, wende dich an den Kundenservice von Booking.com. Wenn du über unsere Website gebucht hast, nutze den Link in deiner Bestätigungs-E-Mail oder schreib uns.",
+        "tags": [
+          "Reisedaten ändern",
+          "Buchung ändern",
+          "Datum ändern",
+          "umbuchen",
+          "Buchung vorverlegen",
+          "Buchung verschieben",
+          "anderer Tag",
+          "Booking"
+        ],
+        "links": [
+          {
+            "label": "Auf unserer Website buchen",
+            "url": "/reserva",
+            "icon": "calendar-check"
+          }
+        ]
+      },
+      {
         "q": "Wie beantrage ich eine Rechnung?",
         "a": "Du kannst eine Rechnung ab dem letzten Tag deines Aufenthalts bis 30 Tage nach dem Check-out beantragen. Die Rechnung wird per E-Mail als PDF zugesandt.",
         "tags": [
@@ -908,6 +1039,58 @@
         "links": [
           {
             "label": "Für Rechnung kontaktieren",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
+        ]
+      },
+      {
+        "q": "Ich habe über Booking.com gebucht. Wie bekomme ich eine Rechnung und über welchen Betrag wird sie ausgestellt?",
+        "a": "Fordere sie über den Chat von Booking.com an (dort gibt es eine Option, um eine Rechnung anzufordern) oder schreib uns deinen Namen oder Firmennamen, deine Steuernummer und deine Rechnungsadresse. Wir notieren das und schicken dir die Rechnung beim Check-out als PDF per E-Mail. Du kannst sie bis 30 Tage nach dem Check-out anfordern. Die Rechnung wird über den Betrag ausgestellt, den Booking.com uns für deine Buchung übermittelt. Stimmt er nicht mit dem überein, was du bei Booking.com bezahlt hast, wende dich an den Kundenservice von Booking.com, denn Booking.com wickelt diese Zahlung ab.",
+        "tags": [
+          "Booking Rechnung",
+          "Rechnung",
+          "Booking.com",
+          "Rechnungsbetrag",
+          "Steuernummer",
+          "NIF",
+          "CIF",
+          "Firma",
+          "Firmenname",
+          "Rechnung stimmt nicht"
+        ],
+        "links": [
+          {
+            "label": "E-Mail senden",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
+        ]
+      },
+      {
+        "q": "Ich habe eine Nachricht bekommen, in der ich meine Buchung über einen Link verifizieren oder bezahlen soll. Ist die von euch?",
+        "a": "Nein. Derzeit gibt es eine Welle gefälschter Nachrichten, vor allem per WhatsApp, die sich als Nachrichten von Unterkünften und Buchungsplattformen ausgeben. Darin heißt es, du müsstest deine Buchung verifizieren oder dringend über einen Link bezahlen, oder das Zimmer werde freigegeben, wenn du das nicht innerhalb von 24 Stunden tust. Das ist Betrug: Klick nicht auf den Link und gib keine Kartendaten ein. Wir werden dich nie per WhatsApp um eine Zahlung bitten, und deine Buchung wird nie storniert, weil du eine dringende Zahlung nicht geleistet hast. Die einzige Zahlung, um die wir dich eventuell bitten könnten, läuft ausschließlich über guest.chekin.com. Wenn du eine solche Nachricht erhältst, schick uns einen Screenshot mit Nummer und Text per WhatsApp an +34 639 980 253 oder per E-Mail an hostalsol{'@'}outlook.com, und informiere auch Booking.com, wenn du dort gebucht hast.",
+        "tags": [
+          "Betrug",
+          "Abzocke",
+          "Phishing",
+          "gefälschte WhatsApp",
+          "Fake-Nachricht",
+          "Link",
+          "Buchung verifizieren",
+          "dringende Zahlung",
+          "Sicherheit",
+          "Kreditkarte",
+          "Scam"
+        ],
+        "links": [
+          {
+            "label": "Screenshot per WhatsApp senden",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "E-Mail senden",
             "url": "mailto:hostalsol{'@'}outlook.com",
             "icon": "mail"
           }
@@ -990,17 +1173,6 @@
           "Radfahrer",
           "E-Bike",
           "Mountainbike"
-        ]
-      },
-      {
-        "q": "Ich interessiere mich für einen Langzeitaufenthalt. Habt ihr Sonderkonditionen?",
-        "a": "Ja, ab 11 Nächten bieten wir automatisch 10% Rabatt auf den Gesamtpreis. Wir können auch Sonderkonditionen für Gruppen oder sehr lange Aufenthalte besprechen; kontaktiere uns.",
-        "links": [
-          {
-            "label": "Langzeitaufenthalt buchen",
-            "url": "/reserva",
-            "icon": "calendar-check"
-          }
         ]
       },
       {

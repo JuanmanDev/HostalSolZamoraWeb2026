@@ -57,14 +57,14 @@
             <div v-show="openIndices.includes(i)" class="faq-item__a">
               <p class="faq-item__a-text">{{ item.a }}</p>
               <div v-if="item.links?.length || item.slug" class="faq-item__links">
-                <a
+                <NuxtLink
                   v-if="item.slug"
-                  :href="`#${item.slug}`"
+                  :to="localePath(`/faq/${item.slug}`)"
                   class="faq-item__link faq-item__link--subpage"
                 >
                   <LucideIcon name="link" :size="14" />
                   {{ t('faq.directLink') }}
-                </a>
+                </NuxtLink>
                 <NuxtLink
                   v-for="(link, li) in item.links"
                   :key="li"

@@ -727,6 +727,29 @@
         ]
       },
       {
+        "q": "Ce pat are camera mea? Pot schimba pe pat matrimonial sau pe două paturi?",
+        "a": "Patul este cel corespunzător tipului de cameră pe care l-ai rezervat: camerele cu pat matrimonial au un pat de 135 cm lățime, iar cele cu două paturi au două paturi single. Vei vedea asta în numele camerei din rezervarea ta, iar în galerie găsești fotografii și videoclipuri cu fiecare. Dacă vrei să schimbi de la două paturi la pat matrimonial sau invers, scrie-ne și vom încerca, dar depinde de disponibilitate, iar în perioadele aglomerate nu este întotdeauna posibil. Dacă tipul de pat este important pentru tine, cel mai sigur este să alegi camera potrivită la rezervare.",
+        "tags": [
+          "pat matrimonial",
+          "pat dublu",
+          "două paturi",
+          "paturi single",
+          "paturi separate",
+          "twin",
+          "dimensiunea patului",
+          "135 cm",
+          "schimbare pat",
+          "lățimea patului"
+        ],
+        "links": [
+          {
+            "label": "Vezi galeria camerelor",
+            "url": "/galeria",
+            "icon": "bed-double"
+          }
+        ]
+      },
+      {
         "q": "Sunteți deschiși duminica și de sărbători?",
         "a": "Suntem deschiși în cele mai multe sărbători legale, cu excepțiile: 14, 15 și 16 august, 15 decembrie și 1 ianuarie. Majoritatea duminicilor suntem închiși, dar dacă ajungi sâmbătă poți rămâne toată duminica și zilele următoare fără probleme, deoarece check-out-ul este la 11:00 în ziua plecării. Dacă ai întrebări despre o dată specifică, contactează-ne.",
         "links": [
@@ -746,6 +769,92 @@
           "acces nocturn",
           "check-in nocturn",
           "chei 24h"
+        ]
+      },
+      {
+        "q": "Pot ridica cheile sau intra în cameră înainte de 14:00?",
+        "a": "Check-in-ul este între 14:00 și 21:00. Dacă camera ta este deja liberă pentru că oaspetele anterior a plecat, îți putem da cheile mai devreme, chiar dacă nu a fost încă făcută curățenia, dar niciodată înainte ca acesta să fi plecat. Nu putem garanta și nici confirma acest lucru în avans și nici nu putem anunța fiecare oaspete când i se eliberează camera. Ce poți face în schimb este să treci pe la hostal începând cu ora 09:00 (cu excepția duminicilor) ca să lași bagajele la depozitul de bagaje și să faci deja înregistrarea, prin check-in online sau arătând cartea de identitate ori pașaportul fiecărui oaspete. Astfel, dacă camera nu este gata, va trebui doar să revii mai târziu după chei. Este cea mai bună variantă dacă vii la o nuntă, la un eveniment sau ca să vizitezi orașul dimineața.",
+        "tags": [
+          "check-in timpuriu",
+          "sosire devreme",
+          "ajung mai devreme",
+          "chei mai devreme",
+          "intrare mai devreme",
+          "early check-in",
+          "depozit bagaje",
+          "păstrare bagaje",
+          "nuntă",
+          "dimineața"
+        ],
+        "links": [
+          {
+            "label": "Fă check-in online",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
+      },
+      {
+        "q": "Am indicat pe Booking.com ora de sosire. Trebuie să aștept să o confirmați?",
+        "a": "Nu. Când alegi pe Booking.com un interval de sosire, primim un mesaj automat de tipul „Aș dori să fac check-in între 18:00 și 19:00. Este posibil?”. Dacă intervalul este între 14:00 și 21:00, nu e nevoie să fie confirmat: poți ajunge la orice oră în acest interval. Dacă începe înainte de 14:00, poți lăsa bagajele și ridica cheile când camera este gata, fără garanția că va fi înainte de 14:00. Dacă este după 21:00, nu te vom putea primi: ora de sosire nu este flexibilă. Dacă întârzii, anunță-ne, dar ține cont că la 21:00 închidem oricum. Dacă știi că nu vei ajunge la timp, contactează-ne cât mai curând ca să vedem ce opțiuni are rezervarea ta.",
+        "tags": [
+          "ora sosirii",
+          "interval orar",
+          "Booking",
+          "confirmare sosire",
+          "sosire",
+          "check-in",
+          "întârziere",
+          "trafic"
+        ],
+        "links": [
+          {
+            "label": "Ghid complet de check-in",
+            "url": "/checkin",
+            "icon": "log-in"
+          }
+        ]
+      },
+      {
+        "q": "Ajung după 21:00. Poate face check-in-ul persoana care mă însoțește?",
+        "a": "Da. Fă mai întâi check-in-ul online cu linkul Chekin pe care ți-l trimitem și scanează acolo actele de identitate ale tuturor oaspeților. Apoi, însoțitorul tău trebuie să ajungă la hostal înainte de 21:00, să spună numele rezervării și să arate unul dintre documentele înregistrate la check-in-ul online. Îi vom da cheile imobilului, ale hostalului și ale camerei, iar voi veți putea intra și ieși când doriți, inclusiv noaptea. Nu acceptăm documente trimise prin WhatsApp sau email: înregistrarea se face prin check-in online sau în persoană. Dacă nimeni din grup nu poate ajunge înainte de 21:00, nu vom putea face check-in-ul.",
+        "tags": [
+          "însoțitor",
+          "sosire târzie",
+          "ajung târziu",
+          "după 21:00",
+          "altă persoană ridică cheile",
+          "check-in online",
+          "chekin",
+          "chei"
+        ],
+        "links": [
+          {
+            "label": "Fă check-in online",
+            "url": "/checkin",
+            "icon": "file-text"
+          }
+        ]
+      },
+      {
+        "q": "Pot face check-out mai târziu de 11:00?",
+        "a": "Check-out-ul este la 11:00, pentru că de la această oră pregătim camerele pentru următorii oaspeți. Dacă vrei să te mai bucuri de Zamora în ziua plecării, îți putem păstra bagajele la recepție în acea zi (cu excepția duminicilor); trebuie doar să ne anunți. Dacă ai nevoie să rămâi mai mult în cameră, întreabă-ne din timp și îți vom spune dacă este posibil în funcție de gradul de ocupare din acea zi, dar nu putem garanta.",
+        "tags": [
+          "check-out târziu",
+          "late check-out",
+          "plecare târzie",
+          "ora de plecare",
+          "eliberarea camerei",
+          "păstrare bagaje",
+          "valiză",
+          "depozit bagaje"
+        ],
+        "links": [
+          {
+            "label": "Contactează-ne pe WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          }
         ]
       },
       {
@@ -903,6 +1012,26 @@
         ]
       },
       {
+        "q": "Pot schimba datele rezervării?",
+        "a": "Depinde de tarif. Cu un tarif flexibil poți schimba datele, sau poți anula gratuit și face o rezervare nouă, cu până la 48 de ore înainte de sosire. Tarifele nerambursabile de obicei nu permit modificări. Dacă ai rezervat pe Booking.com, fă modificarea din aplicația sau site-ul Booking.com: dacă există disponibilitate, se acceptă automat. Noi, de la hostal, nu putem solicita modificarea în locul tău, așa că, dacă ai probleme cu aplicația, contactează serviciul de asistență pentru clienți al Booking.com. Dacă ai rezervat pe site-ul nostru, folosește linkul din emailul de confirmare sau scrie-ne.",
+        "tags": [
+          "schimbare date",
+          "modificare rezervare",
+          "mutare rezervare",
+          "amânare rezervare",
+          "altă zi",
+          "schimbare dată",
+          "Booking"
+        ],
+        "links": [
+          {
+            "label": "Rezervă pe site-ul nostru",
+            "url": "/reserva",
+            "icon": "calendar-check"
+          }
+        ]
+      },
+      {
         "q": "Cum solicit o factură?",
         "a": "Poți solicita factura din ultima zi a șederii tale până la 30 de zile după check-out. La efectuarea rezervării, asigură-te că completezi toate câmpurile necesare pentru factură (nume sau denumire societate, CIF/CUI, adresă fiscală). Dacă un câmp specific nu este disponibil în formular, folosește câmpul de comentarii. Factura va fi trimisă prin email în format PDF. Nu putem emite facturi în afara perioadei de 30 de zile după check-out.",
         "tags": [
@@ -917,6 +1046,58 @@
         "links": [
           {
             "label": "Contact pentru factură",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
+        ]
+      },
+      {
+        "q": "Am rezervat pe Booking.com. Cum cer factura și pe ce sumă se emite?",
+        "a": "Cere-o din chatul Booking.com (are o opțiune pentru solicitarea facturii) sau scrie-ne indicând numele sau denumirea firmei, NIF-ul sau CIF-ul și adresa fiscală. Notăm datele și îți trimitem factura în format PDF pe email la check-out. O poți cere cu până la 30 de zile după check-out. Factura se emite pentru suma pe care Booking.com ne-o comunică pentru rezervarea ta. Dacă nu corespunde cu ce ai plătit pe Booking.com, contactează serviciul de asistență pentru clienți al Booking.com, care gestionează acea plată.",
+        "tags": [
+          "factură Booking",
+          "factură",
+          "Booking.com",
+          "suma de pe factură",
+          "NIF",
+          "CIF",
+          "CUI",
+          "firmă",
+          "denumire firmă",
+          "factura nu corespunde"
+        ],
+        "links": [
+          {
+            "label": "Trimite email",
+            "url": "mailto:hostalsol{'@'}outlook.com",
+            "icon": "mail"
+          }
+        ]
+      },
+      {
+        "q": "Am primit un mesaj care îmi cere să îmi verific sau să îmi plătesc rezervarea printr-un link. Este de la voi?",
+        "a": "Nu. Circulă un val de mesaje false, mai ales pe WhatsApp, care se dau drept unități de cazare și platforme de rezervare. Acestea spun că trebuie să îți verifici rezervarea sau să plătești urgent printr-un link, ori că, dacă nu faci asta în 24 de ore, camera va fi eliberată. Este o înșelătorie: nu apăsa pe link și nu introduce datele cardului tău. Nu îți vom cere niciodată o plată prin WhatsApp, iar rezervarea ta nu va fi anulată niciodată pentru că nu ai făcut o plată urgentă. Singura plată pe care ți-am putea-o cere se face exclusiv prin guest.chekin.com. Dacă primești un astfel de mesaj, trimite-ne o captură de ecran cu numărul și textul pe WhatsApp la +34 639 980 253 sau pe email la hostalsol{'@'}outlook.com și anunță și Booking.com dacă ai rezervat acolo.",
+        "tags": [
+          "înșelătorie",
+          "fraudă",
+          "țeapă",
+          "phishing",
+          "WhatsApp fals",
+          "link",
+          "verificare rezervare",
+          "plată urgentă",
+          "securitate",
+          "card",
+          "scam"
+        ],
+        "links": [
+          {
+            "label": "Trimite captura pe WhatsApp",
+            "url": "https://wa.me/34639980253",
+            "icon": "message-circle"
+          },
+          {
+            "label": "Trimite email",
             "url": "mailto:hostalsol{'@'}outlook.com",
             "icon": "mail"
           }
@@ -1005,17 +1186,6 @@
           "e-bike",
           "mountain bike",
           "depozitat bicicletă"
-        ]
-      },
-      {
-        "q": "Sunt interesat de un sejur lung. Aveți condiții speciale?",
-        "a": "Da, de la 11 nopți oferim o reducere automată de 10% din prețul total. Reducerea se aplică la tarife nerambursabile. Putem studia și condiții speciale pentru grupuri sau sejururi foarte lungi; contactează-ne și evaluăm. Dacă reducerea nu se aplică automat pe site, scrie-ne și te ajutăm.",
-        "links": [
-          {
-            "label": "Rezervă sejur lung",
-            "url": "/reserva",
-            "icon": "calendar-check"
-          }
         ]
       },
       {
