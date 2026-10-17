@@ -1,0 +1,1 @@
+function a(e){if(!e)return"";const r=e.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[¿¡?,()'"\.!]/g,"").replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"");return new RegExp("(?!\\p{Script=Latin})\\p{L}","u").test(e)?e.normalize("NFC").toLowerCase().replace(/[^\p{L}\p{M}\p{N}]+/gu,"-").replace(/^-+|-+$/g,""):r}export{a as s};

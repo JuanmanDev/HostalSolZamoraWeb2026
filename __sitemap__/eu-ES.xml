@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://hostalsolzamora.com/eu</loc>
+        <xhtml:link rel="alternate" hreflang="es-ES" href="https://hostalsolzamora.com/" />
+        <xhtml:link rel="alternate" hreflang="en-GB" href="https://hostalsolzamora.com/en" />
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://hostalsolzamora.com/pt" />
+        <xhtml:link rel="alternate" hreflang="fr-FR" href="https://hostalsolzamora.com/fr" />
+        <xhtml:link rel="alternate" hreflang="de-DE" href="https://hostalsolzamora.com/de" />
+        <xhtml:link rel="alternate" hreflang="it-IT" href="https://hostalsolzamora.com/it" />
+        <xhtml:link rel="alternate" hreflang="nl-NL" href="https://hostalsolzamora.com/nl" />
+        <xhtml:link rel="alternate" hreflang="ro-RO" href="https://hostalsolzamora.com/ro" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://hostalsolzamora.com/ru" />
+        <xhtml:link rel="alternate" hreflang="uk-UA" href="https://hostalsolzamora.com/uk" />
+        <xhtml:link rel="alternate" hreflang="pl-PL" href="https://hostalsolzamora.com/pl" />
+        <xhtml:link rel="alternate" hreflang="el-GR" href="https://hostalsolzamora.com/el" />
+        <xhtml:link rel="alternate" hreflang="gl-ES" href="https://hostalsolzamora.com/gl" />
+        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://hostalsolzamora.com/ca" />
+        <xhtml:link rel="alternate" hreflang="eu-ES" href="https://hostalsolzamora.com/eu" />
+        <xhtml:link rel="alternate" hreflang="ar-MA" href="https://hostalsolzamora.com/ar" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://hostalsolzamora.com/zh" />
+        <xhtml:link rel="alternate" hreflang="ko-KR" href="https://hostalsolzamora.com/ko" />
+        <xhtml:link rel="alternate" hreflang="ja-JP" href="https://hostalsolzamora.com/ja" />
+        <xhtml:link rel="alternate" hreflang="wo-SN" href="https://hostalsolzamora.com/wo" />
+        <xhtml:link rel="alternate" hreflang="zgh-MA" href="https://hostalsolzamora.com/zgh" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://hostalsolzamora.com/" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/checkin</loc>
+        <xhtml:link rel="alternate" hreflang="es-ES" href="https://hostalsolzamora.com/checkin" />
+        <xhtml:link rel="alternate" hreflang="en-GB" href="https://hostalsolzamora.com/en/checkin" />
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://hostalsolzamora.com/pt/checkin" />
+        <xhtml:link rel="alternate" hreflang="fr-FR" href="https://hostalsolzamora.com/fr/checkin" />
+        <xhtml:link rel="alternate" hreflang="de-DE" href="https://hostalsolzamora.com/de/checkin" />
+        <xhtml:link rel="alternate" hreflang="it-IT" href="https://hostalsolzamora.com/it/checkin" />
+        <xhtml:link rel="alternate" hreflang="nl-NL" href="https://hostalsolzamora.com/nl/checkin" />
+        <xhtml:link rel="alternate" hreflang="ro-RO" href="https://hostalsolzamora.com/ro/checkin" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://hostalsolzamora.com/ru/checkin" />
+        <xhtml:link rel="alternate" hreflang="uk-UA" href="https://hostalsolzamora.com/uk/checkin" />
+        <xhtml:link rel="alternate" hreflang="pl-PL" href="https://hostalsolzamora.com/pl/checkin" />
+        <xhtml:link rel="alternate" hreflang="el-GR" href="https://hostalsolzamora.com/el/checkin" />
+        <xhtml:link rel="alternate" hreflang="gl-ES" href="https://hostalsolzamora.com/gl/checkin" />
+        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://hostalsolzamora.com/ca/checkin" />
+        <xhtml:link rel="alternate" hreflang="eu-ES" href="https://hostalsolzamora.com/eu/checkin" />
+        <xhtml:link rel="alternate" hreflang="ar-MA" href="https://hostalsolzamora.com/ar/checkin" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://hostalsolzamora.com/zh/checkin" />
+        <xhtml:link rel="alternate" hreflang="ko-KR" href="https://hostalsolzamora.com/ko/checkin" />
+        <xhtml:link rel="alternate" hreflang="ja-JP" href="https://hostalsolzamora.com/ja/checkin" />
+        <xhtml:link rel="alternate" hreflang="wo-SN" href="https://hostalsolzamora.com/wo/checkin" />
+        <xhtml:link rel="alternate" hreflang="zgh-MA" href="https://hostalsolzamora.com/zgh/checkin" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://hostalsolzamora.com/checkin" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/contacto</loc>
+        <xhtml:link rel="alternate" hreflang="es-ES" href="https://hostalsolzamora.com/contacto" />
+        <xhtml:link rel="alternate" hreflang="en-GB" href="https://hostalsolzamora.com/en/contacto" />
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://hostalsolzamora.com/pt/contacto" />
+        <xhtml:link rel="alternate" hreflang="fr-FR" href="https://hostalsolzamora.com/fr/contacto" />
+        <xhtml:link rel="alternate" hreflang="de-DE" href="https://hostalsolzamora.com/de/contacto" />
+        <xhtml:link rel="alternate" hreflang="it-IT" href="https://hostalsolzamora.com/it/contacto" />
+        <xhtml:link rel="alternate" hreflang="nl-NL" href="https://hostalsolzamora.com/nl/contacto" />
+        <xhtml:link rel="alternate" hreflang="ro-RO" href="https://hostalsolzamora.com/ro/contacto" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://hostalsolzamora.com/ru/contacto" />
+        <xhtml:link rel="alternate" hreflang="uk-UA" href="https://hostalsolzamora.com/uk/contacto" />
+        <xhtml:link rel="alternate" hreflang="pl-PL" href="https://hostalsolzamora.com/pl/contacto" />
+        <xhtml:link rel="alternate" hreflang="el-GR" href="https://hostalsolzamora.com/el/contacto" />
+        <xhtml:link rel="alternate" hreflang="gl-ES" href="https://hostalsolzamora.com/gl/contacto" />
+        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://hostalsolzamora.com/ca/contacto" />
+        <xhtml:link rel="alternate" hreflang="eu-ES" href="https://hostalsolzamora.com/eu/contacto" />
+        <xhtml:link rel="alternate" hreflang="ar-MA" href="https://hostalsolzamora.com/ar/contacto" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://hostalsolzamora.com/zh/contacto" />
+        <xhtml:link rel="alternate" hreflang="ko-KR" href="https://hostalsolzamora.com/ko/contacto" />
+        <xhtml:link rel="alternate" hreflang="ja-JP" href="https://hostalsolzamora.com/ja/contacto" />
+        <xhtml:link rel="alternate" hreflang="wo-SN" href="https://hostalsolzamora.com/wo/contacto" />
+        <xhtml:link rel="alternate" hreflang="zgh-MA" href="https://hostalsolzamora.com/zgh/contacto" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://hostalsolzamora.com/contacto" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq</loc>
+        <xhtml:link rel="alternate" hreflang="es-ES" href="https://hostalsolzamora.com/faq" />
+        <xhtml:link rel="alternate" hreflang="en-GB" href="https://hostalsolzamora.com/en/faq" />
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://hostalsolzamora.com/pt/faq" />
+        <xhtml:link rel="alternate" hreflang="fr-FR" href="https://hostalsolzamora.com/fr/faq" />
+        <xhtml:link rel="alternate" hreflang="de-DE" href="https://hostalsolzamora.com/de/faq" />
+        <xhtml:link rel="alternate" hreflang="it-IT" href="https://hostalsolzamora.com/it/faq" />
+        <xhtml:link rel="alternate" hreflang="nl-NL" href="https://hostalsolzamora.com/nl/faq" />
+        <xhtml:link rel="alternate" hreflang="ro-RO" href="https://hostalsolzamora.com/ro/faq" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://hostalsolzamora.com/ru/faq" />
+        <xhtml:link rel="alternate" hreflang="uk-UA" href="https://hostalsolzamora.com/uk/faq" />
+        <xhtml:link rel="alternate" hreflang="pl-PL" href="https://hostalsolzamora.com/pl/faq" />
+        <xhtml:link rel="alternate" hreflang="el-GR" href="https://hostalsolzamora.com/el/faq" />
+        <xhtml:link rel="alternate" hreflang="gl-ES" href="https://hostalsolzamora.com/gl/faq" />
+        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://hostalsolzamora.com/ca/faq" />
+        <xhtml:link rel="alternate" hreflang="eu-ES" href="https://hostalsolzamora.com/eu/faq" />
+        <xhtml:link rel="alternate" hreflang="ar-MA" href="https://hostalsolzamora.com/ar/faq" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://hostalsolzamora.com/zh/faq" />
+        <xhtml:link rel="alternate" hreflang="ko-KR" href="https://hostalsolzamora.com/ko/faq" />
+        <xhtml:link rel="alternate" hreflang="ja-JP" href="https://hostalsolzamora.com/ja/faq" />
+        <xhtml:link rel="alternate" hreflang="wo-SN" href="https://hostalsolzamora.com/wo/faq" />
+        <xhtml:link rel="alternate" hreflang="zgh-MA" href="https://hostalsolzamora.com/zgh/faq" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://hostalsolzamora.com/faq" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/galeria</loc>
+        <xhtml:link rel="alternate" hreflang="es-ES" href="https://hostalsolzamora.com/galeria" />
+        <xhtml:link rel="alternate" hreflang="en-GB" href="https://hostalsolzamora.com/en/galeria" />
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://hostalsolzamora.com/pt/galeria" />
+        <xhtml:link rel="alternate" hreflang="fr-FR" href="https://hostalsolzamora.com/fr/galeria" />
+        <xhtml:link rel="alternate" hreflang="de-DE" href="https://hostalsolzamora.com/de/galeria" />
+        <xhtml:link rel="alternate" hreflang="it-IT" href="https://hostalsolzamora.com/it/galeria" />
+        <xhtml:link rel="alternate" hreflang="nl-NL" href="https://hostalsolzamora.com/nl/galeria" />
+        <xhtml:link rel="alternate" hreflang="ro-RO" href="https://hostalsolzamora.com/ro/galeria" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://hostalsolzamora.com/ru/galeria" />
+        <xhtml:link rel="alternate" hreflang="uk-UA" href="https://hostalsolzamora.com/uk/galeria" />
+        <xhtml:link rel="alternate" hreflang="pl-PL" href="https://hostalsolzamora.com/pl/galeria" />
+        <xhtml:link rel="alternate" hreflang="el-GR" href="https://hostalsolzamora.com/el/galeria" />
+        <xhtml:link rel="alternate" hreflang="gl-ES" href="https://hostalsolzamora.com/gl/galeria" />
+        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://hostalsolzamora.com/ca/galeria" />
+        <xhtml:link rel="alternate" hreflang="eu-ES" href="https://hostalsolzamora.com/eu/galeria" />
+        <xhtml:link rel="alternate" hreflang="ar-MA" href="https://hostalsolzamora.com/ar/galeria" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://hostalsolzamora.com/zh/galeria" />
+        <xhtml:link rel="alternate" hreflang="ko-KR" href="https://hostalsolzamora.com/ko/galeria" />
+        <xhtml:link rel="alternate" hreflang="ja-JP" href="https://hostalsolzamora.com/ja/galeria" />
+        <xhtml:link rel="alternate" hreflang="wo-SN" href="https://hostalsolzamora.com/wo/galeria" />
+        <xhtml:link rel="alternate" hreflang="zgh-MA" href="https://hostalsolzamora.com/zgh/galeria" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://hostalsolzamora.com/galeria" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/parking</loc>
+        <xhtml:link rel="alternate" hreflang="es-ES" href="https://hostalsolzamora.com/parking" />
+        <xhtml:link rel="alternate" hreflang="en-GB" href="https://hostalsolzamora.com/en/parking" />
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://hostalsolzamora.com/pt/parking" />
+        <xhtml:link rel="alternate" hreflang="fr-FR" href="https://hostalsolzamora.com/fr/parking" />
+        <xhtml:link rel="alternate" hreflang="de-DE" href="https://hostalsolzamora.com/de/parking" />
+        <xhtml:link rel="alternate" hreflang="it-IT" href="https://hostalsolzamora.com/it/parking" />
+        <xhtml:link rel="alternate" hreflang="nl-NL" href="https://hostalsolzamora.com/nl/parking" />
+        <xhtml:link rel="alternate" hreflang="ro-RO" href="https://hostalsolzamora.com/ro/parking" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://hostalsolzamora.com/ru/parking" />
+        <xhtml:link rel="alternate" hreflang="uk-UA" href="https://hostalsolzamora.com/uk/parking" />
+        <xhtml:link rel="alternate" hreflang="pl-PL" href="https://hostalsolzamora.com/pl/parking" />
+        <xhtml:link rel="alternate" hreflang="el-GR" href="https://hostalsolzamora.com/el/parking" />
+        <xhtml:link rel="alternate" hreflang="gl-ES" href="https://hostalsolzamora.com/gl/parking" />
+        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://hostalsolzamora.com/ca/parking" />
+        <xhtml:link rel="alternate" hreflang="eu-ES" href="https://hostalsolzamora.com/eu/parking" />
+        <xhtml:link rel="alternate" hreflang="ar-MA" href="https://hostalsolzamora.com/ar/parking" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://hostalsolzamora.com/zh/parking" />
+        <xhtml:link rel="alternate" hreflang="ko-KR" href="https://hostalsolzamora.com/ko/parking" />
+        <xhtml:link rel="alternate" hreflang="ja-JP" href="https://hostalsolzamora.com/ja/parking" />
+        <xhtml:link rel="alternate" hreflang="wo-SN" href="https://hostalsolzamora.com/wo/parking" />
+        <xhtml:link rel="alternate" hreflang="zgh-MA" href="https://hostalsolzamora.com/zgh/parking" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://hostalsolzamora.com/parking" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/reserva</loc>
+        <xhtml:link rel="alternate" hreflang="es-ES" href="https://hostalsolzamora.com/reserva" />
+        <xhtml:link rel="alternate" hreflang="en-GB" href="https://hostalsolzamora.com/en/reserva" />
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://hostalsolzamora.com/pt/reserva" />
+        <xhtml:link rel="alternate" hreflang="fr-FR" href="https://hostalsolzamora.com/fr/reserva" />
+        <xhtml:link rel="alternate" hreflang="de-DE" href="https://hostalsolzamora.com/de/reserva" />
+        <xhtml:link rel="alternate" hreflang="it-IT" href="https://hostalsolzamora.com/it/reserva" />
+        <xhtml:link rel="alternate" hreflang="nl-NL" href="https://hostalsolzamora.com/nl/reserva" />
+        <xhtml:link rel="alternate" hreflang="ro-RO" href="https://hostalsolzamora.com/ro/reserva" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://hostalsolzamora.com/ru/reserva" />
+        <xhtml:link rel="alternate" hreflang="uk-UA" href="https://hostalsolzamora.com/uk/reserva" />
+        <xhtml:link rel="alternate" hreflang="pl-PL" href="https://hostalsolzamora.com/pl/reserva" />
+        <xhtml:link rel="alternate" hreflang="el-GR" href="https://hostalsolzamora.com/el/reserva" />
+        <xhtml:link rel="alternate" hreflang="gl-ES" href="https://hostalsolzamora.com/gl/reserva" />
+        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://hostalsolzamora.com/ca/reserva" />
+        <xhtml:link rel="alternate" hreflang="eu-ES" href="https://hostalsolzamora.com/eu/reserva" />
+        <xhtml:link rel="alternate" hreflang="ar-MA" href="https://hostalsolzamora.com/ar/reserva" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://hostalsolzamora.com/zh/reserva" />
+        <xhtml:link rel="alternate" hreflang="ko-KR" href="https://hostalsolzamora.com/ko/reserva" />
+        <xhtml:link rel="alternate" hreflang="ja-JP" href="https://hostalsolzamora.com/ja/reserva" />
+        <xhtml:link rel="alternate" hreflang="wo-SN" href="https://hostalsolzamora.com/wo/reserva" />
+        <xhtml:link rel="alternate" hreflang="zgh-MA" href="https://hostalsolzamora.com/zgh/reserva" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://hostalsolzamora.com/reserva" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/sobre-nosotros</loc>
+        <xhtml:link rel="alternate" hreflang="es-ES" href="https://hostalsolzamora.com/sobre-nosotros" />
+        <xhtml:link rel="alternate" hreflang="en-GB" href="https://hostalsolzamora.com/en/sobre-nosotros" />
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://hostalsolzamora.com/pt/sobre-nosotros" />
+        <xhtml:link rel="alternate" hreflang="fr-FR" href="https://hostalsolzamora.com/fr/sobre-nosotros" />
+        <xhtml:link rel="alternate" hreflang="de-DE" href="https://hostalsolzamora.com/de/sobre-nosotros" />
+        <xhtml:link rel="alternate" hreflang="it-IT" href="https://hostalsolzamora.com/it/sobre-nosotros" />
+        <xhtml:link rel="alternate" hreflang="nl-NL" href="https://hostalsolzamora.com/nl/sobre-nosotros" />
+        <xhtml:link rel="alternate" hreflang="ro-RO" href="https://hostalsolzamora.com/ro/sobre-nosotros" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://hostalsolzamora.com/ru/sobre-nosotros" />
+        <xhtml:link rel="alternate" hreflang="uk-UA" href="https://hostalsolzamora.com/uk/sobre-nosotros" />
+        <xhtml:link rel="alternate" hreflang="pl-PL" href="https://hostalsolzamora.com/pl/sobre-nosotros" />
+        <xhtml:link rel="alternate" hreflang="el-GR" href="https://hostalsolzamora.com/el/sobre-nosotros" />
+        <xhtml:link rel="alternate" hreflang="gl-ES" href="https://hostalsolzamora.com/gl/sobre-nosotros" />
+        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://hostalsolzamora.com/ca/sobre-nosotros" />
+        <xhtml:link rel="alternate" hreflang="eu-ES" href="https://hostalsolzamora.com/eu/sobre-nosotros" />
+        <xhtml:link rel="alternate" hreflang="ar-MA" href="https://hostalsolzamora.com/ar/sobre-nosotros" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://hostalsolzamora.com/zh/sobre-nosotros" />
+        <xhtml:link rel="alternate" hreflang="ko-KR" href="https://hostalsolzamora.com/ko/sobre-nosotros" />
+        <xhtml:link rel="alternate" hreflang="ja-JP" href="https://hostalsolzamora.com/ja/sobre-nosotros" />
+        <xhtml:link rel="alternate" hreflang="wo-SN" href="https://hostalsolzamora.com/wo/sobre-nosotros" />
+        <xhtml:link rel="alternate" hreflang="zgh-MA" href="https://hostalsolzamora.com/zgh/sobre-nosotros" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://hostalsolzamora.com/sobre-nosotros" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/21-00ak-ondoren-hostalean-sartu-al-daiteke</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/21-00ak-ondoren-hostalean-sartu-al-daiteke" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/21-00ak-ondoren-iritsiko-naiz-nirekin-datorren-pertsonak-egin-dezake-check-ina</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/21-00ak-ondoren-iritsiko-naiz-nirekin-datorren-pertsonak-egin-dezake-check-ina" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/aire-girotua-dago-logeletan</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/aire-girotua-dago-logeletan" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/arreta-ordutegitik-kanpo-larrialdi-bat-daukat-zer-egin</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/arreta-ordutegitik-kanpo-larrialdi-bat-daukat-zer-egin" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/beste-baten-izenean-erreserba-egin-al-dezaket</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/beste-baten-izenean-erreserba-egin-al-dezaket" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/bizikleta-gorde-al-dezaket</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/bizikleta-gorde-al-dezaket" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/bookingcom-en-erreserbatu-dut-nola-eskatu-faktura-eta-zer-zenbatekorekin-egiten-da</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/bookingcom-en-erreserbatu-dut-nola-eskatu-faktura-eta-zer-zenbatekorekin-egiten-da" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/bookingcom-en-iritsiera-ordua-adierazi-dut-zuek-baieztatu-arte-itxaron-behar-dut</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/bookingcom-en-iritsiera-ordua-adierazi-dut-zuek-baieztatu-arte-itxaron-behar-dut" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/check-outa-11-00ak-baino-beranduago-egin-dezaket</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/check-outa-11-00ak-baino-beranduago-egin-dezaket" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/deitu-dut-baina-inork-ez-du-erantzuten</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/deitu-dut-baina-inork-ez-du-erantzuten" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/egonaldi-luzerako-deskontua-al-dago</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/egonaldi-luzerako-deskontua-al-dago" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/eguneroko-garbiketa-al-dago</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/eguneroko-garbiketa-al-dago" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/erreserba-esteka-baten-bidez-egiaztatzeko-edo-ordaintzeko-eskatzen-didan-mezu-bat-jaso-dut-zuena-da</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/erreserba-esteka-baten-bidez-egiaztatzeko-edo-ordaintzeko-eskatzen-didan-mezu-bat-jaso-dut-zuena-da" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/erreserbatu-nahi-dut-baina-ez-dago-logelarik-libre-lagun-al-dezakezue</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/erreserbatu-nahi-dut-baina-ez-dago-logelarik-libre-lagun-al-dezakezue" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/erreserbatu-nahi-dut-baina-galdera-gehiago-ditut-nola-harremanetan-jarri</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/erreserbatu-nahi-dut-baina-galdera-gehiago-ditut-nola-harremanetan-jarri" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/erretzea-baimenduta-al-dago</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/erretzea-baimenduta-al-dago" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/ez-dut-erreserba-berrespena-jaso</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/ez-dut-erreserba-berrespena-jaso" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/garbitegia-zerbitzua-al-dago</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/garbitegia-zerbitzua-al-dago" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/garestia-iruditzen-zait-deskonturik-al-dago</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/garestia-iruditzen-zait-deskonturik-al-dago" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/giltzak-jaso-ditzaket-edo-logelan-sar-naiteke-14-00ak-baino-lehen</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/giltzak-jaso-ditzaket-edo-logelan-sar-naiteke-14-00ak-baino-lehen" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/gosaria-eskaintzen-al-da-hostalean</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/gosaria-eskaintzen-al-da-hostalean" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/harrerara-iritsi-naiz-eta-inor-ez-dago-zer-egin</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/harrerara-iritsi-naiz-eta-inor-ez-dago-zer-egin" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/hozkailua-kafetegia-edo-mikrouhinak-al-daude-logeletan</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/hozkailua-kafetegia-edo-mikrouhinak-al-daude-logeletan" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/igandetan-eta-jai-egunetan-lan-egiten-al-duzue</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/igandetan-eta-jai-egunetan-lan-egiten-al-duzue" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/ile-lehorgailua-edo-arropa-lisatua-al-dago</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/ile-lehorgailua-edo-arropa-lisatua-al-dago" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/isiltasuna-al-dago-hostalean</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/isiltasuna-al-dago-hostalean" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/logela-zehatza-eskatu-al-dezaket</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/logela-zehatza-eskatu-al-dezaket" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/maskota-logela-an-bakarrik-utzi-al-dezaket</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/maskota-logela-an-bakarrik-utzi-al-dezaket" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/maskotak-onartzen-al-dira</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/maskotak-onartzen-al-dira" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/mugikortasun-murriztapena-duten-pertsonentzat-irisgarria-da-hostala</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/mugikortasun-murriztapena-duten-pertsonentzat-irisgarria-da-hostala" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/nire-erreserbaren-datak-alda-ditzaket</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/nire-erreserbaren-datak-alda-ditzaket" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/nola-eskatu-faktura-bat</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/nola-eskatu-faktura-bat" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/nola-eskatu-taxi-bat-zamoran</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/nola-eskatu-taxi-bat-zamoran" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/nola-ezeztatu-erreserba-bat</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/nola-ezeztatu-erreserba-bat" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/nola-iritsi-hostalera-geltokitik</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/nola-iritsi-hostalera-geltokitik" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/nola-iritsi-ifezara</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/nola-iritsi-ifezara" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/non-aparka-dezaket</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/non-aparka-dezaket" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/nork-egin-du-webgune-hau</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/nork-egin-du-webgune-hau" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/osagarrizko-oheak-al-daude</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/osagarrizko-oheak-al-daude" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/telefonoz-erreserbatu-al-daiteke</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/telefonoz-erreserbatu-al-daiteke" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/txartelaz-ordaindu-al-daiteke</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/txartelaz-ordaindu-al-daiteke" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/ur-beroa-al-dago</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/ur-beroa-al-dago" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/wifi-dago-logeletan</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/wifi-dago-logeletan" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/zein-da-check-in-eta-check-out-ordutegia</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/zein-da-check-in-eta-check-out-ordutegia" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/zein-da-hostalaren-ordutegia</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/zein-da-hostalaren-ordutegia" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/zein-datu-behar-dira-erreserbatzeko</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/zein-datu-behar-dira-erreserbatzeko" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/zein-dira-zuen-prezioak</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/zein-dira-zuen-prezioak" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/zein-dokumentu-behar-dira-check-inerako</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/zein-dokumentu-behar-dira-check-inerako" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/zein-hizkuntzetan-hitz-egiten-du-langileak</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/zein-hizkuntzetan-hitz-egiten-du-langileak" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/zein-segurtasun-neurri-ditu-hostalak</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/zein-segurtasun-neurri-ditu-hostalak" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/zein-telebista-daude-logeletan</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/zein-telebista-daude-logeletan" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/zer-barne-hartzen-du-logelaren-preziak</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/zer-barne-hartzen-du-logelaren-preziak" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/zer-egin-behar-dut-ordaintzeko-arazoak-baditut-edo-berrespen-mezua-ez-bazaigu-iristen</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/zer-egin-behar-dut-ordaintzeko-arazoak-baditut-edo-berrespen-mezua-ez-bazaigu-iristen" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/zer-egiten-dut-hostalean-gauzak-ahaztu-badira</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/zer-egiten-dut-hostalean-gauzak-ahaztu-badira" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/zer-ekipamendu-daukate-logelek</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/zer-ekipamendu-daukate-logelek" hreflang="eu-ES" />
+    </url>
+    <url>
+        <loc>https://hostalsolzamora.com/eu/faq/zer-ohe-dago-nire-logelan-ohe-bikoitzera-edo-bi-oheetara-alda-dezaket</loc>
+        <xhtml:link rel="alternate" href="https://hostalsolzamora.com/eu/faq/zer-ohe-dago-nire-logelan-ohe-bikoitzera-edo-bi-oheetara-alda-dezaket" hreflang="eu-ES" />
+    </url>
+</urlset>
